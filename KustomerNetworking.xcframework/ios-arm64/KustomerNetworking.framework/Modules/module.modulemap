@@ -1,0 +1,4 @@
+framework module KustomerNetworking {
+  header "KustomerNetworking-Swift.h"
+  requires objc
+}

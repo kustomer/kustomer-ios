@@ -1,0 +1,2280 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerNetworking
+import CommonCrypto
+import Foundation
+import Swift
+public enum PNKeyRequirement : Swift.String {
+  case none
+  case publish
+  case subscribe
+  case publishAndSubscribe
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PAMVersionRequirement {
+  case none
+  case version2
+  case version3
+  public static func == (a: KustomerNetworking.PAMVersionRequirement, b: KustomerNetworking.PAMVersionRequirement) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum KustomerPubNubV3MetadataChange<MetadataType> {
+  case string(Swift.WritableKeyPath<MetadataType, Swift.String>, Swift.String)
+  case stringOptional(Swift.WritableKeyPath<MetadataType, Swift.String?>, Swift.String?)
+  case customOptional(Swift.WritableKeyPath<MetadataType, [Swift.String : KustomerNetworking.JSONCodableScalar]?>, [Swift.String : KustomerNetworking.JSONCodableScalar]?)
+}
+public struct KustomerPubNubV3UUIDMetadataChangeset {
+  public let metadataId: Swift.String
+  public let changes: [KustomerNetworking.KustomerPubNubV3MetadataChange<KustomerNetworking.KustomerPubNubV3UUIDMetadata>]
+  public let updated: Foundation.Date
+  public let eTag: Swift.String
+  public init(metadataId: Swift.String, changes: [KustomerNetworking.KustomerPubNubV3MetadataChange<KustomerNetworking.KustomerPubNubV3UUIDMetadata>], updated: Foundation.Date, eTag: Swift.String)
+  public func apply(to object: KustomerNetworking.KustomerPubNubV3UUIDMetadata) -> KustomerNetworking.KustomerPubNubV3UUIDMetadata
+}
+public struct KustomerPubNubV3ChannelMetadataChangeset {
+  public let metadataId: Swift.String
+  public let changes: [KustomerNetworking.KustomerPubNubV3MetadataChange<KustomerNetworking.KustomerPubNubV3ChannelMetadata>]
+  public let updated: Foundation.Date
+  public let eTag: Swift.String
+  public init(metadataId: Swift.String, changes: [KustomerNetworking.KustomerPubNubV3MetadataChange<KustomerNetworking.KustomerPubNubV3ChannelMetadata>], updated: Foundation.Date, eTag: Swift.String)
+  public func apply(to object: KustomerNetworking.KustomerPubNubV3ChannelMetadata) -> KustomerNetworking.KustomerPubNubV3ChannelMetadata
+}
+public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
+  public let timetoken: KustomerNetworking.Timetoken
+  public let region: Swift.Int
+  public init(timetoken: KustomerNetworking.Timetoken, region: Swift.Int)
+  public init?(timetoken: KustomerNetworking.Timetoken? = nil, region: Swift.Int? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.SubscribeCursor, b: KustomerNetworking.SubscribeCursor) -> Swift.Bool
+}
+public protocol KustomerPubNubV3MessageAction {
+  var actionType: Swift.String { get }
+  var actionValue: Swift.String { get }
+  var actionTimetoken: KustomerNetworking.Timetoken { get }
+  var messageTimetoken: KustomerNetworking.Timetoken { get }
+  var publisher: Swift.String { get }
+  var channel: Swift.String { get }
+  var subscription: Swift.String? { get }
+  var published: KustomerNetworking.Timetoken? { get }
+  init(from other: KustomerNetworking.KustomerPubNubV3MessageAction) throws
+}
+extension KustomerPubNubV3MessageAction {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3MessageAction
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3MessageAction
+}
+public struct KustomerPubNubV3MessageActionBase : KustomerNetworking.KustomerPubNubV3MessageAction, Swift.Codable, Swift.Hashable {
+  public let actionType: Swift.String
+  public let actionValue: Swift.String
+  public let actionTimetoken: KustomerNetworking.Timetoken
+  public let messageTimetoken: KustomerNetworking.Timetoken
+  public let publisher: Swift.String
+  public let channel: Swift.String
+  public let subscription: Swift.String?
+  public let published: KustomerNetworking.Timetoken?
+  public init(from other: KustomerNetworking.KustomerPubNubV3MessageAction) throws
+  public init(actionType: Swift.String, actionValue: Swift.String, actionTimetoken: KustomerNetworking.Timetoken, messageTimetoken: KustomerNetworking.Timetoken, publisher: Swift.String, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.Timetoken? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3MessageActionBase, b: KustomerNetworking.KustomerPubNubV3MessageActionBase) -> Swift.Bool
+}
+public protocol ResponseDecoder {
+  associatedtype Payload : Swift.Decodable, Swift.Encodable
+  func decode(response: KustomerNetworking.EndpointResponse<Foundation.Data>) -> Swift.Result<KustomerNetworking.EndpointResponse<Self.Payload>, Swift.Error>
+  func decodeError(router: KustomerNetworking.HTTPRouter, request: Foundation.URLRequest, response: Foundation.HTTPURLResponse, for data: Foundation.Data) -> KustomerNetworking.KustomerPubNubV3Error?
+  func decrypt(response: KustomerNetworking.EndpointResponse<Self.Payload>) -> Swift.Result<KustomerNetworking.EndpointResponse<Self.Payload>, Swift.Error>
+}
+public struct RequestIdOperator : KustomerNetworking.RequestOperator {
+  public let requestID: Swift.String
+  public func mutate(_ urlRequest: Foundation.URLRequest, for _: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
+}
+public struct AutomaticRetry : KustomerNetworking.RequestOperator, Swift.Hashable {
+  public static var `default`: KustomerNetworking.AutomaticRetry
+  public static var none: KustomerNetworking.AutomaticRetry
+  public static var connectionLost: KustomerNetworking.AutomaticRetry
+  public static var noInternet: KustomerNetworking.AutomaticRetry
+  public enum ReconnectionPolicy : Swift.Hashable {
+    public static var defaultExponential: KustomerNetworking.AutomaticRetry.ReconnectionPolicy
+    public static var defaultLinear: KustomerNetworking.AutomaticRetry.ReconnectionPolicy
+    case immediately
+    case exponential(base: Swift.UInt, scale: Swift.Double, maxDelay: Swift.UInt)
+    case linear(delay: Swift.Double)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: KustomerNetworking.AutomaticRetry.ReconnectionPolicy, b: KustomerNetworking.AutomaticRetry.ReconnectionPolicy) -> Swift.Bool
+  }
+  public static var defaultRetryableURLErrorCodes: Swift.Set<Foundation.URLError.Code>
+  public let retryLimit: Swift.UInt
+  public let policy: KustomerNetworking.AutomaticRetry.ReconnectionPolicy
+  public let retryableHTTPStatusCodes: Swift.Set<Swift.Int>
+  public let retryableURLErrorCodes: Swift.Set<Foundation.URLError.Code>
+  public init(retryLimit: Swift.UInt = 2, policy: KustomerNetworking.AutomaticRetry.ReconnectionPolicy = .defaultExponential, retryableHTTPStatusCodes: Swift.Set<Swift.Int> = [500], retryableURLErrorCodes: Swift.Set<Foundation.URLError.Code> = AutomaticRetry.defaultRetryableURLErrorCodes)
+  public func retry(_ request: KustomerNetworking.RequestReplaceable, for _: KustomerNetworking.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.AutomaticRetry, b: KustomerNetworking.AutomaticRetry) -> Swift.Bool
+}
+public struct LogPrefix : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
+  public let rawValue: Swift.UInt32
+  public static var none: KustomerNetworking.LogPrefix
+  public static var level: KustomerNetworking.LogPrefix
+  public static var date: KustomerNetworking.LogPrefix
+  public static var queue: KustomerNetworking.LogPrefix
+  public static var thread: KustomerNetworking.LogPrefix
+  public static var file: KustomerNetworking.LogPrefix
+  public static var function: KustomerNetworking.LogPrefix
+  public static var line: KustomerNetworking.LogPrefix
+  public static var all: KustomerNetworking.LogPrefix
+  public init(rawValue: Swift.UInt32)
+  public typealias Element = KustomerNetworking.LogPrefix
+  public typealias ArrayLiteralElement = KustomerNetworking.LogPrefix
+  public typealias RawValue = Swift.UInt32
+}
+public struct LogType : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
+  public let rawValue: Swift.UInt32
+  public static var none: KustomerNetworking.LogType
+  public static var debug: KustomerNetworking.LogType
+  public static var info: KustomerNetworking.LogType
+  public static var event: KustomerNetworking.LogType
+  public static var warn: KustomerNetworking.LogType
+  public static var error: KustomerNetworking.LogType
+  public static var log: KustomerNetworking.LogType
+  public static var all: KustomerNetworking.LogType
+  public init(rawValue: Swift.UInt32)
+  public typealias Element = KustomerNetworking.LogType
+  public typealias ArrayLiteralElement = KustomerNetworking.LogType
+  public typealias RawValue = Swift.UInt32
+}
+extension LogType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct KustomerPubNubV3Logger {
+  public var writers: [KustomerNetworking.LogWriter]
+  public var levels: KustomerNetworking.LogType
+  public func debug(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func info(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func event(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func warn(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func error(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func custom(_ level: KustomerNetworking.LogType, _ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func format(prefix: KustomerNetworking.LogPrefix, level: KustomerNetworking.LogType, date: Foundation.Date, queue: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int) -> Swift.String
+  public func send(_ level: KustomerNetworking.LogType, message: @autoclosure () -> Any, date: Foundation.Date, queue: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int)
+  public var enabled: Swift.Bool {
+    get
+  }
+}
+public struct KustomerPubNubV3 {
+  public let instanceID: Foundation.UUID
+  public let configuration: KustomerNetworking.KustomerPubNubV3Configuration
+  public let networkSession: KustomerNetworking.SessionReplaceable
+  public let subscription: KustomerNetworking.SubscriptionSession
+  public static var log: KustomerNetworking.KustomerPubNubV3Logger
+  public static var logLog: KustomerNetworking.KustomerPubNubV3Logger
+  public init(configuration: KustomerNetworking.KustomerPubNubV3Configuration, session: KustomerNetworking.SessionReplaceable? = nil, subscribeSession: KustomerNetworking.SessionReplaceable? = nil, presenceSession: KustomerNetworking.SessionReplaceable? = nil)
+}
+extension KustomerPubNubV3 {
+  public enum PushEnvironment : Swift.String, Swift.Codable {
+    case development
+    case production
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PushService : Swift.String, Swift.Codable {
+    case apns
+    case gcm
+    case mpns
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct RequestConfiguration {
+    public var customSession: KustomerNetworking.SessionReplaceable?
+    public var customConfiguration: KustomerNetworking.RouterConfiguration?
+    public var responseQueue: Dispatch.DispatchQueue
+    public init(customSession: KustomerNetworking.SessionReplaceable? = nil, customConfiguration: KustomerNetworking.RouterConfiguration? = nil, responseQueue: Dispatch.DispatchQueue = .main)
+  }
+  public struct Page : KustomerNetworking.KustomerPubNubV3HashedPage {
+    public var start: Swift.String?
+    public var end: Swift.String?
+    public let totalCount: Swift.Int?
+    public init(start: Swift.String? = nil, end: Swift.String? = nil)
+    public init(from other: KustomerNetworking.KustomerPubNubV3HashedPage) throws
+  }
+  public struct IncludeFields {
+    public var customFields: Swift.Bool
+    public var totalCount: Swift.Bool
+    public init(custom: Swift.Bool = true, totalCount: Swift.Bool = true)
+  }
+  public enum ObjectSortProperty : Swift.String {
+    case id
+    case name
+    case updated
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct ObjectSortField {
+    public let property: KustomerNetworking.KustomerPubNubV3.ObjectSortProperty
+    public let ascending: Swift.Bool
+    public init(property: KustomerNetworking.KustomerPubNubV3.ObjectSortProperty, ascending: Swift.Bool = true)
+  }
+  public enum MembershipSortProperty {
+    case object(KustomerNetworking.KustomerPubNubV3.ObjectSortProperty)
+    case updated
+  }
+  public struct MembershipSortField {
+    public let property: KustomerNetworking.KustomerPubNubV3.MembershipSortProperty
+    public let ascending: Swift.Bool
+    public init(property: KustomerNetworking.KustomerPubNubV3.MembershipSortProperty, ascending: Swift.Bool = true)
+  }
+  public struct MembershipInclude {
+    public var customFields: Swift.Bool
+    public var channelFields: Swift.Bool
+    public var channelCustomFields: Swift.Bool
+    public var totalCount: Swift.Bool
+    public init(customFields: Swift.Bool = true, channelFields: Swift.Bool = false, channelCustomFields: Swift.Bool = false, totalCount: Swift.Bool = false)
+  }
+  public struct MemberInclude {
+    public var customFields: Swift.Bool
+    public var uuidFields: Swift.Bool
+    public var uuidCustomFields: Swift.Bool
+    public var totalCount: Swift.Bool
+    public init(customFields: Swift.Bool = true, uuidFields: Swift.Bool = false, uuidCustomFields: Swift.Bool = false, totalCount: Swift.Bool = false)
+  }
+}
+extension KustomerPubNubV3 {
+  public func time(custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func publish(channel: Swift.String, message: KustomerNetworking.JSONCodable, shouldStore: Swift.Bool? = nil, storeTTL: Swift.Int? = nil, meta: KustomerNetworking.JSONCodable? = nil, shouldCompress: Swift.Bool = false, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+  public func fire(channel: Swift.String, message: KustomerNetworking.JSONCodable, meta: KustomerNetworking.JSONCodable? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+  public func signal(channel: Swift.String, message: KustomerNetworking.JSONCodable, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func subscribe(to channels: [Swift.String], and channelGroups: [Swift.String] = [], at timetoken: KustomerNetworking.Timetoken? = nil, withPresence: Swift.Bool = false, filterOverride: Swift.String? = nil)
+  public func unsubscribe(from channels: [Swift.String], and channelGroups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
+  public func unsubscribeAll()
+  public func disconnect()
+  public func reconnect(at timetoken: KustomerNetworking.Timetoken? = nil)
+  public var previousTimetoken: KustomerNetworking.Timetoken? {
+    get
+  }
+  public func add(_ listener: KustomerNetworking.SubscriptionListener)
+  public var subscribedChannels: [Swift.String] {
+    get
+  }
+  public var subscribedChannelGroups: [Swift.String] {
+    get
+  }
+  public var subscriptionCount: Swift.Int {
+    get
+  }
+  public var connectionStatus: KustomerNetworking.ConnectionStatus {
+    get
+  }
+}
+extension KustomerPubNubV3 {
+  public func setPresence(state: [Swift.String : KustomerNetworking.JSONCodableScalar], on channels: [Swift.String], and groups: [Swift.String] = [], custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.JSONCodable, Swift.Error>) -> Swift.Void)?)
+  public func getPresenceState(for uuid: Swift.String, on channels: [Swift.String], and groups: [Swift.String] = [], custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(uuid: Swift.String, stateByChannel: [Swift.String : KustomerNetworking.JSONCodable]), Swift.Error>) -> Swift.Void)?)
+  public func hereNow(on channels: [Swift.String], and groups: [Swift.String] = [], includeUUIDs: Swift.Bool = true, includeState: Swift.Bool = false, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : KustomerNetworking.KustomerPubNubV3Presence], Swift.Error>) -> Swift.Void)?)
+  public func whereNow(for uuid: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : [Swift.String]], Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func listChannelGroups(custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func remove(channelGroup: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
+  public func listChannels(for group: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
+  public func add(channels: [Swift.String], to group: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
+  public func remove(channels: [Swift.String], from group: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func listPushChannelRegistrations(for deviceToken: Foundation.Data, of pushType: KustomerNetworking.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func managePushChannelRegistrations(byRemoving removals: [Swift.String], thenAdding additions: [Swift.String], for deviceToken: Foundation.Data, of pushType: KustomerNetworking.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(added: [Swift.String], removed: [Swift.String]), Swift.Error>) -> Swift.Void)?)
+  public func addPushChannelRegistrations(_ additions: [Swift.String], for deviceToken: Foundation.Data, of pushType: KustomerNetworking.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func removePushChannelRegistrations(_ removals: [Swift.String], for deviceToken: Foundation.Data, of pushType: KustomerNetworking.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func removeAllPushChannelRegistrations(for deviceToken: Foundation.Data, of pushType: KustomerNetworking.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
+  public func listAPNSPushChannelRegistrations(for deviceToken: Foundation.Data, on topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func manageAPNSDevicesOnChannels(byRemoving removals: [Swift.String], thenAdding additions: [Swift.String], device token: Foundation.Data, on topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(added: [Swift.String], removed: [Swift.String]), Swift.Error>) -> Swift.Void)?)
+  public func addAPNSDevicesOnChannels(_ additions: [Swift.String], device token: Foundation.Data, on topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func removeAPNSDevicesOnChannels(_ removals: [Swift.String], device token: Foundation.Data, on topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
+  public func removeAllAPNSPushDevice(for deviceToken: Foundation.Data, on topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func fetchMessageHistory(for channels: [Swift.String], includeActions actions: Swift.Bool = false, includeMeta: Swift.Bool = false, page: KustomerNetworking.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(messagesByChannel: [Swift.String : [KustomerNetworking.KustomerPubNubV3Message]], next: KustomerNetworking.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
+  public func deleteMessageHistory(from channel: Swift.String, start: KustomerNetworking.Timetoken? = nil, end: KustomerNetworking.Timetoken? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
+  public func messageCounts(channels: [Swift.String : KustomerNetworking.Timetoken], custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
+  public func messageCounts(channels: [Swift.String], timetoken: KustomerNetworking.Timetoken = 1, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func allUUIDMetadata(include: KustomerNetworking.KustomerPubNubV3.IncludeFields = IncludeFields(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.ObjectSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(uuids: [KustomerNetworking.KustomerPubNubV3UUIDMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPage?), Swift.Error>) -> Swift.Void)?)
+  public func fetch(uuid metadata: Swift.String?, include customFields: Swift.Bool = true, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3UUIDMetadata, Swift.Error>) -> Swift.Void)?)
+  public func set(uuid metadata: KustomerNetworking.KustomerPubNubV3UUIDMetadata, include customFields: Swift.Bool = true, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3UUIDMetadata, Swift.Error>) -> Swift.Void)?)
+  public func remove(uuid metadataId: Swift.String?, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func allChannelMetadata(include: KustomerNetworking.KustomerPubNubV3.IncludeFields = IncludeFields(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.ObjectSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channels: [KustomerNetworking.KustomerPubNubV3ChannelMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func fetch(channel metadataId: Swift.String, include customFields: Swift.Bool = true, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3ChannelMetadata, Swift.Error>) -> Swift.Void)?)
+  public func set(channel metadata: KustomerNetworking.KustomerPubNubV3ChannelMetadata, include customFields: Swift.Bool = true, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3ChannelMetadata, Swift.Error>) -> Swift.Void)?)
+  public func remove(channel metadataId: Swift.String, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func fetchMemberships(uuid: Swift.String?, include: KustomerNetworking.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func fetchMembers(channel metadataId: Swift.String, include: KustomerNetworking.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func setMemberships(uuid metadataId: Swift.String?, channels memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func removeMemberships(uuid metadataId: Swift.String?, channels memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = nil, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func manageMemberships(uuid: Swift.String?, setting channelMembershipSets: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], removing channelMembershipDeletes: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func setMembers(channel metadataId: Swift.String, uuids members: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func removeMembers(channel metadataId: Swift.String, uuids members: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+  public func manageMembers(channel metadataId: Swift.String, setting uuidMembershipSets: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], removing uuidMembershipDeletes: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], include: KustomerNetworking.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerNetworking.KustomerPubNubV3MembershipMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func fetchMessageActions(channel: Swift.String, page: KustomerNetworking.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(actions: [KustomerNetworking.KustomerPubNubV3MessageAction], next: KustomerNetworking.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
+  public func addMessageAction(channel: Swift.String, type actionType: Swift.String, value: Swift.String, messageTimetoken: KustomerNetworking.Timetoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3MessageAction, Swift.Error>) -> Swift.Void)?)
+  public func removeMessageActions(channel: Swift.String, message timetoken: KustomerNetworking.Timetoken, action actionTimetoken: KustomerNetworking.Timetoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channel: Swift.String, message: KustomerNetworking.Timetoken, action: KustomerNetworking.Timetoken), Swift.Error>) -> Swift.Void)?)
+}
+extension KustomerPubNubV3 {
+  public func getToken(for identifier: Swift.String, with type: KustomerNetworking.PAMResourceType? = nil) -> KustomerNetworking.PAMToken?
+  public func getTokens(by type: KustomerNetworking.PAMResourceType) -> KustomerNetworking.PAMTokenStore
+  public func getAllTokens() -> [KustomerNetworking.PAMResourceType : KustomerNetworking.PAMTokenStore]
+  public mutating func set(token: Swift.String)
+  public mutating func set(tokens: [Swift.String])
+}
+public struct FCMWebpushConfig : Swift.Codable, Swift.Hashable {
+  public let headers: [Swift.String : Swift.String]?
+  public let notification: Swift.String?
+  public let options: KustomerNetworking.FCMWebpushFcmOptions?
+  public init(headers: [Swift.String : Swift.String]? = nil, notification: Swift.String? = nil, options: KustomerNetworking.FCMWebpushFcmOptions? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMWebpushConfig, b: KustomerNetworking.FCMWebpushConfig) -> Swift.Bool
+}
+public struct FCMWebpushNotification : Swift.Codable, Swift.Hashable {
+  public let actions: [KustomerNetworking.FCMWebpushAction]?
+  public let badge: Swift.String?
+  public let body: Swift.String?
+  public let dir: KustomerNetworking.FCMWebpushDirection?
+  public let lang: Swift.String?
+  public let tag: Swift.String?
+  public let icon: Swift.String?
+  public let image: Swift.String?
+  public let renotify: Swift.Bool?
+  public let requireInteraction: Swift.Bool?
+  public let silent: Swift.Bool?
+  public let timestamp: Foundation.Date?
+  public let title: Swift.String?
+  public let vibrate: [Swift.UInt]?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMWebpushNotification, b: KustomerNetworking.FCMWebpushNotification) -> Swift.Bool
+}
+public struct FCMWebpushAction : Swift.Codable, Swift.Hashable {
+  public let action: Swift.String?
+  public let title: Swift.String?
+  public let icon: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMWebpushAction, b: KustomerNetworking.FCMWebpushAction) -> Swift.Bool
+}
+public enum FCMWebpushDirection : Swift.String, Swift.Codable, Swift.Hashable {
+  case auto
+  case leftToRight
+  case rightToLeft
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct FCMWebpushFcmOptions : Swift.Codable, Swift.Hashable {
+  public let link: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMWebpushFcmOptions, b: KustomerNetworking.FCMWebpushFcmOptions) -> Swift.Bool
+}
+public protocol LogWriter {
+  var executor: KustomerNetworking.LogExecutable { get }
+  var prefix: KustomerNetworking.LogPrefix { get }
+  func send(message: Swift.String)
+}
+public protocol LogExecutable {
+  func execute(log job: @escaping () -> Swift.Void)
+}
+public enum LogExecutionType : KustomerNetworking.LogExecutable {
+  case sync(lock: Foundation.NSLocking)
+  case async(queue: Dispatch.DispatchQueue)
+  public func execute(log job: @escaping () -> Swift.Void)
+}
+public struct ConsoleLogWriter : KustomerNetworking.LogWriter {
+  public var sendToNSLog: Swift.Bool
+  public var executor: KustomerNetworking.LogExecutable
+  public var prefix: KustomerNetworking.LogPrefix
+  public init(sendToNSLog: Swift.Bool = false, prefix: KustomerNetworking.LogPrefix = .all, executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()))
+  public func send(message: Swift.String)
+}
+open class FileLogWriter : KustomerNetworking.LogWriter {
+  public var executor: KustomerNetworking.LogExecutable
+  public var prefix: KustomerNetworking.LogPrefix
+  public var maxFileSize: Swift.Int64
+  public var maxLogFiles: Swift.Int
+  public var directoryURL: Foundation.URL
+  required public init(logDirectory: Foundation.URL, executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()), prefix: KustomerNetworking.LogPrefix = .all)
+  public convenience init(inside domain: Foundation.FileManager.SearchPathDomainMask = .userDomainMask, at directory: Foundation.FileManager.SearchPathDirectory = .cachesDirectory, with name: Swift.String = "kustomerPubnub", executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()), prefix: KustomerNetworking.LogPrefix = .all)
+  public func send(message: Swift.String)
+  public func createOrUpdateFile(with contents: Swift.String) -> Foundation.URL?
+  public func update(_ file: Foundation.URL, message: Swift.String)
+  public func delete(_ file: Foundation.URL)
+  @objc deinit
+}
+public struct Crypto : Swift.Hashable {
+  public let key: Foundation.Data?
+  public let cipher: KustomerNetworking.Crypto.Cipher
+  public let defaultStringEncoding: Swift.String.Encoding
+  public init?(key: Swift.String, cipher: KustomerNetworking.Crypto.Cipher = .aes, encoding: Swift.String.Encoding = .utf8)
+  public init(key data: Foundation.Data, cipher: KustomerNetworking.Crypto.Cipher = .aes, encoding: Swift.String.Encoding = .utf8)
+  public enum Cipher : Swift.RawRepresentable, Swift.Hashable {
+    case aes
+    public init?(rawValue: CommonCrypto.CCAlgorithm)
+    public var rawValue: CommonCrypto.CCAlgorithm {
+      get
+    }
+    public var blockSize: Swift.Int {
+      get
+    }
+    public var keySizeRange: Swift.ClosedRange<Swift.Int> {
+      get
+    }
+    public func validate(keySize: Swift.Int) -> KustomerNetworking.CryptoError?
+    public typealias RawValue = CommonCrypto.CCAlgorithm
+  }
+  public struct SHA256 {
+    public static func hash(data: Foundation.Data) -> Foundation.Data?
+  }
+  public func encrypt(plaintext stringIn: Swift.String, encoding override: Swift.String.Encoding? = nil) -> Swift.Result<Swift.String, Swift.Error>
+  public func encrypt(encoded dataIn: Foundation.Data, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Foundation.Data, Swift.Error>
+  public func decrypt(base64Encoded stringIn: Swift.String, encoding override: Swift.String.Encoding? = nil, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Swift.String, Swift.Error>
+  public func decrypt(encrypted dataIn: Foundation.Data, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Foundation.Data, Swift.Error>
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.Crypto, b: KustomerNetworking.Crypto) -> Swift.Bool
+}
+public enum CryptoError : CommonCrypto.CCCryptorStatus, Swift.Error, Foundation.LocalizedError {
+  case bufferTooSmall
+  case alignmentError
+  case decodeError
+  case illegalParameter
+  case memoryFailure
+  case overflow
+  case rngFailure
+  case unspecifiedError
+  case callSequenceError
+  case keySizeError
+  case invalidKey
+  case unimplemented
+  case unknown
+  public init?(rawValue: CommonCrypto.CCCryptorStatus)
+  public typealias RawValue = CommonCrypto.CCCryptorStatus
+  public var rawValue: CommonCrypto.CCCryptorStatus {
+    get
+  }
+}
+extension DateFormatter {
+  public var currentDateString: Swift.String {
+    get
+  }
+  public static var iso8601: Foundation.DateFormatter
+}
+public struct InstanceIdOperator : KustomerNetworking.RequestOperator {
+  public let instanceID: Swift.String
+  public func mutate(_ urlRequest: Foundation.URLRequest, for _: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
+}
+public protocol SessionStream : KustomerNetworking.EventStreamReceiver {
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCreate urlRequest: Foundation.URLRequest)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didFailToCreateURLRequestWith error: Swift.Error)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCreate task: Foundation.URLSessionTask)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didResume task: Foundation.URLSessionTask)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCancel task: Foundation.URLSessionTask)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didComplete task: Foundation.URLSessionTask)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didComplete task: Foundation.URLSessionTask, with error: Swift.Error)
+  func emitRequestDidResume(_ request: KustomerNetworking.RequestReplaceable)
+  func emitRequestDidFinish(_ request: KustomerNetworking.RequestReplaceable)
+  func emitRequestDidCancel(_ request: KustomerNetworking.RequestReplaceable)
+  func emitRequestIsRetrying(_ request: KustomerNetworking.RequestReplaceable)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didMutate initialURLRequest: Foundation.URLRequest, to mutatedURLRequest: Foundation.URLRequest)
+  func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didFailToMutate initialURLRequest: Foundation.URLRequest, with error: Swift.Error)
+  func emitURLSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  func emitURLSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWith error: Swift.Error?)
+  func emitURLSession(_ session: Foundation.URLSession, didBecomeInvalidWith error: Swift.Error?)
+  func emitURLSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge)
+}
+extension SessionStream {
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didCreate _: Foundation.URLRequest)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didFailToCreateURLRequestWith _: Swift.Error)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didCreate _: Foundation.URLSessionTask)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didResume _: Foundation.URLSessionTask)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didCancel _: Foundation.URLSessionTask)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didComplete _: Foundation.URLSessionTask)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didComplete _: Foundation.URLSessionTask, with _: Swift.Error)
+  public func emitRequestDidResume(_: KustomerNetworking.RequestReplaceable)
+  public func emitRequestDidFinish(_: KustomerNetworking.RequestReplaceable)
+  public func emitRequestDidCancel(_: KustomerNetworking.RequestReplaceable)
+  public func emitRequestIsRetrying(_: KustomerNetworking.RequestReplaceable)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didMutate _: Foundation.URLRequest, to _: Foundation.URLRequest)
+  public func emitRequest(_: KustomerNetworking.RequestReplaceable, didFailToMutate _: Foundation.URLRequest, with _: Swift.Error)
+  public func emitURLSession(_: Foundation.URLSession, dataTask _: Foundation.URLSessionDataTask, didReceive _: Foundation.Data)
+  public func emitURLSession(_: Foundation.URLSession, task _: Foundation.URLSessionTask, didCompleteWith _: Swift.Error?)
+  public func emitURLSession(_: Foundation.URLSession, didBecomeInvalidWith _: Swift.Error?)
+}
+final public class MultiplexSessionStream : KustomerNetworking.SessionStream, Swift.Hashable {
+  final public let queue: Dispatch.DispatchQueue
+  final public let uuid: Foundation.UUID
+  final public let streams: [KustomerNetworking.SessionStream]
+  public init(_ streams: [KustomerNetworking.SessionStream], queue: Dispatch.DispatchQueue? = nil)
+  public static func == (lhs: KustomerNetworking.MultiplexSessionStream, rhs: KustomerNetworking.MultiplexSessionStream) -> Swift.Bool
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCreate urlRequest: Foundation.URLRequest)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didFailToCreateURLRequestWith error: Swift.Error)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCreate task: Foundation.URLSessionTask)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didResume task: Foundation.URLSessionTask)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didCancel task: Foundation.URLSessionTask)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didComplete task: Foundation.URLSessionTask)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didComplete task: Foundation.URLSessionTask, with error: Swift.Error)
+  final public func emitRequestDidResume(_ request: KustomerNetworking.RequestReplaceable)
+  final public func emitRequestDidFinish(_ request: KustomerNetworking.RequestReplaceable)
+  final public func emitRequestDidCancel(_ request: KustomerNetworking.RequestReplaceable)
+  final public func emitRequestIsRetrying(_ request: KustomerNetworking.RequestReplaceable)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didMutate initialURLRequest: Foundation.URLRequest, to mutatedURLRequest: Foundation.URLRequest)
+  final public func emitRequest(_ request: KustomerNetworking.RequestReplaceable, didFailToMutate initialURLRequest: Foundation.URLRequest, with error: Swift.Error)
+  final public func emitURLSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  final public func emitURLSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWith error: Swift.Error?)
+  final public func emitURLSession(_ session: Foundation.URLSession, didBecomeInvalidWith error: Swift.Error?)
+  final public func emitURLSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge)
+  @objc deinit
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol URLConvertible {
+  var asURL: Swift.Result<Foundation.URL, Swift.Error> { get }
+}
+public enum URLConvertibleError : Swift.Error {
+  case urlComponents
+  public static func == (a: KustomerNetworking.URLConvertibleError, b: KustomerNetworking.URLConvertibleError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension URLComponents : KustomerNetworking.URLConvertible {
+  public var asURL: Swift.Result<Foundation.URL, Swift.Error> {
+    get
+  }
+}
+public protocol URLRequestConvertible : KustomerNetworking.URLConvertible {
+  var asURLRequest: Swift.Result<Foundation.URLRequest, Swift.Error> { get }
+}
+extension Thread {
+  public static var currentName: Swift.String {
+    get
+  }
+}
+extension Error {
+  public var pubNubError: KustomerNetworking.KustomerPubNubV3Error? {
+    get
+  }
+  public var urlError: Foundation.URLError? {
+    get
+  }
+  public var isCancellationError: Swift.Bool {
+    get
+  }
+  public var encodingError: Swift.EncodingError? {
+    get
+  }
+  public var decodingError: Swift.DecodingError? {
+    get
+  }
+}
+public protocol Validated {
+  var validationError: Swift.Error? { get }
+  var validationErrorDetail: Swift.String? { get }
+}
+extension Validated {
+  public var isValid: Swift.Bool {
+    get
+  }
+  public var validResult: Swift.Result<Self, Swift.Error> {
+    get
+  }
+  public var validationErrorDetail: Swift.String? {
+    get
+  }
+}
+public enum ConnectionStatus : Swift.String {
+  case connecting
+  case connected
+  case reconnecting
+  case disconnected
+  case disconnectedUnexpectedly
+  public var isActive: Swift.Bool {
+    get
+  }
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension FileManager {
+  public func newestFile(_ directory: Foundation.URL) -> Foundation.URL?
+  public func oldestFile(_ directory: Foundation.URL) -> Foundation.URL?
+  public func files(in directory: Foundation.URL) -> [Foundation.URL]
+}
+extension URL {
+  public func appending(queryItems: [Foundation.URLQueryItem]) -> Foundation.URL?
+  public var sizeOf: Swift.Int {
+    get
+  }
+}
+public protocol KustomerPubNubV3UUIDMetadata {
+  var metadataId: Swift.String { get }
+  var name: Swift.String { get set }
+  var externalId: Swift.String? { get set }
+  var profileURL: Swift.String? { get set }
+  var email: Swift.String? { get set }
+  var updated: Foundation.Date? { get set }
+  var eTag: Swift.String? { get set }
+  var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? { get set }
+  init(from other: KustomerNetworking.KustomerPubNubV3UUIDMetadata) throws
+}
+extension KustomerPubNubV3UUIDMetadata {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3UUIDMetadata
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3UUIDMetadata
+}
+public struct KustomerPubNubV3UUIDMetadataBase : KustomerNetworking.KustomerPubNubV3UUIDMetadata, Swift.Hashable {
+  public let metadataId: Swift.String
+  public var name: Swift.String
+  public var externalId: Swift.String?
+  public var profileURL: Swift.String?
+  public var email: Swift.String?
+  public var updated: Foundation.Date?
+  public var eTag: Swift.String?
+  public var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? {
+    get
+    set(newValue)
+  }
+  public init(metadataId: Swift.String = UUID().uuidString, name: Swift.String, externalId: Swift.String? = nil, profileURL: Swift.String? = nil, email: Swift.String? = nil, custom concreteCustom: [Swift.String : KustomerNetworking.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
+  public init(from other: KustomerNetworking.KustomerPubNubV3UUIDMetadata) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3UUIDMetadataBase, b: KustomerNetworking.KustomerPubNubV3UUIDMetadataBase) -> Swift.Bool
+}
+extension KustomerPubNubV3UUIDMetadataBase : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct KustomerPubNubV3Error : Swift.Error {
+  public let reason: KustomerNetworking.KustomerPubNubV3Error.Reason
+  public let details: [Swift.String]
+  public let underlying: Swift.Error?
+  public let affected: [KustomerNetworking.KustomerPubNubV3Error.AffectedValue]
+  public let domain: Swift.String
+  public var subdomain: KustomerNetworking.KustomerPubNubV3Error.Domain {
+    get
+  }
+  public enum AffectedValue : Swift.Hashable {
+    case uuid(Foundation.UUID)
+    case string(Swift.String)
+    case data(Foundation.Data)
+    case request(Foundation.URLRequest)
+    case response(Foundation.HTTPURLResponse)
+    case json(KustomerNetworking.AnyJSON)
+    case subscribe(KustomerNetworking.SubscribeCursor)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: KustomerNetworking.KustomerPubNubV3Error.AffectedValue, b: KustomerNetworking.KustomerPubNubV3Error.AffectedValue) -> Swift.Bool
+  }
+  public enum Domain : Swift.Int, Swift.Error, Swift.Hashable, Swift.Codable, Foundation.LocalizedError {
+    case urlCreation
+    case jsonCodability
+    case requestProcessing
+    case crypto
+    case requestTransmission
+    case responseReceiving
+    case responseProcessing
+    case endpointResponse
+    case serviceNotEnabled
+    case uncategorized
+    case cancellation
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Reason : Swift.Int, Swift.Equatable, Swift.Hashable, Swift.Codable {
+    case missingRequiredParameter
+    case invalidEndpointType
+    case missingPublishKey
+    case missingSubscribeKey
+    case missingPublishAndSubscribeKey
+    case jsonStringEncodingFailure
+    case jsonStringDecodingFailure
+    case jsonDataEncodingFailure
+    case jsonDataDecodingFailure
+    case missingCryptoKey
+    case requestMutatorFailure
+    case requestRetryFailed
+    case timedOut
+    case nameResolutionFailure
+    case invalidURL
+    case connectionFailure
+    case connectionOverDataFailure
+    case connectionLost
+    case secureConnectionFailure
+    case certificateTrustFailure
+    case sessionDeinitialized
+    case sessionInvalidated
+    case clientCancelled
+    case longPollingRestart
+    case badServerResponse
+    case responseDecodingFailure
+    case dataLengthExceedsMaximum
+    case missingCriticalResponseData
+    case unrecognizedStatusCode
+    case malformedResponseBody
+    case invalidArguments
+    case invalidCharacter
+    case invalidDevicePushToken
+    case invalidSubscribeKey
+    case invalidPublishKey
+    case maxChannelGroupCountExceeded
+    case couldNotParseRequest
+    case requestContainedInvalidJSON
+    case messageCountExceededMaximum
+    case messageTooLong
+    case invalidUUID
+    case nothingToDelete
+    case failedToPublish
+    case pushNotEnabled
+    case messageHistoryNotEnabled
+    case messageDeletionNotEnabled
+    case multiplexingNotEnabled
+    case unknown
+    case badRequest
+    case unauthorized
+    case forbidden
+    case resourceNotFound
+    case conflict
+    case preconditionFailed
+    case requestURITooLong
+    case tooManyRequests
+    case unsupportedType
+    case malformedFilterExpression
+    case internalServiceError
+    case serviceUnavailable
+    public var domain: KustomerNetworking.KustomerPubNubV3Error.Domain {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension KustomerPubNubV3Error : Swift.Hashable {
+  public static func == (lhs: KustomerNetworking.KustomerPubNubV3Error, rhs: KustomerNetworking.KustomerPubNubV3Error) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Optional where Wrapped == KustomerNetworking.KustomerPubNubV3Error {
+  public static func == (lhs: Swift.Optional<Wrapped>, rhs: KustomerNetworking.KustomerPubNubV3Error.Reason?) -> Swift.Bool
+  public static func != (lhs: Swift.Optional<Wrapped>, rhs: KustomerNetworking.KustomerPubNubV3Error.Reason?) -> Swift.Bool
+}
+extension Optional where Wrapped == KustomerNetworking.KustomerPubNubV3Error.Reason {
+  public static func == (lhs: Swift.Optional<Wrapped>, rhs: KustomerNetworking.KustomerPubNubV3Error?) -> Swift.Bool
+  public static func != (lhs: Swift.Optional<Wrapped>, rhs: KustomerNetworking.KustomerPubNubV3Error?) -> Swift.Bool
+}
+extension KustomerPubNubV3Error {
+  public var urlError: Foundation.URLError? {
+    get
+  }
+}
+extension Data {
+  public var trulyEmpty: Swift.Bool {
+    get
+  }
+  public var hexEncodedString: Swift.String {
+    get
+  }
+  public init?(hexEncodedString: Swift.String)
+}
+extension Array where Element == Foundation.URLQueryItem {
+  public func merging(_ other: [Foundation.URLQueryItem]) -> [Foundation.URLQueryItem]
+  public mutating func merge(_ other: [Foundation.URLQueryItem])
+  public func firstIndex(of name: Swift.String) -> Swift.Int?
+  public mutating func appendIfPresent(name: Swift.String, value: Swift.String?)
+  public mutating func appendIfNotEmpty(name: Swift.String, value: [Swift.String])
+}
+public enum SubscriptionChangeEvent {
+  case subscribed(channels: [KustomerNetworking.KustomerPubNubV3Channel], groups: [KustomerNetworking.KustomerPubNubV3Channel])
+  case responseHeader(channels: [KustomerNetworking.KustomerPubNubV3Channel], groups: [KustomerNetworking.KustomerPubNubV3Channel], previous: KustomerNetworking.SubscribeCursor?, next: KustomerNetworking.SubscribeCursor?)
+  case unsubscribed(channels: [KustomerNetworking.KustomerPubNubV3Channel], groups: [KustomerNetworking.KustomerPubNubV3Channel])
+}
+public enum SubscriptionEvent {
+  case messageReceived(KustomerNetworking.KustomerPubNubV3Message)
+  case signalReceived(KustomerNetworking.KustomerPubNubV3Message)
+  case connectionStatusChanged(KustomerNetworking.ConnectionStatus)
+  case subscriptionChanged(KustomerNetworking.SubscriptionChangeEvent)
+  case presenceChanged(KustomerNetworking.KustomerPubNubV3PresenceChange)
+  case uuidMetadataSet(KustomerNetworking.KustomerPubNubV3UUIDMetadataChangeset)
+  case uuidMetadataRemoved(metadataId: Swift.String)
+  case channelMetadataSet(KustomerNetworking.KustomerPubNubV3ChannelMetadataChangeset)
+  case channelMetadataRemoved(metadataId: Swift.String)
+  case membershipMetadataSet(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
+  case membershipMetadataRemoved(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
+  case messageActionAdded(KustomerNetworking.KustomerPubNubV3MessageAction)
+  case messageActionRemoved(KustomerNetworking.KustomerPubNubV3MessageAction)
+  case subscribeError(KustomerNetworking.KustomerPubNubV3Error)
+}
+public protocol SubscriptionStream : KustomerNetworking.EventStreamReceiver {
+  func emitDidReceive(subscription event: KustomerNetworking.SubscriptionEvent)
+  func emitDidReceiveBatch(subscription event: [KustomerNetworking.SubscriptionEvent])
+}
+final public class SubscriptionListener : KustomerNetworking.SubscriptionStream, Swift.Hashable {
+  final public let uuid: Foundation.UUID
+  final public var queue: Dispatch.DispatchQueue
+  final public var supressCancellationErrors: Swift.Bool
+  public init(queue: Dispatch.DispatchQueue = .main)
+  @objc deinit
+  public enum MessageActionEvent {
+    case added(KustomerNetworking.KustomerPubNubV3MessageAction)
+    case removed(KustomerNetworking.KustomerPubNubV3MessageAction)
+  }
+  public enum ObjectMetadataChangeEvents {
+    case setUUID(KustomerNetworking.KustomerPubNubV3UUIDMetadataChangeset)
+    case removedUUID(metadataId: Swift.String)
+    case setChannel(KustomerNetworking.KustomerPubNubV3ChannelMetadataChangeset)
+    case removedChannel(metadataId: Swift.String)
+    case setMembership(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
+    case removedMembership(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
+  }
+  public typealias StatusEvent = Swift.Result<KustomerNetworking.ConnectionStatus, KustomerNetworking.KustomerPubNubV3Error>
+  final public var didReceiveBatchSubscription: (([KustomerNetworking.SubscriptionEvent]) -> Swift.Void)?
+  final public var didReceiveSubscription: ((KustomerNetworking.SubscriptionEvent) -> Swift.Void)?
+  final public var didReceiveMessage: ((KustomerNetworking.KustomerPubNubV3Message) -> Swift.Void)?
+  final public var didReceiveStatus: ((KustomerNetworking.SubscriptionListener.StatusEvent) -> Swift.Void)?
+  final public var didReceivePresence: ((KustomerNetworking.KustomerPubNubV3PresenceChange) -> Swift.Void)?
+  final public var didReceiveSignal: ((KustomerNetworking.KustomerPubNubV3Message) -> Swift.Void)?
+  final public var didReceiveSubscriptionChange: ((KustomerNetworking.SubscriptionChangeEvent) -> Swift.Void)?
+  final public var didReceiveObjectMetadataEvent: ((KustomerNetworking.SubscriptionListener.ObjectMetadataChangeEvents) -> Swift.Void)?
+  final public var didReceiveMessageAction: ((KustomerNetworking.SubscriptionListener.MessageActionEvent) -> Swift.Void)?
+  final public func emitDidReceiveBatch(subscription batch: [KustomerNetworking.SubscriptionEvent])
+  final public func emitDidReceive(subscription event: KustomerNetworking.SubscriptionEvent)
+  public static func == (lhs: KustomerNetworking.SubscriptionListener, rhs: KustomerNetworking.SubscriptionListener) -> Swift.Bool
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SubscriptionListener : KustomerNetworking.Cancellable {
+  final public var isCancelled: Swift.Bool {
+    get
+  }
+  final public func cancel()
+}
+public protocol KustomerPubNubV3Presence {
+  var channel: Swift.String { get }
+  var occupancy: Swift.Int { get set }
+  var occupants: [Swift.String] { get set }
+  var occupantsState: [Swift.String : KustomerNetworking.JSONCodable] { get set }
+  init(from other: KustomerNetworking.KustomerPubNubV3Presence) throws
+}
+extension KustomerPubNubV3Presence {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3Presence
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3Presence
+}
+extension Dictionary where Key == Swift.String, Value == KustomerNetworking.KustomerPubNubV3Presence {
+  public var totalChannels: Swift.Int {
+    get
+  }
+  public var totalOccupancy: Swift.Int {
+    get
+  }
+}
+public struct KustomerPubNubV3PresenceBase : KustomerNetworking.KustomerPubNubV3Presence, Swift.Hashable {
+  public let channel: Swift.String
+  public var occupancy: Swift.Int
+  public var occupants: [Swift.String]
+  public var occupantsState: [Swift.String : KustomerNetworking.JSONCodable] {
+    get
+    set(newValue)
+  }
+  public init(channel: Swift.String, occupancy: Swift.Int, occupants: [Swift.String], occupantsState concreteOccupantsState: [Swift.String : KustomerNetworking.JSONCodable])
+  public init(from other: KustomerNetworking.KustomerPubNubV3Presence) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3PresenceBase, b: KustomerNetworking.KustomerPubNubV3PresenceBase) -> Swift.Bool
+}
+public enum KustomerPubNubV3PresenceChangeAction : Swift.Hashable {
+  case join(uuids: [Swift.String])
+  case leave(uuids: [Swift.String])
+  case timeout(uuids: [Swift.String])
+  case stateChange(uuid: Swift.String, state: KustomerNetworking.JSONCodable)
+  public static func == (lhs: KustomerNetworking.KustomerPubNubV3PresenceChangeAction, rhs: KustomerNetworking.KustomerPubNubV3PresenceChangeAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Array where Element == KustomerNetworking.KustomerPubNubV3PresenceChangeAction {
+  public func join(contains uuid: Swift.String) -> Swift.Bool
+  public func leave(contains uuid: Swift.String) -> Swift.Bool
+  public func timeout(contains uuid: Swift.String) -> Swift.Bool
+}
+public protocol KustomerPubNubV3PresenceChange {
+  var actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction] { get }
+  var occupancy: Swift.Int { get }
+  var timetoken: KustomerNetworking.Timetoken { get }
+  var refreshHereNow: Swift.Bool { get }
+  var channel: Swift.String { get }
+  var subscription: Swift.String? { get }
+  var published: KustomerNetworking.Timetoken? { get }
+  var metadata: KustomerNetworking.JSONCodable? { get }
+  init(from other: KustomerNetworking.KustomerPubNubV3PresenceChange) throws
+}
+extension KustomerPubNubV3PresenceChange {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3PresenceChange
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3PresenceChange
+}
+public struct KustomerPubNubV3PresenceChangeBase : KustomerNetworking.KustomerPubNubV3PresenceChange, Swift.Hashable {
+  public var actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction]
+  public var occupancy: Swift.Int
+  public var timetoken: KustomerNetworking.Timetoken
+  public var refreshHereNow: Swift.Bool
+  public var channel: Swift.String
+  public var subscription: Swift.String?
+  public var published: KustomerNetworking.Timetoken?
+  public var metadata: KustomerNetworking.JSONCodable? {
+    get
+  }
+  public init(from other: KustomerNetworking.KustomerPubNubV3PresenceChange) throws
+  public init(actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction], occupancy: Swift.Int, timetoken: KustomerNetworking.Timetoken, refreshHereNow: Swift.Bool, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.Timetoken? = nil, metadata: KustomerNetworking.JSONCodable? = nil)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3PresenceChangeBase, b: KustomerNetworking.KustomerPubNubV3PresenceChangeBase) -> Swift.Bool
+}
+public protocol KustomerPubNubV3ChannelMetadata {
+  var metadataId: Swift.String { get }
+  var name: Swift.String { get set }
+  var channelDescription: Swift.String? { get set }
+  var updated: Foundation.Date? { get set }
+  var eTag: Swift.String? { get set }
+  var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? { get set }
+  init(from other: KustomerNetworking.KustomerPubNubV3ChannelMetadata) throws
+}
+extension KustomerPubNubV3ChannelMetadata {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3ChannelMetadata
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3ChannelMetadata
+}
+public struct KustomerPubNubV3ChannelMetadataBase : KustomerNetworking.KustomerPubNubV3ChannelMetadata, Swift.Hashable {
+  public let metadataId: Swift.String
+  public var name: Swift.String
+  public var channelDescription: Swift.String?
+  public var updated: Foundation.Date?
+  public var eTag: Swift.String?
+  public var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? {
+    get
+    set(newValue)
+  }
+  public init(metadataId: Swift.String = UUID().uuidString, name: Swift.String, channelDescription: Swift.String? = nil, custom concreteCustom: [Swift.String : KustomerNetworking.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
+  public init(from other: KustomerNetworking.KustomerPubNubV3ChannelMetadata) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3ChannelMetadataBase, b: KustomerNetworking.KustomerPubNubV3ChannelMetadataBase) -> Swift.Bool
+}
+extension KustomerPubNubV3ChannelMetadataBase : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Constant {
+  public static var jsonDecoder: Foundation.JSONDecoder
+  public static var jsonEncoder: Foundation.JSONEncoder
+}
+extension Constant {
+  public static var acceptEncodingHeaderKey: Swift.String
+  public static var defaultAcceptEncodingHeader: Swift.String
+  public static var contentTypeHeaderKey: Swift.String
+  public static var defaultContentTypeHeader: Swift.String
+  public static var userAgentHeaderKey: Swift.String
+}
+public struct SubscriptionState {
+  public var connectionState: KustomerNetworking.ConnectionStatus
+  public var channels: [Swift.String : KustomerNetworking.KustomerPubNubV3Channel]
+  public var groups: [Swift.String : KustomerNetworking.KustomerPubNubV3Channel]
+  public var subscribedChannels: [Swift.String] {
+    get
+  }
+  public var subscribedGroups: [Swift.String] {
+    get
+  }
+  public var totalSubscribedCount: Swift.Int {
+    get
+  }
+}
+public struct KustomerPubNubV3Channel : Swift.Hashable {
+  public let id: Swift.String
+  public let presenceId: Swift.String
+  public var isPresenceSubscribed: Swift.Bool
+  public init(id: Swift.String, withPresence: Swift.Bool = false)
+  public init(channel: Swift.String)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3Channel, b: KustomerNetworking.KustomerPubNubV3Channel) -> Swift.Bool
+}
+extension KustomerPubNubV3Channel : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension Dictionary where Key == Swift.String, Value == KustomerNetworking.KustomerPubNubV3Channel {
+  public mutating func insert(_ channel: Value) -> Swift.Bool
+  public mutating func unsubscribePresence(_ id: Swift.String) -> Value?
+}
+public struct KustomerPubNubV3PushMessage : KustomerNetworking.JSONCodable {
+  public let apns: KustomerNetworking.KustomerPubNubV3APNSPayload?
+  public let fcm: KustomerNetworking.KustomerPubNubV3FCMPayload?
+  public let mpns: KustomerNetworking.JSONCodable?
+  public var additionalMessage: KustomerNetworking.JSONCodable?
+  public init(apns: KustomerNetworking.KustomerPubNubV3APNSPayload? = nil, fcm: KustomerNetworking.KustomerPubNubV3FCMPayload? = nil, mpns: KustomerNetworking.JSONCodable? = nil, additional message: KustomerNetworking.JSONCodable? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol KustomerPubNubV3MembershipMetadata {
+  var uuidMetadataId: Swift.String { get }
+  var channelMetadataId: Swift.String { get }
+  var uuid: KustomerNetworking.KustomerPubNubV3UUIDMetadata? { get set }
+  var channel: KustomerNetworking.KustomerPubNubV3ChannelMetadata? { get set }
+  var updated: Foundation.Date? { get set }
+  var eTag: Swift.String? { get set }
+  var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? { get set }
+  init(from other: KustomerNetworking.KustomerPubNubV3MembershipMetadata) throws
+}
+extension KustomerPubNubV3MembershipMetadata {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3MembershipMetadata
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3MembershipMetadata
+}
+public struct KustomerPubNubV3MembershipMetadataBase : KustomerNetworking.KustomerPubNubV3MembershipMetadata, Swift.Hashable {
+  public let uuidMetadataId: Swift.String
+  public let channelMetadataId: Swift.String
+  public var uuid: KustomerNetworking.KustomerPubNubV3UUIDMetadata? {
+    get
+    set(newValue)
+  }
+  public var channel: KustomerNetworking.KustomerPubNubV3ChannelMetadata? {
+    get
+    set(newValue)
+  }
+  public var custom: [Swift.String : KustomerNetworking.JSONCodableScalar]? {
+    get
+    set(newValue)
+  }
+  public var updated: Foundation.Date?
+  public var eTag: Swift.String?
+  public init(uuidMetadataId: Swift.String, channelMetadataId: Swift.String, uuid: KustomerNetworking.KustomerPubNubV3UUIDMetadataBase? = nil, channel: KustomerNetworking.KustomerPubNubV3ChannelMetadataBase? = nil, custom concreteCustom: [Swift.String : KustomerNetworking.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
+  public init(from other: KustomerNetworking.KustomerPubNubV3MembershipMetadata) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3MembershipMetadataBase, b: KustomerNetworking.KustomerPubNubV3MembershipMetadataBase) -> Swift.Bool
+}
+extension KustomerPubNubV3MembershipMetadataBase : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension URLRequest {
+  public var method: KustomerNetworking.HTTPMethod? {
+    get
+    set(newValue)
+  }
+}
+public struct AnyJSON {
+  public init(_ value: Any)
+  public init(reverse stringify: Swift.String)
+  public var isEmpty: Swift.Bool {
+    get
+  }
+}
+extension AnyJSON : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public func decode<T>(_ type: T.Type) throws -> T where T : Swift.Decodable
+}
+public enum AnyJSONIndex : Swift.Comparable {
+  case arrayIndex(Swift.Int)
+  case dictionaryIndex(Swift.DictionaryIndex<Swift.String, Any>)
+  case null
+  public static func == (lhs: KustomerNetworking.AnyJSONIndex, rhs: KustomerNetworking.AnyJSONIndex) -> Swift.Bool
+  public static func < (lhs: KustomerNetworking.AnyJSONIndex, rhs: KustomerNetworking.AnyJSONIndex) -> Swift.Bool
+}
+extension AnyJSON : Swift.Collection {
+  public var startIndex: KustomerNetworking.AnyJSONIndex {
+    get
+  }
+  public var endIndex: KustomerNetworking.AnyJSONIndex {
+    get
+  }
+  public func index(after index: KustomerNetworking.AnyJSONIndex) -> KustomerNetworking.AnyJSONIndex
+  public subscript(position: KustomerNetworking.AnyJSONIndex) -> (Swift.String, KustomerNetworking.AnyJSON) {
+    get
+  }
+  public subscript(rawValue position: KustomerNetworking.AnyJSONIndex) -> (Swift.String, Any)? {
+    get
+  }
+  public subscript(key: Swift.String) -> KustomerNetworking.AnyJSON? {
+    get
+  }
+  public subscript(rawValue key: Swift.String) -> Any? {
+    get
+  }
+  public typealias Element = (Swift.String, KustomerNetworking.AnyJSON)
+  public typealias Index = KustomerNetworking.AnyJSONIndex
+  public typealias Iterator = Swift.IndexingIterator<KustomerNetworking.AnyJSON>
+  public typealias SubSequence = Swift.Slice<KustomerNetworking.AnyJSON>
+  public typealias Indices = Swift.DefaultIndices<KustomerNetworking.AnyJSON>
+}
+extension AnyJSON : Swift.Hashable {
+  public static func == (lhs: KustomerNetworking.AnyJSON, rhs: KustomerNetworking.AnyJSON) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnyJSON {
+  public var underlyingValue: Any {
+    get
+  }
+  public var isNil: Swift.Bool {
+    get
+  }
+  public var stringOptional: Swift.String? {
+    get
+  }
+  public var dataOptional: Foundation.Data? {
+    get
+  }
+  public var boolOptional: Swift.Bool? {
+    get
+  }
+  public var intOptional: Swift.Int? {
+    get
+  }
+  public var doubleOptional: Swift.Double? {
+    get
+  }
+  public var arrayOptional: [Any]? {
+    get
+  }
+  public var wrappedUnderlyingArray: [KustomerNetworking.AnyJSON] {
+    get
+  }
+  public var dictionaryOptional: [Swift.String : Any]? {
+    get
+  }
+  public var wrappedUnderlyingDictionary: [Swift.String : KustomerNetworking.AnyJSON] {
+    get
+  }
+}
+extension AnyJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyJSON : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: Swift.Codable...)
+  public typealias ArrayLiteralElement = Swift.Codable
+}
+extension AnyJSON : Swift.ExpressibleByDictionaryLiteral {
+  public init(dictionaryLiteral elements: (Swift.String, Swift.Codable)...)
+  public typealias Key = Swift.String
+  public typealias Value = Swift.Codable
+}
+extension AnyJSON : Swift.ExpressibleByBooleanLiteral {
+  public init(booleanLiteral value: Swift.BooleanLiteralType)
+  public typealias BooleanLiteralType = Swift.BooleanLiteralType
+}
+extension AnyJSON : Swift.ExpressibleByFloatLiteral {
+  public init(floatLiteral value: Swift.FloatLiteralType)
+  public typealias FloatLiteralType = Swift.FloatLiteralType
+}
+extension AnyJSON : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.IntegerLiteralType)
+  public typealias IntegerLiteralType = Swift.IntegerLiteralType
+}
+extension AnyJSON : Swift.ExpressibleByStringLiteral {
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+}
+@_hasMissingDesignatedInitializers public class SubscriptionSession {
+  final public let uuid: Foundation.UUID
+  public var filterExpression: Swift.String?
+  public var subscribedChannels: [Swift.String] {
+    get
+  }
+  public var subscribedChannelGroups: [Swift.String] {
+    get
+  }
+  public var subscriptionCount: Swift.Int {
+    get
+  }
+  public var connectionStatus: KustomerNetworking.ConnectionStatus {
+    get
+  }
+  @objc deinit
+  public func subscribe(to channels: [Swift.String], and groups: [Swift.String] = [], at cursor: KustomerNetworking.SubscribeCursor? = nil, withPresence: Swift.Bool = false)
+  public func reconnect(at cursor: KustomerNetworking.SubscribeCursor? = nil)
+  public func disconnect()
+  public func unsubscribe(from channels: [Swift.String], and groups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
+  public func unsubscribeAll()
+}
+extension SubscriptionSession : KustomerNetworking.EventStreamEmitter {
+  public typealias ListenerType = KustomerNetworking.SubscriptionListener
+  public var listeners: [KustomerNetworking.SubscriptionSession.ListenerType] {
+    get
+  }
+  public func add(_ listener: KustomerNetworking.SubscriptionSession.ListenerType)
+  public func notify(listeners closure: (KustomerNetworking.SubscriptionSession.ListenerType) -> Swift.Void)
+}
+extension SubscriptionSession : Swift.Hashable, Swift.CustomStringConvertible {
+  public static func == (lhs: KustomerNetworking.SubscriptionSession, rhs: KustomerNetworking.SubscriptionSession) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var description: Swift.String {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RouterConfiguration {
+  var publishKey: Swift.String? { get }
+  var subscribeKey: Swift.String { get }
+  var uuid: Swift.String { get }
+  var useSecureConnections: Swift.Bool { get }
+  var origin: Swift.String { get }
+  var authKey: Swift.String? { get }
+  var cipherKey: KustomerNetworking.Crypto? { get }
+  var useRequestId: Swift.Bool { get }
+}
+extension RouterConfiguration {
+  public var urlScheme: Swift.String {
+    get
+  }
+  public var subscribeKeyExists: Swift.Bool {
+    get
+  }
+  public var publishKeyExists: Swift.Bool {
+    get
+  }
+}
+extension KustomerPubNubV3Configuration : KustomerNetworking.RouterConfiguration {
+}
+public enum HTTPMethod : Swift.String {
+  case connect
+  case delete
+  case get
+  case head
+  case options
+  case patch
+  case post
+  case put
+  case trace
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KustomerPubNubV3Service : Swift.String {
+  case channelGroup
+  case history
+  case messageActions
+  case objects
+  case presence
+  case publish
+  case push
+  case subscribe
+  case time
+  case unknown
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol HTTPRouter : KustomerNetworking.URLRequestConvertible, KustomerNetworking.Validated, Swift.CustomStringConvertible {
+  var service: KustomerNetworking.KustomerPubNubV3Service { get }
+  var category: Swift.String { get }
+  var configuration: KustomerNetworking.RouterConfiguration { get }
+  var method: KustomerNetworking.HTTPMethod { get }
+  var path: Swift.Result<Swift.String, Swift.Error> { get }
+  var queryItems: Swift.Result<[Foundation.URLQueryItem], Swift.Error> { get }
+  var additionalHeaders: [Swift.String : Swift.String] { get }
+  var body: Swift.Result<Foundation.Data?, Swift.Error> { get }
+  var keysRequired: KustomerNetworking.PNKeyRequirement { get }
+  var pamVersion: KustomerNetworking.PAMVersionRequirement { get }
+  func decodeError(request: Foundation.URLRequest, response: Foundation.HTTPURLResponse, for data: Foundation.Data) -> KustomerNetworking.KustomerPubNubV3Error?
+}
+extension HTTPRouter {
+  public var method: KustomerNetworking.HTTPMethod {
+    get
+  }
+  public var additionalHeaders: [Swift.String : Swift.String] {
+    get
+  }
+  public var body: Swift.Result<Foundation.Data?, Swift.Error> {
+    get
+  }
+  public var keysRequired: KustomerNetworking.PNKeyRequirement {
+    get
+  }
+  public var pamVersion: KustomerNetworking.PAMVersionRequirement {
+    get
+  }
+  public func decodeError(request: Foundation.URLRequest, response: Foundation.HTTPURLResponse, for data: Foundation.Data) -> KustomerNetworking.KustomerPubNubV3Error?
+  public var validationError: Swift.Error? {
+    get
+  }
+  public var keyValidationErrorReason: KustomerNetworking.KustomerPubNubV3Error.Reason? {
+    get
+  }
+}
+extension HTTPRouter {
+  public var asURL: Swift.Result<Foundation.URL, Swift.Error> {
+    get
+  }
+  public var asURLRequest: Swift.Result<Foundation.URLRequest, Swift.Error> {
+    get
+  }
+}
+extension HTTPRouter {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol KustomerPubNubV3Message {
+  var payload: KustomerNetworking.JSONCodable { get set }
+  var actions: [KustomerNetworking.KustomerPubNubV3MessageAction] { get set }
+  var publisher: Swift.String? { get set }
+  var channel: Swift.String { get }
+  var subscription: Swift.String? { get }
+  var published: KustomerNetworking.Timetoken { get set }
+  var metadata: KustomerNetworking.JSONCodable? { get set }
+  init(from other: KustomerNetworking.KustomerPubNubV3Message) throws
+}
+extension KustomerPubNubV3Message {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3Message
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3Message
+}
+public struct KustomerPubNubV3MessageBase : KustomerNetworking.KustomerPubNubV3Message, Swift.Codable, Swift.Hashable {
+  public var publisher: Swift.String?
+  public var channel: Swift.String
+  public var subscription: Swift.String?
+  public var published: KustomerNetworking.Timetoken
+  public var payload: KustomerNetworking.JSONCodable {
+    get
+    set(newValue)
+  }
+  public var actions: [KustomerNetworking.KustomerPubNubV3MessageAction] {
+    get
+    set(newValue)
+  }
+  public var metadata: KustomerNetworking.JSONCodable? {
+    get
+    set(newValue)
+  }
+  public init(from other: KustomerNetworking.KustomerPubNubV3Message) throws
+  public init(payload: KustomerNetworking.AnyJSON, actions: [KustomerNetworking.KustomerPubNubV3MessageActionBase], publisher: Swift.String?, channel: Swift.String, subscription: Swift.String?, published: KustomerNetworking.Timetoken, metadata: KustomerNetworking.AnyJSON?)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3MessageBase, b: KustomerNetworking.KustomerPubNubV3MessageBase) -> Swift.Bool
+}
+extension String {
+  public var jsonDescription: Swift.String {
+    get
+  }
+}
+public struct KustomerPubNubV3PushConfig : Swift.Codable, Swift.Hashable {
+  public let authMethod: Swift.String
+  public let targets: [KustomerNetworking.KustomerPubNubV3PushTarget]
+  public let version: Swift.String
+  public let collapseID: Swift.String?
+  public let expiration: Foundation.Date?
+  public init(targets: [KustomerNetworking.KustomerPubNubV3PushTarget], collapseID: Swift.String? = nil, expiration: Foundation.Date? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3PushConfig, b: KustomerNetworking.KustomerPubNubV3PushConfig) -> Swift.Bool
+}
+public struct KustomerPubNubV3PushTarget : Swift.Codable, Swift.Hashable {
+  public let topic: Swift.String
+  public let environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
+  public let excludedDevices: [Swift.String]?
+  public init(topic: Swift.String, environment: KustomerNetworking.KustomerPubNubV3.PushEnvironment = .development, excludedDevices: [Swift.String]? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3PushTarget, b: KustomerNetworking.KustomerPubNubV3PushTarget) -> Swift.Bool
+}
+public struct KustomerPubNubV3APNSPayload : Swift.Codable {
+  public let aps: KustomerNetworking.APSPayload
+  public let pubnub: [KustomerNetworking.KustomerPubNubV3PushConfig]
+  public let payload: KustomerNetworking.JSONCodable?
+  public init(aps: KustomerNetworking.APSPayload, pubnub: [KustomerNetworking.KustomerPubNubV3PushConfig], payload: KustomerNetworking.JSONCodable?)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct APSPayload : Swift.Codable, Swift.Hashable {
+  public let alert: KustomerNetworking.APSAlert?
+  public let badge: Swift.Int?
+  public let sound: KustomerNetworking.APSSound?
+  public let threadID: Swift.String?
+  public let category: Swift.String?
+  public let contentAvailable: Swift.Int?
+  public let mutableContent: Swift.Int?
+  public let targetContentID: Swift.String?
+  public init(alert: KustomerNetworking.APSAlert? = nil, badge: Swift.Int? = nil, sound: KustomerNetworking.APSSound? = .string("default"), threadID: Swift.String? = nil, category: Swift.String? = nil, contentAvailable: Swift.Int? = nil, mutableContent: Swift.Int? = nil, targetContentID: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.APSPayload, b: KustomerNetworking.APSPayload) -> Swift.Bool
+}
+public enum APSAlert : Swift.Codable, Swift.Hashable {
+  case body(Swift.String)
+  case object(KustomerNetworking.APSAlertObject)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.APSAlert, b: KustomerNetworking.APSAlert) -> Swift.Bool
+}
+public struct APSAlertObject : Swift.Codable, Swift.Hashable {
+  public let title: Swift.String?
+  public let subtitle: Swift.String?
+  public let body: Swift.String?
+  public let launchImage: Swift.String?
+  public let titleLocKey: Swift.String?
+  public let titleLocArgs: [Swift.String]?
+  public let subtitleLocKey: [Swift.String]?
+  public let subtitleLocArgs: [Swift.String]?
+  public let locKey: Swift.String?
+  public let locArgs: [Swift.String]?
+  public init(title: Swift.String? = nil, subtitle: Swift.String? = nil, body: Swift.String? = nil, launchImage: Swift.String? = nil, titleLocKey: Swift.String? = nil, titleLocArgs: [Swift.String]? = nil, subtitleLocKey: [Swift.String]? = nil, subtitleLocArgs: [Swift.String]? = nil, locKey: Swift.String? = nil, locArgs: [Swift.String]? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.APSAlertObject, b: KustomerNetworking.APSAlertObject) -> Swift.Bool
+}
+public enum APSSound : Swift.Codable, Swift.Hashable {
+  case string(Swift.String)
+  case critical(KustomerNetworking.APSCriticalSound)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.APSSound, b: KustomerNetworking.APSSound) -> Swift.Bool
+}
+public struct APSCriticalSound : Swift.Codable, Swift.Hashable {
+  public let critical: Swift.Int?
+  public let name: Swift.String
+  public let volume: Swift.Int?
+  public init(critical: Swift.Int? = nil, name: Swift.String = "default", volume: Swift.Int? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.APSCriticalSound, b: KustomerNetworking.APSCriticalSound) -> Swift.Bool
+}
+public typealias Timetoken = Swift.UInt64
+public typealias PAMTokenStore = [Swift.String : KustomerNetworking.PAMToken]
+public typealias PAMResourceType = KustomerNetworking.PAMTokenManagementSystem.Resource
+extension UInt64 {
+  public var timetokenDate: Foundation.Date {
+    get
+  }
+}
+extension Set {
+  public var allObjects: [Element] {
+    get
+  }
+}
+extension SubscriptionSession {
+  public func presenceLeave(for _: Swift.String, on channels: [Swift.String], and groups: [Swift.String], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+}
+extension KustomerPubNubV3UUIDMetadataChangeset : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension KustomerPubNubV3ChannelMetadataChangeset : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension KustomerPubNubV3Error : Foundation.LocalizedError, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+}
+extension KustomerPubNubV3Error.Domain : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension KustomerPubNubV3Error.Reason : Swift.CustomStringConvertible, Foundation.LocalizedError {
+  public var description: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension DispatchQueue {
+  public static var currentLabel: Swift.String {
+    get
+  }
+}
+public protocol JSONCodable : Swift.Decodable, Swift.Encodable {
+  var codableValue: KustomerNetworking.AnyJSON { get }
+  var rawValue: Any { get }
+}
+extension JSONCodable {
+  public var rawValue: Any {
+    get
+  }
+  public var codableValue: KustomerNetworking.AnyJSON {
+    get
+  }
+  public var isScalar: Swift.Bool {
+    get
+  }
+  public var jsonStringifyResult: Swift.Result<Swift.String, Swift.Error> {
+    get
+  }
+  public var jsonStringify: Swift.String? {
+    get
+  }
+  public var jsonDataResult: Swift.Result<Foundation.Data, Swift.Error> {
+    get
+  }
+  public var jsonData: Foundation.Data? {
+    get
+  }
+  public var isNil: Swift.Bool {
+    get
+  }
+  public var stringOptional: Swift.String? {
+    get
+  }
+  public var intOptional: Swift.Int? {
+    get
+  }
+  public var doubleOptional: Swift.Double? {
+    get
+  }
+  public var boolOptional: Swift.Bool? {
+    get
+  }
+  public var dateOptional: Foundation.Date? {
+    get
+  }
+  public var dataOptional: Foundation.Data? {
+    get
+  }
+}
+extension Array : KustomerNetworking.JSONCodable where Element : KustomerNetworking.JSONCodable {
+}
+extension Dictionary : KustomerNetworking.JSONCodable where Key == Swift.String, Value : KustomerNetworking.JSONCodable {
+}
+extension AnyJSON : KustomerNetworking.JSONCodable {
+  public var codableValue: KustomerNetworking.AnyJSON {
+    get
+  }
+  public var rawValue: Any {
+    get
+  }
+}
+public protocol JSONCodableScalar : KustomerNetworking.JSONCodable {
+  var scalarValue: KustomerNetworking.JSONCodableScalarType { get }
+}
+extension JSONCodableScalar {
+  public var codableValue: KustomerNetworking.AnyJSON {
+    get
+  }
+  public var rawValue: Any {
+    get
+  }
+}
+extension String : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+extension Int : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+extension Double : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+extension Bool : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+extension Date : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+extension JSONCodableScalarType : KustomerNetworking.JSONCodableScalar {
+  public var scalarValue: KustomerNetworking.JSONCodableScalarType {
+    get
+  }
+}
+public struct JSONCodableScalarType : Swift.Codable, Swift.Hashable {
+  public init(stringValue: Swift.String?)
+  public init(intValue: Swift.Int)
+  public init(boolValue: Swift.Bool)
+  public init(doubleValue: Swift.Double)
+  public init(dateValue: Foundation.Date)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.JSONCodableScalarType, b: KustomerNetworking.JSONCodableScalarType) -> Swift.Bool
+}
+public struct PAMTokenManagementSystem {
+  public enum Resource {
+    case uuid
+    case channel
+    public static func == (a: KustomerNetworking.PAMTokenManagementSystem.Resource, b: KustomerNetworking.PAMTokenManagementSystem.Resource) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public init(uuids: [Swift.String : KustomerNetworking.PAMToken] = [:], channels: [Swift.String : KustomerNetworking.PAMToken] = [:])
+  public init(store: KustomerNetworking.PAMTokenManagementSystem)
+  public func getToken(for identifier: Swift.String, with type: KustomerNetworking.PAMTokenManagementSystem.Resource? = nil) -> KustomerNetworking.PAMToken?
+  public func getTokens(by resource: KustomerNetworking.PAMTokenManagementSystem.Resource) -> KustomerNetworking.PAMTokenStore
+  public func getAllTokens() -> [KustomerNetworking.PAMTokenManagementSystem.Resource : KustomerNetworking.PAMTokenStore]
+  public mutating func set(token tokenString: Swift.String)
+  public mutating func set(tokens: [Swift.String])
+}
+public struct PAMToken : Swift.Codable, Swift.Equatable, Swift.Hashable {
+  public let version: Swift.Int
+  public let timestamp: Swift.Int
+  public let ttl: Swift.Int
+  public let resources: KustomerNetworking.PAMTokenResource
+  public let patterns: KustomerNetworking.PAMTokenResource
+  public let meta: [Swift.String : KustomerNetworking.AnyJSON]
+  public let signature: Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: KustomerNetworking.PAMToken, b: KustomerNetworking.PAMToken) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct PAMTokenResource : Swift.Codable, Swift.Equatable, Swift.Hashable {
+  public let channels: [Swift.String : KustomerNetworking.PAMPermission]
+  public let groups: [Swift.String : KustomerNetworking.PAMPermission]
+  public let uuidObjects: [Swift.String : KustomerNetworking.PAMPermission]
+  public let channelObjects: [Swift.String : KustomerNetworking.PAMPermission]
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: KustomerNetworking.PAMTokenResource, b: KustomerNetworking.PAMTokenResource) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct PAMPermission : Swift.OptionSet, Swift.Codable, Swift.Equatable, Swift.Hashable {
+  public let rawValue: Swift.UInt32
+  public static var none: KustomerNetworking.PAMPermission
+  public static var read: KustomerNetworking.PAMPermission
+  public static var write: KustomerNetworking.PAMPermission
+  public static var manage: KustomerNetworking.PAMPermission
+  public static var delete: KustomerNetworking.PAMPermission
+  public static var create: KustomerNetworking.PAMPermission
+  public static var update: KustomerNetworking.PAMPermission
+  public static var crud: KustomerNetworking.PAMPermission
+  public static var all: KustomerNetworking.PAMPermission
+  public init(rawValue: Swift.UInt32)
+  public typealias RawValue = Swift.UInt32
+  public typealias Element = KustomerNetworking.PAMPermission
+  public typealias ArrayLiteralElement = KustomerNetworking.PAMPermission
+}
+extension PAMPermission : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol KustomerPubNubV3BoundedPage {
+  var start: KustomerNetworking.Timetoken? { get }
+  var end: KustomerNetworking.Timetoken? { get }
+  var limit: Swift.Int? { get }
+  init(from other: KustomerNetworking.KustomerPubNubV3BoundedPage) throws
+}
+extension KustomerPubNubV3BoundedPage {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3BoundedPage
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3BoundedPage
+}
+public struct KustomerPubNubV3BoundedPageBase : KustomerNetworking.KustomerPubNubV3BoundedPage, Swift.Codable, Swift.Hashable {
+  public let start: KustomerNetworking.Timetoken?
+  public let end: KustomerNetworking.Timetoken?
+  public let limit: Swift.Int?
+  public init?(start: KustomerNetworking.Timetoken? = nil, end: KustomerNetworking.Timetoken? = nil, limit: Swift.Int? = nil)
+  public init(from other: KustomerNetworking.KustomerPubNubV3BoundedPage) throws
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3BoundedPageBase, b: KustomerNetworking.KustomerPubNubV3BoundedPageBase) -> Swift.Bool
+}
+public protocol KustomerPubNubV3HashedPage {
+  var start: Swift.String? { get }
+  var end: Swift.String? { get }
+  var totalCount: Swift.Int? { get }
+  init(from other: KustomerNetworking.KustomerPubNubV3HashedPage) throws
+}
+extension KustomerPubNubV3HashedPage {
+  public func transcode<T>(into _: T.Type) throws -> T where T : KustomerNetworking.KustomerPubNubV3HashedPage
+  public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3HashedPage
+}
+public struct KustomerPubNubV3HashedPageBase : KustomerNetworking.KustomerPubNubV3HashedPage, Swift.Codable, Swift.Hashable {
+  public var start: Swift.String?
+  public var end: Swift.String?
+  public var totalCount: Swift.Int?
+  public init(start: Swift.String? = nil, end: Swift.String? = nil, totalCount: Swift.Int? = nil)
+  public init(from other: KustomerNetworking.KustomerPubNubV3HashedPage) throws
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3HashedPageBase, b: KustomerNetworking.KustomerPubNubV3HashedPageBase) -> Swift.Bool
+}
+public protocol EventStreamReceiver {
+  var uuid: Foundation.UUID { get }
+  var queue: Dispatch.DispatchQueue { get }
+}
+extension EventStreamReceiver {
+  public var queue: Dispatch.DispatchQueue {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol Cancellable {
+  var isCancelled: Swift.Bool { get }
+  func cancel()
+}
+public protocol EventStreamEmitter : AnyObject {
+  associatedtype ListenerType : KustomerNetworking.Cancellable
+  var listeners: [Self.ListenerType] { get }
+  func add(_ listener: Self.ListenerType)
+  func remove(_ listener: Self.ListenerType)
+  func notify(listeners closure: (Self.ListenerType) -> Swift.Void)
+}
+extension EventStreamEmitter {
+  public func remove(_ listener: Self.ListenerType)
+}
+public class ListenerToken : KustomerNetworking.Cancellable {
+  public var isCancelled: Swift.Bool {
+    get
+  }
+  final public let tokenId: Foundation.UUID
+  public init(cancellationClosure: @escaping () -> Swift.Void)
+  @objc deinit
+  public func cancel()
+}
+extension ListenerToken : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum AnyJSONType {
+  case string(Swift.String)
+  case integer(Foundation.NSNumber)
+  case double(Foundation.NSNumber)
+  case boolean(Swift.Bool)
+  case null
+  case array([KustomerNetworking.AnyJSONType])
+  case dictionary([Swift.String : KustomerNetworking.AnyJSONType])
+  case codable(Swift.Codable)
+  case unknown(Any)
+}
+extension AnyJSONType : Swift.Codable {
+  public func decode<T>(_ type: T.Type) throws -> T where T : Swift.Decodable
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension AnyJSONType : Swift.RawRepresentable {
+  public var rawValue: Any {
+    get
+  }
+  public var isNil: Swift.Bool {
+    get
+  }
+  public init(rawValue: Any)
+  public func rawValueAs<T>() -> T?
+  public typealias RawValue = Any
+}
+extension AnyJSONType : Swift.Hashable {
+  public static func == (lhs: KustomerNetworking.AnyJSONType, rhs: KustomerNetworking.AnyJSONType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension URLSessionConfiguration {
+  public static var pubnub: Foundation.URLSessionConfiguration {
+    get
+  }
+  public static var subscription: Foundation.URLSessionConfiguration {
+    get
+  }
+  public var headers: [Swift.String : Swift.String] {
+    get
+    set(newValue)
+  }
+}
+public struct FCMAndroidPayload : Swift.Codable, Swift.Hashable {
+  public let collapseKey: Swift.String?
+  public let priority: KustomerNetworking.FCMAndroidMessagePriority?
+  public let ttl: Swift.String?
+  public let restrictedPackageName: Swift.String?
+  public let notification: KustomerNetworking.FCMAndroidNotification?
+  public let options: KustomerNetworking.FCMOptionsPayload?
+  public init(collapseKey: Swift.String? = nil, priority: KustomerNetworking.FCMAndroidMessagePriority? = nil, ttl: Swift.Double? = nil, restrictedPackageName: Swift.String? = nil, notification: KustomerNetworking.FCMAndroidNotification? = nil, options: KustomerNetworking.FCMOptionsPayload? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMAndroidPayload, b: KustomerNetworking.FCMAndroidPayload) -> Swift.Bool
+}
+public enum FCMAndroidMessagePriority : Swift.String, Swift.Codable, Swift.Hashable {
+  case normal
+  case high
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct FCMAndroidNotification : Swift.Codable, Swift.Hashable {
+  public let title: Swift.String?
+  public let body: Swift.String?
+  public let icon: Swift.String?
+  public let color: Swift.String?
+  public let sound: Swift.String?
+  public let tag: Swift.String?
+  public let clickAction: Swift.String?
+  public let bodyLocKey: Swift.String?
+  public let bodyLocArgs: [Swift.String]?
+  public let titleLocKey: Swift.String?
+  public let titleLocArgs: [Swift.String]?
+  public let channelID: Swift.String?
+  public let ticker: Swift.String?
+  public let sticky: Swift.Bool?
+  public let eventTime: Foundation.Date?
+  public let localOnly: Swift.Bool?
+  public let notificationPriority: KustomerNetworking.FCMAndroidNotificationPriority?
+  public let defaultSound: Swift.Bool?
+  public let defaultVibrateTimings: Swift.Bool?
+  public let defaultLightSettings: Swift.Bool?
+  public let vibrateTimings: [Swift.String]?
+  public let visibility: KustomerNetworking.FCMAndroidVisibility?
+  public let notificationCount: Swift.Int?
+  public let lightSettings: KustomerNetworking.FCMAndroidLightSettings?
+  public let image: Swift.String?
+  public init(title: Swift.String? = nil, body: Swift.String? = nil, icon: Swift.String? = nil, color: Swift.String? = nil, sound: Swift.String? = nil, tag: Swift.String? = nil, clickAction: Swift.String? = nil, bodyLocKey: Swift.String? = nil, bodyLocArgs: [Swift.String]? = nil, titleLocKey: Swift.String? = nil, titleLocArgs: [Swift.String]? = nil, channelID: Swift.String? = nil, ticker: Swift.String? = nil, sticky: Swift.Bool? = nil, eventTime: Foundation.Date? = nil, localOnly: Swift.Bool? = nil, notificationPriority: KustomerNetworking.FCMAndroidNotificationPriority? = nil, defaultSound: Swift.Bool? = nil, defaultVibrateTimings: Swift.Bool? = nil, defaultLightSettings: Swift.Bool? = nil, vibrateTimings: [Swift.Double]? = nil, visibility: KustomerNetworking.FCMAndroidVisibility? = nil, notificationCount: Swift.Int? = nil, lightSettings: KustomerNetworking.FCMAndroidLightSettings? = nil, image: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMAndroidNotification, b: KustomerNetworking.FCMAndroidNotification) -> Swift.Bool
+}
+public enum FCMAndroidVisibility : Swift.String, Swift.Codable, Swift.Hashable {
+  case unspecified
+  case `private`
+  case `public`
+  case secret
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FCMAndroidNotificationPriority : Swift.String, Swift.Codable, Swift.Hashable {
+  case unspecified
+  case min
+  case low
+  case `default`
+  case high
+  case max
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct FCMAndroidLightSettings : Swift.Codable, Swift.Hashable {
+  public let color: KustomerNetworking.FCMColor
+  public let onDuration: Swift.String
+  public let offDuration: Swift.String
+  public init(color: KustomerNetworking.FCMColor, onDuration: Swift.Double, offDuration: Swift.Int)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMAndroidLightSettings, b: KustomerNetworking.FCMAndroidLightSettings) -> Swift.Bool
+}
+public struct FCMColor : Swift.Codable, Swift.Hashable {
+  public let red: Swift.Double
+  public let green: Swift.Double
+  public let blue: Swift.Double
+  public let alpha: Swift.Double
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMColor, b: KustomerNetworking.FCMColor) -> Swift.Bool
+}
+extension HTTPURLResponse {
+  public var isSuccessful: Swift.Bool {
+    get
+  }
+  public static var successfulStatusCodes: Swift.Range<Swift.Int>
+}
+public struct KustomerPubNubV3Configuration : Swift.Hashable {
+  public init(from bundle: Foundation.Bundle = .main, publishKeyAt pubPlistKey: Swift.String = "KustomerPubNubV3PublishKey", subscrbeKeyAt subPlistKey: Swift.String = "KustomerPubNubV3SubscribeKey")
+  public init(publishKey: Swift.String?, subscribeKey: Swift.String, cipherKey: KustomerNetworking.Crypto? = nil, authKey: Swift.String? = nil, uuid: Swift.String? = nil, useSecureConnections: Swift.Bool = true, origin: Swift.String = "ps.pndsn.com", useInstanceId: Swift.Bool = false, useRequestId: Swift.Bool = false, automaticRetry: KustomerNetworking.AutomaticRetry? = nil, urlSessionConfiguration: Foundation.URLSessionConfiguration = .pubnub, durationUntilTimeout: Swift.UInt = 300, heartbeatInterval: Swift.UInt = 0, supressLeaveEvents: Swift.Bool = false, requestMessageCountThreshold: Swift.UInt = 100, filterExpression: Swift.String? = nil)
+  public var publishKey: Swift.String?
+  public var subscribeKey: Swift.String
+  public var cipherKey: KustomerNetworking.Crypto?
+  public var authKey: Swift.String?
+  public var uuid: Swift.String
+  public var useSecureConnections: Swift.Bool
+  public var origin: Swift.String
+  public var useInstanceId: Swift.Bool
+  public var useRequestId: Swift.Bool
+  public var automaticRetry: KustomerNetworking.AutomaticRetry?
+  public var urlSessionConfiguration: Foundation.URLSessionConfiguration
+  @KustomerNetworking.BoundedValue public var durationUntilTimeout: Swift.UInt {
+    get
+    set(value)
+    _modify
+  }
+  public var heartbeatInterval: Swift.UInt
+  public var supressLeaveEvents: Swift.Bool
+  public var requestMessageCountThreshold: Swift.UInt
+  public var filterExpression: Swift.String?
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.KustomerPubNubV3Configuration, b: KustomerNetworking.KustomerPubNubV3Configuration) -> Swift.Bool
+}
+public protocol RequestMutator {
+  func mutate(_ urlRequest: Foundation.URLRequest, for session: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
+}
+public protocol RequestRetrier {
+  func retry(_ request: KustomerNetworking.RequestReplaceable, for session: KustomerNetworking.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
+}
+public protocol RequestOperator : KustomerNetworking.RequestMutator, KustomerNetworking.RequestRetrier {
+}
+extension RequestOperator {
+  public func mutate(_ urlRequest: Foundation.URLRequest, for _: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
+  public func retry(_: KustomerNetworking.RequestReplaceable, for _: KustomerNetworking.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
+  public func merge(operators: [KustomerNetworking.RequestOperator]) -> KustomerNetworking.RequestOperator
+  public func merge(requestOperator: KustomerNetworking.RequestOperator?) -> KustomerNetworking.RequestOperator
+}
+public struct MultiplexRequestOperator : KustomerNetworking.RequestOperator {
+  public let operators: [KustomerNetworking.RequestOperator]
+  public init(requestOperator: KustomerNetworking.RequestOperator? = nil)
+  public init(operators: [KustomerNetworking.RequestOperator] = [])
+  public func mutate(_ urlRequest: Foundation.URLRequest, for session: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
+  public func retry(_ request: KustomerNetworking.RequestReplaceable, for session: KustomerNetworking.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class SubscribeSessionFactory {
+  final public let subscribeQueue: Dispatch.DispatchQueue
+  public static var shared: KustomerNetworking.SubscribeSessionFactory
+  public func getSession(from config: KustomerNetworking.SubscriptionConfiguration, with subscribeSession: KustomerNetworking.SessionReplaceable? = nil, presenceSession: KustomerNetworking.SessionReplaceable? = nil) -> KustomerNetworking.SubscriptionSession
+  @objc deinit
+}
+public protocol SubscriptionConfiguration : KustomerNetworking.RouterConfiguration {
+  var automaticRetry: KustomerNetworking.AutomaticRetry? { get }
+  var durationUntilTimeout: Swift.UInt { get }
+  var heartbeatInterval: Swift.UInt { get }
+  var supressLeaveEvents: Swift.Bool { get }
+  var requestMessageCountThreshold: Swift.UInt { get }
+  var filterExpression: Swift.String? { get }
+}
+extension KustomerPubNubV3Configuration : KustomerNetworking.SubscriptionConfiguration {
+}
+extension UInt64 {
+  public func toDate() -> Foundation.Date
+}
+extension Date {
+  public func toPubNubTimetoken() -> KustomerNetworking.Timetoken
+}
+public struct KustomerPubNubV3FCMPayload : Swift.Codable {
+  public let payload: KustomerNetworking.JSONCodable?
+  public let notification: KustomerNetworking.FCMNotificationPayload?
+  public let android: KustomerNetworking.FCMAndroidPayload?
+  public let webpush: KustomerNetworking.FCMWebpushConfig?
+  public let apns: KustomerNetworking.FCMApnsConfig?
+  public let options: KustomerNetworking.FCMOptionsPayload?
+  public let target: KustomerNetworking.FCMTarget?
+  public init(payload: KustomerNetworking.JSONCodable?, target: KustomerNetworking.FCMTarget?, notification: KustomerNetworking.FCMNotificationPayload? = nil, android: KustomerNetworking.FCMAndroidPayload? = nil, webpush: KustomerNetworking.FCMWebpushConfig? = nil, apns: KustomerNetworking.FCMApnsConfig? = nil, options: KustomerNetworking.FCMOptionsPayload? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum FCMTarget : Swift.Codable, Swift.Hashable {
+  case token(Swift.String)
+  case topic(Swift.String)
+  case condition(Swift.String)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMTarget, b: KustomerNetworking.FCMTarget) -> Swift.Bool
+}
+public struct FCMNotificationPayload : Swift.Codable, Swift.Hashable {
+  public let title: Swift.String?
+  public let body: Swift.String?
+  public let image: Swift.String?
+  public init(title: Swift.String? = nil, body: Swift.String? = nil, image: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMNotificationPayload, b: KustomerNetworking.FCMNotificationPayload) -> Swift.Bool
+}
+public struct FCMOptionsPayload : Swift.Codable, Swift.Hashable {
+  public let analyticsLabel: Swift.String?
+  public init(analyticsLabel: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMOptionsPayload, b: KustomerNetworking.FCMOptionsPayload) -> Swift.Bool
+}
+public struct FCMApnsConfig : Swift.Codable, Swift.Hashable {
+  public let headers: [Swift.String : Swift.String]?
+  public let payload: KustomerNetworking.APSPayload?
+  public let options: KustomerNetworking.FCMApnsFcmOptions?
+  public init(headers: [Swift.String : Swift.String]? = nil, payload: KustomerNetworking.APSPayload? = nil, options: KustomerNetworking.FCMApnsFcmOptions? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMApnsConfig, b: KustomerNetworking.FCMApnsConfig) -> Swift.Bool
+}
+public struct FCMApnsFcmOptions : Swift.Codable, Swift.Hashable {
+  public let analyticsLabel: Swift.String?
+  public let image: Swift.String?
+  public init(analyticsLabel: Swift.String? = nil, image: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerNetworking.FCMApnsFcmOptions, b: KustomerNetworking.FCMApnsFcmOptions) -> Swift.Bool
+}
+@propertyWrapper public struct BoundedValue<Value> : Swift.Comparable where Value : Swift.Comparable {
+  public static func < (lhs: KustomerNetworking.BoundedValue<Value>, rhs: KustomerNetworking.BoundedValue<Value>) -> Swift.Bool
+  public var wrappedValue: Value {
+    get
+    set(newValue)
+  }
+  public static func == (a: KustomerNetworking.BoundedValue<Value>, b: KustomerNetworking.BoundedValue<Value>) -> Swift.Bool
+}
+extension BoundedValue : Swift.Hashable where Value : Swift.Hashable {
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol URLSessionReplaceable {
+  init(configuration: Foundation.URLSessionConfiguration, delegate: Foundation.URLSessionDelegate?, delegateQueue: Foundation.OperationQueue?)
+  var sessionDescription: Swift.String? { get set }
+  var delegateQueue: Foundation.OperationQueue { get }
+  var configuration: Foundation.URLSessionConfiguration { get }
+  func dataTask(with request: Foundation.URLRequest) -> Foundation.URLSessionDataTask
+  func invalidateAndCancel()
+}
+extension URLSession : KustomerNetworking.URLSessionReplaceable {
+}
+public protocol SessionReplaceable {
+  var sessionID: Foundation.UUID { get }
+  var session: KustomerNetworking.URLSessionReplaceable { get }
+  var sessionQueue: Dispatch.DispatchQueue { get }
+  var defaultRequestOperator: KustomerNetworking.RequestOperator? { get set }
+  var sessionStream: KustomerNetworking.SessionStream? { get set }
+  func usingDefault(requestOperator: KustomerNetworking.RequestOperator?) -> Self
+  func request(with router: KustomerNetworking.HTTPRouter, requestOperator: KustomerNetworking.RequestOperator?) -> KustomerNetworking.RequestReplaceable
+  func invalidateAndCancel()
+}
+public protocol RequestReplaceable : AnyObject {
+  var sessionID: Foundation.UUID { get }
+  var requestID: Foundation.UUID { get }
+  var router: KustomerNetworking.HTTPRouter { get }
+  var requestQueue: Dispatch.DispatchQueue { get }
+  var requestOperator: KustomerNetworking.RequestOperator? { get }
+  var urlRequest: Foundation.URLRequest? { get }
+  var urlResponse: Foundation.HTTPURLResponse? { get }
+  func didCreate(_ urlRequest: Foundation.URLRequest)
+  func didFailToCreateURLRequest(with error: Swift.Error)
+  func didCreate(_ task: Foundation.URLSessionTask)
+  func didMutate(_ initialRequest: Foundation.URLRequest, to mutatedRequest: Foundation.URLRequest)
+  func didFailToMutate(_ urlRequest: Foundation.URLRequest, with mutatorError: Swift.Error)
+  func didReceive(data: Foundation.Data)
+  func didComplete(_ task: Foundation.URLSessionTask)
+  func didComplete(_ task: Foundation.URLSessionTask, with error: Swift.Error)
+  var retryCount: Swift.Int { get }
+  var isCancelled: Swift.Bool { get }
+  func prepareForRetry()
+  @discardableResult
+  func cancel(_ error: Swift.Error) -> Self
+  func validate() -> Self
+  func response<D>(on: Dispatch.DispatchQueue, decoder: D, completion: @escaping (Swift.Result<KustomerNetworking.EndpointResponse<D.Payload>, Swift.Error>) -> Swift.Void) where D : KustomerNetworking.ResponseDecoder
+}
+public struct EndpointResponse<Value> {
+  public let router: KustomerNetworking.HTTPRouter
+  public let request: Foundation.URLRequest
+  public let response: Foundation.HTTPURLResponse
+  public let data: Foundation.Data?
+  public let payload: Value
+}
