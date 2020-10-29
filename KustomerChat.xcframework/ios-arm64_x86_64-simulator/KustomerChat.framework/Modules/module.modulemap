@@ -1,0 +1,11 @@
+framework module KustomerChat {
+  umbrella header "KustomerChat.h"
+
+  export *
+  module * { export * }
+}
+
+module KustomerChat.Swift {
+    header "KustomerChat-Swift.h"
+    requires objc
+}
