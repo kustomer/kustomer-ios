@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KBProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/KBProvider" class="dashAnchor"></a>
+
+    <a title="KBProvider Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../../index.html">
+          KustomerSDK 2.0.0 build 162 Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../../index.html">KustomerSDK Reference</a>
+      <img class="carat" src="../../img/carat.png" />
+      KBProvider Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatAttachment.html">KUSChatAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatMessage.html">KUSChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatSettings.html">KUSChatSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSConversation.html">KUSConversation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSCustomer.html">KUSCustomer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKBArticle.html">KUSKBArticle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKBCategory.html">KUSKBCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKeychain.html">KUSKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSRevocationTrustEvaluator.html">KUSRevocationTrustEvaluator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSRevocationTrustEvaluator/KUSRevocationTrustEvaluatorOptions.html">– KUSRevocationTrustEvaluatorOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSUser.html">KUSUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerClient.html">KustomerClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerColor.html">KustomerColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerOptions.html">KustomerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/MLLNode.html">MLLNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/SupportCenter.html">SupportCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/TemplateAction.html">TemplateAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Global%20Variables.html#/s:11KustomerSDK0A0AA0A6ClientCvp">Kustomer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KError.html">KError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError.html">KUSAFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSMultipartEncodingFailureReason.html">– KUSMultipartEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSParameterEncodingFailureReason.html">– KUSParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSParameterEncoderFailureReason.html">– KUSParameterEncoderFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSResponseValidationFailureReason.html">– KUSResponseValidationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSResponseSerializationFailureReason.html">– KUSResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSServerTrustFailureReason.html">– KUSServerTrustFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSURLRequestValidationFailureReason.html">– KUSURLRequestValidationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSChatMessageDirection.html">KUSChatMessageDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSChatMessageStatus.html">KUSChatMessageStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSConversationLockReason.html">KUSConversationLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSConversationStatus.html">KUSConversationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSKBDeflectResultType.html">KUSKBDeflectResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSMessageAllowedInputType.html">KUSMessageAllowedInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSMessageTemplateType.html">KUSMessageTemplateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSSentByType.html">KUSSentByType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerAssetLanguage.html">KustomerAssetLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerClientStatus.html">KustomerClientStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerConnectionStatus.html">KustomerConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore.html">KustomerCore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/ChatProvider.html">– ChatProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/ConnectionProvider.html">– ConnectionProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/KBProvider.html">– KBProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/PushProvider.html">– PushProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerDisplayMode.html">KustomerDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerLanguage.html">KustomerLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerLogType.html">KustomerLogType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerOffhoursDisplay.html">KustomerOffhoursDisplay</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/CFString.html">CFString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/NSManagedObject.html">NSManagedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions.html#/NetworkReachabilityManager">NetworkReachabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIAlertAction.html">UIAlertAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/URLComponents.html">URLComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UUID.html">UUID</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSChatListener.html">KUSChatListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSConnectionListener.html">KUSConnectionListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSKBItemBase.html">KUSKBItemBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSURLConvertible.html">KUSURLConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/Clamping.html">Clamping</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/KUSKBDeflectResult.html">KUSKBDeflectResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/KUSMessageAction.html">KUSMessageAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK13ManagedObjecta">ManagedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK20ManagedObjectContexta">ManagedObjectContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK9Timetokena">Timetoken</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>KBProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KBProvider</span></code></pre>
+
+                </div>
+              </div>
+            <h1 id='kb' class='heading'>KB</h1>
+
+<p>Get articles and categories for the root of the KB</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">kb</span> <span class="o">=</span> <span class="kt">KustomerCore</span><span class="o">.</span><span class="kt">KBProvider</span><span class="p">()</span>
+<span class="n">kb</span><span class="o">.</span><span class="nf">getArticlesAndCategories</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="n">r</span> <span class="k">in</span>
+  <span class="k">switch</span> <span class="n">r</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">items</span><span class="p">):</span>
+      <span class="nf">kdump</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="nf">kdump</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+
+<p>Get articles and categories whose parent is categoryId</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="nf">getArticlesAndCategories</span><span class="p">(</span><span class="nv">parentCategoryId</span><span class="p">:</span> <span class="s">"123"</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="err">•</span><span class="p">)</span>
+</code></pre>
+
+<p>Search for articles and categories</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="nf">getArticlesAndCategories</span><span class="p">(</span><span class="nv">searchText</span><span class="p">:</span> <span class="s">"red"</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="err">•</span><span class="p">)</span>
+</code></pre>
+
+<p>The KB is stored entirely in a local data store. The first time you make a request for KB data, the local data store is populated.</p>
+
+<p>You can manually populate it</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="nf">update</span><span class="p">({</span> <span class="n">result</span> <span class="k">in</span>
+  <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">success</span><span class="p">:</span>
+      <span class="nf">kprint</span><span class="p">(</span><span class="s">"updated. lastUpdateAt is now </span><span class="se">\(</span><span class="n">kb</span><span class="o">.</span><span class="n">lastUpdateAt</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="nf">kprint</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+
+<p>You can manually clear it</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="nf">clearLocalDataStore</span><span class="p">()</span>
+</code></pre>
+
+<p>Info about the local data store</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="n">hasNeverUpdated</span>
+<span class="n">kb</span><span class="o">.</span><span class="n">lastUpdateAt</span>
+</code></pre>
+
+<p>If the data store has been loaded at least once, you must manage updating it periodically on your own.</p>
+
+<p>Get an article or category
+    kb.getCategory(id: &ldquo;5ec9b138c07af60013270758&rdquo;, completion: { r in
+      switch r {
+        case .success(let category):
+          kdump(category)
+        case .failure(let error):
+          kdump(error)
+      }
+    })</p>
+<pre class="highlight swift"><code><span class="n">kb</span><span class="o">.</span><span class="nf">getArticle</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="s">"5ec9b137c07af60013270753"</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="n">r</span> <span class="k">in</span>
+  <span class="k">switch</span> <span class="n">r</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">article</span><span class="p">):</span>
+      <span class="nf">kdump</span><span class="p">(</span><span class="n">article</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="nf">kdump</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+
+<p>Extended KB article properties and category properties</p>
+
+<p>There are many extended attributes for articles and categories. the <code>completeObject()</code> method on KUSKBCategory and KUSKBArticle objects lets you access this. The <code>rawJSON</code> property is the same, but not parsed into a dictionary.</p>
+
+<p>Article properties: <a href="https://apidocs.kustomer.com/?version=latest#959b0560-da94-41bc-965f-234d0025c5aa">https://apidocs.kustomer.com/?version=latest#959b0560-da94-41bc-965f-234d0025c5aa</a>
+   Category properties: <a href="https://apidocs.kustomer.com/?version=latest#0f9a0b2d-9d26-4f7d-abd1-1f3f0102958b">https://apidocs.kustomer.com/?version=latest#0f9a0b2d-9d26-4f7d-abd1-1f3f0102958b</a></p>
+<pre class="highlight swift"><code><span class="n">category</span><span class="o">.</span><span class="nf">completeObject</span><span class="p">()</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/init"></a>
+                <a name="//apple_ref/swift/Section/init" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/init"></a>
+                  <h3 class="section-name"><p>init</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderCAEycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderCAEycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/getting%20KB%20data"></a>
+                <a name="//apple_ref/swift/Section/getting KB data" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/getting%20KB%20data"></a>
+                  <h3 class="section-name"><p>getting KB data</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC24getArticlesAndCategories16parentCategoryId10searchText10completionySSSg_AJys6ResultOySayAA13KUSKBItemBase_pGAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getArticlesAndCategories(parentCategoryId:searchText:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC24getArticlesAndCategories16parentCategoryId10searchText10completionySSSg_AJys6ResultOySayAA13KUSKBItemBase_pGAA6KErrorOGctF">getArticlesAndCategories(parentCategoryId:<wbr>searchText:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Searches for articles and categories with the parent category id passed. If the parent category id is nil, searches for articles and categories belonging to the root category. To filter by a search string, pass a <code>searchText</code> parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getArticlesAndCategories</span><span class="p">(</span><span class="nv">parentCategoryId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">searchText</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../../Protocols/KUSKBItemBase.html">KUSKBItemBase</a></span><span class="p">],</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC10getArticle2id10completionySS_ys6ResultOyAA12KUSKBArticleCAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getArticle(id:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC10getArticle2id10completionySS_ys6ResultOyAA12KUSKBArticleCAA6KErrorOGctF">getArticle(id:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getArticle</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../../Classes/KUSKBArticle.html">KUSKBArticle</a></span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC11getCategory2id10completionySS_ys6ResultOyAA13KUSKBCategoryCAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getCategory(id:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC11getCategory2id10completionySS_ys6ResultOyAA13KUSKBCategoryCAA6KErrorOGctF">getCategory(id:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCategory</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../../Classes/KUSKBCategory.html">KUSKBCategory</a></span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/updating"></a>
+                <a name="//apple_ref/swift/Section/updating" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/updating"></a>
+                  <h3 class="section-name"><p>updating</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC12lastUpdateAt10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastUpdateAt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC12lastUpdateAt10Foundation4DateVSgvp">lastUpdateAt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>last time the local kb data store was completely refreshed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastUpdateAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC15hasNeverUpdatedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasNeverUpdated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC15hasNeverUpdatedSbvp">hasNeverUpdated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>if true, the kb data store is empty and you&rsquo;ve never asked the server for the data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasNeverUpdated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC6updateyyys6ResultOyytAA6KErrorOGcF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC6updateyyys6ResultOyytAA6KErrorOGcF">update(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>updates the local kb data store</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO10KBProviderC19clearLocalDataStoreyyF"></a>
+                    <a name="//apple_ref/swift/Method/clearLocalDataStore()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO10KBProviderC19clearLocalDataStoreyyF">clearLocalDataStore()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>clears entire local data store</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clearLocalDataStore</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2020, Kustomer Inc.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

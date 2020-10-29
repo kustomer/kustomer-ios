@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChatProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/ChatProvider" class="dashAnchor"></a>
+
+    <a title="ChatProvider Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../../index.html">
+          KustomerSDK 2.0.0 build 162 Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../../index.html">KustomerSDK Reference</a>
+      <img class="carat" src="../../img/carat.png" />
+      ChatProvider Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatAttachment.html">KUSChatAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatMessage.html">KUSChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSChatSettings.html">KUSChatSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSConversation.html">KUSConversation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSCustomer.html">KUSCustomer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKBArticle.html">KUSKBArticle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKBCategory.html">KUSKBCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSKeychain.html">KUSKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSRevocationTrustEvaluator.html">KUSRevocationTrustEvaluator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSRevocationTrustEvaluator/KUSRevocationTrustEvaluatorOptions.html">– KUSRevocationTrustEvaluatorOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KUSUser.html">KUSUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerClient.html">KustomerClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerColor.html">KustomerColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/KustomerOptions.html">KustomerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/MLLNode.html">MLLNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/SupportCenter.html">SupportCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/TemplateAction.html">TemplateAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Global%20Variables.html#/s:11KustomerSDK0A0AA0A6ClientCvp">Kustomer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KError.html">KError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError.html">KUSAFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSMultipartEncodingFailureReason.html">– KUSMultipartEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSParameterEncodingFailureReason.html">– KUSParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSParameterEncoderFailureReason.html">– KUSParameterEncoderFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSResponseValidationFailureReason.html">– KUSResponseValidationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSResponseSerializationFailureReason.html">– KUSResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSServerTrustFailureReason.html">– KUSServerTrustFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSAFError/KUSURLRequestValidationFailureReason.html">– KUSURLRequestValidationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSChatMessageDirection.html">KUSChatMessageDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSChatMessageStatus.html">KUSChatMessageStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSConversationLockReason.html">KUSConversationLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSConversationStatus.html">KUSConversationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSKBDeflectResultType.html">KUSKBDeflectResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSMessageAllowedInputType.html">KUSMessageAllowedInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSMessageTemplateType.html">KUSMessageTemplateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KUSSentByType.html">KUSSentByType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerAssetLanguage.html">KustomerAssetLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerClientStatus.html">KustomerClientStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerConnectionStatus.html">KustomerConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore.html">KustomerCore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/ChatProvider.html">– ChatProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/ConnectionProvider.html">– ConnectionProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/KBProvider.html">– KBProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerCore/PushProvider.html">– PushProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerDisplayMode.html">KustomerDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerLanguage.html">KustomerLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerLogType.html">KustomerLogType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/KustomerOffhoursDisplay.html">KustomerOffhoursDisplay</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/CFString.html">CFString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/NSManagedObject.html">NSManagedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions.html#/NetworkReachabilityManager">NetworkReachabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIAlertAction.html">UIAlertAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/URLComponents.html">URLComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/UUID.html">UUID</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSChatListener.html">KUSChatListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSConnectionListener.html">KUSConnectionListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSKBItemBase.html">KUSKBItemBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/KUSURLConvertible.html">KUSURLConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/Clamping.html">Clamping</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/KUSKBDeflectResult.html">KUSKBDeflectResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/KUSMessageAction.html">KUSMessageAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK13ManagedObjecta">ManagedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK20ManagedObjectContexta">ManagedObjectContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11KustomerSDK9Timetokena">Timetoken</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>ChatProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ChatProvider</span></code></pre>
+
+                </div>
+              </div>
+            <p>The chat provider is a singleton, and provides access to all the chat-related Kustomer things you can do.</p>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">kp</span> <span class="o">=</span> <span class="kt">Kustomer</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">chatProvider</span>
+
+ <span class="kd">class</span> <span class="kt">MyChatListener</span><span class="p">:</span> <span class="kt">KUSChatListener</span> <span class="p">{</span>
+   <span class="c1">// See KUSChatListener for a full list of events you can monitor</span>
+   <span class="kd">func</span> <span class="nf">onUnreadCountChange</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nf">print</span><span class="p">(</span><span class="s">"unread count </span><span class="se">\(</span><span class="n">count</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+   <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="k">let</span> <span class="nv">listener</span> <span class="o">=</span> <span class="kt">MyChatListener</span><span class="p">()</span>
+</code></pre>
+
+<p>### Open conversation count</p>
+
+<p>Get the open conversation count</p>
+<pre class="highlight swift"><code> <span class="n">kp</span><span class="o">.</span><span class="nf">openConversationCount</span><span class="p">()</span>
+</code></pre>
+
+<p>Listen for changes to the open conversation count:</p>
+<pre class="highlight swift"><code> <span class="kd">extension</span> <span class="kt">MyChatListener</span> <span class="p">{</span>
+   <span class="kd">func</span> <span class="nf">onOpenConversationCountChange</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nf">print</span><span class="p">(</span><span class="s">"open convo count changed to </span><span class="se">\(</span><span class="n">count</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+   <span class="p">}</span>
+   <span class="p">}</span>
+</code></pre>
+
+<p>### Unread count</p>
+
+<p>Get the open conversation count</p>
+<pre class="highlight swift"><code> <span class="n">kp</span><span class="o">.</span><span class="nf">unreadCount</span><span class="p">()</span>
+</code></pre>
+
+<p>Listen for changes to the open conversation count:</p>
+<pre class="highlight swift"><code> <span class="kd">extension</span> <span class="kt">MyChatListener</span> <span class="p">{</span>
+   <span class="kd">func</span> <span class="nf">onUnreadCountChange</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nf">print</span><span class="p">(</span><span class="s">"unread count </span><span class="se">\(</span><span class="n">count</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+   <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre>
+
+<hr>
+
+<p>## Creating conversations and sending messages</p>
+
+<p>Code sample</p>
+<pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">cp</span> <span class="o">=</span> <span class="kt">KustomerCore</span><span class="o">.</span><span class="kt">ChatProvider</span><span class="o">.</span><span class="n">shared</span>
+        <span class="n">cp</span><span class="o">.</span><span class="nf">createConversation</span><span class="p">(</span><span class="s">"Hello world"</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+          <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">value</span><span class="p">):</span>
+              <span class="nf">kprint</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">conversation</span><span class="p">)</span>
+              <span class="nf">kprint</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">messages</span><span class="p">)</span>
+              <span class="nf">kprint</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">customer</span><span class="p">)</span>
+              <span class="kt">SupportCenter</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">openConversation</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="n">value</span><span class="o">.</span><span class="n">conversation</span><span class="o">.</span><span class="n">id</span><span class="o">!</span><span class="p">)</span>
+              <span class="k">if</span> <span class="k">let</span> <span class="nv">m</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">first</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="kt">KUSChatMessageStatus</span><span class="o">.</span><span class="n">success</span> <span class="p">{</span>
+                  <span class="c1">// this message didn't send properly. a conversation must have at least 1 chat message before an agent can respond to it.</span>
+                  <span class="c1">// you can send a new message to this conversation, or</span>
+                  <span class="c1">// you can re-send this message</span>
+                  <span class="n">cp</span><span class="o">.</span><span class="nf">retrySendChatMessage</span><span class="p">(</span><span class="nv">chatMessageId</span><span class="p">:</span> <span class="n">m</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+                    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+                      <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">updatedMessage</span><span class="p">):</span>
+                        <span class="c1">// the message's id will always change after it's successfully sent</span>
+                        <span class="nf">kprint</span><span class="p">(</span><span class="s">"KUSChatMessage with id=</span><span class="se">\(</span><span class="n">m</span><span class="o">.</span><span class="n">id</span><span class="se">)</span><span class="s"> now has id=</span><span class="se">\(</span><span class="n">updatedMessage</span><span class="o">.</span><span class="n">id</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                      <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+                        <span class="nf">kprint</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+                    <span class="p">}</span>
+                  <span class="p">})</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+              <span class="nf">kdump</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">})</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC6sharedAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC6sharedAEvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt"><a href="../../Enums/KustomerCore.html">KustomerCore</a></span><span class="o">.</span><span class="kt">ChatProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/getting%20data%20from%20local%20storage"></a>
+                <a name="//apple_ref/swift/Section/getting data from local storage" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/getting%20data%20from%20local%20storage"></a>
+                  <h3 class="section-name"><p>getting data from local storage</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC13conversationsSayAA15KUSConversationCGyF"></a>
+                    <a name="//apple_ref/swift/Method/conversations()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC13conversationsSayAA15KUSConversationCGyF">conversations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Immediately returns last known list of conversations for the current customer from the SDK&rsquo;s persistent offline storage. Observe <EVENT NAME HERE> on <PROVIDER DETAILS HERE> to be notified when <conversations change>, <messages arrive>, <etc>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">conversations</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../../Classes/KUSConversation.html">KUSConversation</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC15getConversation14conversationIdAA15KUSConversationCSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/getConversation(conversationId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC15getConversation14conversationIdAA15KUSConversationCSgSS_tF">getConversation(conversationId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../../Classes/KUSConversation.html">KUSConversation</a></code> object for the given id. Returns nil if the ID is not found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getConversation</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/KUSConversation.html">KUSConversation</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC12chatMessages14conversationIdSayAA14KUSChatMessageCGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/chatMessages(conversationId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC12chatMessages14conversationIdSayAA14KUSChatMessageCGSS_tF">chatMessages(conversationId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Immediately returns last known list of messages for a conversation. Use a KUSChatListener to be notified when new messages come in.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">chatMessages</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../../Classes/KUSChatMessage.html">KUSChatMessage</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC11unreadCountSiyF"></a>
+                    <a name="//apple_ref/swift/Method/unreadCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC11unreadCountSiyF">unreadCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Immediately returns the current customer&rsquo;s unread count. Use a KUSChatListener to be notified when this changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unreadCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC21openConversationCountSiyF"></a>
+                    <a name="//apple_ref/swift/Method/openConversationCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC21openConversationCountSiyF">openConversationCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">openConversationCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/observing"></a>
+                <a name="//apple_ref/swift/Section/observing" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/observing"></a>
+                  <h3 class="section-name"><p>observing</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC9listenersSDySSAA15KUSChatListener_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/listeners" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC9listenersSDySSAA15KUSChatListener_pGvp">listeners</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All currently registered <code>KUSChatListeners</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">listeners</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/KUSChatListener.html">KUSChatListener</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC03addD8ListenerySSAA07KUSChatG0_pF"></a>
+                    <a name="//apple_ref/swift/Method/addChatListener(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC03addD8ListenerySSAA07KUSChatG0_pF">addChatListener(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a <code>KusChatListener</code> to the Core SDK to receive chat events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addChatListener</span><span class="p">(</span><span class="n">_</span> <span class="nv">listener</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/KUSChatListener.html">KUSChatListener</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC06removeD8ListeneryySSF"></a>
+                    <a name="//apple_ref/swift/Method/removeChatListener(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC06removeD8ListeneryySSF">removeChatListener(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregister a <code><a href="../../Protocols/KUSChatListener.html">KUSChatListener</a></code> using its unique <code>String</code> identifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeChatListener</span><span class="p">(</span><span class="n">_</span> <span class="nv">uuid</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC09removeAllD9ListenersyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAllChatListeners()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC09removeAllD9ListenersyyF">removeAllChatListeners()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all registered <code><a href="../../Protocols/KUSChatListener.html">KUSChatListener</a></code>s from the Core SDK</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllChatListeners</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/writing%20data"></a>
+                <a name="//apple_ref/swift/Section/writing data" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/writing%20data"></a>
+                  <h3 class="section-name"><p>writing data</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC18createConversation_10completionySS_ys6ResultOyAA15KUSConversationC12conversation_SayAA14KUSChatMessageCG8messagesAA11KUSCustomerC8customertAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/createConversation(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC18createConversation_10completionySS_ys6ResultOyAA15KUSConversationC12conversation_SayAA14KUSChatMessageCG8messagesAA11KUSCustomerC8customertAA6KErrorOGctF">createConversation(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a conversation with a message.</p>
+
+<p>Important: the KUSChatMessages returned in messages may or may not have been sent successfully yet. check their .status. and use the observer on new message create to detect when they are.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createConversation</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt"><a href="../../Classes/KUSConversation.html">KUSConversation</a></span><span class="p">,</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Classes/KUSChatMessage.html">KUSChatMessage</a></span><span class="p">],</span> <span class="nv">customer</span><span class="p">:</span> <span class="kt"><a href="../../Classes/KUSCustomer.html">KUSCustomer</a></span><span class="p">),</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message7message14conversationId10completionySS_SSyAA6KErrorOSgctF"></a>
+                    <a name="//apple_ref/swift/Method/sendChatMessage(message:conversationId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message7message14conversationId10completionySS_SSyAA6KErrorOSgctF">sendChatMessage(message:<wbr>conversationId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a text message to an existing conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendChatMessage</span><span class="p">(</span><span class="n">message</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message5image14conversationId10completionySo7UIImageC_SSyAA6KErrorOSgctF"></a>
+                    <a name="//apple_ref/swift/Method/sendChatMessage(image:conversationId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message5image14conversationId10completionySo7UIImageC_SSyAA6KErrorOSgctF">sendChatMessage(image:<wbr>conversationId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posts a message containing an image to a conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendChatMessage</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span><span class="kt">UIImage</span><span class="p">,</span>
+                            <span class="nv">conversationId</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message7fileUrl14conversationId10completiony10Foundation3URLV_SSyAA6KErrorOSgctF"></a>
+                    <a name="//apple_ref/swift/Method/sendChatMessage(fileUrl:conversationId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC04sendD7Message7fileUrl14conversationId10completiony10Foundation3URLV_SSyAA6KErrorOSgctF">sendChatMessage(fileUrl:<wbr>conversationId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posts a message containing an file or video to a conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendChatMessage</span><span class="p">(</span><span class="nv">fileUrl</span><span class="p">:</span><span class="kt">URL</span><span class="p">,</span>
+                            <span class="nv">conversationId</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC15endConversation14conversationId10completionySS_ys6ResultOyAA15KUSConversationCAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/endConversation(conversationId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC15endConversation14conversationId10completionySS_ys6ResultOyAA15KUSConversationCAA6KErrorOGctF">endConversation(conversationId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ends an existing conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">endConversation</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../../Classes/KUSConversation.html">KUSConversation</a></span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC03getD8SettingsAA07KUSChatG0CyF"></a>
+                    <a name="//apple_ref/swift/Method/getChatSettings()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC03getD8SettingsAA07KUSChatG0CyF">getChatSettings()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns chat settings. Does not attempt to load or update them from the REST API</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getChatSettings</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/KUSChatSettings.html">KUSChatSettings</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC06reloadD8Settingsyyys6ResultOyAA07KUSChatG0CAA6KErrorOGcF"></a>
+                    <a name="//apple_ref/swift/Method/reloadChatSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC06reloadD8Settingsyyys6ResultOyAA07KUSChatG0CAA6KErrorOGcF">reloadChatSettings(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reloads chat settings and business schedules from our REST API. If the network call fails, returns an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reloadChatSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../../Classes/KUSChatSettings.html">KUSChatSettings</a></span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC02isD9AvailableyyySbXEF"></a>
+                    <a name="//apple_ref/swift/Method/isChatAvailable(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC02isD9AvailableyyySbXEF">isChatAvailable(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check the &ldquo;turned on/off&rdquo; status of your chat alongwith within Business Hours and outside of Holidays settings asynchronously. For example if chat is turned off or outside of business hours, you may want to disable the button or deflect customers to contact an email).</p>
+
+<p>If you change your business hours or holidays in the admin panel, you must restart the app to see the new values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isChatAvailable</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC8markRead14conversationIdySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/markRead(conversationId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC8markRead14conversationIdySS_tF">markRead(conversationId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks a conversation as read as of right now. Any message received for this conversation after this will be treated as unread, until marked read again. This function should be called, whenever the user closes the chat view for a conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markRead</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Identifying"></a>
+                <a name="//apple_ref/swift/Section/Identifying" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Identifying"></a>
+                  <h3 class="section-name"><p>Identifying</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC8identify3jwt_ySS_ys6ResultOyytAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/identify(jwt:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC8identify3jwt_ySS_ys6ResultOyytAA6KErrorOGctF">identify(jwt:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Securely identify a customer. Requires a valid JSON Web Token.</p>
+
+<p>Identifying users is the best way to ensure your users have a great chat experience because
+it gives them access to all of the previous conversations across devices.
+By default, users can see their conversation history only on a single device. By including a secure
+hash with the ID of your user, you can securely identify that user and grant them access.</p>
+
+<p>JSON Web Token:
+The JWT used for secure identification must use HMAC SHA256 and include the following header and claims:
+Header: @{ @&ldquo;alg&rdquo; : @&ldquo;HS256&rdquo;, @&ldquo;typ&rdquo; : @&ldquo;JWT&rdquo; }
+Claims: @{ @&ldquo;externalId&rdquo; : @&ldquo;your_user_id&rdquo;, @&ldquo;iat&rdquo; : @&ldquo;current_time_utc&rdquo; }
+NOTE: tokens with an @&ldquo;iat&rdquo; older than 15 minutes will be rejected</p>
+
+<p>The JWT must be signed with your organization&rsquo;s secret. This secret is accessible to your server,
+via <code>/v1/auth/customer/settings</code>. The intent is that your own server fetches the secret, generates
+and signs the JWT and then sends it to your client which in turn calls the <code>+[Kustomer identify:]</code>
+method, preventing any risk of falsified indentification calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">identify</span><span class="p">(</span><span class="nv">jwt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC20describeConversation14conversationId10attributes_ySS_SDySSypGys6ResultOyytAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/describeConversation(conversationId:attributes:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC20describeConversation14conversationId10attributes_ySS_SDySSypGys6ResultOyytAA6KErrorOGctF">describeConversation(conversationId:<wbr>attributes:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attach custom attributes to the user&rsquo;s most recent conversation (or the first one they create)</p>
+
+<p>NOTE:
+ These key-value pairs must be enabled on the Conversation Klass via the admin portal.
+ This can be done by an admin via Settings &gt; Platform Settings &gt; Klasses &gt; Conversation</p>
+
+<ul>
+<li>Example: Usage
+<code>
+self.describe(attributes: [&quot;aNumberNum&quot;: 10, &quot;aMlListTree&quot;: &quot;scotland&quot;, &quot;aDateAt&quot;:Date(), &quot;aTrueFalseBool&quot;: true, &quot;aUrlUrl&quot;:&quot;https://www.apple.com&quot;, &quot;favoriteColorStr&quot;:&quot;Blue&quot;]) { result in switch result {
+  case .success:
+    kprint(&quot;Ok&quot;)
+  case .failure(let error):
+    kprint(error.localizedDescription)
+    if case let .describeUnknownParameter(parameter: p, details: details) = error {
+      kprint(&quot;unknown param is \(p)&quot;)
+      kprint(details!)
+    }
+    if case let .describeParameterWrongType(parameter: p, details: details) = error {
+      kprint(&quot;wrong type param is \(p)&quot;)
+      kprint(details!)
+    }
+  }
+}
+</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeConversation</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC15listenForTyping14conversationIdySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/listenForTyping(conversationId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC15listenForTyping14conversationIdySS_tF">listenForTyping(conversationId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begins listening for typing events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listenForTyping</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC22stopListeningForTyping14conversationIdySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/stopListeningForTyping(conversationId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC22stopListeningForTyping14conversationIdySS_tF">stopListeningForTyping(conversationId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops listening for typing events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopListeningForTyping</span><span class="p">(</span><span class="nv">conversationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Current%20customer"></a>
+                <a name="//apple_ref/swift/Section/Current customer" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Current%20customer"></a>
+                  <h3 class="section-name"><p>Current customer</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC15currentCustomerAA11KUSCustomerCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/currentCustomer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC15currentCustomerAA11KUSCustomerCSgyF">currentCustomer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">currentCustomer</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/KUSCustomer.html">KUSCustomer</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC23describeCurrentCustomer5phone5email6phones6emails8facebook9instagram7twitter8linkedIn6custom_ySSSg_APSaySSGSgAr4PSDySSypGSgys6ResultOyytAA6KErrorOGcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeCurrentCustomer(phone:email:phones:emails:facebook:instagram:twitter:linkedIn:custom:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC23describeCurrentCustomer5phone5email6phones6emails8facebook9instagram7twitter8linkedIn6custom_ySSSg_APSaySSGSgAr4PSDySSypGSgys6ResultOyytAA6KErrorOGcSgtF">describeCurrentCustomer(phone:<wbr>email:<wbr>phones:<wbr>emails:<wbr>facebook:<wbr>instagram:<wbr>twitter:<wbr>linkedIn:<wbr>custom:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attach custom attributes to the user</p>
+
+<p>NOTE:
+Attached key-value pairs via the <code>custom</code> property must be enabled on the Customer Klass via the admin portal.
+This can be done by an admin via Settings &gt; Platform Settings &gt; Klasses &gt; Customer, and works the same way as <code>describeConversation</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeCurrentCustomer</span><span class="p">(</span><span class="nv">phone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">phones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">emails</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">facebook</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">instagram</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">twitter</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">linkedIn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">custom</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="n">_</span> <span class="nv">completion</span><span class="p">:((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span><span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/New"></a>
+                <a name="//apple_ref/swift/Section/New" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/New"></a>
+                  <h3 class="section-name"><p>New</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC15createAssistant2id5after5errorySS_yAA3KUSO0G0CcyAA6KErrorOctF"></a>
+                    <a name="//apple_ref/swift/Method/createAssistant(id:after:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC15createAssistant2id5after5errorySS_yAA3KUSO0G0CcyAA6KErrorOctF">createAssistant(id:<wbr>after:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new <code>KUS.Assistant</code>. Fetches the properties needed to use this assistant. Gets a list of <code>initialMessages</code> that are the same format as <code>[KUSChatMessage]</code>. A conversation (<code><a href="../../Classes/KUSConversation.html">KUSConversation</a></code>) on our system (that shows up on the Kustomer website) is not created. A <code><a href="../../Classes/KUSConversation.html">KUSConversation</a></code> is only created after you submit a message using this assistant.</p>
+
+<ol>
+<li>When a conversation is created, you will get notifications for each message in <code>initialMessage</code>s, but they will have different <code>id</code>s and potentially <code>createdAt</code> dates.</li>
+<li><code>initialMessages</code> is a template for what you should show your customer. They aren&rsquo;t actual <code>KUSChatMessages</code> that are on our platform.</li>
+</ol>
+
+<p>The flow is:</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAssistant</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">after</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">KUS</span><span class="o">.</span><span class="kt">Assistant</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">),</span>
+                            <span class="nv">error</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KustomerSDK0A4CoreO12ChatProviderC6fullOn2id10completionySS_ys6ResultOyAA3KUSO9AssistantCAA6KErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/fullOn(id:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KustomerSDK0A4CoreO12ChatProviderC6fullOn2id10completionySS_ys6ResultOyAA3KUSO9AssistantCAA6KErrorOGctF">fullOn(id:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fullOn</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">KUS</span><span class="o">.</span><span class="kt">Assistant</span><span class="p">,</span> <span class="kt"><a href="../../Enums/KError.html">KError</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2020, Kustomer Inc.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
