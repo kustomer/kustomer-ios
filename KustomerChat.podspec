@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'KustomerChat'
   s.version = '2.0.0'
   s.swift_version = '5.0'
-  s.cocoapods_version = '>= 1.9.0'
+  s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
   s.license = { :type => 'custom', :file => 'LICENSE' }
   s.homepage = 'https://github.com/kustomer/kustomer-ios'
