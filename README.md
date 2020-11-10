@@ -16,6 +16,7 @@
 
 ## Installation
 
+### Manual
 1. Add `KustomerChat.xcframework` and `KustomerNetworking.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
 2. Check `Embed & Sign` for both frameworks.
 3. Add photo and camera privacy descriptions to your `Info.plist`.
@@ -28,6 +29,9 @@ Kustomer.configure(apiKey: "API_KEY_HERE", options: nil, launchOptions: launchOp
 
 See [Installation](https://kustomer.readme.io/docs/installation-1) for a full guide.
 
+### Cocoapods
+1. Add `pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git'` to your Podfile
+2. Run `pod update` or `pod install` on your project
 
 ## Example app
 
