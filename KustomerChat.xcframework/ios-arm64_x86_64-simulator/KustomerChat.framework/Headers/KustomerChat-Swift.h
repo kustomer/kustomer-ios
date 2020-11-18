@@ -196,6 +196,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import QuartzCore;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -238,17 +239,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 
 @interface ConfettiView (SWIFT_EXTENSION(KustomerChat)) <CAAnimationDelegate>
 - (void)animationDidStop:(CAAnimation * _Nonnull)animation finished:(BOOL)flag;
-@end
-
-
-
-@class NSEntityDescription;
-@class NSManagedObjectContext;
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("DisplayableInChat")
-@interface DisplayableInChat : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -343,90 +333,6 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 
 
 
-SWIFT_CLASS_NAMED("MLLNode")
-@interface MLLNode : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class NSIndexSet;
-@class NSOrderedSet;
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-- (void)insertObject:(MLLNode * _Nonnull)value inChildrenAtIndex:(NSInteger)idx;
-- (void)removeObjectFromChildrenAtIndex:(NSInteger)idx;
-- (void)insertChildren:(NSArray<MLLNode *> * _Nonnull)values atIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)removeChildrenAtIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)replaceObjectInChildrenAtIndex:(NSInteger)idx withObject:(MLLNode * _Nonnull)value;
-- (void)replaceChildrenAtIndexes:(NSIndexSet * _Nonnull)indexes withChildren:(NSArray<MLLNode *> * _Nonnull)values;
-- (void)addChildrenObject:(MLLNode * _Nonnull)value;
-- (void)removeChildrenObject:(MLLNode * _Nonnull)value;
-- (void)addChildren:(NSOrderedSet * _Nonnull)values;
-- (void)removeChildren:(NSOrderedSet * _Nonnull)values;
-@end
-
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-/// local-only id. do not use ids from the server here.
-@property (nonatomic, copy) NSString * _Nullable id;
-/// text to show user
-@property (nonatomic, copy) NSString * _Nullable displayName;
-/// this is usually the same as displayName. but not always.
-@property (nonatomic, copy) NSString * _Nullable nodeId;
-@property (nonatomic, strong) NSOrderedSet * _Nullable children;
-@property (nonatomic, strong) MLLNode * _Nullable parent;
-@property (nonatomic, strong) DisplayableInChat * _Nullable displayableInChat;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("Message")
-@interface Message : DisplayableInChat
-- (void)setValue:(id _Nullable)value forKeyPath:(NSString * _Nonnull)keyPath;
-- (void)setValue:(id _Nullable)value forKey:(NSString * _Nonnull)key;
-- (void)didChangeValueForKey:(NSString * _Nonnull)key;
-- (void)didChange:(NSKeyValueChange)changeKind valuesAtIndexes:(NSIndexSet * _Nonnull)indexes forKey:(NSString * _Nonnull)key;
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@class QuickReply;
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-- (void)insertObject:(QuickReply * _Nonnull)value inQuickRepliesAtIndex:(NSInteger)idx;
-- (void)removeObjectFromQuickRepliesAtIndex:(NSInteger)idx;
-- (void)insertQuickReplies:(NSArray<QuickReply *> * _Nonnull)values atIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)removeQuickRepliesAtIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)replaceObjectInQuickRepliesAtIndex:(NSInteger)idx withObject:(QuickReply * _Nonnull)value;
-- (void)replaceQuickRepliesAtIndexes:(NSIndexSet * _Nonnull)indexes withQuickReplies:(NSArray<QuickReply *> * _Nonnull)values;
-- (void)addQuickRepliesObject:(QuickReply * _Nonnull)value;
-- (void)removeQuickRepliesObject:(QuickReply * _Nonnull)value;
-- (void)addQuickReplies:(NSOrderedSet * _Nonnull)values;
-- (void)removeQuickReplies:(NSOrderedSet * _Nonnull)values;
-@end
-
-
-@class NSSet;
-@class ReplyGroup;
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, strong) NSSet * _Nullable attachments;
-@property (nonatomic, strong) NSOrderedSet * _Nullable quickReplies;
-@property (nonatomic, strong) ReplyGroup * _Nullable replyGroup;
-@end
 
 
 
@@ -434,13 +340,6 @@ SWIFT_CLASS_NAMED("Message")
 
 
 
-
-
-
-
-@interface NSManagedObject (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -465,78 +364,19 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 
 
 
+@class UNUserNotificationCenter;
+@class UNNotificationResponse;
+@class UNNotification;
 
-/// :nodoc:
-SWIFT_CLASS_NAMED("Participant")
-@interface Participant : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-SWIFT_CLASS_NAMED("QuickReply")
-@interface QuickReply : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface QuickReply (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface QuickReply (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable actionValue;
-@property (nonatomic, copy) NSString * _Nullable displayText;
-@property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable rawJSON;
-@property (nonatomic, strong) Message * _Nullable message;
-@property (nonatomic) BOOL local_showIcon;
-@end
-
-
-SWIFT_CLASS_NAMED("ReplyGroup")
-@interface ReplyGroup : DisplayableInChat
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface ReplyGroup (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface ReplyGroup (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable localStatus;
-@property (nonatomic) BOOL isMLL;
-@property (nonatomic, strong) Message * _Nullable replyGroupMessage;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("Session")
-@interface Session : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-
-
-
-@interface Session (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface Session (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable id;
+/// Used to register/unregister devices with our push notification service. To enable push, use the Kustomer website.
+SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
+@interface PushProvider : NSObject <UNUserNotificationCenterDelegate>
+/// this gets called when you tap a push notification. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// this gets called when you get a push notification while the app is open. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center openSettingsForNotification:(UNNotification * _Nullable)notification;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSBundle;
@@ -825,6 +665,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import QuartzCore;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -867,17 +708,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 
 @interface ConfettiView (SWIFT_EXTENSION(KustomerChat)) <CAAnimationDelegate>
 - (void)animationDidStop:(CAAnimation * _Nonnull)animation finished:(BOOL)flag;
-@end
-
-
-
-@class NSEntityDescription;
-@class NSManagedObjectContext;
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("DisplayableInChat")
-@interface DisplayableInChat : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -972,90 +802,6 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 
 
 
-SWIFT_CLASS_NAMED("MLLNode")
-@interface MLLNode : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class NSIndexSet;
-@class NSOrderedSet;
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-- (void)insertObject:(MLLNode * _Nonnull)value inChildrenAtIndex:(NSInteger)idx;
-- (void)removeObjectFromChildrenAtIndex:(NSInteger)idx;
-- (void)insertChildren:(NSArray<MLLNode *> * _Nonnull)values atIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)removeChildrenAtIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)replaceObjectInChildrenAtIndex:(NSInteger)idx withObject:(MLLNode * _Nonnull)value;
-- (void)replaceChildrenAtIndexes:(NSIndexSet * _Nonnull)indexes withChildren:(NSArray<MLLNode *> * _Nonnull)values;
-- (void)addChildrenObject:(MLLNode * _Nonnull)value;
-- (void)removeChildrenObject:(MLLNode * _Nonnull)value;
-- (void)addChildren:(NSOrderedSet * _Nonnull)values;
-- (void)removeChildren:(NSOrderedSet * _Nonnull)values;
-@end
-
-
-@interface MLLNode (SWIFT_EXTENSION(KustomerChat))
-/// local-only id. do not use ids from the server here.
-@property (nonatomic, copy) NSString * _Nullable id;
-/// text to show user
-@property (nonatomic, copy) NSString * _Nullable displayName;
-/// this is usually the same as displayName. but not always.
-@property (nonatomic, copy) NSString * _Nullable nodeId;
-@property (nonatomic, strong) NSOrderedSet * _Nullable children;
-@property (nonatomic, strong) MLLNode * _Nullable parent;
-@property (nonatomic, strong) DisplayableInChat * _Nullable displayableInChat;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("Message")
-@interface Message : DisplayableInChat
-- (void)setValue:(id _Nullable)value forKeyPath:(NSString * _Nonnull)keyPath;
-- (void)setValue:(id _Nullable)value forKey:(NSString * _Nonnull)key;
-- (void)didChangeValueForKey:(NSString * _Nonnull)key;
-- (void)didChange:(NSKeyValueChange)changeKind valuesAtIndexes:(NSIndexSet * _Nonnull)indexes forKey:(NSString * _Nonnull)key;
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@class QuickReply;
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-- (void)insertObject:(QuickReply * _Nonnull)value inQuickRepliesAtIndex:(NSInteger)idx;
-- (void)removeObjectFromQuickRepliesAtIndex:(NSInteger)idx;
-- (void)insertQuickReplies:(NSArray<QuickReply *> * _Nonnull)values atIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)removeQuickRepliesAtIndexes:(NSIndexSet * _Nonnull)indexes;
-- (void)replaceObjectInQuickRepliesAtIndex:(NSInteger)idx withObject:(QuickReply * _Nonnull)value;
-- (void)replaceQuickRepliesAtIndexes:(NSIndexSet * _Nonnull)indexes withQuickReplies:(NSArray<QuickReply *> * _Nonnull)values;
-- (void)addQuickRepliesObject:(QuickReply * _Nonnull)value;
-- (void)removeQuickRepliesObject:(QuickReply * _Nonnull)value;
-- (void)addQuickReplies:(NSOrderedSet * _Nonnull)values;
-- (void)removeQuickReplies:(NSOrderedSet * _Nonnull)values;
-@end
-
-
-@class NSSet;
-@class ReplyGroup;
-
-@interface Message (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, strong) NSSet * _Nullable attachments;
-@property (nonatomic, strong) NSOrderedSet * _Nullable quickReplies;
-@property (nonatomic, strong) ReplyGroup * _Nullable replyGroup;
-@end
 
 
 
@@ -1063,13 +809,6 @@ SWIFT_CLASS_NAMED("Message")
 
 
 
-
-
-
-
-@interface NSManagedObject (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -1094,78 +833,19 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 
 
 
+@class UNUserNotificationCenter;
+@class UNNotificationResponse;
+@class UNNotification;
 
-/// :nodoc:
-SWIFT_CLASS_NAMED("Participant")
-@interface Participant : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-SWIFT_CLASS_NAMED("QuickReply")
-@interface QuickReply : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface QuickReply (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface QuickReply (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable actionValue;
-@property (nonatomic, copy) NSString * _Nullable displayText;
-@property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable rawJSON;
-@property (nonatomic, strong) Message * _Nullable message;
-@property (nonatomic) BOOL local_showIcon;
-@end
-
-
-SWIFT_CLASS_NAMED("ReplyGroup")
-@interface ReplyGroup : DisplayableInChat
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface ReplyGroup (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface ReplyGroup (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable localStatus;
-@property (nonatomic) BOOL isMLL;
-@property (nonatomic, strong) Message * _Nullable replyGroupMessage;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS_NAMED("Session")
-@interface Session : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-
-
-
-
-@interface Session (SWIFT_EXTENSION(KustomerChat))
-+ (NSManagedObject * _Nonnull)makeNewForFindOrCreate:(NSString * _Nonnull)id context:(NSManagedObjectContext * _Nonnull)context SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface Session (SWIFT_EXTENSION(KustomerChat))
-@property (nonatomic, copy) NSString * _Nullable id;
+/// Used to register/unregister devices with our push notification service. To enable push, use the Kustomer website.
+SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
+@interface PushProvider : NSObject <UNUserNotificationCenterDelegate>
+/// this gets called when you tap a push notification. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// this gets called when you get a push notification while the app is open. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center openSettingsForNotification:(UNNotification * _Nullable)notification;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSBundle;

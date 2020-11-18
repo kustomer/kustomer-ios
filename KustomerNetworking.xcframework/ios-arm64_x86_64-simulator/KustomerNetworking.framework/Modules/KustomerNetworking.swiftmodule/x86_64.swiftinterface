@@ -47,10 +47,10 @@ public struct KustomerPubNubV3ChannelMetadataChangeset {
   public func apply(to object: KustomerNetworking.KustomerPubNubV3ChannelMetadata) -> KustomerNetworking.KustomerPubNubV3ChannelMetadata
 }
 public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
-  public let timetoken: KustomerNetworking.Timetoken
+  public let timetoken: KustomerNetworking.KUSPNTtoken
   public let region: Swift.Int
-  public init(timetoken: KustomerNetworking.Timetoken, region: Swift.Int)
-  public init?(timetoken: KustomerNetworking.Timetoken? = nil, region: Swift.Int? = nil)
+  public init(timetoken: KustomerNetworking.KUSPNTtoken, region: Swift.Int)
+  public init?(timetoken: KustomerNetworking.KUSPNTtoken? = nil, region: Swift.Int? = nil)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -62,12 +62,12 @@ public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
 public protocol KustomerPubNubV3MessageAction {
   var actionType: Swift.String { get }
   var actionValue: Swift.String { get }
-  var actionTimetoken: KustomerNetworking.Timetoken { get }
-  var messageTimetoken: KustomerNetworking.Timetoken { get }
+  var actionTimetoken: KustomerNetworking.KUSPNTtoken { get }
+  var messageTimetoken: KustomerNetworking.KUSPNTtoken { get }
   var publisher: Swift.String { get }
   var channel: Swift.String { get }
   var subscription: Swift.String? { get }
-  var published: KustomerNetworking.Timetoken? { get }
+  var published: KustomerNetworking.KUSPNTtoken? { get }
   init(from other: KustomerNetworking.KustomerPubNubV3MessageAction) throws
 }
 extension KustomerPubNubV3MessageAction {
@@ -77,14 +77,14 @@ extension KustomerPubNubV3MessageAction {
 public struct KustomerPubNubV3MessageActionBase : KustomerNetworking.KustomerPubNubV3MessageAction, Swift.Codable, Swift.Hashable {
   public let actionType: Swift.String
   public let actionValue: Swift.String
-  public let actionTimetoken: KustomerNetworking.Timetoken
-  public let messageTimetoken: KustomerNetworking.Timetoken
+  public let actionTimetoken: KustomerNetworking.KUSPNTtoken
+  public let messageTimetoken: KustomerNetworking.KUSPNTtoken
   public let publisher: Swift.String
   public let channel: Swift.String
   public let subscription: Swift.String?
-  public let published: KustomerNetworking.Timetoken?
+  public let published: KustomerNetworking.KUSPNTtoken?
   public init(from other: KustomerNetworking.KustomerPubNubV3MessageAction) throws
-  public init(actionType: Swift.String, actionValue: Swift.String, actionTimetoken: KustomerNetworking.Timetoken, messageTimetoken: KustomerNetworking.Timetoken, publisher: Swift.String, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.Timetoken? = nil)
+  public init(actionType: Swift.String, actionValue: Swift.String, actionTimetoken: KustomerNetworking.KUSPNTtoken, messageTimetoken: KustomerNetworking.KUSPNTtoken, publisher: Swift.String, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.KUSPNTtoken? = nil)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -271,20 +271,20 @@ extension KustomerPubNubV3 {
   }
 }
 extension KustomerPubNubV3 {
-  public func time(custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+  public func time(custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
 }
 extension KustomerPubNubV3 {
-  public func publish(channel: Swift.String, message: KustomerNetworking.JSONCodable, shouldStore: Swift.Bool? = nil, storeTTL: Swift.Int? = nil, meta: KustomerNetworking.JSONCodable? = nil, shouldCompress: Swift.Bool = false, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
-  public func fire(channel: Swift.String, message: KustomerNetworking.JSONCodable, meta: KustomerNetworking.JSONCodable? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
-  public func signal(channel: Swift.String, message: KustomerNetworking.JSONCodable, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.Timetoken, Swift.Error>) -> Swift.Void)?)
+  public func publish(channel: Swift.String, message: KustomerNetworking.JSONCodable, shouldStore: Swift.Bool? = nil, storeTTL: Swift.Int? = nil, meta: KustomerNetworking.JSONCodable? = nil, shouldCompress: Swift.Bool = false, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
+  public func fire(channel: Swift.String, message: KustomerNetworking.JSONCodable, meta: KustomerNetworking.JSONCodable? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
+  public func signal(channel: Swift.String, message: KustomerNetworking.JSONCodable, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
 }
 extension KustomerPubNubV3 {
-  public func subscribe(to channels: [Swift.String], and channelGroups: [Swift.String] = [], at timetoken: KustomerNetworking.Timetoken? = nil, withPresence: Swift.Bool = false, filterOverride: Swift.String? = nil)
+  public func subscribe(to channels: [Swift.String], and channelGroups: [Swift.String] = [], at timetoken: KustomerNetworking.KUSPNTtoken? = nil, withPresence: Swift.Bool = false, filterOverride: Swift.String? = nil)
   public func unsubscribe(from channels: [Swift.String], and channelGroups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
   public func unsubscribeAll()
   public func disconnect()
-  public func reconnect(at timetoken: KustomerNetworking.Timetoken? = nil)
-  public var previousTimetoken: KustomerNetworking.Timetoken? {
+  public func reconnect(at timetoken: KustomerNetworking.KUSPNTtoken? = nil)
+  public var previousTimetoken: KustomerNetworking.KUSPNTtoken? {
     get
   }
   public func add(_ listener: KustomerNetworking.SubscriptionListener)
@@ -328,9 +328,9 @@ extension KustomerPubNubV3 {
 }
 extension KustomerPubNubV3 {
   public func fetchMessageHistory(for channels: [Swift.String], includeActions actions: Swift.Bool = false, includeMeta: Swift.Bool = false, page: KustomerNetworking.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(messagesByChannel: [Swift.String : [KustomerNetworking.KustomerPubNubV3Message]], next: KustomerNetworking.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
-  public func deleteMessageHistory(from channel: Swift.String, start: KustomerNetworking.Timetoken? = nil, end: KustomerNetworking.Timetoken? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
-  public func messageCounts(channels: [Swift.String : KustomerNetworking.Timetoken], custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
-  public func messageCounts(channels: [Swift.String], timetoken: KustomerNetworking.Timetoken = 1, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
+  public func deleteMessageHistory(from channel: Swift.String, start: KustomerNetworking.KUSPNTtoken? = nil, end: KustomerNetworking.KUSPNTtoken? = nil, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
+  public func messageCounts(channels: [Swift.String : KustomerNetworking.KUSPNTtoken], custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
+  public func messageCounts(channels: [Swift.String], timetoken: KustomerNetworking.KUSPNTtoken = 1, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
 }
 extension KustomerPubNubV3 {
   public func allUUIDMetadata(include: KustomerNetworking.KustomerPubNubV3.IncludeFields = IncludeFields(), filter: Swift.String? = nil, sort: [KustomerNetworking.KustomerPubNubV3.ObjectSortField] = [], limit: Swift.Int? = 100, page: KustomerNetworking.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(uuids: [KustomerNetworking.KustomerPubNubV3UUIDMetadata], next: KustomerNetworking.KustomerPubNubV3HashedPage?), Swift.Error>) -> Swift.Void)?)
@@ -356,8 +356,8 @@ extension KustomerPubNubV3 {
 }
 extension KustomerPubNubV3 {
   public func fetchMessageActions(channel: Swift.String, page: KustomerNetworking.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(actions: [KustomerNetworking.KustomerPubNubV3MessageAction], next: KustomerNetworking.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
-  public func addMessageAction(channel: Swift.String, type actionType: Swift.String, value: Swift.String, messageTimetoken: KustomerNetworking.Timetoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3MessageAction, Swift.Error>) -> Swift.Void)?)
-  public func removeMessageActions(channel: Swift.String, message timetoken: KustomerNetworking.Timetoken, action actionTimetoken: KustomerNetworking.Timetoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channel: Swift.String, message: KustomerNetworking.Timetoken, action: KustomerNetworking.Timetoken), Swift.Error>) -> Swift.Void)?)
+  public func addMessageAction(channel: Swift.String, type actionType: Swift.String, value: Swift.String, messageTimetoken: KustomerNetworking.KUSPNTtoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerNetworking.KustomerPubNubV3MessageAction, Swift.Error>) -> Swift.Void)?)
+  public func removeMessageActions(channel: Swift.String, message timetoken: KustomerNetworking.KUSPNTtoken, action actionTimetoken: KustomerNetworking.KUSPNTtoken, custom requestConfig: KustomerNetworking.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channel: Swift.String, message: KustomerNetworking.KUSPNTtoken, action: KustomerNetworking.KUSPNTtoken), Swift.Error>) -> Swift.Void)?)
 }
 extension KustomerPubNubV3 {
   public func getToken(for identifier: Swift.String, with type: KustomerNetworking.PAMResourceType? = nil) -> KustomerNetworking.PAMToken?
@@ -989,11 +989,11 @@ extension Array where Element == KustomerNetworking.KustomerPubNubV3PresenceChan
 public protocol KustomerPubNubV3PresenceChange {
   var actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction] { get }
   var occupancy: Swift.Int { get }
-  var timetoken: KustomerNetworking.Timetoken { get }
+  var timetoken: KustomerNetworking.KUSPNTtoken { get }
   var refreshHereNow: Swift.Bool { get }
   var channel: Swift.String { get }
   var subscription: Swift.String? { get }
-  var published: KustomerNetworking.Timetoken? { get }
+  var published: KustomerNetworking.KUSPNTtoken? { get }
   var metadata: KustomerNetworking.JSONCodable? { get }
   init(from other: KustomerNetworking.KustomerPubNubV3PresenceChange) throws
 }
@@ -1004,16 +1004,16 @@ extension KustomerPubNubV3PresenceChange {
 public struct KustomerPubNubV3PresenceChangeBase : KustomerNetworking.KustomerPubNubV3PresenceChange, Swift.Hashable {
   public var actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction]
   public var occupancy: Swift.Int
-  public var timetoken: KustomerNetworking.Timetoken
+  public var timetoken: KustomerNetworking.KUSPNTtoken
   public var refreshHereNow: Swift.Bool
   public var channel: Swift.String
   public var subscription: Swift.String?
-  public var published: KustomerNetworking.Timetoken?
+  public var published: KustomerNetworking.KUSPNTtoken?
   public var metadata: KustomerNetworking.JSONCodable? {
     get
   }
   public init(from other: KustomerNetworking.KustomerPubNubV3PresenceChange) throws
-  public init(actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction], occupancy: Swift.Int, timetoken: KustomerNetworking.Timetoken, refreshHereNow: Swift.Bool, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.Timetoken? = nil, metadata: KustomerNetworking.JSONCodable? = nil)
+  public init(actions: [KustomerNetworking.KustomerPubNubV3PresenceChangeAction], occupancy: Swift.Int, timetoken: KustomerNetworking.KUSPNTtoken, refreshHereNow: Swift.Bool, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerNetworking.KUSPNTtoken? = nil, metadata: KustomerNetworking.JSONCodable? = nil)
   public var hashValue: Swift.Int {
     get
   }
@@ -1432,7 +1432,7 @@ public protocol KustomerPubNubV3Message {
   var publisher: Swift.String? { get set }
   var channel: Swift.String { get }
   var subscription: Swift.String? { get }
-  var published: KustomerNetworking.Timetoken { get set }
+  var published: KustomerNetworking.KUSPNTtoken { get set }
   var metadata: KustomerNetworking.JSONCodable? { get set }
   init(from other: KustomerNetworking.KustomerPubNubV3Message) throws
 }
@@ -1444,7 +1444,7 @@ public struct KustomerPubNubV3MessageBase : KustomerNetworking.KustomerPubNubV3M
   public var publisher: Swift.String?
   public var channel: Swift.String
   public var subscription: Swift.String?
-  public var published: KustomerNetworking.Timetoken
+  public var published: KustomerNetworking.KUSPNTtoken
   public var payload: KustomerNetworking.JSONCodable {
     get
     set(newValue)
@@ -1458,7 +1458,7 @@ public struct KustomerPubNubV3MessageBase : KustomerNetworking.KustomerPubNubV3M
     set(newValue)
   }
   public init(from other: KustomerNetworking.KustomerPubNubV3Message) throws
-  public init(payload: KustomerNetworking.AnyJSON, actions: [KustomerNetworking.KustomerPubNubV3MessageActionBase], publisher: Swift.String?, channel: Swift.String, subscription: Swift.String?, published: KustomerNetworking.Timetoken, metadata: KustomerNetworking.AnyJSON?)
+  public init(payload: KustomerNetworking.AnyJSON, actions: [KustomerNetworking.KustomerPubNubV3MessageActionBase], publisher: Swift.String?, channel: Swift.String, subscription: Swift.String?, published: KustomerNetworking.KUSPNTtoken, metadata: KustomerNetworking.AnyJSON?)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -1581,7 +1581,7 @@ public struct APSCriticalSound : Swift.Codable, Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: KustomerNetworking.APSCriticalSound, b: KustomerNetworking.APSCriticalSound) -> Swift.Bool
 }
-public typealias Timetoken = Swift.UInt64
+public typealias KUSPNTtoken = Swift.UInt64
 public typealias PAMTokenStore = [Swift.String : KustomerNetworking.PAMToken]
 public typealias PAMResourceType = KustomerNetworking.PAMTokenManagementSystem.Resource
 extension UInt64 {
@@ -1821,8 +1821,8 @@ extension PAMPermission : Swift.CustomStringConvertible {
   }
 }
 public protocol KustomerPubNubV3BoundedPage {
-  var start: KustomerNetworking.Timetoken? { get }
-  var end: KustomerNetworking.Timetoken? { get }
+  var start: KustomerNetworking.KUSPNTtoken? { get }
+  var end: KustomerNetworking.KUSPNTtoken? { get }
   var limit: Swift.Int? { get }
   init(from other: KustomerNetworking.KustomerPubNubV3BoundedPage) throws
 }
@@ -1831,10 +1831,10 @@ extension KustomerPubNubV3BoundedPage {
   public func transcode<T>() throws -> T where T : KustomerNetworking.KustomerPubNubV3BoundedPage
 }
 public struct KustomerPubNubV3BoundedPageBase : KustomerNetworking.KustomerPubNubV3BoundedPage, Swift.Codable, Swift.Hashable {
-  public let start: KustomerNetworking.Timetoken?
-  public let end: KustomerNetworking.Timetoken?
+  public let start: KustomerNetworking.KUSPNTtoken?
+  public let end: KustomerNetworking.KUSPNTtoken?
   public let limit: Swift.Int?
-  public init?(start: KustomerNetworking.Timetoken? = nil, end: KustomerNetworking.Timetoken? = nil, limit: Swift.Int? = nil)
+  public init?(start: KustomerNetworking.KUSPNTtoken? = nil, end: KustomerNetworking.KUSPNTtoken? = nil, limit: Swift.Int? = nil)
   public init(from other: KustomerNetworking.KustomerPubNubV3BoundedPage) throws
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -2138,7 +2138,7 @@ extension UInt64 {
   public func toDate() -> Foundation.Date
 }
 extension Date {
-  public func toPubNubTimetoken() -> KustomerNetworking.Timetoken
+  public func toPubNubTimetoken() -> KustomerNetworking.KUSPNTtoken
 }
 public struct KustomerPubNubV3FCMPayload : Swift.Codable {
   public let payload: KustomerNetworking.JSONCodable?

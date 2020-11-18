@@ -44,7 +44,6 @@
 		DD171844254A385B00731814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD171846254A385B00731814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD17184F254A38A100731814 /* KustomerNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerNetworking.xcframework; path = ../KustomerNetworking.xcframework; sourceTree = "<group>"; };
-		DD171850254A38A100731814 /* KustomerSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerSDK.xcframework; path = ../KustomerSDK.xcframework; sourceTree = "<group>"; };
 		DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerChat.xcframework; path = ../KustomerChat.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +96,6 @@
 			children = (
 				DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */,
 				DD17184F254A38A100731814 /* KustomerNetworking.xcframework */,
-				DD171850254A38A100731814 /* KustomerSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

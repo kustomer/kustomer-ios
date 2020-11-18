@@ -1,4 +1,4 @@
-"com.kustomer.%@ is typing..." = "%@ est en train d&#39;écrire...";
+"com.kustomer.%@ is typing..." = "%@ est en train d'écrire...";
 "com.kustomer.Agent" = "Agent";
 "com.kustomer.Are you sure you want to end this chat?" = "Voulez-vous vraiment mettre fin à ce chat?";
 "com.kustomer.Attached file" = "Pièce jointe";
@@ -10,7 +10,7 @@
 "com.kustomer.Chat" = "Bavarder";
 "com.kustomer.Chat has ended" = "Le chat est terminé";
 "com.kustomer.Chat is currently unavailable" = "Le chat est actuellement indisponible";
-"com.kustomer.Chat with support" = "Discutez avec l&#39;assistance";
+"com.kustomer.Chat with support" = "Discutez avec l'assistance";
 "com.kustomer.Conversation ended" = "Conversation terminée";
 "com.kustomer.Delete" = "Effacer";
 "com.kustomer.End Chat" = "Terminer le chat";
@@ -26,15 +26,15 @@
 "com.kustomer.Loading..." = "Chargement...";
 "com.kustomer.Mark all as read" = "tout marquer comme lu";
 "com.kustomer.Me" = "Moi";
-"com.kustomer.Message failed to send" = "Échec de l&#39;envoi du message";
-"com.kustomer.Message failed to send!" = "Le message n&#39;a pas pu être envoyé!";
+"com.kustomer.Message failed to send" = "Échec de l'envoi du message";
+"com.kustomer.Message failed to send!" = "Le message n'a pas pu être envoyé!";
 "com.kustomer.Nevermind" = "Ça ne fait rien";
 "com.kustomer.New Conversation" = "Nouvelle conversation";
 "com.kustomer.No conversations yet" = "Pas encore de conversations";
 "com.kustomer.No internet connection" = "Pas de connexion Internet";
 "com.kustomer.No text" = "Pas de texte";
-"com.kustomer.None of your personal information was included" = "Aucune de vos informations personnelles n&#39;a été incluse";
-"com.kustomer.Okay" = "d&#39;accord";
+"com.kustomer.None of your personal information was included" = "Aucune de vos informations personnelles n'a été incluse";
+"com.kustomer.Okay" = "d'accord";
 "com.kustomer.Open in browser" = "Ouvrir dans le navigateur";
 "com.kustomer.Photo library" = "galerie de photos";
 "com.kustomer.Please leave a message" = "Merci de laisser un message";
@@ -56,5 +56,5 @@
 "com.kustomer.We will get back to you as soon as we are online!" = "Nous vous répondrons dès que nous serons en ligne!";
 "com.kustomer.Yes" = "Oui";
 "com.kustomer.Your existing conversations will be here." = "Vos conversations existantes seront ici.";
-"com.kustomer.You’re offline. Check your connection." = "Vous n&#39;êtes pas connecté. Vérifiez votre connexion.";
+"com.kustomer.You’re offline. Check your connection." = "Vous n'êtes pas connecté. Vérifiez votre connexion.";
 "com.kustomer.sending" = "Envoi en cours";

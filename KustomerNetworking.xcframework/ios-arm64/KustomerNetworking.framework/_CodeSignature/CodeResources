@@ -10,31 +10,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v4x6x8jL3FwKtOtFzxxoznFblIs=
+		UrhUaDkBQbPIJSyevwIe87VvZRs=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		MuVG6RW7oWdb7FUdn6VaWNLkY/w=
+		vsqQKJPznaSTi16AhNOVWEFtH8c=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LJhyqhbD24+5joaU5o4x0jXcqSA=
+		L61H9FK/EvDWJrkrJKKtEFkETMo=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		JNgxeJ/+05aRqqmwgjPSYfRlG8A=
+		UYRP4RqKxz3nyS3PYp0ZDgUZpjU=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		MuVG6RW7oWdb7FUdn6VaWNLkY/w=
+		vsqQKJPznaSTi16AhNOVWEFtH8c=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		LJhyqhbD24+5joaU5o4x0jXcqSA=
+		L61H9FK/EvDWJrkrJKKtEFkETMo=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		JNgxeJ/+05aRqqmwgjPSYfRlG8A=
+		UYRP4RqKxz3nyS3PYp0ZDgUZpjU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,42 +54,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2IoVtE5+j4MC828lr/0uM2XrZcLaW34IBc0FQFNYc4=
+			Uo+liniZ9+dnskK0hwCOUJzYrI7PTMqGeYKFTKaVwbA=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2eKOWegqGRSogbcI6cv23v5qHvplQus3997AQkjr9U=
+			YLa3Ax/GVoIkdj5rkoSQNUM9/QJ2pW7Q7Nb2XXhfzKc=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qOerXJnViVMzCQBZJNAiGLYfi4TUzlv37hmkCiIxs1c=
+			+M8jGUEG+PdffVlXK9cdS7ardGQ7gRbqQyvWHuMsEJA=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2IoVtE5+j4MC828lr/0uM2XrZcLaW34IBc0FQFNYc4=
+			Uo+liniZ9+dnskK0hwCOUJzYrI7PTMqGeYKFTKaVwbA=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2eKOWegqGRSogbcI6cv23v5qHvplQus3997AQkjr9U=
+			YLa3Ax/GVoIkdj5rkoSQNUM9/QJ2pW7Q7Nb2XXhfzKc=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qOerXJnViVMzCQBZJNAiGLYfi4TUzlv37hmkCiIxs1c=
+			+M8jGUEG+PdffVlXK9cdS7ardGQ7gRbqQyvWHuMsEJA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
