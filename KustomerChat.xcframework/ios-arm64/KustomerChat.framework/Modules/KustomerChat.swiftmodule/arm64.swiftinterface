@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
@@ -388,7 +388,7 @@ public struct KUSAlertInfo {
   public func currentCustomer() -> KustomerChat.KUSCustomer?
   public func getChatSettings() -> KustomerChat.KUSChatSettings
   public func isChatAvailable(_ callback: ((Swift.Bool) -> Swift.Void))
-  public func createConversation(title text: Swift.String, assistant: KustomerChat.KUSAssistant? = nil, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
+  public func createConversation(firstCustomerMessage text: Swift.String, assistant: KustomerChat.KUSAssistant? = nil, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
   public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
@@ -702,6 +702,10 @@ public class KustomerOptions {
   public var pushEnvironment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
   public var _debugAcceptLangHeader: Swift.String?
+  public var onViewDidAppear: ((Swift.Bool) -> Swift.Void)?
+  public var onViewWillAppear: ((Swift.Bool) -> Swift.Void)?
+  public var onViewWillDisappear: ((Swift.Bool) -> Swift.Void)?
+  public var onViewDidDisappear: ((Swift.Bool) -> Swift.Void)?
   public var hostDomain: Swift.String?
   public var businessScheduleId: Swift.String?
   public var knowledgeBaseID: Swift.String?
@@ -1429,6 +1433,9 @@ public enum KustomerLogType : Swift.String {
   public var sdkVersion: Swift.String {
     get
   }
+  public var rootViewController: KustomerChat.SupportTabViewController? {
+    get
+  }
   public var pushKeysPresentAndPushEnabled: Swift.Bool {
     get
   }
@@ -1505,6 +1512,7 @@ public enum KustomerLogType : Swift.String {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class SupportTabViewController : UIKit.UITabBarController, UIKit.UITabBarControllerDelegate {
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
