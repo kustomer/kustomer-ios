@@ -330,6 +330,7 @@ extension UIRectEdge : KustomerChat.Then {
   public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
   public func requestAuthorizationForPush()
   public func registerDeviceForPushNotifications()
+  public func listLivePushChannelRegistrations(completion: ((Swift.Result<[Swift.String], KustomerChat.KError>) -> Swift.Void)? = nil)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, openSettingsFor notification: UserNotifications.UNNotification?)
@@ -693,6 +694,7 @@ public class KustomerOptions {
   public var showInAppNotifications: Swift.Bool
   public var language: KustomerChat.KustomerLanguage?
   public var debugMode: Swift.Bool
+  public var hostViewController: UIKit.UIViewController?
   public var activeAssistant: KustomerChat.ActiveAssistantOptions
   public var disablePush: Swift.Bool
   public var pushBundleId: Swift.String {
@@ -701,6 +703,7 @@ public class KustomerOptions {
   }
   public var pushEnvironment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
+  public var hideNewConversationButton: Swift.Bool
   public var _debugAcceptLangHeader: Swift.String?
   public var onViewDidAppear: ((Swift.Bool) -> Swift.Void)?
   public var onViewWillAppear: ((Swift.Bool) -> Swift.Void)?
