@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
+    print("Kustomer SDK v\(Kustomer.sdkVersion)")
     Kustomer.configure(apiKey: "API_KEY_HERE", options: nil, launchOptions: launchOptions)
     
     return true

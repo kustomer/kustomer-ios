@@ -188,9 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreData;
 @import CoreGraphics;
-@import Foundation;
 @import ObjectiveC;
 @import QuartzCore;
 @import UIKit;
@@ -213,15 +211,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat33ChatEventFetchedResultsController")
-@interface ChatEventFetchedResultsController : NSObject <NSFetchedResultsControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
-@end
-
 @class NSCoder;
 
 /// :nodoc:
@@ -241,85 +230,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 
 
 
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat17FlexibleHeightBar")
-@interface FlexibleHeightBar : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)awakeFromNib;
-- (void)layoutSubviews;
-@end
-
-@class UIScrollView;
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat32FlexibleHeightBarBehaviorDefiner")
-@interface FlexibleHeightBarBehaviorDefiner : NSObject <UIScrollViewDelegate>
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@class UIWindow;
-
-/// :nodoc:
-SWIFT_PROTOCOL("_TtP12KustomerChat14HasAppDelegate_")
-@protocol HasAppDelegate
-@property (nonatomic, strong) UIWindow * _Nullable window;
-@property (nonatomic, strong) UIWindow * _Null_unspecified win;
-- (void)makeAndPresentAppFromFirstLaunch;
-- (void)debug_only_startSwitchApiKey;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat38KUSChatMessageFetchedResultsController")
-@interface KUSChatMessageFetchedResultsController : NSObject <NSFetchedResultsControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat39KUSConversationFetchedResultsController")
-@interface KUSConversationFetchedResultsController : NSObject <NSFetchedResultsControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
-@end
-
-@protocol NSFetchedResultsSectionInfo;
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat20KUSConvoEndedFRCTemp")
-@interface KUSConvoEndedFRCTemp : NSObject <NSFetchedResultsControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeSection:(id <NSFetchedResultsSectionInfo> _Nonnull)sectionInfo atIndex:(NSInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
-@end
-
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat48KUSOpenConversationCountFetchedResultsController")
-@interface KUSOpenConversationCountFetchedResultsController : NSObject <NSFetchedResultsControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeSection:(id <NSFetchedResultsSectionInfo> _Nonnull)sectionInfo atIndex:(NSInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type;
-- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
-@end
 
 
 /// :nodoc:
@@ -372,6 +282,7 @@ SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
 /// this gets called when you tap a push notification. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 /// this gets called when you get a push notification while the app is open. if you have set a <code>unUserNotificationCenterDelegate</code>, your <code>unUserNotificationCenterDelegate</code> will get called if the notification isn’t from Kustomer.
+/// this gets called when a push is received and the app is in the foreground. since you’re also subscribed to pubnub, <code>Message.update</code> will be called twice (the other time via pnMessageReceived)
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center openSettingsForNotification:(UNNotification * _Nullable)notification;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -393,20 +304,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat24TableViewDelegateHandler")
-@interface TableViewDelegateHandler : NSObject <UITableViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 
 
 

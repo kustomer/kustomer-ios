@@ -188,7 +188,7 @@ public struct KustomerPubNubV3 {
   public let instanceID: Foundation.UUID
   public let configuration: KustomerNetworking.KustomerPubNubV3Configuration
   public let networkSession: KustomerNetworking.SessionReplaceable
-  public let subscription: KustomerNetworking.SubscriptionSession
+  public let subscription: KustomerNetworking.KUSSubscriptionSession
   public static var log: KustomerNetworking.KustomerPubNubV3Logger
   public static var logLog: KustomerNetworking.KustomerPubNubV3Logger
   public init(configuration: KustomerNetworking.KustomerPubNubV3Configuration, session: KustomerNetworking.SessionReplaceable? = nil, subscribeSession: KustomerNetworking.SessionReplaceable? = nil, presenceSession: KustomerNetworking.SessionReplaceable? = nil)
@@ -297,7 +297,7 @@ extension KustomerPubNubV3 {
   public var subscriptionCount: Swift.Int {
     get
   }
-  public var connectionStatus: KustomerNetworking.ConnectionStatus {
+  public var connectionStatus: KustomerNetworking.KUSPubSubConnectionStatus {
     get
   }
 }
@@ -653,7 +653,7 @@ extension Validated {
     get
   }
 }
-public enum ConnectionStatus : Swift.String {
+public enum KUSPubSubConnectionStatus : Swift.String {
   case connecting
   case connected
   case reconnecting
@@ -726,6 +726,7 @@ public struct KustomerPubNubV3Error : Swift.Error {
   public let details: [Swift.String]
   public let underlying: Swift.Error?
   public let affected: [KustomerNetworking.KustomerPubNubV3Error.AffectedValue]
+  public let router: KustomerNetworking.HTTPRouter?
   public let domain: Swift.String
   public var subdomain: KustomerNetworking.KustomerPubNubV3Error.Domain {
     get
@@ -877,7 +878,7 @@ public enum SubscriptionChangeEvent {
 public enum SubscriptionEvent {
   case messageReceived(KustomerNetworking.KustomerPubNubV3Message)
   case signalReceived(KustomerNetworking.KustomerPubNubV3Message)
-  case connectionStatusChanged(KustomerNetworking.ConnectionStatus)
+  case connectionStatusChanged(KustomerNetworking.KUSPubSubConnectionStatus)
   case subscriptionChanged(KustomerNetworking.SubscriptionChangeEvent)
   case presenceChanged(KustomerNetworking.KustomerPubNubV3PresenceChange)
   case uuidMetadataSet(KustomerNetworking.KustomerPubNubV3UUIDMetadataChangeset)
@@ -912,7 +913,7 @@ final public class SubscriptionListener : KustomerNetworking.SubscriptionStream,
     case setMembership(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
     case removedMembership(KustomerNetworking.KustomerPubNubV3MembershipMetadata)
   }
-  public typealias StatusEvent = Swift.Result<KustomerNetworking.ConnectionStatus, KustomerNetworking.KustomerPubNubV3Error>
+  public typealias StatusEvent = Swift.Result<KustomerNetworking.KUSPubSubConnectionStatus, KustomerNetworking.KustomerPubNubV3Error>
   final public var didReceiveBatchSubscription: (([KustomerNetworking.SubscriptionEvent]) -> Swift.Void)?
   final public var didReceiveSubscription: ((KustomerNetworking.SubscriptionEvent) -> Swift.Void)?
   final public var didReceiveMessage: ((KustomerNetworking.KustomerPubNubV3Message) -> Swift.Void)?
@@ -1067,7 +1068,7 @@ extension Constant {
   public static var userAgentHeaderKey: Swift.String
 }
 public struct SubscriptionState {
-  public var connectionState: KustomerNetworking.ConnectionStatus
+  public var connectionState: KustomerNetworking.KUSPubSubConnectionStatus
   public var channels: [Swift.String : KustomerNetworking.KustomerPubNubV3Channel]
   public var groups: [Swift.String : KustomerNetworking.KustomerPubNubV3Channel]
   public var subscribedChannels: [Swift.String] {
@@ -1280,7 +1281,7 @@ extension AnyJSON : Swift.ExpressibleByStringLiteral {
   public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
   public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
 }
-@_hasMissingDesignatedInitializers public class SubscriptionSession {
+@_hasMissingDesignatedInitializers public class KUSSubscriptionSession {
   final public let uuid: Foundation.UUID
   public var filterExpression: Swift.String?
   public var subscribedChannels: [Swift.String] {
@@ -1292,7 +1293,7 @@ extension AnyJSON : Swift.ExpressibleByStringLiteral {
   public var subscriptionCount: Swift.Int {
     get
   }
-  public var connectionStatus: KustomerNetworking.ConnectionStatus {
+  public var connectionStatus: KustomerNetworking.KUSPubSubConnectionStatus {
     get
   }
   @objc deinit
@@ -1302,16 +1303,16 @@ extension AnyJSON : Swift.ExpressibleByStringLiteral {
   public func unsubscribe(from channels: [Swift.String], and groups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
   public func unsubscribeAll()
 }
-extension SubscriptionSession : KustomerNetworking.EventStreamEmitter {
+extension KUSSubscriptionSession : KustomerNetworking.EventStreamEmitter {
   public typealias ListenerType = KustomerNetworking.SubscriptionListener
-  public var listeners: [KustomerNetworking.SubscriptionSession.ListenerType] {
+  public var listeners: [KustomerNetworking.KUSSubscriptionSession.ListenerType] {
     get
   }
-  public func add(_ listener: KustomerNetworking.SubscriptionSession.ListenerType)
-  public func notify(listeners closure: (KustomerNetworking.SubscriptionSession.ListenerType) -> Swift.Void)
+  public func add(_ listener: KustomerNetworking.KUSSubscriptionSession.ListenerType)
+  public func notify(listeners closure: (KustomerNetworking.KUSSubscriptionSession.ListenerType) -> Swift.Void)
 }
-extension SubscriptionSession : Swift.Hashable, Swift.CustomStringConvertible {
-  public static func == (lhs: KustomerNetworking.SubscriptionSession, rhs: KustomerNetworking.SubscriptionSession) -> Swift.Bool
+extension KUSSubscriptionSession : Swift.Hashable, Swift.CustomStringConvertible {
+  public static func == (lhs: KustomerNetworking.KUSSubscriptionSession, rhs: KustomerNetworking.KUSSubscriptionSession) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var description: Swift.String {
     get
@@ -1594,7 +1595,7 @@ extension Set {
     get
   }
 }
-extension SubscriptionSession {
+extension KUSSubscriptionSession {
   public func presenceLeave(for _: Swift.String, on channels: [Swift.String], and groups: [Swift.String], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
 }
 extension KustomerPubNubV3UUIDMetadataChangeset : Swift.Codable {
@@ -1892,7 +1893,7 @@ public protocol EventStreamEmitter : AnyObject {
 extension EventStreamEmitter {
   public func remove(_ listener: Self.ListenerType)
 }
-public class ListenerToken : KustomerNetworking.Cancellable {
+public class KUSListenerToken : KustomerNetworking.Cancellable {
   public var isCancelled: Swift.Bool {
     get
   }
@@ -1901,7 +1902,7 @@ public class ListenerToken : KustomerNetworking.Cancellable {
   @objc deinit
   public func cancel()
 }
-extension ListenerToken : Swift.CustomStringConvertible {
+extension KUSListenerToken : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -2118,10 +2119,10 @@ public struct MultiplexRequestOperator : KustomerNetworking.RequestOperator {
   public func mutate(_ urlRequest: Foundation.URLRequest, for session: KustomerNetworking.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
   public func retry(_ request: KustomerNetworking.RequestReplaceable, for session: KustomerNetworking.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
 }
-@_hasMissingDesignatedInitializers public class SubscribeSessionFactory {
+@_hasMissingDesignatedInitializers public class KUSSubscribeSessionFactory {
   final public let subscribeQueue: Dispatch.DispatchQueue
-  public static var shared: KustomerNetworking.SubscribeSessionFactory
-  public func getSession(from config: KustomerNetworking.SubscriptionConfiguration, with subscribeSession: KustomerNetworking.SessionReplaceable? = nil, presenceSession: KustomerNetworking.SessionReplaceable? = nil) -> KustomerNetworking.SubscriptionSession
+  public static var shared: KustomerNetworking.KUSSubscribeSessionFactory
+  public func getSession(from config: KustomerNetworking.SubscriptionConfiguration, with subscribeSession: KustomerNetworking.SessionReplaceable? = nil, presenceSession: KustomerNetworking.SessionReplaceable? = nil) -> KustomerNetworking.KUSSubscriptionSession
   @objc deinit
 }
 public protocol SubscriptionConfiguration : KustomerNetworking.RouterConfiguration {

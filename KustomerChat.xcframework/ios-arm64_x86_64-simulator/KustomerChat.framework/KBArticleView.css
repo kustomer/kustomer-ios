@@ -2,6 +2,7 @@
 * {
   font-family: -apple-system;
   font-family: '-apple-system','HelveticaNeue';
+  font-size: 1em;
 }
 
 
@@ -11,8 +12,9 @@ body {
 }
 
 /** font sizes **/
-p {
+p, span, caption {
   font: -apple-system-body !important;
+  font-weight: normal !important;
 }
 h1 {
   font: -apple-system-headline !important;
@@ -78,7 +80,7 @@ p {
   *{
     color: white !important;
   }
-  div, p, h1, h2, h3, h4, span, strong, em, ul, li {
+  div, p, h1, h2, h3, h4, span, strong, em, ul, li, body, html, .container-home, .article-body{
     background-color: transparent !important;
   }
   p, h1, h2, strong, span {
@@ -88,7 +90,7 @@ p {
     color: white rgba(255,255,255,0.5) !important;
   }
   body, .container-home, .article-body {
-    background-color: [##body.background.dark##] !important;
+    /*background-color: [##body.background.dark##] !important;*/
   }
   a, a:link, a:visited, a:hover {
     color: #81c4f8 !important;
