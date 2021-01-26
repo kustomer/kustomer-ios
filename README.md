@@ -10,12 +10,12 @@
 
 ## Documentation and guides
 
-[See our official docs and guides](https://kustomer.readme.io/docs)
+[See our official docs and guides](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs)
 
 
 ## Requirements
 
-- A [Kustomer.com](https://www.kustomer.com/) API Key ([How to get an API key](https://kustomer.readme.io/docs/installation-1))
+- A [Kustomer.com](https://www.kustomer.com/) API Key ([How to get an API key](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs/installation)
 - Xcode 12.0+
 - iOS 11.0+
 
@@ -44,7 +44,7 @@ Kustomer.configure(apiKey: "API_KEY_HERE", options: nil, launchOptions: launchOp
 
 3. Call `Kustomer.show()` whenever and wherever you want to open the Kustomer chat interface.
 
-See [Installation](https://kustomer.readme.io/docs/installation-1) for a full guide.
+See [Installation](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs/installation) for a full guide.
 
 ## Example app
 
