@@ -44,7 +44,7 @@ Kustomer.configure(apiKey: "API_KEY_HERE", options: nil, launchOptions: launchOp
 
 3. Call `Kustomer.show()` whenever and wherever you want to open the Kustomer chat interface.
 
-See [Installation](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs/installation) for a full guide.
+See [Installation](https://developer.kustomer.com/chat-sdk/v2.0.5-iOS/docs/installation) for a full guide.
 
 ## Example app
 
