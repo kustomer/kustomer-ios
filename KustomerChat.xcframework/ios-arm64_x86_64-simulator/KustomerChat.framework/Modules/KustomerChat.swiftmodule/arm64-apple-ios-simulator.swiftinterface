@@ -6,13 +6,13 @@ import CommonCrypto
 import CoreData
 import CoreGraphics
 import CoreImage
-import CoreText
 import Dispatch
 import Foundation
 @_exported import KustomerChat
 import KustomerNetworking
 import LocalAuthentication
 import MobileCoreServices
+import OSLog
 import QuickLook
 import SafariServices
 import Security
@@ -662,13 +662,18 @@ public class KustomerOptions {
   }
   public var pushEnvironment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
+  public var onShow: (() -> Swift.Void)?
+  public var onDismiss: (() -> Swift.Void)?
+  @available(*, deprecated, message: "Use onShow instead")
   public var onViewDidAppear: ((Swift.Bool) -> Swift.Void)?
+  @available(*, deprecated, message: "Use onShow instead")
   public var onViewWillAppear: ((Swift.Bool) -> Swift.Void)?
+  @available(*, deprecated, message: "Use onDismiss instead")
   public var onViewWillDisappear: ((Swift.Bool) -> Swift.Void)?
+  @available(*, deprecated, message: "Use onDismiss instead")
   public var onViewDidDisappear: ((Swift.Bool) -> Swift.Void)?
   public var hostDomain: Swift.String?
   public var businessScheduleId: Swift.String?
-  @available(*, deprecated)
   public var knowledgeBaseID: Swift.String?
   public var brandId: Swift.String?
   public var logLevels: [KustomerChat.KustomerLogType]
@@ -974,7 +979,6 @@ extension NSNotification.Name {
   public var customers: [KustomerChat.KUSCustomer]?
   public var users: [KustomerChat.KUSUser]?
   public var localUuid: Swift.String?
-  public func sendChatMessage(text: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   public var description: Swift.String {
     get
   }
@@ -1254,6 +1258,8 @@ public enum KError : Swift.Error {
   case invalidAssistantId
   case couldNotReadLocalFile
   case httpAttachmentUploadWasCancelled
+  case invalidBusinessScheduleId
+  case invalidBrandId
 }
 extension KError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -1320,7 +1326,7 @@ public enum KustomerLogType : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class KustomerClient {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class KustomerClient : ObjectiveC.NSObject {
   public var chatProvider: KustomerChat.ChatProvider {
     get
     set(value)
@@ -1347,7 +1353,9 @@ public enum KustomerLogType : Swift.String {
   public class var isRunningOnSimulator: Swift.Bool {
     get
   }
-  public func changeActiveAssistant(_ to: KustomerChat.ActiveAssistantOptions)
+  public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
+  public func changeBrand(brandId nbid: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func getActiveAssistantID() -> Swift.String?
   public var options: KustomerChat.KustomerOptions {
     get
@@ -1394,7 +1402,11 @@ public enum KustomerLogType : Swift.String {
   public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   public func getUnreadCount() -> Swift.Int
   public func openConversationCount() -> Swift.Int
+  public func shareDebugLogs()
   @objc deinit
+}
+extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
+  @objc dynamic public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1426,6 +1438,9 @@ public enum KustomerLogType : Swift.String {
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidLayoutSubviews()
+  public var isCurrentlyVisible: Swift.Bool {
+    get
+  }
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }

@@ -172,6 +172,7 @@ extension LogType : Swift.CustomStringConvertible {
 public struct KustomerPubNubV3Logger {
   public var writers: [KustomerNetworking.LogWriter]
   public var levels: KustomerNetworking.LogType
+  public init(levels: KustomerNetworking.LogType = .all, writers: [KustomerNetworking.LogWriter])
   public func debug(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
   public func info(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
   public func event(_ message: @autoclosure () -> Any, date: Foundation.Date = Date(), queue: Swift.String = DispatchQueue.currentLabel, thread: Swift.String = Thread.currentName, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
@@ -460,8 +461,9 @@ open class FileLogWriter : KustomerNetworking.LogWriter {
   public var maxFileSize: Swift.Int64
   public var maxLogFiles: Swift.Int
   public var directoryURL: Foundation.URL
+  public var currentFile: Foundation.URL?
   required public init(logDirectory: Foundation.URL, executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()), prefix: KustomerNetworking.LogPrefix = .all)
-  public convenience init(inside domain: Foundation.FileManager.SearchPathDomainMask = .userDomainMask, at directory: Foundation.FileManager.SearchPathDirectory = .cachesDirectory, with name: Swift.String = "kustomerPubnub", executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()), prefix: KustomerNetworking.LogPrefix = .all)
+  public convenience init(inside domain: Foundation.FileManager.SearchPathDomainMask = .userDomainMask, at directory: Foundation.FileManager.SearchPathDirectory = .cachesDirectory, with name: Swift.String = "com.kustomer.sdk.logs.pubnub", executor: KustomerNetworking.LogExecutionType = .sync(lock: NSRecursiveLock()), prefix: KustomerNetworking.LogPrefix = .all)
   public func send(message: Swift.String)
   public func createOrUpdateFile(with contents: Swift.String) -> Foundation.URL?
   public func update(_ file: Foundation.URL, message: Swift.String)
