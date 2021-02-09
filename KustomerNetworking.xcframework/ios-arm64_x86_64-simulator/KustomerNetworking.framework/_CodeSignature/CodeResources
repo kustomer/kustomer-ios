@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+V30zgCcApXkpMyQDMlsGXMdya8=
+		ICsPDcN0j8AHLoIogK2czNnAZM4=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		48vNh+LoU3XuJtWZHBesjHZhI50=
+		M5pztLjAJrsDG6e6fgNl7O1VM6g=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		48vNh+LoU3XuJtWZHBesjHZhI50=
+		M5pztLjAJrsDG6e6fgNl7O1VM6g=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		to6C1jqeh1yJ37pepsIE1ykmGKE=
+		gCHMyceXwbfAnjCmELCmjTQ1bn0=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		to6C1jqeh1yJ37pepsIE1ykmGKE=
+		gCHMyceXwbfAnjCmELCmjTQ1bn0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHiI88pB8IYwuujndv1/TFi1KeXAdVq4RRVjlTD9GGA=
+			PqHUtDyl65PdgfBme2qBnyhQnCZJZmgg5YI8lZG1tkw=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHiI88pB8IYwuujndv1/TFi1KeXAdVq4RRVjlTD9GGA=
+			PqHUtDyl65PdgfBme2qBnyhQnCZJZmgg5YI8lZG1tkw=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdmUflEOJp1Y2SyYFd5oO+WRQnjgXSmr2AKY0mAUbJM=
+			biZ3hY0RMt5Y/xQ4oiJHiHSd/msvUt9WzaUkKUAfuo4=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftdoc</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdmUflEOJp1Y2SyYFd5oO+WRQnjgXSmr2AKY0mAUbJM=
+			biZ3hY0RMt5Y/xQ4oiJHiHSd/msvUt9WzaUkKUAfuo4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

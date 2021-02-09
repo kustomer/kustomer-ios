@@ -678,6 +678,7 @@ public class KustomerOptions {
   public var brandId: Swift.String?
   public var logLevels: [KustomerChat.KustomerLogType]
   public var hideNewConversationButton: Swift.Bool
+  public var flags: Swift.String?
   @KustomerChat.KUSClamping public var messageAttachmentLocalCacheMaximumSizeInBytes: Swift.Int {
     get
     set(value)
@@ -1235,6 +1236,7 @@ public enum KError : Swift.Error {
   case couldNotDeregisterPush
   case couldNotDeregisterPushBecause(Swift.Error)
   case couldNotDeregisterPushBecauseOf(Swift.String)
+  case attachmentTooLarge
   case unknownLanguageCode(Swift.String)
   case describe(details: [Any]?)
   case describeUnknownParameter(parameter: Swift.String, details: [Any]?)
@@ -1319,6 +1321,7 @@ public enum KustomerLogType : Swift.String {
   case error
   case info
   case fatal
+  @available(*, deprecated)
   case multithreadingWarning
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
@@ -1379,8 +1382,6 @@ public enum KustomerLogType : Swift.String {
   public func show(preferredView: KustomerChat.KustomerDisplayMode)
   public func openConversation(id: Swift.String, animated: Swift.Bool = true, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func showKbArticle(id: Swift.String)
-  @available(*, deprecated)
-  public func blockingLogOut(supportPush: Swift.Bool)
   public func logOut(_ completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
   public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
@@ -1398,6 +1399,7 @@ public enum KustomerLogType : Swift.String {
     get
     set(newValue)
   }
+  public func printLocalizationKeys()
   @available(*, deprecated)
   public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   public func getUnreadCount() -> Swift.Int
