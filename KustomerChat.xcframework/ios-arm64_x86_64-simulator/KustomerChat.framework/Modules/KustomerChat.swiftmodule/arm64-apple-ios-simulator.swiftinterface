@@ -363,7 +363,7 @@ public struct KUSAlertInfo {
   public func openConversationCount() -> Swift.Int
   public func currentCustomer() -> KustomerChat.KUSCustomer?
   public func getChatSettings() -> KustomerChat.KUSChatSettings
-  public func isChatAvailable(_ callback: ((Swift.Bool) -> Swift.Void))
+  public func isChatAvailable() -> Swift.Bool?
   public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
@@ -481,7 +481,11 @@ extension KustomerClient {
     get
     set(newValue)
   }
-  public static var enabled: Swift.Bool {
+  public static var enabled: Swift.Bool? {
+    get
+    set(newValue)
+  }
+  public static var didLoadSettingsFirstTime: Swift.Bool {
     get
     set(newValue)
   }
@@ -1377,7 +1381,9 @@ public enum KustomerLogType : Swift.String {
   public func clearAllKB()
   public func configure(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
   public func configureUnsafe(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
-  public func isChatAvailable(_ callback: ((Swift.Bool) -> Swift.Void))
+  public func chatAvailable(_ completion: (Swift.Result<Swift.Bool, KustomerChat.KError>))
+  public func isChatAvailable() -> Swift.Bool?
+  public func makeAPICall()
   public func show()
   public func show(preferredView: KustomerChat.KustomerDisplayMode)
   public func openConversation(id: Swift.String, animated: Swift.Bool = true, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)

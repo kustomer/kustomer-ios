@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '2.0.6'
+  s.version = '2.0.7'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.summary = 'The iOS SDK for the Kustomer.com mobile client'
-  s.documentation_url = 'https://kustomer.readme.io/docs'
+  s.documentation_url = 'https://developer.kustomer.com/chat-sdk/docs'
   s.platform = :ios
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'KustomerChat.xcframework', 'KustomerNetworking.xcframework'
