@@ -6,59 +6,59 @@
 	<dict>
 		<key>Headers/KustomerNetworking-Swift.h</key>
 		<data>
-		QL3JoRDD3IHQBLWkA84aFh63Qdg=
+		Di66I9WuwM9gM4hw1rekV6RW4dM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ICsPDcN0j8AHLoIogK2czNnAZM4=
+		VDQg+qdVm82Gpm+CamQIU0cwPYA=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		n8ViWIiihZpJYK5AP1Z0PXJxEAE=
+		wUdGqouwylT9OPXkX3AmDp5YI+8=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3XzpLsPZ7rA6QxRABcxKoqwx/K0=
+		ynYp1xmEv6am9VPa8xdHi9Az5aI=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ENKy/4HN/6w94/pkn8wZF6UPttI=
+		900hzUA91Flc1G8qjj3P6+G9WGM=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		n8ViWIiihZpJYK5AP1Z0PXJxEAE=
+		wUdGqouwylT9OPXkX3AmDp5YI+8=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		3XzpLsPZ7rA6QxRABcxKoqwx/K0=
+		ynYp1xmEv6am9VPa8xdHi9Az5aI=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ENKy/4HN/6w94/pkn8wZF6UPttI=
+		900hzUA91Flc1G8qjj3P6+G9WGM=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qjFwU03YcS2B1z/MuGhgbDyX6ws=
+		CfiJnk25qiLtYoLeSWWxYnbPPPY=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gWPUf+6wdLeXLFHE3bce2c6Pjqo=
+		rA3TMTQ/2WQFZBbBO2O3rg7sauA=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gCHMyceXwbfAnjCmELCmjTQ1bn0=
+		JzqUDW9LgQxe+T5c2cRAxtSQq60=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		qjFwU03YcS2B1z/MuGhgbDyX6ws=
+		CfiJnk25qiLtYoLeSWWxYnbPPPY=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		gWPUf+6wdLeXLFHE3bce2c6Pjqo=
+		rA3TMTQ/2WQFZBbBO2O3rg7sauA=
 		</data>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		gCHMyceXwbfAnjCmELCmjTQ1bn0=
+		JzqUDW9LgQxe+T5c2cRAxtSQq60=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,91 +71,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			58Z6myY2z9MlFeM1iFgCJwmURV6LeyD6K4If4UPF7u0=
+			Y8HkVvvEfcwHXuRgGgYWtBEFLPU+4phfPeJ+11bGA7k=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dsG3RLcBFDOLPLiwIaErixflEfBzdG90X98+MA4pywA=
+			WpYD21UjljfemEzxPccyU0qgQlxSR/Lbd3wr2adlhqs=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BImbWToHf4DMdEnTo+bbWaVnBxBSnw7uiabek+SYl8k=
+			PhwLfdstJIfx++PLgSQqVoNOR3Kv2NIzAvRrGinMT7A=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8uanda1IevK/TUuSzDR6T4FVyloKbYy4tx5DWc5atW4=
+			1YW/JkZ63VXVnb7kI6O/+MA4B967A+7TyGrv9cCtha4=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dsG3RLcBFDOLPLiwIaErixflEfBzdG90X98+MA4pywA=
+			WpYD21UjljfemEzxPccyU0qgQlxSR/Lbd3wr2adlhqs=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BImbWToHf4DMdEnTo+bbWaVnBxBSnw7uiabek+SYl8k=
+			PhwLfdstJIfx++PLgSQqVoNOR3Kv2NIzAvRrGinMT7A=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8uanda1IevK/TUuSzDR6T4FVyloKbYy4tx5DWc5atW4=
+			1YW/JkZ63VXVnb7kI6O/+MA4B967A+7TyGrv9cCtha4=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lq2mGKlizGU9A+FxpMJsMohRVwaXvNQFJvW9a/aqKo4=
+			5iooosc1UQRnmF2pTSAv/lscNXrbltcib20jPvNkXJM=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Tl3hBOeyz9UCcbfgo7ax4hVCzlhQVr1TYKEE+1Kf3U=
+			HWeo964Ms+r3LHzvA438YiXHAzOwyXcwx2xkdJe4PPw=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			biZ3hY0RMt5Y/xQ4oiJHiHSd/msvUt9WzaUkKUAfuo4=
+			4P4nn/+GAV5cI5C7ee9gy+NV5X9KHyW9DGHllZLa248=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lq2mGKlizGU9A+FxpMJsMohRVwaXvNQFJvW9a/aqKo4=
+			5iooosc1UQRnmF2pTSAv/lscNXrbltcib20jPvNkXJM=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Tl3hBOeyz9UCcbfgo7ax4hVCzlhQVr1TYKEE+1Kf3U=
+			HWeo964Ms+r3LHzvA438YiXHAzOwyXcwx2xkdJe4PPw=
 			</data>
 		</dict>
 		<key>Modules/KustomerNetworking.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			biZ3hY0RMt5Y/xQ4oiJHiHSd/msvUt9WzaUkKUAfuo4=
+			4P4nn/+GAV5cI5C7ee9gy+NV5X9KHyW9DGHllZLa248=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
