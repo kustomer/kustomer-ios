@@ -247,8 +247,7 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 /// A singleton. This is how you interact with the Kustomer SDK.
 SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @interface KustomerClient : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -631,8 +630,7 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 /// A singleton. This is how you interact with the Kustomer SDK.
 SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @interface KustomerClient : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

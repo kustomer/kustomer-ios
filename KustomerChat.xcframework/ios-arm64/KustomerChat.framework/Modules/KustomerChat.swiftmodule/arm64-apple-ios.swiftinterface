@@ -241,30 +241,6 @@ public enum KustomerAssetLanguage : Swift.String {
     get
   }
 }
-public protocol Then {
-}
-extension NSObject : KustomerChat.Then {
-}
-extension CGPoint : KustomerChat.Then {
-}
-extension CGRect : KustomerChat.Then {
-}
-extension CGSize : KustomerChat.Then {
-}
-extension CGVector : KustomerChat.Then {
-}
-extension Array : KustomerChat.Then {
-}
-extension Dictionary : KustomerChat.Then {
-}
-extension Set : KustomerChat.Then {
-}
-extension UIEdgeInsets : KustomerChat.Then {
-}
-extension UIOffset : KustomerChat.Then {
-}
-extension UIRectEdge : KustomerChat.Then {
-}
 @objc @_inheritsConvenienceInitializers public class PushProvider : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate {
   public static var shared: KustomerChat.PushProvider
   public var deviceToken: Foundation.Data? {
@@ -1208,7 +1184,7 @@ public enum KustomerLogType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class KustomerClient : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class KustomerClient : ObjectiveC.NSObject {
   public var chatProvider: KustomerChat.ChatProvider {
     get
     set(value)
@@ -1280,6 +1256,7 @@ public enum KustomerLogType : Swift.String {
   }
   public func printLocalizationKeys()
   public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
+  @objc override dynamic public init()
   @available(*, deprecated)
   public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   public func getUnreadCount() -> Swift.Int
