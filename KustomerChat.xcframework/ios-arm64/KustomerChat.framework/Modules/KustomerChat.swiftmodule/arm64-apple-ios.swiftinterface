@@ -597,6 +597,7 @@ public class KustomerOptions {
   }
   public var pushEnvironment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
+  public var showAnimationFor5StarCSATRatings: Swift.Bool
   public var onShow: (() -> Swift.Void)?
   public var onDismiss: (() -> Swift.Void)?
   @available(*, deprecated, message: "Use onShow instead")
