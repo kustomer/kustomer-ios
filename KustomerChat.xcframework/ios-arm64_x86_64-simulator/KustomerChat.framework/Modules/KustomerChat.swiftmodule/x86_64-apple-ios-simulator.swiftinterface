@@ -295,8 +295,8 @@ public struct KUSAlertInfo {
   public func addTextField(_ text: Swift.String) -> KustomerChat.KUSSWAlert
   public func show()
   public func showActionSheet()
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers public class ChatProvider {
   public static var shared: KustomerChat.ChatProvider
@@ -1019,6 +1019,8 @@ extension KustomerUI.Color {
   public static var kbBrowseSeparator: UIKit.UIColor?
   public static var kbLoadingProgressTintColor: UIKit.UIColor?
   public static var kbLoadingTintColor: UIKit.UIColor?
+  public static var kobjectButton: UIKit.UIColor?
+  public static var kobjectButtonText: UIKit.UIColor?
   public static var kbBrowseRowTitle: UIKit.UIColor?
   public static var kbBrowseRowSubtitle: UIKit.UIColor?
   public static var kbBrowseCategoryDescriptionText: UIKit.UIColor?
@@ -1084,6 +1086,7 @@ public enum KUSMessageTemplateType : Swift.String {
   case mll
   case deflection
   case text
+  case list
   case none
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSMessageTemplateType
   public typealias RawValue = Swift.String
@@ -1106,10 +1109,13 @@ public enum KError : Swift.Error {
   case invalidJwt
   case alreadyIdentifiedWithExternalId(externalId: Swift.String)
   case alreadyIdentifiedWithEmail(email: Swift.String)
+  case networkErrorLoadingSettings(KustomerChat.KUSAFError)
   case couldNotDeregisterPush
   case couldNotDeregisterPushBecause(Swift.Error)
   case couldNotDeregisterPushBecauseOf(Swift.String)
   case attachmentTooLarge
+  case localFileURLExpired
+  case localFileURLHasNoData
   case unknownLanguageCode(Swift.String)
   case describe(details: [Any]?)
   case describeUnknownParameter(parameter: Swift.String, details: [Any]?)
@@ -1131,6 +1137,7 @@ public enum KError : Swift.Error {
   case cancelledMessageCreateDataRequest
   case internetOffline
   case invalidAssistantId
+  case noInternetAvailableAndNoCachedChatAssistantFound
   case couldNotReadLocalFile
   case httpAttachmentUploadWasCancelled
   case invalidBusinessScheduleId
@@ -1213,7 +1220,7 @@ public enum KustomerLogType : Swift.String {
     get
   }
   public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
-  public func changeBrand(brandId nbid: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  public func changeBrand(brandId nbid: Swift.String, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func getActiveAssistantID() -> Swift.String?
   public var options: KustomerChat.KustomerOptions {
