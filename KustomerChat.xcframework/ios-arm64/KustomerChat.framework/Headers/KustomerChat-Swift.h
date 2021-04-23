@@ -249,7 +249,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @end
 
 
-
 @class UIPresentationController;
 
 @interface KustomerClient (SWIFT_EXTENSION(KustomerChat)) <UIAdaptivePresentationControllerDelegate>
@@ -325,6 +324,7 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 
