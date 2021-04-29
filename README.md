@@ -1,17 +1,22 @@
-<p align="center" >
-  <img src="Logo.png" title="Kustomer logo" float="left" style="width:356px;height:61px;">
+<p align="left">
+  <img src="https://files.readme.io/7859feb-small-Group_4.png" title="Kustomer logo" float="left" xstyle="width:356px;height:61px">
 </p>
+
+# Kustomer Chat iOS SDK
+
+<span><img src="https://img.shields.io/cocoapods/v/KustomerChat.svg?style=flat-square"/></span>
+<span><img src="https://img.shields.io/cocoapods/p/KustomerChat?style=flat-square"/></span>
+
+Embed [Kustomer](https://www.kustomer.com/) in your own products with our chat SDK for iOS.
 
 ----------------
 
-<p align="center" >
-  The iOS SDK for the <a href="https://www.kustomer.com/">Kustomer.com</a> mobile client
-</p>
 
 ## Documentation and guides
 
-[See our official docs and guides](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs)
+[iOS Docs and guides](https://developer.kustomer.com/chat-sdk/v2-iOS/docs)
 
+[Kustomer Developer Portal](https://developer.kustomer.com)
 
 ## Requirements
 
