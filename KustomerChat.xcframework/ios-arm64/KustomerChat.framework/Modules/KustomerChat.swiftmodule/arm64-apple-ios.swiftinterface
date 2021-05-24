@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
@@ -9,7 +9,7 @@ import CoreImage
 import Dispatch
 import Foundation
 @_exported import KustomerChat
-import KustomerNetworking
+import KustomerPubSub
 import LocalAuthentication
 import MobileCoreServices
 import OSLog
@@ -117,8 +117,8 @@ public enum KustomerLanguage : Swift.String {
   case tr
   case tw
   case uk
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -235,8 +235,8 @@ public enum KustomerAssetLanguage : Swift.String {
   case zh_CN
   case zh_TW
   case zu
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -259,8 +259,8 @@ public enum KustomerAssetLanguage : Swift.String {
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, openSettingsFor notification: UserNotifications.UNNotification?)
   public func notificationIsFromKustomer(_ notification: UserNotifications.UNNotification) -> Swift.Bool
   public func notificationIsFromKustomer(threadIdentifier: Swift.String?) -> Swift.Bool
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct KUSAlertSettings {
 }
@@ -295,8 +295,8 @@ public struct KUSAlertInfo {
   public func addTextField(_ text: Swift.String) -> KustomerChat.KUSSWAlert
   public func show()
   public func showActionSheet()
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ChatProvider {
   public static var shared: KustomerChat.ChatProvider
@@ -315,7 +315,7 @@ public struct KUSAlertInfo {
   public func getChatSettings() -> KustomerChat.KUSChatSettings
   public func isChatAvailable() -> Swift.Bool?
   public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
-  public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
+  public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
   public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
   public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
@@ -339,8 +339,8 @@ final public class KUSRevocationTrustEvaluator {
     public static var any: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public let rawValue: CoreFoundation.CFOptionFlags
     public init(rawValue: CoreFoundation.CFOptionFlags)
-    public typealias Element = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public typealias ArrayLiteralElement = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
+    public typealias Element = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public typealias RawValue = CoreFoundation.CFOptionFlags
   }
   public init(performDefaultValidation: Swift.Bool = true, validateHost: Swift.Bool = true, options: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions = .any)
@@ -551,8 +551,8 @@ public typealias KUSPNTtoken = Swift.UInt64
 public enum KUSKBDeflectResultType : Swift.String {
   case article
   case category
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -576,8 +576,8 @@ public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConver
 public enum KUSSentByType : Swift.String {
   case User
   case Customer
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -595,7 +595,7 @@ public class KustomerOptions {
     get
     set(newValue)
   }
-  public var pushEnvironment: KustomerNetworking.KustomerPubNubV3.PushEnvironment
+  public var pushEnvironment: KustomerPubSub.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
   public var showAnimationFor5StarCSATRatings: Swift.Bool
   public var onShow: (() -> Swift.Void)?
@@ -670,8 +670,8 @@ extension KUSKBItemBase {
     case image(UIKit.UIImage, UIKit.UIColor?)
     case text(Swift.String)
   }
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
 }
 extension ConfettiView : QuartzCore.CAAnimationDelegate {
   @objc final public func animationDidStop(_ animation: QuartzCore.CAAnimation, finished flag: Swift.Bool)
@@ -736,8 +736,8 @@ public enum KustomerConnectionStatus : Swift.String {
   public var ableToTryReconnecting: Swift.Bool {
     get
   }
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -871,8 +871,8 @@ extension NSNotification.Name {
 public enum KUSChatMessageDirection : Swift.String {
   case inbound
   case outbound
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1009,6 +1009,7 @@ extension KustomerUI.Color {
   public static var messageButtonText: UIKit.UIColor
   public static var messageLinkInIncomingMessageBubble: UIKit.UIColor
   public static var messageLinkInOutgoingMessageBubble: UIKit.UIColor
+  public static var messageLinkInHistoryList: UIKit.UIColor
   public static var messagesBackground: UIKit.UIColor
   public static var navigationBarButton: UIKit.UIColor
   public static var outgoingMessageBubble: UIKit.UIColor
@@ -1046,8 +1047,8 @@ extension KustomerUI.Color {
 public enum KUSConversationLockReason : Swift.String {
   case customer_ended
   case user_ended
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1063,8 +1064,8 @@ public enum KustomerOffhoursDisplay : Swift.String {
   case none
   case offline
   case online
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1076,10 +1077,10 @@ public enum KUSChatMessageStatus {
   case cancelled
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSChatMessageStatus
   public static func == (a: KustomerChat.KUSChatMessageStatus, b: KustomerChat.KUSChatMessageStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KUSMessageTemplateType : Swift.String {
   case quickReplies
@@ -1089,8 +1090,8 @@ public enum KUSMessageTemplateType : Swift.String {
   case list
   case none
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSMessageTemplateType
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1129,6 +1130,7 @@ public enum KError : Swift.Error {
   case kbArticleIdNotFound
   case kbCategoryIdNotFound
   case localDataStoreError
+  case kbNoParentCategoryIdSpecified
   case invalidConversationId
   case malformedConversationId
   case unauthorizedConversationId
@@ -1163,20 +1165,20 @@ public enum KustomerDisplayMode {
   case onlyChat
   case onlyKnowledgeBase
   public static func == (a: KustomerChat.KustomerDisplayMode, b: KustomerChat.KustomerDisplayMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KUSConversationStatus {
   case open
   case ended
   case new
   public static func == (a: KustomerChat.KUSConversationStatus, b: KustomerChat.KUSConversationStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KustomerLogType : Swift.String {
   case debug
@@ -1186,8 +1188,8 @@ public enum KustomerLogType : Swift.String {
   case fatal
   @available(*, deprecated)
   case multithreadingWarning
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1208,9 +1210,6 @@ public enum KustomerLogType : Swift.String {
     get
   }
   public var sdkVersionSemver: Swift.String {
-    get
-  }
-  public var pushKeysPresentAndPushEnabled: Swift.Bool {
     get
   }
   public var rootViewController: KustomerChat.SupportTabViewController? {
@@ -1265,6 +1264,7 @@ public enum KustomerLogType : Swift.String {
   public func printLocalizationKeys()
   public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
   @objc override dynamic public init()
+  public func openChatAssistant(id: Swift.String, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, animated: Swift.Bool = true)
   @available(*, deprecated)
   public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   public func getUnreadCount() -> Swift.Int
@@ -1274,6 +1274,10 @@ public enum KustomerLogType : Swift.String {
 }
 extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
   @objc dynamic public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
+}
+extension Bundle {
+  public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
+  public static var kustomerAssets: Foundation.Bundle?
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1308,8 +1312,8 @@ extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
   public var isCurrentlyVisible: Swift.Bool {
     get
   }
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
 }
 extension SupportTabViewController : KustomerChat.KUSChatListener {
   public func onUnreadCountChange(count: Swift.Int)

@@ -1,0 +1,4 @@
+framework module KustomerPubSub {
+  header "KustomerPubSub-Swift.h"
+  requires objc
+}
