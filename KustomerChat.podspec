@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/kustomer/kustomer-ios'
   s.source = {
     :git => 'https://github.com/kustomer/kustomer-ios.git',
-    :tag => s.version.to_s
+    :tag => '2.4.0_cpfix'
   }
   s.summary = 'The iOS SDK for the Kustomer.com mobile client'
   s.documentation_url = 'https://developer.kustomer.com/chat-sdk/docs'
