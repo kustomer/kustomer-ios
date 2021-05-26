@@ -10,7 +10,7 @@ let package = Package(
   products: [
     .library(
       name: "kustomer-ios",
-      targets: ["KustomerNetworking", "KustomerChat"])
+      targets: ["KustomerPubSub", "KustomerChat"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -21,8 +21,8 @@ let package = Package(
       path: "KustomerChat.xcframework"
     ),
     .binaryTarget(
-      name: "KustomerNetworking",
-      path: "KustomerNetworking.xcframework"
+      name: "KustomerPubSub",
+      path: "KustomerPubSub.xcframework"
     )
   ]
 )
