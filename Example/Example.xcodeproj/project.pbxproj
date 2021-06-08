@@ -13,8 +13,8 @@
 		DD171840254A385A00731814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17183E254A385A00731814 /* Main.storyboard */; };
 		DD171842254A385B00731814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD171841254A385B00731814 /* Assets.xcassets */; };
 		DD171845254A385B00731814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD171843254A385B00731814 /* LaunchScreen.storyboard */; };
-		DD171851254A38A100731814 /* KustomerNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD17184F254A38A100731814 /* KustomerNetworking.xcframework */; };
-		DD171852254A38A100731814 /* KustomerNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD17184F254A38A100731814 /* KustomerNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD171851254A38A100731814 /* KustomerPubSub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD17184F254A38A100731814 /* KustomerPubSub.xcframework */; };
+		DD171852254A38A100731814 /* KustomerPubSub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD17184F254A38A100731814 /* KustomerPubSub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDC8E722254A4087009A02B2 /* KustomerChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */; };
 		DDC8E723254A4087009A02B2 /* KustomerChat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DD171852254A38A100731814 /* KustomerNetworking.xcframework in Embed Frameworks */,
+				DD171852254A38A100731814 /* KustomerPubSub.xcframework in Embed Frameworks */,
 				DDC8E723254A4087009A02B2 /* KustomerChat.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,7 +43,7 @@
 		DD171841254A385B00731814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD171844254A385B00731814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD171846254A385B00731814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD17184F254A38A100731814 /* KustomerNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerNetworking.xcframework; path = ../KustomerNetworking.xcframework; sourceTree = "<group>"; };
+		DD17184F254A38A100731814 /* KustomerPubSub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerPubSub.xcframework; path = ../KustomerPubSub.xcframework; sourceTree = "<group>"; };
 		DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KustomerChat.xcframework; path = ../KustomerChat.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD171851254A38A100731814 /* KustomerNetworking.xcframework in Frameworks */,
+				DD171851254A38A100731814 /* KustomerPubSub.xcframework in Frameworks */,
 				DDC8E722254A4087009A02B2 /* KustomerChat.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC8E721254A4087009A02B2 /* KustomerChat.xcframework */,
-				DD17184F254A38A100731814 /* KustomerNetworking.xcframework */,
+				DD17184F254A38A100731814 /* KustomerPubSub.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

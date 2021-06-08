@@ -37,8 +37,11 @@ Embed [Kustomer](https://www.kustomer.com/) in your own products with our chat S
 2. Run `pod update` or `pod install` on your project
 
 #### Manual
-1. Add `KustomerChat.xcframework` and `KustomerNetworking.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
+1. Add `KustomerChat.xcframework` and `KustomerPubSub.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
 2. Check `Embed & Sign` for both frameworks.
+
+#### Manual - Static version
+The [release page](../../releases) for each version contains a static version of the SDK. To install, download and unzip `libKustomerPubSub.xcframework`, `libKustomerChatStatic.xcframework` and `KustomerAssets.bundle`, and add them to your project.
 
 ## Post-Install
 1. Add photo and camera privacy descriptions to your `Info.plist`.
