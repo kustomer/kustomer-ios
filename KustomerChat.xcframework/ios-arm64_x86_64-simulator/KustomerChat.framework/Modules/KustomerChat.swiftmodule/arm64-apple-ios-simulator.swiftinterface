@@ -311,7 +311,9 @@ public struct KUSAlertInfo {
   public func chatMessages(conversationId: Swift.String) -> [KustomerChat.KUSChatMessage]
   public func unreadCount() -> Swift.Int
   public func openConversationCount() -> Swift.Int
+  @available(*, deprecated, message: "Use customerExists instead")
   public func currentCustomer() -> KustomerChat.KUSCustomer?
+  public func customerExists() -> Swift.Bool
   public func getChatSettings() -> KustomerChat.KUSChatSettings
   public func isChatAvailable() -> Swift.Bool?
   public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
@@ -373,6 +375,19 @@ extension KustomerClient {
   public var description: Swift.String {
     get
   }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class KUSTrackingIdentity {
+  public var id: Swift.String?
+  public var rawJson: Swift.String?
+  public var customerId: Swift.String?
+  public var trackingId: Swift.String?
+  public var email: Swift.String?
+  public var externalId: Swift.String?
+  public var verified: Swift.Bool?
+  public var verifiedAt: Foundation.Date?
+  public var createdAt: Foundation.Date?
+  public var updatedAt: Foundation.Date?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Settings {
@@ -625,6 +640,7 @@ public class KustomerOptions {
   }
   @available(*, deprecated)
   public var orgSecret: Swift.String?
+  public var hideHistoryNavigation: Swift.Bool
   @objc deinit
 }
 public enum ActiveAssistantOptions {
@@ -1245,8 +1261,8 @@ public enum KustomerLogType : Swift.String {
   public func openConversation(id: Swift.String, animated: Swift.Bool = true, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func showKbArticle(id: Swift.String)
   public func logOut(_ completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
+  public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
+  public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
   public func openNewConversation(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   public func didFailToRegisterForRemoteNotifications(error: Swift.Error)
   public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
