@@ -1013,7 +1013,6 @@ extension KustomerUI.Color {
   public static var historyHeaderSeparator: UIKit.UIColor
   public static var historyNewChatButton: UIKit.UIColor
   public static var historyNewChatButtonText: UIKit.UIColor
-  public static var historyRowBackgrod: UIKit.UIColor
   public static var historyRowBackground: UIKit.UIColor
   public static var historySearchBarBackground: UIKit.UIColor
   public static var historyTitleColor: UIKit.UIColor
@@ -1031,6 +1030,8 @@ extension KustomerUI.Color {
   public static var outgoingMessageBubble: UIKit.UIColor
   public static var outgoingMessageText: UIKit.UIColor
   public static var tabBarBackground: UIKit.UIColor
+  public static var tabBarItemColor: UIKit.UIColor
+  public static var tabBarUnselectedItemColor: UIKit.UIColor
   public static var waitingLabelHeaderText: UIKit.UIColor
   public static var kbBrowseBackground: UIKit.UIColor
   public static var kbBrowseSeparator: UIKit.UIColor?
