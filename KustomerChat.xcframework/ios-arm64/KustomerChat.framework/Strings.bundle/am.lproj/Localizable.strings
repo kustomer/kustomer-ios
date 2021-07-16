@@ -86,3 +86,6 @@
 "com.kustomer.You changed your additonal feedback comment" = "የ additonal ግብረመልስዎን ቀይረዋል";
 "com.kustomer.You're offline. Check your connection." = "ከመስመር ውጭ ነዎት ግንኙነትዎን ይፈትሹ።";
 "com.kustomer.is no longer available" = "ከአሁን በኋላ አይገኝም";
+"com.kustomer.Can't load chat" = "ውይይት መጫን አልተቻለም";
+"com.kustomer.Not enough disk space" = "በቂ የዲስክ ቦታ የለም";
+"com.kustomer.This conversation is read-only" = "ይህ ውይይት የሚነበብ ብቻ ነው";

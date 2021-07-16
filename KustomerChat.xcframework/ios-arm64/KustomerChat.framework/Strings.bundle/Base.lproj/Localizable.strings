@@ -8,6 +8,7 @@
 "com.kustomer.Attachment" = "Attachment";
 "com.kustomer.Browse files" = "Browse files";
 "com.kustomer.Camera roll" = "Camera roll";
+"com.kustomer.Can't load chat" = "Can't load chat";
 "com.kustomer.Cancel" = "Cancel";
 "com.kustomer.Cancelled! Tap to retry." = "Cancelled! Tap to retry.";
 "com.kustomer.Chat" = "Chat";
@@ -50,6 +51,7 @@
 "com.kustomer.No internet connection" = "No internet connection";
 "com.kustomer.No text" = "No text";
 "com.kustomer.None of your personal information was included" = "None of your personal information was included";
+"com.kustomer.Not enough disk space" = "Not enough disk space";
 "com.kustomer.Not found" = "Not found";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Open in browser";
@@ -72,6 +74,7 @@
 "com.kustomer.Thanks for your feedback!" = "Thanks for your feedback!";
 "com.kustomer.That article" = "That article";
 "com.kustomer.There was a problem" = "There was a problem";
+"com.kustomer.This conversation is read-only" = "This conversation is read-only";
 "com.kustomer.Try again" = "Try again";
 "com.kustomer.Type a message..." = "Type a message...";
 "com.kustomer.Unavailable message goes here" = "Unavailable message goes here";

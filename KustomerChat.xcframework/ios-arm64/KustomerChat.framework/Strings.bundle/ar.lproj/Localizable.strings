@@ -86,3 +86,6 @@
 "com.kustomer.You changed your additonal feedback comment" = "لقد قمت بتغيير التعليق الإضافي الخاص بك";
 "com.kustomer.You're offline. Check your connection." = "أنت غير متصل بالإنترنت. تحقق من اتصالك.";
 "com.kustomer.is no longer available" = "لم يعد متاحا";
+"com.kustomer.Can't load chat" = "لا يمكن تحميل الدردشة";
+"com.kustomer.Not enough disk space" = "مساحة غير كافيه في القرص";
+"com.kustomer.This conversation is read-only" = "هذه المحادثة للقراءة فقط";
