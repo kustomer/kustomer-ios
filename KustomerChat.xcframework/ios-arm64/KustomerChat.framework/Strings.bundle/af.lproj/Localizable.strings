@@ -62,8 +62,8 @@
 "com.kustomer.Additional feedback removed" = "Bykomende terugvoer is verwyder";
 "com.kustomer.Answers" = "Antwoorde";
 "com.kustomer.Chat history" = "Kletsgeskiedenis";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Gesprek het saamgevoeg in &#39;n ander gesprek. \ N \ n Tik om na die nuwe gesprek te gaan.";
-"com.kustomer.Conversation moved to another customer" = "Die gesprek is na &#39;n ander klant geskuif";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Gesprek het saamgevoeg in 'n ander gesprek. \ N \ n Tik om na die nuwe gesprek te gaan.";
+"com.kustomer.Conversation moved to another customer" = "Die gesprek is na 'n ander klant geskuif";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Wil u u gradering en terugvoer verwyder?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Wil u die veranderinge wat u aangebring het in u opmerking stoor?";
 "com.kustomer.Edit comment" = "Wysig opmerking";
@@ -82,7 +82,10 @@
 "com.kustomer.Survey" = "Opname";
 "com.kustomer.That article" = "Daardie artikel";
 "com.kustomer.Updated" = "Opgedateer";
-"com.kustomer.Waiting for a response from" = "Wag vir &#39;n antwoord van";
+"com.kustomer.Waiting for a response from" = "Wag vir 'n antwoord van";
 "com.kustomer.You changed your additonal feedback comment" = "U het u aanvullende terugvoeropmerking verander";
 "com.kustomer.You're offline. Check your connection." = "Jy is vanlyn. Gaan u verbinding na.";
 "com.kustomer.is no longer available" = "is nie meer beskikbaar nie";
+"com.kustomer.Can't load chat" = "Kan nie klets laai nie";
+"com.kustomer.Not enough disk space" = "Nie genoeg skyfspasie nie";
+"com.kustomer.This conversation is read-only" = "Hierdie gesprek is leesalleen";
