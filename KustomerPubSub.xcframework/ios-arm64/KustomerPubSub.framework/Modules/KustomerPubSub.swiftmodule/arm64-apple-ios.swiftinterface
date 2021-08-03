@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name KustomerPubSub
 import CommonCrypto
 import Foundation
@@ -33,11 +33,11 @@ public struct KustomerPubNubV3PresenceBase : KustomerPubSub.KustomerPubNubV3Pres
   }
   public init(channel: Swift.String, occupancy: Swift.Int, occupants: [Swift.String], occupantsState concreteOccupantsState: [Swift.String : KustomerPubSub.JSONCodable])
   public init(from other: KustomerPubSub.KustomerPubNubV3Presence) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3PresenceBase, b: KustomerPubSub.KustomerPubNubV3PresenceBase) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3PresenceBase, b: KustomerPubSub.KustomerPubNubV3PresenceBase) -> Swift.Bool
 }
 public enum KustomerPubNubV3PresenceChangeAction : Swift.Hashable {
   case join(uuids: [Swift.String])
@@ -83,11 +83,11 @@ public struct KustomerPubNubV3PresenceChangeBase : KustomerPubSub.KustomerPubNub
   }
   public init(from other: KustomerPubSub.KustomerPubNubV3PresenceChange) throws
   public init(actions: [KustomerPubSub.KustomerPubNubV3PresenceChangeAction], occupancy: Swift.Int, timetoken: KustomerPubSub.KUSPNTtoken, refreshHereNow: Swift.Bool, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerPubSub.KUSPNTtoken? = nil, metadata: KustomerPubSub.JSONCodable? = nil)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3PresenceChangeBase, b: KustomerPubSub.KustomerPubNubV3PresenceChangeBase) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3PresenceChangeBase, b: KustomerPubSub.KustomerPubNubV3PresenceChangeBase) -> Swift.Bool
 }
 public struct KustomerPubNubV3Error : Swift.Error {
   public let reason: KustomerPubSub.KustomerPubNubV3Error.Reason
@@ -107,11 +107,11 @@ public struct KustomerPubNubV3Error : Swift.Error {
     case response(Foundation.HTTPURLResponse)
     case json(KustomerPubSub.AnyJSON)
     case subscribe(KustomerPubSub.SubscribeCursor)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: KustomerPubSub.KustomerPubNubV3Error.AffectedValue, b: KustomerPubSub.KustomerPubNubV3Error.AffectedValue) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: KustomerPubSub.KustomerPubNubV3Error.AffectedValue, b: KustomerPubSub.KustomerPubNubV3Error.AffectedValue) -> Swift.Bool
   }
   public enum Domain : Swift.Int, Swift.Error, Swift.Hashable, Swift.Codable, Foundation.LocalizedError {
     case urlCreation
@@ -125,8 +125,8 @@ public struct KustomerPubNubV3Error : Swift.Error {
     case serviceNotEnabled
     case uncategorized
     case cancellation
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
@@ -195,8 +195,8 @@ public struct KustomerPubNubV3Error : Swift.Error {
     public var domain: KustomerPubSub.KustomerPubNubV3Error.Domain {
       get
     }
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
@@ -246,11 +246,11 @@ public struct KustomerPubNubV3Channel : Swift.Hashable {
   public var isPresenceSubscribed: Swift.Bool
   public init(id: Swift.String, withPresence: Swift.Bool = false)
   public init(channel: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3Channel, b: KustomerPubSub.KustomerPubNubV3Channel) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3Channel, b: KustomerPubSub.KustomerPubNubV3Channel) -> Swift.Bool
 }
 extension KustomerPubNubV3Channel : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
@@ -369,11 +369,11 @@ public struct JSONCodableScalarType : Swift.Codable, Swift.Hashable {
   public init(dateValue: Foundation.Date)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.JSONCodableScalarType, b: KustomerPubSub.JSONCodableScalarType) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.JSONCodableScalarType, b: KustomerPubSub.JSONCodableScalarType) -> Swift.Bool
 }
 public struct Crypto : Swift.Hashable {
   public let key: Foundation.Data?
@@ -403,11 +403,11 @@ public struct Crypto : Swift.Hashable {
   public func encrypt(encoded dataIn: Foundation.Data, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Foundation.Data, Swift.Error>
   public func decrypt(base64Encoded stringIn: Swift.String, encoding override: Swift.String.Encoding? = nil, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Swift.String, Swift.Error>
   public func decrypt(encrypted dataIn: Foundation.Data, dataMovedOut _: Swift.Int = 0) -> Swift.Result<Foundation.Data, Swift.Error>
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.Crypto, b: KustomerPubSub.Crypto) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.Crypto, b: KustomerPubSub.Crypto) -> Swift.Bool
 }
 public enum CryptoError : CommonCrypto.CCCryptorStatus, Swift.Error, Foundation.LocalizedError {
   case bufferTooSmall
@@ -481,8 +481,8 @@ public enum KUSPubSubConnectionStatus : Swift.String {
   public var isConnected: Swift.Bool {
     get
   }
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -505,35 +505,35 @@ public enum FCMTarget : Swift.Codable, Swift.Hashable {
   case condition(Swift.String)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMTarget, b: KustomerPubSub.FCMTarget) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMTarget, b: KustomerPubSub.FCMTarget) -> Swift.Bool
 }
 public struct FCMNotificationPayload : Swift.Codable, Swift.Hashable {
   public let title: Swift.String?
   public let body: Swift.String?
   public let image: Swift.String?
   public init(title: Swift.String? = nil, body: Swift.String? = nil, image: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMNotificationPayload, b: KustomerPubSub.FCMNotificationPayload) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMNotificationPayload, b: KustomerPubSub.FCMNotificationPayload) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct FCMOptionsPayload : Swift.Codable, Swift.Hashable {
   public let analyticsLabel: Swift.String?
   public init(analyticsLabel: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMOptionsPayload, b: KustomerPubSub.FCMOptionsPayload) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMOptionsPayload, b: KustomerPubSub.FCMOptionsPayload) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct FCMApnsConfig : Swift.Codable, Swift.Hashable {
   public let headers: [Swift.String : Swift.String]?
@@ -542,31 +542,31 @@ public struct FCMApnsConfig : Swift.Codable, Swift.Hashable {
   public init(headers: [Swift.String : Swift.String]? = nil, payload: KustomerPubSub.APSPayload? = nil, options: KustomerPubSub.FCMApnsFcmOptions? = nil)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMApnsConfig, b: KustomerPubSub.FCMApnsConfig) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMApnsConfig, b: KustomerPubSub.FCMApnsConfig) -> Swift.Bool
 }
 public struct FCMApnsFcmOptions : Swift.Codable, Swift.Hashable {
   public let analyticsLabel: Swift.String?
   public let image: Swift.String?
   public init(analyticsLabel: Swift.String? = nil, image: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMApnsFcmOptions, b: KustomerPubSub.FCMApnsFcmOptions) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMApnsFcmOptions, b: KustomerPubSub.FCMApnsFcmOptions) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum PNKeyRequirement : Swift.String {
   case none
   case publish
   case subscribe
   case publishAndSubscribe
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -576,10 +576,10 @@ public enum PAMVersionRequirement {
   case version2
   case version3
   public static func == (a: KustomerPubSub.PAMVersionRequirement, b: KustomerPubSub.PAMVersionRequirement) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol KustomerPubNubV3Message {
   var payload: KustomerPubSub.JSONCodable { get set }
@@ -614,13 +614,13 @@ public struct KustomerPubNubV3MessageBase : KustomerPubSub.KustomerPubNubV3Messa
   }
   public init(from other: KustomerPubSub.KustomerPubNubV3Message) throws
   public init(payload: KustomerPubSub.AnyJSON, actions: [KustomerPubSub.KustomerPubNubV3MessageActionBase], publisher: Swift.String?, channel: Swift.String, subscription: Swift.String?, published: KustomerPubSub.KUSPNTtoken, metadata: KustomerPubSub.AnyJSON?)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3MessageBase, b: KustomerPubSub.KustomerPubNubV3MessageBase) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3MessageBase, b: KustomerPubSub.KustomerPubNubV3MessageBase) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol KustomerPubNubV3ChannelMetadata {
   var metadataId: Swift.String { get }
@@ -647,15 +647,15 @@ public struct KustomerPubNubV3ChannelMetadataBase : KustomerPubSub.KustomerPubNu
   }
   public init(metadataId: Swift.String = UUID().uuidString, name: Swift.String, channelDescription: Swift.String? = nil, custom concreteCustom: [Swift.String : KustomerPubSub.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
   public init(from other: KustomerPubSub.KustomerPubNubV3ChannelMetadata) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3ChannelMetadataBase, b: KustomerPubSub.KustomerPubNubV3ChannelMetadataBase) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3ChannelMetadataBase, b: KustomerPubSub.KustomerPubNubV3ChannelMetadataBase) -> Swift.Bool
 }
 extension KustomerPubNubV3ChannelMetadataBase : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol EventStreamReceiver {
   var uuid: Foundation.UUID { get }
@@ -711,13 +711,13 @@ public struct KustomerPubNubV3BoundedPageBase : KustomerPubSub.KustomerPubNubV3B
   public let limit: Swift.Int?
   public init?(start: KustomerPubSub.KUSPNTtoken? = nil, end: KustomerPubSub.KUSPNTtoken? = nil, limit: Swift.Int? = nil)
   public init(from other: KustomerPubSub.KustomerPubNubV3BoundedPage) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3BoundedPageBase, b: KustomerPubSub.KustomerPubNubV3BoundedPageBase) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3BoundedPageBase, b: KustomerPubSub.KustomerPubNubV3BoundedPageBase) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol KustomerPubNubV3HashedPage {
   var start: Swift.String? { get }
@@ -735,13 +735,13 @@ public struct KustomerPubNubV3HashedPageBase : KustomerPubSub.KustomerPubNubV3Ha
   public var totalCount: Swift.Int?
   public init(start: Swift.String? = nil, end: Swift.String? = nil, totalCount: Swift.Int? = nil)
   public init(from other: KustomerPubSub.KustomerPubNubV3HashedPage) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3HashedPageBase, b: KustomerPubSub.KustomerPubNubV3HashedPageBase) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3HashedPageBase, b: KustomerPubSub.KustomerPubNubV3HashedPageBase) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 extension URL {
   public func appending(queryItems: [Foundation.URLQueryItem]) -> Foundation.URL?
@@ -826,8 +826,8 @@ public enum HTTPMethod : Swift.String {
   case post
   case put
   case trace
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -843,8 +843,8 @@ public enum KustomerPubNubV3Service : Swift.String {
   case subscribe
   case time
   case unknown
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -911,8 +911,8 @@ public struct LogPrefix : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   public static let line: KustomerPubSub.LogPrefix
   public static let all: KustomerPubSub.LogPrefix
   public init(rawValue: Swift.UInt32)
-  public typealias Element = KustomerPubSub.LogPrefix
   public typealias ArrayLiteralElement = KustomerPubSub.LogPrefix
+  public typealias Element = KustomerPubSub.LogPrefix
   public typealias RawValue = Swift.UInt32
 }
 public struct LogType : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
@@ -926,8 +926,8 @@ public struct LogType : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   public static let log: KustomerPubSub.LogType
   public static let all: KustomerPubSub.LogType
   public init(rawValue: Swift.UInt32)
-  public typealias Element = KustomerPubSub.LogType
   public typealias ArrayLiteralElement = KustomerPubSub.LogType
+  public typealias Element = KustomerPubSub.LogType
   public typealias RawValue = Swift.UInt32
 }
 extension LogType : Swift.CustomStringConvertible {
@@ -992,9 +992,9 @@ extension AnyJSON : Swift.Collection {
   }
   public typealias Element = (Swift.String, KustomerPubSub.AnyJSON)
   public typealias Index = KustomerPubSub.AnyJSONIndex
+  public typealias Indices = Swift.DefaultIndices<KustomerPubSub.AnyJSON>
   public typealias Iterator = Swift.IndexingIterator<KustomerPubSub.AnyJSON>
   public typealias SubSequence = Swift.Slice<KustomerPubSub.AnyJSON>
-  public typealias Indices = Swift.DefaultIndices<KustomerPubSub.AnyJSON>
 }
 extension AnyJSON : Swift.Hashable {
   public static func == (lhs: KustomerPubSub.AnyJSON, rhs: KustomerPubSub.AnyJSON) -> Swift.Bool
@@ -1069,8 +1069,8 @@ extension AnyJSON : Swift.ExpressibleByIntegerLiteral {
 }
 extension AnyJSON : Swift.ExpressibleByStringLiteral {
   public init(stringLiteral value: Swift.StringLiteralType)
-  public typealias StringLiteralType = Swift.StringLiteralType
   public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias StringLiteralType = Swift.StringLiteralType
   public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
 }
 public struct KustomerPubNubV3Configuration : Swift.Hashable {
@@ -1096,11 +1096,11 @@ public struct KustomerPubNubV3Configuration : Swift.Hashable {
   public var supressLeaveEvents: Swift.Bool
   public var requestMessageCountThreshold: Swift.UInt
   public var filterExpression: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3Configuration, b: KustomerPubSub.KustomerPubNubV3Configuration) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3Configuration, b: KustomerPubSub.KustomerPubNubV3Configuration) -> Swift.Bool
 }
 public struct EndpointResponse<Value> {
   public let router: KustomerPubSub.HTTPRouter
@@ -1122,8 +1122,8 @@ extension KustomerPubNubV3 {
   public enum PushEnvironment : Swift.String, Swift.Codable {
     case development
     case production
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -1132,8 +1132,8 @@ extension KustomerPubNubV3 {
     case apns
     case gcm
     case mpns
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -1160,8 +1160,8 @@ extension KustomerPubNubV3 {
     case id
     case name
     case updated
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -1313,11 +1313,11 @@ public struct AutomaticRetry : KustomerPubSub.RequestOperator, Swift.Hashable {
     case immediately
     case exponential(base: Swift.UInt, scale: Swift.Double, maxDelay: Swift.UInt)
     case linear(delay: Swift.Double)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: KustomerPubSub.AutomaticRetry.ReconnectionPolicy, b: KustomerPubSub.AutomaticRetry.ReconnectionPolicy) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: KustomerPubSub.AutomaticRetry.ReconnectionPolicy, b: KustomerPubSub.AutomaticRetry.ReconnectionPolicy) -> Swift.Bool
   }
   public static let defaultRetryableURLErrorCodes: Swift.Set<Foundation.URLError.Code>
   public let retryLimit: Swift.UInt
@@ -1326,11 +1326,11 @@ public struct AutomaticRetry : KustomerPubSub.RequestOperator, Swift.Hashable {
   public let retryableURLErrorCodes: Swift.Set<Foundation.URLError.Code>
   public init(retryLimit: Swift.UInt = 2, policy: KustomerPubSub.AutomaticRetry.ReconnectionPolicy = .defaultExponential, retryableHTTPStatusCodes: Swift.Set<Swift.Int> = [500], retryableURLErrorCodes: Swift.Set<Foundation.URLError.Code> = AutomaticRetry.defaultRetryableURLErrorCodes)
   public func retry(_ request: KustomerPubSub.RequestReplaceable, for _: KustomerPubSub.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.AutomaticRetry, b: KustomerPubSub.AutomaticRetry) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.AutomaticRetry, b: KustomerPubSub.AutomaticRetry) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class KUSSubscriptionSession {
   final public let uuid: Foundation.UUID
@@ -1396,10 +1396,10 @@ public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: KustomerPubSub.SubscribeCursor, b: KustomerPubSub.SubscribeCursor) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension String {
   public var jsonDescription: Swift.String {
@@ -1437,13 +1437,13 @@ public struct KustomerPubNubV3MessageActionBase : KustomerPubSub.KustomerPubNubV
   public let published: KustomerPubSub.KUSPNTtoken?
   public init(from other: KustomerPubSub.KustomerPubNubV3MessageAction) throws
   public init(actionType: Swift.String, actionValue: Swift.String, actionTimetoken: KustomerPubSub.KUSPNTtoken, messageTimetoken: KustomerPubSub.KUSPNTtoken, publisher: Swift.String, channel: Swift.String, subscription: Swift.String? = nil, published: KustomerPubSub.KUSPNTtoken? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3MessageActionBase, b: KustomerPubSub.KustomerPubNubV3MessageActionBase) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3MessageActionBase, b: KustomerPubSub.KustomerPubNubV3MessageActionBase) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol SessionStream : KustomerPubSub.EventStreamReceiver {
   func emitRequest(_ request: KustomerPubSub.RequestReplaceable, didCreate urlRequest: Foundation.URLRequest)
@@ -1519,23 +1519,23 @@ final public class MultiplexSessionStream : KustomerPubSub.SessionStream, Swift.
   public static func == (a: KustomerPubSub.BoundedValue<Value>, b: KustomerPubSub.BoundedValue<Value>) -> Swift.Bool
 }
 extension BoundedValue : Swift.Hashable where Value : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct FCMWebpushConfig : Swift.Codable, Swift.Hashable {
   public let headers: [Swift.String : Swift.String]?
   public let notification: Swift.String?
   public let options: KustomerPubSub.FCMWebpushFcmOptions?
   public init(headers: [Swift.String : Swift.String]? = nil, notification: Swift.String? = nil, options: KustomerPubSub.FCMWebpushFcmOptions? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMWebpushConfig, b: KustomerPubSub.FCMWebpushConfig) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMWebpushConfig, b: KustomerPubSub.FCMWebpushConfig) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct FCMWebpushNotification : Swift.Codable, Swift.Hashable {
   public let actions: [KustomerPubSub.FCMWebpushAction]?
@@ -1552,45 +1552,45 @@ public struct FCMWebpushNotification : Swift.Codable, Swift.Hashable {
   public let timestamp: Foundation.Date?
   public let title: Swift.String?
   public let vibrate: [Swift.UInt]?
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMWebpushNotification, b: KustomerPubSub.FCMWebpushNotification) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMWebpushNotification, b: KustomerPubSub.FCMWebpushNotification) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct FCMWebpushAction : Swift.Codable, Swift.Hashable {
   public let action: Swift.String?
   public let title: Swift.String?
   public let icon: Swift.String?
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMWebpushAction, b: KustomerPubSub.FCMWebpushAction) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMWebpushAction, b: KustomerPubSub.FCMWebpushAction) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum FCMWebpushDirection : Swift.String, Swift.Codable, Swift.Hashable {
   case auto
   case leftToRight
   case rightToLeft
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 public struct FCMWebpushFcmOptions : Swift.Codable, Swift.Hashable {
   public let link: Swift.String?
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMWebpushFcmOptions, b: KustomerPubSub.FCMWebpushFcmOptions) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMWebpushFcmOptions, b: KustomerPubSub.FCMWebpushFcmOptions) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 extension Data {
   public var trulyEmpty: Swift.Bool {
@@ -1609,19 +1609,19 @@ public struct FCMAndroidPayload : Swift.Codable, Swift.Hashable {
   public let notification: KustomerPubSub.FCMAndroidNotification?
   public let options: KustomerPubSub.FCMOptionsPayload?
   public init(collapseKey: Swift.String? = nil, priority: KustomerPubSub.FCMAndroidMessagePriority? = nil, ttl: Swift.Double? = nil, restrictedPackageName: Swift.String? = nil, notification: KustomerPubSub.FCMAndroidNotification? = nil, options: KustomerPubSub.FCMOptionsPayload? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMAndroidPayload, b: KustomerPubSub.FCMAndroidPayload) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMAndroidPayload, b: KustomerPubSub.FCMAndroidPayload) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum FCMAndroidMessagePriority : Swift.String, Swift.Codable, Swift.Hashable {
   case normal
   case high
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1653,21 +1653,21 @@ public struct FCMAndroidNotification : Swift.Codable, Swift.Hashable {
   public let lightSettings: KustomerPubSub.FCMAndroidLightSettings?
   public let image: Swift.String?
   public init(title: Swift.String? = nil, body: Swift.String? = nil, icon: Swift.String? = nil, color: Swift.String? = nil, sound: Swift.String? = nil, tag: Swift.String? = nil, clickAction: Swift.String? = nil, bodyLocKey: Swift.String? = nil, bodyLocArgs: [Swift.String]? = nil, titleLocKey: Swift.String? = nil, titleLocArgs: [Swift.String]? = nil, channelID: Swift.String? = nil, ticker: Swift.String? = nil, sticky: Swift.Bool? = nil, eventTime: Foundation.Date? = nil, localOnly: Swift.Bool? = nil, notificationPriority: KustomerPubSub.FCMAndroidNotificationPriority? = nil, defaultSound: Swift.Bool? = nil, defaultVibrateTimings: Swift.Bool? = nil, defaultLightSettings: Swift.Bool? = nil, vibrateTimings: [Swift.Double]? = nil, visibility: KustomerPubSub.FCMAndroidVisibility? = nil, notificationCount: Swift.Int? = nil, lightSettings: KustomerPubSub.FCMAndroidLightSettings? = nil, image: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMAndroidNotification, b: KustomerPubSub.FCMAndroidNotification) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMAndroidNotification, b: KustomerPubSub.FCMAndroidNotification) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum FCMAndroidVisibility : Swift.String, Swift.Codable, Swift.Hashable {
   case unspecified
   case `private`
   case `public`
   case secret
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1679,8 +1679,8 @@ public enum FCMAndroidNotificationPriority : Swift.String, Swift.Codable, Swift.
   case `default`
   case high
   case max
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1690,26 +1690,26 @@ public struct FCMAndroidLightSettings : Swift.Codable, Swift.Hashable {
   public let onDuration: Swift.String
   public let offDuration: Swift.String
   public init(color: KustomerPubSub.FCMColor, onDuration: Swift.Double, offDuration: Swift.Int)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMAndroidLightSettings, b: KustomerPubSub.FCMAndroidLightSettings) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMAndroidLightSettings, b: KustomerPubSub.FCMAndroidLightSettings) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct FCMColor : Swift.Codable, Swift.Hashable {
   public let red: Swift.Double
   public let green: Swift.Double
   public let blue: Swift.Double
   public let alpha: Swift.Double
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.FCMColor, b: KustomerPubSub.FCMColor) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.FCMColor, b: KustomerPubSub.FCMColor) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol RequestMutator {
   func mutate(_ urlRequest: Foundation.URLRequest, for session: KustomerPubSub.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
@@ -1780,10 +1780,10 @@ public struct PAMTokenManagementSystem {
     case uuid
     case channel
     public static func == (a: KustomerPubSub.PAMTokenManagementSystem.Resource, b: KustomerPubSub.PAMTokenManagementSystem.Resource) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public init(uuids: [Swift.String : KustomerPubSub.PAMToken] = [:], channels: [Swift.String : KustomerPubSub.PAMToken] = [:])
   public init(store: KustomerPubSub.PAMTokenManagementSystem)
@@ -1804,26 +1804,26 @@ public struct PAMToken : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: KustomerPubSub.PAMToken, b: KustomerPubSub.PAMToken) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct PAMTokenResource : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let channels: [Swift.String : KustomerPubSub.PAMPermission]
   public let groups: [Swift.String : KustomerPubSub.PAMPermission]
   public let uuidObjects: [Swift.String : KustomerPubSub.PAMPermission]
   public let channelObjects: [Swift.String : KustomerPubSub.PAMPermission]
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: KustomerPubSub.PAMTokenResource, b: KustomerPubSub.PAMTokenResource) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct PAMPermission : Swift.OptionSet, Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let rawValue: Swift.UInt32
@@ -1837,9 +1837,9 @@ public struct PAMPermission : Swift.OptionSet, Swift.Codable, Swift.Equatable, S
   public static let crud: KustomerPubSub.PAMPermission
   public static let all: KustomerPubSub.PAMPermission
   public init(rawValue: Swift.UInt32)
-  public typealias RawValue = Swift.UInt32
-  public typealias Element = KustomerPubSub.PAMPermission
   public typealias ArrayLiteralElement = KustomerPubSub.PAMPermission
+  public typealias Element = KustomerPubSub.PAMPermission
+  public typealias RawValue = Swift.UInt32
 }
 extension PAMPermission : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -1968,15 +1968,15 @@ public struct KustomerPubNubV3UUIDMetadataBase : KustomerPubSub.KustomerPubNubV3
   }
   public init(metadataId: Swift.String = UUID().uuidString, name: Swift.String, externalId: Swift.String? = nil, profileURL: Swift.String? = nil, email: Swift.String? = nil, custom concreteCustom: [Swift.String : KustomerPubSub.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
   public init(from other: KustomerPubSub.KustomerPubNubV3UUIDMetadata) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3UUIDMetadataBase, b: KustomerPubSub.KustomerPubNubV3UUIDMetadataBase) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3UUIDMetadataBase, b: KustomerPubSub.KustomerPubNubV3UUIDMetadataBase) -> Swift.Bool
 }
 extension KustomerPubNubV3UUIDMetadataBase : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol ResponseDecoder {
   associatedtype Payload : Swift.Decodable, Swift.Encodable
@@ -1991,26 +1991,26 @@ public struct KustomerPubNubV3PushConfig : Swift.Codable, Swift.Hashable {
   public let collapseID: Swift.String?
   public let expiration: Foundation.Date?
   public init(targets: [KustomerPubSub.KustomerPubNubV3PushTarget], collapseID: Swift.String? = nil, expiration: Foundation.Date? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3PushConfig, b: KustomerPubSub.KustomerPubNubV3PushConfig) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3PushConfig, b: KustomerPubSub.KustomerPubNubV3PushConfig) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct KustomerPubNubV3PushTarget : Swift.Codable, Swift.Hashable {
   public let topic: Swift.String
   public let environment: KustomerPubSub.KustomerPubNubV3.PushEnvironment
   public let excludedDevices: [Swift.String]?
   public init(topic: Swift.String, environment: KustomerPubSub.KustomerPubNubV3.PushEnvironment = .development, excludedDevices: [Swift.String]? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3PushTarget, b: KustomerPubSub.KustomerPubNubV3PushTarget) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3PushTarget, b: KustomerPubSub.KustomerPubNubV3PushTarget) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct KustomerPubNubV3APNSPayload : Swift.Codable {
   public let aps: KustomerPubSub.APSPayload
@@ -2030,24 +2030,24 @@ public struct APSPayload : Swift.Codable, Swift.Hashable {
   public let mutableContent: Swift.Int?
   public let targetContentID: Swift.String?
   public init(alert: KustomerPubSub.APSAlert? = nil, badge: Swift.Int? = nil, sound: KustomerPubSub.APSSound? = .string("default"), threadID: Swift.String? = nil, category: Swift.String? = nil, contentAvailable: Swift.Int? = nil, mutableContent: Swift.Int? = nil, targetContentID: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.APSPayload, b: KustomerPubSub.APSPayload) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.APSPayload, b: KustomerPubSub.APSPayload) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum APSAlert : Swift.Codable, Swift.Hashable {
   case body(Swift.String)
   case object(KustomerPubSub.APSAlertObject)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.APSAlert, b: KustomerPubSub.APSAlert) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.APSAlert, b: KustomerPubSub.APSAlert) -> Swift.Bool
 }
 public struct APSAlertObject : Swift.Codable, Swift.Hashable {
   public let title: Swift.String?
@@ -2061,37 +2061,37 @@ public struct APSAlertObject : Swift.Codable, Swift.Hashable {
   public let locKey: Swift.String?
   public let locArgs: [Swift.String]?
   public init(title: Swift.String? = nil, subtitle: Swift.String? = nil, body: Swift.String? = nil, launchImage: Swift.String? = nil, titleLocKey: Swift.String? = nil, titleLocArgs: [Swift.String]? = nil, subtitleLocKey: [Swift.String]? = nil, subtitleLocArgs: [Swift.String]? = nil, locKey: Swift.String? = nil, locArgs: [Swift.String]? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.APSAlertObject, b: KustomerPubSub.APSAlertObject) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.APSAlertObject, b: KustomerPubSub.APSAlertObject) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum APSSound : Swift.Codable, Swift.Hashable {
   case string(Swift.String)
   case critical(KustomerPubSub.APSCriticalSound)
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.APSSound, b: KustomerPubSub.APSSound) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.APSSound, b: KustomerPubSub.APSSound) -> Swift.Bool
 }
 public struct APSCriticalSound : Swift.Codable, Swift.Hashable {
   public let critical: Swift.Int?
   public let name: Swift.String
   public let volume: Swift.Int?
   public init(critical: Swift.Int? = nil, name: Swift.String = "default", volume: Swift.Int? = nil)
-  public init(from decoder: Swift.Decoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.APSCriticalSound, b: KustomerPubSub.APSCriticalSound) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.APSCriticalSound, b: KustomerPubSub.APSCriticalSound) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct InstanceIdOperator : KustomerPubSub.RequestOperator {
   public let instanceID: Swift.String
@@ -2121,10 +2121,10 @@ public protocol URLConvertible {
 public enum URLConvertibleError : Swift.Error {
   case urlComponents
   public static func == (a: KustomerPubSub.URLConvertibleError, b: KustomerPubSub.URLConvertibleError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension URLComponents : KustomerPubSub.URLConvertible {
   public var asURL: Swift.Result<Foundation.URL, Swift.Error> {
@@ -2265,11 +2265,11 @@ public struct KustomerPubNubV3MembershipMetadataBase : KustomerPubSub.KustomerPu
   public var eTag: Swift.String?
   public init(uuidMetadataId: Swift.String, channelMetadataId: Swift.String, uuid: KustomerPubSub.KustomerPubNubV3UUIDMetadataBase? = nil, channel: KustomerPubSub.KustomerPubNubV3ChannelMetadataBase? = nil, custom concreteCustom: [Swift.String : KustomerPubSub.JSONCodableScalar]? = nil, updated: Foundation.Date? = nil, eTag: Swift.String? = nil)
   public init(from other: KustomerPubSub.KustomerPubNubV3MembershipMetadata) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: KustomerPubSub.KustomerPubNubV3MembershipMetadataBase, b: KustomerPubSub.KustomerPubNubV3MembershipMetadataBase) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: KustomerPubSub.KustomerPubNubV3MembershipMetadataBase, b: KustomerPubSub.KustomerPubNubV3MembershipMetadataBase) -> Swift.Bool
 }
 extension KustomerPubNubV3MembershipMetadataBase : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws

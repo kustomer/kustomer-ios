@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
@@ -117,8 +117,8 @@ public enum KustomerLanguage : Swift.String {
   case tr
   case tw
   case uk
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -235,8 +235,8 @@ public enum KustomerAssetLanguage : Swift.String {
   case zh_CN
   case zh_TW
   case zu
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -259,8 +259,8 @@ public enum KustomerAssetLanguage : Swift.String {
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, openSettingsFor notification: UserNotifications.UNNotification?)
   public func notificationIsFromKustomer(_ notification: UserNotifications.UNNotification) -> Swift.Bool
   public func notificationIsFromKustomer(threadIdentifier: Swift.String?) -> Swift.Bool
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct KUSAlertSettings {
 }
@@ -342,8 +342,8 @@ final public class KUSRevocationTrustEvaluator {
     public static let any: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public let rawValue: CoreFoundation.CFOptionFlags
     public init(rawValue: CoreFoundation.CFOptionFlags)
-    public typealias Element = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public typealias ArrayLiteralElement = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
+    public typealias Element = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
     public typealias RawValue = CoreFoundation.CFOptionFlags
   }
   public init(performDefaultValidation: Swift.Bool = true, validateHost: Swift.Bool = true, options: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions = .any)
@@ -567,8 +567,8 @@ public typealias KUSPNTtoken = Swift.UInt64
 public enum KUSKBDeflectResultType : Swift.String {
   case article
   case category
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -592,8 +592,8 @@ public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConver
 public enum KUSSentByType : Swift.String {
   case User
   case Customer
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -688,8 +688,8 @@ extension KUSKBItemBase {
     case image(UIKit.UIImage, UIKit.UIColor?)
     case text(Swift.String)
   }
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
 }
 extension ConfettiView : QuartzCore.CAAnimationDelegate {
   @objc final public func animationDidStop(_ animation: QuartzCore.CAAnimation, finished flag: Swift.Bool)
@@ -754,8 +754,8 @@ public enum KustomerConnectionStatus : Swift.String {
   public var ableToTryReconnecting: Swift.Bool {
     get
   }
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -891,8 +891,8 @@ extension NSNotification.Name {
 public enum KUSChatMessageDirection : Swift.String {
   case inbound
   case outbound
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1068,10 +1068,10 @@ extension KustomerUI.Color {
 public enum KustomerConfigurationError : Swift.Error {
   case notEnoughDiskSpace
   public static func == (a: KustomerChat.KustomerConfigurationError, b: KustomerChat.KustomerConfigurationError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension KustomerConfigurationError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -1081,8 +1081,8 @@ extension KustomerConfigurationError : Foundation.LocalizedError {
 public enum KUSConversationLockReason : Swift.String {
   case customer_ended
   case user_ended
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1098,11 +1098,11 @@ public enum KustomerOffhoursDisplay : Swift.String {
   case none
   case offline
   case online
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 public enum KUSChatMessageStatus {
   case success
@@ -1111,10 +1111,10 @@ public enum KUSChatMessageStatus {
   case cancelled
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSChatMessageStatus
   public static func == (a: KustomerChat.KUSChatMessageStatus, b: KustomerChat.KUSChatMessageStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KUSMessageTemplateType : Swift.String {
   case quickReplies
@@ -1124,8 +1124,8 @@ public enum KUSMessageTemplateType : Swift.String {
   case list
   case none
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSMessageTemplateType
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -1202,20 +1202,20 @@ public enum KustomerDisplayMode {
   case onlyChat
   case onlyKnowledgeBase
   public static func == (a: KustomerChat.KustomerDisplayMode, b: KustomerChat.KustomerDisplayMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KUSConversationStatus {
   case open
   case ended
   case new
   public static func == (a: KustomerChat.KUSConversationStatus, b: KustomerChat.KUSConversationStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum KustomerLogType : Swift.String {
   case debug
@@ -1225,8 +1225,8 @@ public enum KustomerLogType : Swift.String {
   case fatal
   @available(*, deprecated)
   case multithreadingWarning
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
