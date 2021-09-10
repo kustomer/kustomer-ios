@@ -838,6 +838,50 @@ extension KUSKeychainAttributes : Swift.CustomStringConvertible, Swift.CustomDeb
     get
   }
 }
+public struct ChatAssistantCriteria {
+  public enum CustomerProperty : Swift.Equatable {
+    case id
+    case name
+    case email
+    case phone
+    case activityAt
+    case createdAt
+    case lastMessageAt
+    case lastMessageSentAt
+    case lastOutboundMsgSentAt
+    case lastSeenAt
+    case signedUpAt
+    case lastMessageUnrespondedTo
+    case avgSatisfactionRating
+    case avgSatisfactionScore
+    case sentiment
+    case conversationCount
+    case createdBy
+    case custom(name: Swift.String)
+    public static func == (a: KustomerChat.ChatAssistantCriteria.CustomerProperty, b: KustomerChat.ChatAssistantCriteria.CustomerProperty) -> Swift.Bool
+  }
+  public enum Operator : Swift.Equatable {
+    case matches
+    case equals
+    case notEquals
+    case greaterThan
+    case greaterThanOrEqual
+    case lessThan
+    case lessThanOrEqual
+    case isIn
+    case isNotIn
+    case contains
+    case doesNotContain
+    case containsAnyOf
+    case doesNotContainAnyOf
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: KustomerChat.ChatAssistantCriteria.Operator, b: KustomerChat.ChatAssistantCriteria.Operator) -> Swift.Bool
+  }
+  public init?(rawObject: Swift.String, rawOperator: Swift.String, rawValue: Any)
+}
 public protocol KUSURLConvertible {
   func kus_asURL() throws -> Foundation.URL
 }
@@ -1026,8 +1070,8 @@ extension KustomerUI.Color {
   public static var loadingViewBackground: UIKit.UIColor
   public static var messageButtonBackground: UIKit.UIColor
   public static var messageButtonText: UIKit.UIColor
-  public static var messageLinkInIncomingMessageBubble: UIKit.UIColor
-  public static var messageLinkInOutgoingMessageBubble: UIKit.UIColor
+  public static var messageUrlLinkOnAgentBubble: UIKit.UIColor
+  public static var messageUrlLinkOnCustomerBubble: UIKit.UIColor
   public static var messageLinkInHistoryList: UIKit.UIColor
   public static var messagesBackground: UIKit.UIColor
   public static var navigationBarButton: UIKit.UIColor
@@ -1064,6 +1108,12 @@ extension KustomerUI.Color {
   public static var sendChatMessageButton: UIKit.UIColor
   public static var noInternetBannerBackground: UIKit.UIColor
   public static var noInternetBannerText: UIKit.UIColor
+}
+public struct ChatAssistantAction : Swift.Decodable {
+  public let assistant: Swift.String
+  public let startDialog: Swift.String
+  public let isProactive: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum KustomerConfigurationError : Swift.Error {
   case notEnoughDiskSpace
@@ -1377,6 +1427,32 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
   }
   @objc deinit
 }
+public class KUSCurrentCustomer : Swift.CustomStringConvertible, Swift.Decodable {
+  final public let id: Swift.String
+  final public let name: Swift.String?
+  final public let email: Swift.String?
+  final public let phone: Swift.String?
+  final public let activityAt: Foundation.Date?
+  final public let createdAt: Foundation.Date?
+  final public let lastMessageAt: Foundation.Date?
+  final public let lastMessageSentAt: Foundation.Date?
+  final public let lastOutboundMsgSentAt: Foundation.Date?
+  final public let lastSeenAt: Foundation.Date?
+  final public let signedUpAt: Foundation.Date?
+  final public let lastMessageUnrespondedTo: Foundation.Date?
+  final public let avgSatisfactionRating: Swift.Double?
+  final public let avgSatisfactionScore: Swift.Double?
+  final public let sentiment: Swift.String?
+  final public let conversationCount: KustomerChat.KUSConversationCount?
+  final public let custom: [Swift.String : Swift.String]?
+  final public let createdBy: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  required public init(from decoder: Swift.Decoder) throws
+  public class func create(fromJSONString jsonString: Swift.String) -> KustomerChat.KUSCurrentCustomer?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class KUSChatMessage : Swift.CustomStringConvertible {
   public var id: Swift.String
   public var conversationId: Swift.String
@@ -1434,6 +1510,10 @@ extension KustomerUI.Color {
   }
   public static func color(_ named: Swift.String) -> UIKit.UIColor?
 }
+public class KUSConversationCount : Swift.Decodable {
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+}
 extension KustomerChat.KustomerLanguage : Swift.Equatable {}
 extension KustomerChat.KustomerLanguage : Swift.Hashable {}
 extension KustomerChat.KustomerLanguage : Swift.RawRepresentable {}
@@ -1449,6 +1529,7 @@ extension KustomerChat.KUSSentByType : Swift.RawRepresentable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Equatable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Hashable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.RawRepresentable {}
+extension KustomerChat.ChatAssistantCriteria.Operator : Swift.Hashable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.Equatable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.Hashable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.RawRepresentable {}
