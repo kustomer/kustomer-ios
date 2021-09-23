@@ -6,35 +6,35 @@
 	<dict>
 		<key>Headers/KustomerPubSub-Swift.h</key>
 		<data>
-		k3LWh8V1CMgelzHi/xmmkU4S8tM=
+		0aHFmv6N+JOifL8OAU5pFhBUsto=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tGReXZkVeyJCaZ7LYhMSViYIWww=
+		weWkrChKqb5F0UTsm9omN4KcYxY=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5UEpja96PewAoK0GqZn9as5mTiU=
+		7xiWcaH9i5h7k2VgqUHz2a4PYFY=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		c1t/y4NcOKye2oQVE0WMIAn6P2s=
+		zfdfr6e680kQcWMHKF6zfnxUFlw=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		62+aWpSo/d8JGbQ+rrjbmW94ots=
+		RaeClkSp+llPZqz6qXfD+7AdRjQ=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		5UEpja96PewAoK0GqZn9as5mTiU=
+		7xiWcaH9i5h7k2VgqUHz2a4PYFY=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		c1t/y4NcOKye2oQVE0WMIAn6P2s=
+		zfdfr6e680kQcWMHKF6zfnxUFlw=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		62+aWpSo/d8JGbQ+rrjbmW94ots=
+		RaeClkSp+llPZqz6qXfD+7AdRjQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,49 +47,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QxqZDYsLVSsTvpizrHdY91df75/sWqh7fV8oxcFNUD0=
+			DXkCJwCLH5hLG8Rwm4GSoM/Xxv+hv/d/fUWQC/eAfd0=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TsH200mIGwAzhWrBRersUFldqvjCyZmFuVFHFmO8nQI=
+			5NNI6TFOEuK0ww9t45Kb5a+UmeLTJvEAEnbKHkGO0xw=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYsWJ+cBIpCMZt2Cvrc9Ijjx3XUPSCYIro1kYDsNEIE=
+			awFWGK3afN38xapMbf9kGPi/o5HeWQGo26XhKqrrltE=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLyF/omu2RlnuvcobmQqSU1eNTVFunD7K2GIWXFXgy0=
+			7MX8QnsrtAJCubmKh1lu6tCqIj5uJSg8HYunk5OjS5A=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TsH200mIGwAzhWrBRersUFldqvjCyZmFuVFHFmO8nQI=
+			5NNI6TFOEuK0ww9t45Kb5a+UmeLTJvEAEnbKHkGO0xw=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYsWJ+cBIpCMZt2Cvrc9Ijjx3XUPSCYIro1kYDsNEIE=
+			awFWGK3afN38xapMbf9kGPi/o5HeWQGo26XhKqrrltE=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLyF/omu2RlnuvcobmQqSU1eNTVFunD7K2GIWXFXgy0=
+			7MX8QnsrtAJCubmKh1lu6tCqIj5uJSg8HYunk5OjS5A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
