@@ -6,59 +6,59 @@
 	<dict>
 		<key>Headers/KustomerPubSub-Swift.h</key>
 		<data>
-		vnLEIcrsQq8AESIVpiypNsgRV7w=
+		IO8vPGwJQp06Rdangm6BdzKi2cY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1c4roXhvA0ZYlfuk4t/tcq7KlyQ=
+		P64M6gZapkx+4F5/qHHcYvfKZj0=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xD4R9NGgvcNEGbG8ON8NPLZjTgE=
+		GQHk+clBtZzM8IjenuBj9A13hxQ=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4uzopuK8IOmY8p8q7s/BeK04/FQ=
+		1um5E/42uqmvZZhHRmboJ+WUO4w=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BrMjg75/UQ+xR5I8iTxT7L2zWNY=
+		cdfd7R7D6J1B9GYAUDJXoacp/Ks=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		xD4R9NGgvcNEGbG8ON8NPLZjTgE=
+		GQHk+clBtZzM8IjenuBj9A13hxQ=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		4uzopuK8IOmY8p8q7s/BeK04/FQ=
+		1um5E/42uqmvZZhHRmboJ+WUO4w=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		BrMjg75/UQ+xR5I8iTxT7L2zWNY=
+		cdfd7R7D6J1B9GYAUDJXoacp/Ks=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7NFLz98O6uJ9QKc6NqLWlHtl1Jg=
+		ruGQ6Q3Y/4LPSrWzN2K7S7pY40g=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SCczQFYaHqNC3UBaezId1sUj9XY=
+		aZt4OSWhTXyg2IB29C/CVJ1BYJM=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nm4ZZBfmlZky+83zdfw+tF++Udw=
+		o1q1usKOucYItbkxQeRmhpn39ps=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		7NFLz98O6uJ9QKc6NqLWlHtl1Jg=
+		ruGQ6Q3Y/4LPSrWzN2K7S7pY40g=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		SCczQFYaHqNC3UBaezId1sUj9XY=
+		aZt4OSWhTXyg2IB29C/CVJ1BYJM=
 		</data>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		nm4ZZBfmlZky+83zdfw+tF++Udw=
+		o1q1usKOucYItbkxQeRmhpn39ps=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,91 +71,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5ptnfQjx9RMGnCTUscVqcTbFzwKjwToYPS+qcOY3GQ=
+			KsyyHqUIMiXjP9Z2iSGcaIcWt37RO/S8cHTMuKx8U08=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ay+7TF7uOcbq22fDve0phH19OQPUtwXooIljrzZjLyw=
+			UjvUaKZ4eatN4JYLOkjEssXeGiLJrWw/NK7JK8CvI58=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BJZXwj39Kg3tbW9uDgo3CLgarsWzEmwNkTxK2S4B0Bg=
+			WRq2IdQy9vo2J1qyJ/oAA21b4H2T737PjrrwgKMWFPk=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hm4tlAIA4hGA2AJZCiKrCsXHJvGJmQXlGYDVPtT64Oc=
+			2hHXQ0yJlpQuD4mnkNRbCCRwyCBKWftSvla1CEUMJhw=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ay+7TF7uOcbq22fDve0phH19OQPUtwXooIljrzZjLyw=
+			UjvUaKZ4eatN4JYLOkjEssXeGiLJrWw/NK7JK8CvI58=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BJZXwj39Kg3tbW9uDgo3CLgarsWzEmwNkTxK2S4B0Bg=
+			WRq2IdQy9vo2J1qyJ/oAA21b4H2T737PjrrwgKMWFPk=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hm4tlAIA4hGA2AJZCiKrCsXHJvGJmQXlGYDVPtT64Oc=
+			2hHXQ0yJlpQuD4mnkNRbCCRwyCBKWftSvla1CEUMJhw=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXMOLZn3g4pJseZkdKIsSuydSK3tkzV2QnM6h3z5zA4=
+			oQXLKJozZmf4rMtIe7/fpKrezPVUVMG457Xa4vxlwsc=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EAL9ow1lnepuozzhximKcL+zsaE0bMmoYwj/oPAZyU0=
+			O1cPpCPKTG1qaYNWhw4j8ahTMFjPF6Ck2z0BOwGPauE=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfoFnWQgXIwtMTeeM3FeT7uzTqURd6lndyaOeTz+dfM=
+			uppFBCLjq5AYG9SskzF4YjZ/f6mE0ogYesEdyozkBLY=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXMOLZn3g4pJseZkdKIsSuydSK3tkzV2QnM6h3z5zA4=
+			oQXLKJozZmf4rMtIe7/fpKrezPVUVMG457Xa4vxlwsc=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EAL9ow1lnepuozzhximKcL+zsaE0bMmoYwj/oPAZyU0=
+			O1cPpCPKTG1qaYNWhw4j8ahTMFjPF6Ck2z0BOwGPauE=
 			</data>
 		</dict>
 		<key>Modules/KustomerPubSub.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfoFnWQgXIwtMTeeM3FeT7uzTqURd6lndyaOeTz+dfM=
+			uppFBCLjq5AYG9SskzF4YjZ/f6mE0ogYesEdyozkBLY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

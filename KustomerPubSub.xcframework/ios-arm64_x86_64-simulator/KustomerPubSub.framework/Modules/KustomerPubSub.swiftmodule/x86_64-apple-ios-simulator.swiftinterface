@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name KustomerPubSub
 import CommonCrypto
 import Foundation
 import Swift
-import _Concurrency
 public protocol KustomerPubNubV3Presence {
   var channel: Swift.String { get }
   var occupancy: Swift.Int { get set }
@@ -12,11 +11,11 @@ public protocol KustomerPubNubV3Presence {
   var occupantsState: [Swift.String : KustomerPubSub.JSONCodable] { get set }
   init(from other: KustomerPubSub.KustomerPubNubV3Presence) throws
 }
-extension KustomerPubSub.KustomerPubNubV3Presence {
+extension KustomerPubNubV3Presence {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3Presence
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3Presence
 }
-extension Swift.Dictionary where Key == Swift.String, Value == KustomerPubSub.KustomerPubNubV3Presence {
+extension Dictionary where Key == Swift.String, Value == KustomerPubSub.KustomerPubNubV3Presence {
   public var totalChannels: Swift.Int {
     get
   }
@@ -51,7 +50,7 @@ public enum KustomerPubNubV3PresenceChangeAction : Swift.Hashable {
     get
   }
 }
-extension Swift.Array where Element == KustomerPubSub.KustomerPubNubV3PresenceChangeAction {
+extension Array where Element == KustomerPubSub.KustomerPubNubV3PresenceChangeAction {
   public func join(contains uuid: Swift.String) -> Swift.Bool
   public func leave(contains uuid: Swift.String) -> Swift.Bool
   public func timeout(contains uuid: Swift.String) -> Swift.Bool
@@ -67,7 +66,7 @@ public protocol KustomerPubNubV3PresenceChange {
   var metadata: KustomerPubSub.JSONCodable? { get }
   init(from other: KustomerPubSub.KustomerPubNubV3PresenceChange) throws
 }
-extension KustomerPubSub.KustomerPubNubV3PresenceChange {
+extension KustomerPubNubV3PresenceChange {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3PresenceChange
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3PresenceChange
 }
@@ -203,22 +202,22 @@ public struct KustomerPubNubV3Error : Swift.Error {
     }
   }
 }
-extension KustomerPubSub.KustomerPubNubV3Error : Swift.Hashable {
+extension KustomerPubNubV3Error : Swift.Hashable {
   public static func == (lhs: KustomerPubSub.KustomerPubNubV3Error, rhs: KustomerPubSub.KustomerPubNubV3Error) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-extension Swift.Optional where Wrapped == KustomerPubSub.KustomerPubNubV3Error {
+extension Optional where Wrapped == KustomerPubSub.KustomerPubNubV3Error {
   public static func == (lhs: Swift.Optional<Wrapped>, rhs: KustomerPubSub.KustomerPubNubV3Error.Reason?) -> Swift.Bool
   public static func != (lhs: Swift.Optional<Wrapped>, rhs: KustomerPubSub.KustomerPubNubV3Error.Reason?) -> Swift.Bool
 }
-extension Swift.Optional where Wrapped == KustomerPubSub.KustomerPubNubV3Error.Reason {
+extension Optional where Wrapped == KustomerPubSub.KustomerPubNubV3Error.Reason {
   public static func == (lhs: Swift.Optional<Wrapped>, rhs: KustomerPubSub.KustomerPubNubV3Error?) -> Swift.Bool
   public static func != (lhs: Swift.Optional<Wrapped>, rhs: KustomerPubSub.KustomerPubNubV3Error?) -> Swift.Bool
 }
-extension KustomerPubSub.KustomerPubNubV3Error {
+extension KustomerPubNubV3Error {
   public var urlError: Foundation.URLError? {
     get
   }
@@ -253,11 +252,11 @@ public struct KustomerPubNubV3Channel : Swift.Hashable {
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3Channel : Swift.Codable {
+extension KustomerPubNubV3Channel : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension Swift.Dictionary where Key == Swift.String, Value == KustomerPubSub.KustomerPubNubV3Channel {
+extension Dictionary where Key == Swift.String, Value == KustomerPubSub.KustomerPubNubV3Channel {
   public mutating func insert(_ channel: Value) -> Swift.Bool
   public mutating func unsubscribePresence(_ id: Swift.String) -> Value?
 }
@@ -265,7 +264,7 @@ public protocol JSONCodable : Swift.Decodable, Swift.Encodable {
   var codableValue: KustomerPubSub.AnyJSON { get }
   var rawValue: Any { get }
 }
-extension KustomerPubSub.JSONCodable {
+extension JSONCodable {
   public var rawValue: Any {
     get
   }
@@ -309,11 +308,11 @@ extension KustomerPubSub.JSONCodable {
     get
   }
 }
-extension Swift.Array : KustomerPubSub.JSONCodable where Element : KustomerPubSub.JSONCodable {
+extension Array : KustomerPubSub.JSONCodable where Element : KustomerPubSub.JSONCodable {
 }
-extension Swift.Dictionary : KustomerPubSub.JSONCodable where Key == Swift.String, Value : KustomerPubSub.JSONCodable {
+extension Dictionary : KustomerPubSub.JSONCodable where Key == Swift.String, Value : KustomerPubSub.JSONCodable {
 }
-extension KustomerPubSub.AnyJSON : KustomerPubSub.JSONCodable {
+extension AnyJSON : KustomerPubSub.JSONCodable {
   public var codableValue: KustomerPubSub.AnyJSON {
     get
   }
@@ -324,7 +323,7 @@ extension KustomerPubSub.AnyJSON : KustomerPubSub.JSONCodable {
 public protocol JSONCodableScalar : KustomerPubSub.JSONCodable {
   var scalarValue: KustomerPubSub.JSONCodableScalarType { get }
 }
-extension KustomerPubSub.JSONCodableScalar {
+extension JSONCodableScalar {
   public var codableValue: KustomerPubSub.AnyJSON {
     get
   }
@@ -332,32 +331,32 @@ extension KustomerPubSub.JSONCodableScalar {
     get
   }
 }
-extension Swift.String : KustomerPubSub.JSONCodableScalar {
+extension String : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
 }
-extension Swift.Int : KustomerPubSub.JSONCodableScalar {
+extension Int : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
 }
-extension Swift.Double : KustomerPubSub.JSONCodableScalar {
+extension Double : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
 }
-extension Swift.Bool : KustomerPubSub.JSONCodableScalar {
+extension Bool : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
 }
-extension Foundation.Date : KustomerPubSub.JSONCodableScalar {
+extension Date : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
 }
-extension KustomerPubSub.JSONCodableScalarType : KustomerPubSub.JSONCodableScalar {
+extension JSONCodableScalarType : KustomerPubSub.JSONCodableScalar {
   public var scalarValue: KustomerPubSub.JSONCodableScalarType {
     get
   }
@@ -465,7 +464,7 @@ open class FileLogWriter : KustomerPubSub.LogWriter {
   public func delete(_ file: Foundation.URL)
   @objc deinit
 }
-extension Foundation.Thread {
+extension Thread {
   public static var currentName: Swift.String {
     get
   }
@@ -592,7 +591,7 @@ public protocol KustomerPubNubV3Message {
   var metadata: KustomerPubSub.JSONCodable? { get set }
   init(from other: KustomerPubSub.KustomerPubNubV3Message) throws
 }
-extension KustomerPubSub.KustomerPubNubV3Message {
+extension KustomerPubNubV3Message {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3Message
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3Message
 }
@@ -632,7 +631,7 @@ public protocol KustomerPubNubV3ChannelMetadata {
   var custom: [Swift.String : KustomerPubSub.JSONCodableScalar]? { get set }
   init(from other: KustomerPubSub.KustomerPubNubV3ChannelMetadata) throws
 }
-extension KustomerPubSub.KustomerPubNubV3ChannelMetadata {
+extension KustomerPubNubV3ChannelMetadata {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3ChannelMetadata
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3ChannelMetadata
 }
@@ -654,7 +653,7 @@ public struct KustomerPubNubV3ChannelMetadataBase : KustomerPubSub.KustomerPubNu
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3ChannelMetadataBase : Swift.Codable {
+extension KustomerPubNubV3ChannelMetadataBase : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -662,7 +661,7 @@ public protocol EventStreamReceiver {
   var uuid: Foundation.UUID { get }
   var queue: Dispatch.DispatchQueue { get }
 }
-extension KustomerPubSub.EventStreamReceiver {
+extension EventStreamReceiver {
   public var queue: Dispatch.DispatchQueue {
     get
   }
@@ -679,7 +678,7 @@ public protocol EventStreamEmitter : AnyObject {
   func remove(_ listener: Self.ListenerType)
   func notify(listeners closure: (Self.ListenerType) -> Swift.Void)
 }
-extension KustomerPubSub.EventStreamEmitter {
+extension EventStreamEmitter {
   public func remove(_ listener: Self.ListenerType)
 }
 public class KUSListenerToken : KustomerPubSub.Cancellable {
@@ -691,7 +690,7 @@ public class KUSListenerToken : KustomerPubSub.Cancellable {
   @objc deinit
   public func cancel()
 }
-extension KustomerPubSub.KUSListenerToken : Swift.CustomStringConvertible {
+extension KUSListenerToken : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -702,7 +701,7 @@ public protocol KustomerPubNubV3BoundedPage {
   var limit: Swift.Int? { get }
   init(from other: KustomerPubSub.KustomerPubNubV3BoundedPage) throws
 }
-extension KustomerPubSub.KustomerPubNubV3BoundedPage {
+extension KustomerPubNubV3BoundedPage {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3BoundedPage
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3BoundedPage
 }
@@ -726,7 +725,7 @@ public protocol KustomerPubNubV3HashedPage {
   var totalCount: Swift.Int? { get }
   init(from other: KustomerPubSub.KustomerPubNubV3HashedPage) throws
 }
-extension KustomerPubSub.KustomerPubNubV3HashedPage {
+extension KustomerPubNubV3HashedPage {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3HashedPage
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3HashedPage
 }
@@ -744,7 +743,7 @@ public struct KustomerPubNubV3HashedPageBase : KustomerPubSub.KustomerPubNubV3Ha
   }
   public init(from decoder: Swift.Decoder) throws
 }
-extension Foundation.URL {
+extension URL {
   public func appending(queryItems: [Foundation.URLQueryItem]) -> Foundation.URL?
   public var sizeOf: Swift.Int {
     get
@@ -758,7 +757,7 @@ public protocol URLSessionReplaceable {
   func dataTask(with request: Foundation.URLRequest) -> Foundation.URLSessionDataTask
   func invalidateAndCancel()
 }
-extension Foundation.URLSession : KustomerPubSub.URLSessionReplaceable {
+extension URLSession : KustomerPubSub.URLSessionReplaceable {
 }
 public protocol SessionReplaceable {
   var sessionID: Foundation.UUID { get }
@@ -804,7 +803,7 @@ public protocol RouterConfiguration {
   var cipherKey: KustomerPubSub.Crypto? { get }
   var useRequestId: Swift.Bool { get }
 }
-extension KustomerPubSub.RouterConfiguration {
+extension RouterConfiguration {
   public var urlScheme: Swift.String {
     get
   }
@@ -815,7 +814,7 @@ extension KustomerPubSub.RouterConfiguration {
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3Configuration : KustomerPubSub.RouterConfiguration {
+extension KustomerPubNubV3Configuration : KustomerPubSub.RouterConfiguration {
 }
 public enum HTTPMethod : Swift.String {
   case connect
@@ -863,7 +862,7 @@ public protocol HTTPRouter : KustomerPubSub.URLRequestConvertible, KustomerPubSu
   var pamVersion: KustomerPubSub.PAMVersionRequirement { get }
   func decodeError(request: Foundation.URLRequest, response: Foundation.HTTPURLResponse, for data: Foundation.Data) -> KustomerPubSub.KustomerPubNubV3Error?
 }
-extension KustomerPubSub.HTTPRouter {
+extension HTTPRouter {
   public var method: KustomerPubSub.HTTPMethod {
     get
   }
@@ -887,7 +886,7 @@ extension KustomerPubSub.HTTPRouter {
     get
   }
 }
-extension KustomerPubSub.HTTPRouter {
+extension HTTPRouter {
   public var asURL: Swift.Result<Foundation.URL, Swift.Error> {
     get
   }
@@ -895,7 +894,7 @@ extension KustomerPubSub.HTTPRouter {
     get
   }
 }
-extension KustomerPubSub.HTTPRouter {
+extension HTTPRouter {
   public var description: Swift.String {
     get
   }
@@ -931,7 +930,7 @@ public struct LogType : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   public typealias Element = KustomerPubSub.LogType
   public typealias RawValue = Swift.UInt32
 }
-extension KustomerPubSub.LogType : Swift.CustomStringConvertible {
+extension LogType : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -959,7 +958,7 @@ public struct AnyJSON {
     get
   }
 }
-extension KustomerPubSub.AnyJSON : Swift.Codable {
+extension AnyJSON : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   public func decode<T>(_ type: T.Type) throws -> T where T : Swift.Decodable
@@ -971,7 +970,7 @@ public enum AnyJSONIndex : Swift.Comparable {
   public static func == (lhs: KustomerPubSub.AnyJSONIndex, rhs: KustomerPubSub.AnyJSONIndex) -> Swift.Bool
   public static func < (lhs: KustomerPubSub.AnyJSONIndex, rhs: KustomerPubSub.AnyJSONIndex) -> Swift.Bool
 }
-extension KustomerPubSub.AnyJSON : Swift.Collection {
+extension AnyJSON : Swift.Collection {
   public var startIndex: KustomerPubSub.AnyJSONIndex {
     get
   }
@@ -997,14 +996,14 @@ extension KustomerPubSub.AnyJSON : Swift.Collection {
   public typealias Iterator = Swift.IndexingIterator<KustomerPubSub.AnyJSON>
   public typealias SubSequence = Swift.Slice<KustomerPubSub.AnyJSON>
 }
-extension KustomerPubSub.AnyJSON : Swift.Hashable {
+extension AnyJSON : Swift.Hashable {
   public static func == (lhs: KustomerPubSub.AnyJSON, rhs: KustomerPubSub.AnyJSON) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-extension KustomerPubSub.AnyJSON {
+extension AnyJSON {
   public var underlyingValue: Any {
     get
   }
@@ -1039,7 +1038,7 @@ extension KustomerPubSub.AnyJSON {
     get
   }
 }
-extension KustomerPubSub.AnyJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+extension AnyJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -1047,28 +1046,28 @@ extension KustomerPubSub.AnyJSON : Swift.CustomStringConvertible, Swift.CustomDe
     get
   }
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByArrayLiteral {
+extension AnyJSON : Swift.ExpressibleByArrayLiteral {
   public init(arrayLiteral elements: Swift.Codable...)
   public typealias ArrayLiteralElement = Swift.Codable
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByDictionaryLiteral {
+extension AnyJSON : Swift.ExpressibleByDictionaryLiteral {
   public init(dictionaryLiteral elements: (Swift.String, Swift.Codable)...)
   public typealias Key = Swift.String
   public typealias Value = Swift.Codable
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByBooleanLiteral {
+extension AnyJSON : Swift.ExpressibleByBooleanLiteral {
   public init(booleanLiteral value: Swift.BooleanLiteralType)
   public typealias BooleanLiteralType = Swift.BooleanLiteralType
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByFloatLiteral {
+extension AnyJSON : Swift.ExpressibleByFloatLiteral {
   public init(floatLiteral value: Swift.FloatLiteralType)
   public typealias FloatLiteralType = Swift.FloatLiteralType
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByIntegerLiteral {
+extension AnyJSON : Swift.ExpressibleByIntegerLiteral {
   public init(integerLiteral value: Swift.IntegerLiteralType)
   public typealias IntegerLiteralType = Swift.IntegerLiteralType
 }
-extension KustomerPubSub.AnyJSON : Swift.ExpressibleByStringLiteral {
+extension AnyJSON : Swift.ExpressibleByStringLiteral {
   public init(stringLiteral value: Swift.StringLiteralType)
   public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
   public typealias StringLiteralType = Swift.StringLiteralType
@@ -1119,7 +1118,7 @@ public struct KustomerPubNubV3 {
   public static var logLog: KustomerPubSub.KustomerPubNubV3Logger
   public init(configuration: KustomerPubSub.KustomerPubNubV3Configuration, session: KustomerPubSub.SessionReplaceable? = nil, subscribeSession: KustomerPubSub.SessionReplaceable? = nil, presenceSession: KustomerPubSub.SessionReplaceable? = nil)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public enum PushEnvironment : Swift.String, Swift.Codable {
     case development
     case production
@@ -1196,15 +1195,15 @@ extension KustomerPubSub.KustomerPubNubV3 {
     public init(customFields: Swift.Bool = true, uuidFields: Swift.Bool = false, uuidCustomFields: Swift.Bool = false, totalCount: Swift.Bool = false)
   }
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func time(custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func publish(channel: Swift.String, message: KustomerPubSub.JSONCodable, shouldStore: Swift.Bool? = nil, storeTTL: Swift.Int? = nil, meta: KustomerPubSub.JSONCodable? = nil, shouldCompress: Swift.Bool = false, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
   public func fire(channel: Swift.String, message: KustomerPubSub.JSONCodable, meta: KustomerPubSub.JSONCodable? = nil, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
   public func signal(channel: Swift.String, message: KustomerPubSub.JSONCodable, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KUSPNTtoken, Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func subscribe(to channels: [Swift.String], and channelGroups: [Swift.String] = [], at timetoken: KustomerPubSub.KUSPNTtoken? = nil, withPresence: Swift.Bool = false, filterOverride: Swift.String? = nil)
   public func unsubscribe(from channels: [Swift.String], and channelGroups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
   public func unsubscribeAll()
@@ -1227,20 +1226,20 @@ extension KustomerPubSub.KustomerPubNubV3 {
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func setPresence(state: [Swift.String : KustomerPubSub.JSONCodableScalar], on channels: [Swift.String], and groups: [Swift.String] = [], custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.JSONCodable, Swift.Error>) -> Swift.Void)?)
   public func getPresenceState(for uuid: Swift.String, on channels: [Swift.String], and groups: [Swift.String] = [], custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(uuid: Swift.String, stateByChannel: [Swift.String : KustomerPubSub.JSONCodable]), Swift.Error>) -> Swift.Void)?)
   public func hereNow(on channels: [Swift.String], and groups: [Swift.String] = [], includeUUIDs: Swift.Bool = true, includeState: Swift.Bool = false, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : KustomerPubSub.KustomerPubNubV3Presence], Swift.Error>) -> Swift.Void)?)
   public func whereNow(for uuid: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : [Swift.String]], Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func listChannelGroups(custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
   public func remove(channelGroup: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
   public func listChannels(for group: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
   public func add(channels: [Swift.String], to group: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
   public func remove(channels: [Swift.String], from group: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(group: Swift.String, channels: [Swift.String]), Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func listPushChannelRegistrations(for deviceToken: Foundation.Data, of pushType: KustomerPubSub.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
   public func managePushChannelRegistrations(byRemoving removals: [Swift.String], thenAdding additions: [Swift.String], for deviceToken: Foundation.Data, of pushType: KustomerPubSub.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(added: [Swift.String], removed: [Swift.String]), Swift.Error>) -> Swift.Void)?)
   public func addPushChannelRegistrations(_ additions: [Swift.String], for deviceToken: Foundation.Data, of pushType: KustomerPubSub.KustomerPubNubV3.PushService = .apns, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
@@ -1252,25 +1251,25 @@ extension KustomerPubSub.KustomerPubNubV3 {
   public func removeAPNSDevicesOnChannels(_ removals: [Swift.String], device token: Foundation.Data, on topic: Swift.String, environment: KustomerPubSub.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)?)
   public func removeAllAPNSPushDevice(for deviceToken: Foundation.Data, on topic: Swift.String, environment: KustomerPubSub.KustomerPubNubV3.PushEnvironment = .development, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func fetchMessageHistory(for channels: [Swift.String], includeActions actions: Swift.Bool = false, includeMeta: Swift.Bool = false, page: KustomerPubSub.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(messagesByChannel: [Swift.String : [KustomerPubSub.KustomerPubNubV3Message]], next: KustomerPubSub.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
   public func deleteMessageHistory(from channel: Swift.String, start: KustomerPubSub.KUSPNTtoken? = nil, end: KustomerPubSub.KUSPNTtoken? = nil, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)?)
   public func messageCounts(channels: [Swift.String : KustomerPubSub.KUSPNTtoken], custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
   public func messageCounts(channels: [Swift.String], timetoken: KustomerPubSub.KUSPNTtoken = 1, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<[Swift.String : Swift.Int], Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func allUUIDMetadata(include: KustomerPubSub.KustomerPubNubV3.IncludeFields = IncludeFields(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.ObjectSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(uuids: [KustomerPubSub.KustomerPubNubV3UUIDMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPage?), Swift.Error>) -> Swift.Void)?)
   public func fetch(uuid metadata: Swift.String?, include customFields: Swift.Bool = true, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KustomerPubNubV3UUIDMetadata, Swift.Error>) -> Swift.Void)?)
   public func set(uuid metadata: KustomerPubSub.KustomerPubNubV3UUIDMetadata, include customFields: Swift.Bool = true, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KustomerPubNubV3UUIDMetadata, Swift.Error>) -> Swift.Void)?)
   public func remove(uuid metadataId: Swift.String?, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func allChannelMetadata(include: KustomerPubSub.KustomerPubNubV3.IncludeFields = IncludeFields(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.ObjectSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channels: [KustomerPubSub.KustomerPubNubV3ChannelMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
   public func fetch(channel metadataId: Swift.String, include customFields: Swift.Bool = true, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KustomerPubNubV3ChannelMetadata, Swift.Error>) -> Swift.Void)?)
   public func set(channel metadata: KustomerPubSub.KustomerPubNubV3ChannelMetadata, include customFields: Swift.Bool = true, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KustomerPubNubV3ChannelMetadata, Swift.Error>) -> Swift.Void)?)
   public func remove(channel metadataId: Swift.String, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func fetchMemberships(uuid: Swift.String?, include: KustomerPubSub.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
   public func fetchMembers(channel metadataId: Swift.String, include: KustomerPubSub.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
   public func setMemberships(uuid metadataId: Swift.String?, channels memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], include: KustomerPubSub.KustomerPubNubV3.MembershipInclude = MembershipInclude(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
@@ -1280,12 +1279,12 @@ extension KustomerPubSub.KustomerPubNubV3 {
   public func removeMembers(channel metadataId: Swift.String, uuids members: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], include: KustomerPubSub.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
   public func manageMembers(channel metadataId: Swift.String, setting uuidMembershipSets: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], removing uuidMembershipDeletes: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], include: KustomerPubSub.KustomerPubNubV3.MemberInclude = MemberInclude(), filter: Swift.String? = nil, sort: [KustomerPubSub.KustomerPubNubV3.MembershipSortField] = [], limit: Swift.Int? = 100, page: KustomerPubSub.KustomerPubNubV3HashedPage? = Page(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(memberships: [KustomerPubSub.KustomerPubNubV3MembershipMetadata], next: KustomerPubSub.KustomerPubNubV3HashedPageBase?), Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func fetchMessageActions(channel: Swift.String, page: KustomerPubSub.KustomerPubNubV3BoundedPage? = KustomerPubNubV3BoundedPageBase(), custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(actions: [KustomerPubSub.KustomerPubNubV3MessageAction], next: KustomerPubSub.KustomerPubNubV3BoundedPage?), Swift.Error>) -> Swift.Void)?)
   public func addMessageAction(channel: Swift.String, type actionType: Swift.String, value: Swift.String, messageTimetoken: KustomerPubSub.KUSPNTtoken, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<KustomerPubSub.KustomerPubNubV3MessageAction, Swift.Error>) -> Swift.Void)?)
   public func removeMessageActions(channel: Swift.String, message timetoken: KustomerPubSub.KUSPNTtoken, action actionTimetoken: KustomerPubSub.KUSPNTtoken, custom requestConfig: KustomerPubSub.KustomerPubNubV3.RequestConfiguration = RequestConfiguration(), completion: ((Swift.Result<(channel: Swift.String, message: KustomerPubSub.KUSPNTtoken, action: KustomerPubSub.KUSPNTtoken), Swift.Error>) -> Swift.Void)?)
 }
-extension KustomerPubSub.KustomerPubNubV3 {
+extension KustomerPubNubV3 {
   public func getToken(for identifier: Swift.String, with type: KustomerPubSub.PAMResourceType? = nil) -> KustomerPubSub.PAMToken?
   public func getTokens(by type: KustomerPubSub.PAMResourceType) -> KustomerPubSub.PAMTokenStore
   public func getAllTokens() -> [KustomerPubSub.PAMResourceType : KustomerPubSub.PAMTokenStore]
@@ -1295,11 +1294,11 @@ extension KustomerPubSub.KustomerPubNubV3 {
 public typealias KUSPNTtoken = Swift.UInt64
 public typealias PAMTokenStore = [Swift.String : KustomerPubSub.PAMToken]
 public typealias PAMResourceType = KustomerPubSub.PAMTokenManagementSystem.Resource
-extension KustomerPubSub.KustomerPubNubV3UUIDMetadataChangeset : Swift.Codable {
+extension KustomerPubNubV3UUIDMetadataChangeset : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension KustomerPubSub.KustomerPubNubV3ChannelMetadataChangeset : Swift.Codable {
+extension KustomerPubNubV3ChannelMetadataChangeset : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -1355,7 +1354,7 @@ public struct AutomaticRetry : KustomerPubSub.RequestOperator, Swift.Hashable {
   public func unsubscribe(from channels: [Swift.String], and groups: [Swift.String] = [], presenceOnly: Swift.Bool = false)
   public func unsubscribeAll()
 }
-extension KustomerPubSub.KUSSubscriptionSession : KustomerPubSub.EventStreamEmitter {
+extension KUSSubscriptionSession : KustomerPubSub.EventStreamEmitter {
   public typealias ListenerType = KustomerPubSub.SubscriptionListener
   public var listeners: [KustomerPubSub.KUSSubscriptionSession.ListenerType] {
     get
@@ -1363,7 +1362,7 @@ extension KustomerPubSub.KUSSubscriptionSession : KustomerPubSub.EventStreamEmit
   public func add(_ listener: KustomerPubSub.KUSSubscriptionSession.ListenerType)
   public func notify(listeners closure: (KustomerPubSub.KUSSubscriptionSession.ListenerType) -> Swift.Void)
 }
-extension KustomerPubSub.KUSSubscriptionSession : Swift.Hashable, Swift.CustomStringConvertible {
+extension KUSSubscriptionSession : Swift.Hashable, Swift.CustomStringConvertible {
   public static func == (lhs: KustomerPubSub.KUSSubscriptionSession, rhs: KustomerPubSub.KUSSubscriptionSession) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var description: Swift.String {
@@ -1387,7 +1386,7 @@ public protocol SubscriptionConfiguration : KustomerPubSub.RouterConfiguration {
   var requestMessageCountThreshold: Swift.UInt { get }
   var filterExpression: Swift.String? { get }
 }
-extension KustomerPubSub.KustomerPubNubV3Configuration : KustomerPubSub.SubscriptionConfiguration {
+extension KustomerPubNubV3Configuration : KustomerPubSub.SubscriptionConfiguration {
 }
 public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
   public let timetoken: KustomerPubSub.KUSPNTtoken
@@ -1402,12 +1401,12 @@ public struct SubscribeCursor : Swift.Codable, Swift.Hashable {
     get
   }
 }
-extension Swift.String {
+extension String {
   public var jsonDescription: Swift.String {
     get
   }
 }
-extension Swift.UInt64 {
+extension UInt64 {
   public var timetokenDate: Foundation.Date {
     get
   }
@@ -1423,7 +1422,7 @@ public protocol KustomerPubNubV3MessageAction {
   var published: KustomerPubSub.KUSPNTtoken? { get }
   init(from other: KustomerPubSub.KustomerPubNubV3MessageAction) throws
 }
-extension KustomerPubSub.KustomerPubNubV3MessageAction {
+extension KustomerPubNubV3MessageAction {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3MessageAction
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3MessageAction
 }
@@ -1465,7 +1464,7 @@ public protocol SessionStream : KustomerPubSub.EventStreamReceiver {
   func emitURLSession(_ session: Foundation.URLSession, didBecomeInvalidWith error: Swift.Error?)
   func emitURLSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge)
 }
-extension KustomerPubSub.SessionStream {
+extension SessionStream {
   public func emitRequest(_: KustomerPubSub.RequestReplaceable, didCreate _: Foundation.URLRequest)
   public func emitRequest(_: KustomerPubSub.RequestReplaceable, didFailToCreateURLRequestWith _: Swift.Error)
   public func emitRequest(_: KustomerPubSub.RequestReplaceable, didCreate _: Foundation.URLSessionTask)
@@ -1519,7 +1518,7 @@ final public class MultiplexSessionStream : KustomerPubSub.SessionStream, Swift.
   }
   public static func == (a: KustomerPubSub.BoundedValue<Value>, b: KustomerPubSub.BoundedValue<Value>) -> Swift.Bool
 }
-extension KustomerPubSub.BoundedValue : Swift.Hashable where Value : Swift.Hashable {
+extension BoundedValue : Swift.Hashable where Value : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -1593,7 +1592,7 @@ public struct FCMWebpushFcmOptions : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
-extension Foundation.Data {
+extension Data {
   public var trulyEmpty: Swift.Bool {
     get
   }
@@ -1720,7 +1719,7 @@ public protocol RequestRetrier {
 }
 public protocol RequestOperator : KustomerPubSub.RequestMutator, KustomerPubSub.RequestRetrier {
 }
-extension KustomerPubSub.RequestOperator {
+extension RequestOperator {
   public func mutate(_ urlRequest: Foundation.URLRequest, for _: KustomerPubSub.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
   public func retry(_: KustomerPubSub.RequestReplaceable, for _: KustomerPubSub.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
   public func merge(operators: [KustomerPubSub.RequestOperator]) -> KustomerPubSub.RequestOperator
@@ -1733,12 +1732,12 @@ public struct MultiplexRequestOperator : KustomerPubSub.RequestOperator {
   public func mutate(_ urlRequest: Foundation.URLRequest, for session: KustomerPubSub.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
   public func retry(_ request: KustomerPubSub.RequestReplaceable, for session: KustomerPubSub.SessionReplaceable, dueTo error: Swift.Error, completion: @escaping (Swift.Result<Foundation.TimeInterval, Swift.Error>) -> Swift.Void)
 }
-extension Foundation.FileManager {
+extension FileManager {
   public func newestFile(_ directory: Foundation.URL) -> Foundation.URL?
   public func oldestFile(_ directory: Foundation.URL) -> Foundation.URL?
   public func files(in directory: Foundation.URL) -> [Foundation.URL]
 }
-extension KustomerPubSub.KustomerPubNubV3Error : Foundation.LocalizedError, Swift.CustomStringConvertible {
+extension KustomerPubNubV3Error : Foundation.LocalizedError, Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -1749,12 +1748,12 @@ extension KustomerPubSub.KustomerPubNubV3Error : Foundation.LocalizedError, Swif
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3Error.Domain : Swift.CustomStringConvertible {
+extension KustomerPubNubV3Error.Domain : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3Error.Reason : Swift.CustomStringConvertible, Foundation.LocalizedError {
+extension KustomerPubNubV3Error.Reason : Swift.CustomStringConvertible, Foundation.LocalizedError {
   public var description: Swift.String {
     get
   }
@@ -1762,16 +1761,16 @@ extension KustomerPubSub.KustomerPubNubV3Error.Reason : Swift.CustomStringConver
     get
   }
 }
-extension Foundation.DateFormatter {
+extension DateFormatter {
   public var currentDateString: Swift.String {
     get
   }
   public static let iso8601: Foundation.DateFormatter
 }
-extension KustomerPubSub.KUSSubscriptionSession {
+extension KUSSubscriptionSession {
   public func presenceLeave(for _: Swift.String, on channels: [Swift.String], and groups: [Swift.String], completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
 }
-extension Swift.Set {
+extension Set {
   public var allObjects: [Element] {
     get
   }
@@ -1842,17 +1841,17 @@ public struct PAMPermission : Swift.OptionSet, Swift.Codable, Swift.Equatable, S
   public typealias Element = KustomerPubSub.PAMPermission
   public typealias RawValue = Swift.UInt32
 }
-extension KustomerPubSub.PAMPermission : Swift.CustomStringConvertible {
+extension PAMPermission : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension Dispatch.DispatchQueue {
+extension DispatchQueue {
   public static var currentLabel: Swift.String {
     get
   }
 }
-extension Swift.Array where Element == Foundation.URLQueryItem {
+extension Array where Element == Foundation.URLQueryItem {
   public func merging(_ other: [Foundation.URLQueryItem]) -> [Foundation.URLQueryItem]
   public mutating func merge(_ other: [Foundation.URLQueryItem])
   public func firstIndex(of name: Swift.String) -> Swift.Int?
@@ -1919,7 +1918,7 @@ final public class SubscriptionListener : KustomerPubSub.SubscriptionStream, Swi
     get
   }
 }
-extension KustomerPubSub.SubscriptionListener : KustomerPubSub.Cancellable {
+extension SubscriptionListener : KustomerPubSub.Cancellable {
   final public var isCancelled: Swift.Bool {
     get
   }
@@ -1929,7 +1928,7 @@ public protocol Validated {
   var validationError: Swift.Error? { get }
   var validationErrorDetail: Swift.String? { get }
 }
-extension KustomerPubSub.Validated {
+extension Validated {
   public var isValid: Swift.Bool {
     get
   }
@@ -1951,7 +1950,7 @@ public protocol KustomerPubNubV3UUIDMetadata {
   var custom: [Swift.String : KustomerPubSub.JSONCodableScalar]? { get set }
   init(from other: KustomerPubSub.KustomerPubNubV3UUIDMetadata) throws
 }
-extension KustomerPubSub.KustomerPubNubV3UUIDMetadata {
+extension KustomerPubNubV3UUIDMetadata {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3UUIDMetadata
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3UUIDMetadata
 }
@@ -1975,7 +1974,7 @@ public struct KustomerPubNubV3UUIDMetadataBase : KustomerPubSub.KustomerPubNubV3
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3UUIDMetadataBase : Swift.Codable {
+extension KustomerPubNubV3UUIDMetadataBase : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -2098,13 +2097,13 @@ public struct InstanceIdOperator : KustomerPubSub.RequestOperator {
   public let instanceID: Swift.String
   public func mutate(_ urlRequest: Foundation.URLRequest, for _: KustomerPubSub.SessionReplaceable, completion: @escaping (Swift.Result<Foundation.URLRequest, Swift.Error>) -> Swift.Void)
 }
-extension Foundation.HTTPURLResponse {
+extension HTTPURLResponse {
   public var isSuccessful: Swift.Bool {
     get
   }
   public static let successfulStatusCodes: Swift.Range<Swift.Int>
 }
-extension Foundation.URLSessionConfiguration {
+extension URLSessionConfiguration {
   public static var pubnub: Foundation.URLSessionConfiguration {
     get
   }
@@ -2127,7 +2126,7 @@ public enum URLConvertibleError : Swift.Error {
     get
   }
 }
-extension Foundation.URLComponents : KustomerPubSub.URLConvertible {
+extension URLComponents : KustomerPubSub.URLConvertible {
   public var asURL: Swift.Result<Foundation.URL, Swift.Error> {
     get
   }
@@ -2146,12 +2145,12 @@ public enum AnyJSONType {
   case codable(Swift.Codable)
   case unknown(Any)
 }
-extension KustomerPubSub.AnyJSONType : Swift.Codable {
+extension AnyJSONType : Swift.Codable {
   public func decode<T>(_ type: T.Type) throws -> T where T : Swift.Decodable
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension KustomerPubSub.AnyJSONType : Swift.RawRepresentable {
+extension AnyJSONType : Swift.RawRepresentable {
   public var rawValue: Any {
     get
   }
@@ -2162,7 +2161,7 @@ extension KustomerPubSub.AnyJSONType : Swift.RawRepresentable {
   public func rawValueAs<T>() -> T?
   public typealias RawValue = Any
 }
-extension KustomerPubSub.AnyJSONType : Swift.Hashable {
+extension AnyJSONType : Swift.Hashable {
   public static func == (lhs: KustomerPubSub.AnyJSONType, rhs: KustomerPubSub.AnyJSONType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -2194,14 +2193,14 @@ public struct Constant {
   public static let jsonDecoder: Foundation.JSONDecoder
   public static let jsonEncoder: Foundation.JSONEncoder
 }
-extension KustomerPubSub.Constant {
+extension Constant {
   public static let acceptEncodingHeaderKey: Swift.String
   public static let defaultAcceptEncodingHeader: Swift.String
   public static let contentTypeHeaderKey: Swift.String
   public static let defaultContentTypeHeader: Swift.String
   public static let userAgentHeaderKey: Swift.String
 }
-extension Swift.Error {
+extension Error {
   public var pubNubError: KustomerPubSub.KustomerPubNubV3Error? {
     get
   }
@@ -2218,16 +2217,16 @@ extension Swift.Error {
     get
   }
 }
-extension Swift.UInt64 {
+extension UInt64 {
   public func toDate() -> Foundation.Date
 }
-extension Foundation.Date {
+extension Date {
   public func toPubNubTimetoken() -> KustomerPubSub.KUSPNTtoken
 }
-extension Swift.String {
+extension String {
   public func removeZeroWidthSpace() -> Swift.String
 }
-extension Foundation.URLRequest {
+extension URLRequest {
   public var method: KustomerPubSub.HTTPMethod? {
     get
     set
@@ -2243,7 +2242,7 @@ public protocol KustomerPubNubV3MembershipMetadata {
   var custom: [Swift.String : KustomerPubSub.JSONCodableScalar]? { get set }
   init(from other: KustomerPubSub.KustomerPubNubV3MembershipMetadata) throws
 }
-extension KustomerPubSub.KustomerPubNubV3MembershipMetadata {
+extension KustomerPubNubV3MembershipMetadata {
   public func transcode<T>(into _: T.Type) throws -> T where T : KustomerPubSub.KustomerPubNubV3MembershipMetadata
   public func transcode<T>() throws -> T where T : KustomerPubSub.KustomerPubNubV3MembershipMetadata
 }
@@ -2272,7 +2271,7 @@ public struct KustomerPubNubV3MembershipMetadataBase : KustomerPubSub.KustomerPu
     get
   }
 }
-extension KustomerPubSub.KustomerPubNubV3MembershipMetadataBase : Swift.Codable {
+extension KustomerPubNubV3MembershipMetadataBase : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
