@@ -45,6 +45,9 @@ import os
   public func removeAllListeners()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers open class ClosureEventMonitor {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class KUSCustomer : Swift.CustomStringConvertible {
   public static var currentId: Swift.String? {
     get
@@ -241,6 +244,8 @@ public enum KustomerAssetLanguage : Swift.String {
     get
   }
 }
+public typealias NetworkOperationCompletion = (Swift.Result<KustomerChat.NetworkOperationResponse, KustomerChat.NetworkError>) -> Swift.Void
+public typealias NetworkDispatchCompletion = (Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class PushProvider : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate {
   public static let shared: KustomerChat.PushProvider
   public var deviceToken: Foundation.Data? {
@@ -261,6 +266,26 @@ public enum KustomerAssetLanguage : Swift.String {
   public func notificationIsFromKustomer(threadIdentifier: Swift.String?) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
+}
+public struct KnowledgeBaseProvider {
+  public func getRootCategory(lang: Swift.String, knowledgeBaseId: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseCategory>)
+  public func getCategory(by id: Swift.String, childrenLimit: Swift.Int, lang: Swift.String, knowledgeBaseId: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseResponse>)
+  public func searchArticles(term: Swift.String, page: Swift.Int, pageSize: Swift.Int, lang: Swift.String, completion: @escaping KustomerChat.KustomerCompletion<[KustomerChat.KnowledgeBaseArticle]>)
+  public func getArticle(by id: Swift.String, lang: Swift.String, knowledgeBaseId: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseArticle>)
+}
+public protocol CoordinatorDelegate : AnyObject {
+  func coordinatorWillDisappear(_ coordinator: KustomerChat.Coordinator)
+  func coordinatorWillAppear(_ coordinator: KustomerChat.Coordinator)
+  func coordinatorDidAppear(_ coordinator: KustomerChat.Coordinator)
+  func coordinatorDidDisappear(_ coordinator: KustomerChat.Coordinator)
+  func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
+}
+extension CoordinatorDelegate {
+  public func coordinatorWillDisappear(_ coordinator: KustomerChat.Coordinator)
+  public func coordinatorWillAppear(_ coordinator: KustomerChat.Coordinator)
+  public func coordinatorDidAppear(_ coordinator: KustomerChat.Coordinator)
+  public func coordinatorDidDisappear(_ coordinator: KustomerChat.Coordinator)
+  public func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
 }
 public struct KUSAlertSettings {
 }
@@ -298,55 +323,82 @@ public struct KUSAlertInfo {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ChatProvider {
+@_hasMissingDesignatedInitializers final public class ChatProvider {
   public static let shared: KustomerChat.ChatProvider
-  public var listeners: [Swift.String : KustomerChat.KUSChatListener]
-  public func addChatListener(_ listener: KustomerChat.KUSChatListener) -> Swift.String
-  public func removeChatListener(_ uuid: Swift.String)
-  public func removeAllChatListeners()
-  public func listenForTyping(conversationId: Swift.String)
-  public func stopListeningForTyping(conversationId: Swift.String)
-  public func getConversations() -> [KustomerChat.KUSConversation]
-  public func getConversation(conversationId: Swift.String) -> KustomerChat.KUSConversation?
-  public func chatMessages(conversationId: Swift.String) -> [KustomerChat.KUSChatMessage]
-  public func old_unreadCount() -> Swift.Int
-  public func unreadCount() -> Swift.Int
-  public func openConversationCount() -> Swift.Int
+  final public var listeners: [Swift.String : KustomerChat.KUSChatListener]
+  final public func addChatListener(_ listener: KustomerChat.KUSChatListener) -> Swift.String
+  final public func removeChatListener(_ uuid: Swift.String)
+  final public func removeAllChatListeners()
+  final public func listenForTyping(conversationId: Swift.String)
+  final public func stopListeningForTyping(conversationId: Swift.String)
+  final public func getConversations() -> [KustomerChat.KUSConversation]
+  final public func getConversation(conversationId: Swift.String) -> KustomerChat.KUSConversation?
+  final public func chatMessages(conversationId: Swift.String) -> [KustomerChat.KUSChatMessage]
+  final public func old_unreadCount() -> Swift.Int
+  final public func unreadCount() -> Swift.Int
+  final public func openConversationCount() -> Swift.Int
   @available(*, deprecated, message: "Use customerExists instead")
-  public func currentCustomer() -> KustomerChat.KUSCustomer?
-  public func customerExists() -> Swift.Bool
-  public func getChatSettings() -> KustomerChat.KUSChatSettings
-  public func isChatAvailable() -> Swift.Bool?
-  public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
-  public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
-  public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  public func sendChatMessage(image: UIKit.UIImage, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  public func sendChatMessage(fileUrl: Foundation.URL, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  public func createAssistant(id: Swift.String, after: @escaping ((KustomerChat.KUSAssistant) -> Swift.Void), error: @escaping ((KustomerChat.KError) -> Swift.Void), afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = { _ in }) -> Swift.String
-  public func endConversation(conversationId: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void))
-  public func reloadChatSettings(_ callback: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  public func describeCurrentCustomer(phone: Swift.String? = nil, email: Swift.String? = nil, phones: [Swift.String]? = nil, emails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
-  public func markRead(conversationId: Swift.String)
+  final public func currentCustomer() -> KustomerChat.KUSCustomer?
+  final public func customerExists() -> Swift.Bool
+  final public func getChatSettings() -> KustomerChat.KUSChatSettings
+  final public func isChatAvailable() -> Swift.Bool?
+  final public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
+  final public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
+  final public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
+  final public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
+  final public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
+  final public func sendChatMessage(image: UIKit.UIImage, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
+  final public func sendChatMessage(fileUrl: Foundation.URL, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
+  final public func createAssistant(id: Swift.String, startDialog: Swift.String?, after: @escaping ((KustomerChat.KUSAssistant) -> Swift.Void), error: @escaping ((KustomerChat.KError) -> Swift.Void), afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = { _ in }) -> Swift.String
+  final public func endConversation(conversationId: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void))
+  final public func reloadChatSettings(_ callback: @escaping ((KustomerChat.KError?) -> Swift.Void))
+  final public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
+  final public func describeCurrentCustomer(phone: Swift.String? = nil, email: Swift.String? = nil, phones: [Swift.String]? = nil, emails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  final public func markRead(conversationId: Swift.String)
   @objc deinit
 }
-final public class KUSRevocationTrustEvaluator {
-  public struct KUSRevocationTrustEvaluatorOptions : Swift.OptionSet {
-    public static let crl: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public static let networkAccessDisabled: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public static let ocsp: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public static let preferCRL: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public static let requirePositiveResponse: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public static let any: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public let rawValue: CoreFoundation.CFOptionFlags
-    public init(rawValue: CoreFoundation.CFOptionFlags)
-    public typealias ArrayLiteralElement = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public typealias Element = KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions
-    public typealias RawValue = CoreFoundation.CFOptionFlags
-  }
-  public init(performDefaultValidation: Swift.Bool = true, validateHost: Swift.Bool = true, options: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions = .any)
+@_hasMissingDesignatedInitializers open class KAlamoFireSession {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers open class SessionDelegate : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SessionDelegate : Foundation.URLSessionDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: Swift.Error?)
+}
+extension SessionDelegate : Foundation.URLSessionTaskDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didSendBodyData bytesSent: Swift.Int64, totalBytesSent: Swift.Int64, totalBytesExpectedToSend: Swift.Int64)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, needNewBodyStream completionHandler: @escaping (Foundation.InputStream?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didFinishCollecting metrics: Foundation.URLSessionTaskMetrics)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: Swift.Error?)
+  @available(macOS 10.13, iOS 11.0, tvOS 11.0, watchOS 4.0, *)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, taskIsWaitingForConnectivity task: Foundation.URLSessionTask)
+}
+extension SessionDelegate : Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, willCacheResponse proposedResponse: Foundation.CachedURLResponse, completionHandler: @escaping (Foundation.CachedURLResponse?) -> Swift.Void)
+}
+extension SessionDelegate : Foundation.URLSessionDownloadDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didResumeAtOffset fileOffset: Swift.Int64, expectedTotalBytes: Swift.Int64)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
+}
+public struct KnowledgeBaseArticle : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct KnowledgeBaseArticleAttributes : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers open class Adapter {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class Retrier {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class Interceptor {
   @objc deinit
 }
 infix operator ++ : AssignmentPrecedence
@@ -362,22 +414,26 @@ public struct KUSKBDeflectResult {
 }
 extension KustomerClient {
   @available(*, deprecated)
-  public func triggerHotReloadFromAppDelegate()
+  final public func triggerHotReloadFromAppDelegate()
   @available(*, deprecated)
-  public func triggerHotReloadFromAppDelegate(completion: @escaping (() -> Swift.Void))
+  final public func triggerHotReloadFromAppDelegate(completion: @escaping (() -> Swift.Void))
 }
-@_hasMissingDesignatedInitializers public class KUSChatAttachment : Swift.CustomStringConvertible {
-  public var id: Swift.String
-  public var conversationId: Swift.String?
-  public var contentType: Swift.String?
-  public var url: Swift.String?
-  public var name: Swift.String?
-  public var chatMessageId: Swift.String?
-  public var description: Swift.String {
+@_hasMissingDesignatedInitializers final public class KUSChatAttachment : Swift.CustomStringConvertible {
+  final public var id: Swift.String
+  final public var conversationId: Swift.String?
+  final public var contentType: Swift.String?
+  final public var url: Swift.String?
+  final public var name: Swift.String?
+  final public var chatMessageId: Swift.String?
+  final public var description: Swift.String {
     get
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class KnowledgeBaseCategoryLoader {
+  @objc deinit
+}
+public typealias KustomerCompletion<T> = (Swift.Result<T, KustomerChat.KustomerError>) -> Swift.Void
 @_hasMissingDesignatedInitializers public class KUSTrackingIdentity {
   public var id: Swift.String?
   public var rawJson: Swift.String?
@@ -391,160 +447,182 @@ extension KustomerClient {
   public var updatedAt: Foundation.Date?
   @objc deinit
 }
+public protocol KBCategoryCollectionDataSource : AnyObject {
+  var sectionTitle: Swift.String? { get }
+  var rows: [KustomerChat.KnowledgeBaseDataRow] { get }
+}
+@_hasMissingDesignatedInitializers open class RetryPolicy {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class ConnectionLostRetryPolicy : KustomerChat.RetryPolicy {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Settings {
-  public static var teamName: Swift.String {
+  public var teamName: Swift.String {
     get
     set
   }
-  public static var teamIconUrl: Swift.String {
+  public var teamIconUrl: Swift.String {
     get
     set
   }
-  public static var widgetType: Swift.String {
+  public var widgetType: Swift.String {
     get
     set
   }
-  public static var greeting: Swift.String {
+  public var greeting: Swift.String {
     get
     set
   }
-  public static var offhoursDisplay: KustomerChat.KustomerOffhoursDisplay {
+  public var offhoursDisplay: KustomerChat.KustomerOffhoursDisplay {
     get
     set
   }
-  public static var offhoursMessage: Swift.String {
+  public var offhoursMessage: Swift.String {
     get
     set
   }
-  public static var offhoursImageUrl: Swift.String? {
+  public var offhoursImageUrl: Swift.String? {
     get
     set
   }
-  public static var waitMessage: Swift.String? {
+  public var waitMessage: Swift.String? {
     get
     set
   }
-  public static var activeAssistant: Swift.String? {
+  public var activeAssistant: Swift.String? {
     get
     set
   }
-  public static var enabled: Swift.Bool? {
+  public var enabled: Swift.Bool? {
     get
     set
   }
-  public static var didLoadSettingsFirstTime: Swift.Bool {
+  public var didLoadSettingsFirstTime: Swift.Bool {
     get
     set
   }
-  public static var singleSessionChat: Swift.Bool {
+  public var singleSessionChat: Swift.Bool {
     get
     set
   }
-  public static var closableChat: Swift.Bool {
+  public var closableChat: Swift.Bool {
     get
     set
   }
-  public static var noHistory: Swift.Bool {
+  public var noHistory: Swift.Bool {
     get
     set
   }
-  public static var showTypingIndicatorWeb: Swift.Bool {
+  public var showTypingIndicatorWeb: Swift.Bool {
     get
     set
   }
-  public static var showTypingIndicatorCustomerWeb: Swift.Bool {
+  public var showTypingIndicatorCustomerWeb: Swift.Bool {
     get
     set
   }
-  public static var autoreply: Swift.String {
+  public var autoreply: Swift.String {
     get
     set
   }
-  public static var embedIconUrl: Swift.String {
+  public var embedIconUrl: Swift.String {
     get
     set
   }
-  public static var embedIconColor: Swift.String? {
+  public var embedIconColor: Swift.String? {
     get
     set
   }
-  public static var activeForm: Swift.String? {
+  public var activeForm: Swift.String? {
     get
     set
   }
-  public static var campaignsEnabled: Swift.Bool {
+  public var campaignsEnabled: Swift.Bool {
     get
     set
   }
-  public static var pusherAccessKey: Swift.String {
+  public var pusherAccessKey: Swift.String {
     get
     set
   }
-  public static var pusherCluster: Swift.String {
+  public var pusherCluster: Swift.String {
     get
     set
   }
-  public static var volumeControlTimeout: Swift.Int {
+  public var volumeControlTimeout: Swift.Int {
     get
     set
   }
-  public static var volumeControlPromptDelay: Swift.Int {
+  public var volumeControlPromptDelay: Swift.Int {
     get
     set
   }
-  public static var volumeControlUpfrontWaitThreshold: Swift.Int {
+  public var volumeControlUpfrontWaitThreshold: Swift.Int {
     get
     set
   }
-  public static var csatLockTime: Swift.Int? {
+  public var csatLockTime: Swift.Int? {
     get
     set
   }
-  public static var csatDebounceSendTime: Swift.Int {
+  public var csatDebounceSendTime: Swift.Int {
     get
     set
   }
-  public static var volumeControlMode: Swift.String {
+  public var volumeControlMode: Swift.String {
     get
     set
   }
-  public static var volumeControlCustomWaitMessage: Swift.String? {
+  public var volumeControlCustomWaitMessage: Swift.String? {
     get
     set
   }
-  public static var volumeControlEnabled: Swift.Bool {
+  public var volumeControlEnabled: Swift.Bool {
     get
     set
   }
-  public static var volumeControlMarkDoneAfterTimeout: Swift.Bool {
+  public var volumeControlMarkDoneAfterTimeout: Swift.Bool {
     get
     set
   }
-  public static var volumeControlUseDynamicWaitMessage: Swift.Bool {
+  public var volumeControlUseDynamicWaitMessage: Swift.Bool {
     get
     set
   }
-  public static var volumeControlHideWaitOption: Swift.Bool {
+  public var volumeControlHideWaitOption: Swift.Bool {
     get
     set
   }
-  public static var showEmailInputBanner: Swift.Bool {
+  public var showEmailInputBanner: Swift.Bool {
     get
     set
   }
-  public static var csatInboundMessagesOverride: Swift.Bool {
+  public var csatInboundMessagesOverride: Swift.Bool {
     get
     set
   }
-  public static var csatOutboundMessagesOverride: Swift.Bool {
+  public var csatOutboundMessagesOverride: Swift.Bool {
     get
     set
   }
-  public static var volumeControlFollowUpChannels: [Swift.String] {
+  public var volumeControlFollowUpChannels: [Swift.String] {
     get
     set
   }
   @objc deinit
+}
+public protocol KUSURLConvertible {
+  func kus_asURL() throws -> Foundation.URL
+}
+extension String : KustomerChat.KUSURLConvertible {
+  public func kus_asURL() throws -> Foundation.URL
+}
+extension URL : KustomerChat.KUSURLConvertible {
+  public func kus_asURL() throws -> Foundation.URL
+}
+extension URLComponents : KustomerChat.KUSURLConvertible {
+  public func kus_asURL() throws -> Foundation.URL
 }
 public enum KustomerClientStatus {
   case uninitialized
@@ -573,18 +651,30 @@ public enum KUSKBDeflectResultType : Swift.String {
     get
   }
 }
-public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
-  public var id: Swift.String?
-  public var htmlBody: Swift.String?
-  public var title: Swift.String?
-  public var metaDescription: Swift.String?
-  public var rawJson: Swift.String?
-  public var hashIdentifier: Swift.String?
-  public var versionId: Swift.String?
-  public var slug: Swift.String?
-  public var lang: Swift.String?
+public protocol CoordinatorCreator : AnyObject {
+  associatedtype Value
+  var currentCoordinator: KustomerChat.Coordinator? { get set }
+  static func make(value: Self.Value) -> KustomerChat.Coordinator
+}
+@_hasMissingDesignatedInitializers open class MultipartFormData {
+  open var contentType: Swift.String {
+    get
+    set
+  }
+  @objc deinit
+}
+final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
+  final public var id: Swift.String?
+  final public var htmlBody: Swift.String?
+  final public var title: Swift.String?
+  final public var metaDescription: Swift.String?
+  final public var rawJson: Swift.String?
+  final public var hashIdentifier: Swift.String?
+  final public var versionId: Swift.String?
+  final public var slug: Swift.String?
+  final public var lang: Swift.String?
   public init()
-  public var description: Swift.String {
+  final public var description: Swift.String {
     get
   }
   @objc deinit
@@ -597,6 +687,19 @@ public enum KUSSentByType : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+@_hasMissingDesignatedInitializers final public class KBArticleCoordinator : KustomerChat.CoordinatorCreator, KustomerChat.Coordinator {
+  weak final public var delegate: KustomerChat.CoordinatorDelegate?
+  public typealias KnowledgeBaseArticleData = (article: KustomerChat.KnowledgeBaseArticle?, id: Swift.String)
+  public typealias Value = KustomerChat.KBArticleCoordinator.KnowledgeBaseArticleData
+  final public var view: UIKit.UIViewController {
+    get
+  }
+  final public var navigationController: UIKit.UINavigationController?
+  final public var currentCoordinator: KustomerChat.Coordinator?
+  public static func make(value: KustomerChat.KBArticleCoordinator.KnowledgeBaseArticleData) -> KustomerChat.Coordinator
+  final public func show(in navigationController: UIKit.UINavigationController?)
+  @objc deinit
 }
 public class KustomerOptions {
   public init()
@@ -626,6 +729,7 @@ public class KustomerOptions {
   public var onViewDidDisappear: ((Swift.Bool) -> Swift.Void)?
   public var hostDomain: Swift.String?
   public var businessScheduleId: Swift.String?
+  @available(*, deprecated, message: "Use `brandId` instead whenever possible. This will override the brand id's knowledge base id.")
   public var knowledgeBaseID: Swift.String?
   public var brandId: Swift.String? {
     get
@@ -650,6 +754,15 @@ public enum ActiveAssistantOptions {
   case orgDefault
   case withId(Swift.String)
 }
+public enum KURLEncoding {
+  case `default`
+  case queryString
+  case httpBody
+  case jsonEncoding(encodable: Swift.Encodable, encoder: Foundation.JSONEncoder)
+}
+public struct KJSONParameterEncoding {
+  public func encode(_ request: Foundation.URLRequest, with parameters: KustomerChat.KParameters?) throws -> Foundation.URLRequest
+}
 public protocol KUSKBItemBase : Swift.CustomStringConvertible {
   var id: Swift.String? { get set }
   var htmlBody: Swift.String? { get set }
@@ -661,6 +774,36 @@ public protocol KUSKBItemBase : Swift.CustomStringConvertible {
 extension KUSKBItemBase {
   public func completeObject() -> [Swift.String : Any]?
 }
+@_hasMissingDesignatedInitializers public class KBCategoryBridge : KustomerChat.KUSKBItemBase {
+  public var id: Swift.String?
+  public var htmlBody: Swift.String?
+  public var title: Swift.String?
+  public var metaDescription: Swift.String?
+  public var rawJson: Swift.String?
+  public var isRoot: Swift.Bool
+  public var slug: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class KBArticleBridge : KustomerChat.KUSKBItemBase {
+  public var id: Swift.String?
+  public var htmlBody: Swift.String?
+  public var title: Swift.String?
+  public var metaDescription: Swift.String?
+  public var rawJson: Swift.String?
+  public var hashIdentifier: Swift.String?
+  public var slug: Swift.String?
+  public var lang: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class NetworkReachabilityManager {
+  @objc deinit
+}
 @propertyWrapper public struct KUSClamping<Value> : Swift.Comparable where Value : Swift.Comparable {
   public static func < (lhs: KustomerChat.KUSClamping<Value>, rhs: KustomerChat.KUSClamping<Value>) -> Swift.Bool
   public var value: Value
@@ -671,6 +814,22 @@ extension KUSKBItemBase {
     set
   }
   public static func == (a: KustomerChat.KUSClamping<Value>, b: KustomerChat.KUSClamping<Value>) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class KBCategoryCoordinator : KustomerChat.CoordinatorCreator, KustomerChat.Coordinator {
+  public typealias Value = KustomerChat.KnowledgeBaseCategoryData
+  weak final public var delegate: KustomerChat.CoordinatorDelegate?
+  final public var view: UIKit.UIViewController {
+    get
+  }
+  final public var navigationController: UIKit.UINavigationController?
+  final public var currentCoordinator: KustomerChat.Coordinator?
+  public static func make(value: KustomerChat.KnowledgeBaseCategoryData) -> KustomerChat.Coordinator
+  final public func show(in navigationController: UIKit.UINavigationController?)
+  @objc deinit
+}
+public enum KnowledgeBaseDataRow {
+  case category(category: KustomerChat.KnowledgeBaseCategory, didSelect: ((KustomerChat.KnowledgeBaseCategory) -> Swift.Void)?)
+  case article(article: KustomerChat.KnowledgeBaseArticle, didSelect: ((KustomerChat.KnowledgeBaseArticle) -> Swift.Void)?)
 }
 @objc final public class ConfettiView : UIKit.UIView {
   @objc dynamic public init()
@@ -784,6 +943,8 @@ extension KUSChatListener {
   public func onUserStopsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
   public func onConversationMerge(sourceConversation: KustomerChat.KUSConversation, targetConversation: KustomerChat.KUSConversation)
 }
+public struct KnowledgeBaseCategoryData {
+}
 public struct KUSMessageAction {
   public var displayText: Swift.String
   public var value: Swift.String
@@ -796,7 +957,7 @@ public struct KUSMLLNode {
     get
   }
 }
-@objc extension UIColor {
+extension UIColor {
 }
 public struct KUSKeychainAttributes {
   public subscript(key: Swift.String) -> Any? {
@@ -838,62 +999,6 @@ extension KUSKeychainAttributes : Swift.CustomStringConvertible, Swift.CustomDeb
     get
   }
 }
-public struct ChatAssistantCriteria {
-  public enum CustomerProperty : Swift.Equatable {
-    case id
-    case name
-    case email
-    case phone
-    case activityAt
-    case createdAt
-    case lastMessageAt
-    case lastMessageSentAt
-    case lastOutboundMsgSentAt
-    case lastSeenAt
-    case signedUpAt
-    case lastMessageUnrespondedTo
-    case avgSatisfactionRating
-    case avgSatisfactionScore
-    case sentiment
-    case conversationCount
-    case createdBy
-    case custom(name: Swift.String)
-    public static func == (a: KustomerChat.ChatAssistantCriteria.CustomerProperty, b: KustomerChat.ChatAssistantCriteria.CustomerProperty) -> Swift.Bool
-  }
-  public enum Operator : Swift.Equatable {
-    case matches
-    case equals
-    case notEquals
-    case greaterThan
-    case greaterThanOrEqual
-    case lessThan
-    case lessThanOrEqual
-    case isIn
-    case isNotIn
-    case contains
-    case doesNotContain
-    case containsAnyOf
-    case doesNotContainAnyOf
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: KustomerChat.ChatAssistantCriteria.Operator, b: KustomerChat.ChatAssistantCriteria.Operator) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public init?(rawObject: Swift.String, rawOperator: Swift.String, rawValue: Any)
-}
-public protocol KUSURLConvertible {
-  func kus_asURL() throws -> Foundation.URL
-}
-extension String : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
-}
-extension URL : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
-}
-extension URLComponents : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
-}
 @available(*, unavailable, renamed: "Notification.Name.KUS_reachabilityChanged")
 public let KUSReachabilityChangedNotification: Foundation.NSNotification.Name
 extension NSNotification.Name {
@@ -919,18 +1024,25 @@ extension NSNotification.Name {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class KBProvider {
+@_hasMissingDesignatedInitializers final public class KBProvider {
   public static let shared: KustomerChat.KBProvider
-  public func update(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  public func clearLocalDataStore(completion: (() -> Swift.Void)? = nil)
-  public func getEntriesForRoot(completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
-  public func getEntries(parentCategoryId: Swift.String?, search: Swift.String? = nil, completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
-  public func getArticle(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBArticle, KustomerChat.KError>) -> Swift.Void))
-  public func getCategory(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBCategory, KustomerChat.KError>) -> Swift.Void))
-  public var needsUpdate: Swift.Bool {
-    get
-  }
+  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getRootCategory")
+  final public func getEntriesForRoot(completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
+  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.searchArticles")
+  final public func getEntries(parentCategoryId: Swift.String?, search: Swift.String? = nil, completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
+  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getCategory")
+  final public func getCategory(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBCategory, KustomerChat.KError>) -> Swift.Void))
+  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getArticle")
+  final public func getArticle(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBArticle, KustomerChat.KError>) -> Swift.Void))
   @objc deinit
+}
+public struct NetworkDispatcher {
+  public var session: Foundation.URLSession
+  public func dispatchRequest(_ request: Foundation.URLRequest, completion: @escaping KustomerChat.NetworkDispatchCompletion) -> Foundation.URLSessionDataTask
+}
+extension NetworkDispatcher {
+  public static func defaultSessionConfiguration() -> Foundation.URLSessionConfiguration
+  public static func additionalHeaders() -> [Swift.AnyHashable : Any]?
 }
 public enum KUSChatMessageDirection : Swift.String {
   case inbound
@@ -943,97 +1055,6 @@ public enum KUSChatMessageDirection : Swift.String {
 }
 @_hasMissingDesignatedInitializers public class EventBroadcaster {
   @objc deinit
-}
-public enum KUSAFError : Swift.Error {
-  public enum KUSMultipartEncodingFailureReason {
-    case bodyPartURLInvalid(url: Foundation.URL)
-    case bodyPartFilenameInvalid(in: Foundation.URL)
-    case bodyPartFileNotReachable(at: Foundation.URL)
-    case bodyPartFileNotReachableWithError(atURL: Foundation.URL, error: Swift.Error)
-    case bodyPartFileIsDirectory(at: Foundation.URL)
-    case bodyPartFileSizeNotAvailable(at: Foundation.URL)
-    case bodyPartFileSizeQueryFailedWithError(forURL: Foundation.URL, error: Swift.Error)
-    case bodyPartInputStreamCreationFailed(for: Foundation.URL)
-    case outputStreamCreationFailed(for: Foundation.URL)
-    case outputStreamFileAlreadyExists(at: Foundation.URL)
-    case outputStreamURLInvalid(url: Foundation.URL)
-    case outputStreamWriteFailed(error: Swift.Error)
-    case inputStreamReadFailed(error: Swift.Error)
-  }
-  public enum KUSParameterEncodingFailureReason {
-    case missingURL
-    case jsonEncodingFailed(error: Swift.Error)
-    case customEncodingFailed(error: Swift.Error)
-  }
-  public enum KUSParameterEncoderFailureReason {
-    public enum KUSRequiredComponent {
-      case url
-      case httpMethod(rawValue: Swift.String)
-    }
-    case missingRequiredComponent(KustomerChat.KUSAFError.KUSParameterEncoderFailureReason.KUSRequiredComponent)
-    case encoderFailed(error: Swift.Error)
-  }
-  public enum KUSResponseValidationFailureReason {
-    case dataFileNil
-    case dataFileReadFailed(at: Foundation.URL)
-    case missingContentType(acceptableContentTypes: [Swift.String])
-    case unacceptableContentType(acceptableContentTypes: [Swift.String], responseContentType: Swift.String)
-    case unacceptableStatusCode(code: Swift.Int)
-    case customValidationFailed(error: Swift.Error)
-  }
-  public enum KUSResponseSerializationFailureReason {
-    case inputDataNilOrZeroLength
-    case inputFileNil
-    case inputFileReadFailed(at: Foundation.URL)
-    case stringSerializationFailed(encoding: Swift.String.Encoding)
-    case jsonSerializationFailed(error: Swift.Error)
-    case decodingFailed(error: Swift.Error)
-    case customSerializationFailed(error: Swift.Error)
-    case invalidEmptyResponse(type: Swift.String)
-  }
-  public enum KUSServerTrustFailureReason {
-    public struct KUSOutput {
-    }
-    case noRequiredEvaluator(host: Swift.String)
-    case noCertificatesFound
-    case noPublicKeysFound
-    case policyApplicationFailed(trust: Security.SecTrust, policy: Security.SecPolicy, status: Darwin.OSStatus)
-    case settingAnchorCertificatesFailed(status: Darwin.OSStatus, certificates: [Security.SecCertificate])
-    case revocationPolicyCreationFailed
-    case trustEvaluationFailed(error: Swift.Error?)
-    case defaultEvaluationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
-    case hostValidationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
-    case revocationCheckFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput, options: KustomerChat.KUSRevocationTrustEvaluator.KUSRevocationTrustEvaluatorOptions)
-    case certificatePinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedCertificates: [Security.SecCertificate], serverCertificates: [Security.SecCertificate])
-    case publicKeyPinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedKeys: [Security.SecKey], serverKeys: [Security.SecKey])
-    case customEvaluationFailed(error: Swift.Error)
-  }
-  public enum KUSURLRequestValidationFailureReason {
-    case bodyDataInGETRequest(Foundation.Data)
-  }
-  case createUploadableFailed(error: Swift.Error)
-  case createURLRequestFailed(error: Swift.Error)
-  case downloadedFileMoveFailed(error: Swift.Error, source: Foundation.URL, destination: Foundation.URL)
-  case explicitlyCancelled
-  case invalidURL(url: KustomerChat.KUSURLConvertible)
-  case multipartEncodingFailed(reason: KustomerChat.KUSAFError.KUSMultipartEncodingFailureReason)
-  case parameterEncodingFailed(reason: KustomerChat.KUSAFError.KUSParameterEncodingFailureReason)
-  case parameterEncoderFailed(reason: KustomerChat.KUSAFError.KUSParameterEncoderFailureReason)
-  case requestAdaptationFailed(error: Swift.Error)
-  case requestRetryFailed(retryError: Swift.Error, originalError: Swift.Error)
-  case responseValidationFailed(reason: KustomerChat.KUSAFError.KUSResponseValidationFailureReason)
-  case responseSerializationFailed(reason: KustomerChat.KUSAFError.KUSResponseSerializationFailureReason)
-  case serverTrustEvaluationFailed(reason: KustomerChat.KUSAFError.KUSServerTrustFailureReason)
-  case sessionDeinitialized
-  case sessionInvalidated(error: Swift.Error?)
-  case sessionTaskFailed(error: Swift.Error)
-  case urlRequestValidationFailed(reason: KustomerChat.KUSAFError.KUSURLRequestValidationFailureReason)
-  case kustomerAddOnError(error: Foundation.NSError)
-}
-extension KUSAFError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
 }
 extension KustomerUI.Color {
   public static var activeLinkColor: UIKit.UIColor
@@ -1109,11 +1130,16 @@ extension KustomerUI.Color {
   public static var noInternetBannerBackground: UIKit.UIColor
   public static var noInternetBannerText: UIKit.UIColor
 }
-public struct ChatAssistantAction : Swift.Decodable {
-  public let assistant: Swift.String
-  public let startDialog: Swift.String
-  public let isProactive: Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
+public protocol Coordinator : AnyObject {
+  var delegate: KustomerChat.CoordinatorDelegate? { get set }
+  var view: UIKit.UIViewController { get }
+  var navigationController: UIKit.UINavigationController? { get set }
+  func show(in navigationController: UIKit.UINavigationController?)
+  func present(in controller: UIKit.UIViewController)
+}
+extension Coordinator {
+  public func show(in navigationController: UIKit.UINavigationController?)
+  public func present(in controller: UIKit.UIViewController)
 }
 public enum KustomerConfigurationError : Swift.Error {
   case notEnoughDiskSpace
@@ -1137,6 +1163,49 @@ public enum KUSConversationLockReason : Swift.String {
     get
   }
 }
+public typealias KHTTPHeaders = [Swift.String : Swift.String]
+public typealias KParameters = [Swift.String : Any]
+public enum KHTTPMethod : Swift.String {
+  case GET
+  case POST
+  case PUT
+  case PATCH
+  case DELETE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HTTPTask {
+  case requestPlain
+  case requestQueryParameters(KustomerChat.KParameters)
+  case requestBodyParameters(KustomerChat.KParameters)
+  case requestJSONEncodable(Swift.Encodable)
+  case requestCompositeBodyParameters(KustomerChat.KParameters, urlParameters: [Swift.String : Any])
+}
+public enum KnowledgeBaseDocumentType : Swift.String, Swift.Decodable {
+  case article, category
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KBDocument : Swift.Decodable {
+  case article(KustomerChat.KnowledgeBaseArticle)
+  case category(KustomerChat.KnowledgeBaseCategory)
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct KnowledgeBaseResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct KnowledgeBaseCategory : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct KnowledgeBaseCategoryAttributes : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
 public class KUSChatSettings {
   public init(ud: Foundation.UserDefaults)
   public var dictionaryRepresentation: [Swift.String : Any] {
@@ -1151,6 +1220,19 @@ public enum KustomerOffhoursDisplay : Swift.String {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KnowledgeBaseCategoryViewMode : Swift.CaseIterable {
+  case rootCategory
+  case subCategory
+  public static func == (a: KustomerChat.KnowledgeBaseCategoryViewMode, b: KustomerChat.KnowledgeBaseCategoryViewMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [KustomerChat.KnowledgeBaseCategoryViewMode]
+  public static var allCases: [KustomerChat.KnowledgeBaseCategoryViewMode] {
+    get
+  }
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -1257,6 +1339,12 @@ public enum KustomerDisplayMode {
     get
   }
 }
+public struct NetworkOperationResponse {
+  public let statusCode: Swift.Int?
+  public let data: Foundation.Data?
+  public let response: Foundation.HTTPURLResponse?
+  public let request: Foundation.URLRequest
+}
 public enum KUSConversationStatus {
   case open
   case ended
@@ -1264,6 +1352,123 @@ public enum KUSConversationStatus {
   public static func == (a: KustomerChat.KUSConversationStatus, b: KustomerChat.KUSConversationStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkError : Swift.Error, Foundation.LocalizedError {
+  case failed(Swift.Error?)
+  case outdated
+  case badRequest([Swift.String : Swift.AnyObject]?)
+  case serverError([Swift.String : Swift.AnyObject]?)
+  case authenticationError
+  case requestError(KustomerChat.RequestError)
+  case responseError(KustomerChat.ResponseError)
+}
+public enum RequestError : Swift.Error, Foundation.LocalizedError {
+  case invalidRequest(Swift.String)
+  case parametersNil
+  case parameterEncodingFailed(KustomerChat.ParameterEncodingFailureReason)
+}
+public enum ParameterEncodingFailureReason {
+  case missingUrl
+  case jsonEncoding(Swift.Error)
+}
+public enum ResponseError : Swift.Error, Foundation.LocalizedError {
+  case unableToDecode(Swift.DecodingError)
+  case noData(Swift.String)
+}
+public enum KUSAFError : Swift.Error {
+  public enum KUSMultipartEncodingFailureReason {
+    case bodyPartURLInvalid(url: Foundation.URL)
+    case bodyPartFilenameInvalid(in: Foundation.URL)
+    case bodyPartFileNotReachable(at: Foundation.URL)
+    case bodyPartFileNotReachableWithError(atURL: Foundation.URL, error: Swift.Error)
+    case bodyPartFileIsDirectory(at: Foundation.URL)
+    case bodyPartFileSizeNotAvailable(at: Foundation.URL)
+    case bodyPartFileSizeQueryFailedWithError(forURL: Foundation.URL, error: Swift.Error)
+    case bodyPartInputStreamCreationFailed(for: Foundation.URL)
+    case outputStreamCreationFailed(for: Foundation.URL)
+    case outputStreamFileAlreadyExists(at: Foundation.URL)
+    case outputStreamURLInvalid(url: Foundation.URL)
+    case outputStreamWriteFailed(error: Swift.Error)
+    case inputStreamReadFailed(error: Swift.Error)
+  }
+  public enum KUSParameterEncodingFailureReason {
+    case missingURL
+    case jsonEncodingFailed(error: Swift.Error)
+    case customEncodingFailed(error: Swift.Error)
+  }
+  public enum KUSParameterEncoderFailureReason {
+    public enum KUSRequiredComponent {
+      case url
+      case httpMethod(rawValue: Swift.String)
+    }
+    case missingRequiredComponent(KustomerChat.KUSAFError.KUSParameterEncoderFailureReason.KUSRequiredComponent)
+    case encoderFailed(error: Swift.Error)
+  }
+  public enum KUSResponseValidationFailureReason {
+    case dataFileNil
+    case dataFileReadFailed(at: Foundation.URL)
+    case missingContentType(acceptableContentTypes: [Swift.String])
+    case unacceptableContentType(acceptableContentTypes: [Swift.String], responseContentType: Swift.String)
+    case unacceptableStatusCode(code: Swift.Int)
+    case customValidationFailed(error: Swift.Error)
+  }
+  public enum KUSResponseSerializationFailureReason {
+    case inputDataNilOrZeroLength
+    case inputFileNil
+    case inputFileReadFailed(at: Foundation.URL)
+    case stringSerializationFailed(encoding: Swift.String.Encoding)
+    case jsonSerializationFailed(error: Swift.Error)
+    case decodingFailed(error: Swift.Error)
+    case customSerializationFailed(error: Swift.Error)
+    case invalidEmptyResponse(type: Swift.String)
+  }
+  public enum KUSServerTrustFailureReason {
+    public struct KUSOutput {
+    }
+    case noRequiredEvaluator(host: Swift.String)
+    case noCertificatesFound
+    case noPublicKeysFound
+    case policyApplicationFailed(trust: Security.SecTrust, policy: Security.SecPolicy, status: Darwin.OSStatus)
+    case settingAnchorCertificatesFailed(status: Darwin.OSStatus, certificates: [Security.SecCertificate])
+    case revocationPolicyCreationFailed
+    case trustEvaluationFailed(error: Swift.Error?)
+    case defaultEvaluationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
+    case hostValidationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
+    case revocationCheckFailed
+    case certificatePinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedCertificates: [Security.SecCertificate], serverCertificates: [Security.SecCertificate])
+    case publicKeyPinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedKeys: [Security.SecKey], serverKeys: [Security.SecKey])
+    case customEvaluationFailed(error: Swift.Error)
+  }
+  public enum KUSURLRequestValidationFailureReason {
+    case bodyDataInGETRequest(Foundation.Data)
+  }
+  case createUploadableFailed(error: Swift.Error)
+  case createURLRequestFailed(error: Swift.Error)
+  case downloadedFileMoveFailed(error: Swift.Error, source: Foundation.URL, destination: Foundation.URL)
+  case explicitlyCancelled
+  case invalidURL(url: KustomerChat.KUSURLConvertible)
+  case multipartEncodingFailed(reason: KustomerChat.KUSAFError.KUSMultipartEncodingFailureReason)
+  case parameterEncodingFailed(reason: KustomerChat.KUSAFError.KUSParameterEncodingFailureReason)
+  case parameterEncoderFailed(reason: KustomerChat.KUSAFError.KUSParameterEncoderFailureReason)
+  case requestAdaptationFailed(error: Swift.Error)
+  case requestRetryFailed(retryError: Swift.Error, originalError: Swift.Error)
+  case responseValidationFailed(reason: KustomerChat.KUSAFError.KUSResponseValidationFailureReason)
+  case responseSerializationFailed(reason: KustomerChat.KUSAFError.KUSResponseSerializationFailureReason)
+  case serverTrustEvaluationFailed(reason: KustomerChat.KUSAFError.KUSServerTrustFailureReason)
+  case sessionDeinitialized
+  case sessionInvalidated(error: Swift.Error?)
+  case sessionTaskFailed(error: Swift.Error)
+  case urlRequestValidationFailed(reason: KustomerChat.KUSAFError.KUSURLRequestValidationFailureReason)
+  case kustomerAddOnError(error: Foundation.NSError)
+}
+extension KUSAFError {
+}
+extension KUSAFError {
+}
+extension KUSAFError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
     get
   }
 }
@@ -1282,95 +1487,101 @@ public enum KustomerLogType : Swift.String {
   }
 }
 public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
-@objc @_inheritsConvenienceInitializers public class KustomerClient : ObjectiveC.NSObject {
-  public var chatProvider: KustomerChat.ChatProvider {
+@objc @_inheritsConvenienceInitializers final public class KustomerClient : ObjectiveC.NSObject {
+  final public var chatProvider: KustomerChat.ChatProvider {
     get
     set
   }
-  public var pushProvider: KustomerChat.PushProvider
+  final public var kbProvider: KustomerChat.KnowledgeBaseProvider {
+    get
+    set
+  }
+  final public var pushProvider: KustomerChat.PushProvider
   public static let shared: KustomerChat.KustomerClient
-  public var status: KustomerChat.KustomerClientStatus
-  public var bundle: Foundation.Bundle
-  public var sdkVersion: Swift.String {
+  final public var status: KustomerChat.KustomerClientStatus
+  final public var bundle: Foundation.Bundle
+  final public var sdkVersion: Swift.String {
     get
   }
-  public var sdkVersionBuild: Swift.String {
+  final public var sdkVersionBuild: Swift.String {
     get
   }
-  public var sdkVersionSemver: Swift.String {
+  final public var sdkVersionSemver: Swift.String {
     get
   }
-  public var rootViewController: KustomerChat.SupportTabViewController? {
+  final public var rootViewController: KustomerChat.SupportTabViewController? {
     get
   }
-  public class var isRunningOnSimulator: Swift.Bool {
+  final public class var isRunningOnSimulator: Swift.Bool {
     get
   }
-  public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
-  public func changeBrand(brandId nbid: Swift.String, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
-  public func isLoggedIn(userEmail: Swift.String?, userId: Swift.String?, completion: @escaping ((Swift.Result<Swift.Bool, KustomerChat.KError>) -> Swift.Void))
-  public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
-  public func getActiveAssistantID() -> Swift.String?
-  public var options: KustomerChat.KustomerOptions {
+  final public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
+  final public func changeBrand(brandId nbid: Swift.String, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  final public func isLoggedIn(userEmail: Swift.String?, userId: Swift.String?, completion: @escaping ((Swift.Result<Swift.Bool, KustomerChat.KError>) -> Swift.Void))
+  final public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  final public func getActiveAssistantID() -> Swift.String?
+  final public func getActiveAssistantStartDialog() -> Swift.String?
+  final public var options: KustomerChat.KustomerOptions {
     get
   }
-  public var orgId: Swift.String
-  public var orgName: Swift.String {
-    get
-    set
-  }
-  public var keychain: KustomerChat.KUSKeychain
-  @available(*, deprecated)
-  public var apiKeyRaw: Swift.String? {
-    get
-  }
-  @available(*, deprecated)
-  public func clearAllKB()
-  public func configure(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, completion: ((KustomerChat.KustomerConfigurationError) -> ())? = { _ in }, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
-  public func configureUnsafe(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
-  public func isChatAvailable() -> Swift.Bool?
-  public func show()
-  public func show(preferredView: KustomerChat.KustomerDisplayMode)
-  public func openConversation(id: Swift.String, animated: Swift.Bool = true, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)
-  public func showKbArticle(id: Swift.String)
-  public func close(animated: Swift.Bool = true, completion passedCompletion: (() -> Swift.Void)?)
-  public var isVisible: Swift.Bool {
-    get
-  }
-  public func logOut(_ completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
-  public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
-  public func openNewConversation(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
-  public func didFailToRegisterForRemoteNotifications(error: Swift.Error)
-  public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
-  public func deregisterCurrentDeviceForPushNotifications(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  public func requestAuthorizationForPush()
-  public func stop()
-  public func start(completion: @escaping (() -> Swift.Void), failure: @escaping ((Swift.Error) -> Swift.Void))
-  public func start()
-  public func start(completion: @escaping (() -> Swift.Void))
-  public func start(failure: @escaping ((Swift.Error) -> Swift.Void))
-  public var unUserNotificationCenterDelegate: UserNotifications.UNUserNotificationCenterDelegate? {
+  final public var orgId: Swift.String
+  final public var orgName: Swift.String {
     get
     set
   }
-  public func printLocalizationKeys()
-  public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
+  final public var keychain: KustomerChat.KUSKeychain
+  @available(*, deprecated)
+  final public var apiKeyRaw: Swift.String? {
+    get
+  }
+  final public func configure(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, completion: ((KustomerChat.KustomerConfigurationError) -> ())? = { _ in }, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
+  final public func configureUnsafe(apiKey: Swift.String, options: KustomerChat.KustomerOptions?, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line) -> KustomerChat.KustomerClient
+  final public func isChatAvailable() -> Swift.Bool?
+  final public func show()
+  final public func show(preferredView: KustomerChat.KustomerDisplayMode)
+  final public func openConversation(id: Swift.String, animated: Swift.Bool = true, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)
+  final public func showKbArticle(id: Swift.String)
+  final public func close(animated: Swift.Bool = true, completion passedCompletion: (() -> Swift.Void)?)
+  final public var isVisible: Swift.Bool {
+    get
+  }
+  final public func logOut(_ completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
+  final public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
+  final public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
+  final public func openNewConversation(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
+  final public func didFailToRegisterForRemoteNotifications(error: Swift.Error)
+  final public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
+  final public func deregisterCurrentDeviceForPushNotifications(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
+  final public func requestAuthorizationForPush()
+  final public func stop()
+  final public func start(completion: @escaping (() -> Swift.Void), failure: @escaping ((Swift.Error) -> Swift.Void))
+  final public func start()
+  final public func start(completion: @escaping (() -> Swift.Void))
+  final public func start(failure: @escaping ((Swift.Error) -> Swift.Void))
+  final public var unUserNotificationCenterDelegate: UserNotifications.UNUserNotificationCenterDelegate? {
+    get
+    set
+  }
+  final public func printLocalizationKeys()
+  final public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
   @objc override dynamic public init()
-  public func openChatAssistant(id: Swift.String, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, animated: Swift.Bool = true)
+  final public func openChatAssistant(id: Swift.String, startDialog: Swift.String?, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, animated: Swift.Bool = true)
   @available(*, deprecated)
-  public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
-  public func getUnreadCount() -> Swift.Int
-  public func openConversationCount() -> Swift.Int
-  public func shareDebugLogs()
+  final public func openNewChat(initialMessages: [Swift.String]? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
+  final public func getUnreadCount() -> Swift.Int
+  final public func openConversationCount() -> Swift.Int
+  final public func shareDebugLogs()
   @objc deinit
 }
 extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
-  @objc dynamic public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
+  @objc final public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
 }
 extension Bundle {
   public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
   public static let kustomerAssets: Foundation.Bundle?
+}
+@_hasMissingDesignatedInitializers open class ServerTrustManager {
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1395,21 +1606,46 @@ extension Bundle {
   }
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class SupportTabViewController : UIKit.UITabBarController, UIKit.UITabBarControllerDelegate {
-  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidLayoutSubviews()
-  public var isCurrentlyVisible: Swift.Bool {
+@objc @_hasMissingDesignatedInitializers final public class SupportTabViewController : UIKit.UITabBarController, UIKit.UITabBarControllerDelegate {
+  @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewDidLayoutSubviews()
+  final public var isCurrentlyVisible: Swift.Bool {
     get
   }
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
 }
 extension SupportTabViewController : KustomerChat.KUSChatListener {
-  public func onUnreadCountChange(count: Swift.Int)
+  final public func onUnreadCountChange(count: Swift.Int)
+}
+extension SupportTabViewController : KustomerChat.CoordinatorDelegate {
+  final public func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
+}
+public enum KustomerError : Swift.Error {
+  case networkError(KustomerChat.NetworkError)
+  case someError(Swift.String)
+}
+extension KustomerError : Foundation.LocalizedError {
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol KBCategoryCollectionManager : AnyObject {
+  var dataSource: KustomerChat.KBCategoryCollectionDataSource? { get set }
+  func reload()
+}
+@_hasMissingDesignatedInitializers open class JSONParameterEncoder {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class URLEncodedFormParameterEncoder {
+  @objc deinit
 }
 public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
   public var id: Swift.String?
@@ -1425,32 +1661,6 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
   public var description: Swift.String {
     get
   }
-  @objc deinit
-}
-public class KUSCurrentCustomer : Swift.CustomStringConvertible, Swift.Decodable {
-  final public let id: Swift.String
-  final public let name: Swift.String?
-  final public let email: Swift.String?
-  final public let phone: Swift.String?
-  final public let activityAt: Foundation.Date?
-  final public let createdAt: Foundation.Date?
-  final public let lastMessageAt: Foundation.Date?
-  final public let lastMessageSentAt: Foundation.Date?
-  final public let lastOutboundMsgSentAt: Foundation.Date?
-  final public let lastSeenAt: Foundation.Date?
-  final public let signedUpAt: Foundation.Date?
-  final public let lastMessageUnrespondedTo: Foundation.Date?
-  final public let avgSatisfactionRating: Swift.Double?
-  final public let avgSatisfactionScore: Swift.Double?
-  final public let sentiment: Swift.String?
-  final public let conversationCount: KustomerChat.KUSConversationCount?
-  final public let custom: [Swift.String : Swift.String]?
-  final public let createdBy: Swift.String?
-  public var description: Swift.String {
-    get
-  }
-  required public init(from decoder: Swift.Decoder) throws
-  public class func create(fromJSONString jsonString: Swift.String) -> KustomerChat.KUSCurrentCustomer?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KUSChatMessage : Swift.CustomStringConvertible {
@@ -1510,9 +1720,24 @@ extension KustomerUI.Color {
   }
   public static func color(_ named: Swift.String) -> UIKit.UIColor?
 }
-public class KUSConversationCount : Swift.Decodable {
-  @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
+public struct KnowledgeBaseDomain : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension KnowledgeBaseDomain {
+  public struct Attributes : Swift.Decodable {
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension KnowledgeBaseDomain {
+  public enum Status : Swift.Codable, Swift.RawRepresentable {
+    public typealias RawValue = Swift.String
+    case ready
+    case some(value: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public init(rawValue: Swift.String)
+  }
 }
 extension KustomerChat.KustomerLanguage : Swift.Equatable {}
 extension KustomerChat.KustomerLanguage : Swift.Hashable {}
@@ -1529,7 +1754,6 @@ extension KustomerChat.KUSSentByType : Swift.RawRepresentable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Equatable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Hashable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.RawRepresentable {}
-extension KustomerChat.ChatAssistantCriteria.Operator : Swift.Hashable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.Equatable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.Hashable {}
 extension KustomerChat.KUSChatMessageDirection : Swift.RawRepresentable {}
@@ -1538,9 +1762,17 @@ extension KustomerChat.KustomerConfigurationError : Swift.Hashable {}
 extension KustomerChat.KUSConversationLockReason : Swift.Equatable {}
 extension KustomerChat.KUSConversationLockReason : Swift.Hashable {}
 extension KustomerChat.KUSConversationLockReason : Swift.RawRepresentable {}
+extension KustomerChat.KHTTPMethod : Swift.Equatable {}
+extension KustomerChat.KHTTPMethod : Swift.Hashable {}
+extension KustomerChat.KHTTPMethod : Swift.RawRepresentable {}
+extension KustomerChat.KnowledgeBaseDocumentType : Swift.Equatable {}
+extension KustomerChat.KnowledgeBaseDocumentType : Swift.Hashable {}
+extension KustomerChat.KnowledgeBaseDocumentType : Swift.RawRepresentable {}
 extension KustomerChat.KustomerOffhoursDisplay : Swift.Equatable {}
 extension KustomerChat.KustomerOffhoursDisplay : Swift.Hashable {}
 extension KustomerChat.KustomerOffhoursDisplay : Swift.RawRepresentable {}
+extension KustomerChat.KnowledgeBaseCategoryViewMode : Swift.Equatable {}
+extension KustomerChat.KnowledgeBaseCategoryViewMode : Swift.Hashable {}
 extension KustomerChat.KUSChatMessageStatus : Swift.Equatable {}
 extension KustomerChat.KUSChatMessageStatus : Swift.Hashable {}
 extension KustomerChat.KUSMessageTemplateType : Swift.Equatable {}
