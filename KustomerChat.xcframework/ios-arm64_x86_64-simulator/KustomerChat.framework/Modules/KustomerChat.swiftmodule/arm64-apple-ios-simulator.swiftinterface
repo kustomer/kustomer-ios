@@ -45,13 +45,7 @@ import os
   public func removeAllListeners()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class ClosureEventMonitor {
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class KUSCustomer : Swift.CustomStringConvertible {
-  public static var currentId: Swift.String? {
-    get
-  }
   public var id: Swift.String
   public var description: Swift.String {
     get
@@ -334,15 +328,19 @@ public struct KUSAlertInfo {
   final public func getConversations() -> [KustomerChat.KUSConversation]
   final public func getConversation(conversationId: Swift.String) -> KustomerChat.KUSConversation?
   final public func chatMessages(conversationId: Swift.String) -> [KustomerChat.KUSChatMessage]
+  final public func getChatMessages(conversationId: Swift.String, completion: @escaping (Swift.Result<[KustomerChat.KUSChatMessage], KustomerChat.KError>) -> Swift.Void)
+  @available(*, deprecated, message: "Use getUnreadCount")
   final public func old_unreadCount() -> Swift.Int
+  @available(*, deprecated, message: "Use getUnreadCount")
   final public func unreadCount() -> Swift.Int
+  final public func getUnreadCount() -> Swift.Int
   final public func openConversationCount() -> Swift.Int
   @available(*, deprecated, message: "Use customerExists instead")
   final public func currentCustomer() -> KustomerChat.KUSCustomer?
   final public func customerExists() -> Swift.Bool
   final public func getChatSettings() -> KustomerChat.KUSChatSettings
   final public func isChatAvailable() -> Swift.Bool?
-  final public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer), KustomerChat.KError>) -> Swift.Void))
+  final public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer?), KustomerChat.KError>) -> Swift.Void))
   final public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
   final public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
   final public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
@@ -357,49 +355,11 @@ public struct KUSAlertInfo {
   final public func markRead(conversationId: Swift.String)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class KAlamoFireSession {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers open class SessionDelegate : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension SessionDelegate : Foundation.URLSessionDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: Swift.Error?)
-}
-extension SessionDelegate : Foundation.URLSessionTaskDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didSendBodyData bytesSent: Swift.Int64, totalBytesSent: Swift.Int64, totalBytesExpectedToSend: Swift.Int64)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, needNewBodyStream completionHandler: @escaping (Foundation.InputStream?) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didFinishCollecting metrics: Foundation.URLSessionTaskMetrics)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: Swift.Error?)
-  @available(macOS 10.13, iOS 11.0, tvOS 11.0, watchOS 4.0, *)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, taskIsWaitingForConnectivity task: Foundation.URLSessionTask)
-}
-extension SessionDelegate : Foundation.URLSessionDataDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, willCacheResponse proposedResponse: Foundation.CachedURLResponse, completionHandler: @escaping (Foundation.CachedURLResponse?) -> Swift.Void)
-}
-extension SessionDelegate : Foundation.URLSessionDownloadDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didResumeAtOffset fileOffset: Swift.Int64, expectedTotalBytes: Swift.Int64)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didWriteData bytesWritten: Swift.Int64, totalBytesWritten: Swift.Int64, totalBytesExpectedToWrite: Swift.Int64)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
-}
 public struct KnowledgeBaseArticle : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct KnowledgeBaseArticleAttributes : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers open class Adapter {
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class Retrier {
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class Interceptor {
-  @objc deinit
 }
 infix operator ++ : AssignmentPrecedence
 public struct KUSKBDeflectResult {
@@ -433,29 +393,23 @@ extension KustomerClient {
 @_hasMissingDesignatedInitializers final public class KnowledgeBaseCategoryLoader {
   @objc deinit
 }
-public typealias KustomerCompletion<T> = (Swift.Result<T, KustomerChat.KustomerError>) -> Swift.Void
-@_hasMissingDesignatedInitializers public class KUSTrackingIdentity {
+public class KUSTrackingIdentity : Swift.Decodable {
   public var id: Swift.String?
-  public var rawJson: Swift.String?
   public var customerId: Swift.String?
   public var trackingId: Swift.String?
+  public var trackingToken: Swift.String?
   public var email: Swift.String?
   public var externalId: Swift.String?
   public var verified: Swift.Bool?
   public var verifiedAt: Foundation.Date?
   public var createdAt: Foundation.Date?
   public var updatedAt: Foundation.Date?
+  required public init(from decoder: Swift.Decoder)
   @objc deinit
 }
 public protocol KBCategoryCollectionDataSource : AnyObject {
   var sectionTitle: Swift.String? { get }
   var rows: [KustomerChat.KnowledgeBaseDataRow] { get }
-}
-@_hasMissingDesignatedInitializers open class RetryPolicy {
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class ConnectionLostRetryPolicy : KustomerChat.RetryPolicy {
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Settings {
   public var teamName: Swift.String {
@@ -624,6 +578,7 @@ extension URL : KustomerChat.KUSURLConvertible {
 extension URLComponents : KustomerChat.KUSURLConvertible {
   public func kus_asURL() throws -> Foundation.URL
 }
+public typealias KustomerCompletion<T> = (Swift.Result<T, KustomerChat.KustomerError>) -> Swift.Void
 public enum KustomerClientStatus {
   case uninitialized
   case configured
@@ -655,13 +610,6 @@ public protocol CoordinatorCreator : AnyObject {
   associatedtype Value
   var currentCoordinator: KustomerChat.Coordinator? { get set }
   static func make(value: Self.Value) -> KustomerChat.Coordinator
-}
-@_hasMissingDesignatedInitializers open class MultipartFormData {
-  open var contentType: Swift.String {
-    get
-    set
-  }
-  @objc deinit
 }
 final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
   final public var id: Swift.String?
@@ -799,9 +747,6 @@ extension KUSKBItemBase {
   public var description: Swift.String {
     get
   }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class NetworkReachabilityManager {
   @objc deinit
 }
 @propertyWrapper public struct KUSClamping<Value> : Swift.Comparable where Value : Swift.Comparable {
@@ -1016,7 +961,6 @@ extension NSNotification.Name {
   public var preview: Swift.String?
   public var respondingUserIds: [Swift.String?]?
   public var unreadMessageCount: Swift.Int?
-  public var customers: [KustomerChat.KUSCustomer]?
   public var users: [KustomerChat.KUSUser]?
   public var localUuid: Swift.String?
   public var description: Swift.String {
@@ -1278,7 +1222,7 @@ public enum KError : Swift.Error {
   case invalidJwt
   case alreadyIdentifiedWithExternalId(externalId: Swift.String)
   case alreadyIdentifiedWithEmail(email: Swift.String)
-  case networkErrorLoadingSettings(KustomerChat.KUSAFError)
+  case networkErrorLoadingSettings(KustomerChat.KustomerError)
   case noPubNubClient
   case couldNotDeregisterPush
   case couldNotDeregisterPushBecause(Swift.Error)
@@ -1517,7 +1461,6 @@ public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
   }
   final public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
   final public func changeBrand(brandId nbid: Swift.String, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
-  final public func isLoggedIn(userEmail: Swift.String?, userId: Swift.String?, completion: @escaping ((Swift.Result<Swift.Bool, KustomerChat.KError>) -> Swift.Void))
   final public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   final public func getActiveAssistantID() -> Swift.String?
   final public func getActiveAssistantStartDialog() -> Swift.String?
@@ -1545,6 +1488,9 @@ public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
   final public var isVisible: Swift.Bool {
     get
   }
+  final public func isLoggedIn(userEmail: Swift.String?, userId: Swift.String?) -> Swift.Bool
+  @available(*, deprecated, message: "Use isLoggedIn(userEmail: String?, userId: String?) -> Bool")
+  final public func isLoggedIn(userEmail: Swift.String?, userId: Swift.String?, completion: @escaping ((Swift.Result<Swift.Bool, KustomerChat.KError>) -> Swift.Void))
   final public func logOut(_ completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   final public func logIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
   final public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
@@ -1579,9 +1525,6 @@ extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
 extension Bundle {
   public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
   public static let kustomerAssets: Foundation.Bundle?
-}
-@_hasMissingDesignatedInitializers open class ServerTrustManager {
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1637,15 +1580,14 @@ extension KustomerError : Foundation.LocalizedError {
     get
   }
 }
+public struct KSet : Swift.Decodable {
+  public var publishKey: Swift.String?
+  public var subscribeKey: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
 public protocol KBCategoryCollectionManager : AnyObject {
   var dataSource: KustomerChat.KBCategoryCollectionDataSource? { get set }
   func reload()
-}
-@_hasMissingDesignatedInitializers open class JSONParameterEncoder {
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class URLEncodedFormParameterEncoder {
-  @objc deinit
 }
 public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
   public var id: Swift.String?
