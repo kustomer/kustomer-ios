@@ -1444,12 +1444,8 @@ public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
   public static let shared: KustomerChat.KustomerClient
   final public var status: KustomerChat.KustomerClientStatus
   final public var bundle: Foundation.Bundle
-  final public var sdkVersion: Swift.String {
-    get
-  }
-  final public var sdkVersionBuild: Swift.String {
-    get
-  }
+  final public let sdkVersion: Swift.String
+  final public let sdkVersionBuild: Swift.String
   final public var sdkVersionSemver: Swift.String {
     get
   }
