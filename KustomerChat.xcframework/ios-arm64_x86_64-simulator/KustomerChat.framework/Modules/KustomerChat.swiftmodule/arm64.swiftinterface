@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
@@ -607,9 +607,8 @@ public enum KUSKBDeflectResultType : Swift.String {
   }
 }
 public protocol CoordinatorCreator : AnyObject {
-  associatedtype Value
   var currentCoordinator: KustomerChat.Coordinator? { get set }
-  static func make(value: Self.Value) -> KustomerChat.Coordinator
+  static func make() -> KustomerChat.Coordinator
 }
 final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
   final public var id: Swift.String?
@@ -636,7 +635,7 @@ public enum KUSSentByType : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class KBArticleCoordinator : KustomerChat.CoordinatorCreator, KustomerChat.Coordinator {
+@_hasMissingDesignatedInitializers final public class KBArticleCoordinator : KustomerChat.DataCoordinatorCreator, KustomerChat.Coordinator {
   weak final public var delegate: KustomerChat.CoordinatorDelegate?
   public typealias KnowledgeBaseArticleData = (article: KustomerChat.KnowledgeBaseArticle?, id: Swift.String)
   public typealias Value = KustomerChat.KBArticleCoordinator.KnowledgeBaseArticleData
@@ -646,6 +645,7 @@ public enum KUSSentByType : Swift.String {
   final public var navigationController: UIKit.UINavigationController?
   final public var currentCoordinator: KustomerChat.Coordinator?
   public static func make(value: KustomerChat.KBArticleCoordinator.KnowledgeBaseArticleData) -> KustomerChat.Coordinator
+  public static func make() -> KustomerChat.Coordinator
   final public func show(in navigationController: UIKit.UINavigationController?)
   @objc deinit
 }
@@ -711,6 +711,10 @@ public enum KURLEncoding {
 public struct KJSONParameterEncoding {
   public func encode(_ request: Foundation.URLRequest, with parameters: KustomerChat.KParameters?) throws -> Foundation.URLRequest
 }
+public protocol DataCoordinatorCreator : KustomerChat.CoordinatorCreator {
+  associatedtype Value
+  static func make(value: Self.Value) -> KustomerChat.Coordinator
+}
 public protocol KUSKBItemBase : Swift.CustomStringConvertible {
   var id: Swift.String? { get set }
   var htmlBody: Swift.String? { get set }
@@ -760,15 +764,16 @@ extension KUSKBItemBase {
   }
   public static func == (a: KustomerChat.KUSClamping<Value>, b: KustomerChat.KUSClamping<Value>) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers final public class KBCategoryCoordinator : KustomerChat.CoordinatorCreator, KustomerChat.Coordinator {
+@_hasMissingDesignatedInitializers final public class KBCategoryCoordinator : KustomerChat.DataCoordinatorCreator, KustomerChat.Coordinator {
   public typealias Value = KustomerChat.KnowledgeBaseCategoryData
   weak final public var delegate: KustomerChat.CoordinatorDelegate?
   final public var view: UIKit.UIViewController {
     get
   }
-  final public var navigationController: UIKit.UINavigationController?
+  weak final public var navigationController: UIKit.UINavigationController?
   final public var currentCoordinator: KustomerChat.Coordinator?
   public static func make(value: KustomerChat.KnowledgeBaseCategoryData) -> KustomerChat.Coordinator
+  public static func make() -> KustomerChat.Coordinator
   final public func show(in navigationController: UIKit.UINavigationController?)
   @objc deinit
 }
@@ -1619,6 +1624,15 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
   public var description: Swift.String {
     get
   }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ChatHistoryCoordinator : KustomerChat.CoordinatorCreator, KustomerChat.Coordinator {
+  weak final public var delegate: KustomerChat.CoordinatorDelegate?
+  final public var view: UIKit.UIViewController
+  weak final public var navigationController: UIKit.UINavigationController?
+  final public var currentCoordinator: KustomerChat.Coordinator?
+  public static func make() -> KustomerChat.Coordinator
+  final public func show(in navigationController: UIKit.UINavigationController?)
   @objc deinit
 }
 public enum KustomerUI {
