@@ -1,0 +1,107 @@
+/** fonts **/
+* {
+  font-family: -apple-system;
+  font-family: '-apple-system','HelveticaNeue';
+  font-size: 1em;
+}
+
+
+/** padding **/
+body {
+  padding: 1em !important;
+}
+
+/** font sizes **/
+p, span, caption {
+  font: -apple-system-body !important;
+  font-weight: normal !important;
+}
+h1 {
+  font: -apple-system-headline !important;
+}
+h2 {
+  font: -apple-system-subheadline !important;
+}
+h3 {
+  font: -apple-system-subheadline !important;
+}
+h4 {
+  font: -apple-system-subheadline !important;
+}
+.fr-view.article-body h1 {
+  font: -apple-system-headline !important;
+}
+/** layout **/
+.nav, .heroImg-wrap, .search-wrap, .container-footer {
+  display: none !important;
+}
+.container-article, .breadcrumbs-wrap, .btn.btn-icon.btn-cat-nav {
+  background: none !important;
+}
+.article-header {
+  border: none !important;
+}
+
+/** styling **/
+a {
+  text-decoration: underline !important;
+}
+
+/** colors **/
+* {
+  color: black !important;
+}
+a, a:link, a:visited, a:hover {
+  color: #007aff !important;
+}
+body, .container-home, .article-body {
+  background-color: [##body.background.normal##] !important;
+}
+p, h1, h2 {
+  color: black !important;
+}
+.article-body p {
+  background: none !important;
+}
+p {
+  background: none !important;
+  background-color: none !important;
+}
+.article-updated {
+  margin-bottom: 1rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  display: inline-block;
+}
+
+/** dark mode **/
+@media screen and (prefers-color-scheme: dark) {
+  /** colors **/
+  *{
+    color: white !important;
+  }
+  div, p, h1, h2, h3, h4, span, strong, em, ul, li, body, html, .container-home, .article-body{
+    background-color: transparent !important;
+  }
+  p, h1, h2, strong, span {
+    color: white !important;
+  }
+  .article-updated, .article-updated span, .article-updated * {
+    color: white rgba(255,255,255,0.5) !important;
+  }
+  body, .container-home, .article-body {
+    /*background-color: [##body.background.dark##] !important;*/
+  }
+  a, a:link, a:visited, a:hover {
+    color: #81c4f8 !important;
+  }
+  .article-body p {
+    color: white !important;
+    background-color: black !important;
+    background: black !important;
+  }
+  /** layout **/
+  .article-body p {
+    margin-bottom: 20px !important;
+  }
+}
