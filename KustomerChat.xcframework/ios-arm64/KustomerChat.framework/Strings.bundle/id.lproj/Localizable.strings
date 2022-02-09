@@ -1,8 +1,9 @@
 "com.kustomer.%@ is typing..." = "%@ sedang mengetik...";
 "com.kustomer.Add additional feedback" = "Tambahkan umpan balik tambahan";
+"com.kustomer.Additional Feedback" = "Umpan Balik Tambahan";
 "com.kustomer.Additional feedback removed" = "Umpan balik tambahan dihapus";
 "com.kustomer.Agent" = "Agen";
-"com.kustomer.Answers" = "Jawaban";
+"com.kustomer.Answers" = "jawaban";
 "com.kustomer.Are you sure you want to end this chat?" = "Anda yakin ingin mengakhiri obrolan ini?";
 "com.kustomer.Attached file" = "File terlampir";
 "com.kustomer.Attachment" = "Lampiran";
@@ -11,7 +12,7 @@
 "com.kustomer.Can't load chat" = "Tidak dapat memuat obrolan";
 "com.kustomer.Cancel" = "Membatalkan";
 "com.kustomer.Cancelled! Tap to retry." = "Dibatalkan! Ketuk untuk mencoba lagi.";
-"com.kustomer.Chat" = "Obrolan";
+"com.kustomer.Chat" = "Mengobrol";
 "com.kustomer.Chat has ended" = "Obrolan telah berakhir";
 "com.kustomer.Chat history" = "Riwayat obrolan";
 "com.kustomer.Chat is currently unavailable" = "Obrolan saat ini tidak tersedia";
@@ -22,6 +23,7 @@
 "com.kustomer.Delete" = "Menghapus";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Apakah Anda ingin menghapus peringkat dan umpan balik Anda?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Apakah Anda ingin menyimpan perubahan yang Anda buat pada komentar Anda?";
+"com.kustomer.Done" = "Selesai";
 "com.kustomer.Edit comment" = "Sunting komentar";
 "com.kustomer.End Chat" = "Akhiri Obrolan";
 "com.kustomer.Ended" = "Berakhir";
@@ -31,6 +33,7 @@
 "com.kustomer.FAQ" = "FAQ";
 "com.kustomer.Help Article" = "Artikel Bantuan";
 "com.kustomer.Image" = "Gambar";
+"com.kustomer.Incoming chat" = "Obrolan masuk";
 "com.kustomer.Internet offline" = "Internet offline";
 "com.kustomer.Just now" = "Baru saja";
 "com.kustomer.KB" = "KB";
@@ -43,7 +46,7 @@
 "com.kustomer.Message failed to send" = "Pesan gagal terkirim";
 "com.kustomer.Message failed to send!" = "Pesan gagal terkirim!";
 "com.kustomer.Moved" = "Terharu";
-"com.kustomer.Nevermind" = "Lupakan";
+"com.kustomer.Never mind" = "Sudahlah";
 "com.kustomer.New Conversation" = "Percakapan Baru";
 "com.kustomer.New message" = "Pesan baru";
 "com.kustomer.No articles" = "Tidak ada artikel";
@@ -53,8 +56,9 @@
 "com.kustomer.None of your personal information was included" = "Tidak ada informasi pribadi Anda yang disertakan";
 "com.kustomer.Not enough disk space" = "Tidak cukup ruang pada disket";
 "com.kustomer.Not found" = "Tidak ditemukan";
-"com.kustomer.Okay" = "baik";
+"com.kustomer.Okay" = "Oke";
 "com.kustomer.Open in browser" = "Buka di browser";
+"com.kustomer.Outgoing chat" = "Obrolan keluar";
 "com.kustomer.Photo library" = "Perpustakaan foto";
 "com.kustomer.Please leave a message" = "Silakan tinggalkan pesan";
 "com.kustomer.Please select an option..." = "Silakan pilih salah satu opsi...";
@@ -67,11 +71,13 @@
 "com.kustomer.Search Help Articles" = "Cari Artikel Bantuan";
 "com.kustomer.Search Results" = "Hasil Pencarian";
 "com.kustomer.Sending" = "Mengirim";
-"com.kustomer.Share" = "Bagikan";
-"com.kustomer.Survey" = "Survei";
+"com.kustomer.Share" = "Membagikan";
+"com.kustomer.Submit" = "Kirim";
+"com.kustomer.Survey" = "survei";
 "com.kustomer.Take photo" = "Memotret";
 "com.kustomer.Tap to load..." = "Ketuk untuk memuat...";
-"com.kustomer.Thanks for your feedback!" = "Terima kasih atas tanggapan Anda!";
+"com.kustomer.Tap to open" = "Ketuk untuk membuka";
+"com.kustomer.Thanks for your feedback" = "Terima kasih atas tanggapan Anda";
 "com.kustomer.That article" = "Artikel itu";
 "com.kustomer.There was a problem" = "Ada masalah";
 "com.kustomer.This conversation is read-only" = "Percakapan ini hanya-baca";
@@ -81,9 +87,10 @@
 "com.kustomer.Updated" = "Diperbarui";
 "com.kustomer.Waiting for a response from" = "Menunggu tanggapan dari";
 "com.kustomer.We will get back to you as soon as we are online!" = "Kami akan menghubungi Anda segera setelah kami online!";
-"com.kustomer.Yes" = "Iya";
-"com.kustomer.You changed your additonal feedback comment" = "Anda mengubah komentar umpan balik tambahan Anda";
+"com.kustomer.Yes" = "Ya";
+"com.kustomer.You changed your additional feedback comment" = "Anda mengubah komentar umpan balik tambahan Anda";
 "com.kustomer.You're offline. Check your connection." = "Anda sedang offline. Periksa koneksi Anda.";
-"com.kustomer.Your existing conversations will be here." = "Percakapan Anda yang ada akan ada di sini.";
+"com.kustomer.Your existing conversations will be here." = "Percakapan Anda yang sudah ada akan ada di sini.";
 "com.kustomer.is no longer available" = "tidak lagi tersedia";
+"com.kustomer.out of" = "dari";
 "com.kustomer.sending" = "mengirim";

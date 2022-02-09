@@ -1,7 +1,8 @@
 "com.kustomer.%@ is typing..." = "%@ yazıyor...";
 "com.kustomer.Add additional feedback" = "Ek geri bildirim ekleyin";
+"com.kustomer.Additional Feedback" = "Ek Geribildirim";
 "com.kustomer.Additional feedback removed" = "Ek geri bildirim kaldırıldı";
-"com.kustomer.Agent" = "Temsilci";
+"com.kustomer.Agent" = "Ajan";
 "com.kustomer.Answers" = "Yanıtlar";
 "com.kustomer.Are you sure you want to end this chat?" = "Bu sohbeti bitirmek istediğinizden emin misiniz?";
 "com.kustomer.Attached file" = "Ekli dosya";
@@ -11,7 +12,7 @@
 "com.kustomer.Can't load chat" = "sohbet yüklenemiyor";
 "com.kustomer.Cancel" = "İptal etmek";
 "com.kustomer.Cancelled! Tap to retry." = "İptal edildi! Tekrar denemek için tıkla.";
-"com.kustomer.Chat" = "Sohbet";
+"com.kustomer.Chat" = "Sohbet etmek";
 "com.kustomer.Chat has ended" = "Sohbet sona erdi";
 "com.kustomer.Chat history" = "Sohbet geçmişi";
 "com.kustomer.Chat is currently unavailable" = "Sohbet şu anda kullanılamıyor";
@@ -19,9 +20,10 @@
 "com.kustomer.Conversation ended" = "konuşma sona erdi";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Görüşme başka bir görüşmeyle birleştirildi.\n\nYeni görüşmeye gitmek için dokunun.";
 "com.kustomer.Conversation moved to another customer" = "Görüşme başka bir müşteriye taşındı";
-"com.kustomer.Delete" = "Sil";
+"com.kustomer.Delete" = "Silmek";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Derecelendirmenizi ve geri bildiriminizi kaldırmak istiyor musunuz?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Yorumunuzda yaptığınız değişiklikleri kaydetmek istiyor musunuz?";
+"com.kustomer.Done" = "Tamamlandı";
 "com.kustomer.Edit comment" = "Yorumu düzenle";
 "com.kustomer.End Chat" = "Sohbeti bitir";
 "com.kustomer.Ended" = "Bitti";
@@ -31,6 +33,7 @@
 "com.kustomer.FAQ" = "SSS";
 "com.kustomer.Help Article" = "Yardım Makalesi";
 "com.kustomer.Image" = "resim";
+"com.kustomer.Incoming chat" = "gelen sohbet";
 "com.kustomer.Internet offline" = "İnternet çevrimdışı";
 "com.kustomer.Just now" = "Şu anda";
 "com.kustomer.KB" = "KB";
@@ -42,8 +45,8 @@
 "com.kustomer.Message" = "İleti";
 "com.kustomer.Message failed to send" = "Mesaj gönderilemedi";
 "com.kustomer.Message failed to send!" = "Mesaj gönderilemedi!";
-"com.kustomer.Moved" = "taşındı";
-"com.kustomer.Nevermind" = "Boşver";
+"com.kustomer.Moved" = "Etkilenmiş";
+"com.kustomer.Never mind" = "Boşver";
 "com.kustomer.New Conversation" = "Yeni Konuşma";
 "com.kustomer.New message" = "Yeni Mesaj";
 "com.kustomer.No articles" = "makale yok";
@@ -53,8 +56,9 @@
 "com.kustomer.None of your personal information was included" = "Kişisel bilgilerinizin hiçbiri dahil edilmedi";
 "com.kustomer.Not enough disk space" = "Yeterli disk alanı yok";
 "com.kustomer.Not found" = "Bulunamadı";
-"com.kustomer.Okay" = "Tamam";
+"com.kustomer.Okay" = "Peki";
 "com.kustomer.Open in browser" = "Tarayıcıda aç";
+"com.kustomer.Outgoing chat" = "giden sohbet";
 "com.kustomer.Photo library" = "fotoğraf kütüphanesi";
 "com.kustomer.Please leave a message" = "Lütfen mesaj bırakın";
 "com.kustomer.Please select an option..." = "Lütfen bir seçenek seçin...";
@@ -68,10 +72,12 @@
 "com.kustomer.Search Results" = "Arama Sonuçları";
 "com.kustomer.Sending" = "gönderme";
 "com.kustomer.Share" = "Paylaş";
-"com.kustomer.Survey" = "anket";
+"com.kustomer.Submit" = "Göndermek";
+"com.kustomer.Survey" = "Anket";
 "com.kustomer.Take photo" = "Fotoğraf çek";
 "com.kustomer.Tap to load..." = "Yüklemek için dokunun...";
-"com.kustomer.Thanks for your feedback!" = "Geri bildiriminiz için teşekkürler!";
+"com.kustomer.Tap to open" = "Açmak için dokunun";
+"com.kustomer.Thanks for your feedback" = "geri bildiriminiz için teşekkürler";
 "com.kustomer.That article" = "o makale";
 "com.kustomer.There was a problem" = "Bir problem vardı";
 "com.kustomer.This conversation is read-only" = "Bu görüşme salt okunur";
@@ -82,8 +88,9 @@
 "com.kustomer.Waiting for a response from" = "dan yanıt bekleniyor";
 "com.kustomer.We will get back to you as soon as we are online!" = "Çevrimiçi olduğumuzda size geri döneceğiz!";
 "com.kustomer.Yes" = "Evet";
-"com.kustomer.You changed your additonal feedback comment" = "Ek geri bildirim yorumunuzu değiştirdiniz";
-"com.kustomer.You're offline. Check your connection." = "Çevrimdışısın. Bağlantınızı kontrol edin.";
+"com.kustomer.You changed your additional feedback comment" = "Ek geri bildirim yorumunuzu değiştirdiniz";
+"com.kustomer.You're offline. Check your connection." = "çevrimdışısın. Bağlantınızı kontrol edin.";
 "com.kustomer.Your existing conversations will be here." = "Mevcut konuşmalarınız burada olacak.";
 "com.kustomer.is no longer available" = "artık kullanılamaz";
+"com.kustomer.out of" = "dışında";
 "com.kustomer.sending" = "gönderme";
