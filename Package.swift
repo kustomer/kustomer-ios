@@ -10,19 +10,19 @@ let package = Package(
   products: [
     .library(
       name: "kustomer-ios",
-      targets: ["KustomerPubSub", "KustomerChat"])
+      targets: ["KustomerChat", "WrapperTarget"])
   ],
   dependencies: [
-    // Dependencies declare other packages that this package depends on.
+    .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0")
   ],
   targets: [
     .binaryTarget(
       name: "KustomerChat",
       path: "KustomerChat.xcframework"
     ),
-    .binaryTarget(
-      name: "KustomerPubSub",
-      path: "KustomerPubSub.xcframework"
+    .target(
+      name: "WrapperTarget",
+      dependencies: ["PubNub"]
     )
   ]
 )
