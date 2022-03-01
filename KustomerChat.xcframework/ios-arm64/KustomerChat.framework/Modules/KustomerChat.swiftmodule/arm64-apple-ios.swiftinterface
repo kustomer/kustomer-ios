@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
@@ -9,9 +9,9 @@ import CoreImage
 import Dispatch
 import Foundation
 @_exported import KustomerChat
+import KustomerPubSub
 import MobileCoreServices
 import OSLog
-import PubNub
 import QuickLook
 import SafariServices
 import Swift
@@ -20,7 +20,6 @@ import UIKit.UIGeometry
 import UIKit
 import UserNotifications
 import WebKit
-import _Concurrency
 import os.log
 import os
 @_hasMissingDesignatedInitializers public class KUSUser : Swift.CustomStringConvertible {
@@ -237,8 +236,8 @@ public enum KustomerAssetLanguage : Swift.String {
     get
   }
 }
-public typealias NetworkOperationCompletion = (_ result: Swift.Result<KustomerChat.NetworkOperationResponse, KustomerChat.NetworkError>) -> Swift.Void
-public typealias NetworkDispatchCompletion = (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: Swift.Error?) -> Swift.Void
+public typealias NetworkOperationCompletion = (Swift.Result<KustomerChat.NetworkOperationResponse, KustomerChat.NetworkError>) -> Swift.Void
+public typealias NetworkDispatchCompletion = (Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class PushProvider : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate {
   public static let shared: KustomerChat.PushProvider
   public var deviceToken: Foundation.Data? {
@@ -273,7 +272,7 @@ public protocol CoordinatorDelegate : AnyObject {
   func coordinatorDidDisappear(_ coordinator: KustomerChat.Coordinator)
   func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
 }
-extension KustomerChat.CoordinatorDelegate {
+extension CoordinatorDelegate {
   public func coordinatorWillDisappear(_ coordinator: KustomerChat.Coordinator)
   public func coordinatorWillAppear(_ coordinator: KustomerChat.Coordinator)
   public func coordinatorDidAppear(_ coordinator: KustomerChat.Coordinator)
@@ -299,20 +298,21 @@ public enum KUSAlertResult {
 }
 public struct KUSAlertInfo {
 }
-@objc @_Concurrency.MainActor(unsafe) public class KUSSWAlert : ObjectiveC.NSObject, UIKit.UIAlertViewDelegate {
-  @_Concurrency.MainActor(unsafe) public static var lastTextEntered: [Swift.String?]
-  @_Concurrency.MainActor(unsafe) public static func showAlert(_ title: Swift.String?, message: Swift.String?, buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil)
-  @_Concurrency.MainActor(unsafe) public init(title: Swift.String?, message: Swift.String?)
-  @_Concurrency.MainActor(unsafe) public func setCancelAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func setCancelAction(_ buttonTitle: Swift.String) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addDestructiveAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addDefaultAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addAction(_ buttonTitle: Swift.String) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addTextField(_ text: Swift.String, placeholder: Swift.String? = nil) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func addTextField(_ text: Swift.String) -> KustomerChat.KUSSWAlert
-  @_Concurrency.MainActor(unsafe) public func show()
-  @_Concurrency.MainActor(unsafe) public func showActionSheet()
+@objc public class KUSSWAlert : ObjectiveC.NSObject, UIKit.UIAlertViewDelegate {
+  public static var lastTextEntered: [Swift.String?]
+  public static func showAlert(_ title: Swift.String?, message: Swift.String?, buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil)
+  public init(title: Swift.String?, message: Swift.String?)
+  public func setCancelAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
+  public func setCancelAction(_ buttonTitle: Swift.String) -> KustomerChat.KUSSWAlert
+  public func addAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
+  public func addDestructiveAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
+  public func addDefaultAction(_ buttonTitle: Swift.String, _ completion: KustomerChat.KUSAlertCompletionHandler? = nil) -> KustomerChat.KUSSWAlert
+  public func addAction(_ buttonTitle: Swift.String) -> KustomerChat.KUSSWAlert
+  public func addTextField(_ text: Swift.String, placeholder: Swift.String? = nil) -> KustomerChat.KUSSWAlert
+  public func addTextField(_ text: Swift.String) -> KustomerChat.KUSSWAlert
+  public func show()
+  public func showActionSheet()
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class ChatProvider {
@@ -370,7 +370,7 @@ public struct KUSKBDeflectResult {
   public var rawJson: Swift.String?
   public var clickCount: Swift.Int
 }
-extension KustomerChat.KustomerClient {
+extension KustomerClient {
   @available(*, deprecated)
   final public func triggerHotReloadFromAppDelegate()
   @available(*, deprecated)
@@ -571,13 +571,13 @@ public protocol KBCategoryCollectionDataSource : AnyObject {
 public protocol KUSURLConvertible {
   func kus_asURL() throws -> Foundation.URL
 }
-extension Swift.String : KustomerChat.KUSURLConvertible {
+extension String : KustomerChat.KUSURLConvertible {
   public func kus_asURL() throws -> Foundation.URL
 }
-extension Foundation.URL : KustomerChat.KUSURLConvertible {
+extension URL : KustomerChat.KUSURLConvertible {
   public func kus_asURL() throws -> Foundation.URL
 }
-extension Foundation.URLComponents : KustomerChat.KUSURLConvertible {
+extension URLComponents : KustomerChat.KUSURLConvertible {
   public func kus_asURL() throws -> Foundation.URL
 }
 public typealias KustomerCompletion<T> = (Swift.Result<T, KustomerChat.KustomerError>) -> Swift.Void
@@ -594,7 +594,7 @@ public enum KustomerClientStatus {
 public protocol KUSConnectionListener {
   func onPubNubConnectionStatusChange(status: KustomerChat.KustomerConnectionStatus)
 }
-extension KustomerChat.KUSConnectionListener {
+extension KUSConnectionListener {
   public func onPubNubConnectionStatusChange(status: KustomerChat.KustomerConnectionStatus)
 }
 public let Kustomer: KustomerChat.KustomerClient
@@ -670,7 +670,7 @@ public class KustomerOptions {
     get
     set
   }
-  public var pushEnvironment: KustomerChat.PushEnvironment
+  public var pushEnvironment: KustomerPubSub.KustomerPubNubV3.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
   public var showAnimationFor5StarCSATRatings: Swift.Bool
   public var onShow: (() -> Swift.Void)?
@@ -731,7 +731,7 @@ public protocol KUSKBItemBase : Swift.CustomStringConvertible {
   var rawJson: Swift.String? { get set }
   var description: Swift.String { get }
 }
-extension KustomerChat.KUSKBItemBase {
+extension KUSKBItemBase {
   public func completeObject() -> [Swift.String : Any]?
 }
 @_hasMissingDesignatedInitializers public class KBCategoryBridge : KustomerChat.KUSKBItemBase {
@@ -789,14 +789,14 @@ public struct KnowledgeBaseSurvey : Swift.Decodable {
   @objc deinit
 }
 public enum KnowledgeBaseDataRow {
-  case category(category: KustomerChat.KnowledgeBaseCategory, didSelect: ((_ row: KustomerChat.KnowledgeBaseCategory) -> Swift.Void)?)
-  case article(article: KustomerChat.KnowledgeBaseArticle, didSelect: ((_ row: KustomerChat.KnowledgeBaseArticle) -> Swift.Void)?)
+  case category(category: KustomerChat.KnowledgeBaseCategory, didSelect: ((KustomerChat.KnowledgeBaseCategory) -> Swift.Void)?)
+  case article(article: KustomerChat.KnowledgeBaseArticle, didSelect: ((KustomerChat.KnowledgeBaseArticle) -> Swift.Void)?)
 }
-@objc @_Concurrency.MainActor(unsafe) final public class ConfettiView : UIKit.UIView {
+@objc final public class ConfettiView : UIKit.UIView {
   @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) final public func emit(with contents: [KustomerChat.ConfettiView.Content], for duration: Foundation.TimeInterval = 3.0)
-  @_Concurrency.MainActor(unsafe) @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  final public func emit(with contents: [KustomerChat.ConfettiView.Content], for duration: Foundation.TimeInterval = 3.0)
+  @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
   public enum Content {
     public enum Shape {
       case circle
@@ -808,54 +808,55 @@ public enum KnowledgeBaseDataRow {
     case image(UIKit.UIImage, UIKit.UIColor?)
     case text(Swift.String)
   }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
-extension KustomerChat.ConfettiView : QuartzCore.CAAnimationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func animationDidStop(_ animation: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+extension ConfettiView : QuartzCore.CAAnimationDelegate {
+  @objc final public func animationDidStop(_ animation: QuartzCore.CAAnimation, finished flag: Swift.Bool)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NextGrowingTextView : UIKit.UIScrollView {
+@objc @_inheritsConvenienceInitializers open class NextGrowingTextView : UIKit.UIScrollView {
   @_hasMissingDesignatedInitializers open class Delegates {
     open var willChangeHeight: (CoreGraphics.CGFloat) -> Swift.Void
     open var didChangeHeight: (CoreGraphics.CGFloat) -> Swift.Void
     @objc deinit
   }
-  @_Concurrency.MainActor(unsafe) open var delegates: KustomerChat.NextGrowingTextView.Delegates
-  @_Concurrency.MainActor(unsafe) open var textView: UIKit.UITextView {
+  open var delegates: KustomerChat.NextGrowingTextView.Delegates
+  open var textView: UIKit.UITextView {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var minNumberOfLines: Swift.Int {
+  open var minNumberOfLines: Swift.Int {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var maxNumberOfLines: Swift.Int {
+  open var maxNumberOfLines: Swift.Int {
     get
     set
   }
   @available(*, deprecated, message: "Use isAutomaticScrollToBottomEnabled")
-  @_Concurrency.MainActor(unsafe) open var disableAutomaticScrollToBottom: Swift.Bool {
+  open var disableAutomaticScrollToBottom: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var isAutomaticScrollToBottomEnabled: Swift.Bool
-  @_Concurrency.MainActor(unsafe) open var placeholderAttributedText: Foundation.NSAttributedString? {
+  open var isAutomaticScrollToBottomEnabled: Swift.Bool
+  open var placeholderAttributedText: Foundation.NSAttributedString? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputView: UIKit.UIView? {
-    @_Concurrency.MainActor(unsafe) @objc get
+  @objc override dynamic open var inputView: UIKit.UIView? {
+    @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isFirstResponder: Swift.Bool {
-    @_Concurrency.MainActor(unsafe) @objc get
+  @objc override dynamic open var isFirstResponder: Swift.Bool {
+    @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func resignFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
-    @_Concurrency.MainActor(unsafe) @objc get
+  @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
+  @objc override dynamic open func resignFirstResponder() -> Swift.Bool
+  @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func reloadInputViews()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func layoutSubviews()
+  @objc override dynamic open func reloadInputViews()
   @objc deinit
 }
 public enum KustomerConnectionStatus : Swift.String {
@@ -889,8 +890,9 @@ public protocol KUSChatListener {
   func onUserJoined(conversationId: Swift.String, user: KustomerChat.KUSUser)
   func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
   func onUserStopsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
+  func onConversationMerge(sourceConversation: KustomerChat.KUSConversation, targetConversation: KustomerChat.KUSConversation)
 }
-extension KustomerChat.KUSChatListener {
+extension KUSChatListener {
   public func onChatMessageReceived(conversationId: Swift.String, chatMessage: KustomerChat.KUSChatMessage)
   public func onConversationEnded(conversationId: Swift.String, conversation: KustomerChat.KUSConversation)
   public func onConversationReOpened(conversationId: Swift.String, conversation: KustomerChat.KUSConversation)
@@ -900,6 +902,7 @@ extension KustomerChat.KUSChatListener {
   public func onUserJoined(conversationId: Swift.String, user: KustomerChat.KUSUser)
   public func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
   public func onUserStopsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
+  public func onConversationMerge(sourceConversation: KustomerChat.KUSConversation, targetConversation: KustomerChat.KUSConversation)
 }
 public struct KnowledgeBaseCategoryData {
 }
@@ -915,9 +918,11 @@ public struct KUSMLLNode {
     get
   }
 }
+extension UIColor {
+}
 @available(*, unavailable, renamed: "Notification.Name.KUS_reachabilityChanged")
 public let KUSReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
+extension NSNotification.Name {
   public static let KUSReachabilityChanged: Foundation.Notification.Name
 }
 @_hasMissingDesignatedInitializers public class KUSConversation : Swift.CustomStringConvertible {
@@ -955,7 +960,7 @@ public struct NetworkDispatcher {
   public var session: Foundation.URLSession
   public func dispatchRequest(_ request: Foundation.URLRequest, completion: @escaping KustomerChat.NetworkDispatchCompletion) -> Foundation.URLSessionDataTask
 }
-extension KustomerChat.NetworkDispatcher {
+extension NetworkDispatcher {
   public static func defaultSessionConfiguration() -> Foundation.URLSessionConfiguration
   public static func additionalHeaders() -> [Swift.AnyHashable : Any]?
 }
@@ -971,7 +976,7 @@ public enum KUSChatMessageDirection : Swift.String {
 @_hasMissingDesignatedInitializers public class EventBroadcaster {
   @objc deinit
 }
-extension KustomerChat.KustomerUI.Color {
+extension KustomerUI.Color {
   public static var activeLinkColor: UIKit.UIColor
   public static var chatAvatarBackground: UIKit.UIColor
   public static var chatAvatarInitials: UIKit.UIColor
@@ -1052,7 +1057,7 @@ public protocol Coordinator : AnyObject {
   func show(in navigationController: UIKit.UINavigationController?)
   func present(in controller: UIKit.UIViewController)
 }
-extension KustomerChat.Coordinator {
+extension Coordinator {
   public func show(in navigationController: UIKit.UINavigationController?)
   public func present(in controller: UIKit.UIViewController)
 }
@@ -1064,7 +1069,7 @@ public enum KustomerConfigurationError : Swift.Error {
     get
   }
 }
-extension KustomerChat.KustomerConfigurationError : Foundation.LocalizedError {
+extension KustomerConfigurationError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -1234,7 +1239,7 @@ public enum KError : Swift.Error {
   case tooManyChannelKeysInHistoricalCustomerEvents
   case couldNotLoadMessageHistory(error: Swift.Error)
 }
-extension KustomerChat.KError : Foundation.LocalizedError {
+extension KError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -1291,7 +1296,6 @@ public enum ParameterEncodingFailureReason {
 public enum ResponseError : Swift.Error, Foundation.LocalizedError {
   case unableToDecode(Swift.DecodingError)
   case noData(Swift.String)
-  case noContent
 }
 public enum KUSAFError : Swift.Error {
   public enum KUSMultipartEncodingFailureReason {
@@ -1379,7 +1383,11 @@ public enum KUSAFError : Swift.Error {
   case urlRequestValidationFailed(reason: KustomerChat.KUSAFError.KUSURLRequestValidationFailureReason)
   case kustomerAddOnError(error: Foundation.NSError)
 }
-extension KustomerChat.KUSAFError : Foundation.LocalizedError {
+extension KUSAFError {
+}
+extension KUSAFError {
+}
+extension KUSAFError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -1484,21 +1492,12 @@ public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
   final public func shareDebugLogs()
   @objc deinit
 }
-extension KustomerChat.KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
+extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
+  @objc final public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
 }
-extension Foundation.Bundle {
+extension Bundle {
   public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
   public static let kustomerAssets: Foundation.Bundle?
-}
-public enum PushEnvironment : Swift.String {
-  case development
-  case production
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1523,29 +1522,30 @@ public enum PushEnvironment : Swift.String {
   }
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SupportTabViewController : UIKit.UITabBarController {
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
-  @_Concurrency.MainActor(unsafe) final public var isCurrentlyVisible: Swift.Bool {
+@objc @_hasMissingDesignatedInitializers final public class SupportTabViewController : UIKit.UITabBarController {
+  @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewDidLayoutSubviews()
+  final public var isCurrentlyVisible: Swift.Bool {
     get
   }
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
 }
-extension KustomerChat.SupportTabViewController : KustomerChat.KUSChatListener {
-  @_Concurrency.MainActor(unsafe) final public func onUnreadCountChange(count: Swift.Int)
+extension SupportTabViewController : KustomerChat.KUSChatListener {
+  final public func onUnreadCountChange(count: Swift.Int)
 }
-extension KustomerChat.SupportTabViewController : KustomerChat.CoordinatorDelegate {
-  @_Concurrency.MainActor(unsafe) final public func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
+extension SupportTabViewController : KustomerChat.CoordinatorDelegate {
+  final public func coordinatorDidHide(_ coordinator: KustomerChat.Coordinator)
 }
 public enum KustomerError : Swift.Error {
   case networkError(KustomerChat.NetworkError)
   case someError(Swift.String)
 }
-extension KustomerChat.KustomerError : Foundation.LocalizedError {
+extension KustomerError : Foundation.LocalizedError {
   public var failureReason: Swift.String? {
     get
   }
@@ -1609,12 +1609,12 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
 }
 public enum KustomerUI {
 }
-extension KustomerChat.KustomerUI {
+extension KustomerUI {
   @_hasMissingDesignatedInitializers public class Color {
     @objc deinit
   }
 }
-extension KustomerChat.KustomerUI.Color {
+extension KustomerUI.Color {
   public static var systemBackground: UIKit.UIColor {
     get
   }
@@ -1647,12 +1647,12 @@ extension KustomerChat.KustomerUI.Color {
 public struct KnowledgeBaseDomain : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
-extension KustomerChat.KnowledgeBaseDomain {
+extension KnowledgeBaseDomain {
   public struct Attributes : Swift.Decodable {
     public init(from decoder: Swift.Decoder) throws
   }
 }
-extension KustomerChat.KnowledgeBaseDomain {
+extension KnowledgeBaseDomain {
   public enum Status : Swift.Codable, Swift.RawRepresentable {
     public typealias RawValue = Swift.String
     case ready
@@ -1709,6 +1709,3 @@ extension KustomerChat.KUSConversationStatus : Swift.Hashable {}
 extension KustomerChat.KustomerLogType : Swift.Equatable {}
 extension KustomerChat.KustomerLogType : Swift.Hashable {}
 extension KustomerChat.KustomerLogType : Swift.RawRepresentable {}
-extension KustomerChat.PushEnvironment : Swift.Equatable {}
-extension KustomerChat.PushEnvironment : Swift.Hashable {}
-extension KustomerChat.PushEnvironment : Swift.RawRepresentable {}

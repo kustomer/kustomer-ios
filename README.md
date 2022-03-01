@@ -26,8 +26,6 @@ Embed [Kustomer](https://www.kustomer.com/) in your own products with our chat S
 
 ## Installation
 
-Note: Starting with iOS version 2.6.0, the PubNub library is downloaded as a dependency if installing the SDK using the Swift Package Manager or Cocoapods.
-
 #### Swift Package Manager
 1. Create or open your project inside of Xcode
 2. Navigate to File > Swift Packages > Add Package Dependency
@@ -39,14 +37,11 @@ Note: Starting with iOS version 2.6.0, the PubNub library is downloaded as a dep
 2. Run `pod update` or `pod install` on your project
 
 #### Manual
-1. Add `KustomerChat.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
+1. Add `KustomerChat.xcframework` and `KustomerPubSub.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
 2. Check `Embed & Sign` for both frameworks.
-3. Add PubNub using your preferred method. You can find details in their documentation [here](https://www.pubnub.com/docs/sdks/swift).
-
-CALLOUT: If you add PubNub as a git submodule, you must install the PubNub version required by our podspec/package.swift.
 
 #### Manual - Static version
-The [release page](../../releases) for each version contains a static version of the SDK. To install, download and unzip `libKustomerChatStatic.xcframework` and `KustomerAssets.bundle`, and add them to your project. You will also need to install the PubNub version required by our podspec/package.swift using your preferred method.
+The [release page](../../releases) for each version contains a static version of the SDK. To install, download and unzip `libKustomerPubSub.xcframework`, `libKustomerChatStatic.xcframework` and `KustomerAssets.bundle`, and add them to your project.
 
 ## Post-Install
 1. Add photo and camera privacy descriptions to your `Info.plist`.
