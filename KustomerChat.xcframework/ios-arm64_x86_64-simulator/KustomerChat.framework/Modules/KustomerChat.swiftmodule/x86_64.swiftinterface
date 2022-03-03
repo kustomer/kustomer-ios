@@ -9,9 +9,9 @@ import CoreImage
 import Dispatch
 import Foundation
 @_exported import KustomerChat
-import KustomerPubSub
 import MobileCoreServices
 import OSLog
+import PubNub
 import QuickLook
 import SafariServices
 import Swift
@@ -670,7 +670,7 @@ public class KustomerOptions {
     get
     set
   }
-  public var pushEnvironment: KustomerPubSub.KustomerPubNubV3.PushEnvironment
+  public var pushEnvironment: KustomerChat.PushEnvironment
   public var hideNewConversationButtonInClosedChat: Swift.Bool
   public var showAnimationFor5StarCSATRatings: Swift.Bool
   public var onShow: (() -> Swift.Void)?
@@ -1296,6 +1296,7 @@ public enum ParameterEncodingFailureReason {
 public enum ResponseError : Swift.Error, Foundation.LocalizedError {
   case unableToDecode(Swift.DecodingError)
   case noData(Swift.String)
+  case noContent
 }
 public enum KUSAFError : Swift.Error {
   public enum KUSMultipartEncodingFailureReason {
@@ -1498,6 +1499,15 @@ extension KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
 extension Bundle {
   public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
   public static let kustomerAssets: Foundation.Bundle?
+}
+public enum PushEnvironment : Swift.String {
+  case development
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class Notify {
   public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
@@ -1709,3 +1719,6 @@ extension KustomerChat.KUSConversationStatus : Swift.Hashable {}
 extension KustomerChat.KustomerLogType : Swift.Equatable {}
 extension KustomerChat.KustomerLogType : Swift.Hashable {}
 extension KustomerChat.KustomerLogType : Swift.RawRepresentable {}
+extension KustomerChat.PushEnvironment : Swift.Equatable {}
+extension KustomerChat.PushEnvironment : Swift.Hashable {}
+extension KustomerChat.PushEnvironment : Swift.RawRepresentable {}
