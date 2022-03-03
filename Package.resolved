@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PubNub",
+        "repositoryURL": "https://github.com/pubnub/swift.git",
+        "state": {
+          "branch": null,
+          "revision": "749fdf14c40eaa53ecb9ffdd7df7c801a7669144",
+          "version": "5.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
