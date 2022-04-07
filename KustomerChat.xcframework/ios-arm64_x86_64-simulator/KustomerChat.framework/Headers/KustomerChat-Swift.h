@@ -212,6 +212,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+@class UIColor;
+@class NSNumber;
+enum FontStyle : NSInteger;
+
+SWIFT_PROTOCOL("_TtP12KustomerChat14FontProperties_")
+@protocol FontProperties
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+@end
+
+
+/// A class defining the styles that can be applied to the parsed Markdown. The <code>fontName</code> property is optional, and if it’s not set then the <code>fontName</code> property of the Body style will be applied.
+/// If that is not set, then the system default will be used.
+SWIFT_CLASS("_TtC12KustomerChat11BasicStyles")
+@interface BasicStyles : NSObject <FontProperties>
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 @class NSCoder;
@@ -226,13 +251,20 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 @end
 
 @class CAAnimation;
-@class NSNumber;
 
 @interface ConfettiView (SWIFT_EXTENSION(KustomerChat)) <CAAnimationDelegate>
 - (void)animationDidStop:(CAAnimation * _Nonnull)animation finished:(BOOL)flag;
 @end
 
 
+
+
+typedef SWIFT_ENUM(NSInteger, FontStyle, open) {
+  FontStyleNormal = 0,
+  FontStyleBold = 1,
+  FontStyleItalic = 2,
+  FontStyleBoldItalic = 3,
+};
 
 
 
@@ -260,6 +292,33 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
+
+
+SWIFT_PROTOCOL("_TtP12KustomerChat14LineProperties_")
+@protocol LineProperties
+@property (nonatomic) NSTextAlignment alignment;
+@property (nonatomic) CGFloat lineSpacing;
+@property (nonatomic) CGFloat paragraphSpacing;
+@end
+
+
+SWIFT_CLASS("_TtC12KustomerChat10LineStyles")
+@interface LineStyles : NSObject <FontProperties, LineProperties>
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+@property (nonatomic) NSTextAlignment alignment;
+@property (nonatomic) CGFloat lineSpacing;
+@property (nonatomic) CGFloat paragraphSpacing;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12KustomerChat10LinkStyles")
+@interface LinkStyles : BasicStyles
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -297,6 +356,9 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 
 
 
+
+
+
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class UNNotification;
@@ -313,7 +375,6 @@ SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
@@ -326,6 +387,16 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+/// A class that takes a <a href="https://daringfireball.net/projects/markdown/">Markdown</a> string or file and returns an NSAttributedString with the applied styles. Supports Dynamic Type.
+SWIFT_CLASS("_TtC12KustomerChat14SwiftyMarkdown")
+@interface SwiftyMarkdown : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -604,6 +675,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+@class UIColor;
+@class NSNumber;
+enum FontStyle : NSInteger;
+
+SWIFT_PROTOCOL("_TtP12KustomerChat14FontProperties_")
+@protocol FontProperties
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+@end
+
+
+/// A class defining the styles that can be applied to the parsed Markdown. The <code>fontName</code> property is optional, and if it’s not set then the <code>fontName</code> property of the Body style will be applied.
+/// If that is not set, then the system default will be used.
+SWIFT_CLASS("_TtC12KustomerChat11BasicStyles")
+@interface BasicStyles : NSObject <FontProperties>
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 @class NSCoder;
@@ -618,13 +714,20 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 @end
 
 @class CAAnimation;
-@class NSNumber;
 
 @interface ConfettiView (SWIFT_EXTENSION(KustomerChat)) <CAAnimationDelegate>
 - (void)animationDidStop:(CAAnimation * _Nonnull)animation finished:(BOOL)flag;
 @end
 
 
+
+
+typedef SWIFT_ENUM(NSInteger, FontStyle, open) {
+  FontStyleNormal = 0,
+  FontStyleBold = 1,
+  FontStyleItalic = 2,
+  FontStyleBoldItalic = 3,
+};
 
 
 
@@ -652,6 +755,33 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
+
+
+SWIFT_PROTOCOL("_TtP12KustomerChat14LineProperties_")
+@protocol LineProperties
+@property (nonatomic) NSTextAlignment alignment;
+@property (nonatomic) CGFloat lineSpacing;
+@property (nonatomic) CGFloat paragraphSpacing;
+@end
+
+
+SWIFT_CLASS("_TtC12KustomerChat10LineStyles")
+@interface LineStyles : NSObject <FontProperties, LineProperties>
+@property (nonatomic, copy) NSString * _Nullable fontName;
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic) enum FontStyle fontStyle;
+@property (nonatomic) NSTextAlignment alignment;
+@property (nonatomic) CGFloat lineSpacing;
+@property (nonatomic) CGFloat paragraphSpacing;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12KustomerChat10LinkStyles")
+@interface LinkStyles : BasicStyles
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -689,6 +819,9 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 
 
 
+
+
+
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class UNNotification;
@@ -705,7 +838,6 @@ SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
@@ -718,6 +850,16 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+/// A class that takes a <a href="https://daringfireball.net/projects/markdown/">Markdown</a> string or file and returns an NSAttributedString with the applied styles. Supports Dynamic Type.
+SWIFT_CLASS("_TtC12KustomerChat14SwiftyMarkdown")
+@interface SwiftyMarkdown : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

@@ -4,13 +4,13 @@
 "com.kustomer.Additional feedback removed" = "Ek geri bildirim kaldırıldı";
 "com.kustomer.Agent" = "Ajan";
 "com.kustomer.Answers" = "Yanıtlar";
-"com.kustomer.Are you sure you want to end this chat?" = "Bu sohbeti bitirmek istediğinizden emin misiniz?";
+"com.kustomer.Are you sure you want to end this chat?" = "Görüşmeyi sonlandırmak üzeresiniz, onaylıyor musunuz?";
 "com.kustomer.Attached file" = "Ekli dosya";
 "com.kustomer.Attachment" = "Ek dosya";
 "com.kustomer.Browse files" = "Dosyalara göz atın";
 "com.kustomer.Camera roll" = "Film rulosu";
 "com.kustomer.Can't load chat" = "sohbet yüklenemiyor";
-"com.kustomer.Cancel" = "İptal etmek";
+"com.kustomer.Cancel" = "Vazgeç";
 "com.kustomer.Cancelled! Tap to retry." = "İptal edildi! Tekrar denemek için tıkla.";
 "com.kustomer.Chat" = "Sohbet etmek";
 "com.kustomer.Chat has ended" = "Sohbet sona erdi";
@@ -25,7 +25,7 @@
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Yorumunuzda yaptığınız değişiklikleri kaydetmek istiyor musunuz?";
 "com.kustomer.Done" = "Tamamlandı";
 "com.kustomer.Edit comment" = "Yorumu düzenle";
-"com.kustomer.End Chat" = "Sohbeti bitir";
+"com.kustomer.End Chat" = "Onayla";
 "com.kustomer.Ended" = "Bitti";
 "com.kustomer.Error" = "Hata";
 "com.kustomer.Error!" = "Hata!";
@@ -47,7 +47,7 @@
 "com.kustomer.Message failed to send!" = "Mesaj gönderilemedi!";
 "com.kustomer.Moved" = "Etkilenmiş";
 "com.kustomer.Never mind" = "Boşver";
-"com.kustomer.New Conversation" = "Yeni Konuşma";
+"com.kustomer.New Conversation" = "Görüşmeyi Başlat";
 "com.kustomer.New message" = "Yeni Mesaj";
 "com.kustomer.No articles" = "makale yok";
 "com.kustomer.No conversations yet" = "Henüz görüşme yok";
