@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'PubNubSwift', '~> 5.0.0'
-  s.dependency 'Sentry', '~> 7.23.0'
+  s.dependency 'Sentry', '~> 7.0.0'
 end
