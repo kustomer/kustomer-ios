@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ yazır...";
+"com.kustomer.100+ results found" = "100+ nəticə tapıldı";
 "com.kustomer.Add additional feedback" = "Əlavə rəy əlavə edin";
 "com.kustomer.Additional Feedback" = "Əlavə Əlaqə";
 "com.kustomer.Additional feedback removed" = "Əlavə rəy silindi";
@@ -24,12 +25,13 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Reytinqinizi və rəyinizi silmək istəyirsiniz?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Şərhinizdə etdiyiniz dəyişiklikləri yadda saxlamaq istəyirsiniz?";
 "com.kustomer.Done" = "Bitdi";
+"com.kustomer.Edit additional feedback" = "Əlavə rəyi redaktə edin";
 "com.kustomer.Edit comment" = "Şərhi redaktə edin";
 "com.kustomer.End Chat" = "Söhbəti bitir";
 "com.kustomer.Ended" = "Bitdi";
-"com.kustomer.Error" = "Səhv";
+"com.kustomer.Error" = "Xəta";
 "com.kustomer.Error!" = "Xəta!";
-"com.kustomer.Error. Tap to retry." = "Səhv. Yenidən cəhd etmək üçün toxunun.";
+"com.kustomer.Error. Tap to retry." = "Xəta. Yenidən cəhd etmək üçün toxunun.";
 "com.kustomer.FAQ" = "Tez-tez verilən suallar";
 "com.kustomer.Help Article" = "Kömək Məqaləsi";
 "com.kustomer.Image" = "Şəkil";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Məqalə yoxdur";
 "com.kustomer.No conversations yet" = "Hələ söhbət yoxdur";
 "com.kustomer.No internet connection" = "İnternet bağlantısı yoxdur";
+"com.kustomer.No results" = "Nəticə yoxdur";
 "com.kustomer.No text" = "Mətn yoxdur";
 "com.kustomer.None of your personal information was included" = "Şəxsi məlumatlarınızdan heç biri daxil edilməyib";
 "com.kustomer.Not enough disk space" = "Disk sahəsi kifayət deyil";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Foto kitabxana";
 "com.kustomer.Please leave a message" = "Zəhmət olmasa bir mesaj buraxın";
 "com.kustomer.Please select an option..." = "Lütfən, seçim seçin...";
+"com.kustomer.Please try another search term" = "Lütfən, başqa axtarış terminini yoxlayın";
 "com.kustomer.Reconnect" = "Yenidən qoşulun";
 "com.kustomer.Reconnecting..." = "Yenidən qoşulur...";
 "com.kustomer.Remove" = "Sil";

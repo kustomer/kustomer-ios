@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ rašo...";
+"com.kustomer.100+ results found" = "Rasta daugiau nei 100 rezultatų";
 "com.kustomer.Add additional feedback" = "Pridėkite papildomų atsiliepimų";
 "com.kustomer.Additional Feedback" = "Papildomi atsiliepimai";
 "com.kustomer.Additional feedback removed" = "Papildomas atsiliepimas pašalintas";
@@ -22,8 +23,9 @@
 "com.kustomer.Conversation moved to another customer" = "Pokalbis perkeltas į kitą klientą";
 "com.kustomer.Delete" = "Ištrinti";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ar norite pašalinti įvertinimą ir atsiliepimą?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Ar norite išsaugoti komentaro pakeitimus, kuriuos atlikote?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Ar norite išsaugoti komentaro pakeitimus?";
 "com.kustomer.Done" = "padaryta";
+"com.kustomer.Edit additional feedback" = "Redaguoti papildomą atsiliepimą";
 "com.kustomer.Edit comment" = "Redaguoti komentarą";
 "com.kustomer.End Chat" = "Baigti pokalbį";
 "com.kustomer.Ended" = "Baigėsi";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Jokių straipsnių";
 "com.kustomer.No conversations yet" = "Pokalbių dar nėra";
 "com.kustomer.No internet connection" = "Nėra interneto ryšio";
+"com.kustomer.No results" = "Jokių rezultatų";
 "com.kustomer.No text" = "Jokio teksto";
 "com.kustomer.None of your personal information was included" = "Jokia jūsų asmeninė informacija nebuvo įtraukta";
 "com.kustomer.Not enough disk space" = "Nėra pakankamai vietos diske";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Nuotraukų biblioteka";
 "com.kustomer.Please leave a message" = "Prašome palikti žinutę";
 "com.kustomer.Please select an option..." = "Pasirinkite parinktį...";
+"com.kustomer.Please try another search term" = "Bandykite kitą paieškos terminą";
 "com.kustomer.Reconnect" = "Prisijunkite iš naujo";
 "com.kustomer.Reconnecting..." = "Jungiamasi iš naujo...";
 "com.kustomer.Remove" = "Pašalinti";

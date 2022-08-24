@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ est typing...";
+"com.kustomer.100+ results found" = "100+ eventus inventi";
 "com.kustomer.Add additional feedback" = "Add additional feedback";
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Additional feedback remotum";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Visne removere tuum rating et videre?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Visne servare mutationes tuas in commento tuo factas?";
 "com.kustomer.Done" = "Done";
+"com.kustomer.Edit additional feedback" = "Recensere additional feedback";
 "com.kustomer.Edit comment" = "Recensere comment";
 "com.kustomer.End Chat" = "Finis Chat";
 "com.kustomer.Ended" = "Finivit";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Nulla vasa";
 "com.kustomer.No conversations yet" = "Nulla colloquia adhuc";
 "com.kustomer.No internet connection" = "Nulla conexio";
+"com.kustomer.No results" = "Nihil eventorum";
 "com.kustomer.No text" = "No text";
 "com.kustomer.None of your personal information was included" = "Nulla inclusa personalis notitia tuae";
 "com.kustomer.Not enough disk space" = "Non satis orbis tractus";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Quaeso relinquere nuntium";
 "com.kustomer.Please select an option..." = "Placere eligere optionem...";
+"com.kustomer.Please try another search term" = "Quaeso, experire aliam inquisitionis terminum";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Reconnecting...";
 "com.kustomer.Remove" = "Aufer";
@@ -75,7 +79,7 @@
 "com.kustomer.Submit" = "Submit";
 "com.kustomer.Survey" = "Survey";
 "com.kustomer.Take photo" = "Tolle Photo";
-"com.kustomer.Tap to load..." = "Tap ut turpis...";
+"com.kustomer.Tap to load..." = "Tap ad onus ...";
 "com.kustomer.Tap to open" = "ICTUS aperire";
 "com.kustomer.Thanks for your feedback" = "Gratias tibi pro feedback";
 "com.kustomer.That article" = "Quod articulum";
@@ -83,10 +87,10 @@
 "com.kustomer.This conversation is read-only" = "Colloquium hoc solum legitur";
 "com.kustomer.Try again" = "Iterum conare";
 "com.kustomer.Type a message..." = "Typus nuntium...";
-"com.kustomer.Unavailable message goes here" = "Hic nuntius inaccessibilis";
+"com.kustomer.Unavailable message goes here" = "Unavailable nuntius hic accedit";
 "com.kustomer.Updated" = "renovata";
 "com.kustomer.Waiting for a response from" = "Exspectans responsum a";
-"com.kustomer.We will get back to you as soon as we are online!" = "Ad te redibimus quam primum online sumus!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Nos ad vos redire quam primum sumus online!";
 "com.kustomer.Yes" = "Ita";
 "com.kustomer.You changed your additional feedback comment" = "Mutasti additional feedback comment";
 "com.kustomer.You're offline. Check your connection." = "Tu es online. Compesce nexum tuum.";

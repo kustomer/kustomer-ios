@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ anaandika...";
+"com.kustomer.100+ results found" = "Matokeo 100+ yamepatikana";
 "com.kustomer.Add additional feedback" = "Ongeza maoni ya ziada";
 "com.kustomer.Additional Feedback" = "Maoni ya Ziada";
 "com.kustomer.Additional feedback removed" = "Maoni ya ziada yameondolewa";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Je, ungependa kuondoa ukadiriaji na maoni yako?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Je, ungependa kuhifadhi mabadiliko uliyofanya kwenye maoni yako?";
 "com.kustomer.Done" = "Imekamilika";
+"com.kustomer.Edit additional feedback" = "Badilisha maoni ya ziada";
 "com.kustomer.Edit comment" = "Hariri maoni";
 "com.kustomer.End Chat" = "Maliza Gumzo";
 "com.kustomer.Ended" = "Imeisha";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Hakuna makala";
 "com.kustomer.No conversations yet" = "Hakuna mazungumzo bado";
 "com.kustomer.No internet connection" = "Hakuna muunganisho wa intaneti";
+"com.kustomer.No results" = "Hakuna matokeo";
 "com.kustomer.No text" = "Hakuna maandishi";
 "com.kustomer.None of your personal information was included" = "Hakuna taarifa yako ya kibinafsi iliyojumuishwa";
 "com.kustomer.Not enough disk space" = "Hakuna nafasi ya kutosha ya diski";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Maktaba ya picha";
 "com.kustomer.Please leave a message" = "Tafadhali acha ujumbe";
 "com.kustomer.Please select an option..." = "Tafadhali chagua chaguo...";
+"com.kustomer.Please try another search term" = "Tafadhali jaribu neno lingine la utafutaji";
 "com.kustomer.Reconnect" = "Unganisha upya";
 "com.kustomer.Reconnecting..." = "Inaunganisha upya...";
 "com.kustomer.Remove" = "Ondoa";

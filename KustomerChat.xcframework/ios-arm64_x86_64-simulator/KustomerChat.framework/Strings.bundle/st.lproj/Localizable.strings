@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ oa ngola...";
+"com.kustomer.100+ results found" = "100+ liphetho tse fumanoeng";
 "com.kustomer.Add additional feedback" = "Kenya maikutlo a eketsehileng";
 "com.kustomer.Additional Feedback" = "Maikutlo a Tlatsetso";
 "com.kustomer.Additional feedback removed" = "Maikutlo a mang a tlositsoe";
@@ -16,7 +17,7 @@
 "com.kustomer.Chat has ended" = "Moqoqo o felile";
 "com.kustomer.Chat history" = "Histori ea puisano";
 "com.kustomer.Chat is currently unavailable" = "Chat ha e teng hajoale";
-"com.kustomer.Chat with support" = "Qoqa le tšehetso";
+"com.kustomer.Chat with support" = "Buisana le tšehetso";
 "com.kustomer.Conversation ended" = "Moqoqo o felile";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Moqoqo o kopantswe ho ba moqoqo o mong.\n\nTobetsa ho kena moqoqong o motjha.";
 "com.kustomer.Conversation moved to another customer" = "Moqoqo o fetiselitsoe ho moreki e mong";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Na u batla ho tlosa lintlha le maikutlo a hau?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Na u batla ho boloka liphetoho tseo u li entseng ho maikutlo a hau?";
 "com.kustomer.Done" = "E felile";
+"com.kustomer.Edit additional feedback" = "Fetola maikutlo a eketsehileng";
 "com.kustomer.Edit comment" = "Fetola maikutlo";
 "com.kustomer.End Chat" = "Qetella Moqoqo";
 "com.kustomer.Ended" = "E felile";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Ha ho lingoliloeng";
 "com.kustomer.No conversations yet" = "Ha ho na lipuisano";
 "com.kustomer.No internet connection" = "Ha ho khokahanyo ea Marang-rang";
+"com.kustomer.No results" = "Ha ho liphetho";
 "com.kustomer.No text" = "Ha ho mongolo";
 "com.kustomer.None of your personal information was included" = "Ha ho lintlha tsa hau tse kenyellelitsoeng";
 "com.kustomer.Not enough disk space" = "Ha ho sebaka se lekaneng sa disk";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Laeborari ea linepe";
 "com.kustomer.Please leave a message" = "Ke kopa o siele molaetsa";
 "com.kustomer.Please select an option..." = "Ka kopo, khetha khetho...";
+"com.kustomer.Please try another search term" = "Ka kopo, leka lentsoe le leng la ho batla";
 "com.kustomer.Reconnect" = "Kopana hape";
 "com.kustomer.Reconnecting..." = "E hokahanya hape...";
 "com.kustomer.Remove" = "Tlosa";

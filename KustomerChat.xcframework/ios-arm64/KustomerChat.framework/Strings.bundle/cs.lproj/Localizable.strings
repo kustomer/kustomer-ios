@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ píše...";
+"com.kustomer.100+ results found" = "Nalezeno 100+ výsledků";
 "com.kustomer.Add additional feedback" = "Přidejte další zpětnou vazbu";
 "com.kustomer.Additional Feedback" = "Další zpětná vazba";
 "com.kustomer.Additional feedback removed" = "Dodatečná zpětná vazba byla odstraněna";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Chcete odstranit své hodnocení a zpětnou vazbu?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Chcete uložit změny, které jste ve svém komentáři provedli?";
 "com.kustomer.Done" = "Hotovo";
+"com.kustomer.Edit additional feedback" = "Upravit další zpětnou vazbu";
 "com.kustomer.Edit comment" = "Upravit komentář";
 "com.kustomer.End Chat" = "Ukončit chat";
 "com.kustomer.Ended" = "Skončilo";
@@ -45,13 +47,14 @@
 "com.kustomer.Message" = "Zpráva";
 "com.kustomer.Message failed to send" = "Odeslání zprávy se nezdařilo";
 "com.kustomer.Message failed to send!" = "Odeslání zprávy se nezdařilo!";
-"com.kustomer.Moved" = "Přestěhovala";
+"com.kustomer.Moved" = "Přestěhoval";
 "com.kustomer.Never mind" = "Nevadí";
 "com.kustomer.New Conversation" = "Nová konverzace";
 "com.kustomer.New message" = "Nová zpráva";
 "com.kustomer.No articles" = "Žádné články";
 "com.kustomer.No conversations yet" = "Zatím žádné konverzace";
 "com.kustomer.No internet connection" = "Žádné internetové připojení";
+"com.kustomer.No results" = "Žádné výsledky";
 "com.kustomer.No text" = "Žádný text";
 "com.kustomer.None of your personal information was included" = "Nebyly zahrnuty žádné vaše osobní údaje";
 "com.kustomer.Not enough disk space" = "Nedostatek místa na disku";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Knihovna fotografií";
 "com.kustomer.Please leave a message" = "Prosím zanechte zprávu";
 "com.kustomer.Please select an option..." = "Prosím vyberte možnost...";
+"com.kustomer.Please try another search term" = "Zkuste prosím jiný hledaný výraz";
 "com.kustomer.Reconnect" = "Znovu se připojte";
 "com.kustomer.Reconnecting..." = "Opětovné připojení...";
 "com.kustomer.Remove" = "Odstranit";

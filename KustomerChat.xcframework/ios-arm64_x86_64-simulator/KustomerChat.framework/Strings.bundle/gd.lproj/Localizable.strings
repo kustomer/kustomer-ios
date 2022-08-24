@@ -1,4 +1,5 @@
-"com.kustomer.%@ is typing..." = "Tha %@ a&#39; sgrìobhadh...";
+"com.kustomer.%@ is typing..." = "Tha %@ a&#39; taipeadh...";
+"com.kustomer.100+ results found" = "100+ toradh air an lorg";
 "com.kustomer.Add additional feedback" = "Cuir fios air ais a bharrachd ris";
 "com.kustomer.Additional Feedback" = "Fios air ais a bharrachd";
 "com.kustomer.Additional feedback removed" = "Chaidh fios air ais a bharrachd a thoirt air falbh";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "A bheil thu airson do rangachadh agus fios air ais a thoirt air falbh?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "A bheil thu airson na h-atharraichean a rinn thu air do bheachd a shàbhaladh?";
 "com.kustomer.Done" = "Dèanta";
+"com.kustomer.Edit additional feedback" = "Deasaich fios air ais a bharrachd";
 "com.kustomer.Edit comment" = "Deasaich beachd";
 "com.kustomer.End Chat" = "Cuir crìoch air còmhradh";
 "com.kustomer.Ended" = "Chrìochnaich";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Gun artaigilean";
 "com.kustomer.No conversations yet" = "Gun chòmhraidhean fhathast";
 "com.kustomer.No internet connection" = "Gun cheangal eadar-lìn";
+"com.kustomer.No results" = "Gun thoraidhean";
 "com.kustomer.No text" = "Gun teacsa";
 "com.kustomer.None of your personal information was included" = "Cha deach gin den fhiosrachadh pearsanta agad a thoirt a-steach";
 "com.kustomer.Not enough disk space" = "Chan eil àite diosg gu leòr ann";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Leabharlann dhealbhan";
 "com.kustomer.Please leave a message" = "Feuch an fhàg thu teachdaireachd";
 "com.kustomer.Please select an option..." = "Feuch an tagh thu roghainn ...";
+"com.kustomer.Please try another search term" = "Feuch teirm rannsachaidh eile";
 "com.kustomer.Reconnect" = "Dèan ath-cheangal";
 "com.kustomer.Reconnecting..." = "Ag ath-cheangal...";
 "com.kustomer.Remove" = "Thoir air falbh";
@@ -87,7 +91,7 @@
 "com.kustomer.Updated" = "Air ùrachadh";
 "com.kustomer.Waiting for a response from" = "A’ feitheamh ri freagairt bho";
 "com.kustomer.We will get back to you as soon as we are online!" = "Gheibh sinn air ais thugad cho luath ‘s a bhios sinn air-loidhne!";
-"com.kustomer.Yes" = "tha";
+"com.kustomer.Yes" = "Tha";
 "com.kustomer.You changed your additional feedback comment" = "Dh&#39;atharraich thu am beachd fios-air-ais a bharrachd agad";
 "com.kustomer.You're offline. Check your connection." = "Tha thu far loidhne. Thoir sùil air a’ cheangal agad.";
 "com.kustomer.Your existing conversations will be here." = "Bidh na còmhraidhean a th’ agad mu thràth an seo.";

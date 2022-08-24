@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ kirjoittaa...";
+"com.kustomer.100+ results found" = "Yli 100 tulosta löytyi";
 "com.kustomer.Add additional feedback" = "Lisää palautetta";
 "com.kustomer.Additional Feedback" = "Lisäpalaute";
 "com.kustomer.Additional feedback removed" = "Lisäpalaute poistettu";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Haluatko poistaa arviosi ja palautteesi?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Haluatko tallentaa kommenttiisi tekemäsi muutokset?";
 "com.kustomer.Done" = "Tehty";
+"com.kustomer.Edit additional feedback" = "Muokkaa lisäpalautetta";
 "com.kustomer.Edit comment" = "Muokkaa kommenttia";
 "com.kustomer.End Chat" = "Lopeta keskustelu";
 "com.kustomer.Ended" = "Päättyi";
@@ -52,9 +54,10 @@
 "com.kustomer.No articles" = "Ei artikkeleita";
 "com.kustomer.No conversations yet" = "Ei keskusteluja vielä";
 "com.kustomer.No internet connection" = "Ei Internet-yhteyttä";
+"com.kustomer.No results" = "Ei tuloksia";
 "com.kustomer.No text" = "Ei tekstiä";
 "com.kustomer.None of your personal information was included" = "Mitään henkilökohtaisia tietojasi ei sisällytetty";
-"com.kustomer.Not enough disk space" = "Ei tarpeeksi levytilaa";
+"com.kustomer.Not enough disk space" = "Ei riittävästi levytilaa";
 "com.kustomer.Not found" = "Ei löydetty";
 "com.kustomer.Okay" = "Okei";
 "com.kustomer.Open in browser" = "Avaa selaimessa";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Valokuvakirjasto";
 "com.kustomer.Please leave a message" = "Jätä viesti";
 "com.kustomer.Please select an option..." = "Ole hyvä ja valitse vaihtoehto...";
+"com.kustomer.Please try another search term" = "Kokeile toista hakutermiä";
 "com.kustomer.Reconnect" = "Yhdistä uudelleen";
 "com.kustomer.Reconnecting..." = "Yhdistetään uudelleen...";
 "com.kustomer.Remove" = "Poista";
@@ -75,7 +79,7 @@
 "com.kustomer.Submit" = "Lähetä";
 "com.kustomer.Survey" = "Kysely";
 "com.kustomer.Take photo" = "Ota valokuva";
-"com.kustomer.Tap to load..." = "Napauta ladataksesi...";
+"com.kustomer.Tap to load..." = "Lataa napauttamalla...";
 "com.kustomer.Tap to open" = "Avaa napauttamalla";
 "com.kustomer.Thanks for your feedback" = "Kiitos palautteestasi";
 "com.kustomer.That article" = "Tuo artikkeli";

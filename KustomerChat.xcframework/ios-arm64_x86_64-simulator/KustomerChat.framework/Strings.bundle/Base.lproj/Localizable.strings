@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ is typing...";
+"com.kustomer.100+ results found" = "100+ results found";
 "com.kustomer.Add additional feedback" = "Add additional feedback";
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Additional feedback removed";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Do you want to remove your rating and feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Do you want to save the changes you made to your comment?";
 "com.kustomer.Done" = "Done";
+"com.kustomer.Edit additional feedback" = "Edit additional feedback";
 "com.kustomer.Edit comment" = "Edit comment";
 "com.kustomer.End Chat" = "End Chat";
 "com.kustomer.Ended" = "Ended";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "No articles";
 "com.kustomer.No conversations yet" = "No conversations yet";
 "com.kustomer.No internet connection" = "No internet connection";
+"com.kustomer.No results" = "No results";
 "com.kustomer.No text" = "No text";
 "com.kustomer.None of your personal information was included" = "None of your personal information was included";
 "com.kustomer.Not enough disk space" = "Not enough disk space";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Please leave a message";
 "com.kustomer.Please select an option..." = "Please select an option...";
+"com.kustomer.Please try another search term" = "Please try another search term";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Reconnecting...";
 "com.kustomer.Remove" = "Remove";

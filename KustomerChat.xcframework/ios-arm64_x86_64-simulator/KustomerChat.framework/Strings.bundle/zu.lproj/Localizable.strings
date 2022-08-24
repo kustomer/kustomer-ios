@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ uyathayipha...";
+"com.kustomer.100+ results found" = "100+ imiphumela etholiwe";
 "com.kustomer.Add additional feedback" = "Engeza impendulo eyengeziwe";
 "com.kustomer.Additional Feedback" = "Impendulo Eyengeziwe";
 "com.kustomer.Additional feedback removed" = "Impendulo eyengeziwe isusiwe";
@@ -22,8 +23,9 @@
 "com.kustomer.Conversation moved to another customer" = "Ingxoxo ihanjiswe kwelinye ikhasimende";
 "com.kustomer.Delete" = "Susa";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Uyafuna ukususa isilinganiso sakho nempendulo?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Uyafuna ukulondoloza izinguquko ozenzile emazwaneni akho?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Ingabe ufuna ukulondoloza izinguquko ozenzile emazwaneni akho?";
 "com.kustomer.Done" = "Kwenziwe";
+"com.kustomer.Edit additional feedback" = "Hlela impendulo eyengeziwe";
 "com.kustomer.Edit comment" = "Hlela amazwana";
 "com.kustomer.End Chat" = "Qeda Ingxoxo";
 "com.kustomer.Ended" = "Iphelile";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Azikho izindatshana";
 "com.kustomer.No conversations yet" = "Azikho izingxoxo okwamanje";
 "com.kustomer.No internet connection" = "Alukho uxhumano lwe-inthanethi";
+"com.kustomer.No results" = "Ayikho imiphumela";
 "com.kustomer.No text" = "Awukho umbhalo";
 "com.kustomer.None of your personal information was included" = "Alukho ulwazi lwakho lomuntu siqu olufakiwe";
 "com.kustomer.Not enough disk space" = "Asikho isikhala esanele sediski";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Ilabhulali yezithombe";
 "com.kustomer.Please leave a message" = "Sicela ushiye umlayezo";
 "com.kustomer.Please select an option..." = "Sicela ukhethe inketho...";
+"com.kustomer.Please try another search term" = "Sicela uzame elinye igama lokusesha";
 "com.kustomer.Reconnect" = "Xhuma kabusha";
 "com.kustomer.Reconnecting..." = "Ixhuma kabusha...";
 "com.kustomer.Remove" = "Susa";
@@ -83,10 +87,10 @@
 "com.kustomer.This conversation is read-only" = "Le ngxoxo ngeyokufunda kuphela";
 "com.kustomer.Try again" = "Zama futhi";
 "com.kustomer.Type a message..." = "Thayipha umlayezo...";
-"com.kustomer.Unavailable message goes here" = "Umlayezo ongatholakali ungena lapha";
+"com.kustomer.Unavailable message goes here" = "Umlayezo ongatholakali uya lapha";
 "com.kustomer.Updated" = "Kubuyekeziwe";
 "com.kustomer.Waiting for a response from" = "Ilinde impendulo evela ku";
-"com.kustomer.We will get back to you as soon as we are online!" = "Sizobuyela kuwe ngokushesha nje lapho sesixhumeke ku-inthanethi!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Sizobuyela kuwe ngokushesha uma sesixhumeke ku-inthanethi!";
 "com.kustomer.Yes" = "Yebo";
 "com.kustomer.You changed your additional feedback comment" = "Ushintshe amazwana akho empendulo engeziwe";
 "com.kustomer.You're offline. Check your connection." = "Awuxhunyiwe ku-inthanethi. Hlola uxhumano lwakho.";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ po shkruan...";
+"com.kustomer.100+ results found" = "U gjetën mbi 100 rezultate";
 "com.kustomer.Add additional feedback" = "Shto komente shtesë";
 "com.kustomer.Additional Feedback" = "Reagime shtesë";
 "com.kustomer.Additional feedback removed" = "Reagimet shtesë u hoqën";
@@ -12,7 +13,7 @@
 "com.kustomer.Can't load chat" = "Biseda nuk mund të ngarkohet";
 "com.kustomer.Cancel" = "Anulo";
 "com.kustomer.Cancelled! Tap to retry." = "Anuluar! Trokit për të riprovuar.";
-"com.kustomer.Chat" = "Biseda";
+"com.kustomer.Chat" = "Bisedë";
 "com.kustomer.Chat has ended" = "Biseda ka përfunduar";
 "com.kustomer.Chat history" = "Historia e bisedës";
 "com.kustomer.Chat is currently unavailable" = "Biseda është aktualisht e padisponueshme";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Dëshiron të heqësh vlerësimin dhe komentet?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Dëshironi të ruani ndryshimet që keni bërë në komentin tuaj?";
 "com.kustomer.Done" = "U krye";
+"com.kustomer.Edit additional feedback" = "Redakto komente shtesë";
 "com.kustomer.Edit comment" = "Redakto komentin";
 "com.kustomer.End Chat" = "Fundi i bisedës";
 "com.kustomer.Ended" = "Përfundoi";
@@ -52,16 +54,18 @@
 "com.kustomer.No articles" = "Asnjë artikull";
 "com.kustomer.No conversations yet" = "Nuk ka ende biseda";
 "com.kustomer.No internet connection" = "Nuk ka lidhje interneti";
+"com.kustomer.No results" = "Nuk ka rezultate";
 "com.kustomer.No text" = "Asnjë tekst";
 "com.kustomer.None of your personal information was included" = "Asnjë nga informacionet tuaja personale nuk u përfshi";
 "com.kustomer.Not enough disk space" = "Nuk ka hapësirë të mjaftueshme në disk";
 "com.kustomer.Not found" = "Nuk u gjet";
 "com.kustomer.Okay" = "Mirë";
-"com.kustomer.Open in browser" = "Hapeni në shfletues";
+"com.kustomer.Open in browser" = "Hapni në shfletues";
 "com.kustomer.Outgoing chat" = "Bisedë në dalje";
 "com.kustomer.Photo library" = "Biblioteka e fotografive";
 "com.kustomer.Please leave a message" = "Ju lutem lini një mesazh";
 "com.kustomer.Please select an option..." = "Ju lutemi zgjidhni një opsion...";
+"com.kustomer.Please try another search term" = "Ju lutemi provoni një term tjetër kërkimi";
 "com.kustomer.Reconnect" = "Rilidheni";
 "com.kustomer.Reconnecting..." = "Po rilidhet...";
 "com.kustomer.Remove" = "Hiq";
@@ -71,7 +75,7 @@
 "com.kustomer.Search Help Articles" = "Kërko Artikujt e Ndihmës";
 "com.kustomer.Search Results" = "Rezultatet e Kërkimit";
 "com.kustomer.Sending" = "Dërgimi";
-"com.kustomer.Share" = "Ndani";
+"com.kustomer.Share" = "Shpërndaje";
 "com.kustomer.Submit" = "Paraqisni";
 "com.kustomer.Survey" = "Anketa";
 "com.kustomer.Take photo" = "Bëj foto";
@@ -88,9 +92,9 @@
 "com.kustomer.Waiting for a response from" = "Në pritje të një përgjigje nga";
 "com.kustomer.We will get back to you as soon as we are online!" = "Ne do të kthehemi tek ju sapo të jemi online!";
 "com.kustomer.Yes" = "po";
-"com.kustomer.You changed your additional feedback comment" = "Ju ndryshuat komentin tuaj shtesë të komenteve";
+"com.kustomer.You changed your additional feedback comment" = "Ju ndryshuat komentin tuaj të komenteve shtesë";
 "com.kustomer.You're offline. Check your connection." = "Je jashtë linje. Kontrolloni lidhjen tuaj.";
 "com.kustomer.Your existing conversations will be here." = "Bisedat tuaja ekzistuese do të jenë këtu.";
 "com.kustomer.is no longer available" = "nuk është më në dispozicion";
-"com.kustomer.out of" = "jashtë";
+"com.kustomer.out of" = "jashtë nga";
 "com.kustomer.sending" = "duke dërguar";

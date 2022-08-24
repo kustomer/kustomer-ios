@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ က စာရိုက်နေသည်...";
+"com.kustomer.100+ results found" = "ရလဒ် 100+ တွေ့သည်။";
 "com.kustomer.Add additional feedback" = "ထပ်လောင်းအကြံပြုချက်ထည့်ပါ။";
 "com.kustomer.Additional Feedback" = "ထပ်လောင်းတုံ့ပြန်ချက်";
 "com.kustomer.Additional feedback removed" = "ထပ်လောင်းအကြံပြုချက်ကို ဖယ်ရှားခဲ့သည်။";
@@ -11,7 +12,7 @@
 "com.kustomer.Camera roll" = "ကင်မရာလိပ်";
 "com.kustomer.Can't load chat" = "ချတ်ကို တင်၍မရပါ။";
 "com.kustomer.Cancel" = "မလုပ်တော့";
-"com.kustomer.Cancelled! Tap to retry." = "ပယ်ဖျက်လိုက်ပါပြီ။ ထပ်ကြိုးစားရန် တို့ပါ။";
+"com.kustomer.Cancelled! Tap to retry." = "ပယ်ဖျက်လိုက်ပါပြီ ထပ်ကြိုးစားရန် တို့ပါ။";
 "com.kustomer.Chat" = "စကားစမြည်";
 "com.kustomer.Chat has ended" = "Chat ပြီးသွားပါပြီ။";
 "com.kustomer.Chat history" = "စကားပြောမှတ်တမ်း";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "သင့်အဆင့်သတ်မှတ်ချက်နှင့် အကြံပြုချက်ကို ဖယ်ရှားလိုပါသလား။";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "သင့်မှတ်ချက်တွင် သင်ပြုလုပ်ခဲ့သော အပြောင်းအလဲများကို သိမ်းဆည်းလိုပါသလား။";
 "com.kustomer.Done" = "ပြီးပြီ။";
+"com.kustomer.Edit additional feedback" = "ထပ်လောင်းအကြံပြုချက်ကို တည်းဖြတ်ပါ။";
 "com.kustomer.Edit comment" = "မှတ်ချက်ကို တည်းဖြတ်ပါ။";
 "com.kustomer.End Chat" = "စကားပြောခြင်းကို အဆုံးသတ်ပါ။";
 "com.kustomer.Ended" = "ကုန်ပြီ။";
@@ -35,7 +37,7 @@
 "com.kustomer.Image" = "ပုံ";
 "com.kustomer.Incoming chat" = "အဝင်ချတ်";
 "com.kustomer.Internet offline" = "အင်တာနက်အော့ဖ်လိုင်း";
-"com.kustomer.Just now" = "အခုပဲ";
+"com.kustomer.Just now" = "အခုလေးတင်";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "အမှာစကားထားခဲ့ပါ";
 "com.kustomer.Leave a message..." = "အမှာစကားထားခဲ့ပါ...";
@@ -52,16 +54,18 @@
 "com.kustomer.No articles" = "ဆောင်းပါးမရှိပါ။";
 "com.kustomer.No conversations yet" = "စကားဝိုင်းများ မရှိသေးပါ။";
 "com.kustomer.No internet connection" = "အင်တာနက်ချိတ်ဆက်မှုမရှိပါ။";
+"com.kustomer.No results" = "ရလဒ်မရှိပါ။";
 "com.kustomer.No text" = "စာသားမရှိပါ။";
 "com.kustomer.None of your personal information was included" = "သင့်ကိုယ်ရေးကိုယ်တာ အချက်အလက်တစ်ခုမျှ မပါဝင်ပါ။";
 "com.kustomer.Not enough disk space" = "ဒစ်ခ်နေရာ မလုံလောက်ပါ။";
 "com.kustomer.Not found" = "မတွေ့ပါ";
 "com.kustomer.Okay" = "ဟုတ်ပြီ";
-"com.kustomer.Open in browser" = "ဘရောက်ဆာတွင်ဖွင့်ပါ။";
-"com.kustomer.Outgoing chat" = "အထွက် စကားပြောခန်း";
+"com.kustomer.Open in browser" = "browser တွင်ဖွင့်ပါ။";
+"com.kustomer.Outgoing chat" = "အပြင်ထွက် စကားပြောခန်း";
 "com.kustomer.Photo library" = "ဓာတ်ပုံစာကြည့်တိုက်";
 "com.kustomer.Please leave a message" = "ကျေးဇူးပြု၍ မက်ဆေ့ချ်ထားခဲ့ပါ။";
 "com.kustomer.Please select an option..." = "ကျေးဇူးပြု၍ ရွေးချယ်မှုတစ်ခုကို ရွေးချယ်ပါ...";
+"com.kustomer.Please try another search term" = "ကျေးဇူးပြု၍ အခြားရှာဖွေမှု ဝေါဟာရကို စမ်းကြည့်ပါ။";
 "com.kustomer.Reconnect" = "ပြန်လည်ချိတ်ဆက်ပါ။";
 "com.kustomer.Reconnecting..." = "ပြန်လည်ချိတ်ဆက်နေသည်...";
 "com.kustomer.Remove" = "ဖယ်ရှားပါ။";
@@ -88,7 +92,7 @@
 "com.kustomer.Waiting for a response from" = "ထံမှ တုံ့ပြန်မှုကို စောင့်မျှော်နေပါသည်။";
 "com.kustomer.We will get back to you as soon as we are online!" = "ကျွန်ုပ်တို့ အွန်လိုင်းရောက်သည်နှင့် သင့်ထံ ပြန်လည်ရောက်ရှိပါမည်။";
 "com.kustomer.Yes" = "ဟုတ်ကဲ့";
-"com.kustomer.You changed your additional feedback comment" = "သင်၏ ထပ်လောင်းအကြံပြုချက် မှတ်ချက်ကို သင်ပြောင်းထားသည်။";
+"com.kustomer.You changed your additional feedback comment" = "သင့်နောက်ထပ် အကြံပြုချက် မှတ်ချက်ကို သင်ပြောင်းထားသည်။";
 "com.kustomer.You're offline. Check your connection." = "သင်သည် အော့ဖ်လိုင်းဖြစ်နေသည်။ သင်၏ချိတ်ဆက်မှုကိုစစ်ဆေးပါ။";
 "com.kustomer.Your existing conversations will be here." = "သင့်ရှိပြီးသား စကားဝိုင်းများသည် ဤနေရာတွင် ရှိနေပါမည်။";
 "com.kustomer.is no longer available" = "မရနိုင်တော့ပါ။";

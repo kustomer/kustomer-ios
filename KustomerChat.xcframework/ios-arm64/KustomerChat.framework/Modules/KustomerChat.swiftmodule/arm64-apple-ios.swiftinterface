@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 import AVFoundation
 import CommonCrypto
-import CoreData
 import CoreGraphics
 import CoreImage
 import Dispatch
@@ -16,7 +15,6 @@ import QuickLook
 import SafariServices
 import Swift
 import SystemConfiguration
-import UIKit.UIGeometry
 import UIKit
 import UserNotifications
 import WebKit
@@ -322,68 +320,6 @@ public struct KUSAlertInfo {
   @_Concurrency.MainActor(unsafe) public func showActionSheet()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class LegacyChatProvider {
-  public static let shared: KustomerChat.LegacyChatProvider
-  final public var listeners: [Swift.String : KustomerChat.KUSChatListener]
-  @discardableResult
-  final public func addChatListener(_ listener: KustomerChat.KUSChatListener) -> Swift.String
-  final public func removeChatListener(_ uuid: Swift.String)
-  final public func removeAllChatListeners()
-  final public func listenForTyping(conversationId: Swift.String)
-  final public func stopListeningForTyping(conversationId: Swift.String)
-  final public func getConversations(completion: @escaping (Swift.Result<[KustomerChat.KUSConversation], KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use the asynchronous version getConversations(completion:) instead")
-  final public func getConversations() -> [KustomerChat.KUSConversation]
-  final public func getConversation(conversationId: Swift.String, completion: @escaping (Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use the asynchronous version getConversation(conversationId:completion:) instead")
-  final public func getConversation(conversationId: Swift.String) -> KustomerChat.KUSConversation?
-  @available(*, deprecated, message: "Use the asynchronous version getChatMessages(conversationId:completion:) instead")
-  final public func chatMessages(conversationId: Swift.String) -> [KustomerChat.KUSChatMessage]
-  final public func getChatMessages(conversationId: Swift.String, completion: @escaping (Swift.Result<[KustomerChat.KUSChatMessage], KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use getUnreadCount(completion:)")
-  final public func old_unreadCount() -> Swift.Int
-  @available(*, deprecated, message: "Use getUnreadCount(completion:)")
-  final public func unreadCount() -> Swift.Int
-  final public func getUnreadCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use the asynchronous version getUnreadCount(completion:) instead")
-  final public func getUnreadCount() -> Swift.Int
-  final public func getOpenConversationCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use the asynchronous version getOpenConversationCount(completion:) instead")
-  final public func openConversationCount() -> Swift.Int
-  @available(*, deprecated, message: "Use customerExists instead")
-  final public func currentCustomer() -> KustomerChat.KUSCustomer?
-  final public func customerExists() -> Swift.Bool
-  final public func getChatSettings() -> KustomerChat.KUSChatSettings
-  final public func isChatAvailable() -> Swift.Bool?
-  final public func createConversation(firstCustomerMessage text: Swift.String, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer?), KustomerChat.KError>) -> Swift.Void))
-  final public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
-  final public func sendChatMessage(action: KustomerChat.KUSMessageAction, conversationId: Swift.String, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use sendChatMessage(action:conversationId:completion:) instead")
-  final public func sendChatMessage(action: KustomerChat.KUSMessageAction, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  final public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, conversationId: Swift.String, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use sendChatMessage(text:assistant:conversationId:completion:) instead")
-  final public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  final public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, conversationId: Swift.String, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use sendChatMessage(mllNode:conversationId:completion:) instead")
-  final public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, completion _outerCompletion: @escaping (KustomerChat.KUSChatMessage, KustomerChat.KUSConversation) -> Swift.Void)
-  final public func sendChatMessage(image: UIKit.UIImage, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  final public func sendChatMessage(fileUrl: Foundation.URL, conversationId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
-  final public func createAssistant(id: Swift.String, startDialog: Swift.String?, after: @escaping ((KustomerChat.KUSAssistant) -> Swift.Void), error: @escaping ((KustomerChat.KError) -> Swift.Void), afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = { _ in }) -> Swift.String
-  final public func endConversation(conversationId: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void))
-  final public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  final public func describeCurrentCustomer(phone: Swift.String? = nil, email: Swift.String? = nil, phones: [Swift.String]? = nil, emails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
-  final public func markRead(conversationId: Swift.String)
-  @objc deinit
-}
-public enum PresenceType {
-  case online
-  case offline
-  public static func == (a: KustomerChat.PresenceType, b: KustomerChat.PresenceType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public struct KnowledgeBaseArticle : Swift.Decodable {
   public let id: Swift.String
   public let type: Swift.String
@@ -438,12 +374,6 @@ public struct KUSKBDeflectResult : Swift.Decodable {
   public var lang: Swift.String?
   public init(id: Swift.String?, articleId: Swift.String?, type: KustomerChat.KUSKBDeflectResultType?, title: Swift.String?, webLink: Swift.String?, lang: Swift.String?, rawJson: Swift.String?, clickCount: Swift.Int = 0)
   public init(from decoder: Swift.Decoder) throws
-}
-extension KustomerChat.KustomerClient {
-  @available(*, deprecated)
-  final public func triggerHotReloadFromAppDelegate()
-  @available(*, deprecated)
-  final public func triggerHotReloadFromAppDelegate(completion: @escaping (() -> Swift.Void))
 }
 @_hasMissingDesignatedInitializers final public class KUSChatAttachment : Swift.CustomStringConvertible {
   final public var id: Swift.String
@@ -1224,9 +1154,6 @@ public struct KUSObjectMessageAction : KustomerChat.KUSMessageAction, Swift.Deco
 @_hasMissingDesignatedInitializers public class KUSMLLNode : Swift.Decodable {
   public var displayText: Swift.String?
   public var value: Swift.String?
-  public var children: [KustomerChat.KUSMLLNode]? {
-    get
-  }
   @objc deinit
   required public init(from decoder: Swift.Decoder) throws
 }
@@ -1522,6 +1449,15 @@ public enum KUSMessageTemplateType : Swift.String, Swift.Decodable {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PresenceType {
+  case online
+  case offline
+  public static func == (a: KustomerChat.PresenceType, b: KustomerChat.PresenceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -1984,12 +1920,12 @@ public typealias KUSCustomDescribe = [Swift.String : Swift.String]
     set
   }
   final public func printLocalizationKeys()
+  @available(*, deprecated, message: "This functionality is deprecated and will be removed in a future version. Please user KustomerOptions.language to set a language")
   final public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
   @objc override dynamic public init()
   final public func openChatAssistant(id: Swift.String, startDialog: Swift.String?, presentingVC: UIKit.UIViewController? = nil, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, animated: Swift.Bool = true)
   final public func getUnreadCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
   final public func getOpenConversationCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
-  final public func shareDebugLogs()
   @objc deinit
 }
 extension KustomerChat.KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
@@ -2023,14 +1959,6 @@ public enum PushEnvironment : Swift.String {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Notify {
-  public static func showCustom(title: Swift.String?, subtitle: Swift.String?, body: Swift.String?, delay: Swift.Double = 0.0)
-  public static func showCustom(string: Swift.String, delay: Swift.Double = 0.0)
-  public static func show(_ title: Swift.String, delay: Swift.Double = 0.0)
-  public static func showNativeOrCustomAndRequestAuthorizationIfNeeded(title: Swift.String? = nil, subtitle: Swift.String? = nil, body: Swift.String? = nil, isRecursive: Swift.Bool = false, delay: Swift.Double = 0.0)
-  public static func showNativeOrCustom(title: Swift.String? = nil, subtitle: Swift.String? = nil, body: Swift.String? = nil, requestAuthorizationIfNeeded: Swift.Bool = true, doRecursiveAuthorizationRequest: Swift.Bool = false, delay: Swift.Double = 0.0)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class KUSAssistant : Swift.CustomStringConvertible, Swift.Decodable {
   public var dialog: Swift.String
   public var id: Swift.String
@@ -2039,9 +1967,6 @@ public enum PushEnvironment : Swift.String {
   public var publicName: Swift.String?
   public var avatarUrl: Swift.String?
   public var messages: [KustomerChat.KUSChatMessage] {
-    get
-  }
-  public var initialMessages: [KustomerChat.KUSChatMessage] {
     get
   }
   required public init(from decoder: Swift.Decoder) throws
@@ -2251,8 +2176,6 @@ extension KustomerChat.KustomerLanguage : Swift.RawRepresentable {}
 extension KustomerChat.KustomerAssetLanguage : Swift.Equatable {}
 extension KustomerChat.KustomerAssetLanguage : Swift.Hashable {}
 extension KustomerChat.KustomerAssetLanguage : Swift.RawRepresentable {}
-extension KustomerChat.PresenceType : Swift.Equatable {}
-extension KustomerChat.PresenceType : Swift.Hashable {}
 extension KustomerChat.Weekday : Swift.Equatable {}
 extension KustomerChat.Weekday : Swift.Hashable {}
 extension KustomerChat.Weekday : Swift.RawRepresentable {}
@@ -2305,6 +2228,8 @@ extension KustomerChat.KUSChatMessageStatus : Swift.Hashable {}
 extension KustomerChat.KUSMessageTemplateType : Swift.Equatable {}
 extension KustomerChat.KUSMessageTemplateType : Swift.Hashable {}
 extension KustomerChat.KUSMessageTemplateType : Swift.RawRepresentable {}
+extension KustomerChat.PresenceType : Swift.Equatable {}
+extension KustomerChat.PresenceType : Swift.Hashable {}
 extension KustomerChat.Remove : Swift.Equatable {}
 extension KustomerChat.Remove : Swift.Hashable {}
 extension KustomerChat.ChangeApplication : Swift.Equatable {}

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "Nag-type si %@...";
+"com.kustomer.100+ results found" = "100+ ka resulta ang nakit-an";
 "com.kustomer.Add additional feedback" = "Pagdugang og dugang nga feedback";
 "com.kustomer.Additional Feedback" = "Dugang nga Feedback";
 "com.kustomer.Additional feedback removed" = "Gikuha ang dugang nga feedback";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "Ang chat dili magamit karon";
 "com.kustomer.Chat with support" = "Pag-chat uban ang suporta";
 "com.kustomer.Conversation ended" = "Natapos ang panag-istoryahanay";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Ang panag-istoryahanay gihiusa ngadto sa laing panag-istoryahanay.\n\nI-tap aron moadto sa bag-ong panag-istoryahanay.";
-"com.kustomer.Conversation moved to another customer" = "Ang panag-istoryahanay gibalhin ngadto sa laing kustomer";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Ang panag-istoryahanay gihiusa ngadto sa laing panag-istoryahanay.\n\nPag-tap aron moadto sa bag-ong panag-istoryahanay.";
+"com.kustomer.Conversation moved to another customer" = "Ang panag-istoryahanay gibalhin sa laing kustomer";
 "com.kustomer.Delete" = "Pagtangtang";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Gusto ba nimong tangtangon ang imong rating ug feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Gusto ba nimong i-save ang mga pagbag-o nga imong gihimo sa imong komento?";
 "com.kustomer.Done" = "Nahimo";
+"com.kustomer.Edit additional feedback" = "I-edit ang dugang nga feedback";
 "com.kustomer.Edit comment" = "I-edit ang komento";
 "com.kustomer.End Chat" = "Tapuson ang Chat";
 "com.kustomer.Ended" = "Natapos";
@@ -35,7 +37,7 @@
 "com.kustomer.Image" = "Hulagway";
 "com.kustomer.Incoming chat" = "Nag-abot nga chat";
 "com.kustomer.Internet offline" = "Internet offline";
-"com.kustomer.Just now" = "Karon pa lang";
+"com.kustomer.Just now" = "Karon lang";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Pagbilin ug mensahe";
 "com.kustomer.Leave a message..." = "Pagbilin ug mensahe...";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Walay mga artikulo";
 "com.kustomer.No conversations yet" = "Wala pa&#39;y mga panag-istoryahanay";
 "com.kustomer.No internet connection" = "Walay koneksyon sa internet";
+"com.kustomer.No results" = "Walay resulta";
 "com.kustomer.No text" = "Walay text";
 "com.kustomer.None of your personal information was included" = "Walay bisan usa sa imong personal nga impormasyon ang gilakip";
 "com.kustomer.Not enough disk space" = "Dili igo nga espasyo sa disk";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Palihug pagbilin ug mensahe";
 "com.kustomer.Please select an option..." = "Palihug pagpili og opsyon...";
+"com.kustomer.Please try another search term" = "Palihug pagsulay ug lain nga termino sa pagpangita";
 "com.kustomer.Reconnect" = "Sumpaysumpaya pag-usab";
 "com.kustomer.Reconnecting..." = "Nagkonektar pag-usab...";
 "com.kustomer.Remove" = "Kuhaa";
@@ -76,7 +80,7 @@
 "com.kustomer.Survey" = "Survey";
 "com.kustomer.Take photo" = "Pagkuha og litrato";
 "com.kustomer.Tap to load..." = "I-tap para makarga...";
-"com.kustomer.Tap to open" = "I-tap para maablihan";
+"com.kustomer.Tap to open" = "I-tap aron maablihan";
 "com.kustomer.Thanks for your feedback" = "Salamat sa imong feedback";
 "com.kustomer.That article" = "Kana nga artikulo";
 "com.kustomer.There was a problem" = "Adunay problema";

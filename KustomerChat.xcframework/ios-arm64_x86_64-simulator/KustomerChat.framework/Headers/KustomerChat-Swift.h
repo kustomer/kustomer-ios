@@ -264,7 +264,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 
 
 
-
 typedef SWIFT_ENUM(NSInteger, FontStyle, open) {
   FontStyleNormal = 0,
   FontStyleBold = 1,
@@ -289,13 +288,12 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class UIPresentationController;
 
 @interface KustomerClient (SWIFT_EXTENSION(KustomerChat)) <UIAdaptivePresentationControllerDelegate>
 - (void)presentationControllerDidDismiss:(UIPresentationController * _Nonnull)presentationController;
 @end
-
-
 
 
 
@@ -324,14 +322,6 @@ SWIFT_CLASS("_TtC12KustomerChat10LinkStyles")
 @interface LinkStyles : BasicStyles
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
-
-
-
-
-
-
 
 
 
@@ -403,8 +393,6 @@ SWIFT_CLASS("_TtC12KustomerChat14SwiftyMarkdown")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
 
 
 
@@ -732,7 +720,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 
 
 
-
 typedef SWIFT_ENUM(NSInteger, FontStyle, open) {
   FontStyleNormal = 0,
   FontStyleBold = 1,
@@ -757,13 +744,12 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class UIPresentationController;
 
 @interface KustomerClient (SWIFT_EXTENSION(KustomerChat)) <UIAdaptivePresentationControllerDelegate>
 - (void)presentationControllerDidDismiss:(UIPresentationController * _Nonnull)presentationController;
 @end
-
-
 
 
 
@@ -792,14 +778,6 @@ SWIFT_CLASS("_TtC12KustomerChat10LinkStyles")
 @interface LinkStyles : BasicStyles
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
-
-
-
-
-
-
 
 
 
@@ -871,8 +849,6 @@ SWIFT_CLASS("_TtC12KustomerChat14SwiftyMarkdown")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
 
 
 

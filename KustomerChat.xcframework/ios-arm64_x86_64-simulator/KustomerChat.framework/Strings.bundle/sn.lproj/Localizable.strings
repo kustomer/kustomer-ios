@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ari kutaipa...";
+"com.kustomer.100+ results found" = "100+ zvawanikwa";
 "com.kustomer.Add additional feedback" = "Wedzera imwe mhinduro";
 "com.kustomer.Additional Feedback" = "Yekuwedzera Feedback";
 "com.kustomer.Additional feedback removed" = "Imwe pfungwa yabviswa";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "Chat parizvino haisipo";
 "com.kustomer.Chat with support" = "Kurukurai nerutsigiro";
 "com.kustomer.Conversation ended" = "Kukurukurirana kwapera";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Nhaurirano yabatanidzwa kuva imwe hurukuro.\n\nTokonya kuti uende kuhurukuro itsva.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Nhaurirano yabatanidzwa kuva imwe hurukuro.\n\nTokonya kuti uende kunhaurirano itsva.";
 "com.kustomer.Conversation moved to another customer" = "Nhaurirano yakaendeswa kune mumwe mutengi";
 "com.kustomer.Delete" = "Delete";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Iwe unoda kubvisa chiyero chako uye mhinduro?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko dzawakaita kune yako mhinduro?";
-"com.kustomer.Done" = "Zvaita";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko yawakaita kune yako mhinduro?";
+"com.kustomer.Done" = "Ndapedza";
+"com.kustomer.Edit additional feedback" = "Rongedza imwe mhinduro";
 "com.kustomer.Edit comment" = "Rongedza mhinduro";
 "com.kustomer.End Chat" = "End Chat";
 "com.kustomer.Ended" = "Yakapera";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Hapana zvinyorwa";
 "com.kustomer.No conversations yet" = "Hapasati pave nehurukuro";
 "com.kustomer.No internet connection" = "Hapana Indaneti";
+"com.kustomer.No results" = "Hapana mhinduro";
 "com.kustomer.No text" = "Hapana chinyorwa";
 "com.kustomer.None of your personal information was included" = "Hapana ruzivo rwako rwakabatanidzwa";
 "com.kustomer.Not enough disk space" = "Hapana nzvimbo yakakwana yedhisiki";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Ndapota siyai meseji";
 "com.kustomer.Please select an option..." = "Ndapota sarudza imwe sarudzo...";
+"com.kustomer.Please try another search term" = "Edza imwe izwi rekutsvaga";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Kubatanidzazve...";
 "com.kustomer.Remove" = "Bvisa";
@@ -88,9 +92,9 @@
 "com.kustomer.Waiting for a response from" = "Kumirira mhinduro kubva";
 "com.kustomer.We will get back to you as soon as we are online!" = "Tichadzoka kwauri kana tave online!";
 "com.kustomer.Yes" = "Ehe";
-"com.kustomer.You changed your additional feedback comment" = "Wakachinja imwe mhinduro yako";
+"com.kustomer.You changed your additional feedback comment" = "Wakachinja mhinduro yako yekuwedzera";
 "com.kustomer.You're offline. Check your connection." = "Hauna Indaneti. Tarisa uone kubatana kwako.";
 "com.kustomer.Your existing conversations will be here." = "Hurukuro dzako dziripo dzichange dziri pano.";
-"com.kustomer.is no longer available" = "haisisipo";
+"com.kustomer.is no longer available" = "haichawanikwi";
 "com.kustomer.out of" = "kupererwa ne";
 "com.kustomer.sending" = "kutumira";

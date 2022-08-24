@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ yana bugawa...";
+"com.kustomer.100+ results found" = "An sami sakamako 100+";
 "com.kustomer.Add additional feedback" = "Ƙara ƙarin bayani";
 "com.kustomer.Additional Feedback" = "Ƙarin Bayani";
 "com.kustomer.Additional feedback removed" = "An cire ƙarin bayani";
 "com.kustomer.Agent" = "Wakili";
 "com.kustomer.Answers" = "Amsa";
-"com.kustomer.Are you sure you want to end this chat?" = "Kun tabbata kuna son kawo karshen wannan taɗi?";
+"com.kustomer.Are you sure you want to end this chat?" = "Shin kun tabbata kuna son kawo karshen wannan tattaunawar?";
 "com.kustomer.Attached file" = "Fayil da aka makala";
 "com.kustomer.Attachment" = "Abin da aka makala";
 "com.kustomer.Browse files" = "Nemo fayiloli";
@@ -22,8 +23,9 @@
 "com.kustomer.Conversation moved to another customer" = "Taɗi ya koma wani abokin ciniki";
 "com.kustomer.Delete" = "Share";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Kuna so ku cire ƙimar ku da ra&#39;ayoyin ku?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Kuna son adana canje-canjen da kuka yi a sharhin ku?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Shin kuna son adana canje-canjen da kuka yi kan sharhin ku?";
 "com.kustomer.Done" = "Anyi";
+"com.kustomer.Edit additional feedback" = "Gyara ƙarin martani";
 "com.kustomer.Edit comment" = "Gyara sharhi";
 "com.kustomer.End Chat" = "Ƙarshen Taɗi";
 "com.kustomer.Ended" = "Ya ƙare";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Babu labarai";
 "com.kustomer.No conversations yet" = "Babu tattaunawa tukuna";
 "com.kustomer.No internet connection" = "Babu haɗin intanet";
+"com.kustomer.No results" = "Babu sakamako";
 "com.kustomer.No text" = "Babu rubutu";
 "com.kustomer.None of your personal information was included" = "Babu bayanan sirri da aka haɗa";
 "com.kustomer.Not enough disk space" = "Bai isa sararin faifai ba";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Laburaren hoto";
 "com.kustomer.Please leave a message" = "Da fatan za a bar sako";
 "com.kustomer.Please select an option..." = "Da fatan za a zaɓi zaɓi...";
+"com.kustomer.Please try another search term" = "Da fatan za a gwada wani kalmar nema";
 "com.kustomer.Reconnect" = "Sake haɗawa";
 "com.kustomer.Reconnecting..." = "Ana sake haɗawa...";
 "com.kustomer.Remove" = "Cire";
@@ -70,7 +74,7 @@
 "com.kustomer.Save changes" = "Ajiye canje-canje";
 "com.kustomer.Search Help Articles" = "Bincika Labaran Taimako";
 "com.kustomer.Search Results" = "Sakamakon Bincike";
-"com.kustomer.Sending" = "Aiko";
+"com.kustomer.Sending" = "Aika";
 "com.kustomer.Share" = "Raba";
 "com.kustomer.Submit" = "Sallama";
 "com.kustomer.Survey" = "Bincike";
@@ -89,7 +93,7 @@
 "com.kustomer.We will get back to you as soon as we are online!" = "Za mu dawo gare ku da zaran muna kan layi!";
 "com.kustomer.Yes" = "Ee";
 "com.kustomer.You changed your additional feedback comment" = "Kun canza ƙarin sharhin ra&#39;ayin ku";
-"com.kustomer.You're offline. Check your connection." = "Kuna layi. Duba haɗin yanar gizon ku.";
+"com.kustomer.You're offline. Check your connection." = "Kuna layi. Duba haɗin ku.";
 "com.kustomer.Your existing conversations will be here." = "Tattaunawar ku na yanzu za su kasance a nan.";
 "com.kustomer.is no longer available" = "ba ya samuwa";
 "com.kustomer.out of" = "daga";

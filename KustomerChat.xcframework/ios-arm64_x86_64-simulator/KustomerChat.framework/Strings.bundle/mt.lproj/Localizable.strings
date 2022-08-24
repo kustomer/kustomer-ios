@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ qed ittajpja...";
+"com.kustomer.100+ results found" = "100+ riżultati misjuba";
 "com.kustomer.Add additional feedback" = "Żid feedback addizzjonali";
 "com.kustomer.Additional Feedback" = "Feedback Addizzjonali";
 "com.kustomer.Additional feedback removed" = "Feedback addizzjonali mneħħi";
@@ -17,13 +18,14 @@
 "com.kustomer.Chat history" = "Storja taċ-chat";
 "com.kustomer.Chat is currently unavailable" = "Iċ-chat bħalissa mhux disponibbli";
 "com.kustomer.Chat with support" = "Chat bl-appoġġ";
-"com.kustomer.Conversation ended" = "Il-konversazzjoni spiċċat";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Konversazzjoni magħquda f&#39;konverżazzjoni oħra.\n\nAgħfas biex tmur għall-konversazzjoni l-ġdida.";
+"com.kustomer.Conversation ended" = "Intemmet il-konversazzjoni";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Konversazzjoni magħquda f&#39;konversazzjoni oħra.\n\nAgħfas biex tmur għall-konversazzjoni l-ġdida.";
 "com.kustomer.Conversation moved to another customer" = "Konversazzjoni mċaqalqa għal klijent ieħor";
 "com.kustomer.Delete" = "Ħassar";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Trid tneħħi l-klassifikazzjoni u l-feedback tiegħek?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Trid issalva l-bidliet li għamilt fil-kumment tiegħek?";
 "com.kustomer.Done" = "Magħmul";
+"com.kustomer.Edit additional feedback" = "Editja feedback addizzjonali";
 "com.kustomer.Edit comment" = "Editja kumment";
 "com.kustomer.End Chat" = "Tmiem Chat";
 "com.kustomer.Ended" = "Intemm";
@@ -44,7 +46,7 @@
 "com.kustomer.Me" = "Jien";
 "com.kustomer.Message" = "Messaġġ";
 "com.kustomer.Message failed to send" = "Il-messaġġ naqas milli jintbagħat";
-"com.kustomer.Message failed to send!" = "Il-messaġġ naqas milli jintbagħat!";
+"com.kustomer.Message failed to send!" = "Il-messaġġ ma ntbagħatx!";
 "com.kustomer.Moved" = "Imċaqlaq";
 "com.kustomer.Never mind" = "Tagħtix kas";
 "com.kustomer.New Conversation" = "Konversazzjoni Ġdida";
@@ -52,9 +54,10 @@
 "com.kustomer.No articles" = "Ebda artikoli";
 "com.kustomer.No conversations yet" = "Għadu l-ebda konversazzjonijiet";
 "com.kustomer.No internet connection" = "Ebda konnessjoni tal-internet";
+"com.kustomer.No results" = "Ebda riżultati";
 "com.kustomer.No text" = "L-ebda test";
 "com.kustomer.None of your personal information was included" = "L-ebda informazzjoni personali tiegħek ma ġiet inkluża";
-"com.kustomer.Not enough disk space" = "Mhux biżżejjed spazju fuq id-diska";
+"com.kustomer.Not enough disk space" = "Mhux biżżejjed spazju fuq disk";
 "com.kustomer.Not found" = "Ma nstabx";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Iftaħ fil-browser";
@@ -62,10 +65,11 @@
 "com.kustomer.Photo library" = "Librerija tar-ritratti";
 "com.kustomer.Please leave a message" = "Jekk jogħġbok ħalli messaġġ";
 "com.kustomer.Please select an option..." = "Jekk jogħġbok agħżel għażla...";
+"com.kustomer.Please try another search term" = "Jekk jogħġbok ipprova terminu ta&#39; tfittxija ieħor";
 "com.kustomer.Reconnect" = "Erġa&#39; qabbad";
 "com.kustomer.Reconnecting..." = "Qiegħed jerġa&#39; jgħaqqad...";
 "com.kustomer.Remove" = "Neħħi";
-"com.kustomer.Report problem" = "Rapport problema";
+"com.kustomer.Report problem" = "Irrapporta l-problema";
 "com.kustomer.Report sent" = "Rapport mibgħut";
 "com.kustomer.Save changes" = "Issejvja l-bidliet";
 "com.kustomer.Search Help Articles" = "Fittex Artikoli ta&#39; Għajnuna";
