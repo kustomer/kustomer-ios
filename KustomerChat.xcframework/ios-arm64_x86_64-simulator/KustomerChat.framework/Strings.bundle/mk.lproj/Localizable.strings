@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ пишува...";
+"com.kustomer.100+ results found" = "Пронајдени се над 100 резултати";
 "com.kustomer.Add additional feedback" = "Додадете дополнителни повратни информации";
 "com.kustomer.Additional Feedback" = "Дополнителни повратни информации";
 "com.kustomer.Additional feedback removed" = "Дополнителните повратни информации се отстранети";
@@ -19,11 +20,12 @@
 "com.kustomer.Chat with support" = "Разговарајте со поддршка";
 "com.kustomer.Conversation ended" = "Разговорот заврши";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Разговорот се спои во друг разговор.\n\nДопрете за да отидете на новиот разговор.";
-"com.kustomer.Conversation moved to another customer" = "Разговорот се пресели кај друг клиент";
+"com.kustomer.Conversation moved to another customer" = "Разговорот се префрли на друг клиент";
 "com.kustomer.Delete" = "Избриши";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Дали сакате да ја отстраните вашата оцена и повратни информации?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Дали сакате да ги зачувате промените што ги направивте во вашиот коментар?";
 "com.kustomer.Done" = "Направено";
+"com.kustomer.Edit additional feedback" = "Уредете дополнителни повратни информации";
 "com.kustomer.Edit comment" = "Уреди коментар";
 "com.kustomer.End Chat" = "Заврши разговор";
 "com.kustomer.Ended" = "Заврши";
@@ -41,7 +43,7 @@
 "com.kustomer.Leave a message..." = "Остави порака...";
 "com.kustomer.Loading..." = "Се вчитува...";
 "com.kustomer.Mark all as read" = "означи се како Прочитано";
-"com.kustomer.Me" = "јас";
+"com.kustomer.Me" = "Јас";
 "com.kustomer.Message" = "Порака";
 "com.kustomer.Message failed to send" = "Пораката не успеа да се испрати";
 "com.kustomer.Message failed to send!" = "Пораката не успеа да се испрати!";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Нема статии";
 "com.kustomer.No conversations yet" = "Сè уште нема разговори";
 "com.kustomer.No internet connection" = "Нема интернет конекција";
+"com.kustomer.No results" = "Нема резултати";
 "com.kustomer.No text" = "Нема текст";
 "com.kustomer.None of your personal information was included" = "Ниту една од вашите лични податоци не беше вклучена";
 "com.kustomer.Not enough disk space" = "Нема доволно место на дискот";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Фото библиотека";
 "com.kustomer.Please leave a message" = "Ве молиме оставете порака";
 "com.kustomer.Please select an option..." = "Ве молиме изберете опција...";
+"com.kustomer.Please try another search term" = "Ве молиме обидете се со друг термин за пребарување";
 "com.kustomer.Reconnect" = "Поврзете се повторно";
 "com.kustomer.Reconnecting..." = "Повторно поврзување...";
 "com.kustomer.Remove" = "Отстрани";

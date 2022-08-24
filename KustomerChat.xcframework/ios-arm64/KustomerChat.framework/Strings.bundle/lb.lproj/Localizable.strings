@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ schreift ...";
+"com.kustomer.100+ results found" = "100+ Resultater fonnt";
 "com.kustomer.Add additional feedback" = "Zousätzlech Feedback addéieren";
 "com.kustomer.Additional Feedback" = "Zousätzlech Feedback";
 "com.kustomer.Additional feedback removed" = "Zousätzlech Feedback geläscht";
@@ -24,7 +25,8 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Wëllt Dir Är Bewäertung a Feedback läschen?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Wëllt Dir d&#39;Ännerunge späicheren, déi Dir an Ärem Kommentar gemaach hutt?";
 "com.kustomer.Done" = "Gemaach";
-"com.kustomer.Edit comment" = "Kommentar änneren";
+"com.kustomer.Edit additional feedback" = "Zousätzlech Feedback änneren";
+"com.kustomer.Edit comment" = "Commentaire änneren";
 "com.kustomer.End Chat" = "Enn Chat";
 "com.kustomer.Ended" = "Eriwwer";
 "com.kustomer.Error" = "Feeler";
@@ -43,15 +45,16 @@
 "com.kustomer.Mark all as read" = "Markéiert alles als gelies";
 "com.kustomer.Me" = "Ech";
 "com.kustomer.Message" = "Message";
-"com.kustomer.Message failed to send" = "Message konnt net verschécken";
+"com.kustomer.Message failed to send" = "Message konnt net schécken";
 "com.kustomer.Message failed to send!" = "Message konnt net verschécken!";
 "com.kustomer.Moved" = "Beweegt";
 "com.kustomer.Never mind" = "T ass net schlëmm";
 "com.kustomer.New Conversation" = "Neit Gespréich";
 "com.kustomer.New message" = "Neie Message";
 "com.kustomer.No articles" = "Keng Artikelen";
-"com.kustomer.No conversations yet" = "Keng Gespréicher nach";
+"com.kustomer.No conversations yet" = "Nach keng Gespréicher";
 "com.kustomer.No internet connection" = "Keng Internetverbindung";
+"com.kustomer.No results" = "Keng Resultater";
 "com.kustomer.No text" = "Keen Text";
 "com.kustomer.None of your personal information was included" = "Keen vun Äre perséinlechen Informatiounen war abegraff";
 "com.kustomer.Not enough disk space" = "Net genuch Disk Space";
@@ -60,8 +63,9 @@
 "com.kustomer.Open in browser" = "Open am Browser";
 "com.kustomer.Outgoing chat" = "Ausgaang Chat";
 "com.kustomer.Photo library" = "Foto Bibliothéik";
-"com.kustomer.Please leave a message" = "Weg verloossen e Message";
+"com.kustomer.Please leave a message" = "Gitt weg e Message";
 "com.kustomer.Please select an option..." = "Wielt w.e.g. eng Optioun ...";
+"com.kustomer.Please try another search term" = "Probéiert w.e.g. en anere Sichbegrëff";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Reconnectéiert ...";
 "com.kustomer.Remove" = "Ewechzehuelen";
@@ -87,7 +91,7 @@
 "com.kustomer.Updated" = "Aktualiséiert";
 "com.kustomer.Waiting for a response from" = "Waarden op eng Äntwert vum";
 "com.kustomer.We will get back to you as soon as we are online!" = "Mir kommen op Iech zréck soubal mir online sinn!";
-"com.kustomer.Yes" = "jo";
+"com.kustomer.Yes" = "Jo";
 "com.kustomer.You changed your additional feedback comment" = "Dir hutt Ären zousätzleche Feedback Kommentar geännert";
 "com.kustomer.You're offline. Check your connection." = "Dir sidd offline. Kontrolléiert Är Verbindung.";
 "com.kustomer.Your existing conversations will be here." = "Är bestehend Gespréicher wäerten hei sinn.";

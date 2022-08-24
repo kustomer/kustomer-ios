@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ टाइप करत आहे...";
+"com.kustomer.100+ results found" = "100+ परिणाम आढळले";
 "com.kustomer.Add additional feedback" = "अतिरिक्त अभिप्राय जोडा";
 "com.kustomer.Additional Feedback" = "अतिरिक्त अभिप्राय";
 "com.kustomer.Additional feedback removed" = "अतिरिक्त फीडबॅक काढला";
 "com.kustomer.Agent" = "एजंट";
 "com.kustomer.Answers" = "उत्तरे";
-"com.kustomer.Are you sure you want to end this chat?" = "तुमची खात्री आहे की तुम्ही ही गप्पा संपवू इच्छिता?";
+"com.kustomer.Are you sure you want to end this chat?" = "तुमची खात्री आहे की तुम्ही ही चॅट समाप्त करू इच्छिता?";
 "com.kustomer.Attached file" = "संलग्न फाइल";
 "com.kustomer.Attachment" = "संलग्नक";
 "com.kustomer.Browse files" = "फाइल्स ब्राउझ करा";
@@ -19,11 +20,12 @@
 "com.kustomer.Chat with support" = "समर्थनासह गप्पा मारा";
 "com.kustomer.Conversation ended" = "संवाद संपला";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "संभाषण दुसर्‍या संभाषणात विलीन झाले.\n\nनवीन संभाषणावर जाण्यासाठी टॅप करा.";
-"com.kustomer.Conversation moved to another customer" = "संभाषण दुसऱ्या ग्राहकाकडे हलवले";
+"com.kustomer.Conversation moved to another customer" = "संभाषण दुसर्‍या ग्राहकाकडे हलवले";
 "com.kustomer.Delete" = "हटवा";
 "com.kustomer.Do you want to remove your rating and feedback?" = "तुम्ही तुमचे रेटिंग आणि फीडबॅक काढू इच्छिता?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "तुम्ही तुमच्या टिप्पणीमध्ये केलेले बदल तुम्ही सेव्ह करू इच्छिता?";
 "com.kustomer.Done" = "झाले";
+"com.kustomer.Edit additional feedback" = "अतिरिक्त फीडबॅक संपादित करा";
 "com.kustomer.Edit comment" = "टिप्पणी संपादित करा";
 "com.kustomer.End Chat" = "गप्पा संपवा";
 "com.kustomer.Ended" = "संपले";
@@ -37,7 +39,7 @@
 "com.kustomer.Internet offline" = "इंटरनेट ऑफलाइन";
 "com.kustomer.Just now" = "आत्ताच";
 "com.kustomer.KB" = "KB";
-"com.kustomer.Leave a message" = "एक संदेश सोडा";
+"com.kustomer.Leave a message" = "एक संदेश द्या";
 "com.kustomer.Leave a message..." = "एक संदेश द्या...";
 "com.kustomer.Loading..." = "लोड करत आहे...";
 "com.kustomer.Mark all as read" = "सर्व वाचलेले म्हणून चिन्हांकित करा";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "लेख नाहीत";
 "com.kustomer.No conversations yet" = "अद्याप कोणतीही संभाषणे नाहीत";
 "com.kustomer.No internet connection" = "इंटरनेट कनेक्शन नाही";
+"com.kustomer.No results" = "कोणतेही परिणाम नाहीत";
 "com.kustomer.No text" = "मजकूर नाही";
 "com.kustomer.None of your personal information was included" = "तुमची कोणतीही वैयक्तिक माहिती समाविष्ट केलेली नाही";
 "com.kustomer.Not enough disk space" = "डिस्क वर पुरेशी जागा नाही";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "फोटो लायब्ररी";
 "com.kustomer.Please leave a message" = "कृपया एक संदेश द्या";
 "com.kustomer.Please select an option..." = "कृपया एक पर्याय निवडा...";
+"com.kustomer.Please try another search term" = "कृपया दुसरी शोध संज्ञा वापरून पहा";
 "com.kustomer.Reconnect" = "पुन्हा कनेक्ट करा";
 "com.kustomer.Reconnecting..." = "पुन्हा कनेक्ट करत आहे...";
 "com.kustomer.Remove" = "काढा";
@@ -74,7 +78,7 @@
 "com.kustomer.Share" = "शेअर करा";
 "com.kustomer.Submit" = "प्रस्तुत करणे";
 "com.kustomer.Survey" = "सर्वेक्षण";
-"com.kustomer.Take photo" = "फोटो घ्या";
+"com.kustomer.Take photo" = "छायाचित्र घे";
 "com.kustomer.Tap to load..." = "लोड करण्यासाठी टॅप करा...";
 "com.kustomer.Tap to open" = "उघडण्यासाठी टॅप करा";
 "com.kustomer.Thanks for your feedback" = "तुमच्या अभिप्रायाबद्दल धन्यवाद";

@@ -1,7 +1,8 @@
 "com.kustomer.%@ is typing..." = "%@-ը գրում է...";
-"com.kustomer.Add additional feedback" = "Ավելացրեք լրացուցիչ կարծիք";
+"com.kustomer.100+ results found" = "Գտնվել է 100+ արդյունք";
+"com.kustomer.Add additional feedback" = "Ավելացնել լրացուցիչ կարծիք";
 "com.kustomer.Additional Feedback" = "Լրացուցիչ հետադարձ կապ";
-"com.kustomer.Additional feedback removed" = "Լրացուցիչ արձագանքները հեռացվել են";
+"com.kustomer.Additional feedback removed" = "Լրացուցիչ արձագանքները հեռացվեցին";
 "com.kustomer.Agent" = "Գործակալ";
 "com.kustomer.Answers" = "Պատասխանները";
 "com.kustomer.Are you sure you want to end this chat?" = "Իսկապե՞ս ուզում եք ավարտել այս զրույցը:";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ցանկանու՞մ եք հեռացնել ձեր վարկանիշն ու կարծիքը:";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Ցանկանու՞մ եք պահպանել ձեր մեկնաբանության մեջ կատարած փոփոխությունները:";
 "com.kustomer.Done" = "Կատարած";
+"com.kustomer.Edit additional feedback" = "Խմբագրել լրացուցիչ կարծիքը";
 "com.kustomer.Edit comment" = "Խմբագրել մեկնաբանությունը";
 "com.kustomer.End Chat" = "Ավարտել զրույցը";
 "com.kustomer.Ended" = "Ավարտվեց";
@@ -46,12 +48,13 @@
 "com.kustomer.Message failed to send" = "Հաղորդագրությունը չհաջողվեց ուղարկել";
 "com.kustomer.Message failed to send!" = "Հաղորդագրությունը չհաջողվեց ուղարկել:";
 "com.kustomer.Moved" = "Տեղափոխվել է";
-"com.kustomer.Never mind" = "Երբեք դեմ չէ";
+"com.kustomer.Never mind" = "Դեմ չէ";
 "com.kustomer.New Conversation" = "Նոր Զրույց";
 "com.kustomer.New message" = "Նոր հաղորդագրություն";
 "com.kustomer.No articles" = "Ոչ մի հոդված";
 "com.kustomer.No conversations yet" = "Դեռևս խոսակցություններ չկան";
 "com.kustomer.No internet connection" = "Ինտերնետ կապ չկա";
+"com.kustomer.No results" = "Ոչ մի արդյունք";
 "com.kustomer.No text" = "Ոչ մի տեքստ";
 "com.kustomer.None of your personal information was included" = "Ձեր անձնական տվյալներից ոչ մեկը ներառված չէ";
 "com.kustomer.Not enough disk space" = "Սկավառակի բավարար տարածք չկա";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Լուսանկարների գրադարան";
 "com.kustomer.Please leave a message" = "Խնդրում ենք թողնել հաղորդագրություն";
 "com.kustomer.Please select an option..." = "Խնդրում ենք ընտրել տարբերակ...";
+"com.kustomer.Please try another search term" = "Խնդրում ենք փորձել այլ որոնման տերմին";
 "com.kustomer.Reconnect" = "Կրկին միացեք";
 "com.kustomer.Reconnecting..." = "Վերամիացում...";
 "com.kustomer.Remove" = "Հեռացնել";

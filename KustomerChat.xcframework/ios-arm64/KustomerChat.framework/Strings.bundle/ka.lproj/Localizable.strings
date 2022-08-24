@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ბეჭდავს...";
+"com.kustomer.100+ results found" = "ნაპოვნია 100+ შედეგი";
 "com.kustomer.Add additional feedback" = "დაამატეთ დამატებითი გამოხმაურება";
 "com.kustomer.Additional Feedback" = "დამატებითი გამოხმაურება";
 "com.kustomer.Additional feedback removed" = "წაშლილია დამატებითი გამოხმაურება";
@@ -21,9 +22,10 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "საუბარი გაერთიანდა სხვა მიმოწერაში.\n\nშეეხეთ ახალ მიმოწერაზე გადასასვლელად.";
 "com.kustomer.Conversation moved to another customer" = "საუბარი სხვა მომხმარებელზე გადავიდა";
 "com.kustomer.Delete" = "წაშლა";
-"com.kustomer.Do you want to remove your rating and feedback?" = "გსურთ თქვენი რეიტინგისა და გამოხმაურების წაშლა?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "გსურთ შეინახოთ ცვლილებები, რომლებიც თქვენს კომენტარში განახორციელეთ?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "გსურთ წაშალოთ თქვენი რეიტინგი და გამოხმაურება?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "გსურთ შეინახოთ ცვლილებები, რომლებიც თქვენ შეიტანეთ თქვენს კომენტარში?";
 "com.kustomer.Done" = "შესრულებულია";
+"com.kustomer.Edit additional feedback" = "დამატებითი გამოხმაურების რედაქტირება";
 "com.kustomer.Edit comment" = "კომენტარის რედაქტირება";
 "com.kustomer.End Chat" = "ჩატის დასრულება";
 "com.kustomer.Ended" = "Დასრულდა";
@@ -49,9 +51,10 @@
 "com.kustomer.Never mind" = "Დაიკიდე";
 "com.kustomer.New Conversation" = "ახალი საუბარი";
 "com.kustomer.New message" = "Ახალი შეტყობინება";
-"com.kustomer.No articles" = "სტატიები არ არის";
+"com.kustomer.No articles" = "არ არის სტატიები";
 "com.kustomer.No conversations yet" = "ჯერ არ არის საუბარი";
 "com.kustomer.No internet connection" = "Არ არის ინტერნეტ კავშირი";
+"com.kustomer.No results" = "არანაირი შედეგი";
 "com.kustomer.No text" = "ტექსტი არ არის";
 "com.kustomer.None of your personal information was included" = "არცერთი თქვენი პირადი ინფორმაცია არ იყო ჩართული";
 "com.kustomer.Not enough disk space" = "არ არის საკმარისი ადგილი დისკზე";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "ფოტო ბიბლიოთეკა";
 "com.kustomer.Please leave a message" = "გთხოვთ დატოვოთ შეტყობინება";
 "com.kustomer.Please select an option..." = "გთხოვთ აირჩიოთ ვარიანტი...";
+"com.kustomer.Please try another search term" = "გთხოვთ, სცადოთ სხვა საძიებო ტერმინი";
 "com.kustomer.Reconnect" = "ხელახლა დაკავშირება";
 "com.kustomer.Reconnecting..." = "ხელახლა დაკავშირება...";
 "com.kustomer.Remove" = "ამოღება";

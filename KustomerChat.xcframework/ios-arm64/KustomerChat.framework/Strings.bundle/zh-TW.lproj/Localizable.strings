@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "％@ 在打字...";
+"com.kustomer.100+ results found" = "找到 100 多個結果";
 "com.kustomer.Add additional feedback" = "添加其他反饋";
 "com.kustomer.Additional Feedback" = "附加反饋";
 "com.kustomer.Additional feedback removed" = "刪除了其他反饋";
@@ -6,7 +7,7 @@
 "com.kustomer.Answers" = "答案";
 "com.kustomer.Are you sure you want to end this chat?" = "您確定要結束此聊天嗎？";
 "com.kustomer.Attached file" = "附件";
-"com.kustomer.Attachment" = "依戀";
+"com.kustomer.Attachment" = "附件";
 "com.kustomer.Browse files" = "瀏覽文件";
 "com.kustomer.Camera roll" = "相機膠卷";
 "com.kustomer.Can't load chat" = "無法加載聊天";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "您要刪除您的評分和反饋嗎？";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "是否要保存對評論所做的更改？";
 "com.kustomer.Done" = "完畢";
+"com.kustomer.Edit additional feedback" = "編輯其他反饋";
 "com.kustomer.Edit comment" = "編輯評論";
 "com.kustomer.End Chat" = "結束聊天";
 "com.kustomer.Ended" = "結束";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "沒有文章";
 "com.kustomer.No conversations yet" = "還沒有對話";
 "com.kustomer.No internet connection" = "沒有網絡連接";
+"com.kustomer.No results" = "沒有結果";
 "com.kustomer.No text" = "沒有文字";
 "com.kustomer.None of your personal information was included" = "沒有包含您的個人信息";
 "com.kustomer.Not enough disk space" = "沒有足夠的磁盤空間";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "照片庫";
 "com.kustomer.Please leave a message" = "請留言";
 "com.kustomer.Please select an option..." = "請選擇一個選項...";
+"com.kustomer.Please try another search term" = "請嘗試其他搜索詞";
 "com.kustomer.Reconnect" = "重新連接";
 "com.kustomer.Reconnecting..." = "重新連接...";
 "com.kustomer.Remove" = "消除";

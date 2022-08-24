@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ מקליד...";
+"com.kustomer.100+ results found" = "נמצאו 100+ תוצאות";
 "com.kustomer.Add additional feedback" = "הוסף משוב נוסף";
 "com.kustomer.Additional Feedback" = "משוב נוסף";
 "com.kustomer.Additional feedback removed" = "משוב נוסף הוסר";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "האם ברצונך להסיר את הדירוג והמשוב שלך?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "האם ברצונך לשמור את השינויים שביצעת בתגובה שלך?";
 "com.kustomer.Done" = "בוצע";
+"com.kustomer.Edit additional feedback" = "ערוך משוב נוסף";
 "com.kustomer.Edit comment" = "ערוך תגובה";
 "com.kustomer.End Chat" = "סיים שיחה";
 "com.kustomer.Ended" = "הסתיים";
@@ -39,7 +41,7 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "השאר הודעה";
 "com.kustomer.Leave a message..." = "השאר הודעה...";
-"com.kustomer.Loading..." = "טעינה...";
+"com.kustomer.Loading..." = "טוען...";
 "com.kustomer.Mark all as read" = "סמן הכל כנקרא";
 "com.kustomer.Me" = "לִי";
 "com.kustomer.Message" = "הוֹדָעָה";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "אין מאמרים";
 "com.kustomer.No conversations yet" = "עדיין אין שיחות";
 "com.kustomer.No internet connection" = "אין חיבור אינטרנט";
+"com.kustomer.No results" = "אין תוצאות";
 "com.kustomer.No text" = "אין טקסט";
 "com.kustomer.None of your personal information was included" = "אף אחד מהמידע האישי שלך לא נכלל";
 "com.kustomer.Not enough disk space" = "אין מספיק מקום בדיסק";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "ספריית תמונות";
 "com.kustomer.Please leave a message" = "נא להשאיר הודעה";
 "com.kustomer.Please select an option..." = "בבקשה בחר אפשרות...";
+"com.kustomer.Please try another search term" = "אנא נסה מונח חיפוש אחר";
 "com.kustomer.Reconnect" = "התחבר מחדש";
 "com.kustomer.Reconnecting..." = "מתחבר מחדש...";
 "com.kustomer.Remove" = "לְהַסִיר";
@@ -80,7 +84,7 @@
 "com.kustomer.Thanks for your feedback" = "תודה על המשוב שלך";
 "com.kustomer.That article" = "הכתבה ההיא";
 "com.kustomer.There was a problem" = "הייתה בעיה";
-"com.kustomer.This conversation is read-only" = "השיחה הזו היא לקריאה בלבד";
+"com.kustomer.This conversation is read-only" = "שיחה זו היא לקריאה בלבד";
 "com.kustomer.Try again" = "נסה שוב";
 "com.kustomer.Type a message..." = "הקלד הודעה...";
 "com.kustomer.Unavailable message goes here" = "הודעה לא זמינה נכנסת לכאן";
@@ -88,7 +92,7 @@
 "com.kustomer.Waiting for a response from" = "מחכה לתגובה מאת";
 "com.kustomer.We will get back to you as soon as we are online!" = "נחזור אליך ברגע שנהיה מקוונים!";
 "com.kustomer.Yes" = "כן";
-"com.kustomer.You changed your additional feedback comment" = "שינית את הערת המשוב הנוסף שלך";
+"com.kustomer.You changed your additional feedback comment" = "שינית את הערת המשוב הנוספת שלך";
 "com.kustomer.You're offline. Check your connection." = "אתה במצב לא מקוון. בדוק את החיבור שלך.";
 "com.kustomer.Your existing conversations will be here." = "השיחות הקיימות שלך יהיו כאן.";
 "com.kustomer.is no longer available" = "אינו זמין יותר";

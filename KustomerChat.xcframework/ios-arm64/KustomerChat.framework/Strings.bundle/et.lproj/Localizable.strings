@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ kirjutab...";
+"com.kustomer.100+ results found" = "Leiti 100+ tulemust";
 "com.kustomer.Add additional feedback" = "Lisage täiendavat tagasisidet";
 "com.kustomer.Additional Feedback" = "Täiendav tagasiside";
 "com.kustomer.Additional feedback removed" = "Täiendav tagasiside eemaldatud";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Kas soovite oma hinnangu ja tagasiside eemaldada?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Kas soovite oma kommentaaris tehtud muudatused salvestada?";
 "com.kustomer.Done" = "Valmis";
+"com.kustomer.Edit additional feedback" = "Muuda täiendavat tagasisidet";
 "com.kustomer.Edit comment" = "Muuda kommentaari";
 "com.kustomer.End Chat" = "Lõpeta vestlus";
 "com.kustomer.Ended" = "Lõppenud";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Artikleid pole";
 "com.kustomer.No conversations yet" = "Vestlusi veel pole";
 "com.kustomer.No internet connection" = "Interneti-ühendus puudub";
+"com.kustomer.No results" = "Tulemused puuduvad";
 "com.kustomer.No text" = "Teksti pole";
 "com.kustomer.None of your personal information was included" = "Ühtegi teie isiklikku teavet ei lisatud";
 "com.kustomer.Not enough disk space" = "Pole piisavalt kettaruumi";
@@ -59,9 +62,10 @@
 "com.kustomer.Okay" = "Okei";
 "com.kustomer.Open in browser" = "Ava brauseris";
 "com.kustomer.Outgoing chat" = "Väljuv vestlus";
-"com.kustomer.Photo library" = "Fotokogu";
+"com.kustomer.Photo library" = "Fototeek";
 "com.kustomer.Please leave a message" = "Palun jäta sõnum";
 "com.kustomer.Please select an option..." = "Palun tehke valik...";
+"com.kustomer.Please try another search term" = "Palun proovi teist otsinguterminit";
 "com.kustomer.Reconnect" = "Ühendage uuesti";
 "com.kustomer.Reconnecting..." = "Ühenduse taastamine...";
 "com.kustomer.Remove" = "Eemalda";

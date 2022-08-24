@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ਟਾਈਪ ਕਰ ਰਿਹਾ ਹੈ...";
+"com.kustomer.100+ results found" = "100+ ਨਤੀਜੇ ਮਿਲੇ";
 "com.kustomer.Add additional feedback" = "ਵਾਧੂ ਫੀਡਬੈਕ ਸ਼ਾਮਲ ਕਰੋ";
 "com.kustomer.Additional Feedback" = "ਵਧੀਕ ਫੀਡਬੈਕ";
 "com.kustomer.Additional feedback removed" = "ਵਧੀਕ ਫੀਡਬੈਕ ਹਟਾਇਆ ਗਿਆ";
@@ -13,7 +14,7 @@
 "com.kustomer.Cancel" = "ਰੱਦ ਕਰੋ";
 "com.kustomer.Cancelled! Tap to retry." = "ਰੱਦ ਕੀਤਾ! ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।";
 "com.kustomer.Chat" = "ਚੈਟ";
-"com.kustomer.Chat has ended" = "ਚੈਟ ਖਤਮ ਹੋ ਗਈ ਹੈ";
+"com.kustomer.Chat has ended" = "ਚੈਟ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ";
 "com.kustomer.Chat history" = "ਚੈਟ ਇਤਿਹਾਸ";
 "com.kustomer.Chat is currently unavailable" = "ਚੈਟ ਵਰਤਮਾਨ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ";
 "com.kustomer.Chat with support" = "ਸਹਾਇਤਾ ਨਾਲ ਗੱਲਬਾਤ ਕਰੋ";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "ਕੀ ਤੁਸੀਂ ਆਪਣੀ ਰੇਟਿੰਗ ਅਤੇ ਫੀਡਬੈਕ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "ਕੀ ਤੁਸੀਂ ਆਪਣੀ ਟਿੱਪਣੀ ਵਿੱਚ ਕੀਤੀਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?";
 "com.kustomer.Done" = "ਹੋ ਗਿਆ";
+"com.kustomer.Edit additional feedback" = "ਵਾਧੂ ਫੀਡਬੈਕ ਦਾ ਸੰਪਾਦਨ ਕਰੋ";
 "com.kustomer.Edit comment" = "ਟਿੱਪਣੀ ਦਾ ਸੰਪਾਦਨ ਕਰੋ";
 "com.kustomer.End Chat" = "ਚੈਟ ਸਮਾਪਤ ਕਰੋ";
 "com.kustomer.Ended" = "ਬੰਦ ਹੋ ਗਿਆ";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "ਕੋਈ ਲੇਖ ਨਹੀਂ";
 "com.kustomer.No conversations yet" = "ਅਜੇ ਤੱਕ ਕੋਈ ਗੱਲਬਾਤ ਨਹੀਂ ਹੈ";
 "com.kustomer.No internet connection" = "ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ";
+"com.kustomer.No results" = "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ";
 "com.kustomer.No text" = "ਕੋਈ ਲਿਖਤ ਨਹੀਂ";
 "com.kustomer.None of your personal information was included" = "ਤੁਹਾਡੀ ਕੋਈ ਵੀ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੀ ਗਈ ਸੀ";
 "com.kustomer.Not enough disk space" = "ਲੋੜੀਂਦੀ ਡਿਸਕ ਥਾਂ ਨਹੀਂ ਹੈ";
@@ -62,7 +65,8 @@
 "com.kustomer.Photo library" = "ਫੋਟੋ ਲਾਇਬ੍ਰੇਰੀ";
 "com.kustomer.Please leave a message" = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਸੁਨੇਹਾ ਛੱਡੋ";
 "com.kustomer.Please select an option..." = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵਿਕਲਪ ਚੁਣੋ...";
-"com.kustomer.Reconnect" = "ਮੁੜ ਕਨੈਕਟ ਕਰੋ";
+"com.kustomer.Please try another search term" = "ਕਿਰਪਾ ਕਰਕੇ ਕੋਈ ਹੋਰ ਖੋਜ ਸ਼ਬਦ ਅਜ਼ਮਾਓ";
+"com.kustomer.Reconnect" = "ਦੁਬਾਰਾ ਕਨੈਕਟ ਕਰੋ";
 "com.kustomer.Reconnecting..." = "ਮੁੜ ਕਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...";
 "com.kustomer.Remove" = "ਹਟਾਓ";
 "com.kustomer.Report problem" = "ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ";

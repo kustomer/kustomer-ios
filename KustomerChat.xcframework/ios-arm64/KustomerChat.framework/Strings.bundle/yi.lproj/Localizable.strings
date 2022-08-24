@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ טייפּט...";
+"com.kustomer.100+ results found" = "100+ רעזולטאַטן געפֿונען";
 "com.kustomer.Add additional feedback" = "לייג נאָך באַמערקונגען";
 "com.kustomer.Additional Feedback" = "נאָך באַמערקונגען";
 "com.kustomer.Additional feedback removed" = "נאָך באַמערקונגען אַוועקגענומען";
 "com.kustomer.Agent" = "אַגענט";
 "com.kustomer.Answers" = "ענטפֿערס";
-"com.kustomer.Are you sure you want to end this chat?" = "זענט איר זיכער אַז איר ווילן צו ענדיקן דעם שמועס?";
+"com.kustomer.Are you sure you want to end this chat?" = "זענט איר זיכער אַז איר ווילט ענדיקן דעם שמועס?";
 "com.kustomer.Attached file" = "אַטאַטשט טעקע";
 "com.kustomer.Attachment" = "אַטאַטשמאַנט";
 "com.kustomer.Browse files" = "בלעטער טעקעס";
@@ -23,7 +24,8 @@
 "com.kustomer.Delete" = "ויסמעקן";
 "com.kustomer.Do you want to remove your rating and feedback?" = "צי איר ווילן צו באַזייַטיקן דיין שאַץ און באַמערקונגען?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "צי איר ווילן צו ראַטעווען די ענדערונגען וואָס איר האָט געמאכט אין דיין באַמערקונג?";
-"com.kustomer.Done" = "געשען";
+"com.kustomer.Done" = "געטאן";
+"com.kustomer.Edit additional feedback" = "רעדאַגירן נאָך באַמערקונגען";
 "com.kustomer.Edit comment" = "רעדאַגירן באַמערקונג";
 "com.kustomer.End Chat" = "סוף שמועסן";
 "com.kustomer.Ended" = "געענדיקט";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "קיין אַרטיקלען";
 "com.kustomer.No conversations yet" = "נאָך קיין שמועסן";
 "com.kustomer.No internet connection" = "קיין אינטערנעט פֿאַרבינדונג";
+"com.kustomer.No results" = "קיין רעזולטאַטן";
 "com.kustomer.No text" = "קיין טעקסט";
 "com.kustomer.None of your personal information was included" = "קיין פון דיין פערזענלעכע אינפֿאָרמאַציע איז געווען אַרייַנגערעכנט";
 "com.kustomer.Not enough disk space" = "ניט גענוג דיסק פּלאַץ";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "פאָטאָ ביבליאָטעק";
 "com.kustomer.Please leave a message" = "ביטע לאָזן אַ אָנזאָג";
 "com.kustomer.Please select an option..." = "ביטע אויסקלייַבן אַן אָפּציע ...";
+"com.kustomer.Please try another search term" = "ביטע פּרוּווט אן אנדער זוכן טערמין";
 "com.kustomer.Reconnect" = "רעקאָננעקט";
 "com.kustomer.Reconnecting..." = "ריקאַנעקטינג ...";
 "com.kustomer.Remove" = "אַראָפּנעמען";

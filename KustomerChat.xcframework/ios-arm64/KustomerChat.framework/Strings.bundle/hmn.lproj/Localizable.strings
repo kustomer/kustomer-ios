@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ yog typing...";
+"com.kustomer.100+ results found" = "100+ cov txiaj ntsig pom";
 "com.kustomer.Add additional feedback" = "Ntxiv cov lus qhia ntxiv";
 "com.kustomer.Additional Feedback" = "Cov lus teb ntxiv";
 "com.kustomer.Additional feedback removed" = "Kev tawm tswv yim ntxiv raug tshem tawm";
@@ -21,9 +22,10 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Kev sib tham tau muab tso rau hauv lwm qhov kev sib tham.\n\nNias mus rau qhov kev sib tham tshiab.";
 "com.kustomer.Conversation moved to another customer" = "Kev sib tham tau tsiv mus rau lwm tus neeg siv khoom";
 "com.kustomer.Delete" = "Rho tawm";
-"com.kustomer.Do you want to remove your rating and feedback?" = "Koj puas xav tshem koj qhov kev ntaus nqi thiab cov lus tawm tswv yim?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "Koj puas xav tshem koj qhov kev ntaus nqi thiab kev tawm tswv yim?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Koj puas xav khaws cov kev hloov pauv uas koj tau ua rau koj cov lus pom?";
 "com.kustomer.Done" = "Ua tiav";
+"com.kustomer.Edit additional feedback" = "Kho cov lus qhia ntxiv";
 "com.kustomer.Edit comment" = "Kho kom raug lus";
 "com.kustomer.End Chat" = "Xaus Tham";
 "com.kustomer.Ended" = "Xaus";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Tsis muaj ntawv";
 "com.kustomer.No conversations yet" = "Tseem tsis tau muaj kev sib tham";
 "com.kustomer.No internet connection" = "Tsis muaj internet txuas";
+"com.kustomer.No results" = "Tsis muaj qhov tshwm sim";
 "com.kustomer.No text" = "Tsis muaj ntawv";
 "com.kustomer.None of your personal information was included" = "Tsis muaj koj cov ntaub ntawv ntiag tug raug suav nrog";
 "com.kustomer.Not enough disk space" = "Tsis txaus qhov chaw disk";
@@ -61,13 +64,14 @@
 "com.kustomer.Outgoing chat" = "Tham tawm";
 "com.kustomer.Photo library" = "Cov tsev qiv ntawv duab";
 "com.kustomer.Please leave a message" = "Thov tso ib zaj lus";
-"com.kustomer.Please select an option..." = "Thov xaiv ib qho kev xaiv...";
+"com.kustomer.Please select an option..." = "Thov xaiv ib qho kev xaiv ...";
+"com.kustomer.Please try another search term" = "Thov sim lwm lo lus tshawb nrhiav";
 "com.kustomer.Reconnect" = "Txuas dua";
 "com.kustomer.Reconnecting..." = "Reconnecting...";
 "com.kustomer.Remove" = "Tshem tawm";
 "com.kustomer.Report problem" = "Qhia teeb meem";
 "com.kustomer.Report sent" = "Qhia xa tuaj";
-"com.kustomer.Save changes" = "Txuag cov kev hloov pauv";
+"com.kustomer.Save changes" = "Txuag kev hloov";
 "com.kustomer.Search Help Articles" = "Nrhiav Kev Pab Cuam";
 "com.kustomer.Search Results" = "Tshawb nrhiav";
 "com.kustomer.Sending" = "Xa";

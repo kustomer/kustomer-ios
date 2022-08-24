@@ -24,6 +24,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Do you want to remove your rating and feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Do you want to save the changes you made to your comment?";
 "com.kustomer.Done" = "Done";
+"com.kustomer.Edit additional feedback" = "Edit additional feedback";
 "com.kustomer.Edit comment" = "Edit comment";
 "com.kustomer.End Chat" = "End Chat";
 "com.kustomer.Ended" = "Ended";
@@ -35,6 +36,7 @@
 "com.kustomer.Image" = "Image";
 "com.kustomer.Incoming chat" = "Incoming chat";
 "com.kustomer.Internet offline" = "Internet offline";
+"com.kustomer.is no longer available" = "is no longer available";
 "com.kustomer.Just now" = "Just now";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Leave a message";
@@ -58,6 +60,7 @@
 "com.kustomer.Not found" = "Not found";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Open in browser";
+"com.kustomer.out of" = "out of";
 "com.kustomer.Outgoing chat" = "Outgoing chat";
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Please leave a message";
@@ -70,6 +73,7 @@
 "com.kustomer.Save changes" = "Save changes";
 "com.kustomer.Search Help Articles" = "Search Help Articles";
 "com.kustomer.Search Results" = "Search Results";
+"com.kustomer.sending" = "sending";
 "com.kustomer.Sending" = "Sending";
 "com.kustomer.Share" = "Share";
 "com.kustomer.Submit" = "Submit";
@@ -85,12 +89,10 @@
 "com.kustomer.Type a message..." = "Type a message...";
 "com.kustomer.Unavailable message goes here" = "Unavailable message goes here";
 "com.kustomer.Updated" = "Updated";
+"com.kustomer.View additional feedback" = "View additional feedback";
 "com.kustomer.Waiting for a response from" = "Waiting for a response from";
 "com.kustomer.We will get back to you as soon as we are online!" = "We will get back to you as soon as we are online!";
 "com.kustomer.Yes" = "Yes";
 "com.kustomer.You changed your additional feedback comment" = "You changed your additional feedback comment";
 "com.kustomer.You're offline. Check your connection." = "You're offline. Check your connection.";
 "com.kustomer.Your existing conversations will be here." = "Your existing conversations will be here.";
-"com.kustomer.is no longer available" = "is no longer available";
-"com.kustomer.out of" = "out of";
-"com.kustomer.sending" = "sending";

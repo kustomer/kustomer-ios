@@ -1,5 +1,6 @@
 "com.kustomer.%@ is typing..." = "%@ чоп мекунад...";
-"com.kustomer.Add additional feedback" = "Иловаи фикру мулоҳизаҳои иловагӣ";
+"com.kustomer.100+ results found" = "100+ натиҷа ёфт";
+"com.kustomer.Add additional feedback" = "Илова кардани фикру мулоҳизаҳои иловагӣ";
 "com.kustomer.Additional Feedback" = "Алоқаи иловагӣ";
 "com.kustomer.Additional feedback removed" = "Бозгашти иловагӣ хориҷ карда шуд";
 "com.kustomer.Agent" = "Агент";
@@ -9,7 +10,7 @@
 "com.kustomer.Attachment" = "Замима";
 "com.kustomer.Browse files" = "Файлҳоро паймоиш кунед";
 "com.kustomer.Camera roll" = "Роли камера";
-"com.kustomer.Can't load chat" = "Чатро бор кардан мумкин нест";
+"com.kustomer.Can't load chat" = "Чат бор карда намешавад";
 "com.kustomer.Cancel" = "Бекор кардан";
 "com.kustomer.Cancelled! Tap to retry." = "Бекор карда шуд! Барои дубора кӯшиш кардан клик кунед.";
 "com.kustomer.Chat" = "Чат";
@@ -22,8 +23,9 @@
 "com.kustomer.Conversation moved to another customer" = "Гуфтугӯ ба муштарии дигар интиқол дода шуд";
 "com.kustomer.Delete" = "Нобуд кунед";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Мехоҳед рейтинг ва фикру мулоҳизаҳои худро хориҷ кунед?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Оё шумо мехоҳед тағиротҳоеро, ки ба шарҳи худ ворид кардаед, захира кунед?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Оё мехоҳед тағиротҳоеро, ки ба шарҳи худ ворид кардаед, захира кунед?";
 "com.kustomer.Done" = "Иҷро шуд";
+"com.kustomer.Edit additional feedback" = "Таҳрири фикру мулоҳизаҳои иловагӣ";
 "com.kustomer.Edit comment" = "Таҳрири шарҳ";
 "com.kustomer.End Chat" = "Анҷом додани сӯҳбат";
 "com.kustomer.Ended" = "Ба охир расид";
@@ -36,7 +38,7 @@
 "com.kustomer.Incoming chat" = "Чати воридотӣ";
 "com.kustomer.Internet offline" = "Интернет офлайн";
 "com.kustomer.Just now" = "Ҳамин ҳоло";
-"com.kustomer.KB" = "КБ";
+"com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Паём гузоред";
 "com.kustomer.Leave a message..." = "Паём гузоред...";
 "com.kustomer.Loading..." = "Loading...";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Мақолаҳо нест";
 "com.kustomer.No conversations yet" = "Ҳанӯз сӯҳбате нест";
 "com.kustomer.No internet connection" = "Пайвасти интернет нест";
+"com.kustomer.No results" = "Ҳеҷ натиҷае нест";
 "com.kustomer.No text" = "Матн нест";
 "com.kustomer.None of your personal information was included" = "Ҳеҷ яке аз маълумоти шахсии шумо дохил карда нашудааст";
 "com.kustomer.Not enough disk space" = "Фазои диск кофӣ нест";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Китобхонаи суратхо";
 "com.kustomer.Please leave a message" = "Лутфан паём гузоред";
 "com.kustomer.Please select an option..." = "Лутфан интихоберо интихоб кунед...";
+"com.kustomer.Please try another search term" = "Лутфан истилоҳи дигари ҷустуҷӯро санҷед";
 "com.kustomer.Reconnect" = "Аз нав пайваст кунед";
 "com.kustomer.Reconnecting..." = "Аз нав пайваст карда мешавад...";
 "com.kustomer.Remove" = "Хориҷ кунед";
@@ -81,7 +85,7 @@
 "com.kustomer.That article" = "Он мақола";
 "com.kustomer.There was a problem" = "Мушкилот вуҷуд дошт";
 "com.kustomer.This conversation is read-only" = "Ин сӯҳбат танҳо барои хондан аст";
-"com.kustomer.Try again" = "Дубора сайъ кунед";
+"com.kustomer.Try again" = "Як бори дигар санҷед";
 "com.kustomer.Type a message..." = "Паёмро нависед...";
 "com.kustomer.Unavailable message goes here" = "Паёми дастнорас дар ин ҷо меравад";
 "com.kustomer.Updated" = "Навсозӣ";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "٪@ در حال تایپ کردن...";
+"com.kustomer.100+ results found" = "بیش از 100 نتیجه یافت شد";
 "com.kustomer.Add additional feedback" = "بازخورد اضافی اضافه کنید";
 "com.kustomer.Additional Feedback" = "بازخورد اضافی";
 "com.kustomer.Additional feedback removed" = "بازخورد اضافی حذف شد";
@@ -17,16 +18,17 @@
 "com.kustomer.Chat history" = "تاریخچه ی گفتگو";
 "com.kustomer.Chat is currently unavailable" = "گپ در حال حاضر در دسترس نیست";
 "com.kustomer.Chat with support" = "با پشتیبانی چت کنید";
-"com.kustomer.Conversation ended" = "گفتگو تمام شد";
+"com.kustomer.Conversation ended" = "گفتگو به پایان رسید";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "مکالمه در مکالمه دیگری ادغام شد.\n\nبرای رفتن به مکالمه جدید ضربه بزنید.";
 "com.kustomer.Conversation moved to another customer" = "مکالمه به مشتری دیگری منتقل شد";
 "com.kustomer.Delete" = "حذف";
 "com.kustomer.Do you want to remove your rating and feedback?" = "آیا می خواهید رتبه بندی و بازخورد خود را حذف کنید؟";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "آیا می خواهید تغییراتی را که در نظر خود ایجاد کرده اید ذخیره کنید؟";
 "com.kustomer.Done" = "انجام شده";
+"com.kustomer.Edit additional feedback" = "بازخورد اضافی را ویرایش کنید";
 "com.kustomer.Edit comment" = "ویرایش نظر";
 "com.kustomer.End Chat" = "پایان چت";
-"com.kustomer.Ended" = "پایان یافت";
+"com.kustomer.Ended" = "به پایان رسید";
 "com.kustomer.Error" = "خطا";
 "com.kustomer.Error!" = "خطا!";
 "com.kustomer.Error. Tap to retry." = "خطا. برای تکرار دوباره کلیک کنید.";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "بدون مقاله";
 "com.kustomer.No conversations yet" = "هنوز مکالمه ای وجود ندارد";
 "com.kustomer.No internet connection" = "بدون اتصال به اینترنت";
+"com.kustomer.No results" = "هیچ نتیجه ای";
 "com.kustomer.No text" = "بدون متن";
 "com.kustomer.None of your personal information was included" = "هیچ یک از اطلاعات شخصی شما گنجانده نشده است";
 "com.kustomer.Not enough disk space" = "فضای دیسک کافی نیست";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "کتابخانه عکس";
 "com.kustomer.Please leave a message" = "لطفا پیام بگذارید";
 "com.kustomer.Please select an option..." = "لطفا یک گزینه را انتخاب کنید...";
+"com.kustomer.Please try another search term" = "لطفاً عبارت جستجوی دیگری را امتحان کنید";
 "com.kustomer.Reconnect" = "دوباره وصل شوید";
 "com.kustomer.Reconnecting..." = "اتصال مجدد...";
 "com.kustomer.Remove" = "برداشتن";
@@ -89,7 +93,7 @@
 "com.kustomer.We will get back to you as soon as we are online!" = "به محض اینکه آنلاین شدیم با شما تماس خواهیم گرفت!";
 "com.kustomer.Yes" = "آره";
 "com.kustomer.You changed your additional feedback comment" = "نظر بازخورد اضافی خود را تغییر دادید";
-"com.kustomer.You're offline. Check your connection." = "شما آفلاین هستید اتصال خود را بررسی کنید";
+"com.kustomer.You're offline. Check your connection." = "شما آفلاین هستید. اتصال خود را بررسی کنید.";
 "com.kustomer.Your existing conversations will be here." = "مکالمات موجود شما اینجا خواهد بود.";
 "com.kustomer.is no longer available" = "دیگر در دسترس نیست";
 "com.kustomer.out of" = "بیرون از";

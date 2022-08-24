@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ជា​ការ​វាយ...";
+"com.kustomer.100+ results found" = "100+ លទ្ធផលបានរកឃើញ";
 "com.kustomer.Add additional feedback" = "បន្ថែមមតិកែលម្អបន្ថែម";
 "com.kustomer.Additional Feedback" = "មតិ​បន្ថែម";
 "com.kustomer.Additional feedback removed" = "មតិកែលម្អបន្ថែមត្រូវបានដកចេញ";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "តើអ្នកចង់លុបការវាយតម្លៃ និងមតិកែលម្អរបស់អ្នកទេ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "តើអ្នកចង់រក្សាទុកការផ្លាស់ប្តូរដែលអ្នកបានធ្វើចំពោះមតិយោបល់របស់អ្នកទេ?";
 "com.kustomer.Done" = "រួចរាល់";
+"com.kustomer.Edit additional feedback" = "កែសម្រួលមតិកែលម្អបន្ថែម";
 "com.kustomer.Edit comment" = "កែសម្រួល​មតិ";
 "com.kustomer.End Chat" = "បញ្ចប់ការជជែក";
 "com.kustomer.Ended" = "បានបញ្ចប់";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "គ្មានអត្ថបទ";
 "com.kustomer.No conversations yet" = "មិនមានការសន្ទនានៅឡើយទេ";
 "com.kustomer.No internet connection" = "គ្មានការតភ្ជាប់អ៊ីនធឺណិត";
+"com.kustomer.No results" = "គ្មាន​លទ្ធផល";
 "com.kustomer.No text" = "គ្មានអត្ថបទ";
 "com.kustomer.None of your personal information was included" = "គ្មានព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកត្រូវបានរួមបញ្ចូលទេ។";
 "com.kustomer.Not enough disk space" = "ទំហំថាសមិនគ្រប់គ្រាន់ទេ។";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "បណ្ណាល័យរូបថត";
 "com.kustomer.Please leave a message" = "សូមទុកសារមួយ។";
 "com.kustomer.Please select an option..." = "សូមជ្រើសរើសជម្រើសមួយ...";
+"com.kustomer.Please try another search term" = "សូមសាកល្បងពាក្យស្វែងរកផ្សេងទៀត។";
 "com.kustomer.Reconnect" = "ភ្ជាប់ឡើងវិញ";
 "com.kustomer.Reconnecting..." = "កំពុងភ្ជាប់ឡើងវិញ...";
 "com.kustomer.Remove" = "ដកចេញ";
@@ -79,7 +83,7 @@
 "com.kustomer.Tap to open" = "ប៉ះដើម្បីបើក";
 "com.kustomer.Thanks for your feedback" = "អរគុណសម្រាប់មតិកែលម្អរបស់អ្នក។";
 "com.kustomer.That article" = "អត្ថបទនោះ។";
-"com.kustomer.There was a problem" = "មានបញ្ហា";
+"com.kustomer.There was a problem" = "មាន​បញ្ហា";
 "com.kustomer.This conversation is read-only" = "ការសន្ទនានេះគឺបានតែអានប៉ុណ្ណោះ។";
 "com.kustomer.Try again" = "ព្យាយាម​ម្តង​ទៀត";
 "com.kustomer.Type a message..." = "វាយ​សារ...";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ skriver...";
+"com.kustomer.100+ results found" = "100+ resultater fundet";
 "com.kustomer.Add additional feedback" = "Tilføj yderligere feedback";
 "com.kustomer.Additional Feedback" = "Yderligere feedback";
 "com.kustomer.Additional feedback removed" = "Yderligere feedback er fjernet";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vil du fjerne din vurdering og feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vil du gemme de ændringer, du har foretaget i din kommentar?";
 "com.kustomer.Done" = "Færdig";
+"com.kustomer.Edit additional feedback" = "Rediger yderligere feedback";
 "com.kustomer.Edit comment" = "Rediger kommentar";
 "com.kustomer.End Chat" = "Afslut chat";
 "com.kustomer.Ended" = "Afsluttet";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Ingen artikler";
 "com.kustomer.No conversations yet" = "Ingen samtaler endnu";
 "com.kustomer.No internet connection" = "Ingen internetforbindelse";
+"com.kustomer.No results" = "Ingen resultater";
 "com.kustomer.No text" = "Ingen tekst";
 "com.kustomer.None of your personal information was included" = "Ingen af dine personlige oplysninger var inkluderet";
 "com.kustomer.Not enough disk space" = "Ikke nok diskplads";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Fotobibliotek";
 "com.kustomer.Please leave a message" = "Læg venligst en besked";
 "com.kustomer.Please select an option..." = "Vælg venligst en mulighed...";
+"com.kustomer.Please try another search term" = "Prøv venligst et andet søgeord";
 "com.kustomer.Reconnect" = "Tilslut igen";
 "com.kustomer.Reconnecting..." = "Genopretter forbindelse...";
 "com.kustomer.Remove" = "Fjerne";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ টাইপ করছে...";
+"com.kustomer.100+ results found" = "100+ ফলাফল পাওয়া গেছে";
 "com.kustomer.Add additional feedback" = "অতিরিক্ত প্রতিক্রিয়া যোগ করুন";
 "com.kustomer.Additional Feedback" = "অতিরিক্ত প্রতিক্রিয়া";
 "com.kustomer.Additional feedback removed" = "অতিরিক্ত প্রতিক্রিয়া সরানো হয়েছে";
@@ -9,7 +10,7 @@
 "com.kustomer.Attachment" = "সংযুক্তি";
 "com.kustomer.Browse files" = "ফাইল ব্রাউজ";
 "com.kustomer.Camera roll" = "ক্যামেরা চালু";
-"com.kustomer.Can't load chat" = "চ্যাট লোড করা যাবে না";
+"com.kustomer.Can't load chat" = "চ্যাট লোড করা যাচ্ছে না";
 "com.kustomer.Cancel" = "বাতিল করুন";
 "com.kustomer.Cancelled! Tap to retry." = "বাতিল করা হয়েছে! আবার চেষ্টা করতে আলতো চাপুন।";
 "com.kustomer.Chat" = "চ্যাট";
@@ -21,9 +22,10 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "কথোপকথন অন্য কথোপকথনে একত্রিত হয়েছে।\n\nনতুন কথোপকথনে যেতে ট্যাপ করুন।";
 "com.kustomer.Conversation moved to another customer" = "কথোপকথন অন্য গ্রাহকের কাছে সরানো হয়েছে৷";
 "com.kustomer.Delete" = "মুছে ফেলা";
-"com.kustomer.Do you want to remove your rating and feedback?" = "আপনি আপনার রেটিং এবং প্রতিক্রিয়া সরাতে চান?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "আপনি কি আপনার রেটিং এবং প্রতিক্রিয়া সরাতে চান?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "আপনি কি আপনার মন্তব্যে করা পরিবর্তনগুলি সংরক্ষণ করতে চান?";
 "com.kustomer.Done" = "সম্পন্ন";
+"com.kustomer.Edit additional feedback" = "অতিরিক্ত প্রতিক্রিয়া সম্পাদনা করুন";
 "com.kustomer.Edit comment" = "মন্তব্য সম্পাদনা করুন";
 "com.kustomer.End Chat" = "চ্যাট শেষ করুন";
 "com.kustomer.Ended" = "শেষ হয়েছে";
@@ -52,8 +54,9 @@
 "com.kustomer.No articles" = "কোন নিবন্ধ নেই";
 "com.kustomer.No conversations yet" = "এখনো কোনো কথোপকথন নেই";
 "com.kustomer.No internet connection" = "ইন্টারনেট সংযোগ নেই";
+"com.kustomer.No results" = "কোন ফলাফল নেই";
 "com.kustomer.No text" = "কোন লেখা নেই";
-"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোন অন্তর্ভুক্ত করা হয়নি";
+"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোনো অন্তর্ভুক্ত করা হয়নি";
 "com.kustomer.Not enough disk space" = "পর্যাপ্ত ডিস্ক স্থান নেই";
 "com.kustomer.Not found" = "পাওয়া যায়নি";
 "com.kustomer.Okay" = "ঠিক আছে";
@@ -62,13 +65,14 @@
 "com.kustomer.Photo library" = "ফটো লাইব্রেরি";
 "com.kustomer.Please leave a message" = "অনুগ্রহপূর্বক একটি বার্তা রাখুন";
 "com.kustomer.Please select an option..." = "একটি বিকল্প নির্বাচন করুন...";
+"com.kustomer.Please try another search term" = "অনুগ্রহ করে আরেকটি অনুসন্ধান শব্দ চেষ্টা করুন";
 "com.kustomer.Reconnect" = "পুনরায় সংযোগ করুন";
 "com.kustomer.Reconnecting..." = "পুনরায় সংযোগ করা হচ্ছে...";
 "com.kustomer.Remove" = "অপসারণ";
 "com.kustomer.Report problem" = "সমস্যা রিপোর্ট করুন";
 "com.kustomer.Report sent" = "প্রতিবেদন পাঠানো";
 "com.kustomer.Save changes" = "পরিবর্তনগুলোর সংরক্ষন";
-"com.kustomer.Search Help Articles" = "সাহায্য নিবন্ধ অনুসন্ধান করুন";
+"com.kustomer.Search Help Articles" = "সাহায্য প্রবন্ধ অনুসন্ধান করুন";
 "com.kustomer.Search Results" = "অনুসন্ধান ফলাফল";
 "com.kustomer.Sending" = "পাঠানো হচ্ছে";
 "com.kustomer.Share" = "শেয়ার করুন";

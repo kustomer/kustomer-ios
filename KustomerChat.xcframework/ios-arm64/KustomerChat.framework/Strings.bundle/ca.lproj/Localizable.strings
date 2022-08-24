@@ -1,13 +1,14 @@
 "com.kustomer.%@ is typing..." = "%@ està escrivint...";
+"com.kustomer.100+ results found" = "S&#39;han trobat més de 100 resultats";
 "com.kustomer.Add additional feedback" = "Afegeix comentaris addicionals";
 "com.kustomer.Additional Feedback" = "Comentaris addicionals";
-"com.kustomer.Additional feedback removed" = "S&#39;han eliminat els comentaris addicionals";
+"com.kustomer.Additional feedback removed" = "S&#39;han eliminat comentaris addicionals";
 "com.kustomer.Agent" = "Agent";
 "com.kustomer.Answers" = "Respostes";
 "com.kustomer.Are you sure you want to end this chat?" = "Confirmes que vols acabar aquest xat?";
 "com.kustomer.Attached file" = "Arxiu adjunt";
 "com.kustomer.Attachment" = "Adjunt";
-"com.kustomer.Browse files" = "Examinar fitxers";
+"com.kustomer.Browse files" = "Exploreu fitxers";
 "com.kustomer.Camera roll" = "Rotlle de càmera";
 "com.kustomer.Can't load chat" = "No es pot carregar el xat";
 "com.kustomer.Cancel" = "Cancel · lar";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vols eliminar la teva puntuació i comentaris?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vols desar els canvis que has fet al teu comentari?";
 "com.kustomer.Done" = "Fet";
+"com.kustomer.Edit additional feedback" = "Editeu comentaris addicionals";
 "com.kustomer.Edit comment" = "Edita el comentari";
 "com.kustomer.End Chat" = "Finalitza el xat";
 "com.kustomer.Ended" = "S&#39;ha acabat";
@@ -52,9 +54,10 @@
 "com.kustomer.No articles" = "Sense articles";
 "com.kustomer.No conversations yet" = "Encara no hi ha converses";
 "com.kustomer.No internet connection" = "Sense connexió a Internet";
+"com.kustomer.No results" = "Sense resultats";
 "com.kustomer.No text" = "Sense text";
 "com.kustomer.None of your personal information was included" = "No s&#39;ha inclòs cap de la vostra informació personal";
-"com.kustomer.Not enough disk space" = "Espai del disc insuficient";
+"com.kustomer.Not enough disk space" = "No hi ha prou espai al disc";
 "com.kustomer.Not found" = "No trobat";
 "com.kustomer.Okay" = "Bé";
 "com.kustomer.Open in browser" = "Oberta al navegador";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Fototeca";
 "com.kustomer.Please leave a message" = "Si us plau, deixeu un missatge";
 "com.kustomer.Please select an option..." = "Seleccioneu una opció...";
+"com.kustomer.Please try another search term" = "Si us plau, proveu amb un altre terme de cerca";
 "com.kustomer.Reconnect" = "Torna a connectar";
 "com.kustomer.Reconnecting..." = "S&#39;està tornant a connectar...";
 "com.kustomer.Remove" = "Eliminar";

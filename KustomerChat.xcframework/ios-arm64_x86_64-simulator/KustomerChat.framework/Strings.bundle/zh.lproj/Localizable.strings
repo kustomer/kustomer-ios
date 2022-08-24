@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "％@ 在打字...";
+"com.kustomer.100+ results found" = "找到 100 多个结果";
 "com.kustomer.Add additional feedback" = "添加其他反馈";
 "com.kustomer.Additional Feedback" = "附加反馈";
 "com.kustomer.Additional feedback removed" = "删除了其他反馈";
@@ -6,7 +7,7 @@
 "com.kustomer.Answers" = "答案";
 "com.kustomer.Are you sure you want to end this chat?" = "您确定要结束此聊天吗？";
 "com.kustomer.Attached file" = "附件";
-"com.kustomer.Attachment" = "依恋";
+"com.kustomer.Attachment" = "附件";
 "com.kustomer.Browse files" = "浏览文件";
 "com.kustomer.Camera roll" = "相机胶卷";
 "com.kustomer.Can't load chat" = "无法加载聊天";
@@ -21,9 +22,10 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "对话已合并到另一个对话中。\n\n点按即可转到新对话。";
 "com.kustomer.Conversation moved to another customer" = "对话转移到另一位客户";
 "com.kustomer.Delete" = "删除";
-"com.kustomer.Do you want to remove your rating and feedback?" = "您要删除您的评分和反馈吗？";
+"com.kustomer.Do you want to remove your rating and feedback?" = "您想删除您的评分和反馈吗？";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "是否要保存对评论所做的更改？";
 "com.kustomer.Done" = "完毕";
+"com.kustomer.Edit additional feedback" = "编辑其他反馈";
 "com.kustomer.Edit comment" = "编辑评论";
 "com.kustomer.End Chat" = "结束聊天";
 "com.kustomer.Ended" = "结束";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "没有文章";
 "com.kustomer.No conversations yet" = "还没有对话";
 "com.kustomer.No internet connection" = "没有网络连接";
+"com.kustomer.No results" = "没有结果";
 "com.kustomer.No text" = "没有文字";
 "com.kustomer.None of your personal information was included" = "没有包含您的个人信息";
 "com.kustomer.Not enough disk space" = "没有足够的磁盘空间";
@@ -62,11 +65,12 @@
 "com.kustomer.Photo library" = "照片库";
 "com.kustomer.Please leave a message" = "请留言";
 "com.kustomer.Please select an option..." = "请选择一个选项...";
+"com.kustomer.Please try another search term" = "请尝试其他搜索词";
 "com.kustomer.Reconnect" = "重新连接";
 "com.kustomer.Reconnecting..." = "重新连接...";
 "com.kustomer.Remove" = "消除";
 "com.kustomer.Report problem" = "报告问题";
-"com.kustomer.Report sent" = "报告已发送";
+"com.kustomer.Report sent" = "已发送报告";
 "com.kustomer.Save changes" = "保存更改";
 "com.kustomer.Search Help Articles" = "搜索帮助文章";
 "com.kustomer.Search Results" = "搜索结果";

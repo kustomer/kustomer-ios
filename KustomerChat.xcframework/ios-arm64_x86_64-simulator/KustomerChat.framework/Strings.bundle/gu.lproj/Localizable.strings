@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ લખે છે...";
+"com.kustomer.100+ results found" = "100+ પરિણામો મળ્યાં";
 "com.kustomer.Add additional feedback" = "વધારાના પ્રતિસાદ ઉમેરો";
 "com.kustomer.Additional Feedback" = "વધારાનો પ્રતિસાદ";
 "com.kustomer.Additional feedback removed" = "વધારાનો પ્રતિસાદ દૂર કર્યો";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "શું તમે તમારું રેટિંગ અને પ્રતિસાદ દૂર કરવા માંગો છો?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "શું તમે તમારી ટિપ્પણીમાં કરેલા ફેરફારોને સાચવવા માંગો છો?";
 "com.kustomer.Done" = "થઈ ગયું";
+"com.kustomer.Edit additional feedback" = "વધારાના પ્રતિસાદને સંપાદિત કરો";
 "com.kustomer.Edit comment" = "ટિપ્પણી સંપાદિત કરો";
 "com.kustomer.End Chat" = "ચેટ સમાપ્ત કરો";
 "com.kustomer.Ended" = "સમાપ્ત";
@@ -52,8 +54,9 @@
 "com.kustomer.No articles" = "કોઈ લેખ નથી";
 "com.kustomer.No conversations yet" = "હજુ સુધી કોઈ વાતચીત નથી";
 "com.kustomer.No internet connection" = "ઇન્ટરનેટ કનેક્શન નથી";
+"com.kustomer.No results" = "પરિણામ નથી";
 "com.kustomer.No text" = "કોઈ ટેક્સ્ટ નથી";
-"com.kustomer.None of your personal information was included" = "તમારી કોઈપણ વ્યક્તિગત માહિતીનો સમાવેશ કરવામાં આવ્યો ન હતો";
+"com.kustomer.None of your personal information was included" = "તમારી કોઈપણ વ્યક્તિગત માહિતી શામેલ કરવામાં આવી નથી";
 "com.kustomer.Not enough disk space" = "ડિસ્કમાં પૂરતી જગ્યા નથી";
 "com.kustomer.Not found" = "મળી નથી";
 "com.kustomer.Okay" = "બરાબર";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "ફોટો લાઇબ્રેરી";
 "com.kustomer.Please leave a message" = "કૃપા કરીને એક સંદેશ મૂકો";
 "com.kustomer.Please select an option..." = "કૃપા કરીને એક વિકલ્પ પસંદ કરો...";
+"com.kustomer.Please try another search term" = "કૃપા કરીને અન્ય શોધ શબ્દનો પ્રયાસ કરો";
 "com.kustomer.Reconnect" = "ફરીથી કનેક્ટ કરો";
 "com.kustomer.Reconnecting..." = "ફરીથી કનેક્ટ કરી રહ્યું છે...";
 "com.kustomer.Remove" = "દૂર કરો";

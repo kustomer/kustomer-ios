@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ټایپ کوي...";
+"com.kustomer.100+ results found" = "100+ پایلې وموندل شوې";
 "com.kustomer.Add additional feedback" = "اضافي نظر اضافه کړئ";
 "com.kustomer.Additional Feedback" = "اضافي فیډبیک";
 "com.kustomer.Additional feedback removed" = "اضافي فیډبک لیرې شو";
@@ -12,7 +13,7 @@
 "com.kustomer.Can't load chat" = "چیټ نشي پورته کولی";
 "com.kustomer.Cancel" = "لغوه کړئ";
 "com.kustomer.Cancelled! Tap to retry." = "لغوه شوی! د بیا هڅه کولو لپاره ټایپ کړئ.";
-"com.kustomer.Chat" = "چیټ";
+"com.kustomer.Chat" = "چټ";
 "com.kustomer.Chat has ended" = "چیټ ختم شو";
 "com.kustomer.Chat history" = "د چیٹ تاریخ";
 "com.kustomer.Chat is currently unavailable" = "چیټ اوس مهال شتون نلري";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "ایا تاسو غواړئ خپل درجه بندي او فیډبیک لرې کړئ؟";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "ایا تاسو غواړئ هغه بدلونونه خوندي کړئ چې تاسو په خپل نظر کې کړي؟";
 "com.kustomer.Done" = "ترسره شو";
+"com.kustomer.Edit additional feedback" = "اضافي فیډبیک ترمیم کړئ";
 "com.kustomer.Edit comment" = "تبصره ایډیټ کړئ";
 "com.kustomer.End Chat" = "چیټ پای ته ورسوئ";
 "com.kustomer.Ended" = "ختم شو";
@@ -31,7 +33,7 @@
 "com.kustomer.Error!" = "تېروتنه!";
 "com.kustomer.Error. Tap to retry." = "تېروتنه. د بیا هڅه کولو لپاره ټایپ کړئ.";
 "com.kustomer.FAQ" = "پرله پسې پوښتنې";
-"com.kustomer.Help Article" = "مرسته مقاله";
+"com.kustomer.Help Article" = "د مرستې مقاله";
 "com.kustomer.Image" = "انځور";
 "com.kustomer.Incoming chat" = "راتلونکی چیٹ";
 "com.kustomer.Internet offline" = "انټرنیټ آفلاین";
@@ -41,7 +43,7 @@
 "com.kustomer.Leave a message..." = "یو پیغام پریږده...";
 "com.kustomer.Loading..." = "بار کول...";
 "com.kustomer.Mark all as read" = "ټول د لوستلو په توګه په نښه کړئ";
-"com.kustomer.Me" = "زه";
+"com.kustomer.Me" = "ما";
 "com.kustomer.Message" = "پیغام";
 "com.kustomer.Message failed to send" = "پیغام په لیږلو کې پاتې راغلی";
 "com.kustomer.Message failed to send!" = "پیغام په لیږلو کې پاتې راغلی!";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "هیڅ مقاله نشته";
 "com.kustomer.No conversations yet" = "تر اوسه خبرې نه دي شوي";
 "com.kustomer.No internet connection" = "د انټرنیټ پیوستون نشته";
+"com.kustomer.No results" = "هیڅ پایلې نلري";
 "com.kustomer.No text" = "متن نشته";
 "com.kustomer.None of your personal information was included" = "ستاسو هیڅ شخصي معلومات شامل ندي";
 "com.kustomer.Not enough disk space" = "کافي ډیسک ځای نشته";
@@ -62,10 +65,11 @@
 "com.kustomer.Photo library" = "عکس کتابتون";
 "com.kustomer.Please leave a message" = "مهرباني وکړئ یو پیغام پریږدئ";
 "com.kustomer.Please select an option..." = "مهرباني وکړئ یو اختیار غوره کړئ ...";
+"com.kustomer.Please try another search term" = "مهرباني وکړئ د لټون بله اصطلاح هڅه وکړئ";
 "com.kustomer.Reconnect" = "بیا نښلول";
 "com.kustomer.Reconnecting..." = "بیا نښلول...";
 "com.kustomer.Remove" = "لرې کړئ";
-"com.kustomer.Report problem" = "د ستونزې راپور";
+"com.kustomer.Report problem" = "ستونزه راپور کړئ";
 "com.kustomer.Report sent" = "راپور لیږلی";
 "com.kustomer.Save changes" = "بدلونونه خوندي کړئ";
 "com.kustomer.Search Help Articles" = "د مرستې مقالې وپلټئ";

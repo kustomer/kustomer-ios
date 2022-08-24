@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ እየተየበ ነው...";
+"com.kustomer.100+ results found" = "100+ ውጤቶች ተገኝተዋል";
 "com.kustomer.Add additional feedback" = "ተጨማሪ ግብረመልስ ያክሉ";
 "com.kustomer.Additional Feedback" = "ተጨማሪ ግብረመልስ";
 "com.kustomer.Additional feedback removed" = "ተጨማሪ ግብረመልስ ተወግዷል";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "ውይይት በአሁኑ ጊዜ አይገኝም";
 "com.kustomer.Chat with support" = "ከድጋፍ ጋር ተወያይ";
 "com.kustomer.Conversation ended" = "ውይይቱ አልቋል";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "ውይይቱ ወደ ሌላ ውይይት ተዋህዷል።\n\nወደ አዲሱ ውይይት ለመሄድ ነካ ያድርጉ።";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "ውይይቱ ወደ ሌላ ውይይት ተዋህዷል።\n\nወደ አዲሱ ውይይት ለመሄድ መታ ያድርጉ።";
 "com.kustomer.Conversation moved to another customer" = "ውይይት ወደ ሌላ ደንበኛ ተወስዷል";
 "com.kustomer.Delete" = "ሰርዝ";
 "com.kustomer.Do you want to remove your rating and feedback?" = "የእርስዎን ደረጃ እና አስተያየት ማስወገድ ይፈልጋሉ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "በአስተያየትዎ ላይ ያደረጓቸውን ለውጦች ማስቀመጥ ይፈልጋሉ?";
 "com.kustomer.Done" = "ተከናውኗል";
+"com.kustomer.Edit additional feedback" = "ተጨማሪ ግብረመልስ ያርትዑ";
 "com.kustomer.Edit comment" = "አስተያየት አርትዕ";
 "com.kustomer.End Chat" = "ውይይትን ጨርስ";
 "com.kustomer.Ended" = "አበቃ";
@@ -36,7 +38,7 @@
 "com.kustomer.Incoming chat" = "ገቢ ውይይት";
 "com.kustomer.Internet offline" = "በይነመረብ ከመስመር ውጭ";
 "com.kustomer.Just now" = "ልክ አሁን";
-"com.kustomer.KB" = "ኬቢ";
+"com.kustomer.KB" = "ኪ.ቢ";
 "com.kustomer.Leave a message" = "መልዕክትዎን ይተዉ";
 "com.kustomer.Leave a message..." = "መልዕክትዎን ይተዉ...";
 "com.kustomer.Loading..." = "በመጫን ላይ...";
@@ -46,12 +48,13 @@
 "com.kustomer.Message failed to send" = "መልእክት መላክ አልተሳካም።";
 "com.kustomer.Message failed to send!" = "መልእክት መላክ አልተሳካም!";
 "com.kustomer.Moved" = "ተንቀሳቅሷል";
-"com.kustomer.Never mind" = "ምንም አይደለም";
+"com.kustomer.Never mind" = "ግድ የሌም";
 "com.kustomer.New Conversation" = "አዲስ ውይይት";
 "com.kustomer.New message" = "አዲስ መልእክት";
 "com.kustomer.No articles" = "ምንም መጣጥፎች የሉም";
 "com.kustomer.No conversations yet" = "እስካሁን ምንም ንግግሮች የሉም";
-"com.kustomer.No internet connection" = "የበይነመረብ ግንኙነት የለም።";
+"com.kustomer.No internet connection" = "ምንም የበይነመረብ ግንኙነት የለም።";
+"com.kustomer.No results" = "ምንም ውጤት የለም።";
 "com.kustomer.No text" = "ጽሑፍ የለም";
 "com.kustomer.None of your personal information was included" = "የትኛውም የግል መረጃህ አልተካተተም።";
 "com.kustomer.Not enough disk space" = "በቂ የዲስክ ቦታ የለም።";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "የፎቶ ቤተ-መጽሐፍት";
 "com.kustomer.Please leave a message" = "እባክህ መልእክት ተው";
 "com.kustomer.Please select an option..." = "እባክህ አንድ አማራጭ ምረጥ...";
+"com.kustomer.Please try another search term" = "እባክህ ሌላ የፍለጋ ቃል ሞክር";
 "com.kustomer.Reconnect" = "እንደገና ይገናኙ";
 "com.kustomer.Reconnecting..." = "እንደገና በማገናኘት ላይ...";
 "com.kustomer.Remove" = "አስወግድ";
@@ -73,7 +77,7 @@
 "com.kustomer.Sending" = "በመላክ ላይ";
 "com.kustomer.Share" = "አጋራ";
 "com.kustomer.Submit" = "አስገባ";
-"com.kustomer.Survey" = "የዳሰሳ ጥናት";
+"com.kustomer.Survey" = "ቅኝት";
 "com.kustomer.Take photo" = "ፎቶ አንሳ";
 "com.kustomer.Tap to load..." = "ለመጫን መታ ያድርጉ...";
 "com.kustomer.Tap to open" = "ለመክፈት መታ ያድርጉ";
@@ -81,8 +85,8 @@
 "com.kustomer.That article" = "ያ መጣጥፍ";
 "com.kustomer.There was a problem" = "ችግር ነበር።";
 "com.kustomer.This conversation is read-only" = "ይህ ውይይት ተነባቢ-ብቻ ነው።";
-"com.kustomer.Try again" = "እንደገና ሞክር";
-"com.kustomer.Type a message..." = "መልእክት ይተይቡ...";
+"com.kustomer.Try again" = "ድጋሚ ሞክር";
+"com.kustomer.Type a message..." = "መልዕክት ይተይቡ...";
 "com.kustomer.Unavailable message goes here" = "የማይገኝ መልእክት እዚህ ይሄዳል";
 "com.kustomer.Updated" = "ተዘምኗል";
 "com.kustomer.Waiting for a response from" = "ከ ምላሽ በመጠበቅ ላይ";
