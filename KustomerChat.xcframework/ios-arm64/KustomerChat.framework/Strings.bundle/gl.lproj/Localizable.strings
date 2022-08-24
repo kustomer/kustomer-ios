@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ está escribindo...";
+"com.kustomer.100+ results found" = "Encontráronse máis de 100 resultados";
 "com.kustomer.Add additional feedback" = "Engade comentarios adicionais";
 "com.kustomer.Additional Feedback" = "Comentarios adicionais";
 "com.kustomer.Additional feedback removed" = "Elimináronse os comentarios adicionais";
 "com.kustomer.Agent" = "Axente";
 "com.kustomer.Answers" = "Respostas";
-"com.kustomer.Are you sure you want to end this chat?" = "Estás seguro de que queres finalizar esta conversa?";
+"com.kustomer.Are you sure you want to end this chat?" = "Estás seguro de que queres finalizar este chat?";
 "com.kustomer.Attached file" = "Arquivo adxunto";
 "com.kustomer.Attachment" = "Anexo";
 "com.kustomer.Browse files" = "Explorar ficheiros";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Queres eliminar a túa valoración e comentarios?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Queres gardar os cambios que fixeches no teu comentario?";
 "com.kustomer.Done" = "Feito";
+"com.kustomer.Edit additional feedback" = "Edita comentarios adicionais";
 "com.kustomer.Edit comment" = "Editar comentario";
 "com.kustomer.End Chat" = "Finalizar o chat";
 "com.kustomer.Ended" = "Rematou";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Sen artigos";
 "com.kustomer.No conversations yet" = "Aínda non hai conversas";
 "com.kustomer.No internet connection" = "Sen conexión a internet";
+"com.kustomer.No results" = "Sen resultados";
 "com.kustomer.No text" = "Sen texto";
 "com.kustomer.None of your personal information was included" = "Non se incluíu ningunha da túa información persoal";
 "com.kustomer.Not enough disk space" = "Non hai espazo suficiente no disco";
@@ -60,8 +63,9 @@
 "com.kustomer.Open in browser" = "Aberta no navegador";
 "com.kustomer.Outgoing chat" = "Chat saínte";
 "com.kustomer.Photo library" = "Fototeca";
-"com.kustomer.Please leave a message" = "Deixe unha mensaxe";
+"com.kustomer.Please leave a message" = "Por favor, deixe unha mensaxe";
 "com.kustomer.Please select an option..." = "Selecciona unha opción...";
+"com.kustomer.Please try another search term" = "Proba con outro termo de busca";
 "com.kustomer.Reconnect" = "Reconectar";
 "com.kustomer.Reconnecting..." = "Reconectando...";
 "com.kustomer.Remove" = "Quitar";

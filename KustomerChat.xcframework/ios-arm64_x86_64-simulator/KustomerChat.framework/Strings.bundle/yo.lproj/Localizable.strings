@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ n tẹ...";
+"com.kustomer.100+ results found" = "100+ esi ri";
 "com.kustomer.Add additional feedback" = "Fi afikun esi";
 "com.kustomer.Additional Feedback" = "Afikun esi";
 "com.kustomer.Additional feedback removed" = "Afikun esi kuro";
@@ -8,10 +9,10 @@
 "com.kustomer.Attached file" = "Faili ti o somọ";
 "com.kustomer.Attachment" = "Asomọ";
 "com.kustomer.Browse files" = "Ṣawakiri awọn faili";
-"com.kustomer.Camera roll" = "eerun kamẹra";
+"com.kustomer.Camera roll" = "Eerun kamẹra";
 "com.kustomer.Can't load chat" = "Ko le fifuye iwiregbe";
 "com.kustomer.Cancel" = "Fagilee";
-"com.kustomer.Cancelled! Tap to retry." = "fagilee! Fọwọ ba lati tun gbiyanju.";
+"com.kustomer.Cancelled! Tap to retry." = "Fagilee! Fọwọ ba lati tun gbiyanju.";
 "com.kustomer.Chat" = "Wiregbe";
 "com.kustomer.Chat has ended" = "Iwiregbe ti pari";
 "com.kustomer.Chat history" = "Itan iwiregbe";
@@ -19,11 +20,12 @@
 "com.kustomer.Chat with support" = "Wiregbe pẹlu atilẹyin";
 "com.kustomer.Conversation ended" = "Ibaraẹnisọrọ ti pari";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Ibaraẹnisọrọ dapọ mọ ibaraẹnisọrọ miiran.\n\nFọwọ ba lati lọ si ibaraẹnisọrọ tuntun naa.";
-"com.kustomer.Conversation moved to another customer" = "Ibaraẹnisọrọ ti gbe lọ si alabara miiran";
+"com.kustomer.Conversation moved to another customer" = "Ibaraẹnisọrọ gbe lọ si alabara miiran";
 "com.kustomer.Delete" = "Paarẹ";
-"com.kustomer.Do you want to remove your rating and feedback?" = "Ṣe o fẹ yọọ igbelewọn ati esi rẹ bi?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "Ṣe o fẹ yọkuro idiyele ati esi rẹ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Ṣe o fẹ lati fipamọ awọn ayipada ti o ṣe si asọye rẹ?";
 "com.kustomer.Done" = "Ti ṣe";
+"com.kustomer.Edit additional feedback" = "Satunkọ afikun esi";
 "com.kustomer.Edit comment" = "Ṣatunkọ ọrọìwòye";
 "com.kustomer.End Chat" = "Ipari iwiregbe";
 "com.kustomer.Ended" = "Ti pari";
@@ -31,7 +33,7 @@
 "com.kustomer.Error!" = "Asise!";
 "com.kustomer.Error. Tap to retry." = "Asise. Fọwọ ba lati tun gbiyanju.";
 "com.kustomer.FAQ" = "FAQ";
-"com.kustomer.Help Article" = "Iranlọwọ Article";
+"com.kustomer.Help Article" = "Iranlọwọ Abala";
 "com.kustomer.Image" = "Aworan";
 "com.kustomer.Incoming chat" = "Iwiregbe ti nwọle";
 "com.kustomer.Internet offline" = "Ayelujara aisinipo";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Ko si nkan";
 "com.kustomer.No conversations yet" = "Ko si awọn ibaraẹnisọrọ sibẹsibẹ";
 "com.kustomer.No internet connection" = "Ko si isopọ Ayelujara";
+"com.kustomer.No results" = "Ko si esi";
 "com.kustomer.No text" = "Ko si ọrọ";
 "com.kustomer.None of your personal information was included" = "Ko si alaye ti ara ẹni ti o wa ninu";
 "com.kustomer.Not enough disk space" = "Ko to aaye disk";
@@ -62,7 +65,8 @@
 "com.kustomer.Photo library" = "Fọto ìkàwé";
 "com.kustomer.Please leave a message" = "Jọwọ fi ifiranṣẹ kan silẹ";
 "com.kustomer.Please select an option..." = "Jọwọ yan aṣayan kan...";
-"com.kustomer.Reconnect" = "Atunse";
+"com.kustomer.Please try another search term" = "Jọwọ gbiyanju ọrọ wiwa miiran";
+"com.kustomer.Reconnect" = "Tun so pọ";
 "com.kustomer.Reconnecting..." = "N tun so pọ...";
 "com.kustomer.Remove" = "Yọ kuro";
 "com.kustomer.Report problem" = "Iṣoro jabo";
@@ -88,7 +92,7 @@
 "com.kustomer.Waiting for a response from" = "Nduro fun esi lati";
 "com.kustomer.We will get back to you as soon as we are online!" = "A yoo pada wa si ọ ni kete ti a ba wa lori ayelujara!";
 "com.kustomer.Yes" = "Bẹẹni";
-"com.kustomer.You changed your additional feedback comment" = "O yi ọrọ asọye afikun rẹ pada";
+"com.kustomer.You changed your additional feedback comment" = "O yi asọye esi afikun rẹ pada";
 "com.kustomer.You're offline. Check your connection." = "O wa offline. Ṣayẹwo asopọ rẹ.";
 "com.kustomer.Your existing conversations will be here." = "Awọn ibaraẹnisọrọ ti o wa tẹlẹ yoo wa nibi.";
 "com.kustomer.is no longer available" = "ko si ohun to wa";

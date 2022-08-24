@@ -1,8 +1,9 @@
 "com.kustomer.%@ is typing..." = "%@ tajpas...";
+"com.kustomer.100+ results found" = "100+ rezultoj trovitaj";
 "com.kustomer.Add additional feedback" = "Aldonu pliajn komentojn";
 "com.kustomer.Additional Feedback" = "Pliaj Rimarkoj";
 "com.kustomer.Additional feedback removed" = "Pliaj sugestoj forigitaj";
-"com.kustomer.Agent" = "Agenton";
+"com.kustomer.Agent" = "Agento";
 "com.kustomer.Answers" = "Respondoj";
 "com.kustomer.Are you sure you want to end this chat?" = "Ĉu vi certas, ke vi volas fini ĉi tiun babilejon?";
 "com.kustomer.Attached file" = "Kunsendita dosiero";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ĉu vi volas forigi viajn taksojn kaj komentojn?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Ĉu vi volas konservi la ŝanĝojn, kiujn vi faris al via komento?";
 "com.kustomer.Done" = "Farita";
+"com.kustomer.Edit additional feedback" = "Redaktu pliajn rimarkojn";
 "com.kustomer.Edit comment" = "Redaktu komenton";
 "com.kustomer.End Chat" = "Finu Babiladon";
 "com.kustomer.Ended" = "Finis";
@@ -39,7 +41,7 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Lasu mesaĝon";
 "com.kustomer.Leave a message..." = "Lasu mesaĝon...";
-"com.kustomer.Loading..." = "Ŝargante...";
+"com.kustomer.Loading..." = "Ŝarĝante...";
 "com.kustomer.Mark all as read" = "Marku ĉion kiel legitan";
 "com.kustomer.Me" = "Mi";
 "com.kustomer.Message" = "Mesaĝo";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Neniuj artikoloj";
 "com.kustomer.No conversations yet" = "Ankoraŭ neniuj konversacioj";
 "com.kustomer.No internet connection" = "Neniu interreta konekto";
+"com.kustomer.No results" = "Neniuj rezultoj";
 "com.kustomer.No text" = "Neniu teksto";
 "com.kustomer.None of your personal information was included" = "Neniu el viaj personaj informoj estis inkluzivita";
 "com.kustomer.Not enough disk space" = "Ne sufiĉa diskospaco";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Fotobiblioteko";
 "com.kustomer.Please leave a message" = "Bonvolu lasi mesaĝon";
 "com.kustomer.Please select an option..." = "Bonvolu elekti opcion...";
+"com.kustomer.Please try another search term" = "Bonvolu provi alian serĉterminon";
 "com.kustomer.Reconnect" = "Rekonekti";
 "com.kustomer.Reconnecting..." = "Rekonektante...";
 "com.kustomer.Remove" = "Forigi";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ терип жатат...";
+"com.kustomer.100+ results found" = "100+ натыйжалар табылган";
 "com.kustomer.Add additional feedback" = "Кошумча пикир кошуу";
 "com.kustomer.Additional Feedback" = "Кошумча пикир";
 "com.kustomer.Additional feedback removed" = "Кошумча пикир өчүрүлдү";
@@ -24,13 +25,14 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Рейтингиңизди жана пикириңизди алып салгыңыз келеби?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Пикириңизге киргизген өзгөртүүлөрүңүздү сактагыңыз келеби?";
 "com.kustomer.Done" = "Бүттү";
+"com.kustomer.Edit additional feedback" = "Кошумча пикирди түзөтүү";
 "com.kustomer.Edit comment" = "Пикирди түзөтүү";
 "com.kustomer.End Chat" = "Аягы Чат";
 "com.kustomer.Ended" = "Бүттү";
 "com.kustomer.Error" = "Ката";
 "com.kustomer.Error!" = "Ката!";
 "com.kustomer.Error. Tap to retry." = "Ката. Кайра аракет кылуу үчүн таптаңыз.";
-"com.kustomer.FAQ" = "КБС";
+"com.kustomer.FAQ" = "Көп берилүүчү суроолор";
 "com.kustomer.Help Article" = "Жардам макаласы";
 "com.kustomer.Image" = "Сүрөт";
 "com.kustomer.Incoming chat" = "Кирүүчү чат";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Макалалар жок";
 "com.kustomer.No conversations yet" = "Азырынча сүйлөшүүлөр жок";
 "com.kustomer.No internet connection" = "Интернет байланышы жок";
+"com.kustomer.No results" = "Натыйжа жок";
 "com.kustomer.No text" = "Текст жок";
 "com.kustomer.None of your personal information was included" = "Сиздин жеке маалыматыңыздын бири да камтылган эмес";
 "com.kustomer.Not enough disk space" = "Дискте орун жетишсиз";
@@ -60,8 +63,9 @@
 "com.kustomer.Open in browser" = "Браузерде ачуу";
 "com.kustomer.Outgoing chat" = "Чыгуучу чат";
 "com.kustomer.Photo library" = "Сүрөт китепканасы";
-"com.kustomer.Please leave a message" = "Сураныч билдирүү калтырыңыз";
-"com.kustomer.Please select an option..." = "Сураныч, опцияны тандаңыз...";
+"com.kustomer.Please leave a message" = "Сураныч, билдирүү калтырыңыз";
+"com.kustomer.Please select an option..." = "Сураныч, бир параметр тандаңыз...";
+"com.kustomer.Please try another search term" = "Сураныч, башка издөө терминин байкап көрүңүз";
 "com.kustomer.Reconnect" = "Кайра туташуу";
 "com.kustomer.Reconnecting..." = "Кайра туташууда...";
 "com.kustomer.Remove" = "Алып салуу";
@@ -79,7 +83,7 @@
 "com.kustomer.Tap to open" = "Ачуу үчүн таптаңыз";
 "com.kustomer.Thanks for your feedback" = "Пикириңиз үчүн рахмат";
 "com.kustomer.That article" = "Ошол макала";
-"com.kustomer.There was a problem" = "көйгөй бар эле";
+"com.kustomer.There was a problem" = "көйгөй бар болчу";
 "com.kustomer.This conversation is read-only" = "Бул сүйлөшүү окуу үчүн гана";
 "com.kustomer.Try again" = "Кайра аракет кыл";
 "com.kustomer.Type a message..." = "Билдирүү териңиз...";

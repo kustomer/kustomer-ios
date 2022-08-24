@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ yozmoqda...";
+"com.kustomer.100+ results found" = "100 dan ortiq natijalar topildi";
 "com.kustomer.Add additional feedback" = "Qo&#39;shimcha fikr-mulohaza qo&#39;shing";
 "com.kustomer.Additional Feedback" = "Qo&#39;shimcha fikr-mulohaza";
 "com.kustomer.Additional feedback removed" = "Qoʻshimcha fikr-mulohaza olib tashlandi";
@@ -22,15 +23,16 @@
 "com.kustomer.Conversation moved to another customer" = "Suhbat boshqa mijozga koʻchirildi";
 "com.kustomer.Delete" = "Oʻchirish";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Baho va fikr-mulohazalaringizni olib tashlamoqchimisiz?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Fikringizga kiritilgan o&#39;zgarishlarni saqlamoqchimisiz?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Fikringizga kiritgan oʻzgarishlarni saqlamoqchimisiz?";
 "com.kustomer.Done" = "Bajarildi";
+"com.kustomer.Edit additional feedback" = "Qo&#39;shimcha fikr-mulohazalarni tahrirlash";
 "com.kustomer.Edit comment" = "Fikrni tahrirlash";
 "com.kustomer.End Chat" = "Chatni tugatish";
 "com.kustomer.Ended" = "Tugadi";
 "com.kustomer.Error" = "Xato";
 "com.kustomer.Error!" = "Xato!";
 "com.kustomer.Error. Tap to retry." = "Xato. Qayta urinish uchun bosing.";
-"com.kustomer.FAQ" = "Tss";
+"com.kustomer.FAQ" = "TSS";
 "com.kustomer.Help Article" = "Yordam maqolasi";
 "com.kustomer.Image" = "Rasm";
 "com.kustomer.Incoming chat" = "Kiruvchi chat";
@@ -49,9 +51,10 @@
 "com.kustomer.Never mind" = "Hech qisi yo&#39;q";
 "com.kustomer.New Conversation" = "Yangi suhbat";
 "com.kustomer.New message" = "Yangi xabar";
-"com.kustomer.No articles" = "Maqolalar yoʻq";
+"com.kustomer.No articles" = "Maqolalar yo&#39;q";
 "com.kustomer.No conversations yet" = "Hozircha suhbat yoʻq";
 "com.kustomer.No internet connection" = "Internet aloqasi yo&#39;q";
+"com.kustomer.No results" = "Natija yoʻq";
 "com.kustomer.No text" = "Matn yo&#39;q";
 "com.kustomer.None of your personal information was included" = "Shaxsiy ma&#39;lumotlaringizdan hech biri kiritilmagan";
 "com.kustomer.Not enough disk space" = "Diskda joy yetarli emas";
@@ -61,7 +64,8 @@
 "com.kustomer.Outgoing chat" = "Chiquvchi chat";
 "com.kustomer.Photo library" = "Foto kutubxonasi";
 "com.kustomer.Please leave a message" = "Iltimos, xabar qoldiring";
-"com.kustomer.Please select an option..." = "Iltimos, variantni tanlang...";
+"com.kustomer.Please select an option..." = "Variantni tanlang...";
+"com.kustomer.Please try another search term" = "Boshqa qidiruv soʻzini sinab koʻring";
 "com.kustomer.Reconnect" = "Qayta ulaning";
 "com.kustomer.Reconnecting..." = "Qayta ulanmoqda...";
 "com.kustomer.Remove" = "O&#39;chirish";
@@ -80,7 +84,7 @@
 "com.kustomer.Thanks for your feedback" = "Fikr-mulohazangiz uchun rahmat";
 "com.kustomer.That article" = "O&#39;sha maqola";
 "com.kustomer.There was a problem" = "Muammo bor edi";
-"com.kustomer.This conversation is read-only" = "Bu suhbat faqat oʻqish uchun";
+"com.kustomer.This conversation is read-only" = "Bu suhbat faqat o‘qish uchun mo‘ljallangan";
 "com.kustomer.Try again" = "Qayta urinib ko&#39;ring";
 "com.kustomer.Type a message..." = "Xabar yozing...";
 "com.kustomer.Unavailable message goes here" = "Mavjud bo&#39;lmagan xabar shu yerda";

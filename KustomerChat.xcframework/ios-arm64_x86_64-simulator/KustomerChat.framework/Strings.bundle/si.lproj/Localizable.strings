@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ටයිප් කරමින් සිටී...";
+"com.kustomer.100+ results found" = "100+ ප්‍රතිඵල හමු විය";
 "com.kustomer.Add additional feedback" = "අමතර ප්‍රතිපෝෂණ එක් කරන්න";
 "com.kustomer.Additional Feedback" = "අමතර ප්‍රතිපෝෂණ";
 "com.kustomer.Additional feedback removed" = "අමතර ප්‍රතිපෝෂණ ඉවත් කරන ලදී";
@@ -7,7 +8,7 @@
 "com.kustomer.Are you sure you want to end this chat?" = "ඔබට මෙම කතාබහ අවසන් කිරීමට අවශ්‍ය බව විශ්වාසද?";
 "com.kustomer.Attached file" = "ඇමිණු ලිපිගොනුව";
 "com.kustomer.Attachment" = "ඇමුණුම";
-"com.kustomer.Browse files" = "ගොනු බ්‍රවුස් කරන්න";
+"com.kustomer.Browse files" = "ගොනු පිරික්සන්න";
 "com.kustomer.Camera roll" = "කැමරා රෝල්";
 "com.kustomer.Can't load chat" = "කතාබස් පූරණය කළ නොහැක";
 "com.kustomer.Cancel" = "අවලංගු කරන්න";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "ඔබට ඔබේ ඇගයීම සහ ප්‍රතිපෝෂණය ඉවත් කිරීමට අවශ්‍යද?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "ඔබේ අදහසට ඔබ කළ වෙනස්කම් සුරැකීමට ඔබට අවශ්‍යද?";
 "com.kustomer.Done" = "කළා";
+"com.kustomer.Edit additional feedback" = "අමතර ප්‍රතිපෝෂණ සංස්කරණය කරන්න";
 "com.kustomer.Edit comment" = "අදහස සංස්කරණය කරන්න";
 "com.kustomer.End Chat" = "කතාබස් අවසන් කරන්න";
 "com.kustomer.Ended" = "අවසන්";
@@ -31,7 +33,7 @@
 "com.kustomer.Error!" = "දෝෂයක්!";
 "com.kustomer.Error. Tap to retry." = "දෝෂයකි. නැවත උත්සහ කිරීම සඳහා තට්ටු කරන්න.";
 "com.kustomer.FAQ" = "නිති අසන පැණ";
-"com.kustomer.Help Article" = "උපකාරක ලිපිය";
+"com.kustomer.Help Article" = "උදව් ලිපිය";
 "com.kustomer.Image" = "රූප";
 "com.kustomer.Incoming chat" = "එන කතාබස්";
 "com.kustomer.Internet offline" = "අන්තර්ජාලය නොබැඳි";
@@ -50,8 +52,9 @@
 "com.kustomer.New Conversation" = "නව සංවාදය";
 "com.kustomer.New message" = "නව පණිවිඩය";
 "com.kustomer.No articles" = "ලිපි නැත";
-"com.kustomer.No conversations yet" = "තවමත් සංවාද නැත";
+"com.kustomer.No conversations yet" = "තවම සංවාද නැත";
 "com.kustomer.No internet connection" = "අන්තර්ජාල සම්බන්ධතාවයක් නොමැත";
+"com.kustomer.No results" = "ප්රතිපල රහිතයි";
 "com.kustomer.No text" = "පෙළ නැත";
 "com.kustomer.None of your personal information was included" = "ඔබගේ පුද්ගලික තොරතුරු කිසිවක් ඇතුළත් කර නැත";
 "com.kustomer.Not enough disk space" = "ප්රමාණවත් තැටි ඉඩක් නොමැත";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "ඡායාරූප පුස්තකාලය";
 "com.kustomer.Please leave a message" = "කරුණාකර පණිවිඩයක් තබන්න";
 "com.kustomer.Please select an option..." = "කරුණාකර විකල්පයක් තෝරන්න...";
+"com.kustomer.Please try another search term" = "කරුණාකර වෙනත් සෙවුම් පදයක් උත්සාහ කරන්න";
 "com.kustomer.Reconnect" = "නැවත සම්බන්ධ කරන්න";
 "com.kustomer.Reconnecting..." = "නැවත සම්බන්ධ වෙමින්...";
 "com.kustomer.Remove" = "ඉවත් කරන්න";
@@ -81,7 +85,7 @@
 "com.kustomer.That article" = "එම ලිපිය";
 "com.kustomer.There was a problem" = "දෝෂයක් ඇති විය";
 "com.kustomer.This conversation is read-only" = "මෙම සංවාදය කියවීමට පමණි";
-"com.kustomer.Try again" = "නැවත උත්සාහ කරන්න";
+"com.kustomer.Try again" = "නැවත උත්සහා කරන්න";
 "com.kustomer.Type a message..." = "පණිවිඩයක් ටයිප් කරන්න...";
 "com.kustomer.Unavailable message goes here" = "ලබා ගත නොහැකි පණිවිඩය මෙතැනට යයි";
 "com.kustomer.Updated" = "යාවත්කාලීන කරන ලදී";

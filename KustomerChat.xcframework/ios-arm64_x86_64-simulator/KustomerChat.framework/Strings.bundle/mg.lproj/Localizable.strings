@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ dia mitendry...";
+"com.kustomer.100+ results found" = "100+ valiny hita";
 "com.kustomer.Add additional feedback" = "Ampio hevitra fanampiny";
 "com.kustomer.Additional Feedback" = "Fanamarihana fanampiny";
 "com.kustomer.Additional feedback removed" = "Nesorina ny tamberina fanampiny";
@@ -7,15 +8,15 @@
 "com.kustomer.Are you sure you want to end this chat?" = "Tena te hamarana ity resaka ity ve ianao?";
 "com.kustomer.Attached file" = "rakitra apetaka";
 "com.kustomer.Attachment" = "miraiki-po";
-"com.kustomer.Browse files" = "Mikaroka rakitra";
-"com.kustomer.Camera roll" = "Camera roll";
+"com.kustomer.Browse files" = "Hijery rakitra";
+"com.kustomer.Camera roll" = "Horonan-tsary";
 "com.kustomer.Can't load chat" = "Tsy afaka mampiditra chat";
 "com.kustomer.Cancel" = "hanafoana";
 "com.kustomer.Cancelled! Tap to retry." = "nofoanana! Tsindrio raha hanandrana indray.";
 "com.kustomer.Chat" = "hiresaka";
 "com.kustomer.Chat has ended" = "Tapitra ny chat";
 "com.kustomer.Chat history" = "Tantaran&#39;ny chat";
-"com.kustomer.Chat is currently unavailable" = "Tsy misy chat amin&#39;izao fotoana izao";
+"com.kustomer.Chat is currently unavailable" = "Tsy misy ny chat amin&#39;izao fotoana izao";
 "com.kustomer.Chat with support" = "Miresaha amin&#39;ny fanohanana";
 "com.kustomer.Conversation ended" = "Tapitra ny resaka";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Nitambatra tamin&#39;ny resaka hafa ny resaka.\n\nPeho raha handeha amin&#39;ny resaka vaovao.";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Te hanaisotra ny naoty sy ny tamberinao ve ianao?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Te-hitahiry ny fanovana nataonao tamin&#39;ny fanehoan-kevitrao ve ianao?";
 "com.kustomer.Done" = "hatao";
+"com.kustomer.Edit additional feedback" = "Hanova hevitra fanampiny";
 "com.kustomer.Edit comment" = "Ahitsio fanehoan-kevitra";
 "com.kustomer.End Chat" = "Farano ny resaka";
 "com.kustomer.Ended" = "tapitra";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Tsy misy lahatsoratra";
 "com.kustomer.No conversations yet" = "Tsy mbola misy resaka";
 "com.kustomer.No internet connection" = "Tsy misy fifandraisana Internet";
+"com.kustomer.No results" = "Tsy misy valiny";
 "com.kustomer.No text" = "Tsy misy soratra";
 "com.kustomer.None of your personal information was included" = "Tsy nisy nampidirina ny mombamomba anao manokana";
 "com.kustomer.Not enough disk space" = "Tsy ampy ny habaka kapila";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Tranomboky sary";
 "com.kustomer.Please leave a message" = "Mametraha hafatra azafady";
 "com.kustomer.Please select an option..." = "Misafidiana safidy iray azafady...";
+"com.kustomer.Please try another search term" = "Manandrama teny fikarohana hafa azafady";
 "com.kustomer.Reconnect" = "Ampifandraiso indray";
 "com.kustomer.Reconnecting..." = "Mifandray indray...";
 "com.kustomer.Remove" = "esory";

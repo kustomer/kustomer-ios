@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ píše...";
+"com.kustomer.100+ results found" = "Našlo sa viac ako 100 výsledkov";
 "com.kustomer.Add additional feedback" = "Pridajte ďalšiu spätnú väzbu";
 "com.kustomer.Additional Feedback" = "Dodatočná spätná väzba";
 "com.kustomer.Additional feedback removed" = "Ďalšia spätná väzba bola odstránená";
@@ -19,11 +20,12 @@
 "com.kustomer.Chat with support" = "Chatujte s podporou";
 "com.kustomer.Conversation ended" = "Rozhovor sa skončil";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Konverzácia sa zlúčila do inej konverzácie.\n\nKlepnutím prejdete na novú konverzáciu.";
-"com.kustomer.Conversation moved to another customer" = "Konverzácia sa presunula k inému zákazníkovi";
+"com.kustomer.Conversation moved to another customer" = "Konverzácia bola presunutá na iného zákazníka";
 "com.kustomer.Delete" = "Odstrániť";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Chcete odstrániť svoje hodnotenie a spätnú väzbu?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Chcete uložiť zmeny, ktoré ste vykonali vo svojom komentári?";
 "com.kustomer.Done" = "hotový";
+"com.kustomer.Edit additional feedback" = "Upravte dodatočnú spätnú väzbu";
 "com.kustomer.Edit comment" = "Upraviť komentár";
 "com.kustomer.End Chat" = "Ukončiť chat";
 "com.kustomer.Ended" = "Ukončený";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Žiadne články";
 "com.kustomer.No conversations yet" = "Zatiaľ žiadne konverzácie";
 "com.kustomer.No internet connection" = "Žiadne internetové pripojenie";
+"com.kustomer.No results" = "Žiadne výsledky";
 "com.kustomer.No text" = "Žiadny text";
 "com.kustomer.None of your personal information was included" = "Neboli zahrnuté žiadne vaše osobné údaje";
 "com.kustomer.Not enough disk space" = "Nedostatočný priestor na disku";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Knižnica fotografií";
 "com.kustomer.Please leave a message" = "Zanechajte prosím správu";
 "com.kustomer.Please select an option..." = "Vyberte možnosť...";
+"com.kustomer.Please try another search term" = "Skúste iný hľadaný výraz";
 "com.kustomer.Reconnect" = "Znovu sa pripojte";
 "com.kustomer.Reconnecting..." = "Opätovné pripojenie...";
 "com.kustomer.Remove" = "Odstrániť";

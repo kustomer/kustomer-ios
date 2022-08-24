@@ -1,7 +1,8 @@
 "com.kustomer.%@ is typing..." = "%@ ടൈപ്പ് ചെയ്യുന്നു...";
+"com.kustomer.100+ results found" = "100+ ഫലങ്ങൾ കണ്ടെത്തി";
 "com.kustomer.Add additional feedback" = "അധിക ഫീഡ്ബാക്ക് ചേർക്കുക";
 "com.kustomer.Additional Feedback" = "അധിക ഫീഡ്ബാക്ക്";
-"com.kustomer.Additional feedback removed" = "അധിക ഫീഡ്‌ബാക്ക് നീക്കം ചെയ്‌തു";
+"com.kustomer.Additional feedback removed" = "അധിക ഫീഡ്ബാക്ക് നീക്കം ചെയ്തു";
 "com.kustomer.Agent" = "ഏജന്റ്";
 "com.kustomer.Answers" = "ഉത്തരങ്ങൾ";
 "com.kustomer.Are you sure you want to end this chat?" = "ഈ ചാറ്റ് അവസാനിപ്പിക്കണമെന്ന് തീർച്ചയാണോ?";
@@ -22,8 +23,9 @@
 "com.kustomer.Conversation moved to another customer" = "സംഭാഷണം മറ്റൊരു ഉപഭോക്താവിലേക്ക് മാറ്റി";
 "com.kustomer.Delete" = "ഇല്ലാതാക്കുക";
 "com.kustomer.Do you want to remove your rating and feedback?" = "നിങ്ങളുടെ റേറ്റിംഗും ഫീഡ്‌ബാക്കും നീക്കം ചെയ്യണോ?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "നിങ്ങളുടെ അഭിപ്രായത്തിൽ വരുത്തിയ മാറ്റങ്ങൾ സംരക്ഷിക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "നിങ്ങളുടെ കമന്റിൽ വരുത്തിയ മാറ്റങ്ങൾ സംരക്ഷിക്കണോ?";
 "com.kustomer.Done" = "ചെയ്തു";
+"com.kustomer.Edit additional feedback" = "അധിക ഫീഡ്ബാക്ക് എഡിറ്റ് ചെയ്യുക";
 "com.kustomer.Edit comment" = "അഭിപ്രായം എഡിറ്റ് ചെയ്യുക";
 "com.kustomer.End Chat" = "ചാറ്റ് അവസാനിപ്പിക്കുക";
 "com.kustomer.Ended" = "അവസാനിച്ചു";
@@ -44,7 +46,7 @@
 "com.kustomer.Me" = "എന്നെ";
 "com.kustomer.Message" = "സന്ദേശം";
 "com.kustomer.Message failed to send" = "സന്ദേശം അയയ്‌ക്കുന്നതിൽ പരാജയപ്പെട്ടു";
-"com.kustomer.Message failed to send!" = "സന്ദേശം അയയ്‌ക്കാനായില്ല!";
+"com.kustomer.Message failed to send!" = "സന്ദേശം അയയ്‌ക്കുന്നതിൽ പരാജയപ്പെട്ടു!";
 "com.kustomer.Moved" = "നീക്കി";
 "com.kustomer.Never mind" = "കാര്യമാക്കേണ്ടതില്ല";
 "com.kustomer.New Conversation" = "പുതിയ സംഭാഷണം";
@@ -52,16 +54,18 @@
 "com.kustomer.No articles" = "ലേഖനങ്ങളൊന്നുമില്ല";
 "com.kustomer.No conversations yet" = "ഇതുവരെ സംഭാഷണങ്ങളൊന്നുമില്ല";
 "com.kustomer.No internet connection" = "ഇന്റർനെറ്റ് കണക്ഷനില്ല";
+"com.kustomer.No results" = "ഫലങ്ങളൊന്നുമില്ല";
 "com.kustomer.No text" = "വാചകമില്ല";
 "com.kustomer.None of your personal information was included" = "നിങ്ങളുടെ സ്വകാര്യ വിവരങ്ങളൊന്നും ഉൾപ്പെടുത്തിയിട്ടില്ല";
 "com.kustomer.Not enough disk space" = "ആവശ്യത്തിന് ഡിസ്ക് സ്പേസ് ഇല്ല";
-"com.kustomer.Not found" = "കണ്ടെത്തിയില്ല";
+"com.kustomer.Not found" = "കാണ്മാനില്ല";
 "com.kustomer.Okay" = "ശരി";
 "com.kustomer.Open in browser" = "ബ്രൗസറിൽ തുറക്കുക";
 "com.kustomer.Outgoing chat" = "ഔട്ട്ഗോയിംഗ് ചാറ്റ്";
 "com.kustomer.Photo library" = "ഫോട്ടോ ലൈബ്രറി";
 "com.kustomer.Please leave a message" = "ദയവായി ഒരു സന്ദേശം നൽകുക";
 "com.kustomer.Please select an option..." = "ദയവായി ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക...";
+"com.kustomer.Please try another search term" = "ദയവായി മറ്റൊരു തിരയൽ പദം ശ്രമിക്കുക";
 "com.kustomer.Reconnect" = "വീണ്ടും ബന്ധിപ്പിക്കുക";
 "com.kustomer.Reconnecting..." = "വീണ്ടും ബന്ധിപ്പിക്കുന്നു...";
 "com.kustomer.Remove" = "നീക്കം ചെയ്യുക";
@@ -70,7 +74,7 @@
 "com.kustomer.Save changes" = "മാറ്റങ്ങൾ സൂക്ഷിക്കുക";
 "com.kustomer.Search Help Articles" = "സഹായ ലേഖനങ്ങൾ തിരയുക";
 "com.kustomer.Search Results" = "തിരയൽ ഫലങ്ങൾ";
-"com.kustomer.Sending" = "അയക്കുന്നു";
+"com.kustomer.Sending" = "അയയ്ക്കുന്നു";
 "com.kustomer.Share" = "പങ്കിടുക";
 "com.kustomer.Submit" = "സമർപ്പിക്കുക";
 "com.kustomer.Survey" = "സർവേ";
@@ -81,7 +85,7 @@
 "com.kustomer.That article" = "ആ ലേഖനം";
 "com.kustomer.There was a problem" = "ഒരു പ്രശ്നം ഉണ്ടായിരുന്നു";
 "com.kustomer.This conversation is read-only" = "ഈ സംഭാഷണം വായിക്കാൻ മാത്രമുള്ളതാണ്";
-"com.kustomer.Try again" = "വീണ്ടും ശ്രമിക്ക്";
+"com.kustomer.Try again" = "വീണ്ടും ശ്രമിക്കുക";
 "com.kustomer.Type a message..." = "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക...";
 "com.kustomer.Unavailable message goes here" = "ലഭ്യമല്ലാത്ത സന്ദേശം ഇവിടെ പോകുന്നു";
 "com.kustomer.Updated" = "അപ്ഡേറ്റ് ചെയ്തു";

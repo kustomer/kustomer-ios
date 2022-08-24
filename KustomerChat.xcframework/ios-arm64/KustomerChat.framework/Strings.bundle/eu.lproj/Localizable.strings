@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ idazten ari da...";
+"com.kustomer.100+ results found" = "100 emaitza baino gehiago aurkitu dira";
 "com.kustomer.Add additional feedback" = "Gehitu iritzi gehiago";
 "com.kustomer.Additional Feedback" = "Iritzi gehigarriak";
 "com.kustomer.Additional feedback removed" = "Iritzi gehigarriak kendu dira";
@@ -14,7 +15,7 @@
 "com.kustomer.Cancelled! Tap to retry." = "Bertan behera! Sakatu berriro saiatzeko.";
 "com.kustomer.Chat" = "Txateatu";
 "com.kustomer.Chat has ended" = "Txata amaitu da";
-"com.kustomer.Chat history" = "Txat-historia";
+"com.kustomer.Chat history" = "Txataren historia";
 "com.kustomer.Chat is currently unavailable" = "Txata ez dago erabilgarri une honetan";
 "com.kustomer.Chat with support" = "Txateatu laguntzarekin";
 "com.kustomer.Conversation ended" = "Elkarrizketa amaitu da";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Zure balorazioa eta iritzia kendu nahi dituzu?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Zure iruzkinean egin dituzun aldaketak gorde nahi dituzu?";
 "com.kustomer.Done" = "Eginda";
+"com.kustomer.Edit additional feedback" = "Editatu iritzi gehigarriak";
 "com.kustomer.Edit comment" = "Editatu iruzkina";
 "com.kustomer.End Chat" = "Amaitu txata";
 "com.kustomer.Ended" = "Amaitu";
@@ -34,7 +36,7 @@
 "com.kustomer.Help Article" = "Laguntza artikulua";
 "com.kustomer.Image" = "Irudia";
 "com.kustomer.Incoming chat" = "Sarrerako txata";
-"com.kustomer.Internet offline" = "Internet offline";
+"com.kustomer.Internet offline" = "Internet konexiorik gabe";
 "com.kustomer.Just now" = "Oraintxe";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Utzi mezu bat";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Ez dago artikulurik";
 "com.kustomer.No conversations yet" = "Oraindik ez dago elkarrizketarik";
 "com.kustomer.No internet connection" = "Ez dago Interneteko konexiorik";
+"com.kustomer.No results" = "Ez dago emaitzarik";
 "com.kustomer.No text" = "Testurik ez";
 "com.kustomer.None of your personal information was included" = "Zure informazio pertsonalik ez da sartu";
 "com.kustomer.Not enough disk space" = "Ez dago nahikoa diskoan";
@@ -62,11 +65,12 @@
 "com.kustomer.Photo library" = "Fototeka";
 "com.kustomer.Please leave a message" = "Mesedez, utzi mezu bat";
 "com.kustomer.Please select an option..." = "Mesedez, hautatu aukera bat...";
+"com.kustomer.Please try another search term" = "Mesedez, saiatu beste bilaketa-termino bat";
 "com.kustomer.Reconnect" = "Berriro konektatu";
 "com.kustomer.Reconnecting..." = "Berriro konektatzen...";
 "com.kustomer.Remove" = "Kendu";
 "com.kustomer.Report problem" = "Salatu arazoa";
-"com.kustomer.Report sent" = "Bidalitako txostena";
+"com.kustomer.Report sent" = "Txostena bidali da";
 "com.kustomer.Save changes" = "Aldaketak gorde";
 "com.kustomer.Search Help Articles" = "Bilatu laguntza-artikuluak";
 "com.kustomer.Search Results" = "Bilaketa-emaitzak";
@@ -86,11 +90,11 @@
 "com.kustomer.Unavailable message goes here" = "Eskuragarri ez dagoen mezua hemen doa";
 "com.kustomer.Updated" = "Eguneratua";
 "com.kustomer.Waiting for a response from" = "Erantzunaren zain";
-"com.kustomer.We will get back to you as soon as we are online!" = "Sarean gauden bezain laster zurekin harremanetan jarriko gara!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Zuregana itzuliko gara sarean gauden bezain pronto!";
 "com.kustomer.Yes" = "Bai";
 "com.kustomer.You changed your additional feedback comment" = "Zure iruzkin gehigarria aldatu duzu";
 "com.kustomer.You're offline. Check your connection." = "Lineaz kanpo zaude. Egiaztatu zure konexioa.";
 "com.kustomer.Your existing conversations will be here." = "Lehendik dituzun elkarrizketak hemen izango dira.";
-"com.kustomer.is no longer available" = "jada ez dago eskuragarri";
+"com.kustomer.is no longer available" = "jada ez dago erabilgarri";
 "com.kustomer.out of" = "kanpo";
 "com.kustomer.sending" = "bidaltzen";

@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ uyachwetheza...";
+"com.kustomer.100+ results found" = "100+ iziphumo ezifunyenweyo";
 "com.kustomer.Add additional feedback" = "Yongeza ingxelo eyongezelelweyo";
 "com.kustomer.Additional Feedback" = "Ingxelo eyongezelelweyo";
 "com.kustomer.Additional feedback removed" = "Ingxelo eyongezelelweyo isusiwe";
 "com.kustomer.Agent" = "Ummeli";
 "com.kustomer.Answers" = "Iimpendulo";
-"com.kustomer.Are you sure you want to end this chat?" = "Uqinisekile ufuna ukuyiphelisa le ncoko?";
+"com.kustomer.Are you sure you want to end this chat?" = "Uqinisekile ufuna ukuphelisa le ncoko?";
 "com.kustomer.Attached file" = "Ifayile encanyathiselwe";
 "com.kustomer.Attachment" = "Isiqhoboshelo";
 "com.kustomer.Browse files" = "Khangela iifayile";
@@ -17,13 +18,14 @@
 "com.kustomer.Chat history" = "Ncokola imbali";
 "com.kustomer.Chat is currently unavailable" = "Incoko ayifumaneki okwangoku";
 "com.kustomer.Chat with support" = "Thetha ngenkxaso";
-"com.kustomer.Conversation ended" = "Incoko yaphela";
+"com.kustomer.Conversation ended" = "Incoko iphelile";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Incoko idityanisiwe yaba kwenye incoko.\n\nCofa ukuya kwincoko entsha.";
 "com.kustomer.Conversation moved to another customer" = "Incoko isiwe komnye umthengi";
 "com.kustomer.Delete" = "Cima";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ngaba uyafuna ukususa ukalisho lwakho kunye nengxelo?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Ngaba uyafuna ukugcina utshintsho olwenzileyo kwizimvo zakho?";
 "com.kustomer.Done" = "Ugqibile";
+"com.kustomer.Edit additional feedback" = "Hlela ingxelo eyongezelelweyo";
 "com.kustomer.Edit comment" = "Hlela izimvo";
 "com.kustomer.End Chat" = "Phelisa iNgxoxo";
 "com.kustomer.Ended" = "Iphelile";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Akukho manqaku";
 "com.kustomer.No conversations yet" = "Akukho ncoko okwangoku";
 "com.kustomer.No internet connection" = "Akukho nxibelelwano lwe-intanethi";
+"com.kustomer.No results" = "Akukho ziphumo";
 "com.kustomer.No text" = "Akukho mbhalo";
 "com.kustomer.None of your personal information was included" = "Akukho nanye kwiinkcukacha zakho ezifakiweyo";
 "com.kustomer.Not enough disk space" = "Akukho ndawo yaneleyo kwidisk";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Ilayibrari yeefoto";
 "com.kustomer.Please leave a message" = "Nceda ushiye umyalezo";
 "com.kustomer.Please select an option..." = "Nceda khetha ukhetho...";
+"com.kustomer.Please try another search term" = "Nceda uzame elinye igama lokukhangela";
 "com.kustomer.Reconnect" = "Qhagamshela kwakhona";
 "com.kustomer.Reconnecting..." = "Iyaqhagamshela kwakhona...";
 "com.kustomer.Remove" = "Susa";
@@ -69,7 +73,7 @@
 "com.kustomer.Report sent" = "Ingxelo ithunyelwe";
 "com.kustomer.Save changes" = "Gcina Utshintsho";
 "com.kustomer.Search Help Articles" = "Phendla Amanqaku oNcedo";
-"com.kustomer.Search Results" = "Phendla iziphumo";
+"com.kustomer.Search Results" = "Iziphumo zoPhendlo";
 "com.kustomer.Sending" = "Iyathumela";
 "com.kustomer.Share" = "Yabelana";
 "com.kustomer.Submit" = "Ngenisa";
@@ -86,7 +90,7 @@
 "com.kustomer.Unavailable message goes here" = "Umyalezo ongafumanekiyo uya apha";
 "com.kustomer.Updated" = "Ihlaziyiwe";
 "com.kustomer.Waiting for a response from" = "Ilinde impendulo evela";
-"com.kustomer.We will get back to you as soon as we are online!" = "Siza kubuyela kuwe kamsinya sakuba sikwi-intanethi!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Siza kubuyela kuwe kamsinya nje sakuba sikwi-intanethi!";
 "com.kustomer.Yes" = "Ewe";
 "com.kustomer.You changed your additional feedback comment" = "Utshintshe izimvo zakho ezongezelelweyo zengxelo";
 "com.kustomer.You're offline. Check your connection." = "Awukho kwi-intanethi. Jonga uqhagamshelwano lwakho.";

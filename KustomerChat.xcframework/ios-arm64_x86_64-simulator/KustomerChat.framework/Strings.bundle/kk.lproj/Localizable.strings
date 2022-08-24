@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ теріп жатыр...";
+"com.kustomer.100+ results found" = "100+ нәтиже табылды";
 "com.kustomer.Add additional feedback" = "Қосымша кері байланыс қосыңыз";
 "com.kustomer.Additional Feedback" = "Қосымша кері байланыс";
 "com.kustomer.Additional feedback removed" = "Қосымша кері байланыс жойылды";
@@ -11,7 +12,7 @@
 "com.kustomer.Camera roll" = "Камера орамы";
 "com.kustomer.Can't load chat" = "Чатты жүктеу мүмкін емес";
 "com.kustomer.Cancel" = "Болдырмау";
-"com.kustomer.Cancelled! Tap to retry." = "Бас тартылды! Қайталап көру үшін түртіңіз.";
+"com.kustomer.Cancelled! Tap to retry." = "Бас тартылды! Қайталау үшін түртіңіз.";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат аяқталды";
 "com.kustomer.Chat history" = "Чат тарихы";
@@ -24,15 +25,16 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Бағаңызды және пікіріңізді өшіргіңіз келе ме?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Пікіріңізге енгізілген өзгерістерді сақтағыңыз келе ме?";
 "com.kustomer.Done" = "Дайын";
+"com.kustomer.Edit additional feedback" = "Қосымша пікірді өңдеу";
 "com.kustomer.Edit comment" = "Пікірді өңдеу";
 "com.kustomer.End Chat" = "Чатты аяқтау";
 "com.kustomer.Ended" = "Аяқталды";
 "com.kustomer.Error" = "Қате";
 "com.kustomer.Error!" = "Қате!";
-"com.kustomer.Error. Tap to retry." = "Қате. Қайталап көру үшін түртіңіз.";
+"com.kustomer.Error. Tap to retry." = "Қате. Қайталау үшін түртіңіз.";
 "com.kustomer.FAQ" = "Жиі қойылатын сұрақтар";
 "com.kustomer.Help Article" = "Анықтама мақаласы";
-"com.kustomer.Image" = "Кескін";
+"com.kustomer.Image" = "Сурет";
 "com.kustomer.Incoming chat" = "Кіріс чат";
 "com.kustomer.Internet offline" = "Интернет офлайн";
 "com.kustomer.Just now" = "Жаңа ғана";
@@ -48,10 +50,11 @@
 "com.kustomer.Moved" = "Жылжытылған";
 "com.kustomer.Never mind" = "Оқасы жоқ";
 "com.kustomer.New Conversation" = "Жаңа әңгіме";
-"com.kustomer.New message" = "Жаңа хабарлама";
+"com.kustomer.New message" = "Жаңа хабар";
 "com.kustomer.No articles" = "Мақалалар жоқ";
 "com.kustomer.No conversations yet" = "Әзірге сөйлесулер жоқ";
 "com.kustomer.No internet connection" = "Интернет байланысы жоқ";
+"com.kustomer.No results" = "Нәтиже жоқ";
 "com.kustomer.No text" = "Мәтін жоқ";
 "com.kustomer.None of your personal information was included" = "Сіздің жеке ақпаратыңыздың ешқайсысы қосылмаған";
 "com.kustomer.Not enough disk space" = "Дискілік кеңістік жеткіліксіз";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Фото кітапхана";
 "com.kustomer.Please leave a message" = "Хабарлама қалдырыңыз";
 "com.kustomer.Please select an option..." = "Опцияны таңдаңыз...";
+"com.kustomer.Please try another search term" = "Басқа іздеу сөзін қолданып көріңіз";
 "com.kustomer.Reconnect" = "Қайта қосылу";
 "com.kustomer.Reconnecting..." = "Қайта қосылуда...";
 "com.kustomer.Remove" = "Жою";
@@ -81,7 +85,7 @@
 "com.kustomer.That article" = "Сол мақала";
 "com.kustomer.There was a problem" = "Мәселе болды";
 "com.kustomer.This conversation is read-only" = "Бұл әңгіме тек оқуға арналған";
-"com.kustomer.Try again" = "Қайтадан байқап көріңіз";
+"com.kustomer.Try again" = "Қайтадан көріңіз";
 "com.kustomer.Type a message..." = "Хабарды теріңіз...";
 "com.kustomer.Unavailable message goes here" = "Қолжетімсіз хабар осында келеді";
 "com.kustomer.Updated" = "Жаңартылған";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ టైప్ చేస్తున్నారు...";
+"com.kustomer.100+ results found" = "100+ ఫలితాలు కనుగొనబడ్డాయి";
 "com.kustomer.Add additional feedback" = "అదనపు అభిప్రాయాన్ని జోడించండి";
 "com.kustomer.Additional Feedback" = "అదనపు అభిప్రాయం";
 "com.kustomer.Additional feedback removed" = "అదనపు అభిప్రాయం తీసివేయబడింది";
@@ -24,8 +25,9 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "మీరు మీ రేటింగ్ మరియు అభిప్రాయాన్ని తీసివేయాలనుకుంటున్నారా?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "మీరు మీ వ్యాఖ్యకు చేసిన మార్పులను సేవ్ చేయాలనుకుంటున్నారా?";
 "com.kustomer.Done" = "పూర్తి";
+"com.kustomer.Edit additional feedback" = "అదనపు అభిప్రాయాన్ని సవరించండి";
 "com.kustomer.Edit comment" = "వ్యాఖ్యను సవరించండి";
-"com.kustomer.End Chat" = "చాట్ ముగించు";
+"com.kustomer.End Chat" = "చాట్‌ని ముగించండి";
 "com.kustomer.Ended" = "ముగిసింది";
 "com.kustomer.Error" = "లోపం";
 "com.kustomer.Error!" = "లోపం!";
@@ -40,7 +42,7 @@
 "com.kustomer.Leave a message" = "సందేశం పంపండి";
 "com.kustomer.Leave a message..." = "సందేశం పంపండి...";
 "com.kustomer.Loading..." = "లోడ్...";
-"com.kustomer.Mark all as read" = "అన్నీ చదివినట్లు గుర్తించు";
+"com.kustomer.Mark all as read" = "అన్నీచదివినట్లుగా సూచించు";
 "com.kustomer.Me" = "నేను";
 "com.kustomer.Message" = "సందేశం";
 "com.kustomer.Message failed to send" = "సందేశాన్ని పంపడంలో విఫలమైంది";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "కథనాలు లేవు";
 "com.kustomer.No conversations yet" = "ఇంకా సంభాషణలు లేవు";
 "com.kustomer.No internet connection" = "ఇంటర్నెట్ కనెక్షన్ లేదు";
+"com.kustomer.No results" = "ఫలితాలు లేవు";
 "com.kustomer.No text" = "వచనం లేదు";
 "com.kustomer.None of your personal information was included" = "మీ వ్యక్తిగత సమాచారం ఏదీ చేర్చబడలేదు";
 "com.kustomer.Not enough disk space" = "సరిపోయే డిస్క్ స్పేస్ లేదు";
@@ -62,8 +65,9 @@
 "com.kustomer.Photo library" = "ఫోటో లైబ్రరీ";
 "com.kustomer.Please leave a message" = "దయచేసి ఒక సందేశాన్ని పంపండి";
 "com.kustomer.Please select an option..." = "దయచేసి ఒక ఎంపికను ఎంచుకోండి...";
+"com.kustomer.Please try another search term" = "దయచేసి మరొక శోధన పదాన్ని ప్రయత్నించండి";
 "com.kustomer.Reconnect" = "మళ్లీ కనెక్ట్ చేయండి";
-"com.kustomer.Reconnecting..." = "మళ్లీ కనెక్ట్ చేస్తోంది...";
+"com.kustomer.Reconnecting..." = "మళ్లీ కనెక్ట్ అవుతోంది...";
 "com.kustomer.Remove" = "తొలగించు";
 "com.kustomer.Report problem" = "సమస్యను నివేదించండి";
 "com.kustomer.Report sent" = "నివేదిక పంపబడింది";
@@ -79,7 +83,7 @@
 "com.kustomer.Tap to open" = "తెరవడానికి నొక్కండి";
 "com.kustomer.Thanks for your feedback" = "మీ అభిప్రాయానికి ధన్యవాదాలు";
 "com.kustomer.That article" = "ఆ వ్యాసం";
-"com.kustomer.There was a problem" = "ఒక సమస్య ఉంది";
+"com.kustomer.There was a problem" = "ఒక సమస్య వచ్చింది";
 "com.kustomer.This conversation is read-only" = "ఈ సంభాషణ చదవడానికి మాత్రమే";
 "com.kustomer.Try again" = "మళ్లీ ప్రయత్నించండి";
 "com.kustomer.Type a message..." = "సందేశాన్ని టైప్ చేయండి...";

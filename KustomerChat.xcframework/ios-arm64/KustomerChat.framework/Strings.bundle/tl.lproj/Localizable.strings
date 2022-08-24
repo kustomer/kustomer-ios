@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "Nagta-type si %@...";
+"com.kustomer.100+ results found" = "100+ resulta ang natagpuan";
 "com.kustomer.Add additional feedback" = "Magdagdag ng karagdagang feedback";
 "com.kustomer.Additional Feedback" = "Karagdagang Feedback";
 "com.kustomer.Additional feedback removed" = "Inalis ang karagdagang feedback";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Gusto mo bang alisin ang iyong rating at feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Gusto mo bang i-save ang mga pagbabagong ginawa mo sa iyong komento?";
 "com.kustomer.Done" = "Tapos na";
+"com.kustomer.Edit additional feedback" = "I-edit ang karagdagang feedback";
 "com.kustomer.Edit comment" = "I-edit ang komento";
 "com.kustomer.End Chat" = "Tapusin ang Chat";
 "com.kustomer.Ended" = "Natapos";
@@ -46,12 +48,13 @@
 "com.kustomer.Message failed to send" = "Nabigong ipadala ang mensahe";
 "com.kustomer.Message failed to send!" = "Nabigong ipadala ang mensahe!";
 "com.kustomer.Moved" = "Inilipat";
-"com.kustomer.Never mind" = "Wag na lang";
+"com.kustomer.Never mind" = "Wag na nga";
 "com.kustomer.New Conversation" = "Bagong Pag-uusap";
 "com.kustomer.New message" = "Bagong mensahe";
 "com.kustomer.No articles" = "Walang mga artikulo";
 "com.kustomer.No conversations yet" = "Wala pang usapan";
 "com.kustomer.No internet connection" = "Walang koneksyon sa internet";
+"com.kustomer.No results" = "Walang resulta";
 "com.kustomer.No text" = "Walang text";
 "com.kustomer.None of your personal information was included" = "Wala sa iyong personal na impormasyon ang kasama";
 "com.kustomer.Not enough disk space" = "Walang sapat na espasyo sa disk";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Library ng larawan";
 "com.kustomer.Please leave a message" = "Mangyaring mag-iwan ng mensahe";
 "com.kustomer.Please select an option..." = "Mangyaring pumili ng opsyon...";
+"com.kustomer.Please try another search term" = "Mangyaring subukan ang isa pang termino para sa paghahanap";
 "com.kustomer.Reconnect" = "Kumonekta muli";
 "com.kustomer.Reconnecting..." = "Kumokonekta muli...";
 "com.kustomer.Remove" = "Alisin";
@@ -93,4 +97,4 @@
 "com.kustomer.Your existing conversations will be here." = "Mapupunta rito ang iyong mga kasalukuyang pag-uusap.";
 "com.kustomer.is no longer available" = "ay hindi na magagamit";
 "com.kustomer.out of" = "mula sa";
-"com.kustomer.sending" = "pagpapadala";
+"com.kustomer.sending" = "nagpapadala";

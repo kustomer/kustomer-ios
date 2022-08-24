@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ தட்டச்சு செய்கிறார்...";
+"com.kustomer.100+ results found" = "100+ முடிவுகள் கிடைத்தன";
 "com.kustomer.Add additional feedback" = "கூடுதல் கருத்தைச் சேர்க்கவும்";
 "com.kustomer.Additional Feedback" = "கூடுதல் கருத்து";
 "com.kustomer.Additional feedback removed" = "கூடுதல் கருத்து அகற்றப்பட்டது";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "அரட்டை தற்போது இல்லை";
 "com.kustomer.Chat with support" = "ஆதரவுடன் அரட்டையடிக்கவும்";
 "com.kustomer.Conversation ended" = "உரையாடல் முடிந்தது";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "உரையாடல் மற்றொரு உரையாடலில் இணைக்கப்பட்டது.\n\nபுதிய உரையாடலுக்குச் செல்ல தட்டவும்.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "உரையாடல் மற்றொரு உரையாடலில் இணைக்கப்பட்டது.\n\nபுதிய உரையாடலுக்குச் செல்ல, தட்டவும்.";
 "com.kustomer.Conversation moved to another customer" = "உரையாடல் மற்றொரு வாடிக்கையாளருக்கு மாற்றப்பட்டது";
 "com.kustomer.Delete" = "அழி";
 "com.kustomer.Do you want to remove your rating and feedback?" = "உங்கள் மதிப்பீட்டையும் கருத்தையும் அகற்ற விரும்புகிறீர்களா?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "உங்கள் கருத்தில் செய்த மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?";
 "com.kustomer.Done" = "முடிந்தது";
+"com.kustomer.Edit additional feedback" = "கூடுதல் கருத்தைத் திருத்தவும்";
 "com.kustomer.Edit comment" = "கருத்தைத் திருத்தவும்";
 "com.kustomer.End Chat" = "அரட்டையை முடிக்கவும்";
 "com.kustomer.Ended" = "முடிந்தது";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "கட்டுரைகள் இல்லை";
 "com.kustomer.No conversations yet" = "இதுவரை எந்த உரையாடலும் இல்லை";
 "com.kustomer.No internet connection" = "இணைய இணைப்பு இல்லை";
+"com.kustomer.No results" = "முடிவுகள் இல்லை";
 "com.kustomer.No text" = "உரை இல்லை";
 "com.kustomer.None of your personal information was included" = "உங்கள் தனிப்பட்ட தகவல்கள் எதுவும் சேர்க்கப்படவில்லை";
 "com.kustomer.Not enough disk space" = "நினைவகத்தின் இடம் போதாது";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "புகைப்பட நூலகம்";
 "com.kustomer.Please leave a message" = "தயவுசெய்து ஒரு செய்தியை அனுப்பவும்";
 "com.kustomer.Please select an option..." = "தயவுசெய்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்...";
+"com.kustomer.Please try another search term" = "வேறொரு தேடல் சொல்லை முயற்சிக்கவும்";
 "com.kustomer.Reconnect" = "மீண்டும் இணைக்கவும்";
 "com.kustomer.Reconnecting..." = "மீண்டும் இணைக்கிறது...";
 "com.kustomer.Remove" = "அகற்று";

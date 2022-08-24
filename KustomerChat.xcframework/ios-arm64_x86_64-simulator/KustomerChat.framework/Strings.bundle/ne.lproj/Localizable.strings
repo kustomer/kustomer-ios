@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ टाइप गर्दै हुनुहुन्छ...";
+"com.kustomer.100+ results found" = "100+ परिणामहरू फेला पर्यो";
 "com.kustomer.Add additional feedback" = "थप प्रतिक्रिया थप्नुहोस्";
 "com.kustomer.Additional Feedback" = "अतिरिक्त प्रतिक्रिया";
 "com.kustomer.Additional feedback removed" = "अतिरिक्त प्रतिक्रिया हटाइयो";
@@ -17,13 +18,14 @@
 "com.kustomer.Chat history" = "च्याट इतिहास";
 "com.kustomer.Chat is currently unavailable" = "च्याट हाल अनुपलब्ध छ";
 "com.kustomer.Chat with support" = "समर्थन संग कुराकानी";
-"com.kustomer.Conversation ended" = "वार्ता समाप्त भयो";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "कुराकानी अर्को वार्तालापमा मर्ज गरियो।\n\nनयाँ कुराकानीमा जान ट्याप गर्नुहोस्।";
+"com.kustomer.Conversation ended" = "कुराकानी समाप्त भयो";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "कुराकानी अर्को कुराकानीमा मर्ज गरियो।\n\nनयाँ वार्तालापमा जान ट्याप गर्नुहोस्।";
 "com.kustomer.Conversation moved to another customer" = "कुराकानी अर्को ग्राहकमा सारियो";
 "com.kustomer.Delete" = "मेटाउन";
 "com.kustomer.Do you want to remove your rating and feedback?" = "तपाईं आफ्नो मूल्याङ्कन र प्रतिक्रिया हटाउन चाहनुहुन्छ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "तपाईंले आफ्नो टिप्पणीमा गरेका परिवर्तनहरू बचत गर्न चाहनुहुन्छ?";
 "com.kustomer.Done" = "सकियो";
+"com.kustomer.Edit additional feedback" = "अतिरिक्त प्रतिक्रिया सम्पादन गर्नुहोस्";
 "com.kustomer.Edit comment" = "टिप्पणी सम्पादन गर्नुहोस्";
 "com.kustomer.End Chat" = "च्याट अन्त्य गर्नुहोस्";
 "com.kustomer.Ended" = "समाप्त भयो";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "कुनै लेख छैन";
 "com.kustomer.No conversations yet" = "अहिलेसम्म कुनै कुराकानी छैन";
 "com.kustomer.No internet connection" = "इन्टरनेट जडान छैन";
+"com.kustomer.No results" = "कुनै परिणाम छैन";
 "com.kustomer.No text" = "पाठ छैन";
 "com.kustomer.None of your personal information was included" = "तपाईंको कुनै पनि व्यक्तिगत जानकारी समावेश गरिएको थिएन";
 "com.kustomer.Not enough disk space" = "पर्याप्त डिस्क ठाउँ छैन";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "फोटो लाइब्रेरी";
 "com.kustomer.Please leave a message" = "कृपया सन्देश छोड्नुहोस्";
 "com.kustomer.Please select an option..." = "कृपया एउटा विकल्प चयन गर्नुहोस्...";
+"com.kustomer.Please try another search term" = "कृपया अर्को खोज शब्द प्रयास गर्नुहोस्";
 "com.kustomer.Reconnect" = "पुन: जडान गर्नुहोस्";
 "com.kustomer.Reconnecting..." = "पुन: जडान गर्दै...";
 "com.kustomer.Remove" = "हटाउनुहोस्";
@@ -79,7 +83,7 @@
 "com.kustomer.Tap to open" = "खोल्न ट्याप गर्नुहोस्";
 "com.kustomer.Thanks for your feedback" = "तपाईंको प्रतिक्रियाको लागि धन्यवाद";
 "com.kustomer.That article" = "त्यो लेख";
-"com.kustomer.There was a problem" = "त्यहाँ एक समस्या थियो";
+"com.kustomer.There was a problem" = "एउटा समस्या थियो";
 "com.kustomer.This conversation is read-only" = "यो कुराकानी पढ्ने मात्र हो";
 "com.kustomer.Try again" = "पुन: प्रयास गर्नुहोस्";
 "com.kustomer.Type a message..." = "सन्देश टाइप गर्नुहोस्...";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ бичиж байна...";
+"com.kustomer.100+ results found" = "100 гаруй илэрц олдсон";
 "com.kustomer.Add additional feedback" = "Нэмэлт санал хүсэлт нэмнэ үү";
 "com.kustomer.Additional Feedback" = "Нэмэлт санал хүсэлт";
 "com.kustomer.Additional feedback removed" = "Нэмэлт санал хүсэлтийг хассан";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "Чат одоогоор боломжгүй байна";
 "com.kustomer.Chat with support" = "Дэмжлэгтэй чатлах";
 "com.kustomer.Conversation ended" = "Яриа дууслаа";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Харилцааг өөр харилцан ярианд нэгтгэв.\n\nШинэ харилцан яриа руу очихын тулд товшино уу.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Харилцан яриаг өөр харилцан ярианд нэгтгэв.\n\nШинэ харилцан яриа руу очихын тулд товшино уу.";
 "com.kustomer.Conversation moved to another customer" = "Харилцааг өөр харилцагч руу шилжүүлсэн";
 "com.kustomer.Delete" = "Устгах";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Та өөрийн үнэлгээ, санал хүсэлтээ устгахыг хүсэж байна уу?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Та сэтгэгдэлдээ оруулсан өөрчлөлтөө хадгалахыг хүсэж байна уу?";
 "com.kustomer.Done" = "Дууслаа";
+"com.kustomer.Edit additional feedback" = "Нэмэлт санал хүсэлтийг засах";
 "com.kustomer.Edit comment" = "Сэтгэгдэл засах";
 "com.kustomer.End Chat" = "Чатыг дуусгах";
 "com.kustomer.Ended" = "Дууслаа";
@@ -45,13 +47,14 @@
 "com.kustomer.Message" = "Захиа";
 "com.kustomer.Message failed to send" = "Мессежийг илгээж чадсангүй";
 "com.kustomer.Message failed to send!" = "Зурвас илгээж чадсангүй!";
-"com.kustomer.Moved" = "Нүүдсэн";
+"com.kustomer.Moved" = "Зөөв";
 "com.kustomer.Never mind" = "Мартдаа";
 "com.kustomer.New Conversation" = "Шинэ яриа";
 "com.kustomer.New message" = "Шинэ мессеж";
 "com.kustomer.No articles" = "Нийтлэл байхгүй";
 "com.kustomer.No conversations yet" = "Одоогоор харилцан яриа алга";
-"com.kustomer.No internet connection" = "Интернэт холболт байхгүй";
+"com.kustomer.No internet connection" = "Интернет холболт байхгүй";
+"com.kustomer.No results" = "Үр дүнгүй";
 "com.kustomer.No text" = "Текст байхгүй";
 "com.kustomer.None of your personal information was included" = "Таны хувийн мэдээллийг оруулаагүй болно";
 "com.kustomer.Not enough disk space" = "Дискний зай хангалтгүй байна";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Фото зургийн сан";
 "com.kustomer.Please leave a message" = "Та мессеж үлдээнэ үү";
 "com.kustomer.Please select an option..." = "Сонголтыг сонгоно уу...";
+"com.kustomer.Please try another search term" = "Өөр хайлтын үгээр оролдоно уу";
 "com.kustomer.Reconnect" = "Дахин холбогдох";
 "com.kustomer.Reconnecting..." = "Дахин холбогдож байна...";
 "com.kustomer.Remove" = "Устгах";

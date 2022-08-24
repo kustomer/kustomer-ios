@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ scrive...";
+"com.kustomer.100+ results found" = "100+ risultati trovu";
 "com.kustomer.Add additional feedback" = "Aggiungi feedback supplementari";
 "com.kustomer.Additional Feedback" = "Feedback supplementu";
 "com.kustomer.Additional feedback removed" = "Feedback supplementu eliminatu";
@@ -18,12 +19,13 @@
 "com.kustomer.Chat is currently unavailable" = "Chat ùn hè attualmente dispunibule";
 "com.kustomer.Chat with support" = "Chat cun supportu";
 "com.kustomer.Conversation ended" = "A cunversazione hè finita";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "A cunversazione fusiona in una altra conversazione.\n\nTap per andà à a nova conversazione.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "A cunversazione fusiona in un&#39;altra conversazione.\n\nToccate per andà à a nova conversazione.";
 "com.kustomer.Conversation moved to another customer" = "A cunversazione si trasfirìu à un altru cliente";
 "com.kustomer.Delete" = "Sguassà";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vulete caccià a vostra valutazione è feedback ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vulete salvà i cambiamenti chì avete fattu à u vostru cumentu ?";
 "com.kustomer.Done" = "Fattu";
+"com.kustomer.Edit additional feedback" = "Edite feedback supplementari";
 "com.kustomer.Edit comment" = "Edite u cumentu";
 "com.kustomer.End Chat" = "Fine Chat";
 "com.kustomer.Ended" = "Finita";
@@ -44,14 +46,15 @@
 "com.kustomer.Me" = "mè";
 "com.kustomer.Message" = "Missaghju";
 "com.kustomer.Message failed to send" = "U messagiu ùn hè statu mandatu";
-"com.kustomer.Message failed to send!" = "U missaghju ùn hè statu mandatu!";
+"com.kustomer.Message failed to send!" = "U messagiu ùn hè statu mandatu!";
 "com.kustomer.Moved" = "Sposta";
-"com.kustomer.Never mind" = "Ùn fà nunda";
+"com.kustomer.Never mind" = "Ùn face nunda";
 "com.kustomer.New Conversation" = "Nova Conversazione";
-"com.kustomer.New message" = "Missaghju novu";
+"com.kustomer.New message" = "Novu missaghju";
 "com.kustomer.No articles" = "Nisun articulu";
 "com.kustomer.No conversations yet" = "Nisuna conversazione ancora";
 "com.kustomer.No internet connection" = "Nisuna cunnessione Internet";
+"com.kustomer.No results" = "Nisun risultatu";
 "com.kustomer.No text" = "Nisun testu";
 "com.kustomer.None of your personal information was included" = "Nisuna di a vostra infurmazione persunale hè stata inclusa";
 "com.kustomer.Not enough disk space" = "Ùn hè abbastanza spaziu di discu";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Biblioteca di foto";
 "com.kustomer.Please leave a message" = "Per piacè lasciate un missaghju";
 "com.kustomer.Please select an option..." = "Per piacè sceglite un&#39;opzione...";
+"com.kustomer.Please try another search term" = "Pruvate un altru termu di ricerca";
 "com.kustomer.Reconnect" = "Ricunnettà";
 "com.kustomer.Reconnecting..." = "Ricunnettà...";
 "com.kustomer.Remove" = "Eliminate";

@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ skriver...";
+"com.kustomer.100+ results found" = "100+ resultat hittades";
 "com.kustomer.Add additional feedback" = "Lägg till ytterligare feedback";
 "com.kustomer.Additional Feedback" = "Ytterligare feedback";
 "com.kustomer.Additional feedback removed" = "Ytterligare feedback har tagits bort";
@@ -10,7 +11,7 @@
 "com.kustomer.Browse files" = "Bläddra bland filer";
 "com.kustomer.Camera roll" = "Kamera rulle";
 "com.kustomer.Can't load chat" = "Det går inte att ladda chatten";
-"com.kustomer.Cancel" = "Annullera";
+"com.kustomer.Cancel" = "Avbryt";
 "com.kustomer.Cancelled! Tap to retry." = "Inställt! Klicka för att försöka igen.";
 "com.kustomer.Chat" = "Chatt";
 "com.kustomer.Chat has ended" = "Chatten har avslutats";
@@ -24,9 +25,10 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vill du ta bort ditt betyg och din feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vill du spara ändringarna du gjort i din kommentar?";
 "com.kustomer.Done" = "Gjort";
+"com.kustomer.Edit additional feedback" = "Redigera ytterligare feedback";
 "com.kustomer.Edit comment" = "Redigera kommentar";
 "com.kustomer.End Chat" = "Avsluta chat";
-"com.kustomer.Ended" = "Slutade";
+"com.kustomer.Ended" = "Avslutade";
 "com.kustomer.Error" = "Fel";
 "com.kustomer.Error!" = "Fel!";
 "com.kustomer.Error. Tap to retry." = "Fel. Klicka för att försöka igen.";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Inga artiklar";
 "com.kustomer.No conversations yet" = "Inga konversationer än";
 "com.kustomer.No internet connection" = "Ingen internetanslutning";
+"com.kustomer.No results" = "Inga resultat";
 "com.kustomer.No text" = "Ingen text";
 "com.kustomer.None of your personal information was included" = "Ingen av dina personliga uppgifter inkluderades";
 "com.kustomer.Not enough disk space" = "Inte tillräckligt med diskutrymme";
@@ -62,9 +65,10 @@
 "com.kustomer.Photo library" = "Fotobibliotek";
 "com.kustomer.Please leave a message" = "Snälla lämna ett medelande";
 "com.kustomer.Please select an option..." = "Var god välj ett alternativ...";
+"com.kustomer.Please try another search term" = "Försök med en annan sökterm";
 "com.kustomer.Reconnect" = "Återanslut";
 "com.kustomer.Reconnecting..." = "Återansluter...";
-"com.kustomer.Remove" = "Avlägsna";
+"com.kustomer.Remove" = "Ta bort";
 "com.kustomer.Report problem" = "Rapportera problem";
 "com.kustomer.Report sent" = "Rapport skickad";
 "com.kustomer.Save changes" = "Spara ändringar";

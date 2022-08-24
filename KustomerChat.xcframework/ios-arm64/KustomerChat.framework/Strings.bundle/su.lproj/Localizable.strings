@@ -1,10 +1,11 @@
 "com.kustomer.%@ is typing..." = "%@ nuju ngetik...";
+"com.kustomer.100+ results found" = "100+ hasil kapanggih";
 "com.kustomer.Add additional feedback" = "Tambahkeun eupan balik tambahan";
 "com.kustomer.Additional Feedback" = "Eupan Balik tambahan";
 "com.kustomer.Additional feedback removed" = "eupan balik tambahan dihapus";
 "com.kustomer.Agent" = "agén";
 "com.kustomer.Answers" = "Waleran";
-"com.kustomer.Are you sure you want to end this chat?" = "Naha anjeun yakin hoyong mungkas obrolan ieu?";
+"com.kustomer.Are you sure you want to end this chat?" = "Naha anjeun yakin rék ngeureunkeun obrolan ieu?";
 "com.kustomer.Attached file" = "file napel";
 "com.kustomer.Attachment" = "Kantétan";
 "com.kustomer.Browse files" = "Kotektak file";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Naha anjeun badé ngahapus rating sareng eupan balik anjeun?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Naha anjeun badé ngahémat parobihan anu anjeun lakukeun kana koméntar anjeun?";
 "com.kustomer.Done" = "Réngsé";
+"com.kustomer.Edit additional feedback" = "Édit eupan balik tambahan";
 "com.kustomer.Edit comment" = "Edit komentar";
 "com.kustomer.End Chat" = "Tungtung Chat";
 "com.kustomer.Ended" = "Réngsé";
@@ -50,8 +52,9 @@
 "com.kustomer.New Conversation" = "Paguneman Anyar";
 "com.kustomer.New message" = "Pesen anyar";
 "com.kustomer.No articles" = "Taya artikel";
-"com.kustomer.No conversations yet" = "Euweuh obrolan acan";
+"com.kustomer.No conversations yet" = "Taya obrolan acan";
 "com.kustomer.No internet connection" = "Taya sambungan internét";
+"com.kustomer.No results" = "Taya hasilna";
 "com.kustomer.No text" = "Taya téks";
 "com.kustomer.None of your personal information was included" = "Henteu aya inpormasi pribadi anjeun anu kalebet";
 "com.kustomer.Not enough disk space" = "Teu cukup spasi disk";
@@ -59,9 +62,10 @@
 "com.kustomer.Okay" = "Oké";
 "com.kustomer.Open in browser" = "Buka dina browser";
 "com.kustomer.Outgoing chat" = "Obrolan kaluar";
-"com.kustomer.Photo library" = "Perpustakaan poto";
+"com.kustomer.Photo library" = "perpustakaan poto";
 "com.kustomer.Please leave a message" = "Mangga tinggalkeun pesen";
 "com.kustomer.Please select an option..." = "Mangga pilih hiji pilihan...";
+"com.kustomer.Please try another search term" = "Mangga cobian istilah milarian anu sanés";
 "com.kustomer.Reconnect" = "Nyambung deui";
 "com.kustomer.Reconnecting..." = "Nyambung deui...";
 "com.kustomer.Remove" = "Cabut";
@@ -86,9 +90,9 @@
 "com.kustomer.Unavailable message goes here" = "Pesen anu henteu sayogi di dieu";
 "com.kustomer.Updated" = "Diropéa";
 "com.kustomer.Waiting for a response from" = "Nunggu respon ti";
-"com.kustomer.We will get back to you as soon as we are online!" = "Kami bakal uih deui ka anjeun pas urang online!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Kami bakal uih deui ka anjeun pas kami online!";
 "com.kustomer.Yes" = "Sumuhun";
-"com.kustomer.You changed your additional feedback comment" = "Anjeun ngarobih komentar eupan balik tambahan anjeun";
+"com.kustomer.You changed your additional feedback comment" = "Anjeun ngarobah komentar eupan balik tambahan anjeun";
 "com.kustomer.You're offline. Check your connection." = "Anjeun nuju offline. Pariksa sambungan anjeun.";
 "com.kustomer.Your existing conversations will be here." = "Paguneman anjeun anu aya bakal aya di dieu.";
 "com.kustomer.is no longer available" = "geus euweuh";

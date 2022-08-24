@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "Tá %@ ag clóscríobh...";
+"com.kustomer.100+ results found" = "Fuarthas 100+ toradh";
 "com.kustomer.Add additional feedback" = "Cuir aiseolas breise leis";
 "com.kustomer.Additional Feedback" = "Aiseolas Breise";
 "com.kustomer.Additional feedback removed" = "Baineadh aiseolas breise";
@@ -11,7 +12,7 @@
 "com.kustomer.Camera roll" = "Rolla ceamara";
 "com.kustomer.Can't load chat" = "Ní féidir an comhrá a lódáil";
 "com.kustomer.Cancel" = "Cealaigh";
-"com.kustomer.Cancelled! Tap to retry." = "Ar ceal! Tapáil chun triail eile a bhaint as.";
+"com.kustomer.Cancelled! Tap to retry." = "Cealaithe! Tapáil chun triail eile a bhaint as.";
 "com.kustomer.Chat" = "Comhrá";
 "com.kustomer.Chat has ended" = "Tá deireadh tagtha le comhrá";
 "com.kustomer.Chat history" = "Stair comhrá";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ar mhaith leat do rátáil agus aiseolas a bhaint?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Ar mhaith leat na hathruithe a rinne tú ar do nóta tráchta a shábháil?";
 "com.kustomer.Done" = "Déanta";
+"com.kustomer.Edit additional feedback" = "Cuir aiseolas breise in eagar";
 "com.kustomer.Edit comment" = "Cuir trácht in eagar";
 "com.kustomer.End Chat" = "Cuir deireadh le Comhrá";
 "com.kustomer.Ended" = "dar críoch";
@@ -52,8 +54,9 @@
 "com.kustomer.No articles" = "Uimh earraí";
 "com.kustomer.No conversations yet" = "Níl aon chomhrá fós";
 "com.kustomer.No internet connection" = "Gan nasc idirlín";
+"com.kustomer.No results" = "Gan torthaí";
 "com.kustomer.No text" = "Gan téacs";
-"com.kustomer.None of your personal information was included" = "Níor cuireadh aon chuid d’fhaisnéis phearsanta san áireamh";
+"com.kustomer.None of your personal information was included" = "Níor cuireadh aon chuid de do chuid faisnéise pearsanta san áireamh";
 "com.kustomer.Not enough disk space" = "Gan spás diosca go leor";
 "com.kustomer.Not found" = "Ní bhfuarthas";
 "com.kustomer.Okay" = "ceart go leor";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Leabharlann grianghraf";
 "com.kustomer.Please leave a message" = "Fág teachtaireacht le do thoil";
 "com.kustomer.Please select an option..." = "Roghnaigh rogha le do thoil...";
+"com.kustomer.Please try another search term" = "Bain triail as téarma cuardaigh eile";
 "com.kustomer.Reconnect" = "Athcheangail";
 "com.kustomer.Reconnecting..." = "Ag athcheangal...";
 "com.kustomer.Remove" = "Bain";

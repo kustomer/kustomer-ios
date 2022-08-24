@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ sedang menaip...";
+"com.kustomer.100+ results found" = "100+ keputusan ditemui";
 "com.kustomer.Add additional feedback" = "Tambah maklum balas tambahan";
 "com.kustomer.Additional Feedback" = "Maklum Balas Tambahan";
 "com.kustomer.Additional feedback removed" = "Maklum balas tambahan dialih keluar";
@@ -24,6 +25,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Adakah anda mahu mengalih keluar penilaian dan maklum balas anda?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Adakah anda mahu menyimpan perubahan yang anda buat pada ulasan anda?";
 "com.kustomer.Done" = "Selesai";
+"com.kustomer.Edit additional feedback" = "Edit maklum balas tambahan";
 "com.kustomer.Edit comment" = "Edit ulasan";
 "com.kustomer.End Chat" = "Tamatkan Sembang";
 "com.kustomer.Ended" = "tamat";
@@ -32,7 +34,7 @@
 "com.kustomer.Error. Tap to retry." = "ralat. Ketik untuk mencuba semula.";
 "com.kustomer.FAQ" = "Soalan Lazim";
 "com.kustomer.Help Article" = "Artikel Bantuan";
-"com.kustomer.Image" = "Gambar";
+"com.kustomer.Image" = "Imej";
 "com.kustomer.Incoming chat" = "Sembang masuk";
 "com.kustomer.Internet offline" = "Internet luar talian";
 "com.kustomer.Just now" = "tadi";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Tiada artikel";
 "com.kustomer.No conversations yet" = "Tiada perbualan lagi";
 "com.kustomer.No internet connection" = "Tiada sambungan internet";
+"com.kustomer.No results" = "Tiada keputusan";
 "com.kustomer.No text" = "Tiada teks";
 "com.kustomer.None of your personal information was included" = "Tiada maklumat peribadi anda disertakan";
 "com.kustomer.Not enough disk space" = "Ruang cakera tidak cukup";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Perpustakaan foto";
 "com.kustomer.Please leave a message" = "Sila tinggalkan mesej";
 "com.kustomer.Please select an option..." = "Sila pilih satu pilihan...";
+"com.kustomer.Please try another search term" = "Sila cuba istilah carian lain";
 "com.kustomer.Reconnect" = "Sambung semula";
 "com.kustomer.Reconnecting..." = "Menyambung semula...";
 "com.kustomer.Remove" = "Alih keluar";
@@ -89,7 +93,7 @@
 "com.kustomer.We will get back to you as soon as we are online!" = "Kami akan menghubungi anda semula sebaik sahaja kami berada dalam talian!";
 "com.kustomer.Yes" = "ya";
 "com.kustomer.You changed your additional feedback comment" = "Anda menukar ulasan maklum balas tambahan anda";
-"com.kustomer.You're offline. Check your connection." = "Anda berada di luar talian. Semak sambungan anda.";
+"com.kustomer.You're offline. Check your connection." = "Anda di luar talian. Semak sambungan anda.";
 "com.kustomer.Your existing conversations will be here." = "Perbualan sedia ada anda akan berada di sini.";
 "com.kustomer.is no longer available" = "tiada lagi";
 "com.kustomer.out of" = "daripada";

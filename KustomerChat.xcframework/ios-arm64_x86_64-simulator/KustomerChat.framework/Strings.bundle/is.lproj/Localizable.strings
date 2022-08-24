@@ -1,6 +1,7 @@
 "com.kustomer.%@ is typing..." = "%@ er að skrifa...";
+"com.kustomer.100+ results found" = "100+ niðurstöður fundnar";
 "com.kustomer.Add additional feedback" = "Bættu við frekari athugasemdum";
-"com.kustomer.Additional Feedback" = "Viðbótarviðbrögð";
+"com.kustomer.Additional Feedback" = "Viðbótarupplýsingar";
 "com.kustomer.Additional feedback removed" = "Viðbótarviðbrögð fjarlægð";
 "com.kustomer.Agent" = "Umboðsmaður";
 "com.kustomer.Answers" = "Svör";
@@ -9,7 +10,7 @@
 "com.kustomer.Attachment" = "Viðhengi";
 "com.kustomer.Browse files" = "Skoðaðu skrár";
 "com.kustomer.Camera roll" = "Myndavélarrúlla";
-"com.kustomer.Can't load chat" = "Ekki hægt að hlaða spjalli";
+"com.kustomer.Can't load chat" = "Get ekki hlaðið spjall";
 "com.kustomer.Cancel" = "Hætta við";
 "com.kustomer.Cancelled! Tap to retry." = "Hætt við! Pikkaðu til að reyna aftur.";
 "com.kustomer.Chat" = "Spjall";
@@ -24,9 +25,10 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Viltu fjarlægja einkunn þína og athugasemdir?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Viltu vista breytingarnar sem þú gerðir á athugasemdinni þinni?";
 "com.kustomer.Done" = "Búið";
+"com.kustomer.Edit additional feedback" = "Breyta viðbótarábendingum";
 "com.kustomer.Edit comment" = "Breyta athugasemd";
 "com.kustomer.End Chat" = "Ljúka spjalli";
-"com.kustomer.Ended" = "Endaði";
+"com.kustomer.Ended" = "Lokið";
 "com.kustomer.Error" = "Villa";
 "com.kustomer.Error!" = "Villa!";
 "com.kustomer.Error. Tap to retry." = "Villa. Pikkaðu til að reyna aftur.";
@@ -52,6 +54,7 @@
 "com.kustomer.No articles" = "Engar greinar";
 "com.kustomer.No conversations yet" = "Engin samtöl ennþá";
 "com.kustomer.No internet connection" = "Engin nettenging";
+"com.kustomer.No results" = "Engar niðurstöður";
 "com.kustomer.No text" = "Enginn texti";
 "com.kustomer.None of your personal information was included" = "Engar persónulegar upplýsingar þínar voru með";
 "com.kustomer.Not enough disk space" = "Ekki nóg pláss";
@@ -62,6 +65,7 @@
 "com.kustomer.Photo library" = "Myndasafn";
 "com.kustomer.Please leave a message" = "Vinsamlegast skildu eftir skilaboð";
 "com.kustomer.Please select an option..." = "Vinsamlegast veldu valmöguleika...";
+"com.kustomer.Please try another search term" = "Vinsamlegast reyndu annað leitarorð";
 "com.kustomer.Reconnect" = "Tengdu aftur";
 "com.kustomer.Reconnecting..." = "Tengist aftur...";
 "com.kustomer.Remove" = "Fjarlægja";
@@ -71,7 +75,7 @@
 "com.kustomer.Search Help Articles" = "Leita í hjálpargreinum";
 "com.kustomer.Search Results" = "leitarniðurstöður";
 "com.kustomer.Sending" = "Sendir";
-"com.kustomer.Share" = "Deildu";
+"com.kustomer.Share" = "Deila";
 "com.kustomer.Submit" = "Sendu inn";
 "com.kustomer.Survey" = "Könnun";
 "com.kustomer.Take photo" = "Taka mynd";
