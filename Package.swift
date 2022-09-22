@@ -13,8 +13,7 @@ let package = Package(
       targets: ["KustomerChat", "WrapperTarget"])
   ],
   dependencies: [
-    .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0"),
-    .package(name: "CommonMarkAttributedString", url: "https://github.com/mattt/CommonMarkAttributedString", from: "0.2.0")
+    .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0")
   ],
   targets: [
     .binaryTarget(
@@ -23,7 +22,7 @@ let package = Package(
     ),
     .target(
       name: "WrapperTarget",
-      dependencies: ["PubNub", "CommonMarkAttributedString"]
+      dependencies: ["PubNub"]
     )
   ]
 )
