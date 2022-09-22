@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nepavyko įkelti pokalbio";
 "com.kustomer.Cancel" = "Atšaukti";
 "com.kustomer.Cancelled! Tap to retry." = "Atšauktas! Palieskite, kad bandytumėte dar kartą.";
+"com.kustomer.Categories" = "Kategorijos";
 "com.kustomer.Chat" = "Pokalbis";
 "com.kustomer.Chat has ended" = "Pokalbis baigėsi";
 "com.kustomer.Chat history" = "Pokalbių istorija";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Klaida!";
 "com.kustomer.Error. Tap to retry." = "Klaida. Palieskite, kad bandytumėte dar kartą.";
 "com.kustomer.FAQ" = "DUK";
+"com.kustomer.Featured Articles" = "Teminiai straipsniai";
+"com.kustomer.File type not supported" = "Failo tipas nepalaikomas";
 "com.kustomer.Help Article" = "Pagalbos straipsnis";
 "com.kustomer.Image" = "Vaizdas";
 "com.kustomer.Incoming chat" = "Įeinantis pokalbis";

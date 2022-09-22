@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Haiwezi kupakia gumzo";
 "com.kustomer.Cancel" = "Ghairi";
 "com.kustomer.Cancelled! Tap to retry." = "Imeghairiwa! Gusa ili kujaribu tena.";
+"com.kustomer.Categories" = "Kategoria";
 "com.kustomer.Chat" = "Soga";
 "com.kustomer.Chat has ended" = "Gumzo limeisha";
 "com.kustomer.Chat history" = "Historia ya gumzo";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Hitilafu!";
 "com.kustomer.Error. Tap to retry." = "Hitilafu. Gusa ili kujaribu tena.";
 "com.kustomer.FAQ" = "Maswali Yanayoulizwa Mara kwa Mara";
+"com.kustomer.Featured Articles" = "Makala Zilizoangaziwa";
+"com.kustomer.File type not supported" = "Aina ya faili haitumiki";
 "com.kustomer.Help Article" = "Kifungu cha Msaada";
 "com.kustomer.Image" = "Picha";
 "com.kustomer.Incoming chat" = "Soga inayoingia";

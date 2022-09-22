@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Tsy afaka mampiditra chat";
 "com.kustomer.Cancel" = "hanafoana";
 "com.kustomer.Cancelled! Tap to retry." = "nofoanana! Tsindrio raha hanandrana indray.";
+"com.kustomer.Categories" = "Sokajy";
 "com.kustomer.Chat" = "hiresaka";
 "com.kustomer.Chat has ended" = "Tapitra ny chat";
 "com.kustomer.Chat history" = "Tantaran&#39;ny chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Error!";
 "com.kustomer.Error. Tap to retry." = "Error. Tsindrio raha hanandrana indray.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Lahatsoratra nasongadina";
+"com.kustomer.File type not supported" = "Karazana rakitra tsy tohana";
 "com.kustomer.Help Article" = "Lahatsoratra fanampiana";
 "com.kustomer.Image" = "SARY";
 "com.kustomer.Incoming chat" = "Chat miditra";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kin net lade petear";
 "com.kustomer.Cancel" = "Ofbrekke";
 "com.kustomer.Cancelled! Tap to retry." = "Annulearre! Tik om opnij te besykjen.";
+"com.kustomer.Categories" = "Kategoryen";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Petear is beëinige";
 "com.kustomer.Chat history" = "Petear skiednis";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Fersin!";
 "com.kustomer.Error. Tap to retry." = "Fersin. Tik om opnij te besykjen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Featured Articles";
+"com.kustomer.File type not supported" = "Triemtype net stipe";
 "com.kustomer.Help Article" = "Help Artikel";
 "com.kustomer.Image" = "Byld";
 "com.kustomer.Incoming chat" = "Ynkommende petear";

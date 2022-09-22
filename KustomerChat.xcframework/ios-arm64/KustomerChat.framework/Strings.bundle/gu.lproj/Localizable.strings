@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ચેટ લોડ કરી શકાતી નથી";
 "com.kustomer.Cancel" = "રદ કરો";
 "com.kustomer.Cancelled! Tap to retry." = "રદ કર્યું! ફરી પ્રયાસ કરવા માટે ટૅપ કરો.";
+"com.kustomer.Categories" = "શ્રેણીઓ";
 "com.kustomer.Chat" = "ચેટ";
 "com.kustomer.Chat has ended" = "ચેટ સમાપ્ત થઈ ગઈ છે";
 "com.kustomer.Chat history" = "ચેટ ઇતિહાસ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ભૂલ!";
 "com.kustomer.Error. Tap to retry." = "ભૂલ. ફરી પ્રયાસ કરવા માટે ટૅપ કરો.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ફીચર્ડ લેખો";
+"com.kustomer.File type not supported" = "ફાઇલ પ્રકાર સમર્થિત નથી";
 "com.kustomer.Help Article" = "મદદ લેખ";
 "com.kustomer.Image" = "છબી";
 "com.kustomer.Incoming chat" = "ઇનકમિંગ ચેટ";

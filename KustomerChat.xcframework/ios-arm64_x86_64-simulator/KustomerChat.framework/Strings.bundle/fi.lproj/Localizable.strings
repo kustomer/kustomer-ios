@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chatia ei voi ladata";
 "com.kustomer.Cancel" = "Peruuttaa";
 "com.kustomer.Cancelled! Tap to retry." = "Peruutettu! Yritä uudelleen napauttamalla.";
+"com.kustomer.Categories" = "Luokat";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat on päättynyt";
 "com.kustomer.Chat history" = "Keskusteluhistoria";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Virhe!";
 "com.kustomer.Error. Tap to retry." = "Virhe. Yritä uudelleen napauttamalla.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "suositellut artikkelit";
+"com.kustomer.File type not supported" = "Tiedostotyyppiä ei tueta";
 "com.kustomer.Help Article" = "Ohjeartikkeli";
 "com.kustomer.Image" = "Kuva";
 "com.kustomer.Incoming chat" = "Saapuva chat";

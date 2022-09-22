@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Non potest load chat";
 "com.kustomer.Cancel" = "Cancel";
 "com.kustomer.Cancelled! Tap to retry." = "Remittatur! Tap ad retry.";
+"com.kustomer.Categories" = "Genera";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Curabitur finivit";
 "com.kustomer.Chat history" = "Curabitur historia";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Error!";
 "com.kustomer.Error. Tap to retry." = "Error. Tap ad retry.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Featured Articles";
+"com.kustomer.File type not supported" = "Tabellae genus non praebetur";
 "com.kustomer.Help Article" = "Auxilium Articuli";
 "com.kustomer.Image" = "Image";
 "com.kustomer.Incoming chat" = "Chat ineuntes";

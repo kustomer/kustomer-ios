@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "채팅을 로드할 수 없습니다";
 "com.kustomer.Cancel" = "취소";
 "com.kustomer.Cancelled! Tap to retry." = "취소 된! 터치하여 재시도.";
+"com.kustomer.Categories" = "카테고리";
 "com.kustomer.Chat" = "채팅";
 "com.kustomer.Chat has ended" = "채팅이 종료되었습니다";
 "com.kustomer.Chat history" = "채팅 기록";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "오류!";
 "com.kustomer.Error. Tap to retry." = "오류. 터치하여 재시도.";
 "com.kustomer.FAQ" = "자주하는 질문";
+"com.kustomer.Featured Articles" = "특집 기사";
+"com.kustomer.File type not supported" = "지원되지 않는 파일 형식";
 "com.kustomer.Help Article" = "도움말";
 "com.kustomer.Image" = "영상";
 "com.kustomer.Incoming chat" = "들어오는 채팅";
@@ -51,7 +54,7 @@
 "com.kustomer.Never mind" = "괜찮아요";
 "com.kustomer.New Conversation" = "새로운 대화";
 "com.kustomer.New message" = "새로운 메시지";
-"com.kustomer.No articles" = "기사 없음";
+"com.kustomer.No articles" = "기사가 없습니다";
 "com.kustomer.No conversations yet" = "아직 대화가 없습니다.";
 "com.kustomer.No internet connection" = "인터넷에 연결되지 않음";
 "com.kustomer.No results" = "결과 없음";

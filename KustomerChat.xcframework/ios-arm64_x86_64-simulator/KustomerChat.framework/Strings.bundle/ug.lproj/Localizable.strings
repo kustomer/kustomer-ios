@@ -13,13 +13,14 @@
 "com.kustomer.Can't load chat" = "پاراڭنى يۈكلىيەلمەيدۇ";
 "com.kustomer.Cancel" = "بىكار قىلىش";
 "com.kustomer.Cancelled! Tap to retry." = "ئەمەلدىن قالدۇرۇلدى! قايتا سىناڭ.";
+"com.kustomer.Categories" = "سەھىپىلەر";
 "com.kustomer.Chat" = "پاراڭ";
 "com.kustomer.Chat has ended" = "پاراڭ ئاخىرلاشتى";
 "com.kustomer.Chat history" = "پاراڭ تارىخى";
 "com.kustomer.Chat is currently unavailable" = "پاراڭنى ھازىرچە ئىشلەتكىلى بولمايدۇ";
 "com.kustomer.Chat with support" = "قوللاش بىلەن پاراڭلىشىڭ";
 "com.kustomer.Conversation ended" = "سۆھبەت ئاخىرلاشتى";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "سۆھبەت باشقا سۆھبەتكە قوشۇلدى. \ N \ n يېڭى سۆھبەتكە كىرىش ئۈچۈن چېكىڭ.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "سۆھبەت باشقا سۆھبەتكە قوشۇلدى. \ N \ n يېڭى سۆھبەتكە بېرىش ئۈچۈن چېكىڭ.";
 "com.kustomer.Conversation moved to another customer" = "سۆھبەت باشقا بىر خېرىدارغا يۆتكەلدى";
 "com.kustomer.Delete" = "ئۆچۈرۈش";
 "com.kustomer.Do you want to remove your rating and feedback?" = "باھا ۋە ئىنكاسىڭىزنى ئۆچۈرمەكچىمۇ؟";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "خاتالىق!";
 "com.kustomer.Error. Tap to retry." = "خاتالىق. قايتا سىناڭ.";
 "com.kustomer.FAQ" = "سوئال";
+"com.kustomer.Featured Articles" = "ئالاھىدە ماقالىلەر";
+"com.kustomer.File type not supported" = "ھۆججەت تىپى قوللىمايدۇ";
 "com.kustomer.Help Article" = "ياردەم ماقالىسى";
 "com.kustomer.Image" = "رەسىم";
 "com.kustomer.Incoming chat" = "كەلگەن پاراڭ";

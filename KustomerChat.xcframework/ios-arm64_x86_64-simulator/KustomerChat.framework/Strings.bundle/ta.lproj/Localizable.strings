@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "அரட்டையை ஏற்ற முடியவில்லை";
 "com.kustomer.Cancel" = "ரத்து செய்";
 "com.kustomer.Cancelled! Tap to retry." = "ரத்து செய்யப்பட்டது! மீண்டும் முயற்சிக்க தட்டவும்.";
+"com.kustomer.Categories" = "வகைகள்";
 "com.kustomer.Chat" = "அரட்டை";
 "com.kustomer.Chat has ended" = "அரட்டை முடிந்தது";
 "com.kustomer.Chat history" = "அரட்டை வரலாறு";
@@ -23,7 +24,7 @@
 "com.kustomer.Conversation moved to another customer" = "உரையாடல் மற்றொரு வாடிக்கையாளருக்கு மாற்றப்பட்டது";
 "com.kustomer.Delete" = "அழி";
 "com.kustomer.Do you want to remove your rating and feedback?" = "உங்கள் மதிப்பீட்டையும் கருத்தையும் அகற்ற விரும்புகிறீர்களா?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "உங்கள் கருத்தில் செய்த மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "உங்கள் கருத்தில் நீங்கள் செய்த மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?";
 "com.kustomer.Done" = "முடிந்தது";
 "com.kustomer.Edit additional feedback" = "கூடுதல் கருத்தைத் திருத்தவும்";
 "com.kustomer.Edit comment" = "கருத்தைத் திருத்தவும்";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "பிழை!";
 "com.kustomer.Error. Tap to retry." = "பிழை. மீண்டும் முயற்சிக்க தட்டவும்.";
 "com.kustomer.FAQ" = "அடிக்கடி கேட்கப்படும் கேள்விகள்";
+"com.kustomer.Featured Articles" = "சிறப்புக் கட்டுரைகள்";
+"com.kustomer.File type not supported" = "கோப்பு வகை ஆதரிக்கப்படவில்லை";
 "com.kustomer.Help Article" = "உதவிக் கட்டுரை";
 "com.kustomer.Image" = "படம்";
 "com.kustomer.Incoming chat" = "உள்வரும் அரட்டை";

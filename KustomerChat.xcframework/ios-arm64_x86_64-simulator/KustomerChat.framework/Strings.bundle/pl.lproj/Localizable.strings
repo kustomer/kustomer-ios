@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nie można załadować czatu";
 "com.kustomer.Cancel" = "Anulować";
 "com.kustomer.Cancelled! Tap to retry." = "Anulowany! Dotknij, aby powtórzyć.";
+"com.kustomer.Categories" = "Kategorie";
 "com.kustomer.Chat" = "Czat";
 "com.kustomer.Chat has ended" = "Czat się zakończył";
 "com.kustomer.Chat history" = "Historia czatu";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Błąd!";
 "com.kustomer.Error. Tap to retry." = "Błąd. Dotknij, aby powtórzyć.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Polecane artykuły";
+"com.kustomer.File type not supported" = "Nieobsługiwany typ pliku";
 "com.kustomer.Help Article" = "Artykuł pomocy";
 "com.kustomer.Image" = "Obraz";
 "com.kustomer.Incoming chat" = "Przychodzący czat";

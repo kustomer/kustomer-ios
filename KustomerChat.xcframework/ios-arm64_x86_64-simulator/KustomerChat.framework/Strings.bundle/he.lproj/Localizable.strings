@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "לא ניתן לטעון את הצ&#39;אט";
 "com.kustomer.Cancel" = "לְבַטֵל";
 "com.kustomer.Cancelled! Tap to retry." = "מבוטל! הקש כדי לנסות שוב.";
+"com.kustomer.Categories" = "קטגוריות";
 "com.kustomer.Chat" = "לְשׂוֹחֵחַ";
 "com.kustomer.Chat has ended" = "הצ&#39;אט הסתיים";
 "com.kustomer.Chat history" = "היסטורית שיחה";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "שְׁגִיאָה!";
 "com.kustomer.Error. Tap to retry." = "שְׁגִיאָה. הקש כדי לנסות שוב.";
 "com.kustomer.FAQ" = "שאלות נפוצות";
+"com.kustomer.Featured Articles" = "מאמרים מומלצים";
+"com.kustomer.File type not supported" = "סוג הקובץ אינו נתמך";
 "com.kustomer.Help Article" = "מאמר עזרה";
 "com.kustomer.Image" = "תמונה";
 "com.kustomer.Incoming chat" = "צ&#39;אט נכנס";

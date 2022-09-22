@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kan ikke laste inn chat";
 "com.kustomer.Cancel" = "Avbryt";
 "com.kustomer.Cancelled! Tap to retry." = "Avbrutt! Trykk for å prøve på nytt.";
+"com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chatten er avsluttet";
 "com.kustomer.Chat history" = "Chat historie";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Feil!";
 "com.kustomer.Error. Tap to retry." = "Feil. Trykk for å prøve på nytt.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Utvalgte artikler";
+"com.kustomer.File type not supported" = "Filtype støttes ikke";
 "com.kustomer.Help Article" = "Hjelpeartikkel";
 "com.kustomer.Image" = "Bilde";
 "com.kustomer.Incoming chat" = "Innkommende chat";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ചാറ്റ് ലോഡ് ചെയ്യാൻ കഴിയില്ല";
 "com.kustomer.Cancel" = "റദ്ദാക്കുക";
 "com.kustomer.Cancelled! Tap to retry." = "റദ്ദാക്കി! വീണ്ടും ശ്രമിക്കാനായി ക്ലിക്ക് ചെയ്യുക.";
+"com.kustomer.Categories" = "വിഭാഗങ്ങൾ";
 "com.kustomer.Chat" = "ചാറ്റ്";
 "com.kustomer.Chat has ended" = "ചാറ്റ് അവസാനിച്ചു";
 "com.kustomer.Chat history" = "ചാറ്റ് ചരിത്രം";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "പിശക്!";
 "com.kustomer.Error. Tap to retry." = "പിശക്. വീണ്ടും ശ്രമിക്കാനായി ക്ലിക്ക് ചെയ്യുക.";
 "com.kustomer.FAQ" = "പതിവുചോദ്യങ്ങൾ";
+"com.kustomer.Featured Articles" = "ഫീച്ചർ ചെയ്ത ലേഖനങ്ങൾ";
+"com.kustomer.File type not supported" = "ഫയൽ തരം പിന്തുണയ്ക്കുന്നില്ല";
 "com.kustomer.Help Article" = "സഹായ ലേഖനം";
 "com.kustomer.Image" = "ചിത്രം";
 "com.kustomer.Incoming chat" = "ഇൻകമിംഗ് ചാറ്റ്";

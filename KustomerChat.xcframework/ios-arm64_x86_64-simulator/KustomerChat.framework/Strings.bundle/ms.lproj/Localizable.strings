@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Tidak dapat memuatkan sembang";
 "com.kustomer.Cancel" = "Batal";
 "com.kustomer.Cancelled! Tap to retry." = "Dibatalkan! Ketik untuk mencuba semula.";
+"com.kustomer.Categories" = "Kategori";
 "com.kustomer.Chat" = "Sembang";
 "com.kustomer.Chat has ended" = "Sembang telah tamat";
 "com.kustomer.Chat history" = "Sejarah sembang";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Ralat!";
 "com.kustomer.Error. Tap to retry." = "ralat. Ketik untuk mencuba semula.";
 "com.kustomer.FAQ" = "Soalan Lazim";
+"com.kustomer.Featured Articles" = "Artikel Pilihan";
+"com.kustomer.File type not supported" = "Jenis fail tidak disokong";
 "com.kustomer.Help Article" = "Artikel Bantuan";
 "com.kustomer.Image" = "Imej";
 "com.kustomer.Incoming chat" = "Sembang masuk";

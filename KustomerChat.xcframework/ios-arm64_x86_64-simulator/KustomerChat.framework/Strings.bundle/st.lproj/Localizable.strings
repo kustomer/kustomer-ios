@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ha e khone ho bula moqoqo";
 "com.kustomer.Cancel" = "Hlakola";
 "com.kustomer.Cancelled! Tap to retry." = "E hlakotsoe! Tlanya ho leka hape.";
+"com.kustomer.Categories" = "Lihlopha";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Moqoqo o felile";
 "com.kustomer.Chat history" = "Histori ea puisano";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Phoso!";
 "com.kustomer.Error. Tap to retry." = "Phoso. Tlanya ho leka hape.";
 "com.kustomer.FAQ" = "LBH";
+"com.kustomer.Featured Articles" = "Lingoliloeng tse hlahisitsoeng";
+"com.kustomer.File type not supported" = "Mofuta oa faele ha o tšehetsoe";
 "com.kustomer.Help Article" = "Sengoloa sa Thuso";
 "com.kustomer.Image" = "Setšoantšo";
 "com.kustomer.Incoming chat" = "Puisano e kenang";

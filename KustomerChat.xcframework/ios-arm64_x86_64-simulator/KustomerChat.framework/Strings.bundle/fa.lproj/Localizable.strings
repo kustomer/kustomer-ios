@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "چت بارگیری نمی شود";
 "com.kustomer.Cancel" = "لغو کنید";
 "com.kustomer.Cancelled! Tap to retry." = "لغو شد! برای تکرار دوباره کلیک کنید.";
+"com.kustomer.Categories" = "دسته بندی ها";
 "com.kustomer.Chat" = "چت کنید";
 "com.kustomer.Chat has ended" = "چت به پایان رسید";
 "com.kustomer.Chat history" = "تاریخچه ی گفتگو";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "خطا!";
 "com.kustomer.Error. Tap to retry." = "خطا. برای تکرار دوباره کلیک کنید.";
 "com.kustomer.FAQ" = "سوالات متداول";
+"com.kustomer.Featured Articles" = "مقالات برگزیده";
+"com.kustomer.File type not supported" = "نوع فایل پشتیبانی نمی شود";
 "com.kustomer.Help Article" = "مقاله راهنما";
 "com.kustomer.Image" = "تصویر";
 "com.kustomer.Incoming chat" = "چت ورودی";

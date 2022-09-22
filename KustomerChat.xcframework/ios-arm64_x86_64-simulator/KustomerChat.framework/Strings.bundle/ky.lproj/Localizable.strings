@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Чат жүктөлбөй жатат";
 "com.kustomer.Cancel" = "Жокко чыгаруу";
 "com.kustomer.Cancelled! Tap to retry." = "Жокко чыгарылды! Кайра аракет кылуу үчүн таптаңыз.";
+"com.kustomer.Categories" = "Категориялар";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат бүттү";
 "com.kustomer.Chat history" = "Чат тарыхы";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Ката!";
 "com.kustomer.Error. Tap to retry." = "Ката. Кайра аракет кылуу үчүн таптаңыз.";
 "com.kustomer.FAQ" = "Көп берилүүчү суроолор";
+"com.kustomer.Featured Articles" = "Өзгөчөлөнгөн макалалар";
+"com.kustomer.File type not supported" = "Файл түрү колдоого алынбайт";
 "com.kustomer.Help Article" = "Жардам макаласы";
 "com.kustomer.Image" = "Сүрөт";
 "com.kustomer.Incoming chat" = "Кирүүчү чат";

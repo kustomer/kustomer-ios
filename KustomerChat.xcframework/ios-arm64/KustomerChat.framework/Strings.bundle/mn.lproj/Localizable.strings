@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Чатыг ачаалж чадсангүй";
 "com.kustomer.Cancel" = "Цуцлах";
 "com.kustomer.Cancelled! Tap to retry." = "Цуцлагдсан! Дахин оролдохын тулд товшино уу.";
+"com.kustomer.Categories" = "Ангилал";
 "com.kustomer.Chat" = "Чатлах";
 "com.kustomer.Chat has ended" = "Чат дууссан";
 "com.kustomer.Chat history" = "Чатын түүх";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Алдаа!";
 "com.kustomer.Error. Tap to retry." = "Алдаа. Дахин оролдохын тулд товшино уу.";
 "com.kustomer.FAQ" = "Түгээмэл асуултууд";
+"com.kustomer.Featured Articles" = "Онцлох нийтлэлүүд";
+"com.kustomer.File type not supported" = "Файлын төрлийг дэмждэггүй";
 "com.kustomer.Help Article" = "Тусламжийн нийтлэл";
 "com.kustomer.Image" = "Зураг";
 "com.kustomer.Incoming chat" = "Ирж буй чат";

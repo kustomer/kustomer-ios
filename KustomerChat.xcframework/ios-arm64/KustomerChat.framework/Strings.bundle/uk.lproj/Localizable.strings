@@ -9,10 +9,11 @@
 "com.kustomer.Attached file" = "Вкладений файл";
 "com.kustomer.Attachment" = "вкладення";
 "com.kustomer.Browse files" = "Перегляд файлів";
-"com.kustomer.Camera roll" = "Фотоплівка";
+"com.kustomer.Camera roll" = "Камера";
 "com.kustomer.Can't load chat" = "Не вдається завантажити чат";
 "com.kustomer.Cancel" = "Скасувати";
 "com.kustomer.Cancelled! Tap to retry." = "Скасовано! Торкніться, щоб повторити спробу.";
+"com.kustomer.Categories" = "Категорії";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат закінчено";
 "com.kustomer.Chat history" = "Історія чату";
@@ -20,7 +21,7 @@
 "com.kustomer.Chat with support" = "Спілкуйтеся зі службою підтримки";
 "com.kustomer.Conversation ended" = "Розмова закінчилася";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Бесіду об’єднано в іншу бесіду.\n\nТоркніться, щоб перейти до нової бесіди.";
-"com.kustomer.Conversation moved to another customer" = "Розмова перенесена до іншого клієнта";
+"com.kustomer.Conversation moved to another customer" = "Розмову перенесено до іншого клієнта";
 "com.kustomer.Delete" = "Видалити";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ви хочете видалити свою оцінку та відгук?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Бажаєте зберегти зміни, які ви внесли до свого коментаря?";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Помилка!";
 "com.kustomer.Error. Tap to retry." = "Помилка. Торкніться, щоб повторити спробу.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Вибрані статті";
+"com.kustomer.File type not supported" = "Тип файлу не підтримується";
 "com.kustomer.Help Article" = "Стаття довідки";
 "com.kustomer.Image" = "Зображення";
 "com.kustomer.Incoming chat" = "Вхідний чат";
@@ -97,4 +100,4 @@
 "com.kustomer.Your existing conversations will be here." = "Ваші існуючі розмови будуть тут.";
 "com.kustomer.is no longer available" = "більше не доступні";
 "com.kustomer.out of" = "з";
-"com.kustomer.sending" = "відправка";
+"com.kustomer.sending" = "відправлення";

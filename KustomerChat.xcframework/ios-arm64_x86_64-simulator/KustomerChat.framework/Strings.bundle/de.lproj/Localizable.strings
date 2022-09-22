@@ -18,6 +18,7 @@
 "com.kustomer.Camera roll" = "Filmrolle";
 "com.kustomer.Can't load chat" = "Chat kann nicht geladen werden";
 "com.kustomer.Cancelled! Tap to retry." = "Abgesagt! Tippen Sie, um es erneut zu versuchen.";
+"com.kustomer.Categories" = "Kategorien";
 "com.kustomer.Chat" = "Plaudern";
 "com.kustomer.Chat has ended" = "Der Chat ist beendet";
 "com.kustomer.Chat history" = "Chatverlauf";
@@ -38,6 +39,8 @@
 "com.kustomer.Error!" = "Fehler!";
 "com.kustomer.Error. Tap to retry." = "Fehler. Tippen Sie, um es erneut zu versuchen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Ausgewählte Artikel";
+"com.kustomer.File type not supported" = "Dateityp wird nicht unterstützt";
 "com.kustomer.Help Article" = "Hilfeartikel";
 "com.kustomer.Image" = "Bild";
 "com.kustomer.Incoming chat" = "Eingehender Chat";

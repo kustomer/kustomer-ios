@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nevar ielādēt tērzēšanu";
 "com.kustomer.Cancel" = "Atcelt";
 "com.kustomer.Cancelled! Tap to retry." = "Atcelts! Pieskarieties, lai mēģinātu vēlreiz.";
+"com.kustomer.Categories" = "Kategorijas";
 "com.kustomer.Chat" = "Tērzēšana";
 "com.kustomer.Chat has ended" = "Tērzēšana ir beigusies";
 "com.kustomer.Chat history" = "Tērzēšanas vēsture";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Kļūda!";
 "com.kustomer.Error. Tap to retry." = "Kļūda. Pieskarieties, lai mēģinātu vēlreiz.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Piedāvātie raksti";
+"com.kustomer.File type not supported" = "Faila tips netiek atbalstīts";
 "com.kustomer.Help Article" = "Palīdzības raksts";
 "com.kustomer.Image" = "Attēls";
 "com.kustomer.Incoming chat" = "Ienākošā tērzēšana";

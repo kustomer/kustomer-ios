@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "No puedo cargar el chat";
 "com.kustomer.Cancel" = "Cancelar";
 "com.kustomer.Cancelled! Tap to retry." = "¡Cancelado! Toca para volver a intentarlo.";
+"com.kustomer.Categories" = "Categorías";
 "com.kustomer.Chat" = "Charlar";
 "com.kustomer.Chat has ended" = "El chat ha terminado";
 "com.kustomer.Chat history" = "Historial de chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "¡Error!";
 "com.kustomer.Error. Tap to retry." = "Error. Toca para volver a intentarlo.";
 "com.kustomer.FAQ" = "Preguntas más frecuentes";
+"com.kustomer.Featured Articles" = "Artículos relacionados";
+"com.kustomer.File type not supported" = "Tipo de archivo no compatible";
 "com.kustomer.Help Article" = "Artículo de ayuda";
 "com.kustomer.Image" = "Imagen";
 "com.kustomer.Incoming chat" = "chat entrante";
@@ -94,7 +97,7 @@
 "com.kustomer.Yes" = "Sí";
 "com.kustomer.You changed your additional feedback comment" = "Cambió su comentario de retroalimentación adicional";
 "com.kustomer.You're offline. Check your connection." = "Estás desconectado. Comprueba tu conexión.";
-"com.kustomer.Your existing conversations will be here." = "Tus conversaciones existentes estarán aquí.";
+"com.kustomer.Your existing conversations will be here." = "Sus conversaciones existentes estarán aquí.";
 "com.kustomer.is no longer available" = "ya no está disponible";
 "com.kustomer.out of" = "fuera de";
 "com.kustomer.sending" = "enviando";

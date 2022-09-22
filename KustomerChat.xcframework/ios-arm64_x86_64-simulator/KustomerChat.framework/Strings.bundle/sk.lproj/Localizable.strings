@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chat sa nedá načítať";
 "com.kustomer.Cancel" = "Zrušiť";
 "com.kustomer.Cancelled! Tap to retry." = "Zrušené! Stlač pre opakovanie.";
+"com.kustomer.Categories" = "Kategórie";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat sa skončil";
 "com.kustomer.Chat history" = "História chatu";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Chyba!";
 "com.kustomer.Error. Tap to retry." = "Chyba. Stlač pre opakovanie.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Odporúčané články";
+"com.kustomer.File type not supported" = "Typ súboru nie je podporovaný";
 "com.kustomer.Help Article" = "Pomocný článok";
 "com.kustomer.Image" = "Obrázok";
 "com.kustomer.Incoming chat" = "Prichádzajúci chat";

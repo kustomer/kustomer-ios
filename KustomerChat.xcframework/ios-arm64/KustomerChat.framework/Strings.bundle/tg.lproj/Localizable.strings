@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Чат бор карда намешавад";
 "com.kustomer.Cancel" = "Бекор кардан";
 "com.kustomer.Cancelled! Tap to retry." = "Бекор карда шуд! Барои дубора кӯшиш кардан клик кунед.";
+"com.kustomer.Categories" = "Категорияҳо";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат ба охир расид";
 "com.kustomer.Chat history" = "Таърихи чат";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Хатогӣ!";
 "com.kustomer.Error. Tap to retry." = "Хатогӣ. Барои дубора кӯшиш кардан клик кунед.";
 "com.kustomer.FAQ" = "Саволҳои зиёд такрормешуда";
+"com.kustomer.Featured Articles" = "Мақолаҳои пешниҳодшуда";
+"com.kustomer.File type not supported" = "Навъи файл дастгирӣ намешавад";
 "com.kustomer.Help Article" = "Мақолаи кӯмак";
 "com.kustomer.Image" = "Тасвир";
 "com.kustomer.Incoming chat" = "Чати воридотӣ";

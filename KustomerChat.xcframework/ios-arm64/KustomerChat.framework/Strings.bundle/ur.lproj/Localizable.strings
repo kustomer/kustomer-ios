@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "چیٹ لوڈ نہیں ہو سکتی";
 "com.kustomer.Cancel" = "منسوخ کریں۔";
 "com.kustomer.Cancelled! Tap to retry." = "منسوخ! دوبارہ کوشش کرنے کے لیے تھپتھپائیں۔";
+"com.kustomer.Categories" = "اقسام";
 "com.kustomer.Chat" = "گپ شپ";
 "com.kustomer.Chat has ended" = "چیٹ ختم ہو گئی ہے۔";
 "com.kustomer.Chat history" = "چیٹ کی تاریخ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "غلطی!";
 "com.kustomer.Error. Tap to retry." = "خرابی دوبارہ کوشش کرنے کے لیے تھپتھپائیں۔";
 "com.kustomer.FAQ" = "عمومی سوالات";
+"com.kustomer.Featured Articles" = "نمایاں مضامین";
+"com.kustomer.File type not supported" = "فائل کی قسم تعاون یافتہ نہیں ہے۔";
 "com.kustomer.Help Article" = "مدد کا مضمون";
 "com.kustomer.Image" = "تصویر";
 "com.kustomer.Incoming chat" = "آنے والی چیٹ";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "មិនអាចផ្ទុកការជជែកបានទេ។";
 "com.kustomer.Cancel" = "បោះបង់";
 "com.kustomer.Cancelled! Tap to retry." = "លុបចោល! ប៉ះដើម្បីព្យាយាមម្តងទៀត។";
+"com.kustomer.Categories" = "ប្រភេទ";
 "com.kustomer.Chat" = "ជជែក";
 "com.kustomer.Chat has ended" = "ការជជែកត្រូវបានបញ្ចប់";
 "com.kustomer.Chat history" = "ប្រវត្តិជជែក";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "កំហុស!";
 "com.kustomer.Error. Tap to retry." = "កំហុស។ ប៉ះដើម្បីព្យាយាមម្តងទៀត។";
 "com.kustomer.FAQ" = "សំណួរគេសួរញឹកញាប់";
+"com.kustomer.Featured Articles" = "អត្ថបទពិសេស";
+"com.kustomer.File type not supported" = "ប្រភេទឯកសារមិនត្រូវបានគាំទ្រទេ។";
 "com.kustomer.Help Article" = "អត្ថបទជំនួយ";
 "com.kustomer.Image" = "រូបភាព";
 "com.kustomer.Incoming chat" = "ការជជែកចូល";

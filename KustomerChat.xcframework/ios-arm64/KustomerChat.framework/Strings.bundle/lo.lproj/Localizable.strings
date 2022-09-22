@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "ລຶບຄຳຕິຊົມເພີ່ມເຕີມອອກແລ້ວ";
 "com.kustomer.Agent" = "ຕົວແທນ";
 "com.kustomer.Answers" = "ຄໍາຕອບ";
-"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການສິ້ນສຸດການສົນທະນານີ້?";
+"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຢຸດການສົນທະນານີ້?";
 "com.kustomer.Attached file" = "ໄຟລ໌ແນບ";
 "com.kustomer.Attachment" = "ໄຟລ໌ແນບ";
 "com.kustomer.Browse files" = "ຊອກຫາໄຟລ໌";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ບໍ່ສາມາດໂຫຼດການສົນທະນາໄດ້";
 "com.kustomer.Cancel" = "ຍົກເລີກ";
 "com.kustomer.Cancelled! Tap to retry." = "ຍົກເລີກແລ້ວ! ແຕະເພື່ອລອງໃໝ່.";
+"com.kustomer.Categories" = "ໝວດໝູ່";
 "com.kustomer.Chat" = "ສົນທະນາ";
 "com.kustomer.Chat has ended" = "ການສົນທະນາສິ້ນສຸດລົງ";
 "com.kustomer.Chat history" = "ປະຫວັດການສົນທະນາ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ຜິດພາດ!";
 "com.kustomer.Error. Tap to retry." = "ຜິດພາດ. ແຕະເພື່ອລອງໃໝ່.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ບົດຄວາມແນະນຳ";
+"com.kustomer.File type not supported" = "ບໍ່ຮອງຮັບປະເພດໄຟລ໌";
 "com.kustomer.Help Article" = "ບົດຄວາມຊ່ວຍເຫຼືອ";
 "com.kustomer.Image" = "ຮູບພາບ";
 "com.kustomer.Incoming chat" = "ການສົນທະນາເຂົ້າມາ";

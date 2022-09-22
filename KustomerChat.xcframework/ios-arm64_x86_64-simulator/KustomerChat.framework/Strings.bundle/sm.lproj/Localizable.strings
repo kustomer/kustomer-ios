@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Le mafai ona utaina le talatalanoaga";
 "com.kustomer.Cancel" = "Fa&#39;aleaogaina";
 "com.kustomer.Cancelled! Tap to retry." = "Fa&#39;aleaogaina! Tap e toe taumafai.";
+"com.kustomer.Categories" = "Vaega";
 "com.kustomer.Chat" = "Talanoaga";
 "com.kustomer.Chat has ended" = "Ua uma talanoaga";
 "com.kustomer.Chat history" = "Talafa&#39;asolopito o talatalanoaga";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Sese!";
 "com.kustomer.Error. Tap to retry." = "Sese. Tap e toe taumafai.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Mataupu Fa&#39;apitoa";
+"com.kustomer.File type not supported" = "E le lagolagoina le ituaiga faila";
 "com.kustomer.Help Article" = "Fesoasoani Mataupu";
 "com.kustomer.Image" = "Ata";
 "com.kustomer.Incoming chat" = "Talanoaga sau";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "चैट लोड नहीं कर सकता";
 "com.kustomer.Cancel" = "रद्द करना";
 "com.kustomer.Cancelled! Tap to retry." = "रद्द! फिर से कोशिश करने के लिये स्क्रीन को छुइए।";
+"com.kustomer.Categories" = "श्रेणियाँ";
 "com.kustomer.Chat" = "बात करना";
 "com.kustomer.Chat has ended" = "चैट खत्म हो गई है";
 "com.kustomer.Chat history" = "चैट का इतिहास";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "गलती!";
 "com.kustomer.Error. Tap to retry." = "गलती। फिर से कोशिश करने के लिये स्क्रीन को छुइए।";
 "com.kustomer.FAQ" = "सामान्य प्रश्न";
+"com.kustomer.Featured Articles" = "प्रदर्शित लेख";
+"com.kustomer.File type not supported" = "फ़ाइल प्रकार समर्थित नहीं है";
 "com.kustomer.Help Article" = "सहायता लेख";
 "com.kustomer.Image" = "छवि";
 "com.kustomer.Incoming chat" = "आने वाली चैट";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ଚାଟ୍ ଲୋଡ୍ କରିପାରିବ ନାହିଁ |";
 "com.kustomer.Cancel" = "ବାତିଲ୍ କରନ୍ତୁ |";
 "com.kustomer.Cancelled! Tap to retry." = "ବାତିଲ! ପୁନ ry ଚେଷ୍ଟା କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ |";
+"com.kustomer.Categories" = "ବର୍ଗଗୁଡିକ";
 "com.kustomer.Chat" = "ଚାଟ୍ କରନ୍ତୁ |";
 "com.kustomer.Chat has ended" = "ଚାଟ୍ ସମାପ୍ତ ହୋଇଛି |";
 "com.kustomer.Chat history" = "ଚାଟ୍ ଇତିହାସ |";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ତ୍ରୁଟି!";
 "com.kustomer.Error. Tap to retry." = "ତ୍ରୁଟି | ପୁନ ry ଚେଷ୍ଟା କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ |";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ବ ured ଶିଷ୍ଟ୍ୟ ପ୍ରବନ୍ଧଗୁଡିକ |";
+"com.kustomer.File type not supported" = "ଫାଇଲ୍ ପ୍ରକାର ସମର୍ଥିତ ନୁହେଁ |";
 "com.kustomer.Help Article" = "ସହାୟତା ଆର୍ଟିକିଲ୍ |";
 "com.kustomer.Image" = "ପ୍ରତିଛବି |";
 "com.kustomer.Incoming chat" = "ଆସୁଥିବା ଚାଟ୍ |";

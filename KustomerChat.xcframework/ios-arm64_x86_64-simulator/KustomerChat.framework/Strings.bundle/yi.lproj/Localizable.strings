@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "קענען ניט לאָדן שמועסן";
 "com.kustomer.Cancel" = "באָטל מאַכן";
 "com.kustomer.Cancelled! Tap to retry." = "קאַנסאַלד! צאַפּן צו פּרובירן ווידער.";
+"com.kustomer.Categories" = "קאַטעגאָריעס";
 "com.kustomer.Chat" = "שמועסן";
 "com.kustomer.Chat has ended" = "שמועסן איז פארענדיקט";
 "com.kustomer.Chat history" = "שמועסן געשיכטע";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "טעות!";
 "com.kustomer.Error. Tap to retry." = "טעות. צאַפּן צו פּרובירן ווידער.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "פעאַטורעד אַרטיקלען";
+"com.kustomer.File type not supported" = "טעקע טיפּ ניט געשטיצט";
 "com.kustomer.Help Article" = "הילף אַרטיקל";
 "com.kustomer.Image" = "בילד";
 "com.kustomer.Incoming chat" = "ינקאַמינג שמועסן";

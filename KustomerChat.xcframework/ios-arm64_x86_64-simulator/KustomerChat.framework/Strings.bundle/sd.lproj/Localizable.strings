@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "چيٽ لوڊ نه ٿو ڪري سگھجي";
 "com.kustomer.Cancel" = "منسوخ ڪريو";
 "com.kustomer.Cancelled! Tap to retry." = "منسوخ ٿيل! ٻيهر ڪوشش ڪرڻ لاءِ ٽيپ ڪريو.";
+"com.kustomer.Categories" = "ڪيٽيگريون";
 "com.kustomer.Chat" = "چيٽ";
 "com.kustomer.Chat has ended" = "چيٽ ختم ٿي وئي آهي";
 "com.kustomer.Chat history" = "چيٽ جي تاريخ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "غلطي!";
 "com.kustomer.Error. Tap to retry." = "نقص. ٻيهر ڪوشش ڪرڻ لاءِ ٽيپ ڪريو.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "خاص مضمون";
+"com.kustomer.File type not supported" = "فائل جو قسم سپورٽ ناھي";
 "com.kustomer.Help Article" = "مدد آرٽيڪل";
 "com.kustomer.Image" = "تصوير";
 "com.kustomer.Incoming chat" = "ايندڙ چيٽ";

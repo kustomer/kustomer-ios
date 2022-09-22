@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kan chat niet laden";
 "com.kustomer.Cancel" = "Annuleren";
 "com.kustomer.Cancelled! Tap to retry." = "Geannuleerd! Tik om het opnieuw te proberen.";
+"com.kustomer.Categories" = "Categorieën";
 "com.kustomer.Chat" = "Chatten";
 "com.kustomer.Chat has ended" = "Chat is beëindigd";
 "com.kustomer.Chat history" = "Chatgeschiedenis";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Fout!";
 "com.kustomer.Error. Tap to retry." = "Fout. Tik om het opnieuw te proberen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Aanbevolen artikelen";
+"com.kustomer.File type not supported" = "Bestandstype niet ondersteund";
 "com.kustomer.Help Article" = "Help-artikel";
 "com.kustomer.Image" = "Afbeelding";
 "com.kustomer.Incoming chat" = "Inkomende chat";

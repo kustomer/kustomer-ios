@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "කතාබස් පූරණය කළ නොහැක";
 "com.kustomer.Cancel" = "අවලංගු කරන්න";
 "com.kustomer.Cancelled! Tap to retry." = "අවලංගු කළා! නැවත උත්සහ කිරීම සඳහා තට්ටු කරන්න.";
+"com.kustomer.Categories" = "වර්ග";
 "com.kustomer.Chat" = "කතාබස් කරන්න";
 "com.kustomer.Chat has ended" = "කතාබස් අවසන් විය";
 "com.kustomer.Chat history" = "කතාබස් ඉතිහාසය";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "දෝෂයක්!";
 "com.kustomer.Error. Tap to retry." = "දෝෂයකි. නැවත උත්සහ කිරීම සඳහා තට්ටු කරන්න.";
 "com.kustomer.FAQ" = "නිති අසන පැණ";
+"com.kustomer.Featured Articles" = "විශේෂාංග ලිපි";
+"com.kustomer.File type not supported" = "ගොනු වර්ගය සහය නොදක්වයි";
 "com.kustomer.Help Article" = "උදව් ලිපිය";
 "com.kustomer.Image" = "රූප";
 "com.kustomer.Incoming chat" = "එන කතාබස්";
@@ -81,7 +84,7 @@
 "com.kustomer.Take photo" = "ඡායාරූපය ගන්න";
 "com.kustomer.Tap to load..." = "පූරණය කිරීමට තට්ටු කරන්න...";
 "com.kustomer.Tap to open" = "විවෘත කිරීමට තට්ටු කරන්න";
-"com.kustomer.Thanks for your feedback" = "ඔබේ ප්‍රතිපෝෂණයට ස්තූතියි";
+"com.kustomer.Thanks for your feedback" = "ඔබගේ ප්‍රතිපෝෂණයට ස්තුතියි";
 "com.kustomer.That article" = "එම ලිපිය";
 "com.kustomer.There was a problem" = "දෝෂයක් ඇති විය";
 "com.kustomer.This conversation is read-only" = "මෙම සංවාදය කියවීමට පමණි";

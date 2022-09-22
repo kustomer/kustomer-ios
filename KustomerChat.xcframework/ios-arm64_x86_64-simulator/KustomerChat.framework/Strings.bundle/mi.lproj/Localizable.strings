@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kāore e taea te uta kōrerorero";
 "com.kustomer.Cancel" = "Whakakore";
 "com.kustomer.Cancelled! Tap to retry." = "Kua whakakorehia! Tap ki te ngana ano.";
+"com.kustomer.Categories" = "Ngā Kāwai";
 "com.kustomer.Chat" = "Kōrerorero";
 "com.kustomer.Chat has ended" = "Kua mutu te korerorero";
 "com.kustomer.Chat history" = "Kōrerorero hītori";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Hapa!";
 "com.kustomer.Error. Tap to retry." = "Hapa. Tap ki te ngana ano.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Tuhinga o mua";
+"com.kustomer.File type not supported" = "Ko te momo kōnae kaore i te tautokohia";
 "com.kustomer.Help Article" = "Tuhinga awhina";
 "com.kustomer.Image" = "Whakaahua";
 "com.kustomer.Incoming chat" = "Kōrerorero taumai";

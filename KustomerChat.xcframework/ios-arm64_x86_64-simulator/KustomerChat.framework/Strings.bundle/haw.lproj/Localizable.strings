@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ʻAʻole hiki ke hoʻouka i ke kamaʻilio";
 "com.kustomer.Cancel" = "Hoʻopau";
 "com.kustomer.Cancelled! Tap to retry." = "Hoʻopau ʻia! Paʻi no ka hoʻāʻo hou.";
+"com.kustomer.Categories" = "Māhele";
 "com.kustomer.Chat" = "Kūkākūkā";
 "com.kustomer.Chat has ended" = "Ua pau ke kamaʻilio ʻana";
 "com.kustomer.Chat history" = "Moʻolelo kamaʻilio";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Kupa!";
 "com.kustomer.Error. Tap to retry." = "Kuhihewa. Paʻi no ka hoʻāʻo hou.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Nā ʻatikala";
+"com.kustomer.File type not supported" = "ʻAʻole i kākoʻo ʻia ke ʻano faila";
 "com.kustomer.Help Article" = "ʻatikala kōkua";
 "com.kustomer.Image" = "Kiʻi";
 "com.kustomer.Incoming chat" = "Kūkākūkā komo";

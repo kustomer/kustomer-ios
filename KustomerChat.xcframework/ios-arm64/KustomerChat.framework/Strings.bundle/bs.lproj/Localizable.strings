@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nije moguće učitati chat";
 "com.kustomer.Cancel" = "Otkaži";
 "com.kustomer.Cancelled! Tap to retry." = "Otkazano! Dodirnite za ponovni pokušaj.";
+"com.kustomer.Categories" = "Kategorije";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat je završio";
 "com.kustomer.Chat history" = "Istorija ćaskanja";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Greška!";
 "com.kustomer.Error. Tap to retry." = "Greška. Dodirnite za ponovni pokušaj.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Istaknuti članci";
+"com.kustomer.File type not supported" = "Vrsta datoteke nije podržana";
 "com.kustomer.Help Article" = "Članak pomoći";
 "com.kustomer.Image" = "Slika";
 "com.kustomer.Incoming chat" = "Dolazni chat";

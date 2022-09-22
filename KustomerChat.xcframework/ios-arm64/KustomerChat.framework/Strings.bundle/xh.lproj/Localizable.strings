@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ayikwazi ukulayisha incoko";
 "com.kustomer.Cancel" = "Rhoxisa";
 "com.kustomer.Cancelled! Tap to retry." = "Irhoxisiwe! Cofa ukuzama kwakhona.";
+"com.kustomer.Categories" = "Iindidi";
 "com.kustomer.Chat" = "Ncokola";
 "com.kustomer.Chat has ended" = "Incoko iphelile";
 "com.kustomer.Chat history" = "Ncokola imbali";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Impazamo!";
 "com.kustomer.Error. Tap to retry." = "Impazamo. Cofa ukuzama kwakhona.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Amanqaku akhoyo";
+"com.kustomer.File type not supported" = "Uhlobo lwefayile aluxhaswanga";
 "com.kustomer.Help Article" = "Inqaku loNcedo";
 "com.kustomer.Image" = "Umfanekiso";
 "com.kustomer.Incoming chat" = "Ingxoxo engenayo";

@@ -442,6 +442,8 @@ public class KUSTrackingIdentity : Swift.Decodable {
 public protocol KBCategoryCollectionDataSource : AnyObject {
   var sectionTitle: Swift.String? { get }
   var rows: [KustomerChat.KnowledgeBaseDataRow] { get }
+  var featuredRows: [KustomerChat.KnowledgeBaseDataRow] { get }
+  var showFeaturedRows: Swift.Bool { get }
   var showFooter: Swift.Bool { get }
 }
 @_hasMissingDesignatedInitializers public class Settings {
@@ -1533,6 +1535,7 @@ public enum KError : Swift.Error {
   case couldNotDeregisterPushBecause(Swift.Error)
   case couldNotDeregisterPushBecauseOf(Swift.String)
   case attachmentTooLarge
+  case attachmentTypeNotSupported
   case localFileURLExpired
   case localFileURLHasNoData
   case unknownLanguageCode(Swift.String)

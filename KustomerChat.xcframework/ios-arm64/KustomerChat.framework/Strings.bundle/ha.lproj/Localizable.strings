@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ba za a iya loda hira ba";
 "com.kustomer.Cancel" = "Soke";
 "com.kustomer.Cancelled! Tap to retry." = "An soke! Matsa don sake gwadawa.";
+"com.kustomer.Categories" = "Categories";
 "com.kustomer.Chat" = "Taɗi";
 "com.kustomer.Chat has ended" = "Chat ya ƙare";
 "com.kustomer.Chat history" = "Tarihin taɗi";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Kuskure!";
 "com.kustomer.Error. Tap to retry." = "Kuskure Matsa don sake gwadawa.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Fitattun Labarai";
+"com.kustomer.File type not supported" = "Ba a tallafawa nau&#39;in fayil";
 "com.kustomer.Help Article" = "Labarin Taimako";
 "com.kustomer.Image" = "Hoto";
 "com.kustomer.Incoming chat" = "Taɗi mai shigowa";

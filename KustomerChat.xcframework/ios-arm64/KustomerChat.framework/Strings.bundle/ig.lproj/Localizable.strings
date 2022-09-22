@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Enweghị ike ibunye nkata";
 "com.kustomer.Cancel" = "Kagbuo";
 "com.kustomer.Cancelled! Tap to retry." = "Kagbuo! Pịa iji nwaa ọzọ.";
+"com.kustomer.Categories" = "Otu";
 "com.kustomer.Chat" = "Kpaa nkata";
 "com.kustomer.Chat has ended" = "Mkparịta ụka akwụsịla";
 "com.kustomer.Chat history" = "Akụkọ nkata";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Njehie!";
 "com.kustomer.Error. Tap to retry." = "Njehie Pịa iji nwaa ọzọ.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Edemede egosipụtara";
+"com.kustomer.File type not supported" = "Akwadoghi ụdị faịlụ";
 "com.kustomer.Help Article" = "Edemede enyemaka";
 "com.kustomer.Image" = "Onyonyo";
 "com.kustomer.Incoming chat" = "Mkpari na-abata";

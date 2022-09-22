@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Không thể tải trò chuyện";
 "com.kustomer.Cancel" = "Hủy bỏ";
 "com.kustomer.Cancelled! Tap to retry." = "Đã hủy! Chạm để thử lại.";
+"com.kustomer.Categories" = "Thể loại";
 "com.kustomer.Chat" = "Trò chuyện";
 "com.kustomer.Chat has ended" = "Trò chuyện đã kết thúc";
 "com.kustomer.Chat history" = "Lịch sử trò chuyện";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Lỗi!";
 "com.kustomer.Error. Tap to retry." = "Lỗi. Chạm để thử lại.";
 "com.kustomer.FAQ" = "Câu hỏi thường gặp";
+"com.kustomer.Featured Articles" = "Các bài báo nổi bật";
+"com.kustomer.File type not supported" = "Loại tệp không được hỗ trợ";
 "com.kustomer.Help Article" = "Bài viết trợ giúp";
 "com.kustomer.Image" = "Hình ảnh";
 "com.kustomer.Incoming chat" = "Cuộc trò chuyện đến";

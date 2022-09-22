@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Methu llwytho sgwrs";
 "com.kustomer.Cancel" = "Canslo";
 "com.kustomer.Cancelled! Tap to retry." = "Wedi&#39;i ganslo! Tapiwch i roi cynnig arall arni.";
+"com.kustomer.Categories" = "Categorïau";
 "com.kustomer.Chat" = "Sgwrsio";
 "com.kustomer.Chat has ended" = "Sgwrs wedi dod i ben";
 "com.kustomer.Chat history" = "Hanes sgwrsio";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Gwall!";
 "com.kustomer.Error. Tap to retry." = "Gwall. Tapiwch i roi cynnig arall arni.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Erthyglau dan Sylw";
+"com.kustomer.File type not supported" = "Ni chefnogir y math o ffeil";
 "com.kustomer.Help Article" = "Erthygl Help";
 "com.kustomer.Image" = "Delwedd";
 "com.kustomer.Incoming chat" = "Sgwrs sy&#39;n dod i mewn";

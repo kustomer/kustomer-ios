@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "చాట్‌ని లోడ్ చేయడం సాధ్యపడదు";
 "com.kustomer.Cancel" = "రద్దు చేయండి";
 "com.kustomer.Cancelled! Tap to retry." = "రద్దు! మరోసారి ప్రయత్నిచేందుకు తట్టండి.";
+"com.kustomer.Categories" = "కేటగిరీలు";
 "com.kustomer.Chat" = "చాట్";
 "com.kustomer.Chat has ended" = "చాట్ ముగిసింది";
 "com.kustomer.Chat history" = "చాట్ చరిత్ర";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "లోపం!";
 "com.kustomer.Error. Tap to retry." = "లోపం. మరోసారి ప్రయత్నిచేందుకు తట్టండి.";
 "com.kustomer.FAQ" = "ఎఫ్ ఎ క్యూ";
+"com.kustomer.Featured Articles" = "ఫీచర్ చేసిన కథనాలు";
+"com.kustomer.File type not supported" = "ఫైల్ రకానికి మద్దతు లేదు";
 "com.kustomer.Help Article" = "సహాయ కథనం";
 "com.kustomer.Image" = "చిత్రం";
 "com.kustomer.Incoming chat" = "ఇన్‌కమింగ్ చాట్";

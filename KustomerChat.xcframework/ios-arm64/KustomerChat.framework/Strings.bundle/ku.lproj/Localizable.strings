@@ -4,7 +4,7 @@
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Bersivên zêde hatin rakirin";
 "com.kustomer.Agent" = "Casus";
-"com.kustomer.Answers" = "Bersivên";
+"com.kustomer.Answers" = "Bersiv";
 "com.kustomer.Are you sure you want to end this chat?" = "Ma tu bi rastî dixwazî vê sohbetê biqedînî?";
 "com.kustomer.Attached file" = "Pelê pêvekirî";
 "com.kustomer.Attachment" = "Attachment";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nikare sohbetê bar bike";
 "com.kustomer.Cancel" = "Bişûndekirin";
 "com.kustomer.Cancelled! Tap to retry." = "Betal kirin! Ji bo dubare ceribandinê bikirtînin.";
+"com.kustomer.Categories" = "Kategorî";
 "com.kustomer.Chat" = "Galgalî";
 "com.kustomer.Chat has ended" = "Sohbet qediya";
 "com.kustomer.Chat history" = "dîroka Chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Şaşî!";
 "com.kustomer.Error. Tap to retry." = "Şaşî. Ji bo dubare ceribandinê bikirtînin.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Gotarên Taybetî";
+"com.kustomer.File type not supported" = "Cureyê pelê nayê piştgirî kirin";
 "com.kustomer.Help Article" = "Gotara Alîkariyê";
 "com.kustomer.Image" = "Wêne";
 "com.kustomer.Incoming chat" = "chat hatina";

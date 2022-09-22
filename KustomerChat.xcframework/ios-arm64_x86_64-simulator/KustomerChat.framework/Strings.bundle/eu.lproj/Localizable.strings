@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ezin da txata kargatu";
 "com.kustomer.Cancel" = "Utzi";
 "com.kustomer.Cancelled! Tap to retry." = "Bertan behera! Sakatu berriro saiatzeko.";
+"com.kustomer.Categories" = "Kategoriak";
 "com.kustomer.Chat" = "Txateatu";
 "com.kustomer.Chat has ended" = "Txata amaitu da";
 "com.kustomer.Chat history" = "Txataren historia";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Errorea!";
 "com.kustomer.Error. Tap to retry." = "Errorea. Sakatu berriro saiatzeko.";
 "com.kustomer.FAQ" = "ohiko galderak";
+"com.kustomer.Featured Articles" = "Artikulu aipagarriak";
+"com.kustomer.File type not supported" = "Fitxategi mota ez da onartzen";
 "com.kustomer.Help Article" = "Laguntza artikulua";
 "com.kustomer.Image" = "Irudia";
 "com.kustomer.Incoming chat" = "Sarrerako txata";
@@ -70,7 +73,7 @@
 "com.kustomer.Reconnecting..." = "Berriro konektatzen...";
 "com.kustomer.Remove" = "Kendu";
 "com.kustomer.Report problem" = "Salatu arazoa";
-"com.kustomer.Report sent" = "Txostena bidali da";
+"com.kustomer.Report sent" = "Bidalitako txostena";
 "com.kustomer.Save changes" = "Aldaketak gorde";
 "com.kustomer.Search Help Articles" = "Bilatu laguntza-artikuluak";
 "com.kustomer.Search Results" = "Bilaketa-emaitzak";

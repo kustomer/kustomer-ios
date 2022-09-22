@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "لا يمكن تحميل الدردشة";
 "com.kustomer.Cancel" = "يلغي";
 "com.kustomer.Cancelled! Tap to retry." = "ألغيت! إضغط لإعادة المحاولة.";
+"com.kustomer.Categories" = "فئات";
 "com.kustomer.Chat" = "دردشة";
 "com.kustomer.Chat has ended" = "انتهت الدردشة";
 "com.kustomer.Chat history" = "تاريخ الدردشة";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "خطأ!";
 "com.kustomer.Error. Tap to retry." = "خطأ. إضغط لإعادة المحاولة.";
 "com.kustomer.FAQ" = "التعليمات";
+"com.kustomer.Featured Articles" = "مقالات مميزة";
+"com.kustomer.File type not supported" = "نوع الملف غير مدعم";
 "com.kustomer.Help Article" = "مقالة المساعدة";
 "com.kustomer.Image" = "صورة";
 "com.kustomer.Incoming chat" = "محادثة واردة";
@@ -87,7 +90,7 @@
 "com.kustomer.This conversation is read-only" = "هذه المحادثة للقراءة فقط";
 "com.kustomer.Try again" = "حاول مرة أخرى";
 "com.kustomer.Type a message..." = "اكتب رسالة ...";
-"com.kustomer.Unavailable message goes here" = "الرسالة غير المتوفرة تذهب هنا";
+"com.kustomer.Unavailable message goes here" = "الرسالة غير المتاحة تذهب هنا";
 "com.kustomer.Updated" = "محدث";
 "com.kustomer.Waiting for a response from" = "في انتظار رد من";
 "com.kustomer.We will get back to you as soon as we are online!" = "سنعود إليك بمجرد اتصالنا بالإنترنت!";

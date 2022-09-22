@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "Қосымша кері байланыс жойылды";
 "com.kustomer.Agent" = "Агент";
 "com.kustomer.Answers" = "Жауаптар";
-"com.kustomer.Are you sure you want to end this chat?" = "Бұл чатты шынымен аяқтағыңыз келе ме?";
+"com.kustomer.Are you sure you want to end this chat?" = "Осы чатты шынымен аяқтағыңыз келе ме?";
 "com.kustomer.Attached file" = "Тіркелген файл";
 "com.kustomer.Attachment" = "Тіркеме";
 "com.kustomer.Browse files" = "Файлдарды шолу";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Чатты жүктеу мүмкін емес";
 "com.kustomer.Cancel" = "Болдырмау";
 "com.kustomer.Cancelled! Tap to retry." = "Бас тартылды! Қайталау үшін түртіңіз.";
+"com.kustomer.Categories" = "Санаттар";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат аяқталды";
 "com.kustomer.Chat history" = "Чат тарихы";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Қате!";
 "com.kustomer.Error. Tap to retry." = "Қате. Қайталау үшін түртіңіз.";
 "com.kustomer.FAQ" = "Жиі қойылатын сұрақтар";
+"com.kustomer.Featured Articles" = "Таңдаулы мақалалар";
+"com.kustomer.File type not supported" = "Файл түріне қолдау көрсетілмейді";
 "com.kustomer.Help Article" = "Анықтама мақаласы";
 "com.kustomer.Image" = "Сурет";
 "com.kustomer.Incoming chat" = "Кіріс чат";

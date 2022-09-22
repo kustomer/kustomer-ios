@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "โหลดแชทไม่ได้";
 "com.kustomer.Cancel" = "ยกเลิก";
 "com.kustomer.Cancelled! Tap to retry." = "ยกเลิก! แตะเพื่อลองใหม่.";
+"com.kustomer.Categories" = "หมวดหมู่";
 "com.kustomer.Chat" = "แชท";
 "com.kustomer.Chat has ended" = "แชทสิ้นสุดแล้ว";
 "com.kustomer.Chat history" = "ประวัติการแชท";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ข้อผิดพลาด!";
 "com.kustomer.Error. Tap to retry." = "ข้อผิดพลาด. แตะเพื่อลองใหม่.";
 "com.kustomer.FAQ" = "คำถามที่พบบ่อย";
+"com.kustomer.Featured Articles" = "บทความที่แนะนำ";
+"com.kustomer.File type not supported" = "ไม่รองรับประเภทไฟล์";
 "com.kustomer.Help Article" = "บทความช่วยเหลือ";
 "com.kustomer.Image" = "ภาพ";
 "com.kustomer.Incoming chat" = "แชทเข้ามา";

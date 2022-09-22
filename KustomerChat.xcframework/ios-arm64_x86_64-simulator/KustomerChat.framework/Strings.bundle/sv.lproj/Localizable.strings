@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Det går inte att ladda chatten";
 "com.kustomer.Cancel" = "Avbryt";
 "com.kustomer.Cancelled! Tap to retry." = "Inställt! Klicka för att försöka igen.";
+"com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Chatt";
 "com.kustomer.Chat has ended" = "Chatten har avslutats";
 "com.kustomer.Chat history" = "Chatt historik";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Fel!";
 "com.kustomer.Error. Tap to retry." = "Fel. Klicka för att försöka igen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Utvalda artiklar";
+"com.kustomer.File type not supported" = "Filtyp stöds inte";
 "com.kustomer.Help Article" = "Hjälpartikel";
 "com.kustomer.Image" = "Bild";
 "com.kustomer.Incoming chat" = "Inkommande chatt";

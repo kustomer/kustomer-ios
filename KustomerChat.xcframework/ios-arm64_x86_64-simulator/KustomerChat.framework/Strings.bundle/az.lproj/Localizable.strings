@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Söhbəti yükləmək mümkün deyil";
 "com.kustomer.Cancel" = "Ləğv et";
 "com.kustomer.Cancelled! Tap to retry." = "Ləğv edildi! Yenidən cəhd etmək üçün toxunun.";
+"com.kustomer.Categories" = "Kateqoriyalar";
 "com.kustomer.Chat" = "Söhbət";
 "com.kustomer.Chat has ended" = "Söhbət bitdi";
 "com.kustomer.Chat history" = "Söhbət tarixçəsi";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Xəta!";
 "com.kustomer.Error. Tap to retry." = "Xəta. Yenidən cəhd etmək üçün toxunun.";
 "com.kustomer.FAQ" = "Tez-tez verilən suallar";
+"com.kustomer.Featured Articles" = "Seçilmiş Məqalələr";
+"com.kustomer.File type not supported" = "Fayl növü dəstəklənmir";
 "com.kustomer.Help Article" = "Kömək Məqaləsi";
 "com.kustomer.Image" = "Şəkil";
 "com.kustomer.Incoming chat" = "Gələn söhbət";

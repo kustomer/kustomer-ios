@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chatni yuklab bo‘lmadi";
 "com.kustomer.Cancel" = "Bekor qilish";
 "com.kustomer.Cancelled! Tap to retry." = "Bekor qilingan! Qayta urinish uchun bosing.";
+"com.kustomer.Categories" = "Kategoriyalar";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Suhbat tugadi";
 "com.kustomer.Chat history" = "Chat tarixi";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Xato!";
 "com.kustomer.Error. Tap to retry." = "Xato. Qayta urinish uchun bosing.";
 "com.kustomer.FAQ" = "TSS";
+"com.kustomer.Featured Articles" = "Tavsiya etilgan maqolalar";
+"com.kustomer.File type not supported" = "Fayl turi qo&#39;llab-quvvatlanmaydi";
 "com.kustomer.Help Article" = "Yordam maqolasi";
 "com.kustomer.Image" = "Rasm";
 "com.kustomer.Incoming chat" = "Kiruvchi chat";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ora bisa mbukak chatting";
 "com.kustomer.Cancel" = "Batal";
 "com.kustomer.Cancelled! Tap to retry." = "dibatalake! Tutul kanggo nyoba maneh.";
+"com.kustomer.Categories" = "Kategori";
 "com.kustomer.Chat" = "Ngobrol";
 "com.kustomer.Chat has ended" = "Chat wis rampung";
 "com.kustomer.Chat history" = "Sajarah chatting";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Kesalahan!";
 "com.kustomer.Error. Tap to retry." = "Kesalahan. Tutul kanggo nyoba maneh.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Artikel Pilihan";
+"com.kustomer.File type not supported" = "Jinis file ora didhukung";
 "com.kustomer.Help Article" = "Artikel Bantuan";
 "com.kustomer.Image" = "Gambar";
 "com.kustomer.Incoming chat" = "chatting mlebu";

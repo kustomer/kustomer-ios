@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "A chat nem tölthető be";
 "com.kustomer.Cancel" = "Megszünteti";
 "com.kustomer.Cancelled! Tap to retry." = "Törölve! Újrapróbáláshoz érintsd meg.";
+"com.kustomer.Categories" = "Kategóriák";
 "com.kustomer.Chat" = "Csevegés";
 "com.kustomer.Chat has ended" = "A csevegés véget ért";
 "com.kustomer.Chat history" = "Csevegés előzményei";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Hiba!";
 "com.kustomer.Error. Tap to retry." = "Hiba. Újrapróbáláshoz érintsd meg.";
 "com.kustomer.FAQ" = "GYIK";
+"com.kustomer.Featured Articles" = "Kiemelt cikkek";
+"com.kustomer.File type not supported" = "A fájltípus nem támogatott";
 "com.kustomer.Help Article" = "Súgócikk";
 "com.kustomer.Image" = "Kép";
 "com.kustomer.Incoming chat" = "Bejövő csevegés";

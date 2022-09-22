@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "गप्पा लोड करू शकत नाही";
 "com.kustomer.Cancel" = "रद्द करा";
 "com.kustomer.Cancelled! Tap to retry." = "रद्द केले! पुन्हा प्रयत्न करण्यासाठी टॅप करा.";
+"com.kustomer.Categories" = "श्रेण्या";
 "com.kustomer.Chat" = "गप्पा";
 "com.kustomer.Chat has ended" = "गप्पा संपल्या";
 "com.kustomer.Chat history" = "गप्पा इतिहास";
@@ -33,13 +34,15 @@
 "com.kustomer.Error!" = "त्रुटी!";
 "com.kustomer.Error. Tap to retry." = "त्रुटी. पुन्हा प्रयत्न करण्यासाठी टॅप करा.";
 "com.kustomer.FAQ" = "वारंवार विचारले जाणारे प्रश्न";
+"com.kustomer.Featured Articles" = "वैशिष्ट्यीकृत लेख";
+"com.kustomer.File type not supported" = "फाइल प्रकार समर्थित नाही";
 "com.kustomer.Help Article" = "मदत लेख";
 "com.kustomer.Image" = "प्रतिमा";
 "com.kustomer.Incoming chat" = "येणार्‍या गप्पा";
 "com.kustomer.Internet offline" = "इंटरनेट ऑफलाइन";
 "com.kustomer.Just now" = "आत्ताच";
 "com.kustomer.KB" = "KB";
-"com.kustomer.Leave a message" = "एक संदेश द्या";
+"com.kustomer.Leave a message" = "एक संदेश सोडा";
 "com.kustomer.Leave a message..." = "एक संदेश द्या...";
 "com.kustomer.Loading..." = "लोड करत आहे...";
 "com.kustomer.Mark all as read" = "सर्व वाचलेले म्हणून चिन्हांकित करा";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Чатът не може да се зареди";
 "com.kustomer.Cancel" = "Отказ";
 "com.kustomer.Cancelled! Tap to retry." = "Отменен! Докоснете за нов опит.";
+"com.kustomer.Categories" = "Категории";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чатът приключи";
 "com.kustomer.Chat history" = "История на чата";
@@ -31,8 +32,10 @@
 "com.kustomer.Ended" = "Приключи";
 "com.kustomer.Error" = "Грешка";
 "com.kustomer.Error!" = "грешка!";
-"com.kustomer.Error. Tap to retry." = "Грешка. Докоснете за повторен опит.";
+"com.kustomer.Error. Tap to retry." = "Грешка. Докоснете за нов опит.";
 "com.kustomer.FAQ" = "ЧЗВ";
+"com.kustomer.Featured Articles" = "Избрани статии";
+"com.kustomer.File type not supported" = "Типът файл не се поддържа";
 "com.kustomer.Help Article" = "Помощна статия";
 "com.kustomer.Image" = "Образ";
 "com.kustomer.Incoming chat" = "Входящ чат";

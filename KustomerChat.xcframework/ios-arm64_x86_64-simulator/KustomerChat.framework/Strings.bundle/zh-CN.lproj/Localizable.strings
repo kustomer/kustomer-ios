@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "无法加载聊天";
 "com.kustomer.Cancel" = "取消";
 "com.kustomer.Cancelled! Tap to retry." = "取消！点击重试。";
+"com.kustomer.Categories" = "类别";
 "com.kustomer.Chat" = "聊天";
 "com.kustomer.Chat has ended" = "聊天已结束";
 "com.kustomer.Chat history" = "聊天记录";
@@ -22,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "对话已合并到另一个对话中。\n\n点按即可转到新对话。";
 "com.kustomer.Conversation moved to another customer" = "对话转移到另一位客户";
 "com.kustomer.Delete" = "删除";
-"com.kustomer.Do you want to remove your rating and feedback?" = "您想删除您的评分和反馈吗？";
+"com.kustomer.Do you want to remove your rating and feedback?" = "您要删除您的评分和反馈吗？";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "是否要保存对评论所做的更改？";
 "com.kustomer.Done" = "完毕";
 "com.kustomer.Edit additional feedback" = "编辑其他反馈";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "错误！";
 "com.kustomer.Error. Tap to retry." = "错误。点击重试。";
 "com.kustomer.FAQ" = "常问问题";
+"com.kustomer.Featured Articles" = "推荐文章";
+"com.kustomer.File type not supported" = "不支持文件类型";
 "com.kustomer.Help Article" = "帮助文章";
 "com.kustomer.Image" = "图片";
 "com.kustomer.Incoming chat" = "传入聊天";
