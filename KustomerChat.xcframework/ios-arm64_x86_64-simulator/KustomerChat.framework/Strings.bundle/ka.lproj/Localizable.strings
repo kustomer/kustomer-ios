@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ჩატი ვერ იტვირთება";
 "com.kustomer.Cancel" = "გაუქმება";
 "com.kustomer.Cancelled! Tap to retry." = "გაუქმდა! შეეხეთ ხელახლა საცდელად.";
+"com.kustomer.Categories" = "კატეგორიები";
 "com.kustomer.Chat" = "Სასაუბრო";
 "com.kustomer.Chat has ended" = "ჩატი დასრულდა";
 "com.kustomer.Chat history" = "ჩატის ისტორია";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "შეცდომა!";
 "com.kustomer.Error. Tap to retry." = "შეცდომა. შეეხეთ ხელახლა საცდელად.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "რჩეული სტატიები";
+"com.kustomer.File type not supported" = "ფაილის ტიპი არ არის მხარდაჭერილი";
 "com.kustomer.Help Article" = "დახმარების სტატია";
 "com.kustomer.Image" = "გამოსახულება";
 "com.kustomer.Incoming chat" = "შემომავალი ჩატი";

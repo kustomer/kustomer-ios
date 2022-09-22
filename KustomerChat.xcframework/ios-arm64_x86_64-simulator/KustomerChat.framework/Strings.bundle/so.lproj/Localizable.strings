@@ -13,13 +13,14 @@
 "com.kustomer.Can't load chat" = "Ma rari karo sheekada";
 "com.kustomer.Cancel" = "Jooji";
 "com.kustomer.Cancelled! Tap to retry." = "Waa la joojiyay! Taabo si aad dib isugu daydo";
+"com.kustomer.Categories" = "Qaybaha";
 "com.kustomer.Chat" = "Sheekaysi";
 "com.kustomer.Chat has ended" = "Sheekadu way dhamaatay";
 "com.kustomer.Chat history" = "Taariikhda sheekada";
 "com.kustomer.Chat is currently unavailable" = "Sheekadu hadda lama heli karo";
 "com.kustomer.Chat with support" = "La hadal taageero";
 "com.kustomer.Conversation ended" = "Wadahadalkii wuu dhamaaday";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Sheekaysigu waxa uu ku milmay sheeko kale.\n\nTaabo si aad u aado sheekada cusub.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Sheekadu waxay ku biirtay sheeko kale.\n\nTaabo si aad u aado sheekada cusub.";
 "com.kustomer.Conversation moved to another customer" = "Sheekaysigu waxa loo raray macmiil kale";
 "com.kustomer.Delete" = "Tirtir";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ma doonaysaa in aad meesha ka saarto qiimayntaada iyo jawaab celintaada?";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Khalad!";
 "com.kustomer.Error. Tap to retry." = "Khalad Taabo si aad dib isugu daydo";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Maqaallo la soo bandhigay";
+"com.kustomer.File type not supported" = "Nooca faylka lama taageero";
 "com.kustomer.Help Article" = "Maqaalka Caawinta";
 "com.kustomer.Image" = "Sawirka";
 "com.kustomer.Incoming chat" = "Sheeko soo socota";

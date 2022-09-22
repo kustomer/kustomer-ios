@@ -13,13 +13,14 @@
 "com.kustomer.Can't load chat" = "च्याट लोड गर्न सकिँदैन";
 "com.kustomer.Cancel" = "रद्द गर्नुहोस्";
 "com.kustomer.Cancelled! Tap to retry." = "रद्द गरियो! पुन: प्रयास गर्न ट्याप गर्नुहोस्।";
+"com.kustomer.Categories" = "कोटीहरू";
 "com.kustomer.Chat" = "च्याट";
 "com.kustomer.Chat has ended" = "च्याट समाप्त भयो";
 "com.kustomer.Chat history" = "च्याट इतिहास";
 "com.kustomer.Chat is currently unavailable" = "च्याट हाल अनुपलब्ध छ";
 "com.kustomer.Chat with support" = "समर्थन संग कुराकानी";
 "com.kustomer.Conversation ended" = "कुराकानी समाप्त भयो";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "कुराकानी अर्को कुराकानीमा मर्ज गरियो।\n\nनयाँ वार्तालापमा जान ट्याप गर्नुहोस्।";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "कुराकानी अर्को वार्तालापमा मर्ज गरियो।\n\nनयाँ कुराकानीमा जान ट्याप गर्नुहोस्।";
 "com.kustomer.Conversation moved to another customer" = "कुराकानी अर्को ग्राहकमा सारियो";
 "com.kustomer.Delete" = "मेटाउन";
 "com.kustomer.Do you want to remove your rating and feedback?" = "तपाईं आफ्नो मूल्याङ्कन र प्रतिक्रिया हटाउन चाहनुहुन्छ?";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "त्रुटि!";
 "com.kustomer.Error. Tap to retry." = "त्रुटि। पुन: प्रयास गर्न ट्याप गर्नुहोस्।";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "विशेष लेखहरू";
+"com.kustomer.File type not supported" = "फाइल प्रकार समर्थित छैन";
 "com.kustomer.Help Article" = "मद्दत लेख";
 "com.kustomer.Image" = "छवि";
 "com.kustomer.Incoming chat" = "आगमन कुराकानी";

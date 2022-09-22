@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ချတ်ကို တင်၍မရပါ။";
 "com.kustomer.Cancel" = "မလုပ်တော့";
 "com.kustomer.Cancelled! Tap to retry." = "ပယ်ဖျက်လိုက်ပါပြီ ထပ်ကြိုးစားရန် တို့ပါ။";
+"com.kustomer.Categories" = "အမျိုးအစားများ";
 "com.kustomer.Chat" = "စကားစမြည်";
 "com.kustomer.Chat has ended" = "Chat ပြီးသွားပါပြီ။";
 "com.kustomer.Chat history" = "စကားပြောမှတ်တမ်း";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "အမှား။";
 "com.kustomer.Error. Tap to retry." = "အမှား။ ထပ်ကြိုးစားရန် တို့ပါ။";
 "com.kustomer.FAQ" = "အမြဲမေးလေ့ရှိသောမေးခွန်းများ";
+"com.kustomer.Featured Articles" = "အထူးအသားပေး ဆောင်းပါးများ";
+"com.kustomer.File type not supported" = "ဖိုင်အမျိုးအစားကို မပံ့ပိုးပါ။";
 "com.kustomer.Help Article" = "အကူအညီဆောင်းပါး";
 "com.kustomer.Image" = "ပုံ";
 "com.kustomer.Incoming chat" = "အဝင်ချတ်";

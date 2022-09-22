@@ -13,8 +13,9 @@
 "com.kustomer.Can't load chat" = "ਚੈਟ ਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ";
 "com.kustomer.Cancel" = "ਰੱਦ ਕਰੋ";
 "com.kustomer.Cancelled! Tap to retry." = "ਰੱਦ ਕੀਤਾ! ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।";
+"com.kustomer.Categories" = "ਵਰਗ";
 "com.kustomer.Chat" = "ਚੈਟ";
-"com.kustomer.Chat has ended" = "ਚੈਟ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ";
+"com.kustomer.Chat has ended" = "ਚੈਟ ਖਤਮ ਹੋ ਗਈ ਹੈ";
 "com.kustomer.Chat history" = "ਚੈਟ ਇਤਿਹਾਸ";
 "com.kustomer.Chat is currently unavailable" = "ਚੈਟ ਵਰਤਮਾਨ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ";
 "com.kustomer.Chat with support" = "ਸਹਾਇਤਾ ਨਾਲ ਗੱਲਬਾਤ ਕਰੋ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ਗਲਤੀ!";
 "com.kustomer.Error. Tap to retry." = "ਗਲਤੀ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ਫੀਚਰਡ ਲੇਖ";
+"com.kustomer.File type not supported" = "ਫਾਈਲ ਕਿਸਮ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ";
 "com.kustomer.Help Article" = "ਮਦਦ ਲੇਖ";
 "com.kustomer.Image" = "ਚਿੱਤਰ";
 "com.kustomer.Incoming chat" = "ਆਉਣ ਵਾਲੀ ਗੱਲਬਾਤ";

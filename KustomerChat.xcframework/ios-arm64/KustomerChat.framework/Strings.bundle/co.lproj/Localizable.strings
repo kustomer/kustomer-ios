@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ùn pò micca carica u chat";
 "com.kustomer.Cancel" = "Cancella";
 "com.kustomer.Cancelled! Tap to retry." = "Annulatu ! Tap per ripruvà.";
+"com.kustomer.Categories" = "I categurie";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "A chat hè finita";
 "com.kustomer.Chat history" = "Storia di chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Errore !";
 "com.kustomer.Error. Tap to retry." = "Errore. Tap per ripruvà.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Articuli presentati";
+"com.kustomer.File type not supported" = "U tipu di schedariu ùn hè micca supportatu";
 "com.kustomer.Help Article" = "Aiutu Articulu";
 "com.kustomer.Image" = "Image";
 "com.kustomer.Incoming chat" = "Chat entrante";

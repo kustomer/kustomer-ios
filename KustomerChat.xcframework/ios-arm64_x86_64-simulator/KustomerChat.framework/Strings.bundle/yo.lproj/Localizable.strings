@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ko le fifuye iwiregbe";
 "com.kustomer.Cancel" = "Fagilee";
 "com.kustomer.Cancelled! Tap to retry." = "Fagilee! Fọwọ ba lati tun gbiyanju.";
+"com.kustomer.Categories" = "Awọn ẹka";
 "com.kustomer.Chat" = "Wiregbe";
 "com.kustomer.Chat has ended" = "Iwiregbe ti pari";
 "com.kustomer.Chat history" = "Itan iwiregbe";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Asise!";
 "com.kustomer.Error. Tap to retry." = "Asise. Fọwọ ba lati tun gbiyanju.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ifihan Ìwé";
+"com.kustomer.File type not supported" = "Iru faili ko ni atilẹyin";
 "com.kustomer.Help Article" = "Iranlọwọ Abala";
 "com.kustomer.Image" = "Aworan";
 "com.kustomer.Incoming chat" = "Iwiregbe ti nwọle";

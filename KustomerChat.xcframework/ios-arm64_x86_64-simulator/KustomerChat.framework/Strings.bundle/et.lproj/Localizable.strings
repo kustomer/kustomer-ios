@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Vestlust ei saa laadida";
 "com.kustomer.Cancel" = "Tühista";
 "com.kustomer.Cancelled! Tap to retry." = "Tühistatud! Puudutage uuesti proovimiseks.";
+"com.kustomer.Categories" = "Kategooriad";
 "com.kustomer.Chat" = "Vestlus";
 "com.kustomer.Chat has ended" = "Vestlus on lõppenud";
 "com.kustomer.Chat history" = "Vestluse ajalugu";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Viga!";
 "com.kustomer.Error. Tap to retry." = "Viga. Puudutage uuesti proovimiseks.";
 "com.kustomer.FAQ" = "KKK";
+"com.kustomer.Featured Articles" = "Esiletõstetud artiklid";
+"com.kustomer.File type not supported" = "Failitüüpi ei toetata";
 "com.kustomer.Help Article" = "Abiartikkel";
 "com.kustomer.Image" = "Pilt";
 "com.kustomer.Incoming chat" = "Sissetulev vestlus";

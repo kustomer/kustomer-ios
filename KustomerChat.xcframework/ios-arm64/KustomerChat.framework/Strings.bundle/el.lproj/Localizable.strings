@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Δεν είναι δυνατή η φόρτωση της συνομιλίας";
 "com.kustomer.Cancel" = "Ματαίωση";
 "com.kustomer.Cancelled! Tap to retry." = "Ακυρώθηκε! Πατήστε για να προσπαθήσετε ξανά.";
+"com.kustomer.Categories" = "Κατηγορίες";
 "com.kustomer.Chat" = "Κουβέντα";
 "com.kustomer.Chat has ended" = "Η συνομιλία έληξε";
 "com.kustomer.Chat history" = "Ιστορικό συνομιλίας";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Λάθος!";
 "com.kustomer.Error. Tap to retry." = "Λάθος. Πατήστε για να προσπαθήσετε ξανά.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Επιλεγμένα άρθρα";
+"com.kustomer.File type not supported" = "Ο τύπος αρχείου δεν υποστηρίζεται";
 "com.kustomer.Help Article" = "Άρθρο βοήθειας";
 "com.kustomer.Image" = "Εικόνα";
 "com.kustomer.Incoming chat" = "Εισερχόμενη συνομιλία";

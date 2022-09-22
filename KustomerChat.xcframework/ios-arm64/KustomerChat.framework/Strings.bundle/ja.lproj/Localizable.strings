@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "チャットを読み込めません";
 "com.kustomer.Cancel" = "キャンセル";
 "com.kustomer.Cancelled! Tap to retry." = "キャンセル！タップして再試行してください。";
+"com.kustomer.Categories" = "カテゴリー";
 "com.kustomer.Chat" = "チャット";
 "com.kustomer.Chat has ended" = "チャットが終了しました";
 "com.kustomer.Chat history" = "チャット履歴";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "エラー！";
 "com.kustomer.Error. Tap to retry." = "エラー。タップして再試行してください。";
 "com.kustomer.FAQ" = "よくある質問";
+"com.kustomer.Featured Articles" = "注目の記事";
+"com.kustomer.File type not supported" = "ファイル形式がサポートされていません";
 "com.kustomer.Help Article" = "ヘルプ記事";
 "com.kustomer.Image" = "画像";
 "com.kustomer.Incoming chat" = "着信チャット";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Não é possível carregar o bate-papo";
 "com.kustomer.Cancel" = "Cancelar";
 "com.kustomer.Cancelled! Tap to retry." = "Cancelado! Toque para tentar novamente.";
+"com.kustomer.Categories" = "Categorias";
 "com.kustomer.Chat" = "Bater papo";
 "com.kustomer.Chat has ended" = "O bate-papo terminou";
 "com.kustomer.Chat history" = "Histórico de conversa";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Erro!";
 "com.kustomer.Error. Tap to retry." = "Erro. Toque para tentar novamente.";
 "com.kustomer.FAQ" = "Perguntas frequentes";
+"com.kustomer.Featured Articles" = "artigos em destaque";
+"com.kustomer.File type not supported" = "Tipo de arquivo não suportado";
 "com.kustomer.Help Article" = "Artigo de ajuda";
 "com.kustomer.Image" = "Imagem";
 "com.kustomer.Incoming chat" = "Bate-papo recebido";

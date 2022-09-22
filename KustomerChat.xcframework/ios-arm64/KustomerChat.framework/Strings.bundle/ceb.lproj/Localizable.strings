@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Dili ma load ang chat";
 "com.kustomer.Cancel" = "Pagkanselar";
 "com.kustomer.Cancelled! Tap to retry." = "Gikanselar! I-tap aron sulayan pag-usab.";
+"com.kustomer.Categories" = "Mga kategoriya";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Nahuman na ang chat";
 "com.kustomer.Chat history" = "Kasaysayan sa chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Sayop!";
 "com.kustomer.Error. Tap to retry." = "Sayop. I-tap aron sulayan pag-usab.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Gipili nga mga Artikulo";
+"com.kustomer.File type not supported" = "Dili gisuportahan ang tipo sa file";
 "com.kustomer.Help Article" = "Tabang nga Artikulo";
 "com.kustomer.Image" = "Hulagway";
 "com.kustomer.Incoming chat" = "Nag-abot nga chat";

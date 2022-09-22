@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ma tistax tagħbija chat";
 "com.kustomer.Cancel" = "Ikkanċella";
 "com.kustomer.Cancelled! Tap to retry." = "Ikkanċellat! Tektek biex terġa&#39; tipprova.";
+"com.kustomer.Categories" = "Kategoriji";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Iċ-chat spiċċat";
 "com.kustomer.Chat history" = "Storja taċ-chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Żball!";
 "com.kustomer.Error. Tap to retry." = "Żball. Tektek biex terġa&#39; tipprova.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Artikoli Dehru";
+"com.kustomer.File type not supported" = "Tip ta&#39; fajl mhux appoġġjat";
 "com.kustomer.Help Article" = "Artikolu Għajnuna";
 "com.kustomer.Image" = "Immaġni";
 "com.kustomer.Incoming chat" = "Chat deħlin";

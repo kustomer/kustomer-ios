@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nu se poate încărca chatul";
 "com.kustomer.Cancel" = "Anulare";
 "com.kustomer.Cancelled! Tap to retry." = "Anulat! Apasă pentru a reîncerca.";
+"com.kustomer.Categories" = "Categorii";
 "com.kustomer.Chat" = "conversație";
 "com.kustomer.Chat has ended" = "Chatul s-a încheiat";
 "com.kustomer.Chat history" = "Istoricul chat-urilor";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Eroare!";
 "com.kustomer.Error. Tap to retry." = "Eroare. Apasă pentru a reîncerca.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Articole Promovate";
+"com.kustomer.File type not supported" = "Tipul de fișier nu este acceptat";
 "com.kustomer.Help Article" = "Articol de ajutor";
 "com.kustomer.Image" = "Imagine";
 "com.kustomer.Incoming chat" = "Chat primit";

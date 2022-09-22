@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "无法加载聊天";
 "com.kustomer.Cancel" = "取消";
 "com.kustomer.Cancelled! Tap to retry." = "取消！点击重试。";
+"com.kustomer.Categories" = "类别";
 "com.kustomer.Chat" = "聊天";
 "com.kustomer.Chat has ended" = "聊天已结束";
 "com.kustomer.Chat history" = "聊天记录";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "错误！";
 "com.kustomer.Error. Tap to retry." = "错误。点击重试。";
 "com.kustomer.FAQ" = "常问问题";
+"com.kustomer.Featured Articles" = "推荐文章";
+"com.kustomer.File type not supported" = "不支持文件类型";
 "com.kustomer.Help Article" = "帮助文章";
 "com.kustomer.Image" = "图片";
 "com.kustomer.Incoming chat" = "传入聊天";
@@ -70,7 +73,7 @@
 "com.kustomer.Reconnecting..." = "重新连接...";
 "com.kustomer.Remove" = "消除";
 "com.kustomer.Report problem" = "报告问题";
-"com.kustomer.Report sent" = "已发送报告";
+"com.kustomer.Report sent" = "报告已发送";
 "com.kustomer.Save changes" = "保存更改";
 "com.kustomer.Search Help Articles" = "搜索帮助文章";
 "com.kustomer.Search Results" = "搜索结果";

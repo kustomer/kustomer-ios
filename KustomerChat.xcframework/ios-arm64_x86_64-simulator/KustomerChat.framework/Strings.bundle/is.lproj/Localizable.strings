@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Get ekki hlaðið spjall";
 "com.kustomer.Cancel" = "Hætta við";
 "com.kustomer.Cancelled! Tap to retry." = "Hætt við! Pikkaðu til að reyna aftur.";
+"com.kustomer.Categories" = "Flokkar";
 "com.kustomer.Chat" = "Spjall";
 "com.kustomer.Chat has ended" = "Spjallinu er lokið";
 "com.kustomer.Chat history" = "Spjallferill";
@@ -28,11 +29,13 @@
 "com.kustomer.Edit additional feedback" = "Breyta viðbótarábendingum";
 "com.kustomer.Edit comment" = "Breyta athugasemd";
 "com.kustomer.End Chat" = "Ljúka spjalli";
-"com.kustomer.Ended" = "Lokið";
+"com.kustomer.Ended" = "Lokað";
 "com.kustomer.Error" = "Villa";
 "com.kustomer.Error!" = "Villa!";
 "com.kustomer.Error. Tap to retry." = "Villa. Pikkaðu til að reyna aftur.";
 "com.kustomer.FAQ" = "Algengar spurningar";
+"com.kustomer.Featured Articles" = "Valdar greinar";
+"com.kustomer.File type not supported" = "Skráargerð ekki studd";
 "com.kustomer.Help Article" = "Hjálpargrein";
 "com.kustomer.Image" = "Mynd";
 "com.kustomer.Incoming chat" = "Spjall sem kemur inn";

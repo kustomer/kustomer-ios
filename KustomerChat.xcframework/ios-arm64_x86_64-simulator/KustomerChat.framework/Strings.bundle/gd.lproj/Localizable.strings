@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chan urrainn dhuinn còmhradh a luchdachadh";
 "com.kustomer.Cancel" = "Sguir dheth";
 "com.kustomer.Cancelled! Tap to retry." = "Air a chuir dheth! Tap air gus feuchainn a-rithist.";
+"com.kustomer.Categories" = "Roinnean-seòrsa";
 "com.kustomer.Chat" = "Còmhradh";
 "com.kustomer.Chat has ended" = "Tha an còmhradh air tighinn gu crìch";
 "com.kustomer.Chat history" = "Eachdraidh cabadaich";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Mearachd!";
 "com.kustomer.Error. Tap to retry." = "Mearachd. Tap air gus feuchainn a-rithist.";
 "com.kustomer.FAQ" = "Ceistean Cumanta";
+"com.kustomer.Featured Articles" = "Artaigilean sònraichte";
+"com.kustomer.File type not supported" = "Chan eil taic ris an t-seòrsa faidhle";
 "com.kustomer.Help Article" = "Artaigil cuideachaidh";
 "com.kustomer.Image" = "Dealbh";
 "com.kustomer.Incoming chat" = "Còmhradh a’ tighinn a-steach";

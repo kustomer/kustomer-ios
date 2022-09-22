@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Није могуће учитати ћаскање";
 "com.kustomer.Cancel" = "Поништити, отказати";
 "com.kustomer.Cancelled! Tap to retry." = "Отказано! Додирните да поновите.";
+"com.kustomer.Categories" = "Категорије";
 "com.kustomer.Chat" = "Ћаскање";
 "com.kustomer.Chat has ended" = "Ћаскање је завршено";
 "com.kustomer.Chat history" = "Историја ћаскања";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Грешка!";
 "com.kustomer.Error. Tap to retry." = "Грешка. Додирните да поновите.";
 "com.kustomer.FAQ" = "ФАК";
+"com.kustomer.Featured Articles" = "Феатуред Артицлес";
+"com.kustomer.File type not supported" = "Тип датотеке није подржан";
 "com.kustomer.Help Article" = "Чланак помоћи";
 "com.kustomer.Image" = "Слика";
 "com.kustomer.Incoming chat" = "Долазно ћаскање";

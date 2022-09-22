@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Söhbet ýükläp bolmaýar";
 "com.kustomer.Cancel" = "Elatyr";
 "com.kustomer.Cancelled! Tap to retry." = "Atyryldy! Gaýtadan synanyşmak üçin basyň.";
+"com.kustomer.Categories" = "Kategoriýalar";
 "com.kustomer.Chat" = "Söhbet";
 "com.kustomer.Chat has ended" = "Söhbet gutardy";
 "com.kustomer.Chat history" = "Söhbet taryhy";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Roralňyşlyk!";
 "com.kustomer.Error. Tap to retry." = "Roralňyşlyk. Gaýtadan synanyşmak üçin basyň.";
 "com.kustomer.FAQ" = "Sorag-jogap";
+"com.kustomer.Featured Articles" = "Aýratyn makalalar";
+"com.kustomer.File type not supported" = "Faýl görnüşi goldanylmaýar";
 "com.kustomer.Help Article" = "Kömek makalasy";
 "com.kustomer.Image" = "Surat";
 "com.kustomer.Incoming chat" = "Gelýän söhbet";

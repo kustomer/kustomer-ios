@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Klepeta ni mogoče naložiti";
 "com.kustomer.Cancel" = "Prekliči";
 "com.kustomer.Cancelled! Tap to retry." = "Prekinjeno! Tapnite za ponovni poskus.";
+"com.kustomer.Categories" = "kategorije";
 "com.kustomer.Chat" = "Klepetajte";
 "com.kustomer.Chat has ended" = "Klepet je končan";
 "com.kustomer.Chat history" = "Zgodovina klepeta";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Napaka!";
 "com.kustomer.Error. Tap to retry." = "Napaka. Tapnite za ponovni poskus.";
 "com.kustomer.FAQ" = "pogosta vprašanja";
+"com.kustomer.Featured Articles" = "Predstavljeni članki";
+"com.kustomer.File type not supported" = "Vrsta datoteke ni podprta";
 "com.kustomer.Help Article" = "Članek za pomoč";
 "com.kustomer.Image" = "Slika";
 "com.kustomer.Incoming chat" = "Dohodni klepet";

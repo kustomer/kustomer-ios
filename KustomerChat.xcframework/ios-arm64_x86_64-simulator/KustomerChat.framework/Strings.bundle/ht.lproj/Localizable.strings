@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Pa ka chaje chat";
 "com.kustomer.Cancel" = "Anile";
 "com.kustomer.Cancelled! Tap to retry." = "Anile! Tape pou w eseye ankò.";
+"com.kustomer.Categories" = "Kategori";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat te fini";
 "com.kustomer.Chat history" = "Istwa chat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Erè!";
 "com.kustomer.Error. Tap to retry." = "Erè. Tape pou w eseye ankò.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Atik ki prezante yo";
+"com.kustomer.File type not supported" = "Kalite dosye pa sipòte";
 "com.kustomer.Help Article" = "Ede Atik";
 "com.kustomer.Image" = "Imaj";
 "com.kustomer.Incoming chat" = "Chat kap vini";

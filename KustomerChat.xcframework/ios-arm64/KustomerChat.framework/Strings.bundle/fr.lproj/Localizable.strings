@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Impossible de charger le chat";
 "com.kustomer.Cancel" = "Annuler";
 "com.kustomer.Cancelled! Tap to retry." = "Annulé! Cliquer pour réessayer.";
+"com.kustomer.Categories" = "Catégories";
 "com.kustomer.Chat" = "Discuter";
 "com.kustomer.Chat has ended" = "Le chat est terminé";
 "com.kustomer.Chat history" = "Historique des discussions";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Erreur!";
 "com.kustomer.Error. Tap to retry." = "Erreur. Cliquer pour réessayer.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Articles en vedette";
+"com.kustomer.File type not supported" = "Type de fichier non pris en charge";
 "com.kustomer.Help Article" = "Article d&#39;aide";
 "com.kustomer.Image" = "Image";
 "com.kustomer.Incoming chat" = "Chat entrant";

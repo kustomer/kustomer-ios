@@ -4,7 +4,7 @@
 "com.kustomer.Additional Feedback" = "Dodatne povratne informacije";
 "com.kustomer.Additional feedback removed" = "Dodatne povratne informacije uklonjene";
 "com.kustomer.Agent" = "Agent";
-"com.kustomer.Answers" = "odgovori";
+"com.kustomer.Answers" = "Odgovori";
 "com.kustomer.Are you sure you want to end this chat?" = "Jeste li sigurni da želite prekinuti ovaj razgovor?";
 "com.kustomer.Attached file" = "Priloženi dokument";
 "com.kustomer.Attachment" = "Prilog";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ne mogu učitati chat";
 "com.kustomer.Cancel" = "Otkazati";
 "com.kustomer.Cancelled! Tap to retry." = "Otkazano! Dodirnite za ponovni pokušaj.";
+"com.kustomer.Categories" = "Kategorije";
 "com.kustomer.Chat" = "razgovor";
 "com.kustomer.Chat has ended" = "Chat je završio";
 "com.kustomer.Chat history" = "Povijest razgovora";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Greška!";
 "com.kustomer.Error. Tap to retry." = "Greška. Dodirnite za ponovni pokušaj.";
 "com.kustomer.FAQ" = "Pitanja";
+"com.kustomer.Featured Articles" = "Istaknuti članci";
+"com.kustomer.File type not supported" = "Vrsta datoteke nije podržana";
 "com.kustomer.Help Article" = "Članak pomoći";
 "com.kustomer.Image" = "Slika";
 "com.kustomer.Incoming chat" = "Dolazni chat";

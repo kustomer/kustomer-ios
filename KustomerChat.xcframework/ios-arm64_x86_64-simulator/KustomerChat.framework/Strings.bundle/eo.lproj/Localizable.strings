@@ -1,6 +1,6 @@
 "com.kustomer.%@ is typing..." = "%@ tajpas...";
 "com.kustomer.100+ results found" = "100+ rezultoj trovitaj";
-"com.kustomer.Add additional feedback" = "Aldonu pliajn komentojn";
+"com.kustomer.Add additional feedback" = "Aldonu pliajn rimarkojn";
 "com.kustomer.Additional Feedback" = "Pliaj Rimarkoj";
 "com.kustomer.Additional feedback removed" = "Pliaj sugestoj forigitaj";
 "com.kustomer.Agent" = "Agento";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ne povas ŝargi babilejon";
 "com.kustomer.Cancel" = "Nuligi";
 "com.kustomer.Cancelled! Tap to retry." = "Nuligite! Frapu por reprovi.";
+"com.kustomer.Categories" = "Kategorioj";
 "com.kustomer.Chat" = "Babilado";
 "com.kustomer.Chat has ended" = "Babilejo finiĝis";
 "com.kustomer.Chat history" = "Babilhistorio";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Eraro!";
 "com.kustomer.Error. Tap to retry." = "Eraro. Frapu por reprovi.";
 "com.kustomer.FAQ" = "Oftaj Demandoj";
+"com.kustomer.Featured Articles" = "Elstaraj Artikoloj";
+"com.kustomer.File type not supported" = "Dosiertipo ne subtenata";
 "com.kustomer.Help Article" = "Helpa Artikolo";
 "com.kustomer.Image" = "Bildo";
 "com.kustomer.Incoming chat" = "Envenanta babilejo";
@@ -41,7 +44,7 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Lasu mesaĝon";
 "com.kustomer.Leave a message..." = "Lasu mesaĝon...";
-"com.kustomer.Loading..." = "Ŝarĝante...";
+"com.kustomer.Loading..." = "Ŝargante...";
 "com.kustomer.Mark all as read" = "Marku ĉion kiel legitan";
 "com.kustomer.Me" = "Mi";
 "com.kustomer.Message" = "Mesaĝo";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "No es pot carregar el xat";
 "com.kustomer.Cancel" = "Cancel · lar";
 "com.kustomer.Cancelled! Tap to retry." = "Cancel·lat! Toca per tornar-ho a provar.";
+"com.kustomer.Categories" = "Categories";
 "com.kustomer.Chat" = "Xatejar";
 "com.kustomer.Chat has ended" = "El xat s&#39;ha acabat";
 "com.kustomer.Chat history" = "Historial de xat";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Error!";
 "com.kustomer.Error. Tap to retry." = "Error. Toca per tornar-ho a provar.";
 "com.kustomer.FAQ" = "PMF";
+"com.kustomer.Featured Articles" = "Articles destacats";
+"com.kustomer.File type not supported" = "El tipus de fitxer no és compatible";
 "com.kustomer.Help Article" = "Article d&#39;ajuda";
 "com.kustomer.Image" = "Imatge";
 "com.kustomer.Incoming chat" = "Xat entrant";

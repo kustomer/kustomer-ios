@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Haikwanisi kurodha chat";
 "com.kustomer.Cancel" = "Kanzura";
 "com.kustomer.Cancelled! Tap to retry." = "Kanzurwa! Tinya kuti uedze zvakare.";
+"com.kustomer.Categories" = "Categories";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat yapera";
 "com.kustomer.Chat history" = "Chat history";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Error!";
 "com.kustomer.Error. Tap to retry." = "Error. Tinya kuti uedze zvakare.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Featured Articles";
+"com.kustomer.File type not supported" = "Rudzi rwefaira haruna kutsigirwa";
 "com.kustomer.Help Article" = "Help Article";
 "com.kustomer.Image" = "Image";
 "com.kustomer.Incoming chat" = "Incoming chat";

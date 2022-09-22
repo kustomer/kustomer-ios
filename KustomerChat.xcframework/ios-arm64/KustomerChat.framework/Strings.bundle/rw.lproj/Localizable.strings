@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ntushobora guterura ikiganiro";
 "com.kustomer.Cancel" = "Kureka";
 "com.kustomer.Cancelled! Tap to retry." = "Yahagaritswe! Kanda kugirango ugerageze.";
+"com.kustomer.Categories" = "Ibyiciro";
 "com.kustomer.Chat" = "Kuganira";
 "com.kustomer.Chat has ended" = "Ikiganiro cyarangiye";
 "com.kustomer.Chat history" = "Amateka yo kuganira";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Ikosa!";
 "com.kustomer.Error. Tap to retry." = "Ikosa. Kanda kugirango ugerageze.";
 "com.kustomer.FAQ" = "Ibibazo";
+"com.kustomer.Featured Articles" = "Ingingo zihariye";
+"com.kustomer.File type not supported" = "Ubwoko bwa dosiye ntabwo bushyigikiwe";
 "com.kustomer.Help Article" = "Gufasha Ingingo";
 "com.kustomer.Image" = "Ishusho";
 "com.kustomer.Incoming chat" = "Ikiganiro cyinjira";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "چیټ نشي پورته کولی";
 "com.kustomer.Cancel" = "لغوه کړئ";
 "com.kustomer.Cancelled! Tap to retry." = "لغوه شوی! د بیا هڅه کولو لپاره ټایپ کړئ.";
+"com.kustomer.Categories" = "کټګورۍ";
 "com.kustomer.Chat" = "چټ";
 "com.kustomer.Chat has ended" = "چیټ ختم شو";
 "com.kustomer.Chat history" = "د چیٹ تاریخ";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "تېروتنه!";
 "com.kustomer.Error. Tap to retry." = "تېروتنه. د بیا هڅه کولو لپاره ټایپ کړئ.";
 "com.kustomer.FAQ" = "پرله پسې پوښتنې";
+"com.kustomer.Featured Articles" = "ځانګړي شوي مقالې";
+"com.kustomer.File type not supported" = "د فایل ډول ملاتړ نه کوي";
 "com.kustomer.Help Article" = "د مرستې مقاله";
 "com.kustomer.Image" = "انځور";
 "com.kustomer.Incoming chat" = "راتلونکی چیٹ";

@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Հնարավոր չէ բեռնել զրույցը";
 "com.kustomer.Cancel" = "Չեղարկել";
 "com.kustomer.Cancelled! Tap to retry." = "Չեղարկված է Հպեք՝ նորից փորձելու համար:";
+"com.kustomer.Categories" = "Կատեգորիաներ";
 "com.kustomer.Chat" = "Զրուցարան";
 "com.kustomer.Chat has ended" = "Զրույցն ավարտվեց";
 "com.kustomer.Chat history" = "Զրույցի պատմություն";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Սխալ.";
 "com.kustomer.Error. Tap to retry." = "Սխալ. Հպեք՝ նորից փորձելու համար:";
 "com.kustomer.FAQ" = "ՀՏՀ";
+"com.kustomer.Featured Articles" = "Առաջարկվող հոդվածներ";
+"com.kustomer.File type not supported" = "Ֆայլի տեսակը չի աջակցվում";
 "com.kustomer.Help Article" = "Օգնության հոդված";
 "com.kustomer.Image" = "Պատկեր";
 "com.kustomer.Incoming chat" = "Մուտքային զրույց";
@@ -72,7 +75,7 @@
 "com.kustomer.Report problem" = "Հաղորդել խնդրի մասին";
 "com.kustomer.Report sent" = "Զեկույցն ուղարկված է";
 "com.kustomer.Save changes" = "Պահպանել փոփոխությունները";
-"com.kustomer.Search Help Articles" = "Որոնել Օգնության հոդվածներ";
+"com.kustomer.Search Help Articles" = "Որոնել օգնության հոդվածներ";
 "com.kustomer.Search Results" = "Որոնման արդյունքները";
 "com.kustomer.Sending" = "Ուղարկել";
 "com.kustomer.Share" = "Կիսվել";
@@ -85,7 +88,7 @@
 "com.kustomer.That article" = "Այդ հոդվածը";
 "com.kustomer.There was a problem" = "Խնդիր կար";
 "com.kustomer.This conversation is read-only" = "Այս խոսակցությունը միայն կարդալու է";
-"com.kustomer.Try again" = "Կրկին փորձեք";
+"com.kustomer.Try again" = "Նորից փորձեք";
 "com.kustomer.Type a message..." = "Մուտքագրեք հաղորդագրություն...";
 "com.kustomer.Unavailable message goes here" = "Անհասանելի հաղորդագրությունը գնում է այստեղ";
 "com.kustomer.Updated" = "Թարմացվել է";

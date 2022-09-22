@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "無法加載聊天";
 "com.kustomer.Cancel" = "取消";
 "com.kustomer.Cancelled! Tap to retry." = "取消！點擊重試。";
+"com.kustomer.Categories" = "類別";
 "com.kustomer.Chat" = "聊天";
 "com.kustomer.Chat has ended" = "聊天已結束";
 "com.kustomer.Chat history" = "聊天記錄";
@@ -22,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "對話已合併到另一個對話中。\n\n點按即可轉到新對話。";
 "com.kustomer.Conversation moved to another customer" = "對話轉移到另一位客戶";
 "com.kustomer.Delete" = "刪除";
-"com.kustomer.Do you want to remove your rating and feedback?" = "您要刪除您的評分和反饋嗎？";
+"com.kustomer.Do you want to remove your rating and feedback?" = "您想刪除您的評分和反饋嗎？";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "是否要保存對評論所做的更改？";
 "com.kustomer.Done" = "完畢";
 "com.kustomer.Edit additional feedback" = "編輯其他反饋";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "錯誤！";
 "com.kustomer.Error. Tap to retry." = "錯誤。點擊重試。";
 "com.kustomer.FAQ" = "常問問題";
+"com.kustomer.Featured Articles" = "推薦文章";
+"com.kustomer.File type not supported" = "不支持文件類型";
 "com.kustomer.Help Article" = "幫助文章";
 "com.kustomer.Image" = "圖片";
 "com.kustomer.Incoming chat" = "傳入聊天";
@@ -70,7 +73,7 @@
 "com.kustomer.Reconnecting..." = "重新連接...";
 "com.kustomer.Remove" = "消除";
 "com.kustomer.Report problem" = "報告問題";
-"com.kustomer.Report sent" = "報告已發送";
+"com.kustomer.Report sent" = "已發送報告";
 "com.kustomer.Save changes" = "保存更改";
 "com.kustomer.Search Help Articles" = "搜索幫助文章";
 "com.kustomer.Search Results" = "搜索結果";

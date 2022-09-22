@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Ní féidir an comhrá a lódáil";
 "com.kustomer.Cancel" = "Cealaigh";
 "com.kustomer.Cancelled! Tap to retry." = "Cealaithe! Tapáil chun triail eile a bhaint as.";
+"com.kustomer.Categories" = "Catagóirí";
 "com.kustomer.Chat" = "Comhrá";
 "com.kustomer.Chat has ended" = "Tá deireadh tagtha le comhrá";
 "com.kustomer.Chat history" = "Stair comhrá";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Earráid!";
 "com.kustomer.Error. Tap to retry." = "Earráid. Tapáil chun triail eile a bhaint as.";
 "com.kustomer.FAQ" = "CC";
+"com.kustomer.Featured Articles" = "Ailt faoi Thrácht";
+"com.kustomer.File type not supported" = "Ní thacaítear leis an gcineál comhaid";
 "com.kustomer.Help Article" = "Airteagal Cabhair";
 "com.kustomer.Image" = "Íomha";
 "com.kustomer.Incoming chat" = "Comhrá ag teacht isteach";

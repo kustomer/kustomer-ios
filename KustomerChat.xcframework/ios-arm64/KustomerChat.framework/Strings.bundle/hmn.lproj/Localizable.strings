@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Tsis tuaj yeem thauj khoom sib tham";
 "com.kustomer.Cancel" = "Tso tseg";
 "com.kustomer.Cancelled! Tap to retry." = "Tso tseg! Coj mus rhaub kom rov sim dua.";
+"com.kustomer.Categories" = "Pawg";
 "com.kustomer.Chat" = "Tham";
 "com.kustomer.Chat has ended" = "Kev sib tham tau tas lawm";
 "com.kustomer.Chat history" = "Tham keeb kwm";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "yuam kev!";
 "com.kustomer.Error. Tap to retry." = "yuam kev. Coj mus rhaub kom rov sim dua.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Cov ntsiab lus tshwj xeeb";
+"com.kustomer.File type not supported" = "Hom ntaub ntawv tsis txaus siab";
 "com.kustomer.Help Article" = "Pab Tsab Ntawv";
 "com.kustomer.Image" = "Duab";
 "com.kustomer.Incoming chat" = "Tuaj tham";

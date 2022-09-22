@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chatten kan ikke indlæses";
 "com.kustomer.Cancel" = "Afbestille";
 "com.kustomer.Cancelled! Tap to retry." = "Annulleret! Tryk for at prøve igen.";
+"com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Snak";
 "com.kustomer.Chat has ended" = "Chatten er afsluttet";
 "com.kustomer.Chat history" = "Chat historie";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Fejl!";
 "com.kustomer.Error. Tap to retry." = "Fejl. Tryk for at prøve igen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Udvalgte artikler";
+"com.kustomer.File type not supported" = "Filtype understøttes ikke";
 "com.kustomer.Help Article" = "Hjælpeartikel";
 "com.kustomer.Image" = "Billede";
 "com.kustomer.Incoming chat" = "Indgående chat";

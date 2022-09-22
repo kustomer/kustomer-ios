@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "অতিরিক্ত প্রতিক্রিয়া সরানো হয়েছে";
 "com.kustomer.Agent" = "প্রতিনিধি";
 "com.kustomer.Answers" = "উত্তর";
-"com.kustomer.Are you sure you want to end this chat?" = "আপনি কি নিশ্চিত আপনি এই চ্যাট শেষ করতে চান?";
+"com.kustomer.Are you sure you want to end this chat?" = "আপনি কি এই চ্যাটটি শেষ করতে চান?";
 "com.kustomer.Attached file" = "সংযুক্ত ফাইল";
 "com.kustomer.Attachment" = "সংযুক্তি";
 "com.kustomer.Browse files" = "ফাইল ব্রাউজ";
@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "চ্যাট লোড করা যাচ্ছে না";
 "com.kustomer.Cancel" = "বাতিল করুন";
 "com.kustomer.Cancelled! Tap to retry." = "বাতিল করা হয়েছে! আবার চেষ্টা করতে আলতো চাপুন।";
+"com.kustomer.Categories" = "ক্যাটাগরি";
 "com.kustomer.Chat" = "চ্যাট";
 "com.kustomer.Chat has ended" = "আড্ডা শেষ হয়েছে";
 "com.kustomer.Chat history" = "কথোপকথনের ইতিহাস";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "ত্রুটি!";
 "com.kustomer.Error. Tap to retry." = "ত্রুটি. আবার চেষ্টা করতে আলতো চাপুন।";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "বৈশিষ্ট্যযুক্ত প্রবন্ধ";
+"com.kustomer.File type not supported" = "ফাইলের ধরন সমর্থিত নয়";
 "com.kustomer.Help Article" = "সাহায্য প্রবন্ধ";
 "com.kustomer.Image" = "ছবি";
 "com.kustomer.Incoming chat" = "ইনকামিং চ্যাট";
@@ -56,7 +59,7 @@
 "com.kustomer.No internet connection" = "ইন্টারনেট সংযোগ নেই";
 "com.kustomer.No results" = "কোন ফলাফল নেই";
 "com.kustomer.No text" = "কোন লেখা নেই";
-"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোনো অন্তর্ভুক্ত করা হয়নি";
+"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোন অন্তর্ভুক্ত করা হয়নি";
 "com.kustomer.Not enough disk space" = "পর্যাপ্ত ডিস্ক স্থান নেই";
 "com.kustomer.Not found" = "পাওয়া যায়নি";
 "com.kustomer.Okay" = "ঠিক আছে";
@@ -72,7 +75,7 @@
 "com.kustomer.Report problem" = "সমস্যা রিপোর্ট করুন";
 "com.kustomer.Report sent" = "প্রতিবেদন পাঠানো";
 "com.kustomer.Save changes" = "পরিবর্তনগুলোর সংরক্ষন";
-"com.kustomer.Search Help Articles" = "সাহায্য প্রবন্ধ অনুসন্ধান করুন";
+"com.kustomer.Search Help Articles" = "সাহায্য নিবন্ধ অনুসন্ধান করুন";
 "com.kustomer.Search Results" = "অনুসন্ধান ফলাফল";
 "com.kustomer.Sending" = "পাঠানো হচ্ছে";
 "com.kustomer.Share" = "শেয়ার করুন";

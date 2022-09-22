@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ besig om te tik...";
+"com.kustomer.100+ results found" = "100+ resultate gevind";
 "com.kustomer.Add additional feedback" = "Voeg bykomende terugvoer by";
 "com.kustomer.Additional Feedback" = "Bykomende terugvoer";
 "com.kustomer.Additional feedback removed" = "Bykomende terugvoer is verwyder";
@@ -12,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kan nie klets laai nie";
 "com.kustomer.Cancel" = "Kanselleer";
 "com.kustomer.Cancelled! Tap to retry." = "Gekanselleer! Tik om weer te probeer.";
+"com.kustomer.Categories" = "Kategorieë";
 "com.kustomer.Chat" = "Gesels";
 "com.kustomer.Chat has ended" = "Klets is geëindig";
 "com.kustomer.Chat history" = "Kletsgeskiedenis";
@@ -24,6 +26,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Wil jy jou gradering en terugvoer verwyder?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Wil jy die veranderinge wat jy aan jou opmerking gemaak het stoor?";
 "com.kustomer.Done" = "Klaar";
+"com.kustomer.Edit additional feedback" = "Wysig bykomende terugvoer";
 "com.kustomer.Edit comment" = "Wysig opmerking";
 "com.kustomer.End Chat" = "Beëindig klets";
 "com.kustomer.Ended" = "Geëindig";
@@ -31,6 +34,8 @@
 "com.kustomer.Error!" = "Fout!";
 "com.kustomer.Error. Tap to retry." = "Fout. Tik om weer te probeer.";
 "com.kustomer.FAQ" = "Gereelde vrae";
+"com.kustomer.Featured Articles" = "Uitgestalde artikels";
+"com.kustomer.File type not supported" = "Lêertipe word nie ondersteun nie";
 "com.kustomer.Help Article" = "Hulpartikel";
 "com.kustomer.Image" = "Beeld";
 "com.kustomer.Incoming chat" = "Inkomende klets";
@@ -40,7 +45,7 @@
 "com.kustomer.Leave a message" = "Los &#39;n boodskap";
 "com.kustomer.Leave a message..." = "Los &#39;n boodskap...";
 "com.kustomer.Loading..." = "Laai tans...";
-"com.kustomer.Mark all as read" = "merk als as gelees";
+"com.kustomer.Mark all as read" = "merk alles as gelees";
 "com.kustomer.Me" = "Ek";
 "com.kustomer.Message" = "Boodskap";
 "com.kustomer.Message failed to send" = "Kon nie boodskap stuur nie";
@@ -52,6 +57,7 @@
 "com.kustomer.No articles" = "Geen artikels nie";
 "com.kustomer.No conversations yet" = "Nog geen gesprekke nie";
 "com.kustomer.No internet connection" = "Geen internet konneksie nie";
+"com.kustomer.No results" = "Geen resultate";
 "com.kustomer.No text" = "Geen teks nie";
 "com.kustomer.None of your personal information was included" = "Geen van jou persoonlike inligting is ingesluit nie";
 "com.kustomer.Not enough disk space" = "Nie genoeg skyfspasie nie";
@@ -62,6 +68,7 @@
 "com.kustomer.Photo library" = "Foto biblioteek";
 "com.kustomer.Please leave a message" = "Los asseblief &#39;n boodskap";
 "com.kustomer.Please select an option..." = "Kies asseblief &#39;n opsie...";
+"com.kustomer.Please try another search term" = "Probeer asseblief &#39;n ander soekterm";
 "com.kustomer.Reconnect" = "Herkoppel";
 "com.kustomer.Reconnecting..." = "Herkoppel tans …";
 "com.kustomer.Remove" = "Verwyder";

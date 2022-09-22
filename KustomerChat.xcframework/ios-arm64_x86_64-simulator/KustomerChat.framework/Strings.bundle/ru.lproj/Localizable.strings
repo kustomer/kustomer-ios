@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Не могу загрузить чат";
 "com.kustomer.Cancel" = "Отмена";
 "com.kustomer.Cancelled! Tap to retry." = "Отменено! Нажмите, чтобы повторить попытку.";
+"com.kustomer.Categories" = "Категории";
 "com.kustomer.Chat" = "Чат";
 "com.kustomer.Chat has ended" = "Чат завершен";
 "com.kustomer.Chat history" = "История чата";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Ошибка!";
 "com.kustomer.Error. Tap to retry." = "Ошибка. Нажмите, чтобы повторить попытку.";
 "com.kustomer.FAQ" = "Часто задаваемые вопросы";
+"com.kustomer.Featured Articles" = "Избранные статьи";
+"com.kustomer.File type not supported" = "Тип файла не поддерживается";
 "com.kustomer.Help Article" = "Справочная статья";
 "com.kustomer.Image" = "Изображение";
 "com.kustomer.Incoming chat" = "Входящий чат";
@@ -87,7 +90,7 @@
 "com.kustomer.This conversation is read-only" = "Эта беседа доступна только для чтения";
 "com.kustomer.Try again" = "Попробуйте еще раз";
 "com.kustomer.Type a message..." = "Введите сообщение...";
-"com.kustomer.Unavailable message goes here" = "Здесь будет сообщение о недоступности";
+"com.kustomer.Unavailable message goes here" = "Сообщение о недоступности идет сюда";
 "com.kustomer.Updated" = "Обновлено";
 "com.kustomer.Waiting for a response from" = "Ждем ответа от";
 "com.kustomer.We will get back to you as soon as we are online!" = "Мы свяжемся с вами, как только будем онлайн!";

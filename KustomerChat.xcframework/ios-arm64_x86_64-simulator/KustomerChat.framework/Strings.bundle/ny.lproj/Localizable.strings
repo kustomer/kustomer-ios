@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Sitingathe kutsegula macheza";
 "com.kustomer.Cancel" = "Letsani";
 "com.kustomer.Cancelled! Tap to retry." = "Walepheretsedwa! Dinani kuti muyesenso.";
+"com.kustomer.Categories" = "Magulu";
 "com.kustomer.Chat" = "Chezani";
 "com.kustomer.Chat has ended" = "Macheza atha";
 "com.kustomer.Chat history" = "Mbiri yochezera";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Zolakwika!";
 "com.kustomer.Error. Tap to retry." = "Cholakwika. Dinani kuti muyesenso.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Nkhani Zowonetsedwa";
+"com.kustomer.File type not supported" = "Mtundu wa fayilo sunagwiritsidwe ntchito";
 "com.kustomer.Help Article" = "Nkhani Yothandizira";
 "com.kustomer.Image" = "Chithunzi";
 "com.kustomer.Incoming chat" = "Macheza obwera";

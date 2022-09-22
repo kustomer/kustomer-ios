@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Не може да се вчита разговорот";
 "com.kustomer.Cancel" = "Откажи";
 "com.kustomer.Cancelled! Tap to retry." = "Откажано! Допрете за да се обидете повторно.";
+"com.kustomer.Categories" = "Категории";
 "com.kustomer.Chat" = "Разговор";
 "com.kustomer.Chat has ended" = "Разговорот заврши";
 "com.kustomer.Chat history" = "Историја на разговор";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Грешка!";
 "com.kustomer.Error. Tap to retry." = "Грешка. Допрете за да се обидете повторно.";
 "com.kustomer.FAQ" = "Најчесто поставувани прашања";
+"com.kustomer.Featured Articles" = "Избрани статии";
+"com.kustomer.File type not supported" = "Типот на датотека не е поддржан";
 "com.kustomer.Help Article" = "Член за помош";
 "com.kustomer.Image" = "Слика";
 "com.kustomer.Incoming chat" = "Дојдовен разговор";

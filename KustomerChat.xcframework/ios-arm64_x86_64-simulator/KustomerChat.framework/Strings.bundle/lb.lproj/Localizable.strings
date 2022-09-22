@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Kann de Chat net lueden";
 "com.kustomer.Cancel" = "Ofbriechen";
 "com.kustomer.Cancelled! Tap to retry." = "Annuléiert! Tippen fir erëm ze probéieren.";
+"com.kustomer.Categories" = "Kategorien";
 "com.kustomer.Chat" = "Chat";
 "com.kustomer.Chat has ended" = "Chat ass eriwwer";
 "com.kustomer.Chat history" = "Chat Geschicht";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Feeler!";
 "com.kustomer.Error. Tap to retry." = "Feeler. Tippen fir erëm ze probéieren.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Featured Artikelen";
+"com.kustomer.File type not supported" = "Dateityp net ënnerstëtzt";
 "com.kustomer.Help Article" = "Hëllef Artikel";
 "com.kustomer.Image" = "Bild";
 "com.kustomer.Incoming chat" = "Entréeën Chat";
@@ -52,7 +55,7 @@
 "com.kustomer.New Conversation" = "Neit Gespréich";
 "com.kustomer.New message" = "Neie Message";
 "com.kustomer.No articles" = "Keng Artikelen";
-"com.kustomer.No conversations yet" = "Nach keng Gespréicher";
+"com.kustomer.No conversations yet" = "Keng Gespréicher nach";
 "com.kustomer.No internet connection" = "Keng Internetverbindung";
 "com.kustomer.No results" = "Keng Resultater";
 "com.kustomer.No text" = "Keen Text";

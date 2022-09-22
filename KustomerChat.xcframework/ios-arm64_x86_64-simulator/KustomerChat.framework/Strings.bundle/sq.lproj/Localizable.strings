@@ -13,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Biseda nuk mund të ngarkohet";
 "com.kustomer.Cancel" = "Anulo";
 "com.kustomer.Cancelled! Tap to retry." = "Anuluar! Trokit për të riprovuar.";
+"com.kustomer.Categories" = "Kategoritë";
 "com.kustomer.Chat" = "Bisedë";
 "com.kustomer.Chat has ended" = "Biseda ka përfunduar";
 "com.kustomer.Chat history" = "Historia e bisedës";
@@ -33,6 +34,8 @@
 "com.kustomer.Error!" = "Gabim!";
 "com.kustomer.Error. Tap to retry." = "Gabim. Trokit për të riprovuar.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Artikuj të veçuar";
+"com.kustomer.File type not supported" = "Lloji i skedarit nuk mbështetet";
 "com.kustomer.Help Article" = "Artikull ndihmë";
 "com.kustomer.Image" = "Imazhi";
 "com.kustomer.Incoming chat" = "Biseda në hyrje";
@@ -62,7 +65,7 @@
 "com.kustomer.Okay" = "Mirë";
 "com.kustomer.Open in browser" = "Hapni në shfletues";
 "com.kustomer.Outgoing chat" = "Bisedë në dalje";
-"com.kustomer.Photo library" = "Biblioteka e fotografive";
+"com.kustomer.Photo library" = "Fototekë";
 "com.kustomer.Please leave a message" = "Ju lutem lini një mesazh";
 "com.kustomer.Please select an option..." = "Ju lutemi zgjidhni një opsion...";
 "com.kustomer.Please try another search term" = "Ju lutemi provoni një term tjetër kërkimi";
@@ -92,7 +95,7 @@
 "com.kustomer.Waiting for a response from" = "Në pritje të një përgjigje nga";
 "com.kustomer.We will get back to you as soon as we are online!" = "Ne do të kthehemi tek ju sapo të jemi online!";
 "com.kustomer.Yes" = "po";
-"com.kustomer.You changed your additional feedback comment" = "Ju ndryshuat komentin tuaj të komenteve shtesë";
+"com.kustomer.You changed your additional feedback comment" = "Ju ndryshuat komentin tuaj shtesë të komenteve";
 "com.kustomer.You're offline. Check your connection." = "Je jashtë linje. Kontrolloni lidhjen tuaj.";
 "com.kustomer.Your existing conversations will be here." = "Bisedat tuaja ekzistuese do të jenë këtu.";
 "com.kustomer.is no longer available" = "nuk është më në dispozicion";
