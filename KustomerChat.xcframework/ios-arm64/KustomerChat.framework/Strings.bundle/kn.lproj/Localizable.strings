@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ ಅವರು ಟೈಪ್ ಮಾಡುತ್ತಿದ್ದಾರೆ...";
+"com.kustomer.100+ results found" = "100+ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿವೆ";
 "com.kustomer.Add additional feedback" = "ಹೆಚ್ಚುವರಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸೇರಿಸಿ";
 "com.kustomer.Additional Feedback" = "ಹೆಚ್ಚುವರಿ ಪ್ರತಿಕ್ರಿಯೆ";
 "com.kustomer.Additional feedback removed" = "ಹೆಚ್ಚುವರಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ";
@@ -12,6 +13,7 @@
 "com.kustomer.Can't load chat" = "ಚಾಟ್ ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ";
 "com.kustomer.Cancel" = "ರದ್ದುಮಾಡು";
 "com.kustomer.Cancelled! Tap to retry." = "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ! ಮರುಪ್ರಯತ್ನಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.";
+"com.kustomer.Categories" = "ವರ್ಗಗಳು";
 "com.kustomer.Chat" = "ಚಾಟ್ ಮಾಡಿ";
 "com.kustomer.Chat has ended" = "ಚಾಟ್ ಮುಗಿದಿದೆ";
 "com.kustomer.Chat history" = "ಚಾಟ್ ಇತಿಹಾಸ";
@@ -24,6 +26,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "ನಿಮ್ಮ ರೇಟಿಂಗ್ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ತೆಗೆದುಹಾಕಲು ನೀವು ಬಯಸುವಿರಾ?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "ನಿಮ್ಮ ಕಾಮೆಂಟ್‌ಗೆ ನೀವು ಮಾಡಿದ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?";
 "com.kustomer.Done" = "ಮುಗಿದಿದೆ";
+"com.kustomer.Edit additional feedback" = "ಹೆಚ್ಚುವರಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸಂಪಾದಿಸಿ";
 "com.kustomer.Edit comment" = "ಕಾಮೆಂಟ್ ಸಂಪಾದಿಸಿ";
 "com.kustomer.End Chat" = "ಚಾಟ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸಿ";
 "com.kustomer.Ended" = "ಕೊನೆಗೊಂಡಿತು";
@@ -31,6 +34,8 @@
 "com.kustomer.Error!" = "ದೋಷ!";
 "com.kustomer.Error. Tap to retry." = "ದೋಷ. ಮರುಪ್ರಯತ್ನಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "ವೈಶಿಷ್ಟ್ಯಗೊಳಿಸಿದ ಲೇಖನಗಳು";
+"com.kustomer.File type not supported" = "ಫೈಲ್ ಪ್ರಕಾರವು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ";
 "com.kustomer.Help Article" = "ಸಹಾಯ ಲೇಖನ";
 "com.kustomer.Image" = "ಚಿತ್ರ";
 "com.kustomer.Incoming chat" = "ಒಳಬರುವ ಚಾಟ್";
@@ -52,21 +57,25 @@
 "com.kustomer.No articles" = "ಯಾವುದೇ ಲೇಖನಗಳಿಲ್ಲ";
 "com.kustomer.No conversations yet" = "ಇನ್ನೂ ಯಾವುದೇ ಸಂಭಾಷಣೆಗಳಿಲ್ಲ";
 "com.kustomer.No internet connection" = "ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವಿಲ್ಲ";
+"com.kustomer.No results" = "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ";
 "com.kustomer.No text" = "ಪಠ್ಯವಿಲ್ಲ";
 "com.kustomer.None of your personal information was included" = "ನಿಮ್ಮ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ";
 "com.kustomer.Not enough disk space" = "ಸಾಕಷ್ಟು ಡಿಸ್ಕ್ ಸ್ಥಳವಿಲ್ಲ";
 "com.kustomer.Not found" = "ಸಿಕ್ಕಿಲ್ಲ";
 "com.kustomer.Okay" = "ಸರಿ";
 "com.kustomer.Open in browser" = "ಬ್ರೌಸರ್ ತೆರೆಯಿರಿ";
+"com.kustomer.Optional" = "ಐಚ್ಛಿಕ";
 "com.kustomer.Outgoing chat" = "ಹೊರಹೋಗುವ ಚಾಟ್";
 "com.kustomer.Photo library" = "ಫೋಟೋ ಲೈಬ್ರರಿ";
 "com.kustomer.Please leave a message" = "ದಯವಿಟ್ಟು ಒಂದು ಸಂದೇಶವನ್ನು ಬಿಡಿ";
-"com.kustomer.Please select an option..." = "ದಯವಿಟ್ಟು ಒಂದು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ...";
+"com.kustomer.Please select an option..." = "ದಯವಿಟ್ಟು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ...";
+"com.kustomer.Please try another search term" = "ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ಹುಡುಕಾಟ ಪದವನ್ನು ಪ್ರಯತ್ನಿಸಿ";
 "com.kustomer.Reconnect" = "ಮರುಸಂಪರ್ಕಿಸಿ";
 "com.kustomer.Reconnecting..." = "ಮರುಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ...";
 "com.kustomer.Remove" = "ತೆಗೆದುಹಾಕಿ";
 "com.kustomer.Report problem" = "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ";
 "com.kustomer.Report sent" = "ವರದಿ ಕಳುಹಿಸಲಾಗಿದೆ";
+"com.kustomer.Required" = "ಅಗತ್ಯವಿದೆ";
 "com.kustomer.Save changes" = "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು";
 "com.kustomer.Search Help Articles" = "ಸಹಾಯ ಲೇಖನಗಳನ್ನು ಹುಡುಕಿ";
 "com.kustomer.Search Results" = "ಹುಡುಕಾಟ ಫಲಿತಾಂಶಗಳು";

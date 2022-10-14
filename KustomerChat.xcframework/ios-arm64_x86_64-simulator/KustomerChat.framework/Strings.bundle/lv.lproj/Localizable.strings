@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ raksta...";
+"com.kustomer.100+ results found" = "Atrasti 100+ rezultāti";
 "com.kustomer.Add additional feedback" = "Pievienojiet papildu atsauksmes";
 "com.kustomer.Additional Feedback" = "Papildu atsauksmes";
 "com.kustomer.Additional feedback removed" = "Papildu atsauksmes ir noņemtas";
@@ -12,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Nevar ielādēt tērzēšanu";
 "com.kustomer.Cancel" = "Atcelt";
 "com.kustomer.Cancelled! Tap to retry." = "Atcelts! Pieskarieties, lai mēģinātu vēlreiz.";
+"com.kustomer.Categories" = "Kategorijas";
 "com.kustomer.Chat" = "Tērzēšana";
 "com.kustomer.Chat has ended" = "Tērzēšana ir beigusies";
 "com.kustomer.Chat history" = "Tērzēšanas vēsture";
@@ -24,6 +26,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vai vēlaties noņemt savu vērtējumu un atsauksmes?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vai vēlaties saglabāt komentārā veiktās izmaiņas?";
 "com.kustomer.Done" = "Gatavs";
+"com.kustomer.Edit additional feedback" = "Rediģējiet papildu atsauksmes";
 "com.kustomer.Edit comment" = "Rediģēt komentāru";
 "com.kustomer.End Chat" = "Beigt tērzēšanu";
 "com.kustomer.Ended" = "Beigās";
@@ -31,6 +34,8 @@
 "com.kustomer.Error!" = "Kļūda!";
 "com.kustomer.Error. Tap to retry." = "Kļūda. Pieskarieties, lai mēģinātu vēlreiz.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Piedāvātie raksti";
+"com.kustomer.File type not supported" = "Faila tips netiek atbalstīts";
 "com.kustomer.Help Article" = "Palīdzības raksts";
 "com.kustomer.Image" = "Attēls";
 "com.kustomer.Incoming chat" = "Ienākošā tērzēšana";
@@ -52,21 +57,25 @@
 "com.kustomer.No articles" = "Nav rakstu";
 "com.kustomer.No conversations yet" = "Vēl nav sarunu";
 "com.kustomer.No internet connection" = "Nav interneta savienojuma";
+"com.kustomer.No results" = "Nav rezultātu";
 "com.kustomer.No text" = "Nav teksta";
 "com.kustomer.None of your personal information was included" = "Jūsu personiskā informācija netika iekļauta";
 "com.kustomer.Not enough disk space" = "Nepietiek diska vietas";
 "com.kustomer.Not found" = "Nav atrasts";
 "com.kustomer.Okay" = "Labi";
 "com.kustomer.Open in browser" = "Atvērt pārlūkprogrammā";
+"com.kustomer.Optional" = "Neobligāti";
 "com.kustomer.Outgoing chat" = "Izejošā tērzēšana";
 "com.kustomer.Photo library" = "Fotoattēlu bibliotēka";
 "com.kustomer.Please leave a message" = "Lūdzu, atstājiet ziņu";
 "com.kustomer.Please select an option..." = "Lūdzu, atlasiet opciju...";
+"com.kustomer.Please try another search term" = "Lūdzu, mēģiniet citu meklēšanas vienumu";
 "com.kustomer.Reconnect" = "Atkārtoti izveidojiet savienojumu";
 "com.kustomer.Reconnecting..." = "Notiek savienojuma atjaunošana...";
 "com.kustomer.Remove" = "Noņemt";
 "com.kustomer.Report problem" = "Ziņot par problēmu";
 "com.kustomer.Report sent" = "Pārskats nosūtīts";
+"com.kustomer.Required" = "Obligāti";
 "com.kustomer.Save changes" = "Saglabāt izmaiņas";
 "com.kustomer.Search Help Articles" = "Meklēt palīdzības rakstus";
 "com.kustomer.Search Results" = "Meklēšanas rezultāti";

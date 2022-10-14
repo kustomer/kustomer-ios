@@ -1,4 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ skriver...";
+"com.kustomer.100+ results found" = "100+ resultater fundet";
 "com.kustomer.Add additional feedback" = "Tilføj yderligere feedback";
 "com.kustomer.Additional Feedback" = "Yderligere feedback";
 "com.kustomer.Additional feedback removed" = "Yderligere feedback er fjernet";
@@ -12,6 +13,7 @@
 "com.kustomer.Can't load chat" = "Chatten kan ikke indlæses";
 "com.kustomer.Cancel" = "Afbestille";
 "com.kustomer.Cancelled! Tap to retry." = "Annulleret! Tryk for at prøve igen.";
+"com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Snak";
 "com.kustomer.Chat has ended" = "Chatten er afsluttet";
 "com.kustomer.Chat history" = "Chat historie";
@@ -24,6 +26,7 @@
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vil du fjerne din vurdering og feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vil du gemme de ændringer, du har foretaget i din kommentar?";
 "com.kustomer.Done" = "Færdig";
+"com.kustomer.Edit additional feedback" = "Rediger yderligere feedback";
 "com.kustomer.Edit comment" = "Rediger kommentar";
 "com.kustomer.End Chat" = "Afslut chat";
 "com.kustomer.Ended" = "Afsluttet";
@@ -31,6 +34,8 @@
 "com.kustomer.Error!" = "Fejl!";
 "com.kustomer.Error. Tap to retry." = "Fejl. Tryk for at prøve igen.";
 "com.kustomer.FAQ" = "FAQ";
+"com.kustomer.Featured Articles" = "Udvalgte artikler";
+"com.kustomer.File type not supported" = "Filtype understøttes ikke";
 "com.kustomer.Help Article" = "Hjælpeartikel";
 "com.kustomer.Image" = "Billede";
 "com.kustomer.Incoming chat" = "Indgående chat";
@@ -52,21 +57,25 @@
 "com.kustomer.No articles" = "Ingen artikler";
 "com.kustomer.No conversations yet" = "Ingen samtaler endnu";
 "com.kustomer.No internet connection" = "Ingen internetforbindelse";
+"com.kustomer.No results" = "Ingen resultater";
 "com.kustomer.No text" = "Ingen tekst";
 "com.kustomer.None of your personal information was included" = "Ingen af dine personlige oplysninger var inkluderet";
 "com.kustomer.Not enough disk space" = "Ikke nok diskplads";
 "com.kustomer.Not found" = "Ikke fundet";
 "com.kustomer.Okay" = "okay";
 "com.kustomer.Open in browser" = "Åbn i browser";
+"com.kustomer.Optional" = "Valgfri";
 "com.kustomer.Outgoing chat" = "Udgående chat";
 "com.kustomer.Photo library" = "Fotobibliotek";
 "com.kustomer.Please leave a message" = "Læg venligst en besked";
 "com.kustomer.Please select an option..." = "Vælg venligst en mulighed...";
+"com.kustomer.Please try another search term" = "Prøv venligst et andet søgeord";
 "com.kustomer.Reconnect" = "Tilslut igen";
 "com.kustomer.Reconnecting..." = "Genopretter forbindelse...";
 "com.kustomer.Remove" = "Fjerne";
 "com.kustomer.Report problem" = "Rapporter problem";
 "com.kustomer.Report sent" = "Rapport sendt";
+"com.kustomer.Required" = "Påkrævet";
 "com.kustomer.Save changes" = "Gem ændringer";
 "com.kustomer.Search Help Articles" = "Søg i hjælpeartikler";
 "com.kustomer.Search Results" = "Søgeresultater";
