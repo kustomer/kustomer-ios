@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Не знайдено";
 "com.kustomer.Okay" = "добре";
 "com.kustomer.Open in browser" = "Відкрити в браузері";
+"com.kustomer.Optional" = "Додатково";
 "com.kustomer.Outgoing chat" = "Вихідний чат";
 "com.kustomer.Photo library" = "Бібліотека фотографій";
 "com.kustomer.Please leave a message" = "Будь ласка, залиште повідомлення";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "видалити";
 "com.kustomer.Report problem" = "Повідомити про проблему";
 "com.kustomer.Report sent" = "Звіт надіслано";
+"com.kustomer.Required" = "вимагається";
 "com.kustomer.Save changes" = "Зберегти зміни";
 "com.kustomer.Search Help Articles" = "Пошук у довідкових статтях";
 "com.kustomer.Search Results" = "Результати пошуку";
@@ -97,7 +99,7 @@
 "com.kustomer.Yes" = "Так";
 "com.kustomer.You changed your additional feedback comment" = "Ви змінили коментар додаткового відгуку";
 "com.kustomer.You're offline. Check your connection." = "Ви офлайн. Перевірте підключення.";
-"com.kustomer.Your existing conversations will be here." = "Ваші існуючі розмови будуть тут.";
+"com.kustomer.Your existing conversations will be here." = "Ваші наявні розмови будуть тут.";
 "com.kustomer.is no longer available" = "більше не доступні";
 "com.kustomer.out of" = "з";
 "com.kustomer.sending" = "відправлення";

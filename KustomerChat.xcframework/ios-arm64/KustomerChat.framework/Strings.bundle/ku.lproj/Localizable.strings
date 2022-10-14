@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "Chat niha ne berdest e";
 "com.kustomer.Chat with support" = "Bi piştgirîyê re sohbet bikin";
 "com.kustomer.Conversation ended" = "Sohbet bi dawî bû";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Axaftin di nav danûstendineke din de bû yek.\n\nJi bo ku hûn biçin sohbeta nû, bitikînin.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Axaftin di nav danûstendineke din de bû yek.\n\nJi bo ku hûn biçin danûstandina nû, bitikînin.";
 "com.kustomer.Conversation moved to another customer" = "Axaftina çû ser xerîdarek din";
 "com.kustomer.Delete" = "Jêbirin";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ma hûn dixwazin nirx û nerînên xwe jêbirin?";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Peyda nebû";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Di gerokê de vekin";
+"com.kustomer.Optional" = "Bixwe";
 "com.kustomer.Outgoing chat" = "sohbeta derketinê";
 "com.kustomer.Photo library" = "Pirtûkxaneya wêneyan";
 "com.kustomer.Please leave a message" = "Ji kerema xwe peyamek bihêle";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Dûrxistin";
 "com.kustomer.Report problem" = "Pirsgirêka rapor bikin";
 "com.kustomer.Report sent" = "Rapor şandin";
+"com.kustomer.Required" = "Required";
 "com.kustomer.Save changes" = "Guherandinên tomar bike";
 "com.kustomer.Search Help Articles" = "Gotarên Alîkariyê Bigerin";
 "com.kustomer.Search Results" = "Encamên Lêgerînê";

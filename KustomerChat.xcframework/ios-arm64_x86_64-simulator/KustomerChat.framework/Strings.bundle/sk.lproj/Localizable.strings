@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Nenájdené";
 "com.kustomer.Okay" = "Dobre";
 "com.kustomer.Open in browser" = "Otvoriť v prehliadači";
+"com.kustomer.Optional" = "Voliteľné";
 "com.kustomer.Outgoing chat" = "Odchádzajúci chat";
 "com.kustomer.Photo library" = "Knižnica fotografií";
 "com.kustomer.Please leave a message" = "Zanechajte prosím správu";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Odstrániť";
 "com.kustomer.Report problem" = "Nahlásiť problém";
 "com.kustomer.Report sent" = "Správa bola odoslaná";
+"com.kustomer.Required" = "Požadovaný";
 "com.kustomer.Save changes" = "Uložiť zmeny";
 "com.kustomer.Search Help Articles" = "Hľadať články pomocníka";
 "com.kustomer.Search Results" = "Výsledky vyhľadávania";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Hittades inte";
 "com.kustomer.Okay" = "Okej";
 "com.kustomer.Open in browser" = "Öppna i webbläsaren";
+"com.kustomer.Optional" = "Frivillig";
 "com.kustomer.Outgoing chat" = "Utgående chatt";
 "com.kustomer.Photo library" = "Fotobibliotek";
 "com.kustomer.Please leave a message" = "Snälla lämna ett medelande";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Ta bort";
 "com.kustomer.Report problem" = "Rapportera problem";
 "com.kustomer.Report sent" = "Rapport skickad";
+"com.kustomer.Required" = "Nödvändig";
 "com.kustomer.Save changes" = "Spara ändringar";
 "com.kustomer.Search Help Articles" = "Sök hjälpartiklar";
 "com.kustomer.Search Results" = "sökresultat";

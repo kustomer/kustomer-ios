@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "አልተገኘም";
 "com.kustomer.Okay" = "እሺ";
 "com.kustomer.Open in browser" = "በአሳሽ ውስጥ ክፈት";
+"com.kustomer.Optional" = "አማራጭ";
 "com.kustomer.Outgoing chat" = "ወጪ ውይይት";
 "com.kustomer.Photo library" = "የፎቶ ቤተ-መጽሐፍት";
 "com.kustomer.Please leave a message" = "እባክህ መልእክት ተው";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "አስወግድ";
 "com.kustomer.Report problem" = "ችግር ሪፖርት አድርግ";
 "com.kustomer.Report sent" = "ሪፖርት ተልኳል።";
+"com.kustomer.Required" = "ያስፈልጋል";
 "com.kustomer.Save changes" = "ለውጦችን አስቀምጥ";
 "com.kustomer.Search Help Articles" = "የእገዛ ጽሑፎችን ይፈልጉ";
 "com.kustomer.Search Results" = "የፍለጋ ውጤቶች";

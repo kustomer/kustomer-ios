@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ko ri";
 "com.kustomer.Okay" = "O dara";
 "com.kustomer.Open in browser" = "Ṣii ni ẹrọ aṣawakiri";
+"com.kustomer.Optional" = "iyan";
 "com.kustomer.Outgoing chat" = "Iwiregbe ti njade";
 "com.kustomer.Photo library" = "Fọto ìkàwé";
 "com.kustomer.Please leave a message" = "Jọwọ fi ifiranṣẹ kan silẹ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Yọ kuro";
 "com.kustomer.Report problem" = "Iṣoro jabo";
 "com.kustomer.Report sent" = "Iroyin rán";
+"com.kustomer.Required" = "Ti beere fun";
 "com.kustomer.Save changes" = "Fi awọn ayipada pamọ";
 "com.kustomer.Search Help Articles" = "Wa Awọn nkan Iranlọwọ";
 "com.kustomer.Search Results" = "Awọn abajade wiwa";

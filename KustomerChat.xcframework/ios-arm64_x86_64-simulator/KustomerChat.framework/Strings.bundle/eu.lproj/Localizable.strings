@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ez da aurkitu";
 "com.kustomer.Okay" = "ados";
 "com.kustomer.Open in browser" = "Ireki arakatzailean";
+"com.kustomer.Optional" = "Aukerakoa";
 "com.kustomer.Outgoing chat" = "Irteerako txata";
 "com.kustomer.Photo library" = "Fototeka";
 "com.kustomer.Please leave a message" = "Mesedez, utzi mezu bat";
@@ -73,7 +74,8 @@
 "com.kustomer.Reconnecting..." = "Berriro konektatzen...";
 "com.kustomer.Remove" = "Kendu";
 "com.kustomer.Report problem" = "Salatu arazoa";
-"com.kustomer.Report sent" = "Bidalitako txostena";
+"com.kustomer.Report sent" = "Txostena bidali da";
+"com.kustomer.Required" = "Beharrezkoa";
 "com.kustomer.Save changes" = "Aldaketak gorde";
 "com.kustomer.Search Help Articles" = "Bilatu laguntza-artikuluak";
 "com.kustomer.Search Results" = "Bilaketa-emaitzak";

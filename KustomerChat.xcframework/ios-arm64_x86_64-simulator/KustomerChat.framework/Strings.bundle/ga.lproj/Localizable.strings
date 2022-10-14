@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ní bhfuarthas";
 "com.kustomer.Okay" = "ceart go leor";
 "com.kustomer.Open in browser" = "Oscail sa bhrabhsálaí";
+"com.kustomer.Optional" = "Roghnach";
 "com.kustomer.Outgoing chat" = "Comhrá ag dul as oifig";
 "com.kustomer.Photo library" = "Leabharlann grianghraf";
 "com.kustomer.Please leave a message" = "Fág teachtaireacht le do thoil";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Bain";
 "com.kustomer.Report problem" = "Tuairiscigh fadhb";
 "com.kustomer.Report sent" = "Tuairisc seolta";
+"com.kustomer.Required" = "Ag teastáil";
 "com.kustomer.Save changes" = "Sabháil na hathruithe";
 "com.kustomer.Search Help Articles" = "Cuardaigh Airteagail Cabhair";
 "com.kustomer.Search Results" = "Torthaí Cuardaigh";

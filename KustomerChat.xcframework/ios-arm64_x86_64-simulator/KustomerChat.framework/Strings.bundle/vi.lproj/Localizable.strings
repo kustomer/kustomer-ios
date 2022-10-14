@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Không tìm thấy";
 "com.kustomer.Okay" = "Được chứ";
 "com.kustomer.Open in browser" = "Mở trong trình duyệt";
+"com.kustomer.Optional" = "Không bắt buộc";
 "com.kustomer.Outgoing chat" = "Trò chuyện đi";
 "com.kustomer.Photo library" = "thư viện ảnh";
 "com.kustomer.Please leave a message" = "Vui lòng để lại lời nhắn";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Loại bỏ";
 "com.kustomer.Report problem" = "Báo cáo sự cố";
 "com.kustomer.Report sent" = "Đã gửi báo cáo";
+"com.kustomer.Required" = "Yêu cầu";
 "com.kustomer.Save changes" = "Lưu thay đổi";
 "com.kustomer.Search Help Articles" = "Tìm kiếm bài viết trợ giúp";
 "com.kustomer.Search Results" = "kết quả tìm kiếm";
@@ -87,7 +89,7 @@
 "com.kustomer.Thanks for your feedback" = "Cảm ơn phản hồi của bạn";
 "com.kustomer.That article" = "Bài báo đó";
 "com.kustomer.There was a problem" = "Có một vấn đề";
-"com.kustomer.This conversation is read-only" = "Cuộc trò chuyện này ở chế độ chỉ đọc";
+"com.kustomer.This conversation is read-only" = "Cuộc hội thoại này ở chế độ chỉ đọc";
 "com.kustomer.Try again" = "Thử lại";
 "com.kustomer.Type a message..." = "Gõ một tin nhắn...";
 "com.kustomer.Unavailable message goes here" = "Tin nhắn không khả dụng ở đây";

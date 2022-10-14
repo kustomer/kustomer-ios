@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Табылмады";
 "com.kustomer.Okay" = "Ярар";
 "com.kustomer.Open in browser" = "Браузерда ачу";
+"com.kustomer.Optional" = "Ихтимал";
 "com.kustomer.Outgoing chat" = "Чат";
 "com.kustomer.Photo library" = "Фото китапханәсе";
 "com.kustomer.Please leave a message" = "Зинһар, хәбәр калдырыгыз";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Чыгар";
 "com.kustomer.Report problem" = "Хәбәр итү проблемасы";
 "com.kustomer.Report sent" = "Доклад җибәрелде";
+"com.kustomer.Required" = "Кирәк";
 "com.kustomer.Save changes" = "Changesзгәрешләрне саклагыз";
 "com.kustomer.Search Help Articles" = "Ярдәм мәкаләләрен эзләү";
 "com.kustomer.Search Results" = "Эзләү нәтиҗәләре";
@@ -92,7 +94,7 @@
 "com.kustomer.Type a message..." = "Хәбәр языгыз ...";
 "com.kustomer.Unavailable message goes here" = "Мөмкин булмаган хәбәр монда бара";
 "com.kustomer.Updated" = "Яңартылды";
-"com.kustomer.Waiting for a response from" = "Fromавап көтә";
+"com.kustomer.Waiting for a response from" = "Fromавап көтеп";
 "com.kustomer.We will get back to you as soon as we are online!" = "Онлайнда булгач, без сезгә кире кайтачакбыз!";
 "com.kustomer.Yes" = "Әйе";
 "com.kustomer.You changed your additional feedback comment" = "Сез өстәмә җавапны үзгәрттегез";

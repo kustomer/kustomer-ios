@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Tsis pom";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Qhib hauv browser";
+"com.kustomer.Optional" = "xaiv tau";
 "com.kustomer.Outgoing chat" = "Tham tawm";
 "com.kustomer.Photo library" = "Cov tsev qiv ntawv duab";
 "com.kustomer.Please leave a message" = "Thov tso ib zaj lus";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Tshem tawm";
 "com.kustomer.Report problem" = "Qhia teeb meem";
 "com.kustomer.Report sent" = "Qhia xa tuaj";
+"com.kustomer.Required" = "Yuav tsum tau";
 "com.kustomer.Save changes" = "Txuag kev hloov";
 "com.kustomer.Search Help Articles" = "Nrhiav Kev Pab Cuam";
 "com.kustomer.Search Results" = "Tshawb nrhiav";

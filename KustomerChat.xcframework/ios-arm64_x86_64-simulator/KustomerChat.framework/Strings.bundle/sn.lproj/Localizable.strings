@@ -24,7 +24,7 @@
 "com.kustomer.Conversation moved to another customer" = "Nhaurirano yakaendeswa kune mumwe mutengi";
 "com.kustomer.Delete" = "Delete";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Iwe unoda kubvisa chiyero chako uye mhinduro?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko yawakaita kune yako mhinduro?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko dzawakaita kune yako mhinduro?";
 "com.kustomer.Done" = "Ndapedza";
 "com.kustomer.Edit additional feedback" = "Rongedza imwe mhinduro";
 "com.kustomer.Edit comment" = "Rongedza mhinduro";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Kusawanikwa";
 "com.kustomer.Okay" = "Zvakanaka";
 "com.kustomer.Open in browser" = "Vhura mubrowser";
+"com.kustomer.Optional" = "Optional";
 "com.kustomer.Outgoing chat" = "Inobuda hurukuro";
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Ndapota siyai meseji";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Bvisa";
 "com.kustomer.Report problem" = "Mhan&#39;ara dambudziko";
 "com.kustomer.Report sent" = "Mharidzo yakatumirwa";
+"com.kustomer.Required" = "Zvinodiwa";
 "com.kustomer.Save changes" = "Sevha shanduko";
 "com.kustomer.Search Help Articles" = "Tsvaga Zvinyorwa Zvekubatsira";
 "com.kustomer.Search Results" = "Search Results";

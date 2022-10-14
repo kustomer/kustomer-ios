@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ei löydetty";
 "com.kustomer.Okay" = "Okei";
 "com.kustomer.Open in browser" = "Avaa selaimessa";
+"com.kustomer.Optional" = "Valinnainen";
 "com.kustomer.Outgoing chat" = "Lähtevä chat";
 "com.kustomer.Photo library" = "Valokuvakirjasto";
 "com.kustomer.Please leave a message" = "Jätä viesti";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Poista";
 "com.kustomer.Report problem" = "Ilmoita ongelmasta";
 "com.kustomer.Report sent" = "Raportti lähetetty";
+"com.kustomer.Required" = "Vaaditaan";
 "com.kustomer.Save changes" = "Tallenna muutokset";
 "com.kustomer.Search Help Articles" = "Hae ohjeartikkeleista";
 "com.kustomer.Search Results" = "Hakutulokset";

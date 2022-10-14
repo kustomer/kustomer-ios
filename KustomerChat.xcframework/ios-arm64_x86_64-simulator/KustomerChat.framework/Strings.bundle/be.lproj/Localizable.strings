@@ -46,7 +46,7 @@
 "com.kustomer.Leave a message..." = "Пакінь паведамленне...";
 "com.kustomer.Loading..." = "Загрузка...";
 "com.kustomer.Mark all as read" = "Пазначыць усё як прачытанае";
-"com.kustomer.Me" = "Я";
+"com.kustomer.Me" = "я";
 "com.kustomer.Message" = "паведамленне";
 "com.kustomer.Message failed to send" = "Не атрымалася адправіць паведамленне";
 "com.kustomer.Message failed to send!" = "Не атрымалася адправіць паведамленне!";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Не знойдзена";
 "com.kustomer.Okay" = "Добра";
 "com.kustomer.Open in browser" = "Адкрыць у браўзэры";
+"com.kustomer.Optional" = "Дадаткова";
 "com.kustomer.Outgoing chat" = "Выходны чат";
 "com.kustomer.Photo library" = "Бібліятэка фатаграфій";
 "com.kustomer.Please leave a message" = "Калі ласка, пакіньце паведамленне";
@@ -74,11 +75,12 @@
 "com.kustomer.Remove" = "Зняць";
 "com.kustomer.Report problem" = "Паведаміць аб праблеме";
 "com.kustomer.Report sent" = "Справаздача адпраўлена";
+"com.kustomer.Required" = "абавязковы";
 "com.kustomer.Save changes" = "Захаваць змены";
 "com.kustomer.Search Help Articles" = "Пошук па артыкулах даведкі";
 "com.kustomer.Search Results" = "Вынікі пошуку";
 "com.kustomer.Sending" = "Адпраўка";
-"com.kustomer.Share" = "падзяліцца";
+"com.kustomer.Share" = "Падзяліцеся";
 "com.kustomer.Submit" = "Падаць";
 "com.kustomer.Survey" = "Апытанне";
 "com.kustomer.Take photo" = "Сфатаграфаваць";

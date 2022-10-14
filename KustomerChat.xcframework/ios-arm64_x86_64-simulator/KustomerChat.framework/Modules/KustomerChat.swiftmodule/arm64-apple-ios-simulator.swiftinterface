@@ -6,6 +6,7 @@ import CommonCrypto
 import CoreGraphics
 import CoreImage
 import Dispatch
+import Down
 import Foundation
 @_exported import KustomerChat
 import MobileCoreServices
@@ -264,6 +265,9 @@ public enum KustomerAssetLanguage : Swift.String {
   public func notificationIsFromKustomer(threadIdentifier: Swift.String?) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
+}
+public struct KustomerPush : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct KnowledgeBaseProvider {
   public func getRootCategory(lang: Swift.String, knowledgeBaseID: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseCategory>)
@@ -702,7 +706,7 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func customerExists() -> Swift.Bool
   public func getChatSettings() -> KustomerChat.KUSChatSettings
   public func isChatAvailable() -> Swift.Bool?
-  public func createConversation(firstCustomerMessage text: Swift.String? = nil, title: Swift.String? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, action: KustomerChat.KUSMessageAction? = nil, mllNode: KustomerChat.KUSMLLNode? = nil, image: UIKit.UIImage? = nil, fileURL: Foundation.URL? = nil, overrideAssistantId: Swift.String? = nil, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer?), KustomerChat.KError>) -> Swift.Void))
+  public func createConversation(firstCustomerMessage text: Swift.String? = nil, title: Swift.String? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, action: KustomerChat.KUSMessageAction? = nil, mllNode: KustomerChat.KUSMLLNode? = nil, image: UIKit.UIImage? = nil, fileURL: Foundation.URL? = nil, overrideAssistantId: Swift.String? = nil, initialMessages: [KustomerChat.KUSInitialMessage]? = nil, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer?), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(action: KustomerChat.KUSMessageAction, conversationId: Swift.String, additionalParams: [Swift.String : Any]? = nil, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
   public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, conversationId: Swift.String, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
@@ -747,7 +751,6 @@ public class KustomerOptions {
   public var enableUI: Swift.Bool
   public var showInAppNotifications: Swift.Bool
   public var language: KustomerChat.KustomerLanguage?
-  public var debugMode: Swift.Bool
   @available(*, deprecated, message: "Pass a reference to the presenting view controller in the appropiate Kustomer API")
   public var hostViewController: UIKit.UIViewController?
   public var activeAssistant: KustomerChat.ActiveAssistantOptions
@@ -809,55 +812,6 @@ public struct LastResponder : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public protocol CharacterStyling {
-  func isEqualTo(_ other: KustomerChat.CharacterStyling) -> Swift.Bool
-}
-public enum TokenType {
-  case repeatingTag
-  case openTag
-  case intermediateTag
-  case closeTag
-  case string
-  case escape
-  case replacement
-  public static func == (a: KustomerChat.TokenType, b: KustomerChat.TokenType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct Token {
-  public let id: Swift.String
-  public let type: KustomerChat.TokenType
-  public let inputString: Swift.String
-  public var metadataStrings: [Swift.String]
-  public var group: Swift.Int {
-    get
-  }
-  public var characterStyles: [KustomerChat.CharacterStyling] {
-    get
-  }
-  public var count: Swift.Int {
-    get
-  }
-  public var shouldSkip: Swift.Bool {
-    get
-  }
-  public var tokenIndex: Swift.Int {
-    get
-  }
-  public var isProcessed: Swift.Bool {
-    get
-  }
-  public var isMetadata: Swift.Bool {
-    get
-  }
-  public var children: [KustomerChat.Token]
-  public var outputString: Swift.String {
-    get
-  }
-  public init(type: KustomerChat.TokenType, inputString: Swift.String, characterStyles: [KustomerChat.CharacterStyling] = [])
-}
 public protocol DataCoordinatorCreator {
   associatedtype Value
   static func make(value: Self.Value) -> KustomerChat.Coordinator
@@ -899,63 +853,6 @@ extension KustomerChat.KUSKBItemBase {
     get
   }
   @objc deinit
-}
-public enum SpaceAllowed {
-  case no
-  case bothSides
-  case oneSide
-  case leadingSide
-  case trailingSide
-  public static func == (a: KustomerChat.SpaceAllowed, b: KustomerChat.SpaceAllowed) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum Cancel {
-  case none
-  case allRemaining
-  case currentSet
-  public static func == (a: KustomerChat.Cancel, b: KustomerChat.Cancel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum CharacterRuleTagType {
-  case open
-  case close
-  case metadataOpen
-  case metadataClose
-  case repeating
-  public static func == (a: KustomerChat.CharacterRuleTagType, b: KustomerChat.CharacterRuleTagType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct CharacterRuleTag {
-  public init(tag: Swift.String, type: KustomerChat.CharacterRuleTagType)
-}
-public struct CharacterRule : Swift.CustomStringConvertible {
-  public let primaryTag: KustomerChat.CharacterRuleTag
-  public let tags: [KustomerChat.CharacterRuleTag]
-  public let escapeCharacters: [Swift.Character]
-  public let styles: [Swift.Int : KustomerChat.CharacterStyling]
-  public let minTags: Swift.Int
-  public let maxTags: Swift.Int
-  public var metadataLookup: Swift.Bool
-  public var isRepeatingTag: Swift.Bool {
-    get
-  }
-  public var definesBoundary: Swift.Bool
-  public var shouldCancelRemainingRules: Swift.Bool
-  public var balancedTags: Swift.Bool
-  public var description: Swift.String {
-    get
-  }
-  public func tag(for type: KustomerChat.CharacterRuleTagType) -> KustomerChat.CharacterRuleTag?
-  public init(primaryTag: KustomerChat.CharacterRuleTag, otherTags: [KustomerChat.CharacterRuleTag], escapeCharacters: [Swift.Character] = ["\\"], styles: [Swift.Int : KustomerChat.CharacterStyling] = [:], minTags: Swift.Int = 1, maxTags: Swift.Int = 1, metadataLookup: Swift.Bool = false, definesBoundary: Swift.Bool = false, shouldCancelRemainingRules: Swift.Bool = false, balancedTags: Swift.Bool = false)
 }
 public struct KnowledgeBaseSurvey : Swift.Decodable {
   public let suggestedReasons: [KustomerChat.KnowledgeBaseSurveySuggestedReason]
@@ -1139,8 +1036,18 @@ public protocol KUSMessageAction {
   var value: Swift.String { get }
 }
 public struct KUSButtonMessageAction : KustomerChat.KUSMessageAction, Swift.Decodable {
+  public enum ValueType : Swift.String, Swift.Decodable {
+    case text
+    case emoji
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   public var displayText: Swift.String
   public var value: Swift.String
+  public var valueType: KustomerChat.KUSButtonMessageAction.ValueType
   public init(from decoder: Swift.Decoder) throws
 }
 public struct KUSObjectMessageAction : KustomerChat.KUSMessageAction, Swift.Decodable {
@@ -1214,18 +1121,6 @@ public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
   }
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
-}
-@_hasMissingDesignatedInitializers final public class KBProvider {
-  public static let shared: KustomerChat.KBProvider
-  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getRootCategory")
-  final public func getEntriesForRoot(completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
-  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.searchArticles")
-  final public func getEntries(parentCategoryId: Swift.String?, search: Swift.String? = nil, completion: @escaping ((Swift.Result<[KustomerChat.KUSKBItemBase], KustomerChat.KError>) -> Swift.Void))
-  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getCategory")
-  final public func getCategory(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBCategory, KustomerChat.KError>) -> Swift.Void))
-  @available(*, deprecated, message: "Please use KustomerClient.shared.kbProvider.getArticle")
-  final public func getArticle(id: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSKBArticle, KustomerChat.KError>) -> Swift.Void))
-  @objc deinit
 }
 public enum KUSChatMessageDirection : Swift.String, Swift.Decodable {
   case inbound
@@ -1446,6 +1341,7 @@ public enum KUSMessageTemplateType : Swift.String, Swift.Decodable {
   case deflection
   case text
   case list
+  case feedback
   case none
   public static func fromString(_ s: Swift.String?) -> KustomerChat.KUSMessageTemplateType
   public init?(rawValue: Swift.String)
@@ -1462,56 +1358,6 @@ public enum PresenceType {
   public var hashValue: Swift.Int {
     get
   }
-}
-public protocol LineStyling {
-  var shouldTokeniseLine: Swift.Bool { get }
-  func styleIfFoundStyleAffectsPreviousLine() -> KustomerChat.LineStyling?
-}
-public struct SwiftyLine : Swift.CustomStringConvertible {
-  public let line: Swift.String
-  public let lineStyle: KustomerChat.LineStyling
-  public var description: Swift.String {
-    get
-  }
-}
-extension KustomerChat.SwiftyLine : Swift.Equatable {
-  public static func == (lhs: KustomerChat.SwiftyLine, rhs: KustomerChat.SwiftyLine) -> Swift.Bool
-}
-public enum Remove {
-  case leading
-  case trailing
-  case both
-  case entireLine
-  case none
-  public static func == (a: KustomerChat.Remove, b: KustomerChat.Remove) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum ChangeApplication {
-  case current
-  case previous
-  case untilClose
-  public static func == (a: KustomerChat.ChangeApplication, b: KustomerChat.ChangeApplication) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct FrontMatterRule {
-}
-public struct LineRule {
-  public init(token: Swift.String, type: KustomerChat.LineStyling, removeFrom: KustomerChat.Remove = .leading, shouldTrim: Swift.Bool = true, changeAppliesTo: KustomerChat.ChangeApplication = .current)
-}
-public class SwiftyLineProcessor {
-  public var processEmptyStrings: KustomerChat.LineStyling?
-  public var frontMatterAttributes: [Swift.String : Swift.String] {
-    get
-  }
-  public init(rules: [KustomerChat.LineRule], defaultRule: KustomerChat.LineStyling, frontMatterRules: [KustomerChat.FrontMatterRule] = [])
-  public func process(_ string: Swift.String) -> [KustomerChat.SwiftyLine]
-  @objc deinit
 }
 public enum KError : Swift.Error {
   case named(Swift.String)
@@ -1606,103 +1452,6 @@ public enum KUSConversationStatus {
   public var hashValue: Swift.Int {
     get
   }
-}
-public enum CharacterStyle : KustomerChat.CharacterStyling {
-  case none
-  case bold
-  case italic
-  case code
-  case link
-  case image
-  case referencedLink
-  case referencedImage
-  case strikethrough
-  public func isEqualTo(_ other: KustomerChat.CharacterStyling) -> Swift.Bool
-  public static func == (a: KustomerChat.CharacterStyle, b: KustomerChat.CharacterStyle) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc public enum FontStyle : Swift.Int {
-  case normal
-  case bold
-  case italic
-  case boldItalic
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public protocol FontProperties {
-  @objc var fontName: Swift.String? { get set }
-  @objc var color: UIKit.UIColor { get set }
-  @objc var fontSize: CoreGraphics.CGFloat { get set }
-  @objc var fontStyle: KustomerChat.FontStyle { get set }
-}
-@objc public protocol LineProperties {
-  @objc var alignment: UIKit.NSTextAlignment { get set }
-  @objc var lineSpacing: CoreGraphics.CGFloat { get set }
-  @objc var paragraphSpacing: CoreGraphics.CGFloat { get set }
-}
-@_inheritsConvenienceInitializers @objc open class BasicStyles : ObjectiveC.NSObject, KustomerChat.FontProperties {
-  @objc public var fontName: Swift.String?
-  @objc public var color: UIKit.UIColor
-  @objc public var fontSize: CoreGraphics.CGFloat
-  @objc public var fontStyle: KustomerChat.FontStyle
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class LineStyles : ObjectiveC.NSObject, KustomerChat.FontProperties, KustomerChat.LineProperties {
-  @objc public var fontName: Swift.String?
-  @objc public var color: UIKit.UIColor
-  @objc public var fontSize: CoreGraphics.CGFloat
-  @objc public var fontStyle: KustomerChat.FontStyle
-  @objc public var alignment: UIKit.NSTextAlignment
-  @objc public var lineSpacing: CoreGraphics.CGFloat
-  @objc public var paragraphSpacing: CoreGraphics.CGFloat
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc open class LinkStyles : KustomerChat.BasicStyles {
-  public var underlineStyle: UIKit.NSUnderlineStyle
-  public var underlineColor: UIKit.UIColor {
-    get
-    set
-  }
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc open class SwiftyMarkdown : ObjectiveC.NSObject {
-  public static var frontMatterRules: [KustomerChat.FrontMatterRule]
-  public static var lineRules: [KustomerChat.LineRule]
-  public static var characterRules: [KustomerChat.CharacterRule]
-  open var h1: KustomerChat.LineStyles
-  open var h2: KustomerChat.LineStyles
-  open var h3: KustomerChat.LineStyles
-  open var h4: KustomerChat.LineStyles
-  open var h5: KustomerChat.LineStyles
-  open var h6: KustomerChat.LineStyles
-  open var body: KustomerChat.LineStyles
-  open var blockquotes: KustomerChat.LineStyles
-  open var link: KustomerChat.LinkStyles
-  open var bold: KustomerChat.BasicStyles
-  open var italic: KustomerChat.BasicStyles
-  open var code: KustomerChat.BasicStyles
-  open var strikethrough: KustomerChat.BasicStyles
-  public var bullet: Swift.String
-  public var underlineLinks: Swift.Bool
-  public var frontMatterAttributes: [Swift.String : Swift.String] {
-    get
-  }
-  public init(string: Swift.String)
-  public init?(url: Foundation.URL)
-  open func setFontSizeForAllStyles(with size: CoreGraphics.CGFloat)
-  open func setFontColorForAllStyles(with color: UIKit.UIColor)
-  open func setFontNameForAllStyles(with name: Swift.String)
-  open func attributedString(from markdownString: Swift.String? = nil) -> Foundation.NSAttributedString
-  @objc deinit
 }
 public enum NetworkError : Swift.Error, Foundation.LocalizedError {
   case failed(Swift.Error?)
@@ -1918,6 +1667,7 @@ public typealias KUSCustomDescribe = [Swift.String : Swift.String]
   final public func start()
   final public func start(completion: @escaping (() -> Swift.Void))
   final public func start(failure: @escaping ((Swift.Error) -> Swift.Void))
+  @available(*, deprecated, message: "It is now reccomended to have your application receive push notifications and pass them to the Kustomer SDK as needed. See https://developer.kustomer.com/chat-sdk/v2-iOS/docs/push-notifications#implement-kustomer-sdk-as-secondary-handler for more information")
   final public var unUserNotificationCenterDelegate: UserNotifications.UNUserNotificationCenterDelegate? {
     get
     set
@@ -2155,21 +1905,16 @@ extension KustomerChat.KnowledgeBaseDomain {
     public init(rawValue: Swift.String)
   }
 }
-public class SwiftyTokeniser {
-  public var metadataLookup: [Swift.String : Swift.String]
-  public init(with rules: [KustomerChat.CharacterRule])
-  @objc deinit
-  public func process(_ inputString: Swift.String) -> [KustomerChat.Token]
-}
-public struct KUSInitialMessage {
+public struct KUSInitialMessage : Swift.Encodable {
   public init(body: Swift.String, direction: KustomerChat.KUSInitialMessageDirection)
+  public func encode(to encoder: Swift.Encoder) throws
 }
-public enum KUSInitialMessageDirection {
+public enum KUSInitialMessageDirection : Swift.String, Swift.Encodable {
   case agent
   case user
-  public static func == (a: KustomerChat.KUSInitialMessageDirection, b: KustomerChat.KUSInitialMessageDirection) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -2193,17 +1938,12 @@ extension KustomerChat.KUSKBDeflectResultType : Swift.RawRepresentable {}
 extension KustomerChat.KUSSentByType : Swift.Equatable {}
 extension KustomerChat.KUSSentByType : Swift.Hashable {}
 extension KustomerChat.KUSSentByType : Swift.RawRepresentable {}
-extension KustomerChat.TokenType : Swift.Equatable {}
-extension KustomerChat.TokenType : Swift.Hashable {}
-extension KustomerChat.SpaceAllowed : Swift.Equatable {}
-extension KustomerChat.SpaceAllowed : Swift.Hashable {}
-extension KustomerChat.Cancel : Swift.Equatable {}
-extension KustomerChat.Cancel : Swift.Hashable {}
-extension KustomerChat.CharacterRuleTagType : Swift.Equatable {}
-extension KustomerChat.CharacterRuleTagType : Swift.Hashable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Equatable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Hashable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.RawRepresentable {}
+extension KustomerChat.KUSButtonMessageAction.ValueType : Swift.Equatable {}
+extension KustomerChat.KUSButtonMessageAction.ValueType : Swift.Hashable {}
+extension KustomerChat.KUSButtonMessageAction.ValueType : Swift.RawRepresentable {}
 extension KustomerChat.KUSCSATStatus : Swift.Equatable {}
 extension KustomerChat.KUSCSATStatus : Swift.Hashable {}
 extension KustomerChat.KUSCSATStatus : Swift.RawRepresentable {}
@@ -2233,19 +1973,10 @@ extension KustomerChat.KUSMessageTemplateType : Swift.Hashable {}
 extension KustomerChat.KUSMessageTemplateType : Swift.RawRepresentable {}
 extension KustomerChat.PresenceType : Swift.Equatable {}
 extension KustomerChat.PresenceType : Swift.Hashable {}
-extension KustomerChat.Remove : Swift.Equatable {}
-extension KustomerChat.Remove : Swift.Hashable {}
-extension KustomerChat.ChangeApplication : Swift.Equatable {}
-extension KustomerChat.ChangeApplication : Swift.Hashable {}
 extension KustomerChat.KustomerDisplayMode : Swift.Equatable {}
 extension KustomerChat.KustomerDisplayMode : Swift.Hashable {}
 extension KustomerChat.KUSConversationStatus : Swift.Equatable {}
 extension KustomerChat.KUSConversationStatus : Swift.Hashable {}
-extension KustomerChat.CharacterStyle : Swift.Equatable {}
-extension KustomerChat.CharacterStyle : Swift.Hashable {}
-extension KustomerChat.FontStyle : Swift.Equatable {}
-extension KustomerChat.FontStyle : Swift.Hashable {}
-extension KustomerChat.FontStyle : Swift.RawRepresentable {}
 extension KustomerChat.KustomerLogType : Swift.Equatable {}
 extension KustomerChat.KustomerLogType : Swift.Hashable {}
 extension KustomerChat.KustomerLogType : Swift.RawRepresentable {}
@@ -2257,3 +1988,4 @@ extension KustomerChat.KBSurveyRating : Swift.Hashable {}
 extension KustomerChat.KBSurveyRating : Swift.RawRepresentable {}
 extension KustomerChat.KUSInitialMessageDirection : Swift.Equatable {}
 extension KustomerChat.KUSInitialMessageDirection : Swift.Hashable {}
+extension KustomerChat.KUSInitialMessageDirection : Swift.RawRepresentable {}

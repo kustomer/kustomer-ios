@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Не найден";
 "com.kustomer.Okay" = "Хорошо";
 "com.kustomer.Open in browser" = "Открыть в браузере";
+"com.kustomer.Optional" = "По желанию";
 "com.kustomer.Outgoing chat" = "Исходящий чат";
 "com.kustomer.Photo library" = "Библиотека фотографий";
 "com.kustomer.Please leave a message" = "Пожалуйста, оставьте сообщение";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Удалять";
 "com.kustomer.Report problem" = "Отчет о проблемах";
 "com.kustomer.Report sent" = "отчет отправлен";
+"com.kustomer.Required" = "Необходимый";
 "com.kustomer.Save changes" = "Сохранить изменения";
 "com.kustomer.Search Help Articles" = "Поиск справочных статей";
 "com.kustomer.Search Results" = "результаты поиска";
@@ -95,7 +97,7 @@
 "com.kustomer.Waiting for a response from" = "Ждем ответа от";
 "com.kustomer.We will get back to you as soon as we are online!" = "Мы свяжемся с вами, как только будем онлайн!";
 "com.kustomer.Yes" = "Да";
-"com.kustomer.You changed your additional feedback comment" = "Вы изменили свой дополнительный отзыв";
+"com.kustomer.You changed your additional feedback comment" = "Вы изменили свой дополнительный комментарий для обратной связи";
 "com.kustomer.You're offline. Check your connection." = "Ты не в сети. Проверьте подключение.";
 "com.kustomer.Your existing conversations will be here." = "Ваши существующие разговоры будут здесь.";
 "com.kustomer.is no longer available" = "больше недоступно";

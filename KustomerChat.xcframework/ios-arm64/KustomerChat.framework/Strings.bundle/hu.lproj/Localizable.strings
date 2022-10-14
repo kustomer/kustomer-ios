@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Nem található";
 "com.kustomer.Okay" = "oké";
 "com.kustomer.Open in browser" = "Megnyitás böngészőben";
+"com.kustomer.Optional" = "Választható";
 "com.kustomer.Outgoing chat" = "Kimenő csevegés";
 "com.kustomer.Photo library" = "Fényképtár";
 "com.kustomer.Please leave a message" = "Kérlek hagyj üzenetet";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Távolítsa el";
 "com.kustomer.Report problem" = "Probléma bejelentése";
 "com.kustomer.Report sent" = "jelentés elküldve";
+"com.kustomer.Required" = "Kívánt";
 "com.kustomer.Save changes" = "Változtatások mentése";
 "com.kustomer.Search Help Articles" = "Keresés a súgócikkekben";
 "com.kustomer.Search Results" = "Keresési eredmények";

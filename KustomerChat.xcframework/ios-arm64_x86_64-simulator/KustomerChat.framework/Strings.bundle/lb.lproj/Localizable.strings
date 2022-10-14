@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "Zousätzlech Feedback geläscht";
 "com.kustomer.Agent" = "Agent";
 "com.kustomer.Answers" = "Äntwerten";
-"com.kustomer.Are you sure you want to end this chat?" = "Sidd Dir sécher, datt Dir dëse Chat ofschléissen wëllt?";
+"com.kustomer.Are you sure you want to end this chat?" = "Sidd Dir sécher, datt Dir dësen Chat ofschléissen wëllt?";
 "com.kustomer.Attached file" = "Befestegt Fichier";
 "com.kustomer.Attachment" = "Unhang";
 "com.kustomer.Browse files" = "Browst Dateien";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Net fonnt";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Open am Browser";
+"com.kustomer.Optional" = "Fakultativ";
 "com.kustomer.Outgoing chat" = "Ausgaang Chat";
 "com.kustomer.Photo library" = "Foto Bibliothéik";
 "com.kustomer.Please leave a message" = "Gitt weg e Message";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Ewechzehuelen";
 "com.kustomer.Report problem" = "Rapport Problem";
 "com.kustomer.Report sent" = "Rapport geschéckt";
+"com.kustomer.Required" = "Néideg";
 "com.kustomer.Save changes" = "Ännerungen späicheren";
 "com.kustomer.Search Help Articles" = "Sich Hëllef Artikelen";
 "com.kustomer.Search Results" = "Sich Resultater";

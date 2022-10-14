@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "မတွေ့ပါ";
 "com.kustomer.Okay" = "ဟုတ်ပြီ";
 "com.kustomer.Open in browser" = "browser တွင်ဖွင့်ပါ။";
+"com.kustomer.Optional" = "ရွေးချယ်ခွင့်";
 "com.kustomer.Outgoing chat" = "အပြင်ထွက် စကားပြောခန်း";
 "com.kustomer.Photo library" = "ဓာတ်ပုံစာကြည့်တိုက်";
 "com.kustomer.Please leave a message" = "ကျေးဇူးပြု၍ မက်ဆေ့ချ်ထားခဲ့ပါ။";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ဖယ်ရှားပါ။";
 "com.kustomer.Report problem" = "ပြဿနာကို သတင်းပို့ပါ။";
 "com.kustomer.Report sent" = "ပေးပို့တိုင်ကြားထားသည်။";
+"com.kustomer.Required" = "လိုအပ်သည်။";
 "com.kustomer.Save changes" = "အပြောင်းအလဲများကို သိမ်းဆည်းပါ။";
 "com.kustomer.Search Help Articles" = "အကူအညီဆောင်းပါးများကို ရှာဖွေပါ။";
 "com.kustomer.Search Results" = "ရှာဖွေမှုရလဒ်များ";

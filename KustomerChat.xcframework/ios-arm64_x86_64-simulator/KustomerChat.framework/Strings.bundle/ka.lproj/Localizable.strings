@@ -2,7 +2,7 @@
 "com.kustomer.100+ results found" = "ნაპოვნია 100+ შედეგი";
 "com.kustomer.Add additional feedback" = "დაამატეთ დამატებითი გამოხმაურება";
 "com.kustomer.Additional Feedback" = "დამატებითი გამოხმაურება";
-"com.kustomer.Additional feedback removed" = "წაშლილია დამატებითი გამოხმაურება";
+"com.kustomer.Additional feedback removed" = "დამატებითი გამოხმაურება წაიშალა";
 "com.kustomer.Agent" = "აგენტი";
 "com.kustomer.Answers" = "პასუხები";
 "com.kustomer.Are you sure you want to end this chat?" = "დარწმუნებული ხართ, რომ გსურთ ამ ჩატის დასრულება?";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "არ მოიძებნა";
 "com.kustomer.Okay" = "კარგი";
 "com.kustomer.Open in browser" = "გახსენით ბრაუზერში";
+"com.kustomer.Optional" = "სურვილისამებრ";
 "com.kustomer.Outgoing chat" = "გამავალი ჩატი";
 "com.kustomer.Photo library" = "ფოტო ბიბლიოთეკა";
 "com.kustomer.Please leave a message" = "გთხოვთ დატოვოთ შეტყობინება";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ამოღება";
 "com.kustomer.Report problem" = "შეატყობინეთ პრობლემას";
 "com.kustomer.Report sent" = "ანგარიში გაგზავნილია";
+"com.kustomer.Required" = "საჭირო";
 "com.kustomer.Save changes" = "Ცვლილებების შენახვა";
 "com.kustomer.Search Help Articles" = "მოძებნეთ დახმარების სტატიები";
 "com.kustomer.Search Results" = "ძიების შედეგები";
@@ -84,7 +86,7 @@
 "com.kustomer.Take photo" = "Ფოტოს გადაღება";
 "com.kustomer.Tap to load..." = "შეეხეთ ჩასატვირთად...";
 "com.kustomer.Tap to open" = "შეეხეთ გასახსნელად";
-"com.kustomer.Thanks for your feedback" = "გმადლობთ გამოხმაურებისთვის";
+"com.kustomer.Thanks for your feedback" = "გმადლობთ თქვენი გამოხმაურებისთვის";
 "com.kustomer.That article" = "რომ სტატია";
 "com.kustomer.There was a problem" = "Პრობლემა იყო";
 "com.kustomer.This conversation is read-only" = "ეს საუბარი მხოლოდ წაკითხვადია";

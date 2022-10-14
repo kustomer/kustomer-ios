@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Sinapezeke";
 "com.kustomer.Okay" = "Chabwino";
 "com.kustomer.Open in browser" = "Tsegulani mu msakatuli";
+"com.kustomer.Optional" = "Zosankha";
 "com.kustomer.Outgoing chat" = "Macheza otuluka";
 "com.kustomer.Photo library" = "Zithunzi laibulale";
 "com.kustomer.Please leave a message" = "Chonde siyani uthenga";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Chotsani";
 "com.kustomer.Report problem" = "Nenani vuto";
 "com.kustomer.Report sent" = "Lipoti latumizidwa";
+"com.kustomer.Required" = "Chofunikira";
 "com.kustomer.Save changes" = "Sungani zosintha";
 "com.kustomer.Search Help Articles" = "Sakani Nkhani Zothandizira";
 "com.kustomer.Search Results" = "Zotsatira Zakusaka";

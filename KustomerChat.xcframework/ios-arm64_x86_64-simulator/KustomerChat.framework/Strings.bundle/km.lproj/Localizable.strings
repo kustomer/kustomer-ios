@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "រក​មិន​ឃើញ";
 "com.kustomer.Okay" = "យល់ព្រម";
 "com.kustomer.Open in browser" = "បើកនៅក្នុងកម្មវិធីរុករក";
+"com.kustomer.Optional" = "ស្រេចចិត្ត";
 "com.kustomer.Outgoing chat" = "ការជជែកចេញ";
 "com.kustomer.Photo library" = "បណ្ណាល័យរូបថត";
 "com.kustomer.Please leave a message" = "សូមទុកសារមួយ។";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ដកចេញ";
 "com.kustomer.Report problem" = "រាយការណ៍បញ្ហា";
 "com.kustomer.Report sent" = "បានផ្ញើរបាយការណ៍";
+"com.kustomer.Required" = "ទាមទារ";
 "com.kustomer.Save changes" = "រក្សាទុកការផ្លាស់ប្តូរ";
 "com.kustomer.Search Help Articles" = "ស្វែងរកអត្ថបទជំនួយ";
 "com.kustomer.Search Results" = "លទ្ធផលស្វែងរក";

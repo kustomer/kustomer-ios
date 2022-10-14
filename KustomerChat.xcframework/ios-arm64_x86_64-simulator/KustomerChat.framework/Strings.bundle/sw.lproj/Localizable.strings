@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Haipatikani";
 "com.kustomer.Okay" = "Sawa";
 "com.kustomer.Open in browser" = "Fungua katika kivinjari";
+"com.kustomer.Optional" = "Hiari";
 "com.kustomer.Outgoing chat" = "Soga inayotoka";
 "com.kustomer.Photo library" = "Maktaba ya picha";
 "com.kustomer.Please leave a message" = "Tafadhali acha ujumbe";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Ondoa";
 "com.kustomer.Report problem" = "Ripoti tatizo";
 "com.kustomer.Report sent" = "Ripoti imetumwa";
+"com.kustomer.Required" = "Inahitajika";
 "com.kustomer.Save changes" = "Hifadhi mabadiliko";
 "com.kustomer.Search Help Articles" = "Tafuta Makala ya Usaidizi";
 "com.kustomer.Search Results" = "Matokeo ya Utafutaji";

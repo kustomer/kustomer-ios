@@ -63,7 +63,8 @@
 "com.kustomer.Not enough disk space" = "مساحة غير كافيه في القرص";
 "com.kustomer.Not found" = "لم يتم العثور على";
 "com.kustomer.Okay" = "تمام";
-"com.kustomer.Open in browser" = "افتح في المتصفح";
+"com.kustomer.Open in browser" = "فتح في المتصفح";
+"com.kustomer.Optional" = "اختياري";
 "com.kustomer.Outgoing chat" = "محادثة صادرة";
 "com.kustomer.Photo library" = "مكتبة الصور";
 "com.kustomer.Please leave a message" = "يرجى ترك رسالة";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "إزالة";
 "com.kustomer.Report problem" = "أبلغ عن مشكلة";
 "com.kustomer.Report sent" = "تم إرسال التقرير";
+"com.kustomer.Required" = "مطلوب";
 "com.kustomer.Save changes" = "احفظ التغييرات";
 "com.kustomer.Search Help Articles" = "بحث في مقالات المساعدة";
 "com.kustomer.Search Results" = "نتائج البحث";

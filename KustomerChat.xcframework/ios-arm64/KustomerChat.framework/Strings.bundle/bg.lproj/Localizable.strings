@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Не е намерено";
 "com.kustomer.Okay" = "добре";
 "com.kustomer.Open in browser" = "Отворете в браузъра";
+"com.kustomer.Optional" = "Не е задължително";
 "com.kustomer.Outgoing chat" = "Изходящ чат";
 "com.kustomer.Photo library" = "Фото библиотека";
 "com.kustomer.Please leave a message" = "Моля, оставете съобщение";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Премахване";
 "com.kustomer.Report problem" = "Докладвайте за проблем";
 "com.kustomer.Report sent" = "Докладът е изпратен";
+"com.kustomer.Required" = "Задължително";
 "com.kustomer.Save changes" = "Запазите промените";
 "com.kustomer.Search Help Articles" = "Търсене в помощни статии";
 "com.kustomer.Search Results" = "Резултати от търсенето";

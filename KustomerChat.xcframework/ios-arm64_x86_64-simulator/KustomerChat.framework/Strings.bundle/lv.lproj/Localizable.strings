@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Nav atrasts";
 "com.kustomer.Okay" = "Labi";
 "com.kustomer.Open in browser" = "Atvērt pārlūkprogrammā";
+"com.kustomer.Optional" = "Neobligāti";
 "com.kustomer.Outgoing chat" = "Izejošā tērzēšana";
 "com.kustomer.Photo library" = "Fotoattēlu bibliotēka";
 "com.kustomer.Please leave a message" = "Lūdzu, atstājiet ziņu";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Noņemt";
 "com.kustomer.Report problem" = "Ziņot par problēmu";
 "com.kustomer.Report sent" = "Pārskats nosūtīts";
+"com.kustomer.Required" = "Obligāti";
 "com.kustomer.Save changes" = "Saglabāt izmaiņas";
 "com.kustomer.Search Help Articles" = "Meklēt palīdzības rakstus";
 "com.kustomer.Search Results" = "Meklēšanas rezultāti";

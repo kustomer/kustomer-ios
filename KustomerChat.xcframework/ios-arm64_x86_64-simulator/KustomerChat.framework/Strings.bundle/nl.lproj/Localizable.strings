@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Niet gevonden";
 "com.kustomer.Okay" = "Oké";
 "com.kustomer.Open in browser" = "Open in de browser";
+"com.kustomer.Optional" = "Optioneel";
 "com.kustomer.Outgoing chat" = "Uitgaande chat";
 "com.kustomer.Photo library" = "fotobibliotheek";
 "com.kustomer.Please leave a message" = "Laat alsjeblieft een bericht achter";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Verwijderen";
 "com.kustomer.Report problem" = "Meld een probleem";
 "com.kustomer.Report sent" = "rapport verzonden";
+"com.kustomer.Required" = "Verplicht";
 "com.kustomer.Save changes" = "Wijzigingen opslaan";
 "com.kustomer.Search Help Articles" = "Help-artikelen zoeken";
 "com.kustomer.Search Results" = "Zoekresultaten";

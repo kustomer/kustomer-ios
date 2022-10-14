@@ -6,7 +6,7 @@
 "com.kustomer.Agent" = "Agen";
 "com.kustomer.Answers" = "Wangsulan";
 "com.kustomer.Are you sure you want to end this chat?" = "Apa sampeyan yakin arep mungkasi obrolan iki?";
-"com.kustomer.Attached file" = "file sing ditempelake";
+"com.kustomer.Attached file" = "File sing dilampirake";
 "com.kustomer.Attachment" = "Lampiran";
 "com.kustomer.Browse files" = "Telusuri file";
 "com.kustomer.Camera roll" = "Rol kamera";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ora ketemu";
 "com.kustomer.Okay" = "nggih";
 "com.kustomer.Open in browser" = "Bukak ing browser";
+"com.kustomer.Optional" = "Opsional";
 "com.kustomer.Outgoing chat" = "Obrolan metu";
 "com.kustomer.Photo library" = "Pustaka foto";
 "com.kustomer.Please leave a message" = "Mangga ninggalake pesen";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Mbusak";
 "com.kustomer.Report problem" = "Laporan masalah";
 "com.kustomer.Report sent" = "Laporan dikirim";
+"com.kustomer.Required" = "dibutuhake";
 "com.kustomer.Save changes" = "Simpen owah-owahan";
 "com.kustomer.Search Help Articles" = "Golek Artikel Bantuan";
 "com.kustomer.Search Results" = "Asil Panelusuran";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Loaʻa ʻole";
 "com.kustomer.Okay" = "ʻAe";
 "com.kustomer.Open in browser" = "Wehe ma ka polokalamu kele pūnaewele";
+"com.kustomer.Optional" = "Koho";
 "com.kustomer.Outgoing chat" = "Kūkākūkā i waho";
 "com.kustomer.Photo library" = "Hale waihona kiʻi";
 "com.kustomer.Please leave a message" = "E ʻoluʻolu e waiho i kahi leka";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Wehe";
 "com.kustomer.Report problem" = "Hōʻike pilikia";
 "com.kustomer.Report sent" = "Hoʻouna ʻia ka hōʻike";
+"com.kustomer.Required" = "Pono";
 "com.kustomer.Save changes" = "E mālama i nā hoʻololi";
 "com.kustomer.Search Help Articles" = "Huli i nā ʻatikala kōkua";
 "com.kustomer.Search Results" = "Huli Huli";
