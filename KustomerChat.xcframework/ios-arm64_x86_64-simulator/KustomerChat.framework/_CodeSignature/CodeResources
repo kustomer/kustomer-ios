@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QrfQRP2T6OXoLm1uR0dbVViVFpQ=
+		V5+AMxokZZsAr9OU/BV4fD4Rl0M=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UKZF0A6z38cKDufKtWx9p8Bwtgg=
+		OzFYXy/dDHwUVgGtBAqAIrUz1xM=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		znoNIKMP3aFJYY1RaoeakIui2sU=
+		u4Hcm5UnJ35MvH//UIhP/X2URKg=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DcorVO4fZ7vrp8Mz2xMtW7yUlBU=
+		pifjTke/qW+zAznU8i+DSg3CzVg=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IUDPX5qMjzy1QtpMN7ubW6n+oos=
+		fdTANAAau3xMFVTcOwGFN3Tnmbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1063,7 +1063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8K5ih6Ao2Pxeo38n273HuWvWBjxgVT2rRLotG521RS0=
+			ka7n3RSgMhUCXjhmaKcQymz64FGJtYFmYi5hwN6kgaE=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1091,14 +1091,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ePaSifQBfHVAVn5vYBxnoDF3bIa2ai5MpAxZnfZr+gA=
+			rmQVAlyj0hicSTUy6eczWbkoaVoWIWHRPayfAZUNFzU=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LGSg3NJWhl+RfdOK+Z3nCsM8qbkvFC25pP+2sCO9MSQ=
+			C0//kpe5YYMmlU/bbFUoVOjMYRGRhJSqT4if8jSO+80=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1112,14 +1112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKvkzfs12Pi7Vw7JCnRtmM5zGK++Tux/1twLatHz7ns=
+			Ly1jyKY+ExJL9D5Msa6R4ohcN/olsm1YclfiQffdIW4=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5PvoBQpY0sPd2DKn7blLQIcH+6bhAq48Nt9WESDBNw=
+			qX3x5Vna1ItG6B4LmulogkDLpVGiFkz+KhEg4ISpVRo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
