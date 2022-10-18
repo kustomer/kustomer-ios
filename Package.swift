@@ -14,7 +14,7 @@ let package = Package(
   ],
   dependencies: [
     .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0"),
-    .package(name: "Down", url: "https://github.com/KevinTMiller/Down.git", from: "0.11.1")
+    .package(name: "Down", url: "https://github.com/johnxnguyen/Down.git", from: "0.11.1")
   ],
   targets: [
     .binaryTarget(
