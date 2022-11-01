@@ -6,7 +6,6 @@ import CommonCrypto
 import CoreGraphics
 import CoreImage
 import Dispatch
-import Down
 import Foundation
 @_exported import KustomerChat
 import MobileCoreServices

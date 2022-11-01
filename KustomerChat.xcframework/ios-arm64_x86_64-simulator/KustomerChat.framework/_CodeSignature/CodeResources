@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QrfQRP2T6OXoLm1uR0dbVViVFpQ=
+		Obcjs/8X1Su+W9T00LUq2655Xkg=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1mogQ4RgCf3TZXJaN0S1sfSZFD0=
+		Zl8fIDyHs083tacSS5xiAE5+Jdk=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UKZF0A6z38cKDufKtWx9p8Bwtgg=
+		OzFYXy/dDHwUVgGtBAqAIrUz1xM=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		znoNIKMP3aFJYY1RaoeakIui2sU=
+		ZVE6oHtE1mK9/GQVFY4uvjUr1fg=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DcorVO4fZ7vrp8Mz2xMtW7yUlBU=
+		pifjTke/qW+zAznU8i+DSg3CzVg=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IUDPX5qMjzy1QtpMN7ubW6n+oos=
+		TMsQ6C83mSVLKnbiRhoxwiVPiZw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1063,7 +1063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8K5ih6Ao2Pxeo38n273HuWvWBjxgVT2rRLotG521RS0=
+			J+EhF+7g/y+A47vDJjh1d1E2A9hrtG7sL7on86EpNo8=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1091,14 +1091,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ePaSifQBfHVAVn5vYBxnoDF3bIa2ai5MpAxZnfZr+gA=
+			rmQVAlyj0hicSTUy6eczWbkoaVoWIWHRPayfAZUNFzU=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LGSg3NJWhl+RfdOK+Z3nCsM8qbkvFC25pP+2sCO9MSQ=
+			BnVSsEMNEnb3tRcD3hjM7MDo/g8TiJRoXDkuoaEApm4=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1112,14 +1112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKvkzfs12Pi7Vw7JCnRtmM5zGK++Tux/1twLatHz7ns=
+			Ly1jyKY+ExJL9D5Msa6R4ohcN/olsm1YclfiQffdIW4=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5PvoBQpY0sPd2DKn7blLQIcH+6bhAq48Nt9WESDBNw=
+			b9w2+TyyoSKf/zgTOs/w2Lh87vP7XWaxla092lD/5FM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
