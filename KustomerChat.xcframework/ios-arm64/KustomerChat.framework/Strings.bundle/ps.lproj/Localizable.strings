@@ -60,10 +60,11 @@
 "com.kustomer.No results" = "هیڅ پایلې نلري";
 "com.kustomer.No text" = "متن نشته";
 "com.kustomer.None of your personal information was included" = "ستاسو هیڅ شخصي معلومات شامل ندي";
-"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نشته";
+"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نلري";
 "com.kustomer.Not found" = "پیدا نشو";
 "com.kustomer.Okay" = "سمه ده";
 "com.kustomer.Open in browser" = "په براوزر کې خلاص کړئ";
+"com.kustomer.Optional" = "اختیاري";
 "com.kustomer.Outgoing chat" = "وتلې خبرې";
 "com.kustomer.Photo library" = "عکس کتابتون";
 "com.kustomer.Please leave a message" = "مهرباني وکړئ یو پیغام پریږدئ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "لرې کړئ";
 "com.kustomer.Report problem" = "ستونزه راپور کړئ";
 "com.kustomer.Report sent" = "راپور لیږلی";
+"com.kustomer.Required" = "اړین دی";
 "com.kustomer.Save changes" = "بدلونونه خوندي کړئ";
 "com.kustomer.Search Help Articles" = "د مرستې مقالې وپلټئ";
 "com.kustomer.Search Results" = "د لټون پایلې";

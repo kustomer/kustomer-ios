@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "దొరకలేదు";
 "com.kustomer.Okay" = "సరే";
 "com.kustomer.Open in browser" = "బ్రౌజర్‌లో తెరవండి";
+"com.kustomer.Optional" = "ఐచ్ఛికం";
 "com.kustomer.Outgoing chat" = "అవుట్‌గోయింగ్ చాట్";
 "com.kustomer.Photo library" = "ఫోటో లైబ్రరీ";
 "com.kustomer.Please leave a message" = "దయచేసి ఒక సందేశాన్ని పంపండి";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "తొలగించు";
 "com.kustomer.Report problem" = "సమస్యను నివేదించండి";
 "com.kustomer.Report sent" = "నివేదిక పంపబడింది";
+"com.kustomer.Required" = "అవసరం";
 "com.kustomer.Save changes" = "మార్పులను ఊంచు";
 "com.kustomer.Search Help Articles" = "సహాయ కథనాలను శోధించండి";
 "com.kustomer.Search Results" = "శోధన ఫలితాలు";

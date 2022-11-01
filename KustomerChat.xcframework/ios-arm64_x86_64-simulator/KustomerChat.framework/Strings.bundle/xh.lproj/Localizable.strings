@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ayifunyanwa";
 "com.kustomer.Okay" = "Kulungile";
 "com.kustomer.Open in browser" = "Vula kwisikhangeli";
+"com.kustomer.Optional" = "Ukhetho";
 "com.kustomer.Outgoing chat" = "Incoko ephumayo";
 "com.kustomer.Photo library" = "Ilayibrari yeefoto";
 "com.kustomer.Please leave a message" = "Nceda ushiye umyalezo";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Susa";
 "com.kustomer.Report problem" = "Xela ingxaki";
 "com.kustomer.Report sent" = "Ingxelo ithunyelwe";
+"com.kustomer.Required" = "Kufuneka";
 "com.kustomer.Save changes" = "Gcina Utshintsho";
 "com.kustomer.Search Help Articles" = "Phendla Amanqaku oNcedo";
 "com.kustomer.Search Results" = "Iziphumo zoPhendlo";

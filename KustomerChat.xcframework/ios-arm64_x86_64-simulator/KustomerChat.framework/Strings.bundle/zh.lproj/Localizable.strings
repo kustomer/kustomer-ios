@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "未找到";
 "com.kustomer.Okay" = "好的";
 "com.kustomer.Open in browser" = "在浏览器中打开";
+"com.kustomer.Optional" = "可选的";
 "com.kustomer.Outgoing chat" = "传出聊天";
 "com.kustomer.Photo library" = "照片库";
 "com.kustomer.Please leave a message" = "请留言";
@@ -73,7 +74,8 @@
 "com.kustomer.Reconnecting..." = "重新连接...";
 "com.kustomer.Remove" = "消除";
 "com.kustomer.Report problem" = "报告问题";
-"com.kustomer.Report sent" = "报告已发送";
+"com.kustomer.Report sent" = "已发送报告";
+"com.kustomer.Required" = "必需的";
 "com.kustomer.Save changes" = "保存更改";
 "com.kustomer.Search Help Articles" = "搜索帮助文章";
 "com.kustomer.Search Results" = "搜索结果";

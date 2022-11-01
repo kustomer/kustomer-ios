@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Δεν βρέθηκε";
 "com.kustomer.Okay" = "εντάξει";
 "com.kustomer.Open in browser" = "Ανοιγμα σε πρόγραμμα περιήγησης";
+"com.kustomer.Optional" = "Προαιρετικός";
 "com.kustomer.Outgoing chat" = "Εξερχόμενη συνομιλία";
 "com.kustomer.Photo library" = "Βιβλιοθήκη φωτογραφιών";
 "com.kustomer.Please leave a message" = "Παρακαλώ αφήστε μήνυμα";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Αφαιρώ";
 "com.kustomer.Report problem" = "Αναφορά προβλήματος";
 "com.kustomer.Report sent" = "Η αναφορά στάλθηκε";
+"com.kustomer.Required" = "Απαιτείται";
 "com.kustomer.Save changes" = "Αποθήκευσε τις αλλαγές";
 "com.kustomer.Search Help Articles" = "Αναζήτηση άρθρων βοήθειας";
 "com.kustomer.Search Results" = "Αποτελέσματα αναζήτησης";

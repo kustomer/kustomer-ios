@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Topilmadi";
 "com.kustomer.Okay" = "xop";
 "com.kustomer.Open in browser" = "Brauzerda oching";
+"com.kustomer.Optional" = "Ixtiyoriy";
 "com.kustomer.Outgoing chat" = "Chiquvchi chat";
 "com.kustomer.Photo library" = "Foto kutubxonasi";
 "com.kustomer.Please leave a message" = "Iltimos, xabar qoldiring";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "O&#39;chirish";
 "com.kustomer.Report problem" = "Muammo haqida xabar bering";
 "com.kustomer.Report sent" = "Hisobot yuborildi";
+"com.kustomer.Required" = "Majburiy";
 "com.kustomer.Save changes" = "O&#39;zgarishlarni saqlang";
 "com.kustomer.Search Help Articles" = "Yordam maqolalarini qidiring";
 "com.kustomer.Search Results" = "Qidiruv natijalari";

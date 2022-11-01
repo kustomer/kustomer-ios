@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "No trobat";
 "com.kustomer.Okay" = "Bé";
 "com.kustomer.Open in browser" = "Oberta al navegador";
+"com.kustomer.Optional" = "Opcional";
 "com.kustomer.Outgoing chat" = "Xat de sortida";
 "com.kustomer.Photo library" = "Fototeca";
 "com.kustomer.Please leave a message" = "Si us plau, deixeu un missatge";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Eliminar";
 "com.kustomer.Report problem" = "Informar del problema";
 "com.kustomer.Report sent" = "Informe enviat";
+"com.kustomer.Required" = "Obligatori";
 "com.kustomer.Save changes" = "Guardar canvis";
 "com.kustomer.Search Help Articles" = "Cerca articles d&#39;ajuda";
 "com.kustomer.Search Results" = "Resultats de la cerca";

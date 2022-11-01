@@ -13,7 +13,8 @@ let package = Package(
       targets: ["KustomerChat", "WrapperTarget"])
   ],
   dependencies: [
-    .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0")
+    .package(name: "PubNub", url: "https://github.com/pubnub/swift.git", from: "5.0.0"),
+    .package(name: "Down", url: "https://github.com/kustomer/Down", from: "0.11.0")
   ],
   targets: [
     .binaryTarget(
@@ -22,7 +23,7 @@ let package = Package(
     ),
     .target(
       name: "WrapperTarget",
-      dependencies: ["PubNub"]
+      dependencies: ["PubNub", "Down"]
     )
   ]
 )

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Олдсонгүй";
 "com.kustomer.Okay" = "За";
 "com.kustomer.Open in browser" = "Хөтөч дээр нээх";
+"com.kustomer.Optional" = "Сонголттой";
 "com.kustomer.Outgoing chat" = "Гарч буй чат";
 "com.kustomer.Photo library" = "Фото зургийн сан";
 "com.kustomer.Please leave a message" = "Та мессеж үлдээнэ үү";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Устгах";
 "com.kustomer.Report problem" = "Асуудлыг мэдээлэх";
 "com.kustomer.Report sent" = "Тайлан илгээсэн";
+"com.kustomer.Required" = "Шаардлагатай";
 "com.kustomer.Save changes" = "Өөрчлөлтүүдийг хадгалах";
 "com.kustomer.Search Help Articles" = "Тусламжийн нийтлэл хайх";
 "com.kustomer.Search Results" = "Хайлтын үр дүн";

@@ -67,6 +67,7 @@
 "com.kustomer.Not found" = "Nicht gefunden";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Im Browser öffnen";
+"com.kustomer.Optional" = "Optional";
 "com.kustomer.Outgoing chat" = "Ausgehender Chat";
 "com.kustomer.Photo library" = "Fotobibliothek";
 "com.kustomer.Please select an option..." = "Bitte wähle eine Option...";
@@ -76,6 +77,7 @@
 "com.kustomer.Remove" = "Entfernen";
 "com.kustomer.Report problem" = "Problem melden";
 "com.kustomer.Report sent" = "Bericht gesendet";
+"com.kustomer.Required" = "Erforderlich";
 "com.kustomer.Save changes" = "Änderungen speichern";
 "com.kustomer.Search Help Articles" = "Hilfeartikel durchsuchen";
 "com.kustomer.Search Results" = "Suchergebnisse";

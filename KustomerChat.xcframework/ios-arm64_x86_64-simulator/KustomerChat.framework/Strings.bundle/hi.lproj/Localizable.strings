@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "नहीं मिला";
 "com.kustomer.Okay" = "ठीक";
 "com.kustomer.Open in browser" = "ब्राउज़र में खोलें";
+"com.kustomer.Optional" = "वैकल्पिक";
 "com.kustomer.Outgoing chat" = "आउटगोइंग चैट";
 "com.kustomer.Photo library" = "चित्र पुस्तकालय";
 "com.kustomer.Please leave a message" = "कृपया एक संदेश छोड़ें";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "हटाना";
 "com.kustomer.Report problem" = "समस्या की सूचना दें";
 "com.kustomer.Report sent" = "सूचना भेजी गई";
+"com.kustomer.Required" = "आवश्यक";
 "com.kustomer.Save changes" = "परिवर्तनों को सुरक्षित करें";
 "com.kustomer.Search Help Articles" = "सहायता लेख खोजें";
 "com.kustomer.Search Results" = "खोज के परिणाम";

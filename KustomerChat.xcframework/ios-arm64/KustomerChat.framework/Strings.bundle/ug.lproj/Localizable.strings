@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "تېپىلمىدى";
 "com.kustomer.Okay" = "ماقۇل";
 "com.kustomer.Open in browser" = "توركۆرگۈدە ئېچىڭ";
+"com.kustomer.Optional" = "ئىختىيارىي";
 "com.kustomer.Outgoing chat" = "چىقىش پاراڭ";
 "com.kustomer.Photo library" = "رەسىم ئامبىرى";
 "com.kustomer.Please leave a message" = "ئۇچۇر قالدۇرۇڭ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ئۆچۈرۈڭ";
 "com.kustomer.Report problem" = "دوكلات مەسىلىسى";
 "com.kustomer.Report sent" = "دوكلات ئەۋەتىلدى";
+"com.kustomer.Required" = "تەلەپ قىلىنىدۇ";
 "com.kustomer.Save changes" = "ئۆزگەرتىشلەرنى ساقلاڭ";
 "com.kustomer.Search Help Articles" = "ياردەم ماقالىلىرىنى ئىزدەش";
 "com.kustomer.Search Results" = "ئىزدەش نەتىجىسى";

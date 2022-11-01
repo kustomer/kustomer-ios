@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '2.7.3'
+  s.version = '2.7.4'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'PubNubSwift', '~> 5.0.0'
-end
+  s.dependency 'Down', '~> 0.11.0'
+end 

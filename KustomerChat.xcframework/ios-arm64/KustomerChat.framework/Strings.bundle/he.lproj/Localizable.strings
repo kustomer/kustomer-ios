@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "לא נמצא";
 "com.kustomer.Okay" = "בסדר";
 "com.kustomer.Open in browser" = "פתוח בדפדפן";
+"com.kustomer.Optional" = "אופציונאלי";
 "com.kustomer.Outgoing chat" = "צ&#39;אט יוצא";
 "com.kustomer.Photo library" = "ספריית תמונות";
 "com.kustomer.Please leave a message" = "נא להשאיר הודעה";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "לְהַסִיר";
 "com.kustomer.Report problem" = "דווח על בעיה";
 "com.kustomer.Report sent" = "דווח נשלח";
+"com.kustomer.Required" = "נדרש";
 "com.kustomer.Save changes" = "שמור שינויים";
 "com.kustomer.Search Help Articles" = "חפש מאמרי עזרה";
 "com.kustomer.Search Results" = "תוצאות חיפוש";

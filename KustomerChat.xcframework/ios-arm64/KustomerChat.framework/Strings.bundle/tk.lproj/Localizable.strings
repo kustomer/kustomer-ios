@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Tapylmady";
 "com.kustomer.Okay" = "Bolýar";
 "com.kustomer.Open in browser" = "Brauzerde açyň";
+"com.kustomer.Optional" = "Meýletin";
 "com.kustomer.Outgoing chat" = "Çykýan söhbet";
 "com.kustomer.Photo library" = "Surat kitaphanasy";
 "com.kustomer.Please leave a message" = "Habar bermegiňizi haýyş edýäris";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Aýyr";
 "com.kustomer.Report problem" = "Mesele barada habar beriň";
 "com.kustomer.Report sent" = "Hasabat iberildi";
+"com.kustomer.Required" = "Gerekli";
 "com.kustomer.Save changes" = "Üýtgetmeleri ýatda sakla";
 "com.kustomer.Search Help Articles" = "Kömek makalalaryny gözläň";
 "com.kustomer.Search Results" = "Gözleg netijeleri";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "ମିଳିଲା ନାହି";
 "com.kustomer.Okay" = "ଠିକ ଅଛି";
 "com.kustomer.Open in browser" = "ବ୍ରାଉଜରରେ ଖୋଲନ୍ତୁ |";
+"com.kustomer.Optional" = "ବ tion କଳ୍ପିକ";
 "com.kustomer.Outgoing chat" = "ଯାଉଥିବା ଚାଟ୍ |";
 "com.kustomer.Photo library" = "ଫଟୋ ଲାଇବ୍ରେରୀ |";
 "com.kustomer.Please leave a message" = "ଦୟାକରି ଏକ ସନ୍ଦେଶ ଛାଡିଦିଅ |";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ଅପସାରଣ କରନ୍ତୁ |";
 "com.kustomer.Report problem" = "ସମସ୍ୟା ରିପୋର୍ଟ କରନ୍ତୁ |";
 "com.kustomer.Report sent" = "ରିପୋର୍ଟ ପଠାଯାଇଛି |";
+"com.kustomer.Required" = "ଆବଶ୍ୟକ";
 "com.kustomer.Save changes" = "ପରିବର୍ତ୍ତନଗୁଡିକ ସଞ୍ଚୟ କରନ୍ତୁ |";
 "com.kustomer.Search Help Articles" = "ସହାୟତା ପ୍ରବନ୍ଧଗୁଡିକ ସନ୍ଧାନ କରନ୍ତୁ |";
 "com.kustomer.Search Results" = "ସନ୍ଧାନ ଫଳାଫଳ";

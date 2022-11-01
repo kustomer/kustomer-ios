@@ -9,7 +9,7 @@
 "com.kustomer.Attached file" = "rakitra apetaka";
 "com.kustomer.Attachment" = "miraiki-po";
 "com.kustomer.Browse files" = "Hijery rakitra";
-"com.kustomer.Camera roll" = "Horonan-tsary";
+"com.kustomer.Camera roll" = "Rolla fakan-tsary";
 "com.kustomer.Can't load chat" = "Tsy afaka mampiditra chat";
 "com.kustomer.Cancel" = "hanafoana";
 "com.kustomer.Cancelled! Tap to retry." = "nofoanana! Tsindrio raha hanandrana indray.";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Tsy hita";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Sokafy amin&#39;ny navigateur";
+"com.kustomer.Optional" = "tsy voatery";
 "com.kustomer.Outgoing chat" = "Resaka mivoaka";
 "com.kustomer.Photo library" = "Tranomboky sary";
 "com.kustomer.Please leave a message" = "Mametraha hafatra azafady";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "esory";
 "com.kustomer.Report problem" = "Mitatitra olana";
 "com.kustomer.Report sent" = "Nalefa ny tatitra";
+"com.kustomer.Required" = "ilaina";
 "com.kustomer.Save changes" = "Tehirizo ny fanovana";
 "com.kustomer.Search Help Articles" = "Mitadiava lahatsoratra fanampiana";
 "com.kustomer.Search Results" = "Vokatra fikarohana";

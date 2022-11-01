@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "கிடைக்கவில்லை";
 "com.kustomer.Okay" = "சரி";
 "com.kustomer.Open in browser" = "உலாவியில் திறக்கவும்";
+"com.kustomer.Optional" = "விருப்பமானது";
 "com.kustomer.Outgoing chat" = "வெளிச்செல்லும் அரட்டை";
 "com.kustomer.Photo library" = "புகைப்பட நூலகம்";
 "com.kustomer.Please leave a message" = "தயவுசெய்து ஒரு செய்தியை அனுப்பவும்";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "அகற்று";
 "com.kustomer.Report problem" = "சிக்கலைப் புகாரளிக்கவும்";
 "com.kustomer.Report sent" = "அறிக்கை அனுப்பப்பட்டது";
+"com.kustomer.Required" = "தேவை";
 "com.kustomer.Save changes" = "மாற்றங்களை சேமியுங்கள்";
 "com.kustomer.Search Help Articles" = "உதவிக் கட்டுரைகளைத் தேடுங்கள்";
 "com.kustomer.Search Results" = "தேடல் முடிவுகள்";

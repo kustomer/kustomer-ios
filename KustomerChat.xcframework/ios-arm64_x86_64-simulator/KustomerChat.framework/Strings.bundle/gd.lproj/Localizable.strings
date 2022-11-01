@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Gun a lorg";
 "com.kustomer.Okay" = "Ceart gu leor";
 "com.kustomer.Open in browser" = "Fosgail ann am brabhsair";
+"com.kustomer.Optional" = "Roghainneil";
 "com.kustomer.Outgoing chat" = "Còmhradh a-mach";
 "com.kustomer.Photo library" = "Leabharlann dhealbhan";
 "com.kustomer.Please leave a message" = "Feuch an fhàg thu teachdaireachd";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Thoir air falbh";
 "com.kustomer.Report problem" = "Dèan aithris air duilgheadas";
 "com.kustomer.Report sent" = "Aithisg air a chuir";
+"com.kustomer.Required" = "A dhìth";
 "com.kustomer.Save changes" = "Sàbhail atharraichean";
 "com.kustomer.Search Help Articles" = "Rannsaich artaigilean cuideachaidh";
 "com.kustomer.Search Results" = "Toraidhean Rannsachaidh";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "見つかりません";
 "com.kustomer.Okay" = "わかった";
 "com.kustomer.Open in browser" = "ブラウザで開く";
+"com.kustomer.Optional" = "オプション";
 "com.kustomer.Outgoing chat" = "発信チャット";
 "com.kustomer.Photo library" = "フォトライブラリ";
 "com.kustomer.Please leave a message" = "メッセージを残してください";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "削除する";
 "com.kustomer.Report problem" = "問題を報告";
 "com.kustomer.Report sent" = "レポートを送信しました";
+"com.kustomer.Required" = "必須";
 "com.kustomer.Save changes" = "変更内容を保存";
 "com.kustomer.Search Help Articles" = "ヘルプ記事を検索";
 "com.kustomer.Search Results" = "の検索結果";

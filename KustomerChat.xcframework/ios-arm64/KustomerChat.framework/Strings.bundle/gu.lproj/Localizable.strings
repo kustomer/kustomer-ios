@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "મળી નથી";
 "com.kustomer.Okay" = "બરાબર";
 "com.kustomer.Open in browser" = "બ્રાઉઝરમાં ખોલો";
+"com.kustomer.Optional" = "વૈકલ્પિક";
 "com.kustomer.Outgoing chat" = "આઉટગોઇંગ ચેટ";
 "com.kustomer.Photo library" = "ફોટો લાઇબ્રેરી";
 "com.kustomer.Please leave a message" = "કૃપા કરીને એક સંદેશ મૂકો";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "દૂર કરો";
 "com.kustomer.Report problem" = "સમસ્યાની જાણ કરો";
 "com.kustomer.Report sent" = "રિપોર્ટ મોકલ્યો";
+"com.kustomer.Required" = "જરૂરી છે";
 "com.kustomer.Save changes" = "ફેરફારો સંગ્રહ";
 "com.kustomer.Search Help Articles" = "મદદ લેખો શોધો";
 "com.kustomer.Search Results" = "શોધ પરિણામો";

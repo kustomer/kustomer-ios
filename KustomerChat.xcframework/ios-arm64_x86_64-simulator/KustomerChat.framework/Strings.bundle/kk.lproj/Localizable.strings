@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Табылмады";
 "com.kustomer.Okay" = "Жақсы";
 "com.kustomer.Open in browser" = "Браузерде ашу";
+"com.kustomer.Optional" = "Қосымша";
 "com.kustomer.Outgoing chat" = "Шығыс чат";
 "com.kustomer.Photo library" = "Фото кітапхана";
 "com.kustomer.Please leave a message" = "Хабарлама қалдырыңыз";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Жою";
 "com.kustomer.Report problem" = "Мәселе туралы хабарлау";
 "com.kustomer.Report sent" = "Есеп жіберілді";
+"com.kustomer.Required" = "Міндетті";
 "com.kustomer.Save changes" = "Өзгерістерді сақтау";
 "com.kustomer.Search Help Articles" = "Анықтама мақалаларын іздеу";
 "com.kustomer.Search Results" = "Іздеу нәтижелері";

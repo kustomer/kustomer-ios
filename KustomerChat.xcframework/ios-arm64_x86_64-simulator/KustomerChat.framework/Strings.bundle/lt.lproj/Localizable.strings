@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Nerastas";
 "com.kustomer.Okay" = "Gerai";
 "com.kustomer.Open in browser" = "Atidaryti naršyklėje";
+"com.kustomer.Optional" = "Neprivaloma";
 "com.kustomer.Outgoing chat" = "Išeinantis pokalbis";
 "com.kustomer.Photo library" = "Nuotraukų biblioteka";
 "com.kustomer.Please leave a message" = "Prašome palikti žinutę";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Pašalinti";
 "com.kustomer.Report problem" = "Pranešti apie problemą";
 "com.kustomer.Report sent" = "Pranešimas išsiųstas";
+"com.kustomer.Required" = "Reikalingas";
 "com.kustomer.Save changes" = "Išsaugoti pakeitimus";
 "com.kustomer.Search Help Articles" = "Ieškokite pagalbos straipsnių";
 "com.kustomer.Search Results" = "Paieškos rezultatai";

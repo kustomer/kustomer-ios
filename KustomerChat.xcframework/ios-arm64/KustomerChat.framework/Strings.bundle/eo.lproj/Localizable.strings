@@ -44,7 +44,7 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Lasu mesaĝon";
 "com.kustomer.Leave a message..." = "Lasu mesaĝon...";
-"com.kustomer.Loading..." = "Ŝargante...";
+"com.kustomer.Loading..." = "Ŝarĝante...";
 "com.kustomer.Mark all as read" = "Marku ĉion kiel legitan";
 "com.kustomer.Me" = "Mi";
 "com.kustomer.Message" = "Mesaĝo";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ne trovita";
 "com.kustomer.Okay" = "Bone";
 "com.kustomer.Open in browser" = "Malfermu en retumilo";
+"com.kustomer.Optional" = "Laŭvola";
 "com.kustomer.Outgoing chat" = "Eksiĝinta babilejo";
 "com.kustomer.Photo library" = "Fotobiblioteko";
 "com.kustomer.Please leave a message" = "Bonvolu lasi mesaĝon";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Forigi";
 "com.kustomer.Report problem" = "Raportu problemon";
 "com.kustomer.Report sent" = "Raporto sendita";
+"com.kustomer.Required" = "Bezonata";
 "com.kustomer.Save changes" = "Konservu ŝanĝojn";
 "com.kustomer.Search Help Articles" = "Serĉu Helpajn Artikolojn";
 "com.kustomer.Search Results" = "Serĉrezultoj";

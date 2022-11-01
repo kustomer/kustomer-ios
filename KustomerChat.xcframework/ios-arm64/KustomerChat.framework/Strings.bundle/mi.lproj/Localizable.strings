@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Kaore i kitea";
 "com.kustomer.Okay" = "Ka pai";
 "com.kustomer.Open in browser" = "Tuwhera i roto i te pūtirotiro";
+"com.kustomer.Optional" = "Kōwhiringa";
 "com.kustomer.Outgoing chat" = "Kōrerorero putaatu";
 "com.kustomer.Photo library" = "Whare pukapuka whakaahua";
 "com.kustomer.Please leave a message" = "Tena koa waiho he karere";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Tango";
 "com.kustomer.Report problem" = "Pūrongo raruraru";
 "com.kustomer.Report sent" = "I tukuna te ripoata";
+"com.kustomer.Required" = "E hiahiatia ana";
 "com.kustomer.Save changes" = "Tiakina nga huringa";
 "com.kustomer.Search Help Articles" = "Rapu Tuhinga Awhina";
 "com.kustomer.Search Results" = "Hua Rapu";

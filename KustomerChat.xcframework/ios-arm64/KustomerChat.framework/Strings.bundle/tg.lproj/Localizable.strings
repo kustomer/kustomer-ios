@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Дарёфт нашуд";
 "com.kustomer.Okay" = "Хуб";
 "com.kustomer.Open in browser" = "Дар браузер кушоед";
+"com.kustomer.Optional" = "Ихтиёрӣ";
 "com.kustomer.Outgoing chat" = "Чати баромад";
 "com.kustomer.Photo library" = "Китобхонаи суратхо";
 "com.kustomer.Please leave a message" = "Лутфан паём гузоред";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Хориҷ кунед";
 "com.kustomer.Report problem" = "Ҳисобот додани мушкилот";
 "com.kustomer.Report sent" = "Ҳисобот фиристода шуд";
+"com.kustomer.Required" = "Талаб карда мешавад";
 "com.kustomer.Save changes" = "Тағиротро захира кунед";
 "com.kustomer.Search Help Articles" = "Ҷустуҷӯи мақолаҳои кӯмак";
 "com.kustomer.Search Results" = "Натоиҷи ҷустуҷӯ";

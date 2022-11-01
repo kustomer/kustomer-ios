@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "לא נמצא";
 "com.kustomer.Okay" = "בסדר";
 "com.kustomer.Open in browser" = "פתוח בדפדפן";
+"com.kustomer.Optional" = "אופציונאלי";
 "com.kustomer.Outgoing chat" = "צ&#39;אט יוצא";
 "com.kustomer.Photo library" = "ספריית תמונות";
 "com.kustomer.Please leave a message" = "נא להשאיר הודעה";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "לְהַסִיר";
 "com.kustomer.Report problem" = "דווח על בעיה";
 "com.kustomer.Report sent" = "דווח נשלח";
+"com.kustomer.Required" = "נדרש";
 "com.kustomer.Save changes" = "שמור שינויים";
 "com.kustomer.Search Help Articles" = "חפש מאמרי עזרה";
 "com.kustomer.Search Results" = "תוצאות חיפוש";
@@ -95,7 +97,7 @@
 "com.kustomer.Waiting for a response from" = "מחכה לתגובה מאת";
 "com.kustomer.We will get back to you as soon as we are online!" = "נחזור אליך ברגע שנהיה מקוונים!";
 "com.kustomer.Yes" = "כן";
-"com.kustomer.You changed your additional feedback comment" = "שינית את הערת המשוב הנוסף שלך";
+"com.kustomer.You changed your additional feedback comment" = "שינית את הערת המשוב הנוספת שלך";
 "com.kustomer.You're offline. Check your connection." = "אתה במצב לא מקוון. בדוק את החיבור שלך.";
 "com.kustomer.Your existing conversations will be here." = "השיחות הקיימות שלך יהיו כאן.";
 "com.kustomer.is no longer available" = "אינו זמין יותר";

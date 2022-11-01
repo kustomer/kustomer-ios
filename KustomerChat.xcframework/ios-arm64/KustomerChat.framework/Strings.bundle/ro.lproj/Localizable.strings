@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Nu a fost gasit";
 "com.kustomer.Okay" = "bine";
 "com.kustomer.Open in browser" = "Deschis în browser";
+"com.kustomer.Optional" = "Opțional";
 "com.kustomer.Outgoing chat" = "Chat de ieșire";
 "com.kustomer.Photo library" = "Biblioteca foto";
 "com.kustomer.Please leave a message" = "Te rog lasa un mesaj";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Elimina";
 "com.kustomer.Report problem" = "Raporteaza problema";
 "com.kustomer.Report sent" = "raport trimis";
+"com.kustomer.Required" = "Necesar";
 "com.kustomer.Save changes" = "Salvează modificările";
 "com.kustomer.Search Help Articles" = "Căutați articole de ajutor";
 "com.kustomer.Search Results" = "rezultatele cautarii";

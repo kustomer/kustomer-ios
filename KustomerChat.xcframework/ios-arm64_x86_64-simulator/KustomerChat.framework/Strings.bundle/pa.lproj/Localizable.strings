@@ -15,7 +15,7 @@
 "com.kustomer.Cancelled! Tap to retry." = "ਰੱਦ ਕੀਤਾ! ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।";
 "com.kustomer.Categories" = "ਵਰਗ";
 "com.kustomer.Chat" = "ਚੈਟ";
-"com.kustomer.Chat has ended" = "ਚੈਟ ਖਤਮ ਹੋ ਗਈ ਹੈ";
+"com.kustomer.Chat has ended" = "ਚੈਟ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ";
 "com.kustomer.Chat history" = "ਚੈਟ ਇਤਿਹਾਸ";
 "com.kustomer.Chat is currently unavailable" = "ਚੈਟ ਵਰਤਮਾਨ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ";
 "com.kustomer.Chat with support" = "ਸਹਾਇਤਾ ਨਾਲ ਗੱਲਬਾਤ ਕਰੋ";
@@ -44,7 +44,7 @@
 "com.kustomer.KB" = "ਕੇ.ਬੀ";
 "com.kustomer.Leave a message" = "ਇੱਕ ਸੁਨੇਹਾ ਛੱਡ ਦਿਓ";
 "com.kustomer.Leave a message..." = "ਇੱਕ ਸੁਨੇਹਾ ਛੱਡ ਦਿਓ...";
-"com.kustomer.Loading..." = "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...";
+"com.kustomer.Loading..." = "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...";
 "com.kustomer.Mark all as read" = "ਸਭ ਨੂੰ ਪੜ੍ਹੇ ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਕਰੋ";
 "com.kustomer.Me" = "ਮੈਨੂੰ";
 "com.kustomer.Message" = "ਸੁਨੇਹਾ";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "ਨਹੀਂ ਲਭਿਆ";
 "com.kustomer.Okay" = "ਠੀਕ ਹੈ";
 "com.kustomer.Open in browser" = "ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਖੋਲ੍ਹੋ";
+"com.kustomer.Optional" = "ਵਿਕਲਪਿਕ";
 "com.kustomer.Outgoing chat" = "ਆਊਟਗੋਇੰਗ ਚੈਟ";
 "com.kustomer.Photo library" = "ਫੋਟੋ ਲਾਇਬ੍ਰੇਰੀ";
 "com.kustomer.Please leave a message" = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਸੁਨੇਹਾ ਛੱਡੋ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ਹਟਾਓ";
 "com.kustomer.Report problem" = "ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ";
 "com.kustomer.Report sent" = "ਰਿਪੋਰਟ ਭੇਜ ਦਿੱਤੀ ਹੈ";
+"com.kustomer.Required" = "ਲੋੜੀਂਦਾ ਹੈ";
 "com.kustomer.Save changes" = "ਕੀਤੇ ਗਏ ਬਦਲਾਅ ਸੁਰੱਖਿਅਤ ਕਰੋ";
 "com.kustomer.Search Help Articles" = "ਮਦਦ ਲੇਖ ਖੋਜੋ";
 "com.kustomer.Search Results" = "ਖੋਜ ਨਤੀਜੇ";

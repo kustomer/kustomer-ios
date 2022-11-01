@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "चॅट सध्या अनुपलब्ध आहे";
 "com.kustomer.Chat with support" = "समर्थनासह गप्पा मारा";
 "com.kustomer.Conversation ended" = "संवाद संपला";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "संभाषण दुसर्‍या संभाषणात विलीन झाले.\n\nनवीन संभाषणावर जाण्यासाठी टॅप करा.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "संभाषण दुसर्‍या संभाषणात विलीन केले.\n\nनवीन संभाषणावर जाण्यासाठी टॅप करा.";
 "com.kustomer.Conversation moved to another customer" = "संभाषण दुसर्‍या ग्राहकाकडे हलवले";
 "com.kustomer.Delete" = "हटवा";
 "com.kustomer.Do you want to remove your rating and feedback?" = "तुम्ही तुमचे रेटिंग आणि फीडबॅक काढू इच्छिता?";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "सापडले नाही";
 "com.kustomer.Okay" = "ठीक आहे";
 "com.kustomer.Open in browser" = "ब्राउझरमध्ये उघडा";
+"com.kustomer.Optional" = "ऐच्छिक";
 "com.kustomer.Outgoing chat" = "आउटगोइंग गप्पा";
 "com.kustomer.Photo library" = "फोटो लायब्ररी";
 "com.kustomer.Please leave a message" = "कृपया एक संदेश द्या";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "काढा";
 "com.kustomer.Report problem" = "समस्या कळवा";
 "com.kustomer.Report sent" = "अहवाल पाठवला";
+"com.kustomer.Required" = "आवश्यक आहे";
 "com.kustomer.Save changes" = "बदल जतन करा";
 "com.kustomer.Search Help Articles" = "मदत लेख शोधा";
 "com.kustomer.Search Results" = "शोध परिणाम";

@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "ລຶບຄຳຕິຊົມເພີ່ມເຕີມອອກແລ້ວ";
 "com.kustomer.Agent" = "ຕົວແທນ";
 "com.kustomer.Answers" = "ຄໍາຕອບ";
-"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຢຸດການສົນທະນານີ້?";
+"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການສິ້ນສຸດການສົນທະນານີ້?";
 "com.kustomer.Attached file" = "ໄຟລ໌ແນບ";
 "com.kustomer.Attachment" = "ໄຟລ໌ແນບ";
 "com.kustomer.Browse files" = "ຊອກຫາໄຟລ໌";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "ບໍ່​ພົບ";
 "com.kustomer.Okay" = "ຕົກລົງ";
 "com.kustomer.Open in browser" = "ເປີດໃນ browser";
+"com.kustomer.Optional" = "ທາງເລືອກ";
 "com.kustomer.Outgoing chat" = "ໂທອອກ";
 "com.kustomer.Photo library" = "ຫ້ອງສະໝຸດພາບ";
 "com.kustomer.Please leave a message" = "ກະລຸນາຝາກຂໍ້ຄວາມໄວ້";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ເອົາອອກ";
 "com.kustomer.Report problem" = "ລາຍງານບັນຫາ";
 "com.kustomer.Report sent" = "ສົ່ງລາຍງານແລ້ວ";
+"com.kustomer.Required" = "ຕ້ອງການ";
 "com.kustomer.Save changes" = "ບັນ​ທຶກ​ການ​ປ່ຽນ​ແປງ";
 "com.kustomer.Search Help Articles" = "ຊອກຫາບົດຄວາມຊ່ວຍເຫຼືອ";
 "com.kustomer.Search Results" = "ຜົນການຄົ້ນຫາ";

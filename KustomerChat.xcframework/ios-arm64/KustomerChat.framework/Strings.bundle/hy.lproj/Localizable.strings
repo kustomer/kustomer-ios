@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Չի գտնվել";
 "com.kustomer.Okay" = "Լավ";
 "com.kustomer.Open in browser" = "Բացեք բրաուզերում";
+"com.kustomer.Optional" = "Ընտրովի";
 "com.kustomer.Outgoing chat" = "Ելքային զրույց";
 "com.kustomer.Photo library" = "Լուսանկարների գրադարան";
 "com.kustomer.Please leave a message" = "Խնդրում ենք թողնել հաղորդագրություն";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Հեռացնել";
 "com.kustomer.Report problem" = "Հաղորդել խնդրի մասին";
 "com.kustomer.Report sent" = "Զեկույցն ուղարկված է";
+"com.kustomer.Required" = "Պահանջվում է";
 "com.kustomer.Save changes" = "Պահպանել փոփոխությունները";
 "com.kustomer.Search Help Articles" = "Որոնել օգնության հոդվածներ";
 "com.kustomer.Search Results" = "Որոնման արդյունքները";

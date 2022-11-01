@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ikke fundet";
 "com.kustomer.Okay" = "okay";
 "com.kustomer.Open in browser" = "Åbn i browser";
+"com.kustomer.Optional" = "Valgfri";
 "com.kustomer.Outgoing chat" = "Udgående chat";
 "com.kustomer.Photo library" = "Fotobibliotek";
 "com.kustomer.Please leave a message" = "Læg venligst en besked";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Fjerne";
 "com.kustomer.Report problem" = "Rapporter problem";
 "com.kustomer.Report sent" = "Rapport sendt";
+"com.kustomer.Required" = "Påkrævet";
 "com.kustomer.Save changes" = "Gem ændringer";
 "com.kustomer.Search Help Articles" = "Søg i hjælpeartikler";
 "com.kustomer.Search Results" = "Søgeresultater";

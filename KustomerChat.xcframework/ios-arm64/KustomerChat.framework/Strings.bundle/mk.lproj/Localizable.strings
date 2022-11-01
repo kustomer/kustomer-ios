@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Не е најдено";
 "com.kustomer.Okay" = "добро";
 "com.kustomer.Open in browser" = "Отворена во прелистувачот";
+"com.kustomer.Optional" = "Изборен";
 "com.kustomer.Outgoing chat" = "Појдовен разговор";
 "com.kustomer.Photo library" = "Фото библиотека";
 "com.kustomer.Please leave a message" = "Ве молиме оставете порака";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Отстрани";
 "com.kustomer.Report problem" = "Пријавете проблем";
 "com.kustomer.Report sent" = "Извештајот е испратен";
+"com.kustomer.Required" = "Задолжително";
 "com.kustomer.Save changes" = "Зачувајте ги промените";
 "com.kustomer.Search Help Articles" = "Пребарајте статии за помош";
 "com.kustomer.Search Results" = "Резултати од пребарувањето";

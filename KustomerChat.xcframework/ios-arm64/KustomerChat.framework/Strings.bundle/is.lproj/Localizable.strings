@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ekki fundið";
 "com.kustomer.Okay" = "allt í lagi";
 "com.kustomer.Open in browser" = "Opna í vafra";
+"com.kustomer.Optional" = "Valfrjálst";
 "com.kustomer.Outgoing chat" = "Útgefið spjall";
 "com.kustomer.Photo library" = "Myndasafn";
 "com.kustomer.Please leave a message" = "Vinsamlegast skildu eftir skilaboð";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Fjarlægja";
 "com.kustomer.Report problem" = "Tilkynna vandamál";
 "com.kustomer.Report sent" = "Skýrsla send";
+"com.kustomer.Required" = "Áskilið";
 "com.kustomer.Save changes" = "Vista breytingar";
 "com.kustomer.Search Help Articles" = "Leita í hjálpargreinum";
 "com.kustomer.Search Results" = "leitarniðurstöður";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "ಸಿಕ್ಕಿಲ್ಲ";
 "com.kustomer.Okay" = "ಸರಿ";
 "com.kustomer.Open in browser" = "ಬ್ರೌಸರ್ ತೆರೆಯಿರಿ";
+"com.kustomer.Optional" = "ಐಚ್ಛಿಕ";
 "com.kustomer.Outgoing chat" = "ಹೊರಹೋಗುವ ಚಾಟ್";
 "com.kustomer.Photo library" = "ಫೋಟೋ ಲೈಬ್ರರಿ";
 "com.kustomer.Please leave a message" = "ದಯವಿಟ್ಟು ಒಂದು ಸಂದೇಶವನ್ನು ಬಿಡಿ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ತೆಗೆದುಹಾಕಿ";
 "com.kustomer.Report problem" = "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ";
 "com.kustomer.Report sent" = "ವರದಿ ಕಳುಹಿಸಲಾಗಿದೆ";
+"com.kustomer.Required" = "ಅಗತ್ಯವಿದೆ";
 "com.kustomer.Save changes" = "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು";
 "com.kustomer.Search Help Articles" = "ಸಹಾಯ ಲೇಖನಗಳನ್ನು ಹುಡುಕಿ";
 "com.kustomer.Search Results" = "ಹುಡುಕಾಟ ಫಲಿತಾಂಶಗಳು";

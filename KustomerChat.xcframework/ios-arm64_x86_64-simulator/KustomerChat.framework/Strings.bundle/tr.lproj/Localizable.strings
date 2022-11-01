@@ -92,6 +92,7 @@
 "com.kustomer.is no longer available" = "artık erişilebilir değil";
 "com.kustomer.out of" = "dışında";
 "com.kustomer.sending" = "Gönderiliyor";
+"com.kustomer.Optional" = "İsteğe bağlı";
 "com.kustomer.%@ is typing..." = "%@ yazıyor...";
 "com.kustomer.100+ results found" = "100+ sonuç bulundu";
 "com.kustomer.Categories" = "Kategoriler";
@@ -100,5 +101,6 @@
 "com.kustomer.File type not supported" = "Dosya türü desteklenmiyor";
 "com.kustomer.No results" = "Sonuç yok";
 "com.kustomer.Please try another search term" = "Lütfen başka bir arama terimi deneyin";
+"com.kustomer.Required" = "Gerekli";
 "com.kustomer.Unavailable message goes here" = "Kullanılamayan mesaj buraya gelir";
 "com.kustomer.Yes" = "Evet";

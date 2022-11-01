@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "හමු වුණේ නැහැ";
 "com.kustomer.Okay" = "හරි හරී";
 "com.kustomer.Open in browser" = "බ්‍රවුසරයේ විවෘත කරන්න";
+"com.kustomer.Optional" = "විකල්ප";
 "com.kustomer.Outgoing chat" = "පිටතට යන කතාබස්";
 "com.kustomer.Photo library" = "ඡායාරූප පුස්තකාලය";
 "com.kustomer.Please leave a message" = "කරුණාකර පණිවිඩයක් තබන්න";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "ඉවත් කරන්න";
 "com.kustomer.Report problem" = "ගැටලුව වාර්තා කරන්න";
 "com.kustomer.Report sent" = "වාර්තාව යවා ඇත";
+"com.kustomer.Required" = "අවශ්යයි";
 "com.kustomer.Save changes" = "වෙනස්කම් සුරකින්න";
 "com.kustomer.Search Help Articles" = "උදව් ලිපි සොයන්න";
 "com.kustomer.Search Results" = "සෙවුම් ප්‍රතිඵල";

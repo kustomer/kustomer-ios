@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Non trovato";
 "com.kustomer.Okay" = "Bene";
 "com.kustomer.Open in browser" = "Apri nel browser";
+"com.kustomer.Optional" = "Opzionale";
 "com.kustomer.Outgoing chat" = "Chat in uscita";
 "com.kustomer.Photo library" = "Libreria fotografica";
 "com.kustomer.Please leave a message" = "Per favore lascia un messaggio";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Rimuovere";
 "com.kustomer.Report problem" = "Segnala problema";
 "com.kustomer.Report sent" = "rapporto inviato";
+"com.kustomer.Required" = "Necessario";
 "com.kustomer.Save changes" = "Salvare le modifiche";
 "com.kustomer.Search Help Articles" = "Cerca articoli della guida";
 "com.kustomer.Search Results" = "risultati di ricerca";

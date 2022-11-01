@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ni najdeno";
 "com.kustomer.Okay" = "v redu";
 "com.kustomer.Open in browser" = "Odpri v brskalniku";
+"com.kustomer.Optional" = "Neobvezno";
 "com.kustomer.Outgoing chat" = "Odhodni klepet";
 "com.kustomer.Photo library" = "Knjižnica fotografij";
 "com.kustomer.Please leave a message" = "Prosim, pustite sporočilo";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Odstrani";
 "com.kustomer.Report problem" = "Prijavite težavo";
 "com.kustomer.Report sent" = "Poročilo poslano";
+"com.kustomer.Required" = "Obvezno";
 "com.kustomer.Save changes" = "Shrani spremembe";
 "com.kustomer.Search Help Articles" = "Iskanje člankov pomoči";
 "com.kustomer.Search Results" = "Rezultati iskanja";

@@ -1,5 +1,5 @@
 "com.kustomer.%@ is typing..." = "%@ scrive...";
-"com.kustomer.100+ results found" = "100+ risultati trovu";
+"com.kustomer.100+ results found" = "100+ risultati truvati";
 "com.kustomer.Add additional feedback" = "Aggiungi feedback supplementari";
 "com.kustomer.Additional Feedback" = "Feedback supplementu";
 "com.kustomer.Additional feedback removed" = "Feedback supplementu eliminatu";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Micca trovu";
 "com.kustomer.Okay" = "Va bè";
 "com.kustomer.Open in browser" = "Apertura in u navigatore";
+"com.kustomer.Optional" = "Opcional";
 "com.kustomer.Outgoing chat" = "Chat in uscita";
 "com.kustomer.Photo library" = "Biblioteca di foto";
 "com.kustomer.Please leave a message" = "Per piacè lasciate un missaghju";
@@ -74,10 +75,11 @@
 "com.kustomer.Remove" = "Eliminate";
 "com.kustomer.Report problem" = "Segnala u prublema";
 "com.kustomer.Report sent" = "Rapportu mandatu";
+"com.kustomer.Required" = "Ubligatoriu";
 "com.kustomer.Save changes" = "Salvà i cambiamenti";
 "com.kustomer.Search Help Articles" = "Ricerca Articuli d&#39;aiutu";
 "com.kustomer.Search Results" = "Risultati di ricerca";
-"com.kustomer.Sending" = "Mandendu";
+"com.kustomer.Sending" = "Mandatu";
 "com.kustomer.Share" = "sparte";
 "com.kustomer.Submit" = "Mandate";
 "com.kustomer.Survey" = "Indagine";

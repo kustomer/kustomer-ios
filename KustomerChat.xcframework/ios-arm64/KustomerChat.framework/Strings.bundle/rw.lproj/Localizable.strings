@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ntibabonetse";
 "com.kustomer.Okay" = "Nibyo";
 "com.kustomer.Open in browser" = "Fungura muri mushakisha";
+"com.kustomer.Optional" = "Bihitamo";
 "com.kustomer.Outgoing chat" = "Ikiganiro gisohoka";
 "com.kustomer.Photo library" = "Isomero ry&#39;amafoto";
 "com.kustomer.Please leave a message" = "Nyamuneka siga ubutumwa";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Kuraho";
 "com.kustomer.Report problem" = "Raporo ikibazo";
 "com.kustomer.Report sent" = "Raporo yoherejwe";
+"com.kustomer.Required" = "Birasabwa";
 "com.kustomer.Save changes" = "Bika impinduka";
 "com.kustomer.Search Help Articles" = "Shakisha Ingingo Zifasha";
 "com.kustomer.Search Results" = "Shakisha Ibisubizo";

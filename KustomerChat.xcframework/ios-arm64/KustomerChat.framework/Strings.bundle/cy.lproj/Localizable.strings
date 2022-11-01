@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Heb ei ganfod";
 "com.kustomer.Okay" = "iawn";
 "com.kustomer.Open in browser" = "Agor yn y porwr";
+"com.kustomer.Optional" = "Dewisol";
 "com.kustomer.Outgoing chat" = "Sgwrs sy&#39;n mynd allan";
 "com.kustomer.Photo library" = "Llyfrgell ffotograffau";
 "com.kustomer.Please leave a message" = "Gadewch neges";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Dileu";
 "com.kustomer.Report problem" = "Rhoi gwybod am broblem";
 "com.kustomer.Report sent" = "Anfonwyd yr adroddiad";
+"com.kustomer.Required" = "Angenrheidiol";
 "com.kustomer.Save changes" = "Cadw newidiadau";
 "com.kustomer.Search Help Articles" = "Chwilio Erthyglau Cymorth";
 "com.kustomer.Search Results" = "Canlyniadau Chwilio";

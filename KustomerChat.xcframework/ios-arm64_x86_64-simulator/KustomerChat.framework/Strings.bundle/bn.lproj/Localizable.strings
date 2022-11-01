@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "পাওয়া যায়নি";
 "com.kustomer.Okay" = "ঠিক আছে";
 "com.kustomer.Open in browser" = "ব্রাউজারে খোলা";
+"com.kustomer.Optional" = "ঐচ্ছিক";
 "com.kustomer.Outgoing chat" = "বহির্গামী চ্যাট";
 "com.kustomer.Photo library" = "ফটো লাইব্রেরি";
 "com.kustomer.Please leave a message" = "অনুগ্রহপূর্বক একটি বার্তা রাখুন";
@@ -74,8 +75,9 @@
 "com.kustomer.Remove" = "অপসারণ";
 "com.kustomer.Report problem" = "সমস্যা রিপোর্ট করুন";
 "com.kustomer.Report sent" = "প্রতিবেদন পাঠানো";
+"com.kustomer.Required" = "প্রয়োজন";
 "com.kustomer.Save changes" = "পরিবর্তনগুলোর সংরক্ষন";
-"com.kustomer.Search Help Articles" = "সাহায্য নিবন্ধ অনুসন্ধান করুন";
+"com.kustomer.Search Help Articles" = "সাহায্য প্রবন্ধ অনুসন্ধান করুন";
 "com.kustomer.Search Results" = "অনুসন্ধান ফলাফল";
 "com.kustomer.Sending" = "পাঠানো হচ্ছে";
 "com.kustomer.Share" = "শেয়ার করুন";

@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ei leitud";
 "com.kustomer.Okay" = "Okei";
 "com.kustomer.Open in browser" = "Ava brauseris";
+"com.kustomer.Optional" = "Valikuline";
 "com.kustomer.Outgoing chat" = "Väljuv vestlus";
 "com.kustomer.Photo library" = "Fototeek";
 "com.kustomer.Please leave a message" = "Palun jäta sõnum";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Eemalda";
 "com.kustomer.Report problem" = "Teata probleemist";
 "com.kustomer.Report sent" = "Aruanne saadetud";
+"com.kustomer.Required" = "Nõutud";
 "com.kustomer.Save changes" = "Salvesta muudatused";
 "com.kustomer.Search Help Articles" = "Otsige abiartikleid";
 "com.kustomer.Search Results" = "Otsingu tulemused";

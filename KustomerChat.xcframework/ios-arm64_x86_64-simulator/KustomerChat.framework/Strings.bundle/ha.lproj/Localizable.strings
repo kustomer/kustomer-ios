@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ba a samu ba";
 "com.kustomer.Okay" = "Lafiya";
 "com.kustomer.Open in browser" = "Bude a browser";
+"com.kustomer.Optional" = "Na zaɓi";
 "com.kustomer.Outgoing chat" = "Taɗi mai fita";
 "com.kustomer.Photo library" = "Laburaren hoto";
 "com.kustomer.Please leave a message" = "Da fatan za a bar sako";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Cire";
 "com.kustomer.Report problem" = "Bayar da matsala";
 "com.kustomer.Report sent" = "An aika rahoton";
+"com.kustomer.Required" = "Da ake bukata";
 "com.kustomer.Save changes" = "Ajiye canje-canje";
 "com.kustomer.Search Help Articles" = "Bincika Labaran Taimako";
 "com.kustomer.Search Results" = "Sakamakon Bincike";

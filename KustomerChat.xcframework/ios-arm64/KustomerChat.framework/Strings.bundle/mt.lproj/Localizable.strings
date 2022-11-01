@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Ma nstabx";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Iftaħ fil-browser";
+"com.kustomer.Optional" = "Fakultattiv";
 "com.kustomer.Outgoing chat" = "Chat ħierġa";
 "com.kustomer.Photo library" = "Librerija tar-ritratti";
 "com.kustomer.Please leave a message" = "Jekk jogħġbok ħalli messaġġ";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Neħħi";
 "com.kustomer.Report problem" = "Irrapporta l-problema";
 "com.kustomer.Report sent" = "Rapport mibgħut";
+"com.kustomer.Required" = "Meħtieġ";
 "com.kustomer.Save changes" = "Issejvja l-bidliet";
 "com.kustomer.Search Help Articles" = "Fittex Artikoli ta&#39; Għajnuna";
 "com.kustomer.Search Results" = "Riżultati tat-Tiftix";

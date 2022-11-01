@@ -27,7 +27,7 @@
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Visne servare mutationes tuas in commento tuo factas?";
 "com.kustomer.Done" = "Done";
 "com.kustomer.Edit additional feedback" = "Recensere additional feedback";
-"com.kustomer.Edit comment" = "Recensere comment";
+"com.kustomer.Edit comment" = "Edit comment";
 "com.kustomer.End Chat" = "Finis Chat";
 "com.kustomer.Ended" = "Finivit";
 "com.kustomer.Error" = "Error";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Non inveni";
 "com.kustomer.Okay" = "Bene";
 "com.kustomer.Open in browser" = "In aperto pasco";
+"com.kustomer.Optional" = "Libitum";
 "com.kustomer.Outgoing chat" = "Exitus chat";
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Quaeso relinquere nuntium";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Aufer";
 "com.kustomer.Report problem" = "Report problema";
 "com.kustomer.Report sent" = "Report missus";
+"com.kustomer.Required" = "required";
 "com.kustomer.Save changes" = "Servare mutationes";
 "com.kustomer.Search Help Articles" = "Auxilium quaerere Articuli";
 "com.kustomer.Search Results" = "Search Results";

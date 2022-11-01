@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "Wala makit-an";
 "com.kustomer.Okay" = "Okay ra";
 "com.kustomer.Open in browser" = "Ablihi sa browser";
+"com.kustomer.Optional" = "Kapilian";
 "com.kustomer.Outgoing chat" = "Outgoing chat";
 "com.kustomer.Photo library" = "Photo library";
 "com.kustomer.Please leave a message" = "Palihug pagbilin ug mensahe";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "Kuhaa";
 "com.kustomer.Report problem" = "Ireport ang problema";
 "com.kustomer.Report sent" = "Gipadala ang report";
+"com.kustomer.Required" = "Gikinahanglan";
 "com.kustomer.Save changes" = "I-save ang mga pagbag-o";
 "com.kustomer.Search Help Articles" = "Pangitaa ang Mga Artikulo sa Tabang";
 "com.kustomer.Search Results" = "Resulta sa pagpangita";

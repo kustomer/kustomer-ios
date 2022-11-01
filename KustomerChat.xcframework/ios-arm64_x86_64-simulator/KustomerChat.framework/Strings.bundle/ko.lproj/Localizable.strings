@@ -54,7 +54,7 @@
 "com.kustomer.Never mind" = "괜찮아요";
 "com.kustomer.New Conversation" = "새로운 대화";
 "com.kustomer.New message" = "새로운 메시지";
-"com.kustomer.No articles" = "기사가 없습니다";
+"com.kustomer.No articles" = "기사 없음";
 "com.kustomer.No conversations yet" = "아직 대화가 없습니다.";
 "com.kustomer.No internet connection" = "인터넷에 연결되지 않음";
 "com.kustomer.No results" = "결과 없음";
@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "찾을 수 없음";
 "com.kustomer.Okay" = "괜찮아";
 "com.kustomer.Open in browser" = "브라우저에서 열려";
+"com.kustomer.Optional" = "선택 과목";
 "com.kustomer.Outgoing chat" = "나가는 채팅";
 "com.kustomer.Photo library" = "사진 라이브러리";
 "com.kustomer.Please leave a message" = "메시지를 남겨주세요";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "제거하다";
 "com.kustomer.Report problem" = "문제 신고";
 "com.kustomer.Report sent" = "보고서 전송됨";
+"com.kustomer.Required" = "필수의";
 "com.kustomer.Save changes" = "변경 사항을 저장하다";
 "com.kustomer.Search Help Articles" = "도움말 문서 검색";
 "com.kustomer.Search Results" = "검색 결과";

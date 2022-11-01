@@ -64,6 +64,7 @@
 "com.kustomer.Not found" = "پیدا نشد";
 "com.kustomer.Okay" = "باشه";
 "com.kustomer.Open in browser" = "در مرور گر باز کنید";
+"com.kustomer.Optional" = "اختیاری";
 "com.kustomer.Outgoing chat" = "چت خروجی";
 "com.kustomer.Photo library" = "کتابخانه عکس";
 "com.kustomer.Please leave a message" = "لطفا پیام بگذارید";
@@ -74,6 +75,7 @@
 "com.kustomer.Remove" = "برداشتن";
 "com.kustomer.Report problem" = "مشکل را گزارش بدهید";
 "com.kustomer.Report sent" = "گزارش ارسال شد";
+"com.kustomer.Required" = "ضروری";
 "com.kustomer.Save changes" = "ذخیره تغییرات";
 "com.kustomer.Search Help Articles" = "جستجوی مقالات راهنما";
 "com.kustomer.Search Results" = "نتایج جستجو";
