@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Down",
+        "repositoryURL": "https://github.com/kustomer/Down",
+        "state": {
+          "branch": null,
+          "revision": "e754ab1c80920dd51a8e08290c912ac1c2ac8b58",
+          "version": "0.11.0"
+        }
+      },
+      {
         "package": "PubNub",
         "repositoryURL": "https://github.com/pubnub/swift.git",
         "state": {
