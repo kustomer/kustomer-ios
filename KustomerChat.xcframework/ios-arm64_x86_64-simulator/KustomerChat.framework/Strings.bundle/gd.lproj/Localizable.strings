@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Tha an còmhradh seo ri leughadh a-mhàin";
 "com.kustomer.Try again" = "Feuch a-rithist";
 "com.kustomer.Type a message..." = "Sgrìobh teachdaireachd...";
+"com.kustomer.Unable to view attachment" = "Cha ghabh an ceangal fhaicinn";
 "com.kustomer.Unavailable message goes here" = "Tha teachdaireachd nach eil ri fhaighinn a&#39; dol an seo";
 "com.kustomer.Updated" = "Air ùrachadh";
 "com.kustomer.Waiting for a response from" = "A’ feitheamh ri freagairt bho";

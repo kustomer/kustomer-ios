@@ -69,7 +69,7 @@
 "com.kustomer.Photo library" = "فوٹو لائبریری";
 "com.kustomer.Please leave a message" = "براہ کرم ایک پیغام چھوڑیں۔";
 "com.kustomer.Please select an option..." = "براہ کرم ایک آپشن منتخب کریں...";
-"com.kustomer.Please try another search term" = "براہ کرم ایک اور تلاش کی اصطلاح آزمائیں۔";
+"com.kustomer.Please try another search term" = "براہ کرم کوئی اور تلاش کی اصطلاح آزمائیں۔";
 "com.kustomer.Reconnect" = "دوبارہ جڑیں۔";
 "com.kustomer.Reconnecting..." = "دوبارہ منسلک ہو رہا ہے...";
 "com.kustomer.Remove" = "دور";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "یہ گفتگو صرف پڑھنے کے لیے ہے۔";
 "com.kustomer.Try again" = "دوبارہ کوشش کریں";
 "com.kustomer.Type a message..." = "ایک پیغام ٹائپ کریں...";
+"com.kustomer.Unable to view attachment" = "منسلکہ دیکھنے سے قاصر";
 "com.kustomer.Unavailable message goes here" = "غیر دستیاب پیغام یہاں جاتا ہے۔";
 "com.kustomer.Updated" = "تازہ کاری";
 "com.kustomer.Waiting for a response from" = "کی طرف سے جواب کا انتظار ہے۔";

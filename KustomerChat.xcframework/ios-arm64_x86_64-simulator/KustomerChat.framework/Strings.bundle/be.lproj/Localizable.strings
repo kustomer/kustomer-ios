@@ -76,7 +76,7 @@
 "com.kustomer.Report problem" = "Паведаміць аб праблеме";
 "com.kustomer.Report sent" = "Справаздача адпраўлена";
 "com.kustomer.Required" = "абавязковы";
-"com.kustomer.Save changes" = "Захаваць змены";
+"com.kustomer.Save changes" = "Захавайце змены";
 "com.kustomer.Search Help Articles" = "Пошук па артыкулах даведкі";
 "com.kustomer.Search Results" = "Вынікі пошуку";
 "com.kustomer.Sending" = "Адпраўка";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Гэта размова толькі для чытання";
 "com.kustomer.Try again" = "Паспрабуй яшчэ";
 "com.kustomer.Type a message..." = "Увядзіце паведамленне...";
+"com.kustomer.Unable to view attachment" = "Немагчыма праглядзець далучэнне";
 "com.kustomer.Unavailable message goes here" = "Сюды трапляе паведамленне аб недаступнасці";
 "com.kustomer.Updated" = "Абноўлены";
 "com.kustomer.Waiting for a response from" = "Чакаю адказу ад";

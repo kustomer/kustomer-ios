@@ -23,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "对话已合并到另一个对话中。\n\n点按即可转到新对话。";
 "com.kustomer.Conversation moved to another customer" = "对话转移到另一位客户";
 "com.kustomer.Delete" = "删除";
-"com.kustomer.Do you want to remove your rating and feedback?" = "您想删除您的评分和反馈吗？";
+"com.kustomer.Do you want to remove your rating and feedback?" = "您要删除您的评分和反馈吗？";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "是否要保存对评论所做的更改？";
 "com.kustomer.Done" = "完毕";
 "com.kustomer.Edit additional feedback" = "编辑其他反馈";
@@ -74,7 +74,7 @@
 "com.kustomer.Reconnecting..." = "重新连接...";
 "com.kustomer.Remove" = "消除";
 "com.kustomer.Report problem" = "报告问题";
-"com.kustomer.Report sent" = "已发送报告";
+"com.kustomer.Report sent" = "报告已发送";
 "com.kustomer.Required" = "必需的";
 "com.kustomer.Save changes" = "保存更改";
 "com.kustomer.Search Help Articles" = "搜索帮助文章";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "此对话是只读的";
 "com.kustomer.Try again" = "再试一次";
 "com.kustomer.Type a message..." = "键入消息...";
+"com.kustomer.Unable to view attachment" = "无法查看附件";
 "com.kustomer.Unavailable message goes here" = "不可用的消息在这里";
 "com.kustomer.Updated" = "更新";
 "com.kustomer.Waiting for a response from" = "等待来自的回应";

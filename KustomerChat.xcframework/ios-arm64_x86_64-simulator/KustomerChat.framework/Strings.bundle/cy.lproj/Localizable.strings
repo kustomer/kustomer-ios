@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Mae&#39;r sgwrs hon yn ddarllenadwy yn unig";
 "com.kustomer.Try again" = "Ceisio eto";
 "com.kustomer.Type a message..." = "Teipiwch neges...";
+"com.kustomer.Unable to view attachment" = "Methu gweld atodiad";
 "com.kustomer.Unavailable message goes here" = "Neges ddim ar gael yn mynd yma";
 "com.kustomer.Updated" = "Wedi&#39;i ddiweddaru";
 "com.kustomer.Waiting for a response from" = "Aros am ymateb gan";

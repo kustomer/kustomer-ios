@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Αυτή η συνομιλία είναι μόνο για ανάγνωση";
 "com.kustomer.Try again" = "Προσπάθησε ξανά";
 "com.kustomer.Type a message..." = "Πληκτρολογήστε ένα μήνυμα...";
+"com.kustomer.Unable to view attachment" = "Δεν είναι δυνατή η προβολή του συνημμένου";
 "com.kustomer.Unavailable message goes here" = "Το μήνυμα μη διαθέσιμο πηγαίνει εδώ";
 "com.kustomer.Updated" = "ΕΠΙΚΑΙΡΟΠΟΙΗΜΕΝΟ";
 "com.kustomer.Waiting for a response from" = "Αναμονή απάντησης από";

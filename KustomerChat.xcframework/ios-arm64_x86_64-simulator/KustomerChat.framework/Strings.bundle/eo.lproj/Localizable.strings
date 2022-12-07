@@ -1,6 +1,6 @@
 "com.kustomer.%@ is typing..." = "%@ tajpas...";
 "com.kustomer.100+ results found" = "100+ rezultoj trovitaj";
-"com.kustomer.Add additional feedback" = "Aldonu pliajn rimarkojn";
+"com.kustomer.Add additional feedback" = "Aldonu pliajn komentojn";
 "com.kustomer.Additional Feedback" = "Pliaj Rimarkoj";
 "com.kustomer.Additional feedback removed" = "Pliaj sugestoj forigitaj";
 "com.kustomer.Agent" = "Agento";
@@ -44,7 +44,7 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Lasu mesaĝon";
 "com.kustomer.Leave a message..." = "Lasu mesaĝon...";
-"com.kustomer.Loading..." = "Ŝarĝante...";
+"com.kustomer.Loading..." = "Ŝargante...";
 "com.kustomer.Mark all as read" = "Marku ĉion kiel legitan";
 "com.kustomer.Me" = "Mi";
 "com.kustomer.Message" = "Mesaĝo";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ĉi tiu konversacio estas nurlegebla";
 "com.kustomer.Try again" = "Provu denove";
 "com.kustomer.Type a message..." = "Tajpu mesaĝon...";
+"com.kustomer.Unable to view attachment" = "Ne eblas vidi aldonaĵon";
 "com.kustomer.Unavailable message goes here" = "Nehavebla mesaĝo iras ĉi tie";
 "com.kustomer.Updated" = "Ĝisdatigita";
 "com.kustomer.Waiting for a response from" = "Atendante respondon de";

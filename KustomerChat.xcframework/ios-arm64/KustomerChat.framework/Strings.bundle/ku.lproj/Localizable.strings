@@ -4,7 +4,7 @@
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Bersivên zêde hatin rakirin";
 "com.kustomer.Agent" = "Casus";
-"com.kustomer.Answers" = "Bersiv";
+"com.kustomer.Answers" = "Bersivên";
 "com.kustomer.Are you sure you want to end this chat?" = "Ma tu bi rastî dixwazî vê sohbetê biqedînî?";
 "com.kustomer.Attached file" = "Pelê pêvekirî";
 "com.kustomer.Attachment" = "Attachment";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ev axaftin tenê-xwendin e";
 "com.kustomer.Try again" = "Dubare bixebitin";
 "com.kustomer.Type a message..." = "Peyamek binivîse...";
+"com.kustomer.Unable to view attachment" = "Nekarî pêvekê bibîne";
 "com.kustomer.Unavailable message goes here" = "Peyama neberdest diçe vir";
 "com.kustomer.Updated" = "Nûkirin";
 "com.kustomer.Waiting for a response from" = "Li benda bersiva ji";

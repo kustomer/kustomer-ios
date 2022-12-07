@@ -73,7 +73,7 @@
 "com.kustomer.Reconnect" = "Ponovno vzpostavite povezavo";
 "com.kustomer.Reconnecting..." = "Ponovna povezava ...";
 "com.kustomer.Remove" = "Odstrani";
-"com.kustomer.Report problem" = "Prijavite težavo";
+"com.kustomer.Report problem" = "Prijavi težavo";
 "com.kustomer.Report sent" = "Poročilo poslano";
 "com.kustomer.Required" = "Obvezno";
 "com.kustomer.Save changes" = "Shrani spremembe";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ta pogovor je samo za branje";
 "com.kustomer.Try again" = "Poskusi ponovno";
 "com.kustomer.Type a message..." = "Vnesite sporočilo ...";
+"com.kustomer.Unable to view attachment" = "Priloge ni mogoče videti";
 "com.kustomer.Unavailable message goes here" = "Tukaj gre sporočilo o nedosegljivosti";
 "com.kustomer.Updated" = "Posodobljeno";
 "com.kustomer.Waiting for a response from" = "Čakam na odgovor od";

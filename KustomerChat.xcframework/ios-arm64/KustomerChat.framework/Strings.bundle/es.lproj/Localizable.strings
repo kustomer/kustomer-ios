@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Esta conversación es de solo lectura";
 "com.kustomer.Try again" = "Intentar otra vez";
 "com.kustomer.Type a message..." = "Escribe un mensaje...";
+"com.kustomer.Unable to view attachment" = "No se puede ver el archivo adjunto";
 "com.kustomer.Unavailable message goes here" = "El mensaje de no disponible va aquí";
 "com.kustomer.Updated" = "Actualizado";
 "com.kustomer.Waiting for a response from" = "Esperando una respuesta de";
@@ -99,7 +100,7 @@
 "com.kustomer.Yes" = "Sí";
 "com.kustomer.You changed your additional feedback comment" = "Cambió su comentario de retroalimentación adicional";
 "com.kustomer.You're offline. Check your connection." = "Estás desconectado. Comprueba tu conexión.";
-"com.kustomer.Your existing conversations will be here." = "Sus conversaciones existentes estarán aquí.";
+"com.kustomer.Your existing conversations will be here." = "Tus conversaciones existentes estarán aquí.";
 "com.kustomer.is no longer available" = "ya no está disponible";
 "com.kustomer.out of" = "fuera de";
 "com.kustomer.sending" = "enviando";

@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Овај разговор је само за читање";
 "com.kustomer.Try again" = "Покушајте поново";
 "com.kustomer.Type a message..." = "Унесите поруку...";
+"com.kustomer.Unable to view attachment" = "Није могуће погледати прилог";
 "com.kustomer.Unavailable message goes here" = "Недоступна порука иде овде";
 "com.kustomer.Updated" = "Ажуриран";
 "com.kustomer.Waiting for a response from" = "Чека се одговор од";

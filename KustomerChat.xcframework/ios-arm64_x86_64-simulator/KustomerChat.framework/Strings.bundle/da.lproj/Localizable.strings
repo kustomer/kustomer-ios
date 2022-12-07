@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Denne samtale er skrivebeskyttet";
 "com.kustomer.Try again" = "Prøv igen";
 "com.kustomer.Type a message..." = "Skriv en besked...";
+"com.kustomer.Unable to view attachment" = "Kan ikke se den vedhæftede fil";
 "com.kustomer.Unavailable message goes here" = "Utilgængelig besked går her";
 "com.kustomer.Updated" = "Opdateret";
 "com.kustomer.Waiting for a response from" = "Venter på svar fra";

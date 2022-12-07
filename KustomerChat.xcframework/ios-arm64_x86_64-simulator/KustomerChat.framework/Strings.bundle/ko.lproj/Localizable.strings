@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "이 대화는 읽기 전용입니다.";
 "com.kustomer.Try again" = "다시 시도하십시오";
 "com.kustomer.Type a message..." = "메시지를 입력하세요...";
+"com.kustomer.Unable to view attachment" = "첨부 파일을 볼 수 없습니다";
 "com.kustomer.Unavailable message goes here" = "사용할 수 없는 메시지가 여기에 표시됩니다.";
 "com.kustomer.Updated" = "업데이트됨";
 "com.kustomer.Waiting for a response from" = "의 응답을 기다리는 중";

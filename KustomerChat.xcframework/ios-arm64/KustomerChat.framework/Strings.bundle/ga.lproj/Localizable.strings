@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Tá an comhrá seo inléite amháin";
 "com.kustomer.Try again" = "Déan iarracht arís";
 "com.kustomer.Type a message..." = "Clóscríobh teachtaireacht...";
+"com.kustomer.Unable to view attachment" = "Ní féidir an ceangaltán a fheiceáil";
 "com.kustomer.Unavailable message goes here" = "Téann teachtaireacht nach bhfuil ar fáil anseo";
 "com.kustomer.Updated" = "Nuashonraithe";
 "com.kustomer.Waiting for a response from" = "Ag fanacht le freagra ó";

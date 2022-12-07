@@ -1184,26 +1184,18 @@ extension KustomerChat.KustomerUI.Color {
   public static var tabBarItemColor: UIKit.UIColor
   public static var tabBarUnselectedItemColor: UIKit.UIColor
   public static var kbBrowseBackground: UIKit.UIColor
-  public static var kbBrowseSeparator: UIKit.UIColor?
-  public static var kbLoadingProgressTintColor: UIKit.UIColor?
-  public static var kbLoadingTintColor: UIKit.UIColor?
-  public static var kobjectButton: UIKit.UIColor?
-  public static var kobjectButtonText: UIKit.UIColor?
-  public static var kbBrowseRowTitle: UIKit.UIColor?
-  public static var kbBrowseRowSubtitle: UIKit.UIColor?
-  public static var kbBrowseCategoryDescriptionText: UIKit.UIColor?
-  public static var kbBrowseIconTint: UIKit.UIColor?
+  public static var kbBrowseSeparator: UIKit.UIColor
+  public static var kbLoadingProgressTintColor: UIKit.UIColor
+  public static var kbLoadingTintColor: UIKit.UIColor
+  public static var kobjectButton: UIKit.UIColor
+  public static var kobjectButtonText: UIKit.UIColor
+  public static var kbBrowseRowTitle: UIKit.UIColor
+  public static var kbBrowseRowSubtitle: UIKit.UIColor
+  public static var kbBrowseCategoryDescriptionText: UIKit.UIColor
+  public static var kbBrowseIconTint: UIKit.UIColor
   public static var kbHeader: UIKit.UIColor
   public static var kbHeaderText: UIKit.UIColor
   public static var kbHeaderTint: UIKit.UIColor
-  @available(*, deprecated, message: "Knowledge Base Articles will soon load as embedded web views - please use the Kustomer Web Portal for all Knowledge Base article formatting")
-  public static var kbArticleBackgroundLight: UIKit.UIColor
-  @available(*, deprecated, message: "Knowledge Base Articles will soon load as embedded web views - please use the Kustomer Web Portal for all Knowledge Base article formatting")
-  public static var kbArticleBackgroundDark: UIKit.UIColor
-  @available(*, deprecated, message: "Knowledge Base Articles will soon load as embedded web views - please use the Kustomer Web Portal for all Knowledge Base article formatting")
-  public static var kbSurveySubmitButton: UIKit.UIColor
-  @available(*, deprecated, message: "Knowledge Base Articles will soon load as embedded web views - please use the Kustomer Web Portal for all Knowledge Base article formatting")
-  public static var kbSurveySubmitButtonText: UIKit.UIColor
   public static var chatMllMenuOpenBackdrop: UIKit.UIColor
   public static var mllOptionText: UIKit.UIColor
   public static var mllMenuTitleText: UIKit.UIColor
@@ -1594,7 +1586,7 @@ public enum KustomerLogType : Swift.String {
 }
 public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
 public typealias KUSCustomDescribe = [Swift.String : Swift.String]
-@objc @_inheritsConvenienceInitializers final public class KustomerClient : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers final public class KustomerClient : ObjectiveC.NSObject {
   final public var chatProvider: KustomerChat.ChatProvider {
     get
     set
@@ -1674,7 +1666,6 @@ public typealias KUSCustomDescribe = [Swift.String : Swift.String]
   final public func printLocalizationKeys()
   @available(*, deprecated, message: "This functionality is deprecated and will be removed in a future version. Please user KustomerOptions.language to set a language")
   final public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
-  @objc override dynamic public init()
   final public func openChatAssistant(id: Swift.String, startDialog: Swift.String?, presentingVC: UIKit.UIViewController? = nil, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, animated: Swift.Bool = true)
   final public func getUnreadCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
   final public func getOpenConversationCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
@@ -1883,7 +1874,7 @@ extension KustomerChat.KustomerUI.Color {
   public static var systemFill: UIKit.UIColor {
     get
   }
-  public static func color(_ named: Swift.String) -> UIKit.UIColor?
+  public static func color(_ named: Swift.String) -> UIKit.UIColor
 }
 public struct KnowledgeBaseDomain : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws

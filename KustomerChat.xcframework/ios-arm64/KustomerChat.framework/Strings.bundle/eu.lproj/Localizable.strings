@@ -74,7 +74,7 @@
 "com.kustomer.Reconnecting..." = "Berriro konektatzen...";
 "com.kustomer.Remove" = "Kendu";
 "com.kustomer.Report problem" = "Salatu arazoa";
-"com.kustomer.Report sent" = "Txostena bidali da";
+"com.kustomer.Report sent" = "Bidalitako txostena";
 "com.kustomer.Required" = "Beharrezkoa";
 "com.kustomer.Save changes" = "Aldaketak gorde";
 "com.kustomer.Search Help Articles" = "Bilatu laguntza-artikuluak";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Elkarrizketa hau irakurtzeko soilik da";
 "com.kustomer.Try again" = "Saiatu berriro";
 "com.kustomer.Type a message..." = "Idatzi mezu bat...";
+"com.kustomer.Unable to view attachment" = "Ezin da eranskina ikusi";
 "com.kustomer.Unavailable message goes here" = "Eskuragarri ez dagoen mezua hemen doa";
 "com.kustomer.Updated" = "Eguneratua";
 "com.kustomer.Waiting for a response from" = "Erantzunaren zain";

@@ -9,7 +9,7 @@
 "com.kustomer.Attached file" = "rakitra apetaka";
 "com.kustomer.Attachment" = "miraiki-po";
 "com.kustomer.Browse files" = "Hijery rakitra";
-"com.kustomer.Camera roll" = "Rolla fakan-tsary";
+"com.kustomer.Camera roll" = "Horonan-tsary";
 "com.kustomer.Can't load chat" = "Tsy afaka mampiditra chat";
 "com.kustomer.Cancel" = "hanafoana";
 "com.kustomer.Cancelled! Tap to retry." = "nofoanana! Tsindrio raha hanandrana indray.";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ity resaka ity dia vakiana fotsiny";
 "com.kustomer.Try again" = "Andramo indray mandeha";
 "com.kustomer.Type a message..." = "Manorata hafatra...";
+"com.kustomer.Unable to view attachment" = "Tsy afaka mijery ny attachment";
 "com.kustomer.Unavailable message goes here" = "Hafatra tsy azo alefa eto";
 "com.kustomer.Updated" = "nohavaozina";
 "com.kustomer.Waiting for a response from" = "Miandry valiny avy amin&#39;ny";

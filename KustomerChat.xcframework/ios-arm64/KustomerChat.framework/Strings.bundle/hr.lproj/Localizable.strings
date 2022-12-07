@@ -21,7 +21,7 @@
 "com.kustomer.Chat with support" = "Razgovarajte s podrškom";
 "com.kustomer.Conversation ended" = "Razgovor završen";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Razgovor je spojen u drugi razgovor.\n\nDodirnite za prelazak na novi razgovor.";
-"com.kustomer.Conversation moved to another customer" = "Razgovor je premješten na drugu stranku";
+"com.kustomer.Conversation moved to another customer" = "Razgovor je premješten na drugog kupca";
 "com.kustomer.Delete" = "Izbrisati";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Želite li ukloniti svoju ocjenu i povratne informacije?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Želite li spremiti promjene koje ste unijeli u svoj komentar?";
@@ -92,10 +92,11 @@
 "com.kustomer.This conversation is read-only" = "Ovaj razgovor je samo za čitanje";
 "com.kustomer.Try again" = "Pokušajte ponovo";
 "com.kustomer.Type a message..." = "Upišite poruku...";
+"com.kustomer.Unable to view attachment" = "Nije moguće vidjeti privitak";
 "com.kustomer.Unavailable message goes here" = "Poruka o nedostupnosti ide ovdje";
 "com.kustomer.Updated" = "Ažurirano";
 "com.kustomer.Waiting for a response from" = "Čeka se odgovor od";
-"com.kustomer.We will get back to you as soon as we are online!" = "Javit ćemo vam se čim budemo na mreži!";
+"com.kustomer.We will get back to you as soon as we are online!" = "Javit ćemo vam se čim budemo online!";
 "com.kustomer.Yes" = "Da";
 "com.kustomer.You changed your additional feedback comment" = "Promijenili ste komentar dodatne povratne informacije";
 "com.kustomer.You're offline. Check your connection." = "Izvan mreže ste. Provjerite vezu.";

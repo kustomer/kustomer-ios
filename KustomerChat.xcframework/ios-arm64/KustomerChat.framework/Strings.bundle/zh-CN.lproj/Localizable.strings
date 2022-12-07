@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "此对话是只读的";
 "com.kustomer.Try again" = "再试一次";
 "com.kustomer.Type a message..." = "键入消息...";
+"com.kustomer.Unable to view attachment" = "无法查看附件";
 "com.kustomer.Unavailable message goes here" = "不可用的消息在这里";
 "com.kustomer.Updated" = "更新";
 "com.kustomer.Waiting for a response from" = "等待来自的回应";

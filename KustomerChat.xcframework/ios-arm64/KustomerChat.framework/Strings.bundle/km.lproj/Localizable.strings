@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ការសន្ទនានេះគឺបានតែអានប៉ុណ្ណោះ។";
 "com.kustomer.Try again" = "ព្យាយាម​ម្តង​ទៀត";
 "com.kustomer.Type a message..." = "វាយ​សារ...";
+"com.kustomer.Unable to view attachment" = "មិនអាចមើលឯកសារភ្ជាប់បានទេ។";
 "com.kustomer.Unavailable message goes here" = "សារដែលមិនអាចប្រើបានទៅទីនេះ";
 "com.kustomer.Updated" = "បានធ្វើបច្ចុប្បន្នភាព";
 "com.kustomer.Waiting for a response from" = "រង់ចាំការឆ្លើយតបពី";

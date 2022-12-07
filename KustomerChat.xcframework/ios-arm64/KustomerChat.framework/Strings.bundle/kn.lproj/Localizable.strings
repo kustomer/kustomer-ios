@@ -42,7 +42,7 @@
 "com.kustomer.Internet offline" = "ಇಂಟರ್ನೆಟ್ ಆಫ್‌ಲೈನ್";
 "com.kustomer.Just now" = "ಈಗ ತಾನೆ";
 "com.kustomer.KB" = "ಕೆಬಿ";
-"com.kustomer.Leave a message" = "ಸಂದೇಶವನ್ನು ಬಿಡಿ";
+"com.kustomer.Leave a message" = "ಒಂದು ಸಂದೇಶವನ್ನು ಬಿಡಿ";
 "com.kustomer.Leave a message..." = "ಸಂದೇಶವನ್ನು ಬಿಡಿ...";
 "com.kustomer.Loading..." = "ಲೋಡ್ ಆಗುತ್ತಿದೆ...";
 "com.kustomer.Mark all as read" = "ಎಲ್ಲವನ್ನು ಓದಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಿ";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ಈ ಸಂಭಾಷಣೆ ಓದಲು ಮಾತ್ರ";
 "com.kustomer.Try again" = "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು";
 "com.kustomer.Type a message..." = "ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ...";
+"com.kustomer.Unable to view attachment" = "ಲಗತ್ತನ್ನು ವೀಕ್ಷಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ";
 "com.kustomer.Unavailable message goes here" = "ಅಲಭ್ಯ ಸಂದೇಶವು ಇಲ್ಲಿಗೆ ಹೋಗುತ್ತದೆ";
 "com.kustomer.Updated" = "ನವೀಕರಿಸಲಾಗಿದೆ";
 "com.kustomer.Waiting for a response from" = "ಅವರಿಂದ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ನಿರೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ";

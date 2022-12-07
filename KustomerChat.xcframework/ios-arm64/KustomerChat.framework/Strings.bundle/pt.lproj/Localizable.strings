@@ -49,7 +49,7 @@
 "com.kustomer.Me" = "Eu";
 "com.kustomer.Message" = "Mensagem";
 "com.kustomer.Message failed to send" = "Falha ao enviar mensagem";
-"com.kustomer.Message failed to send!" = "Falha ao enviar a mensagem!";
+"com.kustomer.Message failed to send!" = "Falha no envio da mensagem!";
 "com.kustomer.Moved" = "Mudou-se";
 "com.kustomer.Never mind" = "Deixa para lá";
 "com.kustomer.New Conversation" = "Nova conversa";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Esta conversa é somente leitura";
 "com.kustomer.Try again" = "Tente novamente";
 "com.kustomer.Type a message..." = "Digite uma mensagem...";
+"com.kustomer.Unable to view attachment" = "Não foi possível visualizar o anexo";
 "com.kustomer.Unavailable message goes here" = "Mensagem indisponível vai aqui";
 "com.kustomer.Updated" = "Atualizada";
 "com.kustomer.Waiting for a response from" = "Aguardando uma resposta de";

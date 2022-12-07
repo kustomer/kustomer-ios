@@ -24,14 +24,14 @@
 "com.kustomer.Conversation moved to another customer" = "Nhaurirano yakaendeswa kune mumwe mutengi";
 "com.kustomer.Delete" = "Delete";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Iwe unoda kubvisa chiyero chako uye mhinduro?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko dzawakaita kune yako mhinduro?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Iwe unoda kuchengetedza shanduko yawakaita kune yako mhinduro?";
 "com.kustomer.Done" = "Ndapedza";
 "com.kustomer.Edit additional feedback" = "Rongedza imwe mhinduro";
 "com.kustomer.Edit comment" = "Rongedza mhinduro";
 "com.kustomer.End Chat" = "End Chat";
 "com.kustomer.Ended" = "Yakapera";
 "com.kustomer.Error" = "Error";
-"com.kustomer.Error!" = "Error!";
+"com.kustomer.Error!" = "Mhosho!";
 "com.kustomer.Error. Tap to retry." = "Error. Tinya kuti uedze zvakare.";
 "com.kustomer.FAQ" = "FAQ";
 "com.kustomer.Featured Articles" = "Featured Articles";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Hurukuro iyi ndeyekuverenga chete";
 "com.kustomer.Try again" = "Edza zvakare";
 "com.kustomer.Type a message..." = "Nyora meseji...";
+"com.kustomer.Unable to view attachment" = "Hatina kuona zvakabatanidzwa";
 "com.kustomer.Unavailable message goes here" = "Meseji isingawanikwe inoenda pano";
 "com.kustomer.Updated" = "Updated";
 "com.kustomer.Waiting for a response from" = "Kumirira mhinduro kubva";

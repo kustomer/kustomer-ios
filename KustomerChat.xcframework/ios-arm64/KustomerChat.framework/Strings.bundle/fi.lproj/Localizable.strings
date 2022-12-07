@@ -55,7 +55,7 @@
 "com.kustomer.New Conversation" = "Uusi keskustelu";
 "com.kustomer.New message" = "Uusi viesti";
 "com.kustomer.No articles" = "Ei artikkeleita";
-"com.kustomer.No conversations yet" = "Ei keskusteluja vielä";
+"com.kustomer.No conversations yet" = "Ei vielä keskusteluja";
 "com.kustomer.No internet connection" = "Ei Internet-yhteyttä";
 "com.kustomer.No results" = "Ei tuloksia";
 "com.kustomer.No text" = "Ei tekstiä";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Tämä keskustelu on vain luku -tilassa";
 "com.kustomer.Try again" = "Yritä uudelleen";
 "com.kustomer.Type a message..." = "Kirjoita viesti...";
+"com.kustomer.Unable to view attachment" = "Liitettä ei voi tarkastella";
 "com.kustomer.Unavailable message goes here" = "Viesti, joka ei ole käytettävissä, menee tänne";
 "com.kustomer.Updated" = "Päivitetty";
 "com.kustomer.Waiting for a response from" = "Odotetaan vastausta henkilöltä";

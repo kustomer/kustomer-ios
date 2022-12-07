@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ဤစကားဝိုင်းသည် ဖတ်ရန်သာဖြစ်သည်။";
 "com.kustomer.Try again" = "ထပ်ကြိုးစားပါ";
 "com.kustomer.Type a message..." = "မက်ဆေ့ခ်ျရိုက်ပါ...";
+"com.kustomer.Unable to view attachment" = "ပူးတွဲပါဖိုင်ကို ကြည့်ရှု၍မရပါ။";
 "com.kustomer.Unavailable message goes here" = "မရရှိနိုင်သော မက်ဆေ့ဂျ်သည် ဤနေရာသို့ သွားပါသည်။";
 "com.kustomer.Updated" = "မွမ်းမံထားသည်။";
 "com.kustomer.Waiting for a response from" = "ထံမှ တုံ့ပြန်မှုကို စောင့်မျှော်နေပါသည်။";
