@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ఈ సంభాషణ చదవడానికి మాత్రమే";
 "com.kustomer.Try again" = "మళ్లీ ప్రయత్నించండి";
 "com.kustomer.Type a message..." = "సందేశాన్ని టైప్ చేయండి...";
+"com.kustomer.Unable to view attachment" = "జోడింపుని వీక్షించడం సాధ్యం కాలేదు";
 "com.kustomer.Unavailable message goes here" = "అందుబాటులో లేని సందేశం ఇక్కడకు వెళుతుంది";
 "com.kustomer.Updated" = "నవీకరించబడింది";
 "com.kustomer.Waiting for a response from" = "నుండి ప్రతిస్పందన కోసం వేచి ఉంది";

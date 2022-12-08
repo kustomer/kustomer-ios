@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Þetta samtal er skrifvarið";
 "com.kustomer.Try again" = "Reyndu aftur";
 "com.kustomer.Type a message..." = "Sláðu inn skilaboð...";
+"com.kustomer.Unable to view attachment" = "Ekki er hægt að skoða viðhengi";
 "com.kustomer.Unavailable message goes here" = "Ótiltæk skilaboð fara hingað";
 "com.kustomer.Updated" = "Uppfært";
 "com.kustomer.Waiting for a response from" = "Beðið eftir svari frá";

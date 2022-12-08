@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "この会話は読み取り専用です";
 "com.kustomer.Try again" = "再試行";
 "com.kustomer.Type a message..." = "メッセージを入力...";
+"com.kustomer.Unable to view attachment" = "添付ファイルを表示できません";
 "com.kustomer.Unavailable message goes here" = "利用できないメッセージがここに表示されます";
 "com.kustomer.Updated" = "更新しました";
 "com.kustomer.Waiting for a response from" = "からの応答を待っています";

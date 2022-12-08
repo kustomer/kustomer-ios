@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Den här konversationen är skrivskyddad";
 "com.kustomer.Try again" = "Försök igen";
 "com.kustomer.Type a message..." = "Skriv ett meddelande...";
+"com.kustomer.Unable to view attachment" = "Det går inte att visa bilagan";
 "com.kustomer.Unavailable message goes here" = "Ej tillgängligt meddelande kommer hit";
 "com.kustomer.Updated" = "Uppdaterad";
 "com.kustomer.Waiting for a response from" = "Väntar på svar från";

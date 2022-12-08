@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ഈ സംഭാഷണം വായിക്കാൻ മാത്രമുള്ളതാണ്";
 "com.kustomer.Try again" = "വീണ്ടും ശ്രമിക്കുക";
 "com.kustomer.Type a message..." = "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക...";
+"com.kustomer.Unable to view attachment" = "അറ്റാച്ച്മെന്റ് കാണാൻ കഴിയുന്നില്ല";
 "com.kustomer.Unavailable message goes here" = "ലഭ്യമല്ലാത്ത സന്ദേശം ഇവിടെ പോകുന്നു";
 "com.kustomer.Updated" = "അപ്ഡേറ്റ് ചെയ്തു";
 "com.kustomer.Waiting for a response from" = "ഒരു പ്രതികരണത്തിനായി കാത്തിരിക്കുന്നു";

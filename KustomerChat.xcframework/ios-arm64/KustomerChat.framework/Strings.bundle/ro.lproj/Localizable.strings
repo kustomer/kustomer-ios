@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Această conversație este doar în citire";
 "com.kustomer.Try again" = "Încearcă din nou";
 "com.kustomer.Type a message..." = "Scrie un mesaj...";
+"com.kustomer.Unable to view attachment" = "Nu se poate vizualiza atașamentul";
 "com.kustomer.Unavailable message goes here" = "Mesajul indisponibil ajunge aici";
 "com.kustomer.Updated" = "La curent";
 "com.kustomer.Waiting for a response from" = "Astept un raspuns de la";

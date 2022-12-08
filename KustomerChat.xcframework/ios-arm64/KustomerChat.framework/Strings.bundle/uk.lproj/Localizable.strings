@@ -21,7 +21,7 @@
 "com.kustomer.Chat with support" = "Спілкуйтеся зі службою підтримки";
 "com.kustomer.Conversation ended" = "Розмова закінчилася";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Бесіду об’єднано в іншу бесіду.\n\nТоркніться, щоб перейти до нової бесіди.";
-"com.kustomer.Conversation moved to another customer" = "Розмову перенесено до іншого клієнта";
+"com.kustomer.Conversation moved to another customer" = "Розмова перенесена до іншого клієнта";
 "com.kustomer.Delete" = "Видалити";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ви хочете видалити свою оцінку та відгук?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Бажаєте зберегти зміни, які ви внесли до свого коментаря?";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ця розмова доступна лише для читання";
 "com.kustomer.Try again" = "Спробуйте знову";
 "com.kustomer.Type a message..." = "Введіть повідомлення...";
+"com.kustomer.Unable to view attachment" = "Неможливо переглянути вкладення";
 "com.kustomer.Unavailable message goes here" = "Сюди потрапляє повідомлення про недоступність";
 "com.kustomer.Updated" = "Оновлено";
 "com.kustomer.Waiting for a response from" = "Очікування відповіді від";
@@ -99,7 +100,7 @@
 "com.kustomer.Yes" = "Так";
 "com.kustomer.You changed your additional feedback comment" = "Ви змінили коментар додаткового відгуку";
 "com.kustomer.You're offline. Check your connection." = "Ви офлайн. Перевірте підключення.";
-"com.kustomer.Your existing conversations will be here." = "Ваші наявні розмови будуть тут.";
+"com.kustomer.Your existing conversations will be here." = "Ваші існуючі розмови будуть тут.";
 "com.kustomer.is no longer available" = "більше не доступні";
 "com.kustomer.out of" = "з";
-"com.kustomer.sending" = "відправлення";
+"com.kustomer.sending" = "відправка";

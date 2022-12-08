@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ez a beszélgetés csak olvasható";
 "com.kustomer.Try again" = "Próbáld újra";
 "com.kustomer.Type a message..." = "Írjon be egy üzenetet...";
+"com.kustomer.Unable to view attachment" = "A melléklet nem tekinthető meg";
 "com.kustomer.Unavailable message goes here" = "A nem elérhető üzenet ide kerül";
 "com.kustomer.Updated" = "Frissítve";
 "com.kustomer.Waiting for a response from" = "Válaszra vár";

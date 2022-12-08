@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "অতিরিক্ত প্রতিক্রিয়া সরানো হয়েছে";
 "com.kustomer.Agent" = "প্রতিনিধি";
 "com.kustomer.Answers" = "উত্তর";
-"com.kustomer.Are you sure you want to end this chat?" = "আপনি কি এই চ্যাটটি শেষ করতে চান?";
+"com.kustomer.Are you sure you want to end this chat?" = "আপনি কি নিশ্চিত আপনি এই চ্যাট শেষ করতে চান?";
 "com.kustomer.Attached file" = "সংযুক্ত ফাইল";
 "com.kustomer.Attachment" = "সংযুক্তি";
 "com.kustomer.Browse files" = "ফাইল ব্রাউজ";
@@ -23,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "কথোপকথন অন্য কথোপকথনে একত্রিত হয়েছে।\n\nনতুন কথোপকথনে যেতে ট্যাপ করুন।";
 "com.kustomer.Conversation moved to another customer" = "কথোপকথন অন্য গ্রাহকের কাছে সরানো হয়েছে৷";
 "com.kustomer.Delete" = "মুছে ফেলা";
-"com.kustomer.Do you want to remove your rating and feedback?" = "আপনি কি আপনার রেটিং এবং প্রতিক্রিয়া সরাতে চান?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "আপনি আপনার রেটিং এবং প্রতিক্রিয়া সরাতে চান?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "আপনি কি আপনার মন্তব্যে করা পরিবর্তনগুলি সংরক্ষণ করতে চান?";
 "com.kustomer.Done" = "সম্পন্ন";
 "com.kustomer.Edit additional feedback" = "অতিরিক্ত প্রতিক্রিয়া সম্পাদনা করুন";
@@ -59,7 +59,7 @@
 "com.kustomer.No internet connection" = "ইন্টারনেট সংযোগ নেই";
 "com.kustomer.No results" = "কোন ফলাফল নেই";
 "com.kustomer.No text" = "কোন লেখা নেই";
-"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোন অন্তর্ভুক্ত করা হয়নি";
+"com.kustomer.None of your personal information was included" = "আপনার ব্যক্তিগত তথ্য কোনো অন্তর্ভুক্ত করা হয়নি";
 "com.kustomer.Not enough disk space" = "পর্যাপ্ত ডিস্ক স্থান নেই";
 "com.kustomer.Not found" = "পাওয়া যায়নি";
 "com.kustomer.Okay" = "ঠিক আছে";
@@ -77,7 +77,7 @@
 "com.kustomer.Report sent" = "প্রতিবেদন পাঠানো";
 "com.kustomer.Required" = "প্রয়োজন";
 "com.kustomer.Save changes" = "পরিবর্তনগুলোর সংরক্ষন";
-"com.kustomer.Search Help Articles" = "সাহায্য প্রবন্ধ অনুসন্ধান করুন";
+"com.kustomer.Search Help Articles" = "সাহায্য নিবন্ধ অনুসন্ধান করুন";
 "com.kustomer.Search Results" = "অনুসন্ধান ফলাফল";
 "com.kustomer.Sending" = "পাঠানো হচ্ছে";
 "com.kustomer.Share" = "শেয়ার করুন";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "এই কথোপকথন শুধুমাত্র পঠনযোগ্য";
 "com.kustomer.Try again" = "আবার চেষ্টা করুন";
 "com.kustomer.Type a message..." = "একটি বার্তা টাইপ করুন...";
+"com.kustomer.Unable to view attachment" = "সংযুক্তি দেখতে অক্ষম";
 "com.kustomer.Unavailable message goes here" = "অনুপলব্ধ বার্তা এখানে যায়";
 "com.kustomer.Updated" = "আপডেট করা হয়েছে";
 "com.kustomer.Waiting for a response from" = "থেকে একটি প্রতিক্রিয়া জন্য অপেক্ষা";

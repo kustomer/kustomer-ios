@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Le ncoko ifundwa kuphela";
 "com.kustomer.Try again" = "Zama kwakhona";
 "com.kustomer.Type a message..." = "Chwetheza umyalezo...";
+"com.kustomer.Unable to view attachment" = "Akukwazeki ukujonga isincamatheliso";
 "com.kustomer.Unavailable message goes here" = "Umyalezo ongafumanekiyo uya apha";
 "com.kustomer.Updated" = "Ihlaziyiwe";
 "com.kustomer.Waiting for a response from" = "Ilinde impendulo evela";

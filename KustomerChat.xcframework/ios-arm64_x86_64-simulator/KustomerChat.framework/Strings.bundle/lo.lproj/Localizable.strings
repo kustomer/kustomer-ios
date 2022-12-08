@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "ລຶບຄຳຕິຊົມເພີ່ມເຕີມອອກແລ້ວ";
 "com.kustomer.Agent" = "ຕົວແທນ";
 "com.kustomer.Answers" = "ຄໍາຕອບ";
-"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການສິ້ນສຸດການສົນທະນານີ້?";
+"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຢຸດການສົນທະນານີ້?";
 "com.kustomer.Attached file" = "ໄຟລ໌ແນບ";
 "com.kustomer.Attachment" = "ໄຟລ໌ແນບ";
 "com.kustomer.Browse files" = "ຊອກຫາໄຟລ໌";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ການສົນທະນານີ້ແມ່ນອ່ານໄດ້ເທົ່ານັ້ນ";
 "com.kustomer.Try again" = "ລອງ​ອີກ​ຄັ້ງ";
 "com.kustomer.Type a message..." = "ພິມຂໍ້ຄວາມ...";
+"com.kustomer.Unable to view attachment" = "ບໍ່ສາມາດເບິ່ງໄຟລ໌ແນບໄດ້";
 "com.kustomer.Unavailable message goes here" = "ຂໍ້ຄວາມທີ່ບໍ່ສາມາດໃຊ້ໄດ້ມາທີ່ນີ້";
 "com.kustomer.Updated" = "ອັບເດດ";
 "com.kustomer.Waiting for a response from" = "ລໍຖ້າຄໍາຕອບຈາກ";

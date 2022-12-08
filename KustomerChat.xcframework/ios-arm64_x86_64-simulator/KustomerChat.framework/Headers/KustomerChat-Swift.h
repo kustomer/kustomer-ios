@@ -253,7 +253,8 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 /// A singleton. This is how you interact with the Kustomer SDK.
 SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @interface KustomerClient : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -322,8 +323,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
@@ -637,7 +636,8 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 /// A singleton. This is how you interact with the Kustomer SDK.
 SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @interface KustomerClient : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -706,8 +706,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 

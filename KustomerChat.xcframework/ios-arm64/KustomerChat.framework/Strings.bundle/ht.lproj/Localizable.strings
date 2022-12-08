@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Konvèsasyon sa a se lekti sèlman";
 "com.kustomer.Try again" = "Eseye anko";
 "com.kustomer.Type a message..." = "Tape yon mesaj...";
+"com.kustomer.Unable to view attachment" = "Pa kapab wè atachman";
 "com.kustomer.Unavailable message goes here" = "Mesaj ki pa disponib ale isit la";
 "com.kustomer.Updated" = "Mizajou";
 "com.kustomer.Waiting for a response from" = "Ap tann yon repons de";

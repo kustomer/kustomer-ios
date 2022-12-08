@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Šī saruna ir tikai lasāma";
 "com.kustomer.Try again" = "Mēģini vēlreiz";
 "com.kustomer.Type a message..." = "Ierakstiet ziņojumu...";
+"com.kustomer.Unable to view attachment" = "Nevar skatīt pielikumu";
 "com.kustomer.Unavailable message goes here" = "Šeit tiek parādīts ziņojums, kas nav pieejams";
 "com.kustomer.Updated" = "Atjaunināts";
 "com.kustomer.Waiting for a response from" = "Gaida atbildi no";

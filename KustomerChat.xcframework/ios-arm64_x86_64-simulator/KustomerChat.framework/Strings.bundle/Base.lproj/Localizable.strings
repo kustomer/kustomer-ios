@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "This conversation is read-only";
 "com.kustomer.Try again" = "Try again";
 "com.kustomer.Type a message..." = "Type a message...";
+"com.kustomer.Unable to view attachment" = "Unable to view attachment";
 "com.kustomer.Unavailable message goes here" = "Unavailable message goes here";
 "com.kustomer.Updated" = "Updated";
 "com.kustomer.Waiting for a response from" = "Waiting for a response from";

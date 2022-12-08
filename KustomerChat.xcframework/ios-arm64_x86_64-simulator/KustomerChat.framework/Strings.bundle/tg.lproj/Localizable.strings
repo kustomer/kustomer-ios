@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ин сӯҳбат танҳо барои хондан аст";
 "com.kustomer.Try again" = "Як бори дигар санҷед";
 "com.kustomer.Type a message..." = "Паёмро нависед...";
+"com.kustomer.Unable to view attachment" = "Намоиши замима";
 "com.kustomer.Unavailable message goes here" = "Паёми дастнорас дар ин ҷо меравад";
 "com.kustomer.Updated" = "Навсозӣ";
 "com.kustomer.Waiting for a response from" = "Интизори посух аз";

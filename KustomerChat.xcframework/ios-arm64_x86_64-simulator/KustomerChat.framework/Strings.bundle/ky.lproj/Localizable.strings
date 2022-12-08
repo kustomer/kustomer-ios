@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Бул сүйлөшүү окуу үчүн гана";
 "com.kustomer.Try again" = "Кайра аракет кыл";
 "com.kustomer.Type a message..." = "Билдирүү териңиз...";
+"com.kustomer.Unable to view attachment" = "Тиркемени көрүү мүмкүн эмес";
 "com.kustomer.Unavailable message goes here" = "Жеткиликсиз билдирүү бул жерге келет";
 "com.kustomer.Updated" = "Жаңыртылган";
 "com.kustomer.Waiting for a response from" = "дан жооп күтүүдө";

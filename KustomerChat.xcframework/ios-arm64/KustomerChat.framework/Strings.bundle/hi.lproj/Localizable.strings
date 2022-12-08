@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "यह बातचीत केवल पढ़ने के लिए है";
 "com.kustomer.Try again" = "पुनः प्रयास करें";
 "com.kustomer.Type a message..." = "एक संदेश लिखें...";
+"com.kustomer.Unable to view attachment" = "अटैचमेंट देखने में असमर्थ";
 "com.kustomer.Unavailable message goes here" = "अनुपलब्ध संदेश यहाँ जाता है";
 "com.kustomer.Updated" = "अद्यतन";
 "com.kustomer.Waiting for a response from" = "से प्रतिक्रिया की प्रतीक्षा कर रहा है";

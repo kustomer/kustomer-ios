@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Ta rozmowa jest tylko do odczytu";
 "com.kustomer.Try again" = "Spróbuj ponownie";
 "com.kustomer.Type a message..." = "Wpisz wiadomość...";
+"com.kustomer.Unable to view attachment" = "Nie można wyświetlić załącznika";
 "com.kustomer.Unavailable message goes here" = "Tutaj trafia niedostępna wiadomość";
 "com.kustomer.Updated" = "Zaktualizowano";
 "com.kustomer.Waiting for a response from" = "Czekam na odpowiedź od";

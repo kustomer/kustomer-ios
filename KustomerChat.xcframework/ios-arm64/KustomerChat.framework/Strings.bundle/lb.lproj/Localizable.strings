@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "Zousätzlech Feedback geläscht";
 "com.kustomer.Agent" = "Agent";
 "com.kustomer.Answers" = "Äntwerten";
-"com.kustomer.Are you sure you want to end this chat?" = "Sidd Dir sécher, datt Dir dësen Chat ofschléissen wëllt?";
+"com.kustomer.Are you sure you want to end this chat?" = "Sidd Dir sécher, datt Dir dëse Chat ofschléissen wëllt?";
 "com.kustomer.Attached file" = "Befestegt Fichier";
 "com.kustomer.Attachment" = "Unhang";
 "com.kustomer.Browse files" = "Browst Dateien";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Dëst Gespréich ass nëmme liesen";
 "com.kustomer.Try again" = "Versich et nach eng Kéier";
 "com.kustomer.Type a message..." = "Gitt e Message ...";
+"com.kustomer.Unable to view attachment" = "Kann den Uschlëss net gesinn";
 "com.kustomer.Unavailable message goes here" = "Net verfügbare Message geet hei";
 "com.kustomer.Updated" = "Aktualiséiert";
 "com.kustomer.Waiting for a response from" = "Waarden op eng Äntwert vum";

@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Šis pokalbis yra tik skaitomas";
 "com.kustomer.Try again" = "Bandyk iš naujo";
 "com.kustomer.Type a message..." = "Įveskite žinutę...";
+"com.kustomer.Unable to view attachment" = "Neįmanoma peržiūrėti priedo";
 "com.kustomer.Unavailable message goes here" = "Nepasiekiamas pranešimas siunčiamas čia";
 "com.kustomer.Updated" = "Atnaujinta";
 "com.kustomer.Waiting for a response from" = "Laukiama atsakymo iš";

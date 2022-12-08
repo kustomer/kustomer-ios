@@ -6,7 +6,7 @@
 "com.kustomer.Agent" = "Agen";
 "com.kustomer.Answers" = "Wangsulan";
 "com.kustomer.Are you sure you want to end this chat?" = "Apa sampeyan yakin arep mungkasi obrolan iki?";
-"com.kustomer.Attached file" = "File sing dilampirake";
+"com.kustomer.Attached file" = "file sing ditempelake";
 "com.kustomer.Attachment" = "Lampiran";
 "com.kustomer.Browse files" = "Telusuri file";
 "com.kustomer.Camera roll" = "Rol kamera";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Obrolan iki mung diwaca";
 "com.kustomer.Try again" = "Coba maneh";
 "com.kustomer.Type a message..." = "Ketik pesen...";
+"com.kustomer.Unable to view attachment" = "Ora bisa ndeleng lampiran";
 "com.kustomer.Unavailable message goes here" = "Pesen ora kasedhiya ing kene";
 "com.kustomer.Updated" = "Dianyari";
 "com.kustomer.Waiting for a response from" = "Ngenteni respon saka";

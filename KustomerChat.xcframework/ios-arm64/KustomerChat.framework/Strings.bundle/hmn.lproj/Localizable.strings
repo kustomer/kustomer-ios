@@ -64,7 +64,7 @@
 "com.kustomer.Not found" = "Tsis pom";
 "com.kustomer.Okay" = "Okay";
 "com.kustomer.Open in browser" = "Qhib hauv browser";
-"com.kustomer.Optional" = "xaiv tau";
+"com.kustomer.Optional" = "Xaiv tau";
 "com.kustomer.Outgoing chat" = "Tham tawm";
 "com.kustomer.Photo library" = "Cov tsev qiv ntawv duab";
 "com.kustomer.Please leave a message" = "Thov tso ib zaj lus";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Qhov kev sib tham no tsuas yog nyeem xwb";
 "com.kustomer.Try again" = "Sim dua";
 "com.kustomer.Type a message..." = "Ntaus ntawv...";
+"com.kustomer.Unable to view attachment" = "Tsis tuaj yeem saib daim ntawv txuas";
 "com.kustomer.Unavailable message goes here" = "Unavailable message mus ntawm no";
 "com.kustomer.Updated" = "Hloov tshiab";
 "com.kustomer.Waiting for a response from" = "Tos rau cov lus teb los ntawm";

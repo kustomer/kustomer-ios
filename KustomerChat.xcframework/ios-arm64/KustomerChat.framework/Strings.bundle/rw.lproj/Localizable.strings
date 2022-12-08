@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Iki kiganiro kirasomwa gusa";
 "com.kustomer.Try again" = "Ongera ugerageze";
 "com.kustomer.Type a message..." = "Andika ubutumwa ...";
+"com.kustomer.Unable to view attachment" = "Ntibishobora kureba umugereka";
 "com.kustomer.Unavailable message goes here" = "Ubutumwa butaboneka bujya hano";
 "com.kustomer.Updated" = "Yavuguruwe";
 "com.kustomer.Waiting for a response from" = "Gutegereza igisubizo kiva";

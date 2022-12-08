@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "این گفتگو فقط خواندنی است";
 "com.kustomer.Try again" = "دوباره امتحان کنید";
 "com.kustomer.Type a message..." = "یک پیام تایپ کنید...";
+"com.kustomer.Unable to view attachment" = "امکان مشاهده پیوست وجود ندارد";
 "com.kustomer.Unavailable message goes here" = "پیام ناموجه به اینجا می رود";
 "com.kustomer.Updated" = "به روز شد";
 "com.kustomer.Waiting for a response from" = "منتظر پاسخ از";

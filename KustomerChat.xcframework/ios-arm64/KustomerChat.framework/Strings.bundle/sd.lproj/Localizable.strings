@@ -75,7 +75,7 @@
 "com.kustomer.Remove" = "هٽايو";
 "com.kustomer.Report problem" = "مسئلو رپورٽ ڪريو";
 "com.kustomer.Report sent" = "رپورٽ موڪلي وئي";
-"com.kustomer.Required" = "گھربل";
+"com.kustomer.Required" = "گهربل";
 "com.kustomer.Save changes" = "تبديليون محفوظ ڪريو";
 "com.kustomer.Search Help Articles" = "ڳولا مدد آرٽيڪل";
 "com.kustomer.Search Results" = "ڳولا جا نتيجا";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "هي گفتگو صرف پڙهڻ لاءِ آهي";
 "com.kustomer.Try again" = "ٻيهر ڪوشش ڪريو";
 "com.kustomer.Type a message..." = "پيغام ٽائيپ ڪريو...";
+"com.kustomer.Unable to view attachment" = "منسلڪ ڏسڻ ۾ ناڪام";
 "com.kustomer.Unavailable message goes here" = "غير موجود پيغام هتي وڃي ٿو";
 "com.kustomer.Updated" = "تازه ڪاري";
 "com.kustomer.Waiting for a response from" = "کان جواب جو انتظار";

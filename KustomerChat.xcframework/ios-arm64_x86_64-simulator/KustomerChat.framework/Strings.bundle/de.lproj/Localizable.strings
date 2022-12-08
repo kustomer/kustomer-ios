@@ -93,6 +93,7 @@
 "com.kustomer.There was a problem" = "Es gab ein Problem";
 "com.kustomer.This conversation is read-only" = "Diese Konversation ist schreibgeschützt";
 "com.kustomer.Try again" = "Versuchen Sie es nochmal";
+"com.kustomer.Unable to view attachment" = "Anhang kann nicht angezeigt werden";
 "com.kustomer.Unavailable message goes here" = "Nicht verfügbare Nachricht kommt hierher";
 "com.kustomer.Updated" = "Aktualisiert";
 "com.kustomer.Waiting for a response from" = "Warte auf Antwort von";

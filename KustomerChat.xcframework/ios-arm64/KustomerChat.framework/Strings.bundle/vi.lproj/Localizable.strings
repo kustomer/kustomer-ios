@@ -28,7 +28,7 @@
 "com.kustomer.Done" = "Xong";
 "com.kustomer.Edit additional feedback" = "Chỉnh sửa phản hồi bổ sung";
 "com.kustomer.Edit comment" = "Chỉnh sửa nhận xét";
-"com.kustomer.End Chat" = "Kết thúc trò chuyện";
+"com.kustomer.End Chat" = "Kết thúc cuộc trò chuyện";
 "com.kustomer.Ended" = "Đã kết thúc";
 "com.kustomer.Error" = "Lỗi";
 "com.kustomer.Error!" = "Lỗi!";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Cuộc hội thoại này ở chế độ chỉ đọc";
 "com.kustomer.Try again" = "Thử lại";
 "com.kustomer.Type a message..." = "Gõ một tin nhắn...";
+"com.kustomer.Unable to view attachment" = "Không thể xem tệp đính kèm";
 "com.kustomer.Unavailable message goes here" = "Tin nhắn không khả dụng ở đây";
 "com.kustomer.Updated" = "Đã cập nhật";
 "com.kustomer.Waiting for a response from" = "Đang chờ phản hồi từ";

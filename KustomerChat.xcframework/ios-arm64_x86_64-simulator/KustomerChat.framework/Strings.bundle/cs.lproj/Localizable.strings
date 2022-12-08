@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Tato konverzace je pouze pro čtení";
 "com.kustomer.Try again" = "Zkus to znovu";
 "com.kustomer.Type a message..." = "Napište zprávu...";
+"com.kustomer.Unable to view attachment" = "Přílohu nelze zobrazit";
 "com.kustomer.Unavailable message goes here" = "Zde se zobrazí nedostupná zpráva";
 "com.kustomer.Updated" = "Aktualizováno";
 "com.kustomer.Waiting for a response from" = "Čekání na odpověď od";

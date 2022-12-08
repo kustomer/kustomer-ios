@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "ขณะนี้แชทไม่พร้อมใช้งาน";
 "com.kustomer.Chat with support" = "แชทกับฝ่ายสนับสนุน";
 "com.kustomer.Conversation ended" = "บทสนทนาจบลง";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "รวมการสนทนาเป็นการสนทนาอื่น\n\nแตะเพื่อไปที่การสนทนาใหม่";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "การสนทนารวมอยู่ในการสนทนาอื่น\n\nแตะเพื่อไปที่การสนทนาใหม่";
 "com.kustomer.Conversation moved to another customer" = "การสนทนาถูกย้ายไปยังลูกค้ารายอื่น";
 "com.kustomer.Delete" = "ลบ";
 "com.kustomer.Do you want to remove your rating and feedback?" = "คุณต้องการลบการให้คะแนนและข้อเสนอแนะของคุณหรือไม่?";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "การสนทนานี้เป็นแบบอ่านอย่างเดียว";
 "com.kustomer.Try again" = "ลองอีกครั้ง";
 "com.kustomer.Type a message..." = "พิมพ์ข้อความ...";
+"com.kustomer.Unable to view attachment" = "ดูไฟล์แนบไม่ได้";
 "com.kustomer.Unavailable message goes here" = "ข้อความที่ไม่พร้อมใช้งานไปที่นี่";
 "com.kustomer.Updated" = "อัปเดต";
 "com.kustomer.Waiting for a response from" = "รอการตอบกลับจาก";

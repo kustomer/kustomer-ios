@@ -33,7 +33,7 @@
 "com.kustomer.Error" = "त्रुटी";
 "com.kustomer.Error!" = "त्रुटी!";
 "com.kustomer.Error. Tap to retry." = "त्रुटी. पुन्हा प्रयत्न करण्यासाठी टॅप करा.";
-"com.kustomer.FAQ" = "वारंवार विचारले जाणारे प्रश्न";
+"com.kustomer.FAQ" = "FAQ";
 "com.kustomer.Featured Articles" = "वैशिष्ट्यीकृत लेख";
 "com.kustomer.File type not supported" = "फाइल प्रकार समर्थित नाही";
 "com.kustomer.Help Article" = "मदत लेख";
@@ -42,7 +42,7 @@
 "com.kustomer.Internet offline" = "इंटरनेट ऑफलाइन";
 "com.kustomer.Just now" = "आत्ताच";
 "com.kustomer.KB" = "KB";
-"com.kustomer.Leave a message" = "एक संदेश सोडा";
+"com.kustomer.Leave a message" = "एक संदेश द्या";
 "com.kustomer.Leave a message..." = "एक संदेश द्या...";
 "com.kustomer.Loading..." = "लोड करत आहे...";
 "com.kustomer.Mark all as read" = "सर्व वाचलेले म्हणून चिन्हांकित करा";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "हे संभाषण केवळ वाचनीय आहे";
 "com.kustomer.Try again" = "पुन्हा प्रयत्न करा";
 "com.kustomer.Type a message..." = "संदेश टाइप करा...";
+"com.kustomer.Unable to view attachment" = "संलग्नक पाहण्यात अक्षम";
 "com.kustomer.Unavailable message goes here" = "अनुपलब्ध संदेश येथे जातो";
 "com.kustomer.Updated" = "अपडेट केले";
 "com.kustomer.Waiting for a response from" = "कडून प्रतिसादाची वाट पाहत आहे";

@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "See vestlus on kirjutuskaitstud";
 "com.kustomer.Try again" = "Proovi uuesti";
 "com.kustomer.Type a message..." = "Sisestage sõnum...";
+"com.kustomer.Unable to view attachment" = "Manust ei saa vaadata";
 "com.kustomer.Unavailable message goes here" = "Kättesaamatu sõnum läheb siia";
 "com.kustomer.Updated" = "Uuendatud";
 "com.kustomer.Waiting for a response from" = "Ootan vastust kasutajalt";

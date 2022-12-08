@@ -41,7 +41,7 @@
 "com.kustomer.Incoming chat" = "ገቢ ውይይት";
 "com.kustomer.Internet offline" = "በይነመረብ ከመስመር ውጭ";
 "com.kustomer.Just now" = "ልክ አሁን";
-"com.kustomer.KB" = "ኬቢ";
+"com.kustomer.KB" = "ኪ.ቢ";
 "com.kustomer.Leave a message" = "መልዕክትዎን ይተዉ";
 "com.kustomer.Leave a message..." = "መልዕክትዎን ይተዉ...";
 "com.kustomer.Loading..." = "በመጫን ላይ...";
@@ -82,7 +82,7 @@
 "com.kustomer.Sending" = "በመላክ ላይ";
 "com.kustomer.Share" = "አጋራ";
 "com.kustomer.Submit" = "አስገባ";
-"com.kustomer.Survey" = "ቅኝት";
+"com.kustomer.Survey" = "የዳሰሳ ጥናት";
 "com.kustomer.Take photo" = "ፎቶ አንሳ";
 "com.kustomer.Tap to load..." = "ለመጫን መታ ያድርጉ...";
 "com.kustomer.Tap to open" = "ለመክፈት መታ ያድርጉ";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ይህ ውይይት ተነባቢ-ብቻ ነው።";
 "com.kustomer.Try again" = "ድጋሚ ሞክር";
 "com.kustomer.Type a message..." = "መልዕክት ይተይቡ...";
+"com.kustomer.Unable to view attachment" = "ዓባሪን ማየት አልተቻለም";
 "com.kustomer.Unavailable message goes here" = "የማይገኝ መልእክት እዚህ ይሄዳል";
 "com.kustomer.Updated" = "ተዘምኗል";
 "com.kustomer.Waiting for a response from" = "ከ ምላሽ በመጠበቅ ላይ";

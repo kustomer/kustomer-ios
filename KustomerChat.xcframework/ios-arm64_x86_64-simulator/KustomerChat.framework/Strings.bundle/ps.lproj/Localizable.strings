@@ -60,7 +60,7 @@
 "com.kustomer.No results" = "هیڅ پایلې نلري";
 "com.kustomer.No text" = "متن نشته";
 "com.kustomer.None of your personal information was included" = "ستاسو هیڅ شخصي معلومات شامل ندي";
-"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نلري";
+"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نشته";
 "com.kustomer.Not found" = "پیدا نشو";
 "com.kustomer.Okay" = "سمه ده";
 "com.kustomer.Open in browser" = "په براوزر کې خلاص کړئ";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "دا خبرې یوازې د لوستلو وړ دي";
 "com.kustomer.Try again" = "بیا هڅه وکړه";
 "com.kustomer.Type a message..." = "یو پیغام ولیکئ ...";
+"com.kustomer.Unable to view attachment" = "د ضمیمه لیدلو توان نلري";
 "com.kustomer.Unavailable message goes here" = "غیر موجود پیغام دلته ځي";
 "com.kustomer.Updated" = "تازه شوی";
 "com.kustomer.Waiting for a response from" = "د ځواب په تمه";

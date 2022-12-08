@@ -24,7 +24,7 @@
 "com.kustomer.Conversation moved to another customer" = "Konversazzjoni mċaqalqa għal klijent ieħor";
 "com.kustomer.Delete" = "Ħassar";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Trid tneħħi l-klassifikazzjoni u l-feedback tiegħek?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Trid issalva l-bidliet li għamilt fil-kumment tiegħek?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Trid tissejvja l-bidliet li għamilt fil-kumment tiegħek?";
 "com.kustomer.Done" = "Magħmul";
 "com.kustomer.Edit additional feedback" = "Editja feedback addizzjonali";
 "com.kustomer.Edit comment" = "Editja kumment";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Din il-konversazzjoni tinqara biss";
 "com.kustomer.Try again" = "Erġa &#39;pprova";
 "com.kustomer.Type a message..." = "Ittajpja messaġġ...";
+"com.kustomer.Unable to view attachment" = "Ma tistax tara s-sekwestru";
 "com.kustomer.Unavailable message goes here" = "Il-messaġġ mhux disponibbli jmur hawn";
 "com.kustomer.Updated" = "Aġġornat";
 "com.kustomer.Waiting for a response from" = "Stennija għal tweġiba minn";

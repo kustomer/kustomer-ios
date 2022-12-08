@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Энэ харилцан яриа зөвхөн унших боломжтой";
 "com.kustomer.Try again" = "Дахин оролд";
 "com.kustomer.Type a message..." = "Зурвас бичнэ үү...";
+"com.kustomer.Unable to view attachment" = "Хавсралтыг үзэх боломжгүй";
 "com.kustomer.Unavailable message goes here" = "Боломжгүй мессеж энд очно";
 "com.kustomer.Updated" = "Шинэчлэгдсэн";
 "com.kustomer.Waiting for a response from" = "-аас хариу хүлээж байна";

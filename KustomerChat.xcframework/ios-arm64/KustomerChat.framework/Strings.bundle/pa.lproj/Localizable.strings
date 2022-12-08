@@ -44,7 +44,7 @@
 "com.kustomer.KB" = "ਕੇ.ਬੀ";
 "com.kustomer.Leave a message" = "ਇੱਕ ਸੁਨੇਹਾ ਛੱਡ ਦਿਓ";
 "com.kustomer.Leave a message..." = "ਇੱਕ ਸੁਨੇਹਾ ਛੱਡ ਦਿਓ...";
-"com.kustomer.Loading..." = "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...";
+"com.kustomer.Loading..." = "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...";
 "com.kustomer.Mark all as read" = "ਸਭ ਨੂੰ ਪੜ੍ਹੇ ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਕਰੋ";
 "com.kustomer.Me" = "ਮੈਨੂੰ";
 "com.kustomer.Message" = "ਸੁਨੇਹਾ";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "ਇਹ ਗੱਲਬਾਤ ਸਿਰਫ਼ ਪੜ੍ਹਨ ਲਈ ਹੈ";
 "com.kustomer.Try again" = "ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
 "com.kustomer.Type a message..." = "ਇੱਕ ਸੁਨੇਹਾ ਟਾਈਪ ਕਰੋ...";
+"com.kustomer.Unable to view attachment" = "ਅਟੈਚਮੈਂਟ ਦੇਖਣ ਵਿੱਚ ਅਸਮਰੱਥ";
 "com.kustomer.Unavailable message goes here" = "ਅਣਉਪਲਬਧ ਸੁਨੇਹਾ ਇੱਥੇ ਜਾਂਦਾ ਹੈ";
 "com.kustomer.Updated" = "ਅੱਪਡੇਟ ਕੀਤਾ";
 "com.kustomer.Waiting for a response from" = "ਤੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ";

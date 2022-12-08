@@ -63,7 +63,7 @@
 "com.kustomer.Not enough disk space" = "مساحة غير كافيه في القرص";
 "com.kustomer.Not found" = "لم يتم العثور على";
 "com.kustomer.Okay" = "تمام";
-"com.kustomer.Open in browser" = "فتح في المتصفح";
+"com.kustomer.Open in browser" = "افتح في المتصفح";
 "com.kustomer.Optional" = "اختياري";
 "com.kustomer.Outgoing chat" = "محادثة صادرة";
 "com.kustomer.Photo library" = "مكتبة الصور";
@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "هذه المحادثة للقراءة فقط";
 "com.kustomer.Try again" = "حاول مرة أخرى";
 "com.kustomer.Type a message..." = "اكتب رسالة ...";
+"com.kustomer.Unable to view attachment" = "تعذر عرض المرفق";
 "com.kustomer.Unavailable message goes here" = "الرسالة غير المتاحة تذهب هنا";
 "com.kustomer.Updated" = "محدث";
 "com.kustomer.Waiting for a response from" = "في انتظار رد من";

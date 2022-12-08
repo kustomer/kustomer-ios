@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Този разговор е само за четене";
 "com.kustomer.Try again" = "Опитай пак";
 "com.kustomer.Type a message..." = "Въведете съобщение...";
+"com.kustomer.Unable to view attachment" = "Не може да се види прикачения файл";
 "com.kustomer.Unavailable message goes here" = "Недостъпно съобщение отива тук";
 "com.kustomer.Updated" = "Актуализиран";
 "com.kustomer.Waiting for a response from" = "В очакване на отговор от";

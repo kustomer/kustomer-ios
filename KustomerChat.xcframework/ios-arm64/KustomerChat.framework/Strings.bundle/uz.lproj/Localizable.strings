@@ -92,6 +92,7 @@
 "com.kustomer.This conversation is read-only" = "Bu suhbat faqat o‘qish uchun mo‘ljallangan";
 "com.kustomer.Try again" = "Qayta urinib ko&#39;ring";
 "com.kustomer.Type a message..." = "Xabar yozing...";
+"com.kustomer.Unable to view attachment" = "Biriktirmani ko‘rib bo‘lmadi";
 "com.kustomer.Unavailable message goes here" = "Mavjud bo&#39;lmagan xabar shu yerda";
 "com.kustomer.Updated" = "Yangilangan";
 "com.kustomer.Waiting for a response from" = "dan javob kutilmoqda";
