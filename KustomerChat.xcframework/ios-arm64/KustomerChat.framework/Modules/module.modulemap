@@ -6,6 +6,6 @@ framework module KustomerChat {
 }
 
 module KustomerChat.Swift {
-    header "KustomerChat-Swift.h"
-    requires objc
+  header "KustomerChat-Swift.h"
+  requires objc
 }
