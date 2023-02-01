@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
 import CoreGraphics
@@ -19,6 +20,7 @@ import UIKit
 import UserNotifications
 import WebKit
 import _Concurrency
+import _StringProcessing
 import os.log
 import os
 @_hasMissingDesignatedInitializers public class KUSUser : Swift.CustomStringConvertible {
@@ -271,7 +273,7 @@ public struct KustomerPush : Swift.Decodable {
 public struct KnowledgeBaseProvider {
   public func getRootCategory(lang: Swift.String, knowledgeBaseID: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseCategory>)
   public func getCategory(by id: Swift.String, childrenLimit: Swift.Int, lang: Swift.String, knowledgeBaseID: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseResponse>)
-  public func searchArticles(term: Swift.String, page: Swift.Int, pageSize: Swift.Int, lang: Swift.String, completion: @escaping KustomerChat.KustomerCompletion<[KustomerChat.KnowledgeBaseArticle]>)
+  public func searchArticles(term: Swift.String, page: Swift.Int, pageSize: Swift.Int, lang: Swift.String, knowledgeBaseID: Swift.String? = nil, completion: @escaping KustomerChat.KustomerCompletion<[KustomerChat.KnowledgeBaseArticle]>)
   public func getArticle(by id: Swift.String, lang: Swift.String, knowledgeBaseID: Swift.String?, completion: @escaping KustomerChat.KustomerCompletion<KustomerChat.KnowledgeBaseArticle>)
 }
 public protocol CoordinatorDelegate : AnyObject {
@@ -906,7 +908,7 @@ public enum KnowledgeBaseDataRow {
   case article(article: KustomerChat.KnowledgeBaseArticle, didSelect: ((_ row: KustomerChat.KnowledgeBaseArticle) -> Swift.Void)?)
 }
 @objc @_Concurrency.MainActor(unsafe) final public class ConfettiView : UIKit.UIView {
-  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) final public func emit(with contents: [KustomerChat.ConfettiView.Content], for duration: Foundation.TimeInterval = 3.0)
   @_Concurrency.MainActor(unsafe) @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
@@ -928,8 +930,8 @@ extension KustomerChat.ConfettiView : QuartzCore.CAAnimationDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NextGrowingTextView : UIKit.UIScrollView {
   @_hasMissingDesignatedInitializers open class Delegates {
-    open var willChangeHeight: (CoreGraphics.CGFloat) -> Swift.Void
-    open var didChangeHeight: (CoreGraphics.CGFloat) -> Swift.Void
+    open var willChangeHeight: (CoreFoundation.CGFloat) -> Swift.Void
+    open var didChangeHeight: (CoreFoundation.CGFloat) -> Swift.Void
     @objc deinit
   }
   @_Concurrency.MainActor(unsafe) open var delegates: KustomerChat.NextGrowingTextView.Delegates
@@ -954,18 +956,18 @@ extension KustomerChat.ConfettiView : QuartzCore.CAAnimationDelegate {
     set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputView: UIKit.UIView? {
-    @_Concurrency.MainActor(unsafe) @objc get
+    @objc get
     @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var isFirstResponder: Swift.Bool {
-    @_Concurrency.MainActor(unsafe) @objc get
+    @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func resignFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
-    @_Concurrency.MainActor(unsafe) @objc get
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func reloadInputViews()
