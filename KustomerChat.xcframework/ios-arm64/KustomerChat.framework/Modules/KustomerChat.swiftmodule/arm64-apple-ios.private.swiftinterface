@@ -708,7 +708,7 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func getChatSettings() -> KustomerChat.KUSChatSettings
   public func isChatAvailable() -> Swift.Bool?
   public func createConversation(firstCustomerMessage text: Swift.String? = nil, title: Swift.String? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, action: KustomerChat.KUSMessageAction? = nil, mllNode: KustomerChat.KUSMLLNode? = nil, image: UIKit.UIImage? = nil, fileURL: Foundation.URL? = nil, overrideAssistantId: Swift.String? = nil, initialMessages: [KustomerChat.KUSInitialMessage]? = nil, completion: @escaping ((Swift.Result<(conversation: KustomerChat.KUSConversation, messages: [KustomerChat.KUSChatMessage], customer: KustomerChat.KUSCustomer?), KustomerChat.KError>) -> Swift.Void))
-  public func sendChatMessage(text: Swift.String, conversationId: Swift.String, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
+  public func sendChatMessage(text: Swift.String, conversationId: Swift.String, initialAgentMessages: [KustomerChat.KUSInitialMessage]? = nil, completion: @escaping ((Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void))
   public func sendChatMessage(action: KustomerChat.KUSMessageAction, conversationId: Swift.String, additionalParams: [Swift.String : Any]? = nil, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
   public func sendChatMessage(text: Swift.String, assistant: KustomerChat.KUSAssistant, conversationId: Swift.String, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
   public func sendChatMessage(mllNode: KustomerChat.KUSMLLNode, conversationId: Swift.String, additionalParams: [Swift.String : Any]? = nil, completion _outerCompletion: @escaping (Swift.Result<(message: KustomerChat.KUSChatMessage, conversation: KustomerChat.KUSConversation), KustomerChat.KError>) -> Swift.Void)
@@ -1101,7 +1101,10 @@ public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
   public var id: Swift.String?
   public var createdAt: Foundation.Date?
   public var lastMessageAt: Foundation.Date?
-  public var status: KustomerChat.KUSConversationStatus?
+  @available(*, deprecated, message: "`status` field no longer supported - use `lockedAt` or `lockReason` to determine the status of a KUSConversation")
+  public var status: KustomerChat.KUSConversationStatus? {
+    get
+  }
   public var brandId: Swift.String?
   public var lockedAt: Foundation.Date?
   public var lockedByCustomer: Swift.Bool?
@@ -1613,8 +1616,6 @@ public typealias KUSCustomDescribe = [Swift.String : Swift.String]
     get
   }
   final public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
-  @available(*, deprecated, message: "Changing brand ID's on the fly is no longer supported")
-  final public func changeBrand(brandId nbid: Swift.String, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   final public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   final public func getActiveAssistantID() -> Swift.String?
   final public func getActiveAssistantStartDialog() -> Swift.String?
