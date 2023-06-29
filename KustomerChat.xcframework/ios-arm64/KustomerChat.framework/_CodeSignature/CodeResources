@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hzXhVU1YXEyO0ZtrubK+RtFVcxo=
+		2q2UNoybbTMuvFzG1caeKGBDU6s=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R5cjYGptZQplLcZ+PHsVLn2xlUA=
+		XawMjEN/4cRUHz7hiqQMejeH2b0=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kJx6mxgA0PVwGJr9avCx/5mqgjU=
+		Ayf1JUqz0QAyEEbncZ+fu8Lj98g=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kyQwaqws76pYpqPQDD4h6T/eTXo=
+		NeMfMfOp0vmTSpoy3dO/Zv5Zsh8=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eO2JCwbpZhndxdrgGVLIeKJrIAs=
+		sWGQjRqSg9KDxxtEbaEk+rG3cMw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1059,7 +1059,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2HF9Zo0nnAp9C/2lAV1zwA77P1WzwYeHOk9v32HOxE=
+			IGtRXyaoOKonWFEAbUZCTQTFdFIlmBsc4m7f+ZSXDfE=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1080,7 +1080,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CDVAVzH0rIUmSkfPJ0VoprJYTpO0Q7qtlkdSj0ZrXqA=
+			YCWbEzHnvFeCfCFYV50w0mvD3tVQU+IBVsWF5QURoiI=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1094,7 +1094,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rvfU4V5hbXZitXdvz7TTWz5xcdpZcFg0aV61ZBQ2lvo=
+			N6yqBz5UYDf9slZ4xDBabXRYY3xeiJG8K7Vs0mAAh44=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -1108,7 +1108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sb6h1Brr0mPjXO79G+pfsQDsEhZDzXuneIT4cZr0L1M=
+			KvMqBmlCKImw+jzfO06VjXXe2B7h4FmRaTojhxkt3Ec=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
