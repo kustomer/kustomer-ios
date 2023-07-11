@@ -749,6 +749,7 @@ public class KustomerOptions {
   public init()
   public var enableUI: Swift.Bool
   public var showInAppNotifications: Swift.Bool
+  public var showAllBrandsConversationHistory: Swift.Bool
   public var language: KustomerChat.KustomerLanguage?
   @available(*, deprecated, message: "Pass a reference to the presenting view controller in the appropiate Kustomer API")
   public var hostViewController: UIKit.UIViewController?
@@ -1802,6 +1803,7 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
 public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var id: Swift.String
   public var conversationId: Swift.String?
+  public var brandId: Swift.String?
   public var createdAt: Foundation.Date?
   public var status: KustomerChat.KUSChatMessageStatus?
   public var messageType: KustomerChat.KUSMessageType?
