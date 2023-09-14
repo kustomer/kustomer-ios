@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '2.8.3'
+  s.version = '3.0.0-rc.1'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.summary = 'The iOS SDK for the Kustomer.com mobile client'
   s.documentation_url = 'https://developer.kustomer.com/chat-sdk/docs'
   s.platform = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'PubNubSwift', '~> 5.0.0'
   s.dependency 'Down', '~> 0.11.0'
-end 
+end
