@@ -11,6 +11,7 @@ import Foundation
 @_exported import KustomerChat
 import MobileCoreServices
 import OSLog
+import PhotosUI
 import PubNub
 import QuickLook
 import SafariServices
@@ -1757,6 +1758,7 @@ extension KustomerChat.KustomerError : Foundation.LocalizedError {
 public struct KSet : Swift.Decodable {
   public var publishKey: Swift.String?
   public var subscribeKey: Swift.String?
+  public var brand: Swift.String?
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseSurveyResponse : Swift.Decodable {
