@@ -21,8 +21,8 @@ Embed [Kustomer](https://www.kustomer.com/) in your own products with our chat S
 ## Requirements
 
 - A [Kustomer.com](https://www.kustomer.com/) API Key ([How to get an API key](https://developer.kustomer.com/chat-sdk/v2.0.4-iOS/docs/installation))
-- Xcode 12.0+
-- iOS 11.0+
+- Xcode 14.0+
+- iOS 12.0+
 
 ## Installation
 
