@@ -45,7 +45,7 @@
 "com.kustomer.Leave a message" = "సందేశం పంపండి";
 "com.kustomer.Leave a message..." = "సందేశం పంపండి...";
 "com.kustomer.Loading..." = "లోడ్...";
-"com.kustomer.Mark all as read" = "అన్నీచదివినట్లుగా సూచించు";
+"com.kustomer.Mark all as read" = "అన్నీ చదివినట్లు గుర్తించు";
 "com.kustomer.Me" = "నేను";
 "com.kustomer.Message" = "సందేశం";
 "com.kustomer.Message failed to send" = "సందేశాన్ని పంపడంలో విఫలమైంది";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "దయచేసి ఒక సందేశాన్ని పంపండి";
 "com.kustomer.Please select an option..." = "దయచేసి ఒక ఎంపికను ఎంచుకోండి...";
 "com.kustomer.Please try another search term" = "దయచేసి మరొక శోధన పదాన్ని ప్రయత్నించండి";
+"com.kustomer.Processing Answer" = "జవాబును ప్రాసెస్ చేస్తోంది";
 "com.kustomer.Reconnect" = "మళ్లీ కనెక్ట్ చేయండి";
 "com.kustomer.Reconnecting..." = "మళ్లీ కనెక్ట్ అవుతోంది...";
 "com.kustomer.Remove" = "తొలగించు";

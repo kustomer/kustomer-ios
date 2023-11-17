@@ -2,7 +2,7 @@
 "com.kustomer.100+ results found" = "ნაპოვნია 100+ შედეგი";
 "com.kustomer.Add additional feedback" = "დაამატეთ დამატებითი გამოხმაურება";
 "com.kustomer.Additional Feedback" = "დამატებითი გამოხმაურება";
-"com.kustomer.Additional feedback removed" = "წაშლილია დამატებითი გამოხმაურება";
+"com.kustomer.Additional feedback removed" = "დამატებითი გამოხმაურება წაიშალა";
 "com.kustomer.Agent" = "აგენტი";
 "com.kustomer.Answers" = "პასუხები";
 "com.kustomer.Are you sure you want to end this chat?" = "დარწმუნებული ხართ, რომ გსურთ ამ ჩატის დასრულება?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "გთხოვთ დატოვოთ შეტყობინება";
 "com.kustomer.Please select an option..." = "გთხოვთ აირჩიოთ ვარიანტი...";
 "com.kustomer.Please try another search term" = "გთხოვთ, სცადოთ სხვა საძიებო ტერმინი";
+"com.kustomer.Processing Answer" = "პასუხის დამუშავება";
 "com.kustomer.Reconnect" = "ხელახლა დაკავშირება";
 "com.kustomer.Reconnecting..." = "ხელახლა დაკავშირება...";
 "com.kustomer.Remove" = "ამოღება";
@@ -86,7 +87,7 @@
 "com.kustomer.Take photo" = "Ფოტოს გადაღება";
 "com.kustomer.Tap to load..." = "შეეხეთ ჩასატვირთად...";
 "com.kustomer.Tap to open" = "შეეხეთ გასახსნელად";
-"com.kustomer.Thanks for your feedback" = "გმადლობთ გამოხმაურებისთვის";
+"com.kustomer.Thanks for your feedback" = "გმადლობთ თქვენი გამოხმაურებისთვის";
 "com.kustomer.That article" = "რომ სტატია";
 "com.kustomer.There was a problem" = "Პრობლემა იყო";
 "com.kustomer.This conversation is read-only" = "ეს საუბარი მხოლოდ წაკითხვადია";

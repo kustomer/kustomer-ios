@@ -28,7 +28,7 @@
 "com.kustomer.Done" = "Boldy";
 "com.kustomer.Edit additional feedback" = "Goşmaça seslenme redaktirläň";
 "com.kustomer.Edit comment" = "Teswirleri redaktirläň";
-"com.kustomer.End Chat" = "Söhbet gutar";
+"com.kustomer.End Chat" = "Söhbeti gutar";
 "com.kustomer.Ended" = "Soňy";
 "com.kustomer.Error" = "Roralňyşlyk";
 "com.kustomer.Error!" = "Roralňyşlyk!";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Habar bermegiňizi haýyş edýäris";
 "com.kustomer.Please select an option..." = "Bir warianty saýlaň ...";
 "com.kustomer.Please try another search term" = "Başga gözleg sözüni synap görmegiňizi haýyş edýäris";
+"com.kustomer.Processing Answer" = "Gaýtadan işlemek";
 "com.kustomer.Reconnect" = "Birikdiriň";
 "com.kustomer.Reconnecting..." = "Birikdirmek ...";
 "com.kustomer.Remove" = "Aýyr";
@@ -95,7 +96,7 @@
 "com.kustomer.Unable to view attachment" = "Goşundy görüp bolmaýar";
 "com.kustomer.Unavailable message goes here" = "Elýeterli habar şu ýere gidýär";
 "com.kustomer.Updated" = "Täzelendi";
-"com.kustomer.Waiting for a response from" = "Jogap garaşýaryn";
+"com.kustomer.Waiting for a response from" = "Jogap garaşýar";
 "com.kustomer.We will get back to you as soon as we are online!" = "Onlaýn bolanymyzdan soň size gaýdyp geleris!";
 "com.kustomer.Yes" = "Hawa";
 "com.kustomer.You changed your additional feedback comment" = "Goşmaça pikir teswiriňizi üýtgetdiňiz";

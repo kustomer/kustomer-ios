@@ -57,7 +57,7 @@
 "com.kustomer.No articles" = "ලිපි නැත";
 "com.kustomer.No conversations yet" = "තවම සංවාද නැත";
 "com.kustomer.No internet connection" = "අන්තර්ජාල සම්බන්ධතාවයක් නොමැත";
-"com.kustomer.No results" = "ප්රතිපල රහිතයි";
+"com.kustomer.No results" = "ප්රතිපල නැත";
 "com.kustomer.No text" = "පෙළ නැත";
 "com.kustomer.None of your personal information was included" = "ඔබගේ පුද්ගලික තොරතුරු කිසිවක් ඇතුළත් කර නැත";
 "com.kustomer.Not enough disk space" = "ප්රමාණවත් තැටි ඉඩක් නොමැත";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "කරුණාකර පණිවිඩයක් තබන්න";
 "com.kustomer.Please select an option..." = "කරුණාකර විකල්පයක් තෝරන්න...";
 "com.kustomer.Please try another search term" = "කරුණාකර වෙනත් සෙවුම් පදයක් උත්සාහ කරන්න";
+"com.kustomer.Processing Answer" = "පිළිතුර සැකසීම";
 "com.kustomer.Reconnect" = "නැවත සම්බන්ධ කරන්න";
 "com.kustomer.Reconnecting..." = "නැවත සම්බන්ධ වෙමින්...";
 "com.kustomer.Remove" = "ඉවත් කරන්න";
@@ -86,11 +87,11 @@
 "com.kustomer.Take photo" = "ඡායාරූපය ගන්න";
 "com.kustomer.Tap to load..." = "පූරණය කිරීමට තට්ටු කරන්න...";
 "com.kustomer.Tap to open" = "විවෘත කිරීමට තට්ටු කරන්න";
-"com.kustomer.Thanks for your feedback" = "ඔබේ ප්‍රතිපෝෂණයට ස්තූතියි";
+"com.kustomer.Thanks for your feedback" = "ඔබගේ ප්‍රතිපෝෂණයට ස්තුතියි";
 "com.kustomer.That article" = "එම ලිපිය";
 "com.kustomer.There was a problem" = "දෝෂයක් ඇති විය";
 "com.kustomer.This conversation is read-only" = "මෙම සංවාදය කියවීමට පමණි";
-"com.kustomer.Try again" = "නැවත උත්සහා කරන්න";
+"com.kustomer.Try again" = "නැවත උත්සාහ කරන්න";
 "com.kustomer.Type a message..." = "පණිවිඩයක් ටයිප් කරන්න...";
 "com.kustomer.Unable to view attachment" = "ඇමුණුම බැලීමට නොහැක";
 "com.kustomer.Unavailable message goes here" = "ලබා ගත නොහැකි පණිවිඩය මෙතැනට යයි";

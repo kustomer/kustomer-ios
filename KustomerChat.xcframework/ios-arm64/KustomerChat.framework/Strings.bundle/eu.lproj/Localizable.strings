@@ -16,7 +16,7 @@
 "com.kustomer.Categories" = "Kategoriak";
 "com.kustomer.Chat" = "Txateatu";
 "com.kustomer.Chat has ended" = "Txata amaitu da";
-"com.kustomer.Chat history" = "Txataren historia";
+"com.kustomer.Chat history" = "Txat-historia";
 "com.kustomer.Chat is currently unavailable" = "Txata ez dago erabilgarri une honetan";
 "com.kustomer.Chat with support" = "Txateatu laguntzarekin";
 "com.kustomer.Conversation ended" = "Elkarrizketa amaitu da";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Mesedez, utzi mezu bat";
 "com.kustomer.Please select an option..." = "Mesedez, hautatu aukera bat...";
 "com.kustomer.Please try another search term" = "Mesedez, saiatu beste bilaketa-termino bat";
+"com.kustomer.Processing Answer" = "Erantzuna prozesatzen";
 "com.kustomer.Reconnect" = "Berriro konektatu";
 "com.kustomer.Reconnecting..." = "Berriro konektatzen...";
 "com.kustomer.Remove" = "Kendu";

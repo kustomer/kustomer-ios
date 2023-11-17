@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "Spjall er ekki tiltækt eins og er";
 "com.kustomer.Chat with support" = "Spjallaðu við stuðning";
 "com.kustomer.Conversation ended" = "Samtalinu lauk";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Samtal sameinast öðru samtali.\n\nÝttu til að fara í nýja samtalið.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Samtal sameinast í annað samtal.\n\nÝttu til að fara í nýja samtalið.";
 "com.kustomer.Conversation moved to another customer" = "Samtal flutt til annars viðskiptavinar";
 "com.kustomer.Delete" = "Eyða";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Viltu fjarlægja einkunn þína og athugasemdir?";
@@ -29,7 +29,7 @@
 "com.kustomer.Edit additional feedback" = "Breyta viðbótarábendingum";
 "com.kustomer.Edit comment" = "Breyta athugasemd";
 "com.kustomer.End Chat" = "Ljúka spjalli";
-"com.kustomer.Ended" = "Lokað";
+"com.kustomer.Ended" = "Lokið";
 "com.kustomer.Error" = "Villa";
 "com.kustomer.Error!" = "Villa!";
 "com.kustomer.Error. Tap to retry." = "Villa. Pikkaðu til að reyna aftur.";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Vinsamlegast skildu eftir skilaboð";
 "com.kustomer.Please select an option..." = "Vinsamlegast veldu valmöguleika...";
 "com.kustomer.Please try another search term" = "Vinsamlegast reyndu annað leitarorð";
+"com.kustomer.Processing Answer" = "Vinnur úr svari";
 "com.kustomer.Reconnect" = "Tengdu aftur";
 "com.kustomer.Reconnecting..." = "Tengist aftur...";
 "com.kustomer.Remove" = "Fjarlægja";

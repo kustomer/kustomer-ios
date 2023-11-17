@@ -11,7 +11,7 @@
 "com.kustomer.Browse files" = "ಫೈಲ್‌ಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ";
 "com.kustomer.Camera roll" = "ಕ್ಯಾಮೆರಾ ರೋಲ್";
 "com.kustomer.Can't load chat" = "ಚಾಟ್ ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ";
-"com.kustomer.Cancel" = "ರದ್ದುಮಾಡು";
+"com.kustomer.Cancel" = "ರದ್ದುಮಾಡಿ";
 "com.kustomer.Cancelled! Tap to retry." = "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ! ಮರುಪ್ರಯತ್ನಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.";
 "com.kustomer.Categories" = "ವರ್ಗಗಳು";
 "com.kustomer.Chat" = "ಚಾಟ್ ಮಾಡಿ";
@@ -42,7 +42,7 @@
 "com.kustomer.Internet offline" = "ಇಂಟರ್ನೆಟ್ ಆಫ್‌ಲೈನ್";
 "com.kustomer.Just now" = "ಈಗ ತಾನೆ";
 "com.kustomer.KB" = "ಕೆಬಿ";
-"com.kustomer.Leave a message" = "ಒಂದು ಸಂದೇಶವನ್ನು ಬಿಡಿ";
+"com.kustomer.Leave a message" = "ಸಂದೇಶವನ್ನು ಬಿಡಿ";
 "com.kustomer.Leave a message..." = "ಸಂದೇಶವನ್ನು ಬಿಡಿ...";
 "com.kustomer.Loading..." = "ಲೋಡ್ ಆಗುತ್ತಿದೆ...";
 "com.kustomer.Mark all as read" = "ಎಲ್ಲವನ್ನು ಓದಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಿ";
@@ -61,7 +61,7 @@
 "com.kustomer.No text" = "ಪಠ್ಯವಿಲ್ಲ";
 "com.kustomer.None of your personal information was included" = "ನಿಮ್ಮ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ";
 "com.kustomer.Not enough disk space" = "ಸಾಕಷ್ಟು ಡಿಸ್ಕ್ ಸ್ಥಳವಿಲ್ಲ";
-"com.kustomer.Not found" = "ಸಿಕ್ಕಿಲ್ಲ";
+"com.kustomer.Not found" = "ದೊರೆತಿಲ್ಲ";
 "com.kustomer.Okay" = "ಸರಿ";
 "com.kustomer.Open in browser" = "ಬ್ರೌಸರ್ ತೆರೆಯಿರಿ";
 "com.kustomer.Optional" = "ಐಚ್ಛಿಕ";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "ದಯವಿಟ್ಟು ಒಂದು ಸಂದೇಶವನ್ನು ಬಿಡಿ";
 "com.kustomer.Please select an option..." = "ದಯವಿಟ್ಟು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ...";
 "com.kustomer.Please try another search term" = "ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ಹುಡುಕಾಟ ಪದವನ್ನು ಪ್ರಯತ್ನಿಸಿ";
+"com.kustomer.Processing Answer" = "ಉತ್ತರವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ";
 "com.kustomer.Reconnect" = "ಮರುಸಂಪರ್ಕಿಸಿ";
 "com.kustomer.Reconnecting..." = "ಮರುಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ...";
 "com.kustomer.Remove" = "ತೆಗೆದುಹಾಕಿ";

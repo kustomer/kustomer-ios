@@ -21,7 +21,7 @@
 "com.kustomer.Chat with support" = "Razgovarajte s podrškom";
 "com.kustomer.Conversation ended" = "Razgovor završen";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Razgovor je spojen u drugi razgovor.\n\nDodirnite za prelazak na novi razgovor.";
-"com.kustomer.Conversation moved to another customer" = "Razgovor je premješten na drugog kupca";
+"com.kustomer.Conversation moved to another customer" = "Razgovor je premješten na drugu stranku";
 "com.kustomer.Delete" = "Izbrisati";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Želite li ukloniti svoju ocjenu i povratne informacije?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Želite li spremiti promjene koje ste unijeli u svoj komentar?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Molimo ostavite poruku";
 "com.kustomer.Please select an option..." = "Odaberite opciju...";
 "com.kustomer.Please try another search term" = "Pokušajte s drugim pojmom za pretraživanje";
+"com.kustomer.Processing Answer" = "Obrada odgovora";
 "com.kustomer.Reconnect" = "Ponovno se spojite";
 "com.kustomer.Reconnecting..." = "Ponovno povezivanje...";
 "com.kustomer.Remove" = "Ukloniti";

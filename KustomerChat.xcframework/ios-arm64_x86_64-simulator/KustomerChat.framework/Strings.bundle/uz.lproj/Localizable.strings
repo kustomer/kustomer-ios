@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Iltimos, xabar qoldiring";
 "com.kustomer.Please select an option..." = "Variantni tanlang...";
 "com.kustomer.Please try another search term" = "Boshqa qidiruv soʻzini sinab koʻring";
+"com.kustomer.Processing Answer" = "Javobni qayta ishlash";
 "com.kustomer.Reconnect" = "Qayta ulaning";
 "com.kustomer.Reconnecting..." = "Qayta ulanmoqda...";
 "com.kustomer.Remove" = "O&#39;chirish";
@@ -83,7 +84,7 @@
 "com.kustomer.Share" = "Ulashish";
 "com.kustomer.Submit" = "Yuborish";
 "com.kustomer.Survey" = "Tadqiqot";
-"com.kustomer.Take photo" = "Suratga olish";
+"com.kustomer.Take photo" = "Rasmga olmoq";
 "com.kustomer.Tap to load..." = "Yuklash uchun bosing...";
 "com.kustomer.Tap to open" = "Ochish uchun bosing";
 "com.kustomer.Thanks for your feedback" = "Fikr-mulohazangiz uchun rahmat";

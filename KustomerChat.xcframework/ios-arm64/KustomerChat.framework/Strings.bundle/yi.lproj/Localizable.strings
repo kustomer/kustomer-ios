@@ -51,7 +51,7 @@
 "com.kustomer.Message failed to send" = "אָנזאָג ניט אַנדערש צו שיקן";
 "com.kustomer.Message failed to send!" = "אָנזאָג ניט אַנדערש צו שיקן!";
 "com.kustomer.Moved" = "אריבערגעפארן";
-"com.kustomer.Never mind" = "מאכט נישט קיין חילוק";
+"com.kustomer.Never mind" = "מאכט נישט אויס";
 "com.kustomer.New Conversation" = "ניו שמועס";
 "com.kustomer.New message" = "נייַ אָנזאָג";
 "com.kustomer.No articles" = "קיין אַרטיקלען";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "ביטע לאָזן אַ אָנזאָג";
 "com.kustomer.Please select an option..." = "ביטע אויסקלייַבן אַן אָפּציע ...";
 "com.kustomer.Please try another search term" = "ביטע פּרוּווט אן אנדער זוכן טערמין";
+"com.kustomer.Processing Answer" = "פּראַסעסינג ענטפער";
 "com.kustomer.Reconnect" = "רעקאָננעקט";
 "com.kustomer.Reconnecting..." = "ריקאַנעקטינג ...";
 "com.kustomer.Remove" = "אַראָפּנעמען";
