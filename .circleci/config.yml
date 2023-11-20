@@ -1,0 +1,50 @@
+# .circleci/config.yml
+version: 2.1
+
+orbs:
+  macos: circleci/macos@2.3.2
+
+parameters:
+  publish-to-cocoapods:
+    type: boolean
+    default: false
+
+jobs:
+  build:
+    macos:
+      xcode: 15.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+      - run: bundle check || bundle install --path vendor/bundle --clean
+      - save_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+  publish-to-cocoapods:
+    macos:
+      xcode: 15.0
+    steps:
+      - when:
+          condition:
+            and: [ << pipeline.parameters.publish-to-cocoapods >> ]
+          steps:
+            - run:
+                name: Publishing to CocoaPods
+                command: |
+                  pod --version
+
+
+workflows:
+  publish-to-cocoapods:
+    when: << pipeline.parameters.publish-to-cocoapods >>
+    jobs:
+      - build
+      - publish-to-cocoapods:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - /releases\/*.*/
