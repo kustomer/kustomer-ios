@@ -9,7 +9,7 @@
 "com.kustomer.Attached file" = "Fisier atasat";
 "com.kustomer.Attachment" = "Atașament";
 "com.kustomer.Browse files" = "Cauta fisiere";
-"com.kustomer.Camera roll" = "Rola camerei";
+"com.kustomer.Camera roll" = "Rolul camerei";
 "com.kustomer.Can't load chat" = "Nu se poate încărca chatul";
 "com.kustomer.Cancel" = "Anulare";
 "com.kustomer.Cancelled! Tap to retry." = "Anulat! Apasă pentru a reîncerca.";
@@ -28,7 +28,7 @@
 "com.kustomer.Done" = "Terminat";
 "com.kustomer.Edit additional feedback" = "Editați feedback suplimentar";
 "com.kustomer.Edit comment" = "Editează comentariul";
-"com.kustomer.End Chat" = "Sfârșitul convorbirii";
+"com.kustomer.End Chat" = "Incheierea convorbirii";
 "com.kustomer.Ended" = "Încheiat";
 "com.kustomer.Error" = "Eroare";
 "com.kustomer.Error!" = "Eroare!";
@@ -51,7 +51,7 @@
 "com.kustomer.Message failed to send" = "Mesajul nu a putut fi trimis";
 "com.kustomer.Message failed to send!" = "Mesajul nu a putut fi trimis!";
 "com.kustomer.Moved" = "Mutat";
-"com.kustomer.Never mind" = "Nu contează";
+"com.kustomer.Never mind" = "Nu face nimic";
 "com.kustomer.New Conversation" = "Conversație nouă";
 "com.kustomer.New message" = "Mesaj nou";
 "com.kustomer.No articles" = "Fara articole";
@@ -61,8 +61,8 @@
 "com.kustomer.No text" = "Niciun text";
 "com.kustomer.None of your personal information was included" = "Nicio informație personală nu a fost inclusă";
 "com.kustomer.Not enough disk space" = "Spatiu pe disc insuficient";
-"com.kustomer.Not found" = "Nu a fost gasit";
-"com.kustomer.Okay" = "bine";
+"com.kustomer.Not found" = "Nu a fost găsit";
+"com.kustomer.Okay" = "Bine";
 "com.kustomer.Open in browser" = "Deschis în browser";
 "com.kustomer.Optional" = "Opțional";
 "com.kustomer.Outgoing chat" = "Chat de ieșire";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Te rog lasa un mesaj";
 "com.kustomer.Please select an option..." = "Va rugam selectati o optiune...";
 "com.kustomer.Please try another search term" = "Vă rugăm să încercați un alt termen de căutare";
+"com.kustomer.Processing Answer" = "Procesarea răspunsului";
 "com.kustomer.Reconnect" = "Reconectați-vă";
 "com.kustomer.Reconnecting..." = "Se reconecta...";
 "com.kustomer.Remove" = "Elimina";
@@ -94,7 +95,7 @@
 "com.kustomer.Type a message..." = "Scrie un mesaj...";
 "com.kustomer.Unable to view attachment" = "Nu se poate vizualiza atașamentul";
 "com.kustomer.Unavailable message goes here" = "Mesajul indisponibil ajunge aici";
-"com.kustomer.Updated" = "La curent";
+"com.kustomer.Updated" = "Actualizat";
 "com.kustomer.Waiting for a response from" = "Astept un raspuns de la";
 "com.kustomer.We will get back to you as soon as we are online!" = "Vă vom reveni imediat ce suntem online!";
 "com.kustomer.Yes" = "da";

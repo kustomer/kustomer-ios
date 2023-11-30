@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
 import CoreGraphics
 import CoreImage
+import DeveloperToolsSupport
 import Dispatch
 import Foundation
 @_exported import KustomerChat
@@ -16,12 +17,14 @@ import PubNub
 import QuickLook
 import SafariServices
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UserNotifications
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os.log
 import os
 @_hasMissingDesignatedInitializers public class KUSUser : Swift.CustomStringConvertible {
@@ -330,6 +333,8 @@ public struct KnowledgeBaseArticle : Swift.Decodable {
   public let id: Swift.String
   public let type: Swift.String
   public let attributes: KustomerChat.KnowledgeBaseArticleAttributes
+  public var deflectionArticleUrl: Swift.String?
+  public var deflectionArticleEmbeddedUrl: Swift.String?
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseArticleAttributes : Swift.Decodable {
@@ -374,8 +379,9 @@ public struct KUSKBDeflectResult : Swift.Decodable {
   public var knowledgeBaseId: Swift.String?
   public var title: Swift.String?
   public var webLink: Swift.String?
+  public var articleUrl: Swift.String?
+  public var articleEmbeddedUrl: Swift.String?
   public var lang: Swift.String?
-  public init(id: Swift.String?, articleId: Swift.String?, type: KustomerChat.KUSKBDeflectResultType?, title: Swift.String?, webLink: Swift.String?, lang: Swift.String?, rawJson: Swift.String?, clickCount: Swift.Int = 0)
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class KUSChatAttachment : Swift.CustomStringConvertible {
@@ -1004,7 +1010,7 @@ public protocol KUSChatListener : AnyObject {
   func onUnreadCountChange(count: Swift.Int)
   func onUnreadCountChange(conversationId: Swift.String, count: Swift.Int)
   func onUserJoined(conversationId: Swift.String, user: KustomerChat.KUSUser)
-  func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
+  func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?, ai: Swift.Bool)
   func onUserStopsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
   func onPreviewChanged(conversationId: Swift.String, preview: Swift.String, previewDetails: KustomerChat.PreviewDetails?)
   func onAssistantEnded(conversation: KustomerChat.KUSConversation)
@@ -1021,7 +1027,7 @@ extension KustomerChat.KUSChatListener {
   public func onUnreadCountChange(count: Swift.Int)
   public func onUnreadCountChange(conversationId: Swift.String, count: Swift.Int)
   public func onUserJoined(conversationId: Swift.String, user: KustomerChat.KUSUser)
-  public func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
+  public func onUserIsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?, ai: Swift.Bool)
   public func onUserStopsTyping(conversationId: Swift.String, user: KustomerChat.KUSUser, timetoken: KustomerChat.KUSPNTtoken?)
   public func onPreviewChanged(conversationId: Swift.String, preview: Swift.String, previewDetails: KustomerChat.PreviewDetails?)
   public func onAssistantEnded(conversation: KustomerChat.KUSConversation)
@@ -1092,6 +1098,8 @@ public struct KUSCSATNetworkPostBody : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct AILabelConstants {
+}
 @available(*, unavailable, renamed: "Notification.Name.KUS_reachabilityChanged")
 public let KUSReachabilityChangedNotification: Foundation.NSNotification.Name
 extension Foundation.NSNotification.Name {
@@ -1125,6 +1133,14 @@ public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
   }
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct KUSChatMessageTemplateMeta : Swift.CustomStringConvertible, Swift.Decodable {
+  public var isAiResponse: Swift.Bool?
+  public var lockInput: Swift.Bool?
+  public var description: Swift.String {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum KUSChatMessageDirection : Swift.String, Swift.Decodable {
   case inbound
@@ -1282,7 +1298,7 @@ public struct KnowledgeBaseCategoryAttributes : Swift.Decodable {
   public let parent: Swift.String?
   public let createdAt: Foundation.Date
   public let updatedAt: Foundation.Date
-  public let published: Swift.Bool
+  public var published: Swift.Bool?
   public var deleted: Swift.Bool?
   public let slug: Swift.String?
   public let hash: Swift.String?
@@ -1604,8 +1620,12 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   public static let shared: KustomerChat.KustomerClient
   final public var status: KustomerChat.KustomerClientStatus
   final public var bundle: Foundation.Bundle
-  final public let sdkVersion: Swift.String
-  final public let sdkVersionBuild: Swift.String
+  final public var sdkVersion: Swift.String {
+    get
+  }
+  final public var sdkVersionBuild: Swift.String {
+    get
+  }
   final public var sdkVersionSemver: Swift.String {
     get
   }
@@ -1830,6 +1850,8 @@ public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var previewSummary: Swift.String {
     get
   }
+  public var isAiResponse: Swift.Bool?
+  public var lockInput: Swift.Bool?
   public init(from decoder: any Swift.Decoder) throws
   public var description: Swift.String {
     get

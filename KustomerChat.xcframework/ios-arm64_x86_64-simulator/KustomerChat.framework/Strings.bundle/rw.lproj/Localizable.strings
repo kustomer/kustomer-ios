@@ -15,12 +15,12 @@
 "com.kustomer.Cancelled! Tap to retry." = "Yahagaritswe! Kanda kugirango ugerageze.";
 "com.kustomer.Categories" = "Ibyiciro";
 "com.kustomer.Chat" = "Kuganira";
-"com.kustomer.Chat has ended" = "Ikiganiro cyarangiye";
+"com.kustomer.Chat has ended" = "Ikiganiro cyararangiye";
 "com.kustomer.Chat history" = "Amateka yo kuganira";
 "com.kustomer.Chat is currently unavailable" = "Kuganira kuri ubu ntibishoboka";
 "com.kustomer.Chat with support" = "Ganira n&#39;inkunga";
 "com.kustomer.Conversation ended" = "Ikiganiro cyarangiye";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Ikiganiro cyahujwe mubindi biganiro. \ N \ n Kanda kugirango ujye mubiganiro bishya.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Ikiganiro cyahujwe mubindi biganiro. \ N \ n Kanda kugirango ujye mu kiganiro gishya.";
 "com.kustomer.Conversation moved to another customer" = "Ikiganiro cyimukiye kubandi bakiriya";
 "com.kustomer.Delete" = "Siba";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Urashaka gukuraho amanota yawe n&#39;ibitekerezo?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Nyamuneka siga ubutumwa";
 "com.kustomer.Please select an option..." = "Nyamuneka hitamo amahitamo ...";
 "com.kustomer.Please try another search term" = "Nyamuneka gerageza irindi jambo ryishakisha";
+"com.kustomer.Processing Answer" = "Igisubizo";
 "com.kustomer.Reconnect" = "Ongera uhuze";
 "com.kustomer.Reconnecting..." = "Guhuza ...";
 "com.kustomer.Remove" = "Kuraho";
@@ -88,7 +89,7 @@
 "com.kustomer.Tap to open" = "Kanda kugirango ufungure";
 "com.kustomer.Thanks for your feedback" = "Urakoze kubitekerezo byawe";
 "com.kustomer.That article" = "Iyo ngingo";
-"com.kustomer.There was a problem" = "Hariho ikibazo";
+"com.kustomer.There was a problem" = "Habayeho ikibazo";
 "com.kustomer.This conversation is read-only" = "Iki kiganiro kirasomwa gusa";
 "com.kustomer.Try again" = "Ongera ugerageze";
 "com.kustomer.Type a message..." = "Andika ubutumwa ...";

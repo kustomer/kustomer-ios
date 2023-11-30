@@ -60,7 +60,7 @@
 "com.kustomer.No results" = "Sense resultats";
 "com.kustomer.No text" = "Sense text";
 "com.kustomer.None of your personal information was included" = "No s&#39;ha inclòs cap de la vostra informació personal";
-"com.kustomer.Not enough disk space" = "No hi ha prou espai al disc";
+"com.kustomer.Not enough disk space" = "Espai del disc insuficient";
 "com.kustomer.Not found" = "No trobat";
 "com.kustomer.Okay" = "Bé";
 "com.kustomer.Open in browser" = "Oberta al navegador";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Si us plau, deixeu un missatge";
 "com.kustomer.Please select an option..." = "Seleccioneu una opció...";
 "com.kustomer.Please try another search term" = "Si us plau, proveu amb un altre terme de cerca";
+"com.kustomer.Processing Answer" = "Processament de la resposta";
 "com.kustomer.Reconnect" = "Torna a connectar";
 "com.kustomer.Reconnecting..." = "S&#39;està tornant a connectar...";
 "com.kustomer.Remove" = "Eliminar";

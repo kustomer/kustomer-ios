@@ -23,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Söhbət başqa söhbətə birləşdirildi.\n\nYeni söhbətə keçmək üçün toxunun.";
 "com.kustomer.Conversation moved to another customer" = "Söhbət başqa müştəriyə köçürüldü";
 "com.kustomer.Delete" = "Sil";
-"com.kustomer.Do you want to remove your rating and feedback?" = "Reytinqinizi və rəyinizi silmək istəyirsiniz?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "Reytinq və rəyinizi silmək istəyirsiniz?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Şərhinizdə etdiyiniz dəyişiklikləri yadda saxlamaq istəyirsiniz?";
 "com.kustomer.Done" = "Bitdi";
 "com.kustomer.Edit additional feedback" = "Əlavə rəyi redaktə edin";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Zəhmət olmasa bir mesaj buraxın";
 "com.kustomer.Please select an option..." = "Lütfən, seçim seçin...";
 "com.kustomer.Please try another search term" = "Lütfən, başqa axtarış terminini yoxlayın";
+"com.kustomer.Processing Answer" = "Cavab emal olunur";
 "com.kustomer.Reconnect" = "Yenidən qoşulun";
 "com.kustomer.Reconnecting..." = "Yenidən qoşulur...";
 "com.kustomer.Remove" = "Sil";

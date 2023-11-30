@@ -37,7 +37,7 @@
 "com.kustomer.Featured Articles" = "Избрани статии";
 "com.kustomer.File type not supported" = "Типът файл не се поддържа";
 "com.kustomer.Help Article" = "Помощна статия";
-"com.kustomer.Image" = "Образ";
+"com.kustomer.Image" = "Изображение";
 "com.kustomer.Incoming chat" = "Входящ чат";
 "com.kustomer.Internet offline" = "Интернет офлайн";
 "com.kustomer.Just now" = "Точно сега";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Моля, оставете съобщение";
 "com.kustomer.Please select an option..." = "Моля изберете опция...";
 "com.kustomer.Please try another search term" = "Моля, опитайте с друга дума за търсене";
+"com.kustomer.Processing Answer" = "Обработване на отговор";
 "com.kustomer.Reconnect" = "Свържете се отново";
 "com.kustomer.Reconnecting..." = "Повторно свързване...";
 "com.kustomer.Remove" = "Премахване";

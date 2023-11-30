@@ -55,7 +55,7 @@
 "com.kustomer.New Conversation" = "Uusi keskustelu";
 "com.kustomer.New message" = "Uusi viesti";
 "com.kustomer.No articles" = "Ei artikkeleita";
-"com.kustomer.No conversations yet" = "Ei vielä keskusteluja";
+"com.kustomer.No conversations yet" = "Ei keskusteluja vielä";
 "com.kustomer.No internet connection" = "Ei Internet-yhteyttä";
 "com.kustomer.No results" = "Ei tuloksia";
 "com.kustomer.No text" = "Ei tekstiä";
@@ -70,12 +70,13 @@
 "com.kustomer.Please leave a message" = "Jätä viesti";
 "com.kustomer.Please select an option..." = "Ole hyvä ja valitse vaihtoehto...";
 "com.kustomer.Please try another search term" = "Kokeile toista hakutermiä";
+"com.kustomer.Processing Answer" = "Käsitellään vastausta";
 "com.kustomer.Reconnect" = "Yhdistä uudelleen";
 "com.kustomer.Reconnecting..." = "Yhdistetään uudelleen...";
 "com.kustomer.Remove" = "Poista";
 "com.kustomer.Report problem" = "Ilmoita ongelmasta";
 "com.kustomer.Report sent" = "Raportti lähetetty";
-"com.kustomer.Required" = "Vaaditaan";
+"com.kustomer.Required" = "Edellytetään";
 "com.kustomer.Save changes" = "Tallenna muutokset";
 "com.kustomer.Search Help Articles" = "Hae ohjeartikkeleista";
 "com.kustomer.Search Results" = "Hakutulokset";

@@ -40,7 +40,7 @@
 "com.kustomer.Image" = "Kép";
 "com.kustomer.Incoming chat" = "Bejövő csevegés";
 "com.kustomer.Internet offline" = "Internet offline";
-"com.kustomer.Just now" = "Éppen most";
+"com.kustomer.Just now" = "Pont most";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Hagyjon üzenetet";
 "com.kustomer.Leave a message..." = "Hagyjon üzenetet...";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Kérlek hagyj üzenetet";
 "com.kustomer.Please select an option..." = "Kérem válasszon egy opciót...";
 "com.kustomer.Please try another search term" = "Kérjük, próbálkozzon másik keresési kifejezéssel";
+"com.kustomer.Processing Answer" = "Válasz feldolgozása";
 "com.kustomer.Reconnect" = "Csatlakozzon újra";
 "com.kustomer.Reconnecting..." = "Újracsatlakozás...";
 "com.kustomer.Remove" = "Távolítsa el";
@@ -80,7 +81,7 @@
 "com.kustomer.Search Help Articles" = "Keresés a súgócikkekben";
 "com.kustomer.Search Results" = "Keresési eredmények";
 "com.kustomer.Sending" = "Küldés";
-"com.kustomer.Share" = "Részvény";
+"com.kustomer.Share" = "Ossza meg";
 "com.kustomer.Submit" = "Beküldés";
 "com.kustomer.Survey" = "Felmérés";
 "com.kustomer.Take photo" = "Fotót készíteni";

@@ -12,7 +12,7 @@
 "com.kustomer.Camera roll" = "Kamerarulle";
 "com.kustomer.Can't load chat" = "Chatten kan ikke indlæses";
 "com.kustomer.Cancel" = "Afbestille";
-"com.kustomer.Cancelled! Tap to retry." = "Annulleret! Tryk for at prøve igen.";
+"com.kustomer.Cancelled! Tap to retry." = "Aflyst! Tryk for at prøve igen.";
 "com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Snak";
 "com.kustomer.Chat has ended" = "Chatten er afsluttet";
@@ -23,7 +23,7 @@
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Samtalen blev flettet ind i en anden samtale.\n\nTryk for at gå til den nye samtale.";
 "com.kustomer.Conversation moved to another customer" = "Samtalen blev flyttet til en anden kunde";
 "com.kustomer.Delete" = "Slet";
-"com.kustomer.Do you want to remove your rating and feedback?" = "Vil du fjerne din vurdering og feedback?";
+"com.kustomer.Do you want to remove your rating and feedback?" = "Vil du fjerne din bedømmelse og feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vil du gemme de ændringer, du har foretaget i din kommentar?";
 "com.kustomer.Done" = "Færdig";
 "com.kustomer.Edit additional feedback" = "Rediger yderligere feedback";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Læg venligst en besked";
 "com.kustomer.Please select an option..." = "Vælg venligst en mulighed...";
 "com.kustomer.Please try another search term" = "Prøv venligst et andet søgeord";
+"com.kustomer.Processing Answer" = "Behandler svar";
 "com.kustomer.Reconnect" = "Tilslut igen";
 "com.kustomer.Reconnecting..." = "Genopretter forbindelse...";
 "com.kustomer.Remove" = "Fjerne";

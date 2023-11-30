@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "Chat haipatikani kwa sasa";
 "com.kustomer.Chat with support" = "Piga gumzo na usaidizi";
 "com.kustomer.Conversation ended" = "Mazungumzo yameisha";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Mazungumzo yaliunganishwa kuwa mazungumzo mengine.\n\nGusa ili uende kwenye mazungumzo mapya.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Mazungumzo yaliunganishwa na kuwa mazungumzo mengine.\n\nGusa ili uende kwenye mazungumzo mapya.";
 "com.kustomer.Conversation moved to another customer" = "Mazungumzo yamehamishwa hadi kwa mteja mwingine";
 "com.kustomer.Delete" = "Futa";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Je, ungependa kuondoa ukadiriaji na maoni yako?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Tafadhali acha ujumbe";
 "com.kustomer.Please select an option..." = "Tafadhali chagua chaguo...";
 "com.kustomer.Please try another search term" = "Tafadhali jaribu neno lingine la utafutaji";
+"com.kustomer.Processing Answer" = "Inachakata Jibu";
 "com.kustomer.Reconnect" = "Unganisha upya";
 "com.kustomer.Reconnecting..." = "Inaunganisha upya...";
 "com.kustomer.Remove" = "Ondoa";

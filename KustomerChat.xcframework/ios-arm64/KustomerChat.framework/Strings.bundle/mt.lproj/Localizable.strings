@@ -24,7 +24,7 @@
 "com.kustomer.Conversation moved to another customer" = "Konversazzjoni mċaqalqa għal klijent ieħor";
 "com.kustomer.Delete" = "Ħassar";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Trid tneħħi l-klassifikazzjoni u l-feedback tiegħek?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Trid tissejvja l-bidliet li għamilt fil-kumment tiegħek?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Trid issalva l-bidliet li għamilt fil-kumment tiegħek?";
 "com.kustomer.Done" = "Magħmul";
 "com.kustomer.Edit additional feedback" = "Editja feedback addizzjonali";
 "com.kustomer.Edit comment" = "Editja kumment";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Jekk jogħġbok ħalli messaġġ";
 "com.kustomer.Please select an option..." = "Jekk jogħġbok agħżel għażla...";
 "com.kustomer.Please try another search term" = "Jekk jogħġbok ipprova terminu ta&#39; tfittxija ieħor";
+"com.kustomer.Processing Answer" = "Ipproċessar Tweġiba";
 "com.kustomer.Reconnect" = "Erġa&#39; qabbad";
 "com.kustomer.Reconnecting..." = "Qiegħed jerġa&#39; jgħaqqad...";
 "com.kustomer.Remove" = "Neħħi";

@@ -51,7 +51,7 @@
 "com.kustomer.Message failed to send" = "Message konnt net schécken";
 "com.kustomer.Message failed to send!" = "Message konnt net verschécken!";
 "com.kustomer.Moved" = "Beweegt";
-"com.kustomer.Never mind" = "T ass net schlëmm";
+"com.kustomer.Never mind" = "Dat mécht näischt";
 "com.kustomer.New Conversation" = "Neit Gespréich";
 "com.kustomer.New message" = "Neie Message";
 "com.kustomer.No articles" = "Keng Artikelen";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Gitt weg e Message";
 "com.kustomer.Please select an option..." = "Wielt w.e.g. eng Optioun ...";
 "com.kustomer.Please try another search term" = "Probéiert w.e.g. en anere Sichbegrëff";
+"com.kustomer.Processing Answer" = "Veraarbechtung Äntwert";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Reconnectéiert ...";
 "com.kustomer.Remove" = "Ewechzehuelen";

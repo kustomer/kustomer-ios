@@ -70,12 +70,13 @@
 "com.kustomer.Please leave a message" = "مهرباني ڪري هڪ پيغام ڇڏي ڏيو";
 "com.kustomer.Please select an option..." = "مھرباني ڪري ھڪڙو اختيار چونڊيو...";
 "com.kustomer.Please try another search term" = "مھرباني ڪري ٻيو ڳولھا اصطلاح آزمايو";
+"com.kustomer.Processing Answer" = "پروسيسنگ جواب";
 "com.kustomer.Reconnect" = "ٻيهر ڳنڍيو";
 "com.kustomer.Reconnecting..." = "ٻيهر ڳنڍي رهيو آهي...";
 "com.kustomer.Remove" = "هٽايو";
 "com.kustomer.Report problem" = "مسئلو رپورٽ ڪريو";
 "com.kustomer.Report sent" = "رپورٽ موڪلي وئي";
-"com.kustomer.Required" = "گهربل";
+"com.kustomer.Required" = "گھربل";
 "com.kustomer.Save changes" = "تبديليون محفوظ ڪريو";
 "com.kustomer.Search Help Articles" = "ڳولا مدد آرٽيڪل";
 "com.kustomer.Search Results" = "ڳولا جا نتيجا";
@@ -96,7 +97,7 @@
 "com.kustomer.Unavailable message goes here" = "غير موجود پيغام هتي وڃي ٿو";
 "com.kustomer.Updated" = "تازه ڪاري";
 "com.kustomer.Waiting for a response from" = "کان جواب جو انتظار";
-"com.kustomer.We will get back to you as soon as we are online!" = "اسان توهان کي واپس حاصل ڪنداسين جيترو جلدي اسان آن لائن آهيون!";
+"com.kustomer.We will get back to you as soon as we are online!" = "اسان توهان کي واپس حاصل ڪنداسين جيئن اسان آن لائن آهيون!";
 "com.kustomer.Yes" = "ها";
 "com.kustomer.You changed your additional feedback comment" = "توھان پنھنجي اضافي راءِ جو تبصرو تبديل ڪيو";
 "com.kustomer.You're offline. Check your connection." = "توهان آف لائن آهيو. پنھنجي ڪنيڪشن چيڪ ڪريو.";
