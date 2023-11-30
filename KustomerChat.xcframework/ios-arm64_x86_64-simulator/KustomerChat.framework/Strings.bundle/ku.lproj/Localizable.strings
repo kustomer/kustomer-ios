@@ -4,7 +4,7 @@
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Bersivên zêde hatin rakirin";
 "com.kustomer.Agent" = "Casus";
-"com.kustomer.Answers" = "Bersivên";
+"com.kustomer.Answers" = "Bersiv";
 "com.kustomer.Are you sure you want to end this chat?" = "Ma tu bi rastî dixwazî vê sohbetê biqedînî?";
 "com.kustomer.Attached file" = "Pelê pêvekirî";
 "com.kustomer.Attachment" = "Attachment";
@@ -14,13 +14,13 @@
 "com.kustomer.Cancel" = "Bişûndekirin";
 "com.kustomer.Cancelled! Tap to retry." = "Betal kirin! Ji bo dubare ceribandinê bikirtînin.";
 "com.kustomer.Categories" = "Kategorî";
-"com.kustomer.Chat" = "Galgalî";
+"com.kustomer.Chat" = "Galgalkirin";
 "com.kustomer.Chat has ended" = "Sohbet qediya";
 "com.kustomer.Chat history" = "dîroka Chat";
 "com.kustomer.Chat is currently unavailable" = "Chat niha ne berdest e";
 "com.kustomer.Chat with support" = "Bi piştgirîyê re sohbet bikin";
 "com.kustomer.Conversation ended" = "Sohbet bi dawî bû";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Axaftin di nav danûstendineke din de bû yek.\n\nJi bo ku hûn biçin danûstandina nû, bitikînin.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Axaftin di nav danûstendineke din de bû yek.\n\nJi bo ku hûn biçin sohbeta nû, bitikînin.";
 "com.kustomer.Conversation moved to another customer" = "Axaftina çû ser xerîdarek din";
 "com.kustomer.Delete" = "Jêbirin";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ma hûn dixwazin nirx û nerînên xwe jêbirin?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Ji kerema xwe peyamek bihêle";
 "com.kustomer.Please select an option..." = "Ji kerema xwe vebijarkek hilbijêrin...";
 "com.kustomer.Please try another search term" = "Ji kerema xwe peyvek din a lêgerînê biceribîne";
+"com.kustomer.Processing Answer" = "Pêvajoya Bersiv";
 "com.kustomer.Reconnect" = "Ji nû ve girêdan";
 "com.kustomer.Reconnecting..." = "Ji nû ve girêdan...";
 "com.kustomer.Remove" = "Dûrxistin";

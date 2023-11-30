@@ -15,7 +15,7 @@
 "com.kustomer.Cancelled! Tap to retry." = "ਰੱਦ ਕੀਤਾ! ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।";
 "com.kustomer.Categories" = "ਵਰਗ";
 "com.kustomer.Chat" = "ਚੈਟ";
-"com.kustomer.Chat has ended" = "ਚੈਟ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ";
+"com.kustomer.Chat has ended" = "ਚੈਟ ਖਤਮ ਹੋ ਗਈ ਹੈ";
 "com.kustomer.Chat history" = "ਚੈਟ ਇਤਿਹਾਸ";
 "com.kustomer.Chat is currently unavailable" = "ਚੈਟ ਵਰਤਮਾਨ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ";
 "com.kustomer.Chat with support" = "ਸਹਾਇਤਾ ਨਾਲ ਗੱਲਬਾਤ ਕਰੋ";
@@ -70,7 +70,8 @@
 "com.kustomer.Please leave a message" = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਸੁਨੇਹਾ ਛੱਡੋ";
 "com.kustomer.Please select an option..." = "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵਿਕਲਪ ਚੁਣੋ...";
 "com.kustomer.Please try another search term" = "ਕਿਰਪਾ ਕਰਕੇ ਕੋਈ ਹੋਰ ਖੋਜ ਸ਼ਬਦ ਅਜ਼ਮਾਓ";
-"com.kustomer.Reconnect" = "ਦੁਬਾਰਾ ਕਨੈਕਟ ਕਰੋ";
+"com.kustomer.Processing Answer" = "ਜਵਾਬ &#39;ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ";
+"com.kustomer.Reconnect" = "ਮੁੜ ਕਨੈਕਟ ਕਰੋ";
 "com.kustomer.Reconnecting..." = "ਮੁੜ ਕਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...";
 "com.kustomer.Remove" = "ਹਟਾਓ";
 "com.kustomer.Report problem" = "ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ";

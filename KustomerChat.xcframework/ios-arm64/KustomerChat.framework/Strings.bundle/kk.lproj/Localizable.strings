@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Хабарлама қалдырыңыз";
 "com.kustomer.Please select an option..." = "Опцияны таңдаңыз...";
 "com.kustomer.Please try another search term" = "Басқа іздеу сөзін қолданып көріңіз";
+"com.kustomer.Processing Answer" = "Жауапты өңдеу";
 "com.kustomer.Reconnect" = "Қайта қосылу";
 "com.kustomer.Reconnecting..." = "Қайта қосылуда...";
 "com.kustomer.Remove" = "Жою";
@@ -90,7 +91,7 @@
 "com.kustomer.That article" = "Сол мақала";
 "com.kustomer.There was a problem" = "Мәселе болды";
 "com.kustomer.This conversation is read-only" = "Бұл әңгіме тек оқуға арналған";
-"com.kustomer.Try again" = "Қайтадан көріңіз";
+"com.kustomer.Try again" = "Қайтадан байқап көріңіз";
 "com.kustomer.Type a message..." = "Хабарды теріңіз...";
 "com.kustomer.Unable to view attachment" = "Қосымшаны көру мүмкін емес";
 "com.kustomer.Unavailable message goes here" = "Қолжетімсіз хабар осында келеді";

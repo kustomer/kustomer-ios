@@ -61,7 +61,7 @@
 "com.kustomer.No text" = "വാചകമില്ല";
 "com.kustomer.None of your personal information was included" = "നിങ്ങളുടെ സ്വകാര്യ വിവരങ്ങളൊന്നും ഉൾപ്പെടുത്തിയിട്ടില്ല";
 "com.kustomer.Not enough disk space" = "ആവശ്യത്തിന് ഡിസ്ക് സ്പേസ് ഇല്ല";
-"com.kustomer.Not found" = "കാണ്മാനില്ല";
+"com.kustomer.Not found" = "കണ്ടെത്തിയില്ല";
 "com.kustomer.Okay" = "ശരി";
 "com.kustomer.Open in browser" = "ബ്രൗസറിൽ തുറക്കുക";
 "com.kustomer.Optional" = "ഓപ്ഷണൽ";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "ദയവായി ഒരു സന്ദേശം നൽകുക";
 "com.kustomer.Please select an option..." = "ദയവായി ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക...";
 "com.kustomer.Please try another search term" = "ദയവായി മറ്റൊരു തിരയൽ പദം ശ്രമിക്കുക";
+"com.kustomer.Processing Answer" = "ഉത്തരം പ്രോസസ്സ് ചെയ്യുന്നു";
 "com.kustomer.Reconnect" = "വീണ്ടും ബന്ധിപ്പിക്കുക";
 "com.kustomer.Reconnecting..." = "വീണ്ടും ബന്ധിപ്പിക്കുന്നു...";
 "com.kustomer.Remove" = "നീക്കം ചെയ്യുക";

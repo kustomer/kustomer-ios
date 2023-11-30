@@ -1,7 +1,7 @@
 "com.kustomer.%@ is typing..." = "%@ πληκτρολογεί...";
 "com.kustomer.100+ results found" = "Βρέθηκαν 100+ αποτελέσματα";
 "com.kustomer.Add additional feedback" = "Προσθέστε επιπλέον σχόλια";
-"com.kustomer.Additional Feedback" = "Πρόσθετη ανατροφοδότηση";
+"com.kustomer.Additional Feedback" = "Πρόσθετα σχόλια";
 "com.kustomer.Additional feedback removed" = "Καταργήθηκαν πρόσθετα σχόλια";
 "com.kustomer.Agent" = "Μέσο";
 "com.kustomer.Answers" = "Απαντήσεις";
@@ -25,7 +25,7 @@
 "com.kustomer.Delete" = "Διαγράφω";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Θέλετε να καταργήσετε την αξιολόγηση και τα σχόλιά σας;";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Θέλετε να αποθηκεύσετε τις αλλαγές που κάνατε στο σχόλιό σας;";
-"com.kustomer.Done" = "Ολοκληρώθηκε";
+"com.kustomer.Done" = "Εγινε";
 "com.kustomer.Edit additional feedback" = "Επεξεργασία πρόσθετων σχολίων";
 "com.kustomer.Edit comment" = "Επεξεργασία σχολίου";
 "com.kustomer.End Chat" = "Τερματισμός συνομιλίας";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Παρακαλώ αφήστε μήνυμα";
 "com.kustomer.Please select an option..." = "Παρακαλώ επιλέξτε μια επιλογή...";
 "com.kustomer.Please try another search term" = "Δοκιμάστε άλλον όρο αναζήτησης";
+"com.kustomer.Processing Answer" = "Επεξεργασία απάντησης";
 "com.kustomer.Reconnect" = "Επανασυνδέστε";
 "com.kustomer.Reconnecting..." = "Επανασύνδεση...";
 "com.kustomer.Remove" = "Αφαιρώ";

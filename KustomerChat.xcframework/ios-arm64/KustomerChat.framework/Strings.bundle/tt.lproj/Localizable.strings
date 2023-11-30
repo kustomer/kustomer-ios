@@ -38,7 +38,7 @@
 "com.kustomer.File type not supported" = "Файл тибы ярдәм итми";
 "com.kustomer.Help Article" = "Ярдәм мәкаләсе";
 "com.kustomer.Image" = "Рәсем";
-"com.kustomer.Incoming chat" = "Килүче чат";
+"com.kustomer.Incoming chat" = "Килгән чат";
 "com.kustomer.Internet offline" = "Интернет оффлайн";
 "com.kustomer.Just now" = "Хәзер";
 "com.kustomer.KB" = "КБ";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Зинһар, хәбәр калдырыгыз";
 "com.kustomer.Please select an option..." = "Зинһар, вариантны сайлагыз ...";
 "com.kustomer.Please try another search term" = "Зинһар, бүтән эзләү терминын кулланыгыз";
+"com.kustomer.Processing Answer" = "Answerавап эшкәртү";
 "com.kustomer.Reconnect" = "Кабат тоташтырыгыз";
 "com.kustomer.Reconnecting..." = "Тоташу ...";
 "com.kustomer.Remove" = "Чыгар";

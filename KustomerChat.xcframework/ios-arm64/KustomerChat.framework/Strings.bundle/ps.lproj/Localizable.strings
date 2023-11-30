@@ -46,12 +46,12 @@
 "com.kustomer.Leave a message..." = "یو پیغام پریږده...";
 "com.kustomer.Loading..." = "بار کول...";
 "com.kustomer.Mark all as read" = "ټول د لوستلو په توګه په نښه کړئ";
-"com.kustomer.Me" = "ما";
+"com.kustomer.Me" = "زه";
 "com.kustomer.Message" = "پیغام";
 "com.kustomer.Message failed to send" = "پیغام په لیږلو کې پاتې راغلی";
 "com.kustomer.Message failed to send!" = "پیغام په لیږلو کې پاتې راغلی!";
 "com.kustomer.Moved" = "حرکت وکړ";
-"com.kustomer.Never mind" = "خفه نشې";
+"com.kustomer.Never mind" = "په اړه یې فکر مه کوه";
 "com.kustomer.New Conversation" = "نوې خبرې اترې";
 "com.kustomer.New message" = "نوی پیغام";
 "com.kustomer.No articles" = "هیڅ مقاله نشته";
@@ -60,7 +60,7 @@
 "com.kustomer.No results" = "هیڅ پایلې نلري";
 "com.kustomer.No text" = "متن نشته";
 "com.kustomer.None of your personal information was included" = "ستاسو هیڅ شخصي معلومات شامل ندي";
-"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نشته";
+"com.kustomer.Not enough disk space" = "کافي ډیسک ځای نلري";
 "com.kustomer.Not found" = "پیدا نشو";
 "com.kustomer.Okay" = "سمه ده";
 "com.kustomer.Open in browser" = "په براوزر کې خلاص کړئ";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "مهرباني وکړئ یو پیغام پریږدئ";
 "com.kustomer.Please select an option..." = "مهرباني وکړئ یو اختیار غوره کړئ ...";
 "com.kustomer.Please try another search term" = "مهرباني وکړئ د لټون بله اصطلاح هڅه وکړئ";
+"com.kustomer.Processing Answer" = "ځواب پروسس کول";
 "com.kustomer.Reconnect" = "بیا نښلول";
 "com.kustomer.Reconnecting..." = "بیا نښلول...";
 "com.kustomer.Remove" = "لرې کړئ";

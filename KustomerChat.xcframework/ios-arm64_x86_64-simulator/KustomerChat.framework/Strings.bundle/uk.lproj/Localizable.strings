@@ -62,7 +62,7 @@
 "com.kustomer.None of your personal information was included" = "Жодної вашої особистої інформації не було включено";
 "com.kustomer.Not enough disk space" = "Недостатньо місця на диску";
 "com.kustomer.Not found" = "Не знайдено";
-"com.kustomer.Okay" = "добре";
+"com.kustomer.Okay" = "Гаразд";
 "com.kustomer.Open in browser" = "Відкрити в браузері";
 "com.kustomer.Optional" = "Додатково";
 "com.kustomer.Outgoing chat" = "Вихідний чат";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Будь ласка, залиште повідомлення";
 "com.kustomer.Please select an option..." = "Виберіть варіант...";
 "com.kustomer.Please try another search term" = "Спробуйте інший термін пошуку";
+"com.kustomer.Processing Answer" = "Обробка відповіді";
 "com.kustomer.Reconnect" = "Повторне підключення";
 "com.kustomer.Reconnecting..." = "Повторне підключення...";
 "com.kustomer.Remove" = "видалити";
@@ -103,4 +104,4 @@
 "com.kustomer.Your existing conversations will be here." = "Ваші існуючі розмови будуть тут.";
 "com.kustomer.is no longer available" = "більше не доступні";
 "com.kustomer.out of" = "з";
-"com.kustomer.sending" = "відправка";
+"com.kustomer.sending" = "відправлення";

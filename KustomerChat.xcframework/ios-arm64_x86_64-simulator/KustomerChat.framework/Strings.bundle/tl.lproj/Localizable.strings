@@ -51,7 +51,7 @@
 "com.kustomer.Message failed to send" = "Nabigong ipadala ang mensahe";
 "com.kustomer.Message failed to send!" = "Nabigong ipadala ang mensahe!";
 "com.kustomer.Moved" = "Inilipat";
-"com.kustomer.Never mind" = "Wag na nga";
+"com.kustomer.Never mind" = "Hindi bale";
 "com.kustomer.New Conversation" = "Bagong Pag-uusap";
 "com.kustomer.New message" = "Bagong mensahe";
 "com.kustomer.No articles" = "Walang mga artikulo";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Mangyaring mag-iwan ng mensahe";
 "com.kustomer.Please select an option..." = "Mangyaring pumili ng opsyon...";
 "com.kustomer.Please try another search term" = "Mangyaring subukan ang isa pang termino para sa paghahanap";
+"com.kustomer.Processing Answer" = "Pagproseso ng Sagot";
 "com.kustomer.Reconnect" = "Kumonekta muli";
 "com.kustomer.Reconnecting..." = "Kumokonekta muli...";
 "com.kustomer.Remove" = "Alisin";
