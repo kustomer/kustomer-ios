@@ -62,7 +62,7 @@
 "com.kustomer.None of your personal information was included" = "Ниједан од ваших личних података није укључен";
 "com.kustomer.Not enough disk space" = "Није довољно простора на диску";
 "com.kustomer.Not found" = "Није пронађен";
-"com.kustomer.Okay" = "у реду";
+"com.kustomer.Okay" = "Добро";
 "com.kustomer.Open in browser" = "Отвори у претраживачу";
 "com.kustomer.Optional" = "Опционо";
 "com.kustomer.Outgoing chat" = "Одлазно ћаскање";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Молимо оставите поруку";
 "com.kustomer.Please select an option..." = "Молимо, изаберите опцију...";
 "com.kustomer.Please try another search term" = "Покушајте са другим термином за претрагу";
+"com.kustomer.Processing Answer" = "Обрада одговора";
 "com.kustomer.Reconnect" = "Поново се повежите";
 "com.kustomer.Reconnecting..." = "Поновно повезивање...";
 "com.kustomer.Remove" = "Уклони";

@@ -37,7 +37,7 @@
 "com.kustomer.Featured Articles" = "Artikel Pilihan";
 "com.kustomer.File type not supported" = "Jenis fail tidak disokong";
 "com.kustomer.Help Article" = "Artikel Bantuan";
-"com.kustomer.Image" = "Imej";
+"com.kustomer.Image" = "Gambar";
 "com.kustomer.Incoming chat" = "Sembang masuk";
 "com.kustomer.Internet offline" = "Internet luar talian";
 "com.kustomer.Just now" = "tadi";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Sila tinggalkan mesej";
 "com.kustomer.Please select an option..." = "Sila pilih satu pilihan...";
 "com.kustomer.Please try another search term" = "Sila cuba istilah carian lain";
+"com.kustomer.Processing Answer" = "Memproses Jawapan";
 "com.kustomer.Reconnect" = "Sambung semula";
 "com.kustomer.Reconnecting..." = "Menyambung semula...";
 "com.kustomer.Remove" = "Alih keluar";

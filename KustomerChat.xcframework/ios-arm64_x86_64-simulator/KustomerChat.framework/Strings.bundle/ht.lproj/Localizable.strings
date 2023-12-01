@@ -62,7 +62,7 @@
 "com.kustomer.None of your personal information was included" = "Okenn nan enfòmasyon pèsonèl ou pa te enkli ladan li";
 "com.kustomer.Not enough disk space" = "Pa ase espas disk";
 "com.kustomer.Not found" = "Pa jwenn";
-"com.kustomer.Okay" = "Oke";
+"com.kustomer.Okay" = "Dakò";
 "com.kustomer.Open in browser" = "Louvri nan navigatè a";
 "com.kustomer.Optional" = "Si ou vle";
 "com.kustomer.Outgoing chat" = "Chat sòtan";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Tanpri kite yon mesaj";
 "com.kustomer.Please select an option..." = "Tanpri chwazi yon opsyon...";
 "com.kustomer.Please try another search term" = "Tanpri eseye yon lòt tèm rechèch";
+"com.kustomer.Processing Answer" = "Pwosesis Repons";
 "com.kustomer.Reconnect" = "Rekonekte";
 "com.kustomer.Reconnecting..." = "Rekonekte...";
 "com.kustomer.Remove" = "Retire";

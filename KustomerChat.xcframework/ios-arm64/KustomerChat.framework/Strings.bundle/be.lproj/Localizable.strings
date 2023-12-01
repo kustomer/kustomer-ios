@@ -70,13 +70,14 @@
 "com.kustomer.Please leave a message" = "Калі ласка, пакіньце паведамленне";
 "com.kustomer.Please select an option..." = "Выберыце варыянт...";
 "com.kustomer.Please try another search term" = "Паспрабуйце іншы пошукавы тэрмін";
+"com.kustomer.Processing Answer" = "Апрацоўка адказу";
 "com.kustomer.Reconnect" = "Зноў падключыцеся";
 "com.kustomer.Reconnecting..." = "Паўторнае падключэнне...";
 "com.kustomer.Remove" = "Зняць";
 "com.kustomer.Report problem" = "Паведаміць аб праблеме";
 "com.kustomer.Report sent" = "Справаздача адпраўлена";
 "com.kustomer.Required" = "абавязковы";
-"com.kustomer.Save changes" = "Захавайце змены";
+"com.kustomer.Save changes" = "Захаваць змены";
 "com.kustomer.Search Help Articles" = "Пошук па артыкулах даведкі";
 "com.kustomer.Search Results" = "Вынікі пошуку";
 "com.kustomer.Sending" = "Адпраўка";
@@ -88,7 +89,7 @@
 "com.kustomer.Tap to open" = "Націсніце, каб адкрыць";
 "com.kustomer.Thanks for your feedback" = "Дзякуй за ваш водгук";
 "com.kustomer.That article" = "Той артыкул";
-"com.kustomer.There was a problem" = "Узнікла праблема";
+"com.kustomer.There was a problem" = "Была праблема";
 "com.kustomer.This conversation is read-only" = "Гэта размова толькі для чытання";
 "com.kustomer.Try again" = "Паспрабуй яшчэ";
 "com.kustomer.Type a message..." = "Увядзіце паведамленне...";

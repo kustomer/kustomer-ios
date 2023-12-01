@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "እባክህ መልእክት ተው";
 "com.kustomer.Please select an option..." = "እባክህ አንድ አማራጭ ምረጥ...";
 "com.kustomer.Please try another search term" = "እባክህ ሌላ የፍለጋ ቃል ሞክር";
+"com.kustomer.Processing Answer" = "ምላሽ በመስራት ላይ";
 "com.kustomer.Reconnect" = "እንደገና ይገናኙ";
 "com.kustomer.Reconnecting..." = "እንደገና በማገናኘት ላይ...";
 "com.kustomer.Remove" = "አስወግድ";
@@ -82,7 +83,7 @@
 "com.kustomer.Sending" = "በመላክ ላይ";
 "com.kustomer.Share" = "አጋራ";
 "com.kustomer.Submit" = "አስገባ";
-"com.kustomer.Survey" = "የዳሰሳ ጥናት";
+"com.kustomer.Survey" = "ቅኝት";
 "com.kustomer.Take photo" = "ፎቶ አንሳ";
 "com.kustomer.Tap to load..." = "ለመጫን መታ ያድርጉ...";
 "com.kustomer.Tap to open" = "ለመክፈት መታ ያድርጉ";
@@ -90,7 +91,7 @@
 "com.kustomer.That article" = "ያ መጣጥፍ";
 "com.kustomer.There was a problem" = "ችግር ነበር።";
 "com.kustomer.This conversation is read-only" = "ይህ ውይይት ተነባቢ-ብቻ ነው።";
-"com.kustomer.Try again" = "ድጋሚ ሞክር";
+"com.kustomer.Try again" = "እንደገና ሞክር";
 "com.kustomer.Type a message..." = "መልዕክት ይተይቡ...";
 "com.kustomer.Unable to view attachment" = "ዓባሪን ማየት አልተቻለም";
 "com.kustomer.Unavailable message goes here" = "የማይገኝ መልእክት እዚህ ይሄዳል";

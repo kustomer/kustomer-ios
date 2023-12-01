@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "Sheekadu hadda lama heli karo";
 "com.kustomer.Chat with support" = "La hadal taageero";
 "com.kustomer.Conversation ended" = "Wadahadalkii wuu dhamaaday";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Sheekadu waxay ku biirtay sheeko kale.\n\nTaabo si aad u aado sheekada cusub.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Sheekaysigu waxa uu ku milmay sheeko kale.\n\nTaabo si aad u aado sheekada cusub.";
 "com.kustomer.Conversation moved to another customer" = "Sheekaysigu waxa loo raray macmiil kale";
 "com.kustomer.Delete" = "Tirtir";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ma doonaysaa in aad meesha ka saarto qiimayntaada iyo jawaab celintaada?";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Fadlan fariin u dhaaf";
 "com.kustomer.Please select an option..." = "Fadlan door door...";
 "com.kustomer.Please try another search term" = "Fadlan isku day eray raadin kale";
+"com.kustomer.Processing Answer" = "Jawaabta socodsiinta";
 "com.kustomer.Reconnect" = "Dib u xidhidh";
 "com.kustomer.Reconnecting..." = "Dib u xidhidhinta...";
 "com.kustomer.Remove" = "Ka saar";

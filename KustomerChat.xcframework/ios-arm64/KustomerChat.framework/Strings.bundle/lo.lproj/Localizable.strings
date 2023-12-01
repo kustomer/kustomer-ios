@@ -5,7 +5,7 @@
 "com.kustomer.Additional feedback removed" = "ລຶບຄຳຕິຊົມເພີ່ມເຕີມອອກແລ້ວ";
 "com.kustomer.Agent" = "ຕົວແທນ";
 "com.kustomer.Answers" = "ຄໍາຕອບ";
-"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຢຸດການສົນທະນານີ້?";
+"com.kustomer.Are you sure you want to end this chat?" = "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການສິ້ນສຸດການສົນທະນານີ້?";
 "com.kustomer.Attached file" = "ໄຟລ໌ແນບ";
 "com.kustomer.Attachment" = "ໄຟລ໌ແນບ";
 "com.kustomer.Browse files" = "ຊອກຫາໄຟລ໌";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "ກະລຸນາຝາກຂໍ້ຄວາມໄວ້";
 "com.kustomer.Please select an option..." = "ກະລຸນາເລືອກຕົວເລືອກ...";
 "com.kustomer.Please try another search term" = "ກະລຸນາລອງຊອກຫາຄຳສັບອື່ນ";
+"com.kustomer.Processing Answer" = "ການປະມວນຜົນຄໍາຕອບ";
 "com.kustomer.Reconnect" = "ເຊື່ອມຕໍ່ຄືນໃໝ່";
 "com.kustomer.Reconnecting..." = "ກຳລັງເຊື່ອມຕໍ່ຄືນໃໝ່...";
 "com.kustomer.Remove" = "ເອົາອອກ";

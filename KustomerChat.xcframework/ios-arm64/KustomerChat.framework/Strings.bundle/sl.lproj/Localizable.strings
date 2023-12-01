@@ -40,7 +40,7 @@
 "com.kustomer.Image" = "Slika";
 "com.kustomer.Incoming chat" = "Dohodni klepet";
 "com.kustomer.Internet offline" = "Internet brez povezave";
-"com.kustomer.Just now" = "Ravnokar";
+"com.kustomer.Just now" = "Pravkar";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Pustite sporočilo";
 "com.kustomer.Leave a message..." = "Pustite sporočilo...";
@@ -70,10 +70,11 @@
 "com.kustomer.Please leave a message" = "Prosim, pustite sporočilo";
 "com.kustomer.Please select an option..." = "Izberite možnost ...";
 "com.kustomer.Please try another search term" = "Poskusite z drugim iskalnim izrazom";
+"com.kustomer.Processing Answer" = "Obdelava odgovora";
 "com.kustomer.Reconnect" = "Ponovno vzpostavite povezavo";
 "com.kustomer.Reconnecting..." = "Ponovna povezava ...";
 "com.kustomer.Remove" = "Odstrani";
-"com.kustomer.Report problem" = "Prijavi težavo";
+"com.kustomer.Report problem" = "Prijavite težavo";
 "com.kustomer.Report sent" = "Poročilo poslano";
 "com.kustomer.Required" = "Obvezno";
 "com.kustomer.Save changes" = "Shrani spremembe";

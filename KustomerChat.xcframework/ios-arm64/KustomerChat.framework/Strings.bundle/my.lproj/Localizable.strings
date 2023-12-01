@@ -40,7 +40,7 @@
 "com.kustomer.Image" = "ပုံ";
 "com.kustomer.Incoming chat" = "အဝင်ချတ်";
 "com.kustomer.Internet offline" = "အင်တာနက်အော့ဖ်လိုင်း";
-"com.kustomer.Just now" = "အခုလေးတင်";
+"com.kustomer.Just now" = "အခုပဲ";
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "အမှာစကားထားခဲ့ပါ";
 "com.kustomer.Leave a message..." = "အမှာစကားထားခဲ့ပါ...";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "ကျေးဇူးပြု၍ မက်ဆေ့ချ်ထားခဲ့ပါ။";
 "com.kustomer.Please select an option..." = "ကျေးဇူးပြု၍ ရွေးချယ်မှုတစ်ခုကို ရွေးချယ်ပါ...";
 "com.kustomer.Please try another search term" = "ကျေးဇူးပြု၍ အခြားရှာဖွေမှု ဝေါဟာရကို စမ်းကြည့်ပါ။";
+"com.kustomer.Processing Answer" = "အဖြေကို လုပ်ဆောင်နေသည်။";
 "com.kustomer.Reconnect" = "ပြန်လည်ချိတ်ဆက်ပါ။";
 "com.kustomer.Reconnecting..." = "ပြန်လည်ချိတ်ဆက်နေသည်...";
 "com.kustomer.Remove" = "ဖယ်ရှားပါ။";

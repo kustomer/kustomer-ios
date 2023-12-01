@@ -11,7 +11,7 @@
 "com.kustomer.Browse files" = "Bläddra bland filer";
 "com.kustomer.Camera roll" = "Kamera rulle";
 "com.kustomer.Can't load chat" = "Det går inte att ladda chatten";
-"com.kustomer.Cancel" = "Avbryt";
+"com.kustomer.Cancel" = "Annullera";
 "com.kustomer.Cancelled! Tap to retry." = "Inställt! Klicka för att försöka igen.";
 "com.kustomer.Categories" = "Kategorier";
 "com.kustomer.Chat" = "Chatt";
@@ -60,7 +60,7 @@
 "com.kustomer.No results" = "Inga resultat";
 "com.kustomer.No text" = "Ingen text";
 "com.kustomer.None of your personal information was included" = "Ingen av dina personliga uppgifter inkluderades";
-"com.kustomer.Not enough disk space" = "Inte tillräckligt med diskutrymme";
+"com.kustomer.Not enough disk space" = "Inte tillräckligt diskutrymme";
 "com.kustomer.Not found" = "Hittades inte";
 "com.kustomer.Okay" = "Okej";
 "com.kustomer.Open in browser" = "Öppna i webbläsaren";
@@ -70,9 +70,10 @@
 "com.kustomer.Please leave a message" = "Snälla lämna ett medelande";
 "com.kustomer.Please select an option..." = "Var god välj ett alternativ...";
 "com.kustomer.Please try another search term" = "Försök med en annan sökterm";
+"com.kustomer.Processing Answer" = "Bearbetar svar";
 "com.kustomer.Reconnect" = "Återanslut";
 "com.kustomer.Reconnecting..." = "Återansluter...";
-"com.kustomer.Remove" = "Ta bort";
+"com.kustomer.Remove" = "Avlägsna";
 "com.kustomer.Report problem" = "Rapportera problem";
 "com.kustomer.Report sent" = "Rapport skickad";
 "com.kustomer.Required" = "Nödvändig";

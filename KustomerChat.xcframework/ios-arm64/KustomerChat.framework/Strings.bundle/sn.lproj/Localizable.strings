@@ -51,7 +51,7 @@
 "com.kustomer.Message failed to send" = "Message yatadza kutumirwa";
 "com.kustomer.Message failed to send!" = "Message yatadza kutumirwa!";
 "com.kustomer.Moved" = "Asuduruka";
-"com.kustomer.Never mind" = "Chiregera";
+"com.kustomer.Never mind" = "Chiregedza";
 "com.kustomer.New Conversation" = "Hurukuro Itsva";
 "com.kustomer.New message" = "Mharidzo itsva";
 "com.kustomer.No articles" = "Hapana zvinyorwa";
@@ -70,6 +70,7 @@
 "com.kustomer.Please leave a message" = "Ndapota siyai meseji";
 "com.kustomer.Please select an option..." = "Ndapota sarudza imwe sarudzo...";
 "com.kustomer.Please try another search term" = "Edza imwe izwi rekutsvaga";
+"com.kustomer.Processing Answer" = "Kugadzirisa Mhinduro";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Kubatanidzazve...";
 "com.kustomer.Remove" = "Bvisa";
