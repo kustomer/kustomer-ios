@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KustomerChat
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -260,7 +260,7 @@ public enum KustomerAssetLanguage : Swift.String {
   }
   public func deregisterCurrentDeviceForPushNotifications(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
   public func didFailToRegisterForRemoteNotifications(error: any Swift.Error)
-  public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
+  public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data, pushEnvironment: KustomerChat.PushEnvironment)
   public func requestAuthorizationForPush()
   public func listLivePushChannelRegistrations(completion: ((Swift.Result<[Swift.String], KustomerChat.KError>) -> Swift.Void)? = nil)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
