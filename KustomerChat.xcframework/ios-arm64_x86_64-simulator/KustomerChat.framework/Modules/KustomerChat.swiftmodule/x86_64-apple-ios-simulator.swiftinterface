@@ -252,15 +252,9 @@ public enum KustomerAssetLanguage : Swift.String {
 }
 @objc @_inheritsConvenienceInitializers public class PushProvider : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate {
   public static let shared: KustomerChat.PushProvider
-  public var deviceToken: Foundation.Data? {
-    get
-  }
-  public var deviceTokenString: Swift.String? {
-    get
-  }
   public func deregisterCurrentDeviceForPushNotifications(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
   public func didFailToRegisterForRemoteNotifications(error: any Swift.Error)
-  public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data, pushEnvironment: KustomerChat.PushEnvironment, brandId: Swift.String?)
+  public func didRegisterForRemoteNotifications(_ deviceToken: Foundation.Data)
   public func requestAuthorizationForPush()
   public func listLivePushChannelRegistrations(completion: ((Swift.Result<[Swift.String], KustomerChat.KError>) -> Swift.Void)? = nil)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
