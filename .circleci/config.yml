@@ -23,10 +23,6 @@ commands:
 
 jobs:
   publish-to-cocoapods:
-    filters:
-      branches:
-        only:
-          - main
     macos:
       xcode: 14.3
     steps:
@@ -36,7 +32,7 @@ jobs:
       - run:
           name: Publish to Cocoa Pods
           command: |
-            pod trunk push
+            echo "Publish to CocoaPods"
       - persist_to_workspace:
           root: ~/project
           paths: ./*
