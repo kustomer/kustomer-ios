@@ -1595,8 +1595,9 @@ public enum KustomerLogType : Swift.String {
   case warning
   case error
   case info
+  @available(*, deprecated, message: "V2 of Logging will not support this value")
   case fatal
-  @available(*, deprecated)
+  @available(*, deprecated, message: "V2 of Logging will not support this value")
   case multithreadingWarning
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -1826,6 +1827,7 @@ public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var conversationId: Swift.String?
   public var brandId: Swift.String?
   public var createdAt: Foundation.Date?
+  public var importedAt: Foundation.Date?
   public var status: KustomerChat.KUSChatMessageStatus?
   public var messageType: KustomerChat.KUSMessageType?
   public var direction: KustomerChat.KUSChatMessageDirection?
