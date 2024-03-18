@@ -1,0 +1,56 @@
+name: Dynamic Backup to CodeCommit
+
+on:
+  workflow_dispatch: # Allows manual trigger of the workflow
+  schedule:
+    - cron: '0 3 * * *' # Scheduled time as a starting point
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Calculate and Display Delay for Scheduled Runs
+      if: github.event_name == 'schedule'
+      run: |
+        # Calculate a random delay up to 1 hour (3600 seconds) for scheduled runs
+        DELAY=$((RANDOM % 3600))
+        echo "Random delay for scheduled run: $DELAY seconds."
+        # Use 'date' command to display expected start time after the delay
+        date "+%Y-%m-%d %H:%M:%S" && date -d "+$DELAY seconds" "+%Y-%m-%d %H:%M:%S"
+        sleep $DELAY
+
+    - name: Immediate Execution Notice for Manual Triggers
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "Workflow triggered manually via workflow_dispatch. Starting immediately without delay."
+
+    - name: Checkout GitHub repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: '0' # Fetch all history for branches and tags
+
+    - name: Configure Git for AWS CodeCommit
+      run: |
+        # Set up Git to use HTTPS credentials
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git config --global credential.helper store
+        # Store CodeCommit credentials
+        echo "https://${{ secrets.CODECOMMITUSER }}:${{ secrets.CODECOMMITPASSWORD }}@git-codecommit.us-east-1.amazonaws.com" > ~/.git-credentials
+
+    - name: Echo the AWS CodeCommit Repository URL
+      run: |
+        REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
+        echo "Pushing to repository URL: https://git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME"
+
+    - name: Mirror to AWS CodeCommit
+      run: |
+        REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
+        GIT_TRACE=1 GIT_CURL_VERBOSE=1
+        
+        git fetch origin
+        git branch -a # Lists all local and remote-tracking branches
+        git checkout master
+        git pull origin master
+
+        git push --mirror --force https://git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME
