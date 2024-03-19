@@ -36,7 +36,11 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global credential.helper store
         # Store CodeCommit credentials
-        echo "https://${{ secrets.CODECOMMITUSER }}:${{ secrets.CODECOMMITPASSWORD }}@git-codecommit.us-east-1.amazonaws.com" > ~/.git-credentials
+        CODECOMMIT_USER_TRIMMED=$(echo "${{ secrets.CODECOMMIT_USER }}" | xargs)
+        CODECOMMIT_PASSWORD_TRIMMED=$(echo "${{ secrets.CODECOMMIT_PASSWORD }}" | xargs)
+
+        echo "https://${CODECOMMIT_USER_TRIMMED}:${CODECOMMIT_PASSWORD_TRIMMED}@git-codecommit.us-east-1.amazonaws.com" > ~/.git-credentials
+
 
     - name: Echo the AWS CodeCommit Repository URL
       run: |
