@@ -28,33 +28,40 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: '0' # Fetch all history for branches and tags
-
-    - name: Configure Git for AWS CodeCommit
-      run: |
-        # Set up Git to use HTTPS credentials
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git config --global credential.helper store
-        # Store CodeCommit credentials
-        CODECOMMIT_USER_TRIMMED=$(echo "${{ secrets.CODECOMMIT_USER }}" | xargs)
-        CODECOMMIT_PASSWORD_TRIMMED=$(echo "${{ secrets.CODECOMMIT_PASSWORD }}" | xargs)
-
-        echo "https://${CODECOMMIT_USER_TRIMMED}:${CODECOMMIT_PASSWORD_TRIMMED}@git-codecommit.us-east-1.amazonaws.com" > ~/.git-credentials
-
-
-    - name: Echo the AWS CodeCommit Repository URL
-      run: |
-        REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
-        echo "Pushing to repository URL: https://git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME"
-
-    - name: Mirror to AWS CodeCommit
-      run: |
-        REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
-        GIT_TRACE=1 GIT_CURL_VERBOSE=1
         
-        git fetch origin
-        git branch -a # Lists all local and remote-tracking branches
-        git checkout master
-        git pull origin master
+    - name: Configure Git
+      run: |
+        git config --global user.name "gh-backup"
+        git config --global user.email "action@github.com"
 
-        git push --mirror --force https://git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME
+    - name: Backup to CodeCommit
+      env:
+          GITHUB_REMOTE_NAME: origin
+          CC_USER: ${{ secrets.CODECOMMIT_USER }}
+          CC_PASS: ${{ secrets.CODECOMMIT_PASSWORD }}
+      run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
+          CC_REPO_URL="git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME"
+          CODECOMMIT_URL="https://${CC_USER}:${CC_PASS//@/%40}@${CC_REPO_URL}"
+          
+          if git remote | grep -q codecommit; then
+            git remote set-url codecommit "${CODECOMMIT_URL}"
+          else
+            git remote add codecommit "${CODECOMMIT_URL}"
+          fi
+
+          git fetch ${GITHUB_REMOTE_NAME}
+          
+          git branch -r | grep "${GITHUB_REMOTE_NAME}/" | grep -v '\->' | sed "s/${GITHUB_REMOTE_NAME}\///" | while read branch; do
+            echo "Processing branch: $branch"
+            
+            if ! git rev-parse --verify "$branch" >/dev/null 2>&1; then
+              git checkout -b "$branch" "${GITHUB_REMOTE_NAME}/$branch"
+            else
+              git checkout "$branch"
+            fi
+            
+            git push codecommit "$branch":"$branch" --force
+          done
+          
+          git push codecommit --tags --force
