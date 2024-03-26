@@ -934,7 +934,7 @@ extension KustomerChat.ConfettiView : QuartzCore.CAAnimationDelegate {
 }
 extension UserNotifications.UNNotification {
   public func isFromKustomer() -> Swift.Bool
-  public func isRelatedToCurrentConversation() -> Swift.Bool
+  public func kustomerShouldDisplay() -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NextGrowingTextView : UIKit.UIScrollView {
   @_hasMissingDesignatedInitializers open class Delegates {
