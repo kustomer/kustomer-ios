@@ -343,12 +343,12 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
 @class UIPresentationController;
 
 @interface KustomerClient (SWIFT_EXTENSION(KustomerChat)) <UIAdaptivePresentationControllerDelegate>
 - (void)presentationControllerDidDismiss:(UIPresentationController * _Nonnull)presentationController;
 @end
+
 
 
 
@@ -409,6 +409,8 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 
@@ -818,12 +820,12 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
 @class UIPresentationController;
 
 @interface KustomerClient (SWIFT_EXTENSION(KustomerChat)) <UIAdaptivePresentationControllerDelegate>
 - (void)presentationControllerDidDismiss:(UIPresentationController * _Nonnull)presentationController;
 @end
+
 
 
 
@@ -884,6 +886,8 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 

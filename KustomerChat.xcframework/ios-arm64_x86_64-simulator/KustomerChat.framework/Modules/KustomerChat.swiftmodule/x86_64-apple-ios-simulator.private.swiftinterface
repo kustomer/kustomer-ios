@@ -933,6 +933,10 @@ public enum KnowledgeBaseDataRow {
 extension KustomerChat.ConfettiView : QuartzCore.CAAnimationDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func animationDidStop(_ animation: QuartzCore.CAAnimation, finished flag: Swift.Bool)
 }
+extension UserNotifications.UNNotification {
+  public func isFromKustomer() -> Swift.Bool
+  public func kustomerShouldDisplay() -> Swift.Bool
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NextGrowingTextView : UIKit.UIScrollView {
   @_hasMissingDesignatedInitializers open class Delegates {
     open var willChangeHeight: (CoreFoundation.CGFloat) -> Swift.Void
