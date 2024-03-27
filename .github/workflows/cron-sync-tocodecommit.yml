@@ -1,0 +1,67 @@
+name: Dynamic Backup to CodeCommit
+
+on:
+  workflow_dispatch: # Allows manual trigger of the workflow
+  schedule:
+    - cron: '0 3 * * *' # Scheduled time as a starting point
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Calculate and Display Delay for Scheduled Runs
+      if: github.event_name == 'schedule'
+      run: |
+        # Calculate a random delay up to 1 hour (3600 seconds) for scheduled runs
+        DELAY=$((RANDOM % 3600))
+        echo "Random delay for scheduled run: $DELAY seconds."
+        # Use 'date' command to display expected start time after the delay
+        date "+%Y-%m-%d %H:%M:%S" && date -d "+$DELAY seconds" "+%Y-%m-%d %H:%M:%S"
+        sleep $DELAY
+
+    - name: Immediate Execution Notice for Manual Triggers
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "Workflow triggered manually via workflow_dispatch. Starting immediately without delay."
+
+    - name: Checkout GitHub repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: '0' # Fetch all history for branches and tags
+        
+    - name: Configure Git
+      run: |
+        git config --global user.name "gh-backup"
+        git config --global user.email "action@github.com"
+
+    - name: Backup to CodeCommit
+      env:
+          GITHUB_REMOTE_NAME: origin
+          CC_USER: ${{ secrets.CODECOMMIT_USER }}
+          CC_PASS: ${{ secrets.CODECOMMIT_PASSWORD }}
+      run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
+          CC_REPO_URL="git-codecommit.us-east-1.amazonaws.com/v1/repos/$REPO_NAME"
+          CODECOMMIT_URL="https://${CC_USER}:${CC_PASS//@/%40}@${CC_REPO_URL}"
+          
+          if git remote | grep -q codecommit; then
+            git remote set-url codecommit "${CODECOMMIT_URL}"
+          else
+            git remote add codecommit "${CODECOMMIT_URL}"
+          fi
+
+          git fetch ${GITHUB_REMOTE_NAME}
+          
+          git branch -r | grep "${GITHUB_REMOTE_NAME}/" | grep -v '\->' | sed "s/${GITHUB_REMOTE_NAME}\///" | while read branch; do
+            echo "Processing branch: $branch"
+            
+            if ! git rev-parse --verify "$branch" >/dev/null 2>&1; then
+              git checkout -b "$branch" "${GITHUB_REMOTE_NAME}/$branch"
+            else
+              git checkout "$branch"
+            fi
+            
+            git push codecommit "$branch":"$branch" --force
+          done
+          
+          git push codecommit --tags --force
