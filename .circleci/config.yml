@@ -1,0 +1,43 @@
+# .circleci/config.yml
+version: 2.1
+
+orbs:
+  macos: circleci/macos@2.3.2
+  gh: circleci/github-cli@2.0
+
+commands:
+  configure-gpg:
+    steps:
+      - run:
+          name: Import GPG Key
+          command: |
+            hash gpg || brew install --cask gpg-suite-no-mail
+            echo -e $GPG_PRIVATE_KEY | gpg --batch --import
+      - run:
+          name: Configure Git for Signing Commits
+          command: |
+            git config --global user.signingkey $GPG_KEY_ID
+            git config --global commit.gpgsign true
+            git config --global user.email 'devops@kustomer.com'
+            git config --global user.name "kustomer-builds"
+
+jobs:
+  publish-to-cocoapods:
+    macos:
+      xcode: 15.2
+    steps:
+      - checkout
+      - run:
+          name: Publish to Cocoa Pods
+          command: |
+            echo "Publish to CocoaPods"
+      - store_test_results:
+          path: test_output
+      - store_artifacts:
+          path: test_output
+          destination: scan-output
+
+workflows:
+  publish_to_cocoapods:
+    jobs:
+      - publish-to-cocoapods
