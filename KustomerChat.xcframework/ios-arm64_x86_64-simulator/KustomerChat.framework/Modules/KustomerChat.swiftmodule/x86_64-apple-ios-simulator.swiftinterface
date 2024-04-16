@@ -26,6 +26,10 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+extension Foundation.Bundle {
+  public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
+  public static let kustomerAssets: Foundation.Bundle?
+}
 @_hasMissingDesignatedInitializers public class KUSUser : Swift.CustomStringConvertible {
   public var id: Swift.String?
   public var displayName: Swift.String?
@@ -1700,10 +1704,6 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
 }
 extension KustomerChat.KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
-}
-extension Foundation.Bundle {
-  public static func getBundle(bundleName: Swift.String) -> Foundation.Bundle?
-  public static let kustomerAssets: Foundation.Bundle?
 }
 public enum PushEnvironment : Swift.String {
   case development
