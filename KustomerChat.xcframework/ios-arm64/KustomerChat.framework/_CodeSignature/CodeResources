@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NGoI9wjaTgP+oPtKLgzJmXVC59k=
+		A5zdeU8+5sF1tt+de0gDP/ipoeQ=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L7lXQ75R45+1HGykIZed+I+Cpto=
+		mjf7bchWGSweWYaqa1KVcB+yhWc=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		19Z86lD1JLlllrMFOCj6N9URaTw=
+		VuZ9Hq5Ul+tum9v7HV83kmBe90Y=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -38,11 +38,15 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+4pEEtuuWOrjvwuYIfdZjpMjrNw=
+		wNcAT3gjxDU+ervoWo6uTOaz53Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		UTLzQb+qttuX59LDXeTxhzLWfns=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		eeEvZSo5ypiVp7BSLnlzEG59WZ0=
 		</data>
 		<key>Strings.bundle/Base.lproj/Localizable.strings</key>
 		<dict>
@@ -1059,7 +1063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PfRoT0mxonyu1uY4QTxC3FvtQD2FCAM1VngIe94Fupc=
+			l6FIeGe/xhWrX5optr6YjX26qfco3zit9jRN/zpfkT0=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1094,7 +1098,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0l5GV/CvZLNkAKDN7JsnbBYbzvrfZtk7MTO+xv5iM8E=
+			yqN1Jns/GtK0RnkdH/AxxvYGE9LOI8qORBiWvRH/v1U=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -1108,7 +1112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b0qoQPs1tOx9cjmU4x2fraN+dUONyousR/A9WXuqEr8=
+			b2M0zVhJJj7RipXsl3gt5PpKAXgBdBQcbnwWc8sy1pw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1116,6 +1120,13 @@
 			<key>hash2</key>
 			<data>
 			sxvf+/7DsDwW3q1DIdYvxY1/qtOp76JO9JxgPYJKKms=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1yx2Jm8vi+jyNv0igbtIeoR0AD2Gq5W2ld49dKdj8rY=
 			</data>
 		</dict>
 		<key>Strings.bundle/Base.lproj/Localizable.strings</key>
