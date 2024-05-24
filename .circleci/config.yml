@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Publish to Cocoa Pods
           command: |
-            echo "Publish to CocoaPods"
+            echo "Publish to Cocoa Pods"
       - store_test_results:
           path: test_output
       - store_artifacts:
