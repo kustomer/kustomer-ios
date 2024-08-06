@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '4.1.5'
+  s.version = '4.1.6'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'

@@ -1229,6 +1229,7 @@ extension KustomerChat.KustomerUI.Color {
   public static var mllMenuTitleText: UIKit.UIColor
   public static var mllMenuBackTint: UIKit.UIColor
   public static var quickActionButton: UIKit.UIColor
+  public static var quickActionButtonBorder: UIKit.UIColor
   public static var quickActionButtonText: UIKit.UIColor
   public static var sendChatMessageButton: UIKit.UIColor
   public static var noInternetBannerBackground: UIKit.UIColor
