@@ -1,0 +1,9 @@
+name: 'Use Dependency Review'
+
+on: [pull_request]
+
+jobs:
+  call-dependency-review:
+    uses: kustomer/common-workflows/.github/workflows/dependency-review.yml@main
+    secrets: inherit
+
