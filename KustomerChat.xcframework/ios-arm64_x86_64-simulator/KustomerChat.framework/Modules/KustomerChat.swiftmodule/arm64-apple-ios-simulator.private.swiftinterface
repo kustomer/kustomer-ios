@@ -100,6 +100,7 @@ public enum KustomerLanguage : Swift.String {
   case it
   case ja
   case kk
+  case kn
   case ky
   case ko
   case lv
@@ -126,6 +127,7 @@ public enum KustomerLanguage : Swift.String {
   case sv
   case th
   case zh_tw
+  case te
   case tr
   case tw
   case uk
