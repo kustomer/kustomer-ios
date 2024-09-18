@@ -4,10 +4,7 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
-import CoreGraphics
-import CoreImage
 import DeveloperToolsSupport
-import Dispatch
 import Foundation
 @_exported import KustomerChat
 import MobileCoreServices
@@ -618,18 +615,6 @@ public protocol KBCategoryCollectionDataSource : AnyObject {
     set
   }
   @objc deinit
-}
-public protocol KUSURLConvertible {
-  func kus_asURL() throws -> Foundation.URL
-}
-extension Swift.String : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
-}
-extension Foundation.URL : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
-}
-extension Foundation.URLComponents : KustomerChat.KUSURLConvertible {
-  public func kus_asURL() throws -> Foundation.URL
 }
 public typealias KustomerCompletion<T> = (Swift.Result<T, KustomerChat.KustomerError>) -> Swift.Void
 public enum KustomerClientStatus {
@@ -1384,7 +1369,6 @@ public enum PresenceType {
 public enum KError : Swift.Error {
   case named(Swift.String)
   case generic(any Swift.Error)
-  case alamofire(KustomerChat.KUSAFError)
   case api(details: [Any]?)
   case notEnoughDiskSpace
   case noAPSEnvironmentEntitlement
@@ -1414,7 +1398,6 @@ public enum KError : Swift.Error {
   case describeCustomerDateParametersNotSupported
   case describeNotAvailableForLocalCustomer
   case describeNotSignedInAsThatCustomerId
-  case describeCurrentCustomerIsAnonymous
   case kbNetworkError
   case kbArticleIdNotFound
   case kbCategoryIdNotFound
@@ -1506,97 +1489,6 @@ public enum ResponseError : Swift.Error, Foundation.LocalizedError {
   case unableToDecode(Swift.DecodingError)
   case noData(Swift.String)
   case noContent
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-public enum KUSAFError : Swift.Error {
-  public enum KUSMultipartEncodingFailureReason {
-    case bodyPartURLInvalid(url: Foundation.URL)
-    case bodyPartFilenameInvalid(in: Foundation.URL)
-    case bodyPartFileNotReachable(at: Foundation.URL)
-    case bodyPartFileNotReachableWithError(atURL: Foundation.URL, error: any Swift.Error)
-    case bodyPartFileIsDirectory(at: Foundation.URL)
-    case bodyPartFileSizeNotAvailable(at: Foundation.URL)
-    case bodyPartFileSizeQueryFailedWithError(forURL: Foundation.URL, error: any Swift.Error)
-    case bodyPartInputStreamCreationFailed(for: Foundation.URL)
-    case outputStreamCreationFailed(for: Foundation.URL)
-    case outputStreamFileAlreadyExists(at: Foundation.URL)
-    case outputStreamURLInvalid(url: Foundation.URL)
-    case outputStreamWriteFailed(error: any Swift.Error)
-    case inputStreamReadFailed(error: any Swift.Error)
-  }
-  public enum KUSParameterEncodingFailureReason {
-    case missingURL
-    case jsonEncodingFailed(error: any Swift.Error)
-    case customEncodingFailed(error: any Swift.Error)
-  }
-  public enum KUSParameterEncoderFailureReason {
-    public enum KUSRequiredComponent {
-      case url
-      case httpMethod(rawValue: Swift.String)
-    }
-    case missingRequiredComponent(KustomerChat.KUSAFError.KUSParameterEncoderFailureReason.KUSRequiredComponent)
-    case encoderFailed(error: any Swift.Error)
-  }
-  public enum KUSResponseValidationFailureReason {
-    case dataFileNil
-    case dataFileReadFailed(at: Foundation.URL)
-    case missingContentType(acceptableContentTypes: [Swift.String])
-    case unacceptableContentType(acceptableContentTypes: [Swift.String], responseContentType: Swift.String)
-    case unacceptableStatusCode(code: Swift.Int)
-    case customValidationFailed(error: any Swift.Error)
-  }
-  public enum KUSResponseSerializationFailureReason {
-    case inputDataNilOrZeroLength
-    case inputFileNil
-    case inputFileReadFailed(at: Foundation.URL)
-    case stringSerializationFailed(encoding: Swift.String.Encoding)
-    case jsonSerializationFailed(error: any Swift.Error)
-    case decodingFailed(error: any Swift.Error)
-    case customSerializationFailed(error: any Swift.Error)
-    case invalidEmptyResponse(type: Swift.String)
-  }
-  public enum KUSServerTrustFailureReason {
-    public struct KUSOutput {
-    }
-    case noRequiredEvaluator(host: Swift.String)
-    case noCertificatesFound
-    case noPublicKeysFound
-    case policyApplicationFailed(trust: Security.SecTrust, policy: Security.SecPolicy, status: Darwin.OSStatus)
-    case settingAnchorCertificatesFailed(status: Darwin.OSStatus, certificates: [Security.SecCertificate])
-    case revocationPolicyCreationFailed
-    case trustEvaluationFailed(error: (any Swift.Error)?)
-    case defaultEvaluationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
-    case hostValidationFailed(output: KustomerChat.KUSAFError.KUSServerTrustFailureReason.KUSOutput)
-    case revocationCheckFailed
-    case certificatePinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedCertificates: [Security.SecCertificate], serverCertificates: [Security.SecCertificate])
-    case publicKeyPinningFailed(host: Swift.String, trust: Security.SecTrust, pinnedKeys: [Security.SecKey], serverKeys: [Security.SecKey])
-    case customEvaluationFailed(error: any Swift.Error)
-  }
-  public enum KUSURLRequestValidationFailureReason {
-    case bodyDataInGETRequest(Foundation.Data)
-  }
-  case createUploadableFailed(error: any Swift.Error)
-  case createURLRequestFailed(error: any Swift.Error)
-  case downloadedFileMoveFailed(error: any Swift.Error, source: Foundation.URL, destination: Foundation.URL)
-  case explicitlyCancelled
-  case invalidURL(url: any KustomerChat.KUSURLConvertible)
-  case multipartEncodingFailed(reason: KustomerChat.KUSAFError.KUSMultipartEncodingFailureReason)
-  case parameterEncodingFailed(reason: KustomerChat.KUSAFError.KUSParameterEncodingFailureReason)
-  case parameterEncoderFailed(reason: KustomerChat.KUSAFError.KUSParameterEncoderFailureReason)
-  case requestAdaptationFailed(error: any Swift.Error)
-  case requestRetryFailed(retryError: any Swift.Error, originalError: any Swift.Error)
-  case responseValidationFailed(reason: KustomerChat.KUSAFError.KUSResponseValidationFailureReason)
-  case responseSerializationFailed(reason: KustomerChat.KUSAFError.KUSResponseSerializationFailureReason)
-  case serverTrustEvaluationFailed(reason: KustomerChat.KUSAFError.KUSServerTrustFailureReason)
-  case sessionDeinitialized
-  case sessionInvalidated(error: (any Swift.Error)?)
-  case sessionTaskFailed(error: any Swift.Error)
-  case urlRequestValidationFailed(reason: KustomerChat.KUSAFError.KUSURLRequestValidationFailureReason)
-  case kustomerAddOnError(error: Foundation.NSError)
-}
-extension KustomerChat.KUSAFError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }

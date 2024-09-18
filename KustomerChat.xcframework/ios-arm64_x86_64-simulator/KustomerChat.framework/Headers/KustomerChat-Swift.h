@@ -304,7 +304,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
-
 @class NSCoder;
 
 /// :nodoc:
@@ -323,8 +322,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 @end
 
 
-
-
 /// :nodoc:
 SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 @interface KUSSWAlert : NSObject <UIAlertViewDelegate>
@@ -340,7 +337,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 
@@ -377,8 +373,6 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 @end
 
 
-
-
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class UNNotification;
@@ -409,18 +403,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -782,7 +764,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
-
 @class NSCoder;
 
 /// :nodoc:
@@ -801,8 +782,6 @@ SWIFT_CLASS("_TtC12KustomerChat12ConfettiView")
 @end
 
 
-
-
 /// :nodoc:
 SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 @interface KUSSWAlert : NSObject <UIAlertViewDelegate>
@@ -818,7 +797,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 
@@ -855,8 +833,6 @@ SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 @end
 
 
-
-
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class UNNotification;
@@ -887,18 +863,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
