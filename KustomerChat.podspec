@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
   s.dependency 'PubNubSwift', '~> 6.3.0'
   s.dependency 'Down', '~> 0.11.0'
   s.dependency 'SnapKit', '~> 5.0.1'
+  s.dependency 'ReachabilitySwift', '~> 5.0.0'
 end
