@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '5.0.0'
+  s.version = '5.0.1'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -17,8 +17,13 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'PubNubSwift', '~> 6.3.0'
   s.dependency 'Down', '~> 0.11.0'
+<<<<<<< HEAD
   s.dependency 'SnapKit', '~> 5.0.1'
   s.dependency 'ReachabilitySwift', '~> 5.0.0'
   s.dependency 'NotificationView', '~> 0.2.5'
   s.dependency 'Nantes', '~> 0.1.2'
+=======
+  s.dependency 'SnapKit', '~> 5.7.1'
+  s.dependency 'ReachabilitySwift', '~> 5.2.3'
+>>>>>>> main
 end
