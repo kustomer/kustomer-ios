@@ -17,13 +17,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'PubNubSwift', '~> 6.3.0'
   s.dependency 'Down', '~> 0.11.0'
-<<<<<<< HEAD
-  s.dependency 'SnapKit', '~> 5.0.1'
-  s.dependency 'ReachabilitySwift', '~> 5.0.0'
-  s.dependency 'NotificationView', '~> 0.2.5'
-  s.dependency 'Nantes', '~> 0.1.2'
-=======
   s.dependency 'SnapKit', '~> 5.7.1'
   s.dependency 'ReachabilitySwift', '~> 5.2.3'
->>>>>>> main
+  s.dependency 'NotificationView', '~> 0.2.5'
+  s.dependency 'Nantes', '~> 0.1.2'
 end
