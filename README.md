@@ -38,16 +38,6 @@ Note: Starting with iOS version 2.6.0, the PubNub library is downloaded as a dep
 1. Add `pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git'` to your Podfile
 2. Run `pod update` or `pod install` on your project
 
-#### Manual
-1. Add `KustomerChat.xcframework` to your project's `Frameworks, Libraries, and Embedded Content` section.
-2. Check `Embed & Sign` for both frameworks.
-3. Add PubNub using your preferred method. You can find details in their documentation [here](https://www.pubnub.com/docs/sdks/swift)
-
-CALLOUT: If you add PubNub as a git submodule, you must install the PubNub version required by our podspec/package.swift.
-
-#### Manual - Static version
-The [release page](../../releases) for each version contains a static version of the SDK. To install, download and unzip `libKustomerChatStatic.xcframework` and `KustomerAssets.bundle`, and add them to your project. You will also need to install the version of PubNub required by our podspec/package.swift. You can find details in their documentation [here](https://www.pubnub.com/docs/sdks/swift)
-
 ## Post-Install
 1. Add photo and camera privacy descriptions to your `Info.plist`.
 2. In the `application(_:didFinishLaunchingWithOptions:)` method of your `AppDelegate` add
@@ -58,10 +48,3 @@ Kustomer.configure(apiKey: "API_KEY_HERE", options: nil, launchOptions: launchOp
 3. Call `Kustomer.show()` whenever and wherever you want to open the Kustomer chat interface.
 
 See [Installation](https://developer.kustomer.com/chat-sdk/v2.0.5-iOS/docs/installation) for a full guide.
-
-## Example app
-
-- Open `Example/Example.xcodeproj`
-- Set your API key in `AppDelegate.swift`
-  - Your API key must have *only* the `org.tracking` role. You can get your API key from the Kustomer website.
-- Run the app
