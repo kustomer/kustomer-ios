@@ -14,7 +14,6 @@ import QuickLook
 import SafariServices
 import Swift
 import SwiftUI
-import SystemConfiguration
 import UIKit
 import UserNotifications
 import WebKit
@@ -1093,11 +1092,6 @@ public struct KUSCSATNetworkPostBody : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct AILabelConstants {
-}
-@available(*, unavailable, renamed: "Notification.Name.KUS_reachabilityChanged")
-public let KUSReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
-  public static let KUSReachabilityChanged: Foundation.Notification.Name
 }
 public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
   public var id: Swift.String?
