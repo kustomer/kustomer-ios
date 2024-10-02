@@ -36,6 +36,24 @@
           "revision": "7cbd73f46a7dfaeca079e18df7324c6de6d1834a",
           "version": "5.2.3"
         }
+      },
+      {
+        "package": "NotificationView",
+        "repositoryURL": "https://github.com/pikachu987/NotificationView",
+        "state": {
+          "branch": null,
+          "revision": "b435c31bb7d88da209c9e8420bfe568876d0fbf0",
+          "version": "0.2.5"
+        }
+      },
+      {
+        "package": "Nantes",
+        "repositoryURL": "https://github.com/instacart/Nantes",
+        "state": {
+          "branch": null,
+          "revision": "a82b861bc7863b22c798601e28ff2e8ec86ce4ee",
+          "version": "0.1.2"
+        }
       }
     ]
   },
