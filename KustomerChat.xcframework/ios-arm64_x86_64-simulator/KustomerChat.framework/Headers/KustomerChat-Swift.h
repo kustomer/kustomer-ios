@@ -355,9 +355,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
-
-
 /// :nodoc:
 SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 @interface NextGrowingTextView : UIScrollView
@@ -403,8 +400,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
@@ -809,9 +804,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
-
-
 /// :nodoc:
 SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
 @interface NextGrowingTextView : UIScrollView
@@ -857,8 +849,6 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
