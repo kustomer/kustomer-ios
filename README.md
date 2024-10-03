@@ -37,6 +37,16 @@ Note: Starting with iOS version 2.6.0, the PubNub library is downloaded as a dep
 #### Cocoapods
 1. Add `pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git'` to your Podfile
 2. Run `pod update` or `pod install` on your project
+3. Add the following to your Podfile, to update all Pods to the min target
+```
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+    end
+  end
+end
+```
 
 ## Post-Install
 1. Add photo and camera privacy descriptions to your `Info.plist`.
