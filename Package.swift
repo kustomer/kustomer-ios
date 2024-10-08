@@ -19,7 +19,8 @@ let package = Package(
     .package(name: "Reachability", url: "https://github.com/ashleymills/Reachability.swift", from: "5.2.3"),
     .package(name: "NotificationView", url: "https://github.com/pikachu987/NotificationView", from: "0.2.5"),
     .package(name: "Nantes", url: "https://github.com/instacart/Nantes", from: "0.1.2"),
-    .package(name: "SwiftyJSON", url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "5.0.2")
+    .package(name: "SwiftyJSON", url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "5.0.2"),
+    .package(name: "NextGrowingTextView", url: "https://github.com/FluidGroup/NextGrowingTextView", from: "2.1.0")
   ],
   targets: [
     .binaryTarget(

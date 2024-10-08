@@ -63,6 +63,15 @@
           "revision": "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
           "version": 5.0.2"
         }
+      },
+      {
+        "package": "NextGrowingTextView",
+        "repositoryURL": "https://github.com/FluidGroup/NextGrowingTextView",
+        "state": {
+          "branch": null,
+          "revision": "84bfae77a1113ac1c555705488356d0ad71bac2d",
+          "version": 2.1.0"
+        }
       }
     ]
   },

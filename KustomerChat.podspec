@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
   s.dependency 'NotificationView', '~> 0.2.5'
   s.dependency 'Nantes', '~> 0.1.2'
   s.dependency 'SwiftyJSON', '~> 5.0.2'
+  s.dependency 'NextGrowingTextView', '~> 2.1.0'
 end
