@@ -54,6 +54,33 @@
           "revision": "a82b861bc7863b22c798601e28ff2e8ec86ce4ee",
           "version": "0.1.2"
         }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": null,
+          "revision": "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+          "version": 5.0.2"
+        }
+      },
+      {
+        "package": "NextGrowingTextView",
+        "repositoryURL": "https://github.com/FluidGroup/NextGrowingTextView",
+        "state": {
+          "branch": null,
+          "revision": "84bfae77a1113ac1c555705488356d0ad71bac2d",
+          "version": 2.1.0"
+        }
+      },
+      {
+        "package": "JWTDecode",
+        "repositoryURL": "https://github.com/auth0/JWTDecode.swift",
+        "state": {
+          "branch": null,
+          "revision": "7918a343e674c7707e0be120bb4e21d679be014c",
+          "version": 3.0.1"
+        }
       }
     ]
   },
