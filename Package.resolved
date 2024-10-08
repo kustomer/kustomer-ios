@@ -72,6 +72,15 @@
           "revision": "84bfae77a1113ac1c555705488356d0ad71bac2d",
           "version": 2.1.0"
         }
+      },
+      {
+        "package": "JWTDecode",
+        "repositoryURL": "https://github.com/auth0/JWTDecode.swift",
+        "state": {
+          "branch": null,
+          "revision": "7918a343e674c7707e0be120bb4e21d679be014c",
+          "version": 3.0.1"
+        }
       }
     ]
   },

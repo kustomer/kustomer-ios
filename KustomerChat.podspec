@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
   s.dependency 'Nantes', '~> 0.1.2'
   s.dependency 'SwiftyJSON', '~> 5.0.2'
   s.dependency 'NextGrowingTextView', '~> 2.1.0'
+  s.dependency 'JWTDecode', '~> 3.0.1'
 end
