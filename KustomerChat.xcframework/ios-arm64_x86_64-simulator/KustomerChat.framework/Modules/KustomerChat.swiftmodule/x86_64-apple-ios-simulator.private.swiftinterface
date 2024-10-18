@@ -714,7 +714,7 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
   public func describeCurrentCustomer(phone: Swift.String? = nil, email: Swift.String? = nil, phones: [Swift.String]? = nil, emails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func markRead(conversationId: Swift.String)
-  public func markRead(conversationId: Swift.String, messageIds: [Swift.String])
+  public func markRead(conversationId: Swift.String, messageIds: [Swift.String], satisfactionId: Swift.String? = nil)
   public func sendPresenceActivity(_ presence: KustomerChat.PresenceType)
   public func submitSatisfactionForm(conversationSatisfactionId: Swift.String, response: KustomerChat.KUSCSATNetworkPostBody, conversationId: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSSatisfaction, KustomerChat.KError>) -> Swift.Void))
   @objc deinit
