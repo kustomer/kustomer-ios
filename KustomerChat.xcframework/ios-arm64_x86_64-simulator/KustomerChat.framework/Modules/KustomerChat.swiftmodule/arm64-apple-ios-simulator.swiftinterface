@@ -927,51 +927,6 @@ extension UserNotifications.UNNotification {
   public func isFromKustomer() -> Swift.Bool
   public func kustomerShouldDisplay() -> Swift.Bool
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NextGrowingTextView : UIKit.UIScrollView {
-  @_hasMissingDesignatedInitializers open class Delegates {
-    open var willChangeHeight: (CoreFoundation.CGFloat) -> Swift.Void
-    open var didChangeHeight: (CoreFoundation.CGFloat) -> Swift.Void
-    @objc deinit
-  }
-  @_Concurrency.MainActor(unsafe) open var delegates: KustomerChat.NextGrowingTextView.Delegates
-  @_Concurrency.MainActor(unsafe) open var textView: UIKit.UITextView {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) open var minNumberOfLines: Swift.Int {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) open var maxNumberOfLines: Swift.Int {
-    get
-    set
-  }
-  @available(*, deprecated, message: "Use isAutomaticScrollToBottomEnabled")
-  @_Concurrency.MainActor(unsafe) open var disableAutomaticScrollToBottom: Swift.Bool {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) open var isAutomaticScrollToBottomEnabled: Swift.Bool
-  @_Concurrency.MainActor(unsafe) open var placeholderAttributedText: Foundation.NSAttributedString? {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputView: UIKit.UIView? {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isFirstResponder: Swift.Bool {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func resignFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func reloadInputViews()
-  @objc deinit
-}
 public enum KustomerConnectionStatus : Swift.String {
   case connecting
   case connected
@@ -1591,6 +1546,7 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   final public func openChatAssistant(id: Swift.String, startDialog: Swift.String?, presentingVC: UIKit.UIViewController? = nil, completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void), afterFirstMessage: @escaping ((KustomerChat.KUSConversation) -> Swift.Void) = { c in }, initialMessages: [Swift.String]? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, animated: Swift.Bool = true)
   final public func getUnreadCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
   final public func getOpenConversationCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
+  final public func overrideAssistant(_ overrideAssistantId: Swift.String, completion: @escaping ((KustomerChat.KUSAssistant?) -> Swift.Void))
   @objc deinit
 }
 extension KustomerChat.KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {

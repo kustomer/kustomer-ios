@@ -354,22 +354,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
-@interface NextGrowingTextView : UIScrollView
-@property (nonatomic, strong) UIView * _Nullable inputView;
-@property (nonatomic, readonly) BOOL isFirstResponder;
-- (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly) CGSize intrinsicContentSize;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (void)reloadInputViews;
-@end
-
-
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class UNNotification;
@@ -801,22 +785,6 @@ SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 
 
 
-
-
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12KustomerChat19NextGrowingTextView")
-@interface NextGrowingTextView : UIScrollView
-@property (nonatomic, strong) UIView * _Nullable inputView;
-@property (nonatomic, readonly) BOOL isFirstResponder;
-- (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly) CGSize intrinsicContentSize;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (void)reloadInputViews;
-@end
 
 
 @class UNUserNotificationCenter;
