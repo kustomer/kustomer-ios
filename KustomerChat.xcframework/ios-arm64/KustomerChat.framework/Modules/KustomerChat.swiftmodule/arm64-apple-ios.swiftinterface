@@ -712,7 +712,7 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func createAssistant(id: Swift.String, startDialog: Swift.String?, after: @escaping ((KustomerChat.KUSAssistant) -> Swift.Void), error: @escaping ((KustomerChat.KError) -> Swift.Void), afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = { _ in }) -> Swift.String
   public func endConversation(conversationId: Swift.String, completion: @escaping ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void))
   public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
-  public func describeCurrentCustomer(phone: Swift.String? = nil, email: Swift.String? = nil, phones: [Swift.String]? = nil, emails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  public func describeCurrentCustomer(phone: Swift.String? = nil, sharedPhone: Swift.String? = nil, email: Swift.String? = nil, sharedEmail: Swift.String? = nil, phones: [Swift.String]? = nil, sharedPhones: [Swift.String]? = nil, emails: [Swift.String]? = nil, sharedEmails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   public func markRead(conversationId: Swift.String)
   public func markRead(conversationId: Swift.String, messageIds: [Swift.String], satisfactionId: Swift.String? = nil)
   public func sendPresenceActivity(_ presence: KustomerChat.PresenceType)
@@ -1525,7 +1525,7 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   final public func logOutThenLogIn(jwt: Swift.String, _ completion: @escaping ((Swift.Result<KustomerChat.KUSTrackingIdentity, KustomerChat.KError>) -> Swift.Void))
   @available(*, deprecated, message: "Use startNewConversation() instead")
   final public func openNewConversation(initialMessages: [Swift.String]? = nil, presentingVC: UIKit.UIViewController? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
-  final public func startNewConversation(initialMessage: KustomerChat.KUSInitialMessage? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, presentingVC: UIKit.UIViewController? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, animated: Swift.Bool = true)
+  final public func startNewConversation(initialMessage: KustomerChat.KUSInitialMessage? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, presentingVC: UIKit.UIViewController? = nil, afterCreateConversation: ((KustomerChat.KUSConversation) -> Swift.Void)? = nil, afterCreateConversationOrError: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil, animated: Swift.Bool = true)
   final public func didFailToRegisterForRemoteNotifications(error: any Swift.Error)
   final public func didRegisterForRemoteNotifications(deviceToken: Foundation.Data)
   final public func deregisterCurrentDeviceForPushNotifications(_ completion: @escaping ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void))
