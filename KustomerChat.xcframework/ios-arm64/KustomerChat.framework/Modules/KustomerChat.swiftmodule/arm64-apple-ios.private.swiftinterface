@@ -1113,6 +1113,9 @@ extension KustomerChat.KustomerUI.Color {
   public static var chatAvatarInitials: UIKit.UIColor
   public static var chatHeaderBackground: UIKit.UIColor
   public static var chatHeaderBackgroundWhenInAssistant: UIKit.UIColor
+  public static var chatHeaderTitle: UIKit.UIColor
+  public static var chatHeaderText: UIKit.UIColor
+  public static var chatHeaderSeparator: UIKit.UIColor
   public static var chatInputBarBackground: UIKit.UIColor
   public static var chatSearchBarBackground: UIKit.UIColor
   public static var chatTableBackground: UIKit.UIColor
@@ -1133,6 +1136,12 @@ extension KustomerChat.KustomerUI.Color {
   public static var historyNewChatButtonText: UIKit.UIColor
   public static var historyRowBackground: UIKit.UIColor
   public static var historyTitleColor: UIKit.UIColor
+  public static var historyRowTitle: UIKit.UIColor
+  public static var historyRowSubtitle: UIKit.UIColor
+  public static var historyRowDate: UIKit.UIColor
+  public static var historyRowIcon: UIKit.UIColor
+  public static var historyRowSeparator: UIKit.UIColor
+  public static var historyText: UIKit.UIColor
   public static var incomingMessageBubble: UIKit.UIColor
   public static var incomingMessageText: UIKit.UIColor
   public static var loadingNavigationHeaderSeparator: UIKit.UIColor
@@ -1144,9 +1153,11 @@ extension KustomerChat.KustomerUI.Color {
   public static var navigationBarButton: UIKit.UIColor
   public static var outgoingMessageBubble: UIKit.UIColor
   public static var outgoingMessageText: UIKit.UIColor
+  public static var outgoingMessageBubbleShadow: UIKit.UIColor
   public static var tabBarBackground: UIKit.UIColor
   public static var tabBarItemColor: UIKit.UIColor
   public static var tabBarUnselectedItemColor: UIKit.UIColor
+  public static var tabBarUnselectedItemBorderColor: UIKit.UIColor
   public static var kbBrowseBackground: UIKit.UIColor
   public static var kbBrowseSeparator: UIKit.UIColor
   public static var kbLoadingProgressTintColor: UIKit.UIColor
@@ -1159,7 +1170,6 @@ extension KustomerChat.KustomerUI.Color {
   public static var kbBrowseIconTint: UIKit.UIColor
   public static var kbHeader: UIKit.UIColor
   public static var kbHeaderText: UIKit.UIColor
-  public static var kbHeaderTint: UIKit.UIColor
   public static var chatMllMenuOpenBackdrop: UIKit.UIColor
   public static var mllOptionText: UIKit.UIColor
   public static var mllMenuTitleText: UIKit.UIColor
@@ -1600,6 +1610,7 @@ public enum PushEnvironment : Swift.String {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func tabBar(_ tabBar: UIKit.UITabBar, didSelect item: UIKit.UITabBarItem)
   @_Concurrency.MainActor @preconcurrency @objc override final public var isTabBarHidden: Swift.Bool {
     @objc get
     @objc set
@@ -1733,15 +1744,6 @@ extension KustomerChat.KustomerUI.Color {
   public static var systemBackground: UIKit.UIColor {
     get
   }
-  public static var secondarySystemGroupedBackground: UIKit.UIColor {
-    get
-  }
-  public static var systemGray5: UIKit.UIColor {
-    get
-  }
-  public static var tertiarySystemGroupedBackground: UIKit.UIColor {
-    get
-  }
   public static var label: UIKit.UIColor {
     get
   }
@@ -1749,12 +1751,6 @@ extension KustomerChat.KustomerUI.Color {
     get
   }
   public static var tertiaryLabel: UIKit.UIColor {
-    get
-  }
-  public static var systemGray3: UIKit.UIColor {
-    get
-  }
-  public static var systemFill: UIKit.UIColor {
     get
   }
   public static func color(_ named: Swift.String) -> UIKit.UIColor

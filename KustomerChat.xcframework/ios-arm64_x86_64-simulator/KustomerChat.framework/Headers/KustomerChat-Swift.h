@@ -375,6 +375,8 @@ SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITabBar;
+@class UITabBarItem;
 @class UITab;
 @class NSString;
 @class NSBundle;
@@ -388,11 +390,13 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
+- (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
 /// <code>true</code> if the tab bar is currently hidden.
 @property (nonatomic, getter=isTabBarHidden) BOOL tabBarHidden;
 - (nonnull instancetype)initWithTabs:(NSArray<UITab *> * _Nonnull)tabs SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 
@@ -817,6 +821,8 @@ SWIFT_CLASS("_TtC12KustomerChat12PushProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITabBar;
+@class UITabBarItem;
 @class UITab;
 @class NSString;
 @class NSBundle;
@@ -830,11 +836,13 @@ SWIFT_CLASS("_TtC12KustomerChat24SupportTabViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
+- (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
 /// <code>true</code> if the tab bar is currently hidden.
 @property (nonatomic, getter=isTabBarHidden) BOOL tabBarHidden;
 - (nonnull instancetype)initWithTabs:(NSArray<UITab *> * _Nonnull)tabs SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 
