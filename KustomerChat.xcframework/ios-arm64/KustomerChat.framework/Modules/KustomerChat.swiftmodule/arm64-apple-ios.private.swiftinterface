@@ -1383,6 +1383,12 @@ public enum KError : Swift.Error {
   case pubsubHistoryLoadError(failed: [Swift.String : KustomerChat.KError])
   case tooManyChannelKeysInHistoricalCustomerEvents
   case couldNotLoadMessageHistory(error: any Swift.Error)
+  case emptyBrandId
+  case downloadAssistantError
+  case fetchAssistantError(reason: Swift.String)
+  case settingsDownloadError(reason: Swift.String)
+  case downloadSchedulesError
+  case schedulesDownloadError(reason: Swift.String)
 }
 extension KustomerChat.KError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -1557,6 +1563,7 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   final public func getUnreadCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
   final public func getOpenConversationCount(completion: @escaping (Swift.Result<Swift.Int, KustomerChat.KError>) -> Swift.Void)
   final public func overrideAssistant(_ overrideAssistantId: Swift.String, completion: @escaping ((KustomerChat.KUSAssistant?) -> Swift.Void))
+  final public func overrideBrandId(_ overrideBrandId: Swift.String, completion: @escaping ((KustomerChat.KError?) -> Swift.Void))
   @objc deinit
 }
 extension KustomerChat.KustomerClient : UIKit.UIAdaptivePresentationControllerDelegate {
