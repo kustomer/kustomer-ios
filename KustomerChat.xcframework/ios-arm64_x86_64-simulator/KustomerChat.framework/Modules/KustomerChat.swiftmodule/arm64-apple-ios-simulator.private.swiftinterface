@@ -658,6 +658,12 @@ public struct KnowledgeBaseAttributes : Swift.Decodable {
   public let subdomain: Swift.String
   public let articleSurvey: KustomerChat.KnowledgeBaseSurvey
   public let baseUrl: Swift.String?
+  public let domain: KustomerChat.KnowledgeBaseAttributes.Domain?
+  public struct Domain : Swift.Decodable {
+    public let domainName: Swift.String
+    public let domainStatus: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
 final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomStringConvertible {
