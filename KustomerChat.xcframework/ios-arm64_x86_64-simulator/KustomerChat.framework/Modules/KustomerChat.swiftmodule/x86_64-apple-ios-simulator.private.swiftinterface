@@ -656,7 +656,6 @@ public struct KnowledgeBase : Swift.Decodable {
 public struct KnowledgeBaseAttributes : Swift.Decodable {
   public let name: Swift.String
   public let subdomain: Swift.String
-  public let articleSurvey: KustomerChat.KnowledgeBaseSurvey
   public let baseUrl: Swift.String?
   public let domain: KustomerChat.KnowledgeBaseAttributes.Domain?
   public struct Domain : Swift.Decodable {
@@ -871,8 +870,9 @@ public struct KnowledgeBaseSurvey : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseSurveySuggestedReason : Swift.Decodable {
-  public let displayText: Swift.String
   public let value: Swift.String
+  public let key: Swift.String
+  public init(value: Swift.String, key: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseSurveyRatingValue : Swift.Decodable {
