@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ziOgkFRnGNxkD24nMOjx2Gih/MQ=
+		6hi3Avymb+gD15p6BsbrowdiwjM=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WfPlf9KkPqGf+YIo1VrWrbjHXLY=
+		q+r+3FBANwvo9HOcBMXB9JjkXnU=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		UkgJeZxfT5v06tqWg0zpvNNJv6U=
+		Xmg3jKg+mfnDmvdGPBy2dBMUv0I=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UkgJeZxfT5v06tqWg0zpvNNJv6U=
+		Xmg3jKg+mfnDmvdGPBy2dBMUv0I=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nMShGvUTMCHge5VO5GmCJGh4sTE=
+		tFxTCz74H8UygZCpna7X1q0Puxk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1063,7 +1063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LPhSS6ZwASqRu+yTRuyKlxued8h/gGvdej/pfJVfwws=
+			my8sVw0UY/cDPej3H998lEictWg219N1EODnsS9eloo=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1091,7 +1091,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			75OhrtVQeYjVeYBjiimQrJwW5TGhIZFFO2s54Avr4T4=
+			tKIqRrqjUyXHHH+C2Xb8JaA0Um0sgh6sl6Foc1jn9VQ=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1105,14 +1105,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			75OhrtVQeYjVeYBjiimQrJwW5TGhIZFFO2s54Avr4T4=
+			tKIqRrqjUyXHHH+C2Xb8JaA0Um0sgh6sl6Foc1jn9VQ=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			flrlEvYT7eNKFm+/mpPx2l7QOfio7Rrn8y71iy7jYtA=
+			0yE0DUYonhf6l4PSSNfccv4oU2JY4/R/TLfFacsIiPM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
