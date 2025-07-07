@@ -656,7 +656,6 @@ public struct KnowledgeBase : Swift.Decodable {
 public struct KnowledgeBaseAttributes : Swift.Decodable {
   public let name: Swift.String
   public let subdomain: Swift.String
-  public let articleSurvey: KustomerChat.KnowledgeBaseSurvey
   public let baseUrl: Swift.String?
   public let domain: KustomerChat.KnowledgeBaseAttributes.Domain?
   public struct Domain : Swift.Decodable {
