@@ -870,9 +870,8 @@ public struct KnowledgeBaseSurvey : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseSurveySuggestedReason : Swift.Decodable {
+  public let displayText: Swift.String
   public let value: Swift.String
-  public let key: Swift.String
-  public init(value: Swift.String, key: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct KnowledgeBaseSurveyRatingValue : Swift.Decodable {
