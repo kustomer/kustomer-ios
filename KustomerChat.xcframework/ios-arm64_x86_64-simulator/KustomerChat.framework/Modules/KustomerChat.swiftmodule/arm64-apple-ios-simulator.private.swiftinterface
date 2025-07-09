@@ -1394,6 +1394,7 @@ public enum KError : Swift.Error {
   case settingsDownloadError(reason: Swift.String)
   case downloadSchedulesError
   case schedulesDownloadError(reason: Swift.String)
+  case overrideBrandIdError(reason: Swift.String)
 }
 extension KustomerChat.KError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
