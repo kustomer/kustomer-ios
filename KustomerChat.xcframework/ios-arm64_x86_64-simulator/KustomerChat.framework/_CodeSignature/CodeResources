@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		jPsbuPkE6OOaJXMSprN4RPigzh4=
+		q/9SMF0yyrBL7rNvNjzrEyZTMvo=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mnQ0qqucsmn6XKSpmWJfAcCzyG4=
+		iFpfzf9rdOG/fXksZDqpn7MFlMk=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		94wu9ZpSN+IjW+miDRb7clFg1HU=
+		WIVPhuJaoifE8EqHpaUbyoePOsg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1083,7 +1083,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2aTra0keb9ZEdX8wjgAKQf176t7pKa0w8wPfx7lB+5Q=
+			ULQ+GANxsY+KKjnlhTf6Ku0RPQNlAQhhfCDSrspi+yQ=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1132,7 +1132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mPXgdLPxlCVlH+IdyvB8HsC+omLKA/ypliKemXfkrl8=
+			AAWgAGva5MetPBNH56rbcK+cXHsEBdHbsTvelvGAoB4=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1167,7 +1167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScUYD4+TXizTQCcLGQQXNlwmjW20f84/vBF9VC4o8Qg=
+			qkfgaJtY6YaCssCucUcg1pdZ6N+37lO+5NqIEI9d9dU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
