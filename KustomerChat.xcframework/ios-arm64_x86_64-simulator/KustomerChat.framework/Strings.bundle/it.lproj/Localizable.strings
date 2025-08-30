@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "La chat non è al momento disponibile";
 "com.kustomer.Chat with support" = "Chatta con il supporto";
 "com.kustomer.Conversation ended" = "La conversazione è terminata";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Conversazione unita in un&#39;altra conversazione.\n\nTocca per passare alla nuova conversazione.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Conversazione unita in un'altra conversazione.\n\nTocca per passare alla nuova conversazione.";
 "com.kustomer.Conversation moved to another customer" = "La conversazione è stata spostata su un altro cliente";
 "com.kustomer.Delete" = "Eliminare";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vuoi rimuovere la tua valutazione e il tuo feedback?";
@@ -60,7 +60,7 @@
 "com.kustomer.No results" = "Nessun risultato";
 "com.kustomer.No text" = "Nessun testo";
 "com.kustomer.None of your personal information was included" = "Nessuna delle tue informazioni personali è stata inclusa";
-"com.kustomer.Not enough disk space" = "Non c&#39;è abbastanza spazio sul disco";
+"com.kustomer.Not enough disk space" = "Non c'è abbastanza spazio sul disco";
 "com.kustomer.Not found" = "Non trovato";
 "com.kustomer.Okay" = "Va bene";
 "com.kustomer.Open in browser" = "Apri nel browser";
@@ -68,7 +68,7 @@
 "com.kustomer.Outgoing chat" = "Chat in uscita";
 "com.kustomer.Photo library" = "Libreria fotografica";
 "com.kustomer.Please leave a message" = "Per favore lascia un messaggio";
-"com.kustomer.Please select an option..." = "Per favore selezionate un&#39;opzione...";
+"com.kustomer.Please select an option..." = "Per favore selezionate un'opzione...";
 "com.kustomer.Please try another search term" = "Per favore prova un altro termine di ricerca";
 "com.kustomer.Processing Answer" = "Risposta in elaborazione";
 "com.kustomer.Reconnect" = "Riconnettiti";
@@ -88,12 +88,12 @@
 "com.kustomer.Tap to load..." = "Tocca per caricare...";
 "com.kustomer.Tap to open" = "Tocca per aprire";
 "com.kustomer.Thanks for your feedback" = "Grazie per il tuo feedback";
-"com.kustomer.That article" = "Quell&#39;articolo";
-"com.kustomer.There was a problem" = "C&#39;era un problema";
+"com.kustomer.That article" = "Quell'articolo";
+"com.kustomer.There was a problem" = "C'era un problema";
 "com.kustomer.This conversation is read-only" = "Questa conversazione è di sola lettura";
 "com.kustomer.Try again" = "Riprova";
 "com.kustomer.Type a message..." = "Scrivi un messaggio...";
-"com.kustomer.Unable to view attachment" = "Impossibile visualizzare l&#39;allegato";
+"com.kustomer.Unable to view attachment" = "Impossibile visualizzare l'allegato";
 "com.kustomer.Unavailable message goes here" = "Il messaggio non disponibile va qui";
 "com.kustomer.Updated" = "Aggiornato";
 "com.kustomer.Waiting for a response from" = "In attesa di una risposta da";
