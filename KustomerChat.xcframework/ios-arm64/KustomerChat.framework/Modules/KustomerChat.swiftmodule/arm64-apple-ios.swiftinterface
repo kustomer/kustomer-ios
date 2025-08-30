@@ -1701,6 +1701,39 @@ public class KUSKBCategory : KustomerChat.KUSKBItemBase, Swift.CustomStringConve
   }
   @objc deinit
 }
+public struct AutomationMetadata : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AutomationMetadataAttributes : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MachineUser : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AutomationConditions : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProactiveSettings : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProactiveChatSettings : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProactiveMessage : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProactiveMessageMeta : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProactiveMessageTemplate : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AutomationMetadataRelationships : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AutomationMetadataResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var id: Swift.String
   public var conversationId: Swift.String?
@@ -1788,7 +1821,7 @@ extension KustomerChat.KnowledgeBaseDomain {
   }
 }
 public struct KUSInitialMessage : Swift.Encodable {
-  public init(body: Swift.String, direction: KustomerChat.KUSInitialMessageDirection)
+  public init(body: Swift.String, direction: KustomerChat.KUSInitialMessageDirection, isAutomation: Swift.Bool = false)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum KUSInitialMessageDirection : Swift.String, Swift.Encodable {

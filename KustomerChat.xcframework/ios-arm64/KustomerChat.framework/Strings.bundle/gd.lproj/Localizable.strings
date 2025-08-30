@@ -1,4 +1,4 @@
-"com.kustomer.%@ is typing..." = "Tha %@ a&#39; taipeadh...";
+"com.kustomer.%@ is typing..." = "Tha %@ a' taipeadh...";
 "com.kustomer.100+ results found" = "100+ toradh air an lorg";
 "com.kustomer.Add additional feedback" = "Cuir fios air ais a bharrachd ris";
 "com.kustomer.Additional Feedback" = "Fios air ais a bharrachd";
@@ -44,11 +44,11 @@
 "com.kustomer.KB" = "KB";
 "com.kustomer.Leave a message" = "Fàg teachdaireachd";
 "com.kustomer.Leave a message..." = "Fàg teachdaireachd...";
-"com.kustomer.Loading..." = "A&#39; luchdachadh...";
+"com.kustomer.Loading..." = "A' luchdachadh...";
 "com.kustomer.Mark all as read" = "Comharraich a h-uile dad mar a chaidh a leughadh";
 "com.kustomer.Me" = "Mise";
 "com.kustomer.Message" = "Teachdaireachd";
-"com.kustomer.Message failed to send" = "Dh&#39;fhàillig an teachdaireachd a chur";
+"com.kustomer.Message failed to send" = "Dh'fhàillig an teachdaireachd a chur";
 "com.kustomer.Message failed to send!" = "Cha deach an teachdaireachd a chuir!";
 "com.kustomer.Moved" = "Ghluais";
 "com.kustomer.Never mind" = "Chan eil diofar";
@@ -80,7 +80,7 @@
 "com.kustomer.Save changes" = "Sàbhail atharraichean";
 "com.kustomer.Search Help Articles" = "Rannsaich artaigilean cuideachaidh";
 "com.kustomer.Search Results" = "Toraidhean Rannsachaidh";
-"com.kustomer.Sending" = "A&#39; cur";
+"com.kustomer.Sending" = "A' cur";
 "com.kustomer.Share" = "Roinn";
 "com.kustomer.Submit" = "Cuir a-steach";
 "com.kustomer.Survey" = "Suirbhidh";
@@ -94,14 +94,14 @@
 "com.kustomer.Try again" = "Feuch a-rithist";
 "com.kustomer.Type a message..." = "Sgrìobh teachdaireachd...";
 "com.kustomer.Unable to view attachment" = "Cha ghabh an ceangal fhaicinn";
-"com.kustomer.Unavailable message goes here" = "Tha teachdaireachd nach eil ri fhaighinn a&#39; dol an seo";
+"com.kustomer.Unavailable message goes here" = "Tha teachdaireachd nach eil ri fhaighinn a' dol an seo";
 "com.kustomer.Updated" = "Air ùrachadh";
 "com.kustomer.Waiting for a response from" = "A’ feitheamh ri freagairt bho";
 "com.kustomer.We will get back to you as soon as we are online!" = "Gheibh sinn air ais thugad cho luath ‘s a bhios sinn air-loidhne!";
 "com.kustomer.Yes" = "Tha";
-"com.kustomer.You changed your additional feedback comment" = "Dh&#39;atharraich thu am beachd fios-air-ais a bharrachd agad";
+"com.kustomer.You changed your additional feedback comment" = "Dh'atharraich thu am beachd fios-air-ais a bharrachd agad";
 "com.kustomer.You're offline. Check your connection." = "Tha thu far loidhne. Thoir sùil air a’ cheangal agad.";
 "com.kustomer.Your existing conversations will be here." = "Bidh na còmhraidhean a th’ agad mu thràth an seo.";
 "com.kustomer.is no longer available" = "chan eil e ri fhaighinn tuilleadh";
 "com.kustomer.out of" = "A-mach à";
-"com.kustomer.sending" = "a&#39; cur";
+"com.kustomer.sending" = "a' cur";
