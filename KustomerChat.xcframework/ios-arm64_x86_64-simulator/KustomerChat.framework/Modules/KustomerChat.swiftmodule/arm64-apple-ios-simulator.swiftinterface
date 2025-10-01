@@ -28,6 +28,7 @@ extension Foundation.Bundle {
 }
 @_hasMissingDesignatedInitializers public class KUSUser : Swift.CustomStringConvertible {
   public var id: Swift.String?
+  final public let originalDisplayName: Swift.String?
   public var displayName: Swift.String?
   public var avatarUrl: Swift.String?
   public var description: Swift.String {
@@ -1760,6 +1761,10 @@ public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var satisfaction: KustomerChat.KUSSatisfaction?
   public var pubNubTimetoken: Swift.UInt64?
   public var templateRawJson: Swift.String?
+  public var firstRead: Foundation.Date?
+  public var isRead: Swift.Bool {
+    get
+  }
   public var previewSummary: Swift.String {
     get
   }
