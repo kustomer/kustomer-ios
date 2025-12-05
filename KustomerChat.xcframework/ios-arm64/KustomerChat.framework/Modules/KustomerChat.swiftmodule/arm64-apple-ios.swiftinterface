@@ -781,8 +781,11 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func endConversation(conversationId: Swift.String, completion: @escaping (Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)
   public func describeConversation(conversationId: Swift.String, attributes: [Swift.String : Any], _ completion: @escaping (Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)
   public func describeCurrentCustomer(phone: Swift.String? = nil, sharedPhone: Swift.String? = nil, email: Swift.String? = nil, sharedEmail: Swift.String? = nil, phones: [Swift.String]? = nil, sharedPhones: [Swift.String]? = nil, emails: [Swift.String]? = nil, sharedEmails: [Swift.String]? = nil, facebook: Swift.String? = nil, instagram: Swift.String? = nil, twitter: Swift.String? = nil, linkedIn: Swift.String? = nil, custom: [Swift.String : Any]? = nil, _ completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
+  @available(*, deprecated, message: "Use markSessionAsRead(sessionId:completion:) instead")
   public func markRead(conversationId: Swift.String)
+  @available(*, deprecated, message: "Use markSessionAsRead(sessionId:completion:) instead. Note: messageIds and satisfactionId parameters are ignored - all unread messages and CSATs will be marked as read.")
   public func markRead(conversationId: Swift.String, messageIds: [Swift.String], satisfactionId: Swift.String? = nil)
+  public func markSessionAsRead(sessionId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)
   public func sendPresenceActivity(_ presence: KustomerChat.PresenceType)
   public func submitSatisfactionForm(conversationSatisfactionId: Swift.String, response: KustomerChat.KUSCSATNetworkPostBody, conversationId: Swift.String, completion: @escaping (Swift.Result<KustomerChat.KUSSatisfaction, KustomerChat.KError>) -> Swift.Void)
   @objc deinit
