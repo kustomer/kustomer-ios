@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KustomerChat
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import CommonCrypto
 import DeveloperToolsSupport
@@ -1762,10 +1762,6 @@ public enum KustomerLogType : Swift.String {
 public let KustomerLogTypeAll: [KustomerChat.KustomerLogType]
 public typealias KUSCustomDescribe = [Swift.String : Any]
 @objc @_hasMissingDesignatedInitializers final public class KustomerClient : ObjectiveC.NSObject {
-  final public var chatProvider: KustomerChat.ChatProvider {
-    get
-    set
-  }
   final public var kbProvider: KustomerChat.KnowledgeBaseProvider {
     get
     set
@@ -1838,6 +1834,9 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   final public func openConversation(id: Swift.String, animated: Swift.Bool = true, presentingVC: UIKit.UIViewController? = nil, completion: ((Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  final public func handoff(active: Swift.Bool, from: Swift.String, messages: [KustomerChat.KUSHandoffMessage], brand: Swift.String? = nil, externalId: Swift.String? = nil, lang: Swift.String? = nil, completion: @escaping (Swift.Result<KustomerChat.KUSConversation, KustomerChat.KError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func showKbArticle(id: Swift.String, presentingVC: UIKit.UIViewController? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1893,6 +1892,7 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
   final public func printLocalizationKeys()
   @available(*, deprecated, message: "This functionality is deprecated and will be removed in a future version. Please user KustomerOptions.language to set a language")
   final public func overrideAssetLanguage(languageCode: KustomerChat.KustomerAssetLanguage)
+  final public let chatProvider: KustomerChat.ChatProvider
   #if compiler(>=5.3) && $NonescapableTypes
   final public func openChatAssistant(id: Swift.String, startDialog: Swift.String?, presentingVC: UIKit.UIViewController? = nil, completion: @escaping (Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void, afterFirstMessage: @escaping (KustomerChat.KUSConversation) -> Swift.Void = { c in }, initialMessages: [Swift.String]? = nil, customDescribe: KustomerChat.KUSCustomDescribe? = nil, animated: Swift.Bool = true)
   #endif
@@ -2003,6 +2003,24 @@ public struct KSet : Swift.Decodable {
   public var subscribeKey: Swift.String?
   public var brand: Swift.String?
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct KUSHandoffMessage : Swift.Encodable {
+  public let date: Foundation.Date
+  public let direction: KustomerChat.KUSHandoffMessageDirection
+  public let body: Swift.String
+  public init(date: Foundation.Date, direction: KustomerChat.KUSHandoffMessageDirection, body: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum KUSHandoffMessageDirection : Swift.String, Swift.Encodable {
+  case inbound
+  case outbound
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct KnowledgeBaseSurveyResponse : Swift.Decodable {
   public let id: Swift.String
@@ -2253,6 +2271,9 @@ extension KustomerChat.KustomerLogType : Swift.RawRepresentable {}
 extension KustomerChat.PushEnvironment : Swift.Equatable {}
 extension KustomerChat.PushEnvironment : Swift.Hashable {}
 extension KustomerChat.PushEnvironment : Swift.RawRepresentable {}
+extension KustomerChat.KUSHandoffMessageDirection : Swift.Equatable {}
+extension KustomerChat.KUSHandoffMessageDirection : Swift.Hashable {}
+extension KustomerChat.KUSHandoffMessageDirection : Swift.RawRepresentable {}
 extension KustomerChat.KBSurveyRating : Swift.Equatable {}
 extension KustomerChat.KBSurveyRating : Swift.Hashable {}
 extension KustomerChat.KBSurveyRating : Swift.RawRepresentable {}

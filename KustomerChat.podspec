@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '7.0.0'
+  s.version = '7.1.0'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'Down', '~> 0.11.0'
   s.dependency 'JWTDecode', '~> 3.3.0'
   s.dependency 'Nantes', '~> 0.1.2'
-  s.dependency 'NextGrowingTextView', '~> 2.2.1'
+  s.dependency 'NextGrowingTextView', '~> 2.1.0'
   s.dependency 'NotificationView', '~> 0.2.5'
   s.dependency 'PubNubSwift', '~> 6.3.0'
   s.dependency 'ReachabilitySwift', '~> 5.2.4'
