@@ -331,6 +331,21 @@ SWIFT_CLASS("_TtC12KustomerChat10KUSSWAlert")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Model representing an unfurled URL preview from a PubNub event.
+/// This model represents metadata extracted from a URL that was found in a message.
+/// The preview includes title, description, image, and favicon information extracted
+/// from the URL’s HTML (Twitter Card, Open Graph, or basic meta tags).
+/// <em>IMPORTANT</em>: These are automatically generated preview messages and should NEVER
+/// affect unread counts, delivery status, or read tracking. They are visual enhancements only.
+/// note:
+/// Each URL in a message generates its own <code>KUSUrlUnfurled</code> event with a unique ID
+/// in the format “{originalMessageId}-{url}”.
+SWIFT_CLASS("_TtC12KustomerChat14KUSUrlUnfurled")
+@interface KUSUrlUnfurled : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// A singleton. This is how you interact with the Kustomer SDK.
 SWIFT_CLASS("_TtC12KustomerChat14KustomerClient")
 @interface KustomerClient : NSObject

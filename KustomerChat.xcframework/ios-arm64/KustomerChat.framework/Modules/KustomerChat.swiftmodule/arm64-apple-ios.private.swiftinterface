@@ -986,6 +986,7 @@ public class KustomerOptions {
     set
     _modify
   }
+  public var enableUrlUnfurling: Swift.Bool
   public var hideHistoryNavigation: Swift.Bool
   @available(*, deprecated)
   public var orgSecret: Swift.String?
@@ -1192,6 +1193,7 @@ public protocol KUSChatListener : AnyObject {
   func onConversationMerged(sourceConversation: KustomerChat.KUSConversation, targetConversation: KustomerChat.KUSConversation)
   func onSatisfactionEventReceived(conversationId: Swift.String, satisfaction: KustomerChat.KUSSatisfaction)
   func onCustomerDeleted()
+  func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 extension KustomerChat.KUSChatListener {
   public func onChatMessageReceived(conversationId: Swift.String, chatMessage: KustomerChat.KUSChatMessage)
@@ -1216,8 +1218,33 @@ extension KustomerChat.KUSChatListener {
   public func onSatisfactionEventReceived(conversationId: Swift.String, satisfaction: KustomerChat.KUSSatisfaction)
   public func onConversationDeleted(conversationId: Swift.String, conversation: KustomerChat.KUSConversation)
   public func onCustomerDeleted()
+  public func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 public struct KnowledgeBaseCategoryData {
+}
+@objc public class KUSUrlUnfurled : ObjectiveC.NSObject, Swift.Codable {
+  final public let id: Swift.String
+  final public let originalMessageId: Swift.String
+  final public let sessionId: Swift.String
+  final public let unfurledUrl: KustomerChat.KUSUrlUnfurled.UnfurledUrlData
+  public struct UnfurledUrlData : Swift.Codable {
+    public let url: Swift.String
+    public let title: Swift.String?
+    public let description: Swift.String?
+    public let image: Swift.String?
+    public let favicon: Swift.String?
+    public let unfurledAt: Foundation.Date?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var conversationId: Swift.String? {
+    get
+  }
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
 public protocol KUSMessageAction {
   var displayText: Swift.String { get }
@@ -2112,6 +2139,7 @@ public struct KUSChatMessage : Swift.CustomStringConvertible, Swift.Decodable {
   public var directionType: KustomerChat.KUSChatMessageDirectionType?
   public var body: Swift.String?
   public var attachments: [KustomerChat.KUSChatAttachment]
+  public var unfurledPreviews: [KustomerChat.KUSUrlUnfurled.UnfurledUrlData]?
   public var templateType: KustomerChat.KUSMessageTemplateType?
   public var sentByUser: KustomerChat.KUSUser?
   public var sentById: Swift.String?
