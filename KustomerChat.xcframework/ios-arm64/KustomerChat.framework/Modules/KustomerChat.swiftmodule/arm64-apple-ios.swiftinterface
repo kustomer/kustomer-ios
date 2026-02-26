@@ -980,6 +980,7 @@ public class KustomerOptions {
   public var logLevels: [KustomerChat.KustomerLogType]
   public var hideNewConversationButton: Swift.Bool
   public var hideKbArticleShare: Swift.Bool
+  public var useLegacyConversationPreview: Swift.Bool
   public var flags: Swift.String?
   @KustomerChat.KUSClamping public var messageAttachmentLocalCacheMaximumSizeInBytes: Swift.Int {
     get
@@ -1000,6 +1001,7 @@ public enum ActiveAssistantOptions {
 public struct PreviewDetails : Swift.Codable {
   public let lastResponder: KustomerChat.LastResponder?
   public let messageCreatedAt: Foundation.Date?
+  public let name: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1193,6 +1195,7 @@ public protocol KUSChatListener : AnyObject {
   func onConversationMerged(sourceConversation: KustomerChat.KUSConversation, targetConversation: KustomerChat.KUSConversation)
   func onSatisfactionEventReceived(conversationId: Swift.String, satisfaction: KustomerChat.KUSSatisfaction)
   func onCustomerDeleted()
+  func onSessionTitleChanged(session: KustomerChat.KUSConversation)
   func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 extension KustomerChat.KUSChatListener {
@@ -1218,6 +1221,7 @@ extension KustomerChat.KUSChatListener {
   public func onSatisfactionEventReceived(conversationId: Swift.String, satisfaction: KustomerChat.KUSSatisfaction)
   public func onConversationDeleted(conversationId: Swift.String, conversation: KustomerChat.KUSConversation)
   public func onCustomerDeleted()
+  public func onSessionTitleChanged(session: KustomerChat.KUSConversation)
   public func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 public struct KnowledgeBaseCategoryData {
@@ -1328,6 +1332,7 @@ public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
   public var lockReason: KustomerChat.KUSConversationLockReason?
   public var preview: Swift.String?
   public var previewDetails: KustomerChat.PreviewDetails?
+  public var name: Swift.String?
   public var respondingUserIds: [Swift.String?]?
   public var unreadMessageCount: Swift.Int?
   public var lastReadMessageId: Swift.String?
