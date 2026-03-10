@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Skriv venligst en besked";
 "com.kustomer.Please select an option..." = "Vælg venligst en mulighed...";
 "com.kustomer.Please try another search term" = "Prøv venligst et andet søgeord";
+"com.kustomer.Please upload less than %d MB in total." = "Upload venligst mindre end %d MB i alt.";
 "com.kustomer.Processing Answer" = "Behandler svar";
 "com.kustomer.Reconnect" = "Genopret forbindelse";
 "com.kustomer.Reconnecting..." = "Genopretter forbindelse...";

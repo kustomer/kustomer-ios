@@ -32,7 +32,7 @@
 "com.kustomer.Ended" = "געענדיקט";
 "com.kustomer.Error" = "טעות";
 "com.kustomer.Error!" = "טעות!";
-"com.kustomer.Error. Tap to retry." = "טעות. צאַפּן צו פּרובירן ווידער.";
+"com.kustomer.Error. Tap to retry." = "טעות. דריק צו פרובירן נאכאמאל.";
 "com.kustomer.FAQ" = "אָפֿט געשטעלטע פֿראַגעס";
 "com.kustomer.Featured Articles" = "אויסגעצייכנטע אַרטיקלען";
 "com.kustomer.File type not supported" = "טעקע טיפ נישט געשטיצט";
@@ -61,7 +61,7 @@
 "com.kustomer.No results" = "קיין רעזולטאַטן";
 "com.kustomer.No text" = "קיין טעקסט נישט";
 "com.kustomer.None of your personal information was included" = "קיין איינע פון אייערע פערזענלעכע אינפארמאציע איז נישט אריינגערעכנט געווארן";
-"com.kustomer.Not enough disk space" = "נישט גענוג דיסק פלאץ";
+"com.kustomer.Not enough disk space" = "נישט גענוג דיסק פּלאַץ";
 "com.kustomer.Not found" = "נישט געפֿונען";
 "com.kustomer.Okay" = "אָוקיי";
 "com.kustomer.Open in browser" = "עפֿענען אין בלעטערער";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "ביטע לאָזט אַ מעסעדזש";
 "com.kustomer.Please select an option..." = "ביטע אויסקלײַבן אַן אָפּציע...";
 "com.kustomer.Please try another search term" = "ביטע פרובירט אן אנדער זוכ-טערמין";
+"com.kustomer.Please upload less than %d MB in total." = "ביטע אַרויפֿלאָדן ווייניקער ווי %d מעגאבייט אין גאַנצן.";
 "com.kustomer.Processing Answer" = "פּראַסעסינג ענטפער";
 "com.kustomer.Reconnect" = "פֿאַרבינדן זיך ווידער";
 "com.kustomer.Reconnecting..." = "ווידער פֿאַרבינדן...";

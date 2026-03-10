@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Будь ласка, залиште повідомлення";
 "com.kustomer.Please select an option..." = "Будь ласка, виберіть варіант...";
 "com.kustomer.Please try another search term" = "Будь ласка, спробуйте інший пошуковий термін";
+"com.kustomer.Please upload less than %d MB in total." = "Будь ласка, завантажте менше ніж %d МБ загалом.";
 "com.kustomer.Processing Answer" = "Обробка відповіді";
 "com.kustomer.Reconnect" = "Знову підключитися";
 "com.kustomer.Reconnecting..." = "Повторне підключення...";
@@ -103,6 +104,6 @@
 "com.kustomer.You changed your additional feedback comment" = "Ви змінили свій додатковий коментар до відгуку";
 "com.kustomer.You're offline. Check your connection." = "Ви офлайн. Перевірте з’єднання.";
 "com.kustomer.Your existing conversations will be here." = "Ваші наявні розмови будуть тут.";
-"com.kustomer.is no longer available" = "більше недоступний";
+"com.kustomer.is no longer available" = "більше не доступний";
 "com.kustomer.out of" = "з";
 "com.kustomer.sending" = "надсилання";

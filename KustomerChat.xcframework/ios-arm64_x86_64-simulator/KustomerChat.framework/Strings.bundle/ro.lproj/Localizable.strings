@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Vă rugăm să lăsați un mesaj";
 "com.kustomer.Please select an option..." = "Vă rugăm să selectați o opțiune...";
 "com.kustomer.Please try another search term" = "Vă rugăm să încercați un alt termen de căutare";
+"com.kustomer.Please upload less than %d MB in total." = "Vă rugăm să încărcați mai puțin de %d MB în total.";
 "com.kustomer.Processing Answer" = "Se procesează răspunsul";
 "com.kustomer.Reconnect" = "Reconectați-vă";
 "com.kustomer.Reconnecting..." = "Se reconecta...";

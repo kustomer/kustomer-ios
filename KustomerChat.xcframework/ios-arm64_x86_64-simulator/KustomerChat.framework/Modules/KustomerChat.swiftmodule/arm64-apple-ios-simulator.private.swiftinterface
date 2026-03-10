@@ -988,6 +988,12 @@ public class KustomerOptions {
     _modify
   }
   public var enableUrlUnfurling: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var maxChatAttachmentTotalMB: Swift.Int? {
+    get
+    set
+  }
+  #endif
   public var hideHistoryNavigation: Swift.Bool
   @available(*, deprecated)
   public var orgSecret: Swift.String?

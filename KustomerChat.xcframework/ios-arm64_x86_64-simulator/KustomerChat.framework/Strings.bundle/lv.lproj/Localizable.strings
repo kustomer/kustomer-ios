@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Lūdzu, atstājiet ziņu";
 "com.kustomer.Please select an option..." = "Lūdzu, izvēlieties opciju...";
 "com.kustomer.Please try another search term" = "Lūdzu, mēģiniet citu meklēšanas terminu";
+"com.kustomer.Please upload less than %d MB in total." = "Lūdzu, augšupielādējiet mazāk nekā %d MB kopā.";
 "com.kustomer.Processing Answer" = "Atbildes apstrāde";
 "com.kustomer.Reconnect" = "Atkārtoti izveidot savienojumu";
 "com.kustomer.Reconnecting..." = "Atkārtota savienojuma izveide...";

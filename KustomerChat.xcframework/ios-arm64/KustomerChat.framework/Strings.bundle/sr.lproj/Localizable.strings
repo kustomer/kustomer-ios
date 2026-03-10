@@ -9,7 +9,7 @@
 "com.kustomer.Attached file" = "Приложена датотека";
 "com.kustomer.Attachment" = "Прилог";
 "com.kustomer.Browse files" = "Прегледај датотеке";
-"com.kustomer.Camera roll" = "Ролна камере";
+"com.kustomer.Camera roll" = "Рол камере";
 "com.kustomer.Can't load chat" = "Не могу да учитам ћаскање";
 "com.kustomer.Cancel" = "Откажи";
 "com.kustomer.Cancelled! Tap to retry." = "Отказано! Додирните да бисте покушали поново.";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Молимо вас да оставите поруку";
 "com.kustomer.Please select an option..." = "Молимо вас да изаберете опцију...";
 "com.kustomer.Please try another search term" = "Молимо вас да покушате са другим термином за претрагу";
+"com.kustomer.Please upload less than %d MB in total." = "Молимо вас да отпремите мање од %d MB укупно.";
 "com.kustomer.Processing Answer" = "Обрада одговора";
 "com.kustomer.Reconnect" = "Поново се повежите";
 "com.kustomer.Reconnecting..." = "Поновно повезивање...";
@@ -78,7 +79,7 @@
 "com.kustomer.Report problem" = "Пријави проблем";
 "com.kustomer.Report sent" = "Извештај послат";
 "com.kustomer.Required" = "Обавезно";
-"com.kustomer.Save changes" = "Сачувај измене";
+"com.kustomer.Save changes" = "Сачувај промене";
 "com.kustomer.Search Help Articles" = "Претражите чланке помоћи";
 "com.kustomer.Search Results" = "Резултати претраге";
 "com.kustomer.Sending" = "Слање";

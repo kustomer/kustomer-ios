@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "メッセージを残してください";
 "com.kustomer.Please select an option..." = "オプションを選択してください...";
 "com.kustomer.Please try another search term" = "別の検索語を試してください";
+"com.kustomer.Please upload less than %d MB in total." = "合計で %d MB 未満をアップロードしてください。";
 "com.kustomer.Processing Answer" = "回答の処理中";
 "com.kustomer.Reconnect" = "再接続";
 "com.kustomer.Reconnecting..." = "再接続しています...";

@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "مهرباني وکړئ یو پیغام پریږدئ";
 "com.kustomer.Please select an option..." = "مهرباني وکړئ یو انتخاب غوره کړئ...";
 "com.kustomer.Please try another search term" = "مهرباني وکړئ د لټون بله اصطلاح هڅه وکړئ";
+"com.kustomer.Please upload less than %d MB in total." = "مهرباني وکړئ په ټولیزه توګه له %d MB څخه کم اپلوډ کړئ.";
 "com.kustomer.Processing Answer" = "د ځواب پروسس کول";
 "com.kustomer.Reconnect" = "بیا نښلول";
 "com.kustomer.Reconnecting..." = "بیا نښلول...";
@@ -86,7 +87,7 @@
 "com.kustomer.Submit" = "سپارل";
 "com.kustomer.Survey" = "سروې";
 "com.kustomer.Take photo" = "عکس واخلئ";
-"com.kustomer.Tap to load..." = "د بارولو لپاره ټک وکړئ...";
+"com.kustomer.Tap to load..." = "د بارولو لپاره ټایپ کړئ...";
 "com.kustomer.Tap to open" = "د خلاصولو لپاره ټایپ کړئ";
 "com.kustomer.Thanks for your feedback" = "ستاسو د نظر څخه مننه";
 "com.kustomer.That article" = "هغه مقاله";

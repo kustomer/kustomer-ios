@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "कृपया एउटा सन्देश छोड्नुहोस्।";
 "com.kustomer.Please select an option..." = "कृपया एउटा विकल्प छान्नुहोस्...";
 "com.kustomer.Please try another search term" = "कृपया अर्को खोज शब्द प्रयास गर्नुहोस्।";
+"com.kustomer.Please upload less than %d MB in total." = "कृपया कुल %d MB भन्दा कम अपलोड गर्नुहोस्।";
 "com.kustomer.Processing Answer" = "उत्तर प्रशोधन गर्दै";
 "com.kustomer.Reconnect" = "पुन: जडान गर्नुहोस्";
 "com.kustomer.Reconnecting..." = "पुन: जडान गर्दै...";

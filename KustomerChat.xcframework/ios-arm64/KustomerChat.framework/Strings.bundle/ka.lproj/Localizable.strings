@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "გთხოვთ, დატოვოთ შეტყობინება";
 "com.kustomer.Please select an option..." = "გთხოვთ, აირჩიოთ ვარიანტი...";
 "com.kustomer.Please try another search term" = "გთხოვთ, სცადოთ სხვა საძიებო ტერმინი";
+"com.kustomer.Please upload less than %d MB in total." = "გთხოვთ, ატვირთოთ სულ %d მბ-ზე ნაკლები.";
 "com.kustomer.Processing Answer" = "პასუხის დამუშავება";
 "com.kustomer.Reconnect" = "ხელახლა დაკავშირება";
 "com.kustomer.Reconnecting..." = "ხელახლა დაკავშირება...";
@@ -99,7 +100,7 @@
 "com.kustomer.Updated" = "განახლებულია";
 "com.kustomer.Waiting for a response from" = "ველოდები პასუხს";
 "com.kustomer.We will get back to you as soon as we are online!" = "როგორც კი ონლაინ რეჟიმში ვიქნებით, დაგიკავშირდებით!";
-"com.kustomer.Yes" = "კი";
+"com.kustomer.Yes" = "დიახ";
 "com.kustomer.You changed your additional feedback comment" = "თქვენ შეცვალეთ თქვენი დამატებითი გამოხმაურების კომენტარი";
 "com.kustomer.You're offline. Check your connection." = "თქვენ ხაზგარეშე ხართ. შეამოწმეთ თქვენი კავშირი.";
 "com.kustomer.Your existing conversations will be here." = "თქვენი არსებული საუბრები აქ იქნება.";

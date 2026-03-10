@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Si us plau, deixeu un missatge";
 "com.kustomer.Please select an option..." = "Si us plau, seleccioneu una opció...";
 "com.kustomer.Please try another search term" = "Si us plau, proveu un altre terme de cerca";
+"com.kustomer.Please upload less than %d MB in total." = "Si us plau, pengeu menys de %d MB en total.";
 "com.kustomer.Processing Answer" = "Processant la resposta";
 "com.kustomer.Reconnect" = "Reconnecta";
 "com.kustomer.Reconnecting..." = "Reconnectant...";

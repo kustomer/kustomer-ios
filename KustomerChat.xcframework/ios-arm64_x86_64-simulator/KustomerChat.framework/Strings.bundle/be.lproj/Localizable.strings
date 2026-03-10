@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Калі ласка, пакіньце паведамленне";
 "com.kustomer.Please select an option..." = "Калі ласка, выберыце варыянт...";
 "com.kustomer.Please try another search term" = "Калі ласка, паспрабуйце іншы пошукавы запыт";
+"com.kustomer.Please upload less than %d MB in total." = "Калі ласка, загрузіце менш за %d МБ.";
 "com.kustomer.Processing Answer" = "Апрацоўка адказу";
 "com.kustomer.Reconnect" = "Зноў падключыцеся";
 "com.kustomer.Reconnecting..." = "Паўторнае падключэнне...";

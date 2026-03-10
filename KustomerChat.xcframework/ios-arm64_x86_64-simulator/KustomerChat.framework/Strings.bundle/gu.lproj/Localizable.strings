@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "કૃપા કરીને એક સંદેશ મૂકો.";
 "com.kustomer.Please select an option..." = "કૃપા કરીને એક વિકલ્પ પસંદ કરો...";
 "com.kustomer.Please try another search term" = "કૃપા કરીને બીજો શોધ શબ્દ અજમાવી જુઓ.";
+"com.kustomer.Please upload less than %d MB in total." = "કૃપા કરીને કુલ %d MB કરતા ઓછા અપલોડ કરો.";
 "com.kustomer.Processing Answer" = "જવાબની પ્રક્રિયા ચાલી રહી છે";
 "com.kustomer.Reconnect" = "ફરીથી કનેક્ટ કરો";
 "com.kustomer.Reconnecting..." = "ફરીથી કનેક્ટ કરી રહ્યું છે...";
