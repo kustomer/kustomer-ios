@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "దయచేసి ఒక సందేశాన్ని పంపండి.";
 "com.kustomer.Please select an option..." = "దయచేసి ఒక ఎంపికను ఎంచుకోండి...";
 "com.kustomer.Please try another search term" = "దయచేసి మరొక శోధన పదాన్ని ప్రయత్నించండి.";
+"com.kustomer.Please upload less than %d MB in total." = "దయచేసి మొత్తం %d MB కంటే తక్కువ అప్‌లోడ్ చేయండి.";
 "com.kustomer.Processing Answer" = "సమాధానాన్ని ప్రాసెస్ చేస్తోంది";
 "com.kustomer.Reconnect" = "తిరిగి కనెక్ట్ చేయండి";
 "com.kustomer.Reconnecting..." = "తిరిగి కనెక్ట్ చేస్తోంది...";
@@ -100,7 +101,7 @@
 "com.kustomer.Waiting for a response from" = "నుండి ప్రతిస్పందన కోసం వేచి ఉంది";
 "com.kustomer.We will get back to you as soon as we are online!" = "మేము ఆన్‌లైన్‌లోకి వచ్చిన వెంటనే మిమ్మల్ని సంప్రదిస్తాము!";
 "com.kustomer.Yes" = "అవును";
-"com.kustomer.You changed your additional feedback comment" = "మీరు మీ అదనపు అభిప్రాయ వ్యాఖ్యను మార్చారు";
+"com.kustomer.You changed your additional feedback comment" = "మీరు మీ అదనపు అభిప్రాయ వ్యాఖ్యను మార్చారు.";
 "com.kustomer.You're offline. Check your connection." = "మీరు ఆఫ్‌లైన్‌లో ఉన్నారు. మీ కనెక్షన్‌ను తనిఖీ చేయండి.";
 "com.kustomer.Your existing conversations will be here." = "మీ ప్రస్తుత సంభాషణలు ఇక్కడ ఉంటాయి.";
 "com.kustomer.is no longer available" = "ఇకపై అందుబాటులో లేదు";

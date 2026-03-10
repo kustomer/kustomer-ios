@@ -7,6 +7,7 @@
 "com.kustomer.Are you sure you want to end this chat?" = "Are you sure you want to end this chat?";
 "com.kustomer.Attached file" = "Attached file";
 "com.kustomer.Attachment" = "Attachment";
+"com.kustomer.Please upload less than %d MB in total." = "Please upload less than %d MB in total.";
 "com.kustomer.Browse files" = "Browse files";
 "com.kustomer.Camera roll" = "Camera roll";
 "com.kustomer.Can't load chat" = "Can't load chat";

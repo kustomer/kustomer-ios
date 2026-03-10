@@ -32,7 +32,7 @@
 "com.kustomer.Ended" = "ସମାପ୍ତ ହେଲା";
 "com.kustomer.Error" = "ତ୍ରୁଟି";
 "com.kustomer.Error!" = "ତ୍ରୁଟି!";
-"com.kustomer.Error. Tap to retry." = "ତ୍ରୁଟି। ପୁଣି ଚେଷ୍ଟା କରିବାକୁ ଟାପ୍ କରନ୍ତୁ।";
+"com.kustomer.Error. Tap to retry." = "ତ୍ରୁଟି। ପୁଣି ଚେଷ୍ଟା କରିବାକୁ ଟାପ୍‌ କରନ୍ତୁ।";
 "com.kustomer.FAQ" = "ସାଧାରଣ ପ୍ରଶ୍ନ";
 "com.kustomer.Featured Articles" = "ବଛାଯାଇଥିବା ଲେଖାଗୁଡ଼ିକ";
 "com.kustomer.File type not supported" = "ଫାଇଲ୍ ପ୍ରକାର ସମର୍ଥିତ ନୁହେଁ ।";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "ଦୟାକରି ଏକ ମେସେଜ୍ ଦିଅନ୍ତୁ";
 "com.kustomer.Please select an option..." = "ଦୟାକରି ଗୋଟିଏ ବିକଳ୍ପ ଚୟନ କରନ୍ତୁ...";
 "com.kustomer.Please try another search term" = "ଦୟାକରି ଅନ୍ୟ ଏକ ସନ୍ଧାନ ଶବ୍ଦ ଚେଷ୍ଟା କରନ୍ତୁ।";
+"com.kustomer.Please upload less than %d MB in total." = "ଦୟାକରି ମୋଟ %d MB ରୁ କମ୍ ଅପଲୋଡ୍ କରନ୍ତୁ।";
 "com.kustomer.Processing Answer" = "ଉତ୍ତର ପ୍ରକ୍ରିୟାକରଣ କରାଯାଉଛି";
 "com.kustomer.Reconnect" = "ପୁନଃସଂଯୋଗ କରନ୍ତୁ";
 "com.kustomer.Reconnecting..." = "ପୁନଃସଂଯୋଗ କରୁଛି...";

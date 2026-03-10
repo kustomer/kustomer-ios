@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "لطفا پیام بگذارید";
 "com.kustomer.Please select an option..." = "لطفا یک گزینه را انتخاب کنید...";
 "com.kustomer.Please try another search term" = "لطفا عبارت جستجوی دیگری را امتحان کنید";
+"com.kustomer.Please upload less than %d MB in total." = "لطفا در مجموع کمتر از %d مگابایت بارگذاری کنید.";
 "com.kustomer.Processing Answer" = "پردازش پاسخ";
 "com.kustomer.Reconnect" = "دوباره وصل شوید";
 "com.kustomer.Reconnecting..." = "در حال اتصال مجدد...";

@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Los asseblief 'n boodskap";
 "com.kustomer.Please select an option..." = "Kies asseblief 'n opsie...";
 "com.kustomer.Please try another search term" = "Probeer asseblief 'n ander soekterm";
+"com.kustomer.Please upload less than %d MB in total." = "Laai asseblief minder as %d MB in totaal op.";
 "com.kustomer.Processing Answer" = "Verwerk antwoord";
 "com.kustomer.Reconnect" = "Herkoppel";
 "com.kustomer.Reconnecting..." = "Herkoppel tans...";

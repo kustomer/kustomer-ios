@@ -66,11 +66,12 @@
 "com.kustomer.Okay" = "ঠিক আছে";
 "com.kustomer.Open in browser" = "ব্রাউজারে খুলুন";
 "com.kustomer.Optional" = "ঐচ্ছিক";
-"com.kustomer.Outgoing chat" = "বহির্গামী চ্যাট";
+"com.kustomer.Outgoing chat" = "আউটগোয়িং চ্যাট";
 "com.kustomer.Photo library" = "ছবির লাইব্রেরি";
 "com.kustomer.Please leave a message" = "দয়া করে একটি বার্তা দিন।";
 "com.kustomer.Please select an option..." = "অনুগ্রহ করে একটি বিকল্প নির্বাচন করুন...";
 "com.kustomer.Please try another search term" = "অনুগ্রহ করে অন্য একটি অনুসন্ধান শব্দ ব্যবহার করে দেখুন।";
+"com.kustomer.Please upload less than %d MB in total." = "মোট %d MB এর কম আপলোড করুন।";
 "com.kustomer.Processing Answer" = "উত্তর প্রক্রিয়াকরণ";
 "com.kustomer.Reconnect" = "পুনঃসংযোগ করুন";
 "com.kustomer.Reconnecting..." = "পুনঃসংযোগ করা হচ্ছে...";

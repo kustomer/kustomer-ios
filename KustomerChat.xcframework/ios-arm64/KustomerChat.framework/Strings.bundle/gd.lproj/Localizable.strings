@@ -19,7 +19,7 @@
 "com.kustomer.Chat history" = "Eachdraidh cabadaich";
 "com.kustomer.Chat is currently unavailable" = "Chan eil cabadaich ri fhaighinn an-dràsta";
 "com.kustomer.Chat with support" = "Bruidhinn ris an taic";
-"com.kustomer.Conversation ended" = "Chrìochnaich an còmhradh";
+"com.kustomer.Conversation ended" = "Thàinig crìoch air a’ chòmhradh";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Chaidh a’ chòmhradh a chur còmhla ri còmhradh eile.\n\nTap gus a dhol chun a’ chòmhraidh ùir.";
 "com.kustomer.Conversation moved to another customer" = "Chaidh an còmhradh a ghluasad gu neach-ceannach eile";
 "com.kustomer.Delete" = "Sguab às";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Fàg teachdaireachd, mas e do thoil e.";
 "com.kustomer.Please select an option..." = "Tagh roghainn...";
 "com.kustomer.Please try another search term" = "Feuch teirm rannsachaidh eile";
+"com.kustomer.Please upload less than %d MB in total." = "Luchdaich suas nas lugha na %d MB gu h-iomlan.";
 "com.kustomer.Processing Answer" = "A’ giullachd freagairt";
 "com.kustomer.Reconnect" = "Ath-cheangail";
 "com.kustomer.Reconnecting..." = "Ag ath-cheangal...";

@@ -4,7 +4,7 @@
 "com.kustomer.Additional Feedback" = "Kòmantè adisyonèl";
 "com.kustomer.Additional feedback removed" = "Yo retire lòt fidbak yo";
 "com.kustomer.Agent" = "Ajan";
-"com.kustomer.Answers" = "Repons";
+"com.kustomer.Answers" = "Repons yo";
 "com.kustomer.Are you sure you want to end this chat?" = "Èske ou sèten ou vle fini chat sa a?";
 "com.kustomer.Attached file" = "Fichye atache";
 "com.kustomer.Attachment" = "Atachman";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Tanpri kite yon mesaj";
 "com.kustomer.Please select an option..." = "Tanpri chwazi yon opsyon...";
 "com.kustomer.Please try another search term" = "Tanpri eseye yon lòt tèm rechèch";
+"com.kustomer.Please upload less than %d MB in total." = "Tanpri telechaje mwens pase %d MB an total.";
 "com.kustomer.Processing Answer" = "Ap trete repons lan";
 "com.kustomer.Reconnect" = "Rekonekte";
 "com.kustomer.Reconnecting..." = "Ap rekonekte...";

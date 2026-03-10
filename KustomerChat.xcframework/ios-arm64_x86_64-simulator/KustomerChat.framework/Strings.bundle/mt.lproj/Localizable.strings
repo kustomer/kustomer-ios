@@ -20,7 +20,7 @@
 "com.kustomer.Chat is currently unavailable" = "Iċ-chat bħalissa mhux disponibbli.";
 "com.kustomer.Chat with support" = "Iċċettja mal-appoġġ";
 "com.kustomer.Conversation ended" = "Il-konverżazzjoni ntemmet";
-"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Il-konverżazzjoni ngħaqdet ma' konverżazzjoni oħra.\n\nTektek biex tmur għall-konverżazzjoni l-ġdida.";
+"com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Konverżazzjoni ngħaqdet ma' konverżazzjoni oħra.\n\nTektek biex tmur għall-konverżazzjoni l-ġdida.";
 "com.kustomer.Conversation moved to another customer" = "Il-konverżazzjoni mxiet għal klijent ieħor";
 "com.kustomer.Delete" = "Ħassar";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Trid tneħħi l-klassifikazzjoni u l-feedback tiegħek?";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Jekk jogħġbok ħalli messaġġ";
 "com.kustomer.Please select an option..." = "Jekk jogħġbok agħżel għażla...";
 "com.kustomer.Please try another search term" = "Jekk jogħġbok ipprova terminu ta' tiftix ieħor";
+"com.kustomer.Please upload less than %d MB in total." = "Jekk jogħġbok ittella' inqas minn %d MB b'kollox.";
 "com.kustomer.Processing Answer" = "Ipproċessar tat-Tweġiba";
 "com.kustomer.Reconnect" = "Erġa' qabbad";
 "com.kustomer.Reconnecting..." = "Qed nerġgħu nikkonnettjaw...";

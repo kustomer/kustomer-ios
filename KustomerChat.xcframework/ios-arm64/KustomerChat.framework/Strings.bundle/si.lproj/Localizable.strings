@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "කරුණාකර පණිවිඩයක් තබන්න.";
 "com.kustomer.Please select an option..." = "කරුණාකර විකල්පයක් තෝරන්න...";
 "com.kustomer.Please try another search term" = "කරුණාකර වෙනත් සෙවුම් පදයක් උත්සාහ කරන්න.";
+"com.kustomer.Please upload less than %d MB in total." = "කරුණාකර මුළු ප්‍රමාණයෙන් %d MB ට වඩා අඩුවෙන් උඩුගත කරන්න.";
 "com.kustomer.Processing Answer" = "පිළිතුර සකසමින්";
 "com.kustomer.Reconnect" = "නැවත සම්බන්ධ කරන්න";
 "com.kustomer.Reconnecting..." = "නැවත සම්බන්ධ වෙමින්...";

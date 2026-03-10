@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Ju lutem lini një mesazh";
 "com.kustomer.Please select an option..." = "Ju lutem zgjidhni një opsion...";
 "com.kustomer.Please try another search term" = "Ju lutem provoni një term tjetër kërkimi";
+"com.kustomer.Please upload less than %d MB in total." = "Ju lutem ngarkoni më pak se %d MB në total.";
 "com.kustomer.Processing Answer" = "Përpunimi i përgjigjes";
 "com.kustomer.Reconnect" = "Rilidhu";
 "com.kustomer.Reconnecting..." = "Duke u rilidhur...";

@@ -24,7 +24,7 @@
 "com.kustomer.Conversation moved to another customer" = "Pokalbis perkeltas kitam klientui";
 "com.kustomer.Delete" = "Ištrinti";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Ar norite pašalinti savo įvertinimą ir atsiliepimą?";
-"com.kustomer.Do you want to save the changes you made to your comment?" = "Ar norite išsaugoti komentaro pakeitimus?";
+"com.kustomer.Do you want to save the changes you made to your comment?" = "Ar norite išsaugoti atliktus komentaro pakeitimus?";
 "com.kustomer.Done" = "Atlikta";
 "com.kustomer.Edit additional feedback" = "Redaguoti papildomus atsiliepimus";
 "com.kustomer.Edit comment" = "Redaguoti komentarą";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Prašome palikti žinutę";
 "com.kustomer.Please select an option..." = "Pasirinkite parinktį...";
 "com.kustomer.Please try another search term" = "Pabandykite kitą paieškos terminą";
+"com.kustomer.Please upload less than %d MB in total." = "Iš viso įkelkite mažiau nei %d MB.";
 "com.kustomer.Processing Answer" = "Apdorojamas atsakymas";
 "com.kustomer.Reconnect" = "Prisijungti iš naujo";
 "com.kustomer.Reconnecting..." = "Pakartotinai prisijungiama...";

@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Bonvolu lasi mesaĝon";
 "com.kustomer.Please select an option..." = "Bonvolu elekti opcion...";
 "com.kustomer.Please try another search term" = "Bonvolu provi alian serĉvorton";
+"com.kustomer.Please upload less than %d MB in total." = "Bonvolu alŝuti malpli ol %d MB entute.";
 "com.kustomer.Processing Answer" = "Prilaborante Respondon";
 "com.kustomer.Reconnect" = "Rekonekti";
 "com.kustomer.Reconnecting..." = "Rekonektiĝante...";

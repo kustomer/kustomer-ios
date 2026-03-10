@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Deixa unha mensaxe, por favor.";
 "com.kustomer.Please select an option..." = "Selecciona unha opción...";
 "com.kustomer.Please try another search term" = "Proba con outro termo de busca";
+"com.kustomer.Please upload less than %d MB in total." = "Carga menos de %d MB en total.";
 "com.kustomer.Processing Answer" = "Procesando a resposta";
 "com.kustomer.Reconnect" = "Volver conectar";
 "com.kustomer.Reconnecting..." = "Reconectando...";

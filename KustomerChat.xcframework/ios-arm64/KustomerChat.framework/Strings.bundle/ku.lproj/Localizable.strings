@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Ji kerema xwe peyamek bihêle";
 "com.kustomer.Please select an option..." = "Ji kerema xwe vebijarkek hilbijêre...";
 "com.kustomer.Please try another search term" = "Ji kerema xwe peyveke lêgerînê ya din biceribîne";
+"com.kustomer.Please upload less than %d MB in total." = "Ji kerema xwe bi tevahî kêmtir ji %d MB bar bikin.";
 "com.kustomer.Processing Answer" = "Pêvajoya Bersivê";
 "com.kustomer.Reconnect" = "Ji nû ve girêbide";
 "com.kustomer.Reconnecting..." = "Ji nû ve tê girêdan...";

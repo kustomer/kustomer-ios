@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "தயவுசெய்து ஒரு செய்தியை விடுங்கள்.";
 "com.kustomer.Please select an option..." = "தயவுசெய்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்...";
 "com.kustomer.Please try another search term" = "வேறு தேடல் சொல்லை முயற்சிக்கவும்.";
+"com.kustomer.Please upload less than %d MB in total." = "மொத்தம் %d MB க்கும் குறைவான பதிவேற்றவும்.";
 "com.kustomer.Processing Answer" = "பதிலைச் செயலாக்குகிறது";
 "com.kustomer.Reconnect" = "மீண்டும் இணைக்கவும்";
 "com.kustomer.Reconnecting..." = "மீண்டும் இணைக்கிறது...";
@@ -79,7 +80,7 @@
 "com.kustomer.Report sent" = "அறிக்கை அனுப்பப்பட்டது";
 "com.kustomer.Required" = "அவசியம்";
 "com.kustomer.Save changes" = "மாற்றங்களைச் சேமிக்கவும்";
-"com.kustomer.Search Help Articles" = "உதவி கட்டுரைகளைத் தேடு";
+"com.kustomer.Search Help Articles" = "உதவி கட்டுரைகளைத் தேடுங்கள்";
 "com.kustomer.Search Results" = "தேடல் முடிவுகள்";
 "com.kustomer.Sending" = "அனுப்புகிறது";
 "com.kustomer.Share" = "பகிர்";

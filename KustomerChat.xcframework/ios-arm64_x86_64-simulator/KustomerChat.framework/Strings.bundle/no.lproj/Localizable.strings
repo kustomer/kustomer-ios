@@ -68,9 +68,10 @@
 "com.kustomer.Optional" = "Valgfri";
 "com.kustomer.Outgoing chat" = "Utgående chat";
 "com.kustomer.Photo library" = "Fotobibliotek";
-"com.kustomer.Please leave a message" = "Legg igjen en beskjed";
+"com.kustomer.Please leave a message" = "Vennligst legg igjen en beskjed";
 "com.kustomer.Please select an option..." = "Vennligst velg et alternativ...";
 "com.kustomer.Please try another search term" = "Prøv et annet søkeord";
+"com.kustomer.Please upload less than %d MB in total." = "Vennligst last opp mindre enn %d MB totalt.";
 "com.kustomer.Processing Answer" = "Behandler svar";
 "com.kustomer.Reconnect" = "Koble til igjen";
 "com.kustomer.Reconnecting..." = "Kobler til igjen...";

@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Ве молиме оставете порака";
 "com.kustomer.Please select an option..." = "Изберете опција...";
 "com.kustomer.Please try another search term" = "Обидете се со друг термин за пребарување";
+"com.kustomer.Please upload less than %d MB in total." = "Ве молиме прикачете помалку од %d MB вкупно.";
 "com.kustomer.Processing Answer" = "Обработка на одговор";
 "com.kustomer.Reconnect" = "Повторно поврзување";
 "com.kustomer.Reconnecting..." = "Повторно поврзување...";

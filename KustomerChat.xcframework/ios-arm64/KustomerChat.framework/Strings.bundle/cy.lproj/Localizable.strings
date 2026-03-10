@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Gadewch neges os gwelwch yn dda";
 "com.kustomer.Please select an option..." = "Dewiswch opsiwn...";
 "com.kustomer.Please try another search term" = "Rhowch gynnig ar derm chwilio arall";
+"com.kustomer.Please upload less than %d MB in total." = "Llwythwch lai na %d MB i fyny yn gyfan gwbl.";
 "com.kustomer.Processing Answer" = "Prosesu Ateb";
 "com.kustomer.Reconnect" = "Ailgysylltu";
 "com.kustomer.Reconnecting..." = "Ailgysylltu...";

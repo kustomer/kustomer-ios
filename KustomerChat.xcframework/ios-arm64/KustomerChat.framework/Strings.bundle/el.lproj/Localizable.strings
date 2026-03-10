@@ -46,7 +46,7 @@
 "com.kustomer.Leave a message" = "Αφήστε ένα μήνυμα";
 "com.kustomer.Leave a message..." = "Αφήστε ένα μήνυμα...";
 "com.kustomer.Loading..." = "Φόρτωση...";
-"com.kustomer.Mark all as read" = "Σήμανση όλων ως αναγνωσμένων";
+"com.kustomer.Mark all as read" = "Επισήμανση όλων ως αναγνωσμένων";
 "com.kustomer.Me" = "Μου";
 "com.kustomer.Message" = "Μήνυμα";
 "com.kustomer.Message failed to send" = "Η αποστολή του μηνύματος απέτυχε";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Παρακαλώ αφήστε ένα μήνυμα";
 "com.kustomer.Please select an option..." = "Παρακαλώ επιλέξτε μια επιλογή...";
 "com.kustomer.Please try another search term" = "Δοκιμάστε έναν άλλο όρο αναζήτησης";
+"com.kustomer.Please upload less than %d MB in total." = "Παρακαλώ μεταφορτώστε λιγότερα από %d MB συνολικά.";
 "com.kustomer.Processing Answer" = "Επεξεργασία απάντησης";
 "com.kustomer.Reconnect" = "Επανασύνδεση";
 "com.kustomer.Reconnecting..." = "Επανασύνδεση...";

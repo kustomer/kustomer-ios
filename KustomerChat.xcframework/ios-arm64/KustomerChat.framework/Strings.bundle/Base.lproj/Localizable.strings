@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Please leave a message";
 "com.kustomer.Please select an option..." = "Please select an option...";
 "com.kustomer.Please try another search term" = "Please try another search term";
+"com.kustomer.Please upload less than %d MB in total." = "Please upload less than %d MB in total.";
 "com.kustomer.Processing Answer" = "Processing Answer";
 "com.kustomer.Reconnect" = "Reconnect";
 "com.kustomer.Reconnecting..." = "Reconnecting...";

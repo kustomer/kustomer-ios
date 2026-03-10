@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Prosím, zanechajte správu";
 "com.kustomer.Please select an option..." = "Vyberte si možnosť...";
 "com.kustomer.Please try another search term" = "Skúste iný vyhľadávací výraz";
+"com.kustomer.Please upload less than %d MB in total." = "Prosím, nahrajte celkovo menej ako %d MB.";
 "com.kustomer.Processing Answer" = "Spracovanie odpovede";
 "com.kustomer.Reconnect" = "Znovu sa pripojte";
 "com.kustomer.Reconnecting..." = "Opätovné pripojenie...";

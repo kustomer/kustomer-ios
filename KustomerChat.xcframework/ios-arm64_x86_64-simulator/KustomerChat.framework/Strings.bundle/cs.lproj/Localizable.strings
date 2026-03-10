@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Prosím, zanechte zprávu";
 "com.kustomer.Please select an option..." = "Vyberte prosím možnost...";
 "com.kustomer.Please try another search term" = "Zkuste prosím jiný hledaný výraz";
+"com.kustomer.Please upload less than %d MB in total." = "Prosím, nahrajte celkem méně než %d MB.";
 "com.kustomer.Processing Answer" = "Zpracování odpovědi";
 "com.kustomer.Reconnect" = "Znovu se připojte";
 "com.kustomer.Reconnecting..." = "Opětovné připojení...";
@@ -95,7 +96,7 @@
 "com.kustomer.Try again" = "Zkuste to znovu";
 "com.kustomer.Type a message..." = "Napište zprávu...";
 "com.kustomer.Unable to view attachment" = "Nelze zobrazit přílohu";
-"com.kustomer.Unavailable message goes here" = "Zde se nachází zpráva o nedostupnosti";
+"com.kustomer.Unavailable message goes here" = "Nedostupná zpráva se přidává sem";
 "com.kustomer.Updated" = "Aktualizováno";
 "com.kustomer.Waiting for a response from" = "Čekání na odpověď od";
 "com.kustomer.We will get back to you as soon as we are online!" = "Jakmile budeme online, ozveme se vám!";

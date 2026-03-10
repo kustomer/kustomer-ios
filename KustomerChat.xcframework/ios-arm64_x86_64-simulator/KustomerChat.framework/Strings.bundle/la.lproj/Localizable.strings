@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Quaeso nuntium relinque.";
 "com.kustomer.Please select an option..." = "Optionem elige...";
 "com.kustomer.Please try another search term" = "Quaeso, aliud vocabulum quaesitorium experire.";
+"com.kustomer.Please upload less than %d MB in total." = "Quaeso minus quam %d MB in summa impone.";
 "com.kustomer.Processing Answer" = "Responsum Processans";
 "com.kustomer.Reconnect" = "Iterum coniungere";
 "com.kustomer.Reconnecting..." = "Iterum coniungens...";

@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Jätä viesti";
 "com.kustomer.Please select an option..." = "Valitse vaihtoehto...";
 "com.kustomer.Please try another search term" = "Kokeile toista hakusanaa";
+"com.kustomer.Please upload less than %d MB in total." = "Lataa yhteensä alle %d Mt.";
 "com.kustomer.Processing Answer" = "Vastauksen käsittely";
 "com.kustomer.Reconnect" = "Yhdistä uudelleen";
 "com.kustomer.Reconnecting..." = "Yhdistetään uudelleen...";

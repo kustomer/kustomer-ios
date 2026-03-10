@@ -21,7 +21,7 @@
 "com.kustomer.Chat with support" = "Chatta med supporten";
 "com.kustomer.Conversation ended" = "Konversationen avslutades";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Konversationen har sammanfogats med en annan konversation.\n\nTryck för att gå till den nya konversationen.";
-"com.kustomer.Conversation moved to another customer" = "Konversationen flyttad till en annan kund";
+"com.kustomer.Conversation moved to another customer" = "Konversationen flyttades till en annan kund";
 "com.kustomer.Delete" = "Radera";
 "com.kustomer.Do you want to remove your rating and feedback?" = "Vill du ta bort ditt betyg och din feedback?";
 "com.kustomer.Do you want to save the changes you made to your comment?" = "Vill du spara ändringarna du gjorde i din kommentar?";
@@ -71,6 +71,7 @@
 "com.kustomer.Please leave a message" = "Vänligen lämna ett meddelande";
 "com.kustomer.Please select an option..." = "Vänligen välj ett alternativ...";
 "com.kustomer.Please try another search term" = "Försök med en annan sökterm";
+"com.kustomer.Please upload less than %d MB in total." = "Vänligen ladda upp mindre än %d MB totalt.";
 "com.kustomer.Processing Answer" = "Bearbetar svar";
 "com.kustomer.Reconnect" = "Återanslut";
 "com.kustomer.Reconnecting..." = "Återansluter...";
