@@ -12,6 +12,12 @@ Embed [Kustomer](https://www.kustomer.com/) in your own products with our chat S
 ----------------
 
 
+## Chat Lifecycle
+
+**CocoaPods / distribution** repo for the **iOS chat SDK** (customer-facing). Runtime chat and **PubNub** behavior are implemented in **chat-sdk-ios**; channel topology is **[chat-api pubnub.md](https://github.com/kustomer/chat-api/blob/master/pubnub.md)**.
+
+**See also:** [chat-api — Chat Lifecycle](https://github.com/kustomer/chat-api/blob/master/README.md#chat-lifecycle) · [chat-sdk-ios](https://github.com/kustomer/chat-sdk-ios)
+
 ## Documentation and guides
 
 [iOS Docs and guides](https://developer.kustomer.com/chat-sdk/v2-iOS/docs)
