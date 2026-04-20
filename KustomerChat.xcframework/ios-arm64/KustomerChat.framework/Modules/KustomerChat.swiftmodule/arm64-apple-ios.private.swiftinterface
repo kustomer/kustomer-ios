@@ -1237,6 +1237,13 @@ public struct KnowledgeBaseCategoryData {
   final public let originalMessageId: Swift.String
   final public let sessionId: Swift.String
   final public let unfurledUrl: KustomerChat.KUSUrlUnfurled.UnfurledUrlData
+  public struct UnfurledStructuredData : Swift.Codable, Swift.Equatable {
+    public let title: Swift.String?
+    public let price: Swift.String?
+    public static func == (a: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData, b: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
   public struct UnfurledUrlData : Swift.Codable {
     public let url: Swift.String
     public let title: Swift.String?
@@ -1244,8 +1251,12 @@ public struct KnowledgeBaseCategoryData {
     public let image: Swift.String?
     public let favicon: Swift.String?
     public let unfurledAt: Foundation.Date?
-    public func encode(to encoder: any Swift.Encoder) throws
+    public let structuredData: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(url: Swift.String, title: Swift.String?, description: Swift.String?, image: Swift.String?, favicon: Swift.String?, unfurledAt: Foundation.Date?, structuredData: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData? = nil)
+    #endif
     public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
   }
   #if compiler(>=5.3) && $NonescapableTypes
   public var conversationId: Swift.String? {
