@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ntabwo ikiriho";
 "com.kustomer.out of" = "kuva muri";
 "com.kustomer.sending" = "kohereza";
+"com.kustomer.All" = "Byose";
+"com.kustomer.All (%d)" = "Byose (%d)";
+"com.kustomer.Open" = "Bifunguye";
+"com.kustomer.Open (%d)" = "Bifunguye (%d)";
+"com.kustomer.Closed" = "Bifunze";
+"com.kustomer.Closed (%d)" = "Bifunze (%d)";
+"com.kustomer.Unread" = "Ntiyasomye";
+"com.kustomer.Unread (%d)" = "Ntiyasomye (%d)";
+"com.kustomer.%d of %d" = "%1$d kuri %2$d";

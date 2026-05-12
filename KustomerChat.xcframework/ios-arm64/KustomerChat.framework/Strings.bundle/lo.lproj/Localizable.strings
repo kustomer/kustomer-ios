@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ບໍ່ມີໃຫ້ບໍລິການອີກຕໍ່ໄປ";
 "com.kustomer.out of" = "ອອກຈາກ";
 "com.kustomer.sending" = "ກຳລັງສົ່ງ";
+"com.kustomer.All" = "ທັງໝົດ";
+"com.kustomer.All (%d)" = "ທັງໝົດ (%d)";
+"com.kustomer.Open" = "ເປີດ";
+"com.kustomer.Open (%d)" = "ເປີດ (%d)";
+"com.kustomer.Closed" = "ປິດ";
+"com.kustomer.Closed (%d)" = "ປິດ (%d)";
+"com.kustomer.Unread" = "ຍັງບໍ່ໄດ້ອ່ານ";
+"com.kustomer.Unread (%d)" = "ຍັງບໍ່ໄດ້ອ່ານ (%d)";
+"com.kustomer.%d of %d" = "%1$d ຈາກ %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "haipatikani tena";
 "com.kustomer.out of" = "nje ya";
 "com.kustomer.sending" = "kutuma";
+"com.kustomer.All" = "Zote";
+"com.kustomer.All (%d)" = "Zote (%d)";
+"com.kustomer.Open" = "Wazi";
+"com.kustomer.Open (%d)" = "Wazi (%d)";
+"com.kustomer.Closed" = "Imefungwa";
+"com.kustomer.Closed (%d)" = "Imefungwa (%d)";
+"com.kustomer.Unread" = "Haijasomwa";
+"com.kustomer.Unread (%d)" = "Haijasomwa (%d)";
+"com.kustomer.%d of %d" = "%1$d kati ya %2$d";

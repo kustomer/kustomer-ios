@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "δεν είναι πλέον διαθέσιμο";
 "com.kustomer.out of" = "έξω από";
 "com.kustomer.sending" = "αποστολή";
+"com.kustomer.All" = "Όλα";
+"com.kustomer.All (%d)" = "Όλα (%d)";
+"com.kustomer.Open" = "Ανοιχτό";
+"com.kustomer.Open (%d)" = "Ανοιχτά (%d)";
+"com.kustomer.Closed" = "Κλειστό";
+"com.kustomer.Closed (%d)" = "Κλειστά (%d)";
+"com.kustomer.Unread" = "Μη αναγνωσμένο";
+"com.kustomer.Unread (%d)" = "Μη αναγνωσμένα (%d)";
+"com.kustomer.%d of %d" = "%1$d από %2$d";

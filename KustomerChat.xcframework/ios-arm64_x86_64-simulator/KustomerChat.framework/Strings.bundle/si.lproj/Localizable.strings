@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "තවදුරටත් නොමැත.";
 "com.kustomer.out of" = "පිටතට";
 "com.kustomer.sending" = "යැවීම";
+"com.kustomer.All" = "සියල්ල";
+"com.kustomer.All (%d)" = "සියල්ල (%d)";
+"com.kustomer.Open" = "විවෘත";
+"com.kustomer.Open (%d)" = "විවෘත (%d)";
+"com.kustomer.Closed" = "වසා ඇත";
+"com.kustomer.Closed (%d)" = "වසා ඇත (%d)";
+"com.kustomer.Unread" = "නොකියවූ";
+"com.kustomer.Unread (%d)" = "නොකියවූ (%d)";
+"com.kustomer.%d of %d" = "%1$dන් %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "više nije dostupno";
 "com.kustomer.out of" = "od";
 "com.kustomer.sending" = "slanje";
+"com.kustomer.All" = "Sve";
+"com.kustomer.All (%d)" = "Sve (%d)";
+"com.kustomer.Open" = "Otvoreno";
+"com.kustomer.Open (%d)" = "Otvoreno (%d)";
+"com.kustomer.Closed" = "Zatvoreno";
+"com.kustomer.Closed (%d)" = "Zatvoreno (%d)";
+"com.kustomer.Unread" = "Nepročitano";
+"com.kustomer.Unread (%d)" = "Nepročitano (%d)";
+"com.kustomer.%d of %d" = "%1$d od %2$d";

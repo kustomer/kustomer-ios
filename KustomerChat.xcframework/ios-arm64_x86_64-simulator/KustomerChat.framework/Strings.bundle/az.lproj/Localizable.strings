@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "artıq mövcud deyil";
 "com.kustomer.out of" = "xaricində";
 "com.kustomer.sending" = "göndərmə";
+"com.kustomer.All" = "Hamısı";
+"com.kustomer.All (%d)" = "Hamısı (%d)";
+"com.kustomer.Open" = "Açıq";
+"com.kustomer.Open (%d)" = "Açıq (%d)";
+"com.kustomer.Closed" = "Bağlı";
+"com.kustomer.Closed (%d)" = "Bağlı (%d)";
+"com.kustomer.Unread" = "Oxunmamış";
+"com.kustomer.Unread (%d)" = "Oxunmamış (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

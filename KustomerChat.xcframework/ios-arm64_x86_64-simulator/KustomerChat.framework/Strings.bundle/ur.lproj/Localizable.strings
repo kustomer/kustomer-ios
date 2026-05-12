@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "اب دستیاب نہیں ہے";
 "com.kustomer.out of" = "سے باہر";
 "com.kustomer.sending" = "بھیج رہا ہے";
+"com.kustomer.All" = "سب";
+"com.kustomer.All (%d)" = "سب (%d)";
+"com.kustomer.Open" = "کھلا";
+"com.kustomer.Open (%d)" = "کھلے (%d)";
+"com.kustomer.Closed" = "بند";
+"com.kustomer.Closed (%d)" = "بند (%d)";
+"com.kustomer.Unread" = "ان پڑھا";
+"com.kustomer.Unread (%d)" = "ان پڑھے (%d)";
+"com.kustomer.%d of %d" = "%1$d میں سے %2$d";

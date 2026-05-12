@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ไม่สามารถใช้งานได้อีกต่อไป";
 "com.kustomer.out of" = "จาก";
 "com.kustomer.sending" = "การส่ง";
+"com.kustomer.All" = "ทั้งหมด";
+"com.kustomer.All (%d)" = "ทั้งหมด (%d)";
+"com.kustomer.Open" = "เปิด";
+"com.kustomer.Open (%d)" = "เปิด (%d)";
+"com.kustomer.Closed" = "ปิด";
+"com.kustomer.Closed (%d)" = "ปิด (%d)";
+"com.kustomer.Unread" = "ยังไม่ได้อ่าน";
+"com.kustomer.Unread (%d)" = "ยังไม่ได้อ่าน (%d)";
+"com.kustomer.%d of %d" = "%1$d จาก %2$d";

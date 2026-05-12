@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "is niet langer beschikbaar";
 "com.kustomer.out of" = "uit";
 "com.kustomer.sending" = "verzenden";
+"com.kustomer.All" = "Alles";
+"com.kustomer.All (%d)" = "Alles (%d)";
+"com.kustomer.Open" = "Open";
+"com.kustomer.Open (%d)" = "Open (%d)";
+"com.kustomer.Closed" = "Gesloten";
+"com.kustomer.Closed (%d)" = "Gesloten (%d)";
+"com.kustomer.Unread" = "Ongelezen";
+"com.kustomer.Unread (%d)" = "Ongelezen (%d)";
+"com.kustomer.%d of %d" = "%1$d van %2$d";

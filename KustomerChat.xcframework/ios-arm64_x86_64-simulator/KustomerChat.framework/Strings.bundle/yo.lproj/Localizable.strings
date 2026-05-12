@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "kò sí mọ́";
 "com.kustomer.out of" = "láti inú";
 "com.kustomer.sending" = "fifiranṣẹ";
+"com.kustomer.All" = "Gbogbo";
+"com.kustomer.All (%d)" = "Gbogbo (%d)";
+"com.kustomer.Open" = "Ti ṣii";
+"com.kustomer.Open (%d)" = "Ti ṣii (%d)";
+"com.kustomer.Closed" = "Ti pa";
+"com.kustomer.Closed (%d)" = "Ti pa (%d)";
+"com.kustomer.Unread" = "A ko ka";
+"com.kustomer.Unread (%d)" = "A ko ka (%d)";
+"com.kustomer.%d of %d" = "%1$d ninu %2$d";

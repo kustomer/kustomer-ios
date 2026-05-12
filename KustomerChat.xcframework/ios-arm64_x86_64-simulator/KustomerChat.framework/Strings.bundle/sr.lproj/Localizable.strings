@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "више није доступно";
 "com.kustomer.out of" = "ван";
 "com.kustomer.sending" = "слање";
+"com.kustomer.All" = "Све";
+"com.kustomer.All (%d)" = "Све (%d)";
+"com.kustomer.Open" = "Отворено";
+"com.kustomer.Open (%d)" = "Отворено (%d)";
+"com.kustomer.Closed" = "Затворено";
+"com.kustomer.Closed (%d)" = "Затворено (%d)";
+"com.kustomer.Unread" = "Непрочитано";
+"com.kustomer.Unread (%d)" = "Непрочитано (%d)";
+"com.kustomer.%d of %d" = "%1$d од %2$d";

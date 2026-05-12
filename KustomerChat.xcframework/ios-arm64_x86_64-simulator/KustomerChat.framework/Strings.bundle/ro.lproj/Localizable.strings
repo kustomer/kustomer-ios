@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "nu mai este disponibil";
 "com.kustomer.out of" = "din";
 "com.kustomer.sending" = "trimitere";
+"com.kustomer.All" = "Toate";
+"com.kustomer.All (%d)" = "Toate (%d)";
+"com.kustomer.Open" = "Deschisă";
+"com.kustomer.Open (%d)" = "Deschise (%d)";
+"com.kustomer.Closed" = "Închisă";
+"com.kustomer.Closed (%d)" = "Închise (%d)";
+"com.kustomer.Unread" = "Necitită";
+"com.kustomer.Unread (%d)" = "Necitite (%d)";
+"com.kustomer.%d of %d" = "%1$d din %2$d";

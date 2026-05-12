@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "pole enam saadaval";
 "com.kustomer.out of" = "välja";
 "com.kustomer.sending" = "saatmine";
+"com.kustomer.All" = "Kõik";
+"com.kustomer.All (%d)" = "Kõik (%d)";
+"com.kustomer.Open" = "Avatud";
+"com.kustomer.Open (%d)" = "Avatud (%d)";
+"com.kustomer.Closed" = "Suletud";
+"com.kustomer.Closed (%d)" = "Suletud (%d)";
+"com.kustomer.Unread" = "Lugemata";
+"com.kustomer.Unread (%d)" = "Lugemata (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

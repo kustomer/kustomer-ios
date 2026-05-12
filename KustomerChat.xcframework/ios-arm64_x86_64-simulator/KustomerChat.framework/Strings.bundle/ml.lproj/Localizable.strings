@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ഇനി ലഭ്യമല്ല";
 "com.kustomer.out of" = "പുറത്ത്";
 "com.kustomer.sending" = "അയയ്ക്കുന്നു";
+"com.kustomer.All" = "എല്ലാം";
+"com.kustomer.All (%d)" = "എല്ലാം (%d)";
+"com.kustomer.Open" = "തുറന്ന";
+"com.kustomer.Open (%d)" = "തുറന്ന (%d)";
+"com.kustomer.Closed" = "അടച്ച";
+"com.kustomer.Closed (%d)" = "അടച്ച (%d)";
+"com.kustomer.Unread" = "വായിക്കാത്ത";
+"com.kustomer.Unread (%d)" = "വായിക്കാത്ത (%d)";
+"com.kustomer.%d of %d" = "%1$d-ൽ %2$d";

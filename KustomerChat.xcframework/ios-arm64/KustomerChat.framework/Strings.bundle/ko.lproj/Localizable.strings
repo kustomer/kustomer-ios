@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "더 이상 이용할 수 없습니다.";
 "com.kustomer.out of" = "~의";
 "com.kustomer.sending" = "배상";
+"com.kustomer.All" = "전체";
+"com.kustomer.All (%d)" = "전체 (%d)";
+"com.kustomer.Open" = "열림";
+"com.kustomer.Open (%d)" = "열림 (%d)";
+"com.kustomer.Closed" = "종료됨";
+"com.kustomer.Closed (%d)" = "종료됨 (%d)";
+"com.kustomer.Unread" = "읽지 않음";
+"com.kustomer.Unread (%d)" = "읽지 않음 (%d)";
+"com.kustomer.%d of %d" = "%1$d/%2$d";

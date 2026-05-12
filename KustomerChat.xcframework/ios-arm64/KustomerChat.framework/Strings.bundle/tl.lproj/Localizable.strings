@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ay hindi na magagamit";
 "com.kustomer.out of" = "mula sa";
 "com.kustomer.sending" = "pagpapadala";
+"com.kustomer.All" = "Lahat";
+"com.kustomer.All (%d)" = "Lahat (%d)";
+"com.kustomer.Open" = "Bukas";
+"com.kustomer.Open (%d)" = "Bukas (%d)";
+"com.kustomer.Closed" = "Sarado";
+"com.kustomer.Closed (%d)" = "Sarado (%d)";
+"com.kustomer.Unread" = "Hindi pa nabasa";
+"com.kustomer.Unread (%d)" = "Hindi pa nabasa (%d)";
+"com.kustomer.%d of %d" = "%1$d sa %2$d";

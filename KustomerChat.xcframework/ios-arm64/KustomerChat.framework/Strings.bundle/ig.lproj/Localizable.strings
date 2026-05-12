@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "adịghịzi adị";
 "com.kustomer.out of" = "si na";
 "com.kustomer.sending" = "na-eziga";
+"com.kustomer.All" = "Niile";
+"com.kustomer.All (%d)" = "Niile (%d)";
+"com.kustomer.Open" = "Meghere";
+"com.kustomer.Open (%d)" = "Meghere (%d)";
+"com.kustomer.Closed" = "Mechiri";
+"com.kustomer.Closed (%d)" = "Mechiri (%d)";
+"com.kustomer.Unread" = "Agụghị";
+"com.kustomer.Unread (%d)" = "Agụghị (%d)";
+"com.kustomer.%d of %d" = "%1$d n'ime %2$d";

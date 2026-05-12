@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "Hiện không còn khả dụng";
 "com.kustomer.out of" = "ngoài";
 "com.kustomer.sending" = "gửi";
+"com.kustomer.All" = "Tất cả";
+"com.kustomer.All (%d)" = "Tất cả (%d)";
+"com.kustomer.Open" = "Đang mở";
+"com.kustomer.Open (%d)" = "Đang mở (%d)";
+"com.kustomer.Closed" = "Đã đóng";
+"com.kustomer.Closed (%d)" = "Đã đóng (%d)";
+"com.kustomer.Unread" = "Chưa đọc";
+"com.kustomer.Unread (%d)" = "Chưa đọc (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

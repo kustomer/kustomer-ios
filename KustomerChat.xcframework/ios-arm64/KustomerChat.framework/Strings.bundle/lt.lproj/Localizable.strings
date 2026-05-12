@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "nebėra prieinamas";
 "com.kustomer.out of" = "iš";
 "com.kustomer.sending" = "siuntimas";
+"com.kustomer.All" = "Visi";
+"com.kustomer.All (%d)" = "Visi (%d)";
+"com.kustomer.Open" = "Atidaryta";
+"com.kustomer.Open (%d)" = "Atidarytos (%d)";
+"com.kustomer.Closed" = "Uždaryta";
+"com.kustomer.Closed (%d)" = "Uždarytos (%d)";
+"com.kustomer.Unread" = "Neskaityta";
+"com.kustomer.Unread (%d)" = "Neskaitytos (%d)";
+"com.kustomer.%d of %d" = "%1$d iš %2$d";

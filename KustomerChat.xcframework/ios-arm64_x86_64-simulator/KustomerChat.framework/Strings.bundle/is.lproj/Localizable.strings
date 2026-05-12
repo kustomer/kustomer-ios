@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "er ekki lengur fáanlegt";
 "com.kustomer.out of" = "út úr";
 "com.kustomer.sending" = "sending";
+"com.kustomer.All" = "Allt";
+"com.kustomer.All (%d)" = "Allt (%d)";
+"com.kustomer.Open" = "Opið";
+"com.kustomer.Open (%d)" = "Opin (%d)";
+"com.kustomer.Closed" = "Lokað";
+"com.kustomer.Closed (%d)" = "Lokuð (%d)";
+"com.kustomer.Unread" = "Ólesið";
+"com.kustomer.Unread (%d)" = "Ólesin (%d)";
+"com.kustomer.%d of %d" = "%1$d af %2$d";

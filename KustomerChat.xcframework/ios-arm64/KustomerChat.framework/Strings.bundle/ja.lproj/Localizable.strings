@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "利用できなくなりました";
 "com.kustomer.out of" = "のうち";
 "com.kustomer.sending" = "送信";
+"com.kustomer.All" = "すべて";
+"com.kustomer.All (%d)" = "すべて（%d）";
+"com.kustomer.Open" = "オープン";
+"com.kustomer.Open (%d)" = "オープン（%d）";
+"com.kustomer.Closed" = "クローズ済み";
+"com.kustomer.Closed (%d)" = "クローズ済み（%d）";
+"com.kustomer.Unread" = "未読";
+"com.kustomer.Unread (%d)" = "未読（%d）";
+"com.kustomer.%d of %d" = "%1$d/%2$d";

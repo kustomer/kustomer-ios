@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "აღარ არის ხელმისაწვდომი";
 "com.kustomer.out of" = "გარეთ";
 "com.kustomer.sending" = "გაგზავნა";
+"com.kustomer.All" = "ყველა";
+"com.kustomer.All (%d)" = "ყველა (%d)";
+"com.kustomer.Open" = "გახსნილი";
+"com.kustomer.Open (%d)" = "გახსნილი (%d)";
+"com.kustomer.Closed" = "დახურული";
+"com.kustomer.Closed (%d)" = "დახურული (%d)";
+"com.kustomer.Unread" = "წაუკითხავი";
+"com.kustomer.Unread (%d)" = "წაუკითხავი (%d)";
+"com.kustomer.%d of %d" = "%1$d %2$d-დან";

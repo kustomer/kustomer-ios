@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "er ikke længere tilgængelig";
 "com.kustomer.out of" = "ud af";
 "com.kustomer.sending" = "afsendelse";
+"com.kustomer.All" = "Alle";
+"com.kustomer.All (%d)" = "Alle (%d)";
+"com.kustomer.Open" = "Åben";
+"com.kustomer.Open (%d)" = "Åbne (%d)";
+"com.kustomer.Closed" = "Lukket";
+"com.kustomer.Closed (%d)" = "Lukkede (%d)";
+"com.kustomer.Unread" = "Ulæst";
+"com.kustomer.Unread (%d)" = "Ulæste (%d)";
+"com.kustomer.%d of %d" = "%1$d af %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "այլևս հասանելի չէ";
 "com.kustomer.out of" = "դուրս";
 "com.kustomer.sending" = "ուղարկելը";
+"com.kustomer.All" = "Բոլորը";
+"com.kustomer.All (%d)" = "Բոլորը (%d)";
+"com.kustomer.Open" = "Բաց";
+"com.kustomer.Open (%d)" = "Բաց (%d)";
+"com.kustomer.Closed" = "Փակ";
+"com.kustomer.Closed (%d)" = "Փակ (%d)";
+"com.kustomer.Unread" = "Չկարդացված";
+"com.kustomer.Unread (%d)" = "Չկարդացված (%d)";
+"com.kustomer.%d of %d" = "%1$d-ից %2$d";

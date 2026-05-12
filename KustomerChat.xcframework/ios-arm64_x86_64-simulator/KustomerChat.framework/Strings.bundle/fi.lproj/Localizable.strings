@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ei ole enää saatavilla";
 "com.kustomer.out of" = "ulos";
 "com.kustomer.sending" = "lähettäminen";
+"com.kustomer.All" = "Kaikki";
+"com.kustomer.All (%d)" = "Kaikki (%d)";
+"com.kustomer.Open" = "Avoin";
+"com.kustomer.Open (%d)" = "Avoimet (%d)";
+"com.kustomer.Closed" = "Suljettu";
+"com.kustomer.Closed (%d)" = "Suljetut (%d)";
+"com.kustomer.Unread" = "Lukematon";
+"com.kustomer.Unread (%d)" = "Lukemattomat (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "már nem elérhető";
 "com.kustomer.out of" = "ki";
 "com.kustomer.sending" = "küldés";
+"com.kustomer.All" = "Összes";
+"com.kustomer.All (%d)" = "Összes (%d)";
+"com.kustomer.Open" = "Nyitott";
+"com.kustomer.Open (%d)" = "Nyitott (%d)";
+"com.kustomer.Closed" = "Lezárt";
+"com.kustomer.Closed (%d)" = "Lezárt (%d)";
+"com.kustomer.Unread" = "Olvasatlan";
+"com.kustomer.Unread (%d)" = "Olvasatlan (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

@@ -4,6 +4,8 @@
 "com.kustomer.Additional Feedback" = "Additional Feedback";
 "com.kustomer.Additional feedback removed" = "Additional feedback removed";
 "com.kustomer.Agent" = "Agent";
+"com.kustomer.All" = "All";
+"com.kustomer.All (%d)" = "All (%d)";
 "com.kustomer.Answers" = "Answers";
 "com.kustomer.Are you sure you want to end this chat?" = "Are you sure you want to end this chat?";
 "com.kustomer.Attached file" = "Attached file";
@@ -19,6 +21,8 @@
 "com.kustomer.Chat history" = "Chat history";
 "com.kustomer.Chat is currently unavailable" = "Chat is currently unavailable";
 "com.kustomer.Chat with support" = "Chat with support";
+"com.kustomer.Closed" = "Closed";
+"com.kustomer.Closed (%d)" = "Closed (%d)";
 "com.kustomer.Conversation ended" = "Conversation ended";
 "com.kustomer.Conversation merged into another conversation.\n\nTap to go to the new conversation." = "Conversation merged into another conversation.\n\nTap to go to the new conversation.";
 "com.kustomer.Conversation moved to another customer" = "Conversation moved to another customer";
@@ -64,6 +68,8 @@
 "com.kustomer.Not enough disk space" = "Not enough disk space";
 "com.kustomer.Not found" = "Not found";
 "com.kustomer.Okay" = "Okay";
+"com.kustomer.Open" = "Open";
+"com.kustomer.Open (%d)" = "Open (%d)";
 "com.kustomer.Open in browser" = "Open in browser";
 "com.kustomer.Optional" = "Optional";
 "com.kustomer.Outgoing chat" = "Outgoing chat";
@@ -95,9 +101,12 @@
 "com.kustomer.This conversation is read-only" = "This conversation is read-only";
 "com.kustomer.Try again" = "Try again";
 "com.kustomer.Type a message..." = "Type a message...";
+"com.kustomer.Unread" = "Unread";
+"com.kustomer.Unread (%d)" = "Unread (%d)";
 "com.kustomer.Unable to view attachment" = "Unable to view attachment";
 "com.kustomer.Unavailable message goes here" = "Unavailable message goes here";
 "com.kustomer.Updated" = "Updated";
+"com.kustomer.%d of %d" = "%1$d of %2$d";
 "com.kustomer.Waiting for a response from" = "Waiting for a response from";
 "com.kustomer.We will get back to you as soon as we are online!" = "We will get back to you as soon as we are online!";
 "com.kustomer.Yes" = "Yes";
