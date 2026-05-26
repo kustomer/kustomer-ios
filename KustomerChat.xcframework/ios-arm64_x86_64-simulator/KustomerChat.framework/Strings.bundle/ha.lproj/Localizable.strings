@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "babu shi kuma";
 "com.kustomer.out of" = "daga cikin";
 "com.kustomer.sending" = "aikawa";
+"com.kustomer.All" = "Duka";
+"com.kustomer.All (%d)" = "Duka (%d)";
+"com.kustomer.Open" = "Bude";
+"com.kustomer.Open (%d)" = "Bude (%d)";
+"com.kustomer.Closed" = "Rufe";
+"com.kustomer.Closed (%d)" = "Rufe (%d)";
+"com.kustomer.Unread" = "Ba a karanta ba";
+"com.kustomer.Unread (%d)" = "Ba a karanta ba (%d)";
+"com.kustomer.%d of %d" = "%1$d daga cikin %2$d";

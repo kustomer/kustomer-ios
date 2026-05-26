@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "jam ne haveblas";
 "com.kustomer.out of" = "el";
 "com.kustomer.sending" = "sendado";
+"com.kustomer.All" = "Ĉiuj";
+"com.kustomer.All (%d)" = "Ĉiuj (%d)";
+"com.kustomer.Open" = "Malfermita";
+"com.kustomer.Open (%d)" = "Malfermitaj (%d)";
+"com.kustomer.Closed" = "Fermita";
+"com.kustomer.Closed (%d)" = "Fermitaj (%d)";
+"com.kustomer.Unread" = "Nelegita";
+"com.kustomer.Unread (%d)" = "Nelegitaj (%d)";
+"com.kustomer.%d of %d" = "%1$d el %2$d";

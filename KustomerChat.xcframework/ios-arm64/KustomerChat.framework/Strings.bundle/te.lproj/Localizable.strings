@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ఇకపై అందుబాటులో లేదు";
 "com.kustomer.out of" = "బయటకు";
 "com.kustomer.sending" = "పంపుతోంది";
+"com.kustomer.All" = "అన్నీ";
+"com.kustomer.All (%d)" = "అన్నీ (%d)";
+"com.kustomer.Open" = "తెరిచి";
+"com.kustomer.Open (%d)" = "తెరిచి (%d)";
+"com.kustomer.Closed" = "మూసివేయబడింది";
+"com.kustomer.Closed (%d)" = "మూసివేయబడింది (%d)";
+"com.kustomer.Unread" = "చదవనివి";
+"com.kustomer.Unread (%d)" = "చదవనివి (%d)";
+"com.kustomer.%d of %d" = "%1$dలో %2$d";

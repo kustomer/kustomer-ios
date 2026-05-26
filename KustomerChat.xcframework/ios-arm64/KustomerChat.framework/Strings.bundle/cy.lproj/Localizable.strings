@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "ddim ar gael mwyach";
 "com.kustomer.out of" = "allan o";
 "com.kustomer.sending" = "anfon";
+"com.kustomer.All" = "Popeth";
+"com.kustomer.All (%d)" = "Popeth (%d)";
+"com.kustomer.Open" = "Ar agor";
+"com.kustomer.Open (%d)" = "Ar agor (%d)";
+"com.kustomer.Closed" = "Ar gau";
+"com.kustomer.Closed (%d)" = "Ar gau (%d)";
+"com.kustomer.Unread" = "Heb eu darllen";
+"com.kustomer.Unread (%d)" = "Heb eu darllen (%d)";
+"com.kustomer.%d of %d" = "%1$d o %2$d";

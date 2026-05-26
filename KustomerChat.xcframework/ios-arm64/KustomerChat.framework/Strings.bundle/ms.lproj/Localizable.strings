@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "tidak lagi tersedia";
 "com.kustomer.out of" = "daripada";
 "com.kustomer.sending" = "menghantar";
+"com.kustomer.All" = "Semua";
+"com.kustomer.All (%d)" = "Semua (%d)";
+"com.kustomer.Open" = "Terbuka";
+"com.kustomer.Open (%d)" = "Terbuka (%d)";
+"com.kustomer.Closed" = "Ditutup";
+"com.kustomer.Closed (%d)" = "Ditutup (%d)";
+"com.kustomer.Unread" = "Belum dibaca";
+"com.kustomer.Unread (%d)" = "Belum dibaca (%d)";
+"com.kustomer.%d of %d" = "%1$d daripada %2$d";

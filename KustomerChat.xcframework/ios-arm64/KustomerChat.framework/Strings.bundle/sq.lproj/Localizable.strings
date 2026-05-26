@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "nuk është më i disponueshëm";
 "com.kustomer.out of" = "jashtë";
 "com.kustomer.sending" = "dërgimi";
+"com.kustomer.All" = "Të gjitha";
+"com.kustomer.All (%d)" = "Të gjitha (%d)";
+"com.kustomer.Open" = "E hapur";
+"com.kustomer.Open (%d)" = "Të hapura (%d)";
+"com.kustomer.Closed" = "E mbyllur";
+"com.kustomer.Closed (%d)" = "Të mbyllura (%d)";
+"com.kustomer.Unread" = "E palexuar";
+"com.kustomer.Unread (%d)" = "Të palexuara (%d)";
+"com.kustomer.%d of %d" = "%1$d nga %2$d";

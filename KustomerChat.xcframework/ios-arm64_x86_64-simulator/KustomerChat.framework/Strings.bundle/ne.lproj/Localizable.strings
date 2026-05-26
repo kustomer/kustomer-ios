@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "अब उपलब्ध छैन";
 "com.kustomer.out of" = "बाहिर";
 "com.kustomer.sending" = "पठाउँदै";
+"com.kustomer.All" = "सबै";
+"com.kustomer.All (%d)" = "सबै (%d)";
+"com.kustomer.Open" = "खुला";
+"com.kustomer.Open (%d)" = "खुला (%d)";
+"com.kustomer.Closed" = "बन्द";
+"com.kustomer.Closed (%d)" = "बन्द (%d)";
+"com.kustomer.Unread" = "नपढिएको";
+"com.kustomer.Unread (%d)" = "नपढिएको (%d)";
+"com.kustomer.%d of %d" = "%1$d मध्ये %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "xa non está dispoñible";
 "com.kustomer.out of" = "fóra de";
 "com.kustomer.sending" = "enviando";
+"com.kustomer.All" = "Todos";
+"com.kustomer.All (%d)" = "Todos (%d)";
+"com.kustomer.Open" = "Aberta";
+"com.kustomer.Open (%d)" = "Abertas (%d)";
+"com.kustomer.Closed" = "Pechada";
+"com.kustomer.Closed (%d)" = "Pechadas (%d)";
+"com.kustomer.Unread" = "Sen ler";
+"com.kustomer.Unread (%d)" = "Sen ler (%d)";
+"com.kustomer.%d of %d" = "%1$d de %2$d";

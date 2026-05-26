@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "більше не доступний";
 "com.kustomer.out of" = "з";
 "com.kustomer.sending" = "надсилання";
+"com.kustomer.All" = "Усі";
+"com.kustomer.All (%d)" = "Усі (%d)";
+"com.kustomer.Open" = "Відкрита";
+"com.kustomer.Open (%d)" = "Відкриті (%d)";
+"com.kustomer.Closed" = "Закрита";
+"com.kustomer.Closed (%d)" = "Закриті (%d)";
+"com.kustomer.Unread" = "Непрочитана";
+"com.kustomer.Unread (%d)" = "Непрочитані (%d)";
+"com.kustomer.%d of %d" = "%1$d з %2$d";

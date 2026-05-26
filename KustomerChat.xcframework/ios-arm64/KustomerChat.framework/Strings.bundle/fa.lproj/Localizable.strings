@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "دیگر در دسترس نیست";
 "com.kustomer.out of" = "خارج از";
 "com.kustomer.sending" = "ارسال";
+"com.kustomer.All" = "همه";
+"com.kustomer.All (%d)" = "همه (%d)";
+"com.kustomer.Open" = "باز";
+"com.kustomer.Open (%d)" = "باز (%d)";
+"com.kustomer.Closed" = "بسته";
+"com.kustomer.Closed (%d)" = "بسته (%d)";
+"com.kustomer.Unread" = "خوانده‌نشده";
+"com.kustomer.Unread (%d)" = "خوانده‌نشده (%d)";
+"com.kustomer.%d of %d" = "%1$d از %2$d";

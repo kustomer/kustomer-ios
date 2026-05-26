@@ -108,3 +108,12 @@
 "com.kustomer.is no longer available" = "ist nicht mehr verfügbar";
 "com.kustomer.out of" = "von";
 "com.kustomer.sending" = "Senden";
+"com.kustomer.All" = "Alle";
+"com.kustomer.All (%d)" = "Alle (%d)";
+"com.kustomer.Open" = "Offen";
+"com.kustomer.Open (%d)" = "Offen (%d)";
+"com.kustomer.Closed" = "Geschlossen";
+"com.kustomer.Closed (%d)" = "Geschlossen (%d)";
+"com.kustomer.Unread" = "Ungelesen";
+"com.kustomer.Unread (%d)" = "Ungelesen (%d)";
+"com.kustomer.%d of %d" = "%1$d von %2$d";

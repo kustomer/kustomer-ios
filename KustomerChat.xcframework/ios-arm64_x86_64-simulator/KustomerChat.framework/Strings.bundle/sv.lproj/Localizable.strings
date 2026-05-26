@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "är inte längre tillgänglig";
 "com.kustomer.out of" = "ut ur";
 "com.kustomer.sending" = "sändning";
+"com.kustomer.All" = "Alla";
+"com.kustomer.All (%d)" = "Alla (%d)";
+"com.kustomer.Open" = "Öppen";
+"com.kustomer.Open (%d)" = "Öppna (%d)";
+"com.kustomer.Closed" = "Stängd";
+"com.kustomer.Closed (%d)" = "Stängda (%d)";
+"com.kustomer.Unread" = "Oläst";
+"com.kustomer.Unread (%d)" = "Olästa (%d)";
+"com.kustomer.%d of %d" = "%1$d av %2$d";

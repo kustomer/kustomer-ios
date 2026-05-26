@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "မရနိုင်တော့ပါ";
 "com.kustomer.out of" = "မှ ထွက်လာသည်";
 "com.kustomer.sending" = "ပေးပို့ခြင်း";
+"com.kustomer.All" = "အားလုံး";
+"com.kustomer.All (%d)" = "အားလုံး (%d)";
+"com.kustomer.Open" = "ဖွင့်ထား";
+"com.kustomer.Open (%d)" = "ဖွင့်ထား (%d)";
+"com.kustomer.Closed" = "ပိတ်ထား";
+"com.kustomer.Closed (%d)" = "ပိတ်ထား (%d)";
+"com.kustomer.Unread" = "မဖတ်ရသေး";
+"com.kustomer.Unread (%d)" = "မဖတ်ရသေး (%d)";
+"com.kustomer.%d of %d" = "%1$d မှာ %2$d";

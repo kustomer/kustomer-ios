@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "nach bhfuil ar fáil a thuilleadh";
 "com.kustomer.out of" = "as";
 "com.kustomer.sending" = "ag seoladh";
+"com.kustomer.All" = "Uile";
+"com.kustomer.All (%d)" = "Uile (%d)";
+"com.kustomer.Open" = "Oscailte";
+"com.kustomer.Open (%d)" = "Oscailte (%d)";
+"com.kustomer.Closed" = "Dúnta";
+"com.kustomer.Closed (%d)" = "Dúnta (%d)";
+"com.kustomer.Unread" = "Neamhléite";
+"com.kustomer.Unread (%d)" = "Neamhléite (%d)";
+"com.kustomer.%d of %d" = "%1$d as %2$d";

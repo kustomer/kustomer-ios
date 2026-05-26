@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "jada ez dago eskuragarri";
 "com.kustomer.out of" = "kanpoan";
 "com.kustomer.sending" = "bidaltzen";
+"com.kustomer.All" = "Denak";
+"com.kustomer.All (%d)" = "Denak (%d)";
+"com.kustomer.Open" = "Irekia";
+"com.kustomer.Open (%d)" = "Irekiak (%d)";
+"com.kustomer.Closed" = "Itxia";
+"com.kustomer.Closed (%d)" = "Itxiak (%d)";
+"com.kustomer.Unread" = "Irakurri gabe";
+"com.kustomer.Unread (%d)" = "Irakurri gabe (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

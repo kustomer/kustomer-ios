@@ -108,3 +108,12 @@
 "com.kustomer.Unable to view attachment" = "Ekli dosya görüntülenemedi.";
 "com.kustomer.Unavailable message goes here" = "Kullanılamıyor mesajı buraya yazılır.";
 "com.kustomer.Yes" = "Evet";
+"com.kustomer.All" = "Tümü";
+"com.kustomer.All (%d)" = "Tümü (%d)";
+"com.kustomer.Open" = "Açık";
+"com.kustomer.Open (%d)" = "Açık (%d)";
+"com.kustomer.Closed" = "Kapalı";
+"com.kustomer.Closed (%d)" = "Kapalı (%d)";
+"com.kustomer.Unread" = "Okunmadı";
+"com.kustomer.Unread (%d)" = "Okunmadı (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

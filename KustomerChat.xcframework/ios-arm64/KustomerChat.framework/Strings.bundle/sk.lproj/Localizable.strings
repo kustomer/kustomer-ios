@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "už nie je k dispozícii";
 "com.kustomer.out of" = "z";
 "com.kustomer.sending" = "odosielanie";
+"com.kustomer.All" = "Všetko";
+"com.kustomer.All (%d)" = "Všetko (%d)";
+"com.kustomer.Open" = "Otvorené";
+"com.kustomer.Open (%d)" = "Otvorené (%d)";
+"com.kustomer.Closed" = "Zatvorené";
+"com.kustomer.Closed (%d)" = "Zatvorené (%d)";
+"com.kustomer.Unread" = "Neprečítané";
+"com.kustomer.Unread (%d)" = "Neprečítané (%d)";
+"com.kustomer.%d of %d" = "%1$d z %2$d";

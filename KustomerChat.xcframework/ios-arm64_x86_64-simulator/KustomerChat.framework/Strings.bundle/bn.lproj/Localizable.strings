@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "আর পাওয়া যাচ্ছে না";
 "com.kustomer.out of" = "এর বাইরে";
 "com.kustomer.sending" = "পাঠানো হচ্ছে";
+"com.kustomer.All" = "সব";
+"com.kustomer.All (%d)" = "সব (%d)";
+"com.kustomer.Open" = "খোলা";
+"com.kustomer.Open (%d)" = "খোলা (%d)";
+"com.kustomer.Closed" = "বন্ধ";
+"com.kustomer.Closed (%d)" = "বন্ধ (%d)";
+"com.kustomer.Unread" = "অপঠিত";
+"com.kustomer.Unread (%d)" = "অপঠিত (%d)";
+"com.kustomer.%d of %d" = "%1$d এর মধ্যে %2$d";

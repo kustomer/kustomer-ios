@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "iam non praesto est";
 "com.kustomer.out of" = "ex";
 "com.kustomer.sending" = "mittens";
+"com.kustomer.All" = "Omnia";
+"com.kustomer.All (%d)" = "Omnia (%d)";
+"com.kustomer.Open" = "Apertum";
+"com.kustomer.Open (%d)" = "Aperta (%d)";
+"com.kustomer.Closed" = "Clausum";
+"com.kustomer.Closed (%d)" = "Clausa (%d)";
+"com.kustomer.Unread" = "Non lectum";
+"com.kustomer.Unread (%d)" = "Non lecta (%d)";
+"com.kustomer.%d of %d" = "%1$d ex %2$d";

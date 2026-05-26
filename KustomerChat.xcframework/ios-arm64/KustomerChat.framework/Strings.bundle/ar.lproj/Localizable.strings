@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "لم يعد متوفرًا";
 "com.kustomer.out of" = "من";
 "com.kustomer.sending" = "إرسال";
+"com.kustomer.All" = "الكل";
+"com.kustomer.All (%d)" = "الكل (%d)";
+"com.kustomer.Open" = "مفتوحة";
+"com.kustomer.Open (%d)" = "مفتوحة (%d)";
+"com.kustomer.Closed" = "مغلقة";
+"com.kustomer.Closed (%d)" = "مغلقة (%d)";
+"com.kustomer.Unread" = "غير مقروءة";
+"com.kustomer.Unread (%d)" = "غير مقروءة (%d)";
+"com.kustomer.%d of %d" = "%1$d من %2$d";

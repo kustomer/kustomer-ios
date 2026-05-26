@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "இனி கிடைக்காது.";
 "com.kustomer.out of" = "வெளியே";
 "com.kustomer.sending" = "அனுப்புதல்";
+"com.kustomer.All" = "அனைத்தும்";
+"com.kustomer.All (%d)" = "அனைத்தும் (%d)";
+"com.kustomer.Open" = "திறந்த";
+"com.kustomer.Open (%d)" = "திறந்த (%d)";
+"com.kustomer.Closed" = "மூடப்பட்ட";
+"com.kustomer.Closed (%d)" = "மூடப்பட்ட (%d)";
+"com.kustomer.Unread" = "படிக்கப்படாத";
+"com.kustomer.Unread (%d)" = "படிக்கப்படாத (%d)";
+"com.kustomer.%d of %d" = "%1$d இல் %2$d";

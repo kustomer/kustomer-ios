@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "已不再可用";
 "com.kustomer.out of" = "出";
 "com.kustomer.sending" = "傳送";
+"com.kustomer.All" = "全部";
+"com.kustomer.All (%d)" = "全部（%d）";
+"com.kustomer.Open" = "進行中";
+"com.kustomer.Open (%d)" = "進行中（%d）";
+"com.kustomer.Closed" = "已關閉";
+"com.kustomer.Closed (%d)" = "已關閉（%d）";
+"com.kustomer.Unread" = "未讀";
+"com.kustomer.Unread (%d)" = "未讀（%d）";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

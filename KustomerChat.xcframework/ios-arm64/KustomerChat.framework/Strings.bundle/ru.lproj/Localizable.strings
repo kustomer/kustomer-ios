@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "больше недоступно";
 "com.kustomer.out of" = "из";
 "com.kustomer.sending" = "отправка";
+"com.kustomer.All" = "Все";
+"com.kustomer.All (%d)" = "Все (%d)";
+"com.kustomer.Open" = "Открытый";
+"com.kustomer.Open (%d)" = "Открытые (%d)";
+"com.kustomer.Closed" = "Закрытый";
+"com.kustomer.Closed (%d)" = "Закрытые (%d)";
+"com.kustomer.Unread" = "Непрочитанное";
+"com.kustomer.Unread (%d)" = "Непрочитанные (%d)";
+"com.kustomer.%d of %d" = "%1$d из %2$d";

@@ -818,6 +818,9 @@ final public class KUSKBArticle : KustomerChat.KUSKBItemBase, Swift.CustomString
   public func addChatListener(_ listener: any KustomerChat.KUSChatListener) -> Swift.String
   public func removeChatListener(_ uuid: Swift.String)
   public func removeAllChatListeners()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func notifySessionOpened(session: KustomerChat.KUSConversation, options customOptions: KustomerChat.KustomerOptions? = nil)
+  #endif
   public func listenForTyping(conversationId: Swift.String)
   public func stopListeningForTyping(conversationId: Swift.String)
   public func sendTypingStatus(for conversationId: Swift.String, isTyping: Swift.Bool)
@@ -945,6 +948,15 @@ public class KustomerOptions {
   public var enableUI: Swift.Bool
   public var showInAppNotifications: Swift.Bool
   public var showAllBrandsConversationHistory: Swift.Bool
+  public var enableHistoryStatusFilter: Swift.Bool
+  public var historyStatusFilter: KustomerChat.HistoryStatusFilter
+  public struct CustomHistoryFilterKeyValue : Swift.Equatable, Swift.Sendable {
+    public let key: Swift.String
+    public let value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public static func == (a: KustomerChat.KustomerOptions.CustomHistoryFilterKeyValue, b: KustomerChat.KustomerOptions.CustomHistoryFilterKeyValue) -> Swift.Bool
+  }
+  public var customHistoryFilter: [KustomerChat.KustomerOptions.CustomHistoryFilterKeyValue]?
   public var language: KustomerChat.KustomerLanguage?
   @available(*, deprecated, message: "Pass a reference to the presenting view controller in the appropiate Kustomer API")
   public var hostViewController: UIKit.UIViewController?
@@ -1003,6 +1015,19 @@ public enum ActiveAssistantOptions {
   case none
   case orgDefault
   case withId(Swift.String)
+}
+public enum HistoryStatusFilter : Swift.String {
+  case open
+  case closed
+  case requiresAttention
+  case none
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct PreviewDetails : Swift.Codable {
   public let lastResponder: KustomerChat.LastResponder?
@@ -1202,6 +1227,8 @@ public protocol KUSChatListener : AnyObject {
   func onSatisfactionEventReceived(conversationId: Swift.String, satisfaction: KustomerChat.KUSSatisfaction)
   func onCustomerDeleted()
   func onSessionTitleChanged(session: KustomerChat.KUSConversation)
+  func onSessionCustomAttributesUpdated(session: KustomerChat.KUSConversation)
+  func onSessionOpened(session: KustomerChat.KUSConversation, customAttributesOutsideActiveFilter: [Swift.String : KustomerChat.KUSConversation.CustomAttributeValue])
   func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 extension KustomerChat.KUSChatListener {
@@ -1228,6 +1255,8 @@ extension KustomerChat.KUSChatListener {
   public func onConversationDeleted(conversationId: Swift.String, conversation: KustomerChat.KUSConversation)
   public func onCustomerDeleted()
   public func onSessionTitleChanged(session: KustomerChat.KUSConversation)
+  public func onSessionCustomAttributesUpdated(session: KustomerChat.KUSConversation)
+  public func onSessionOpened(session: KustomerChat.KUSConversation, customAttributesOutsideActiveFilter: [Swift.String : KustomerChat.KUSConversation.CustomAttributeValue])
   public func onUrlPreviewReceived(conversationId: Swift.String, message: KustomerChat.KUSChatMessage, urlUnfurled: KustomerChat.KUSUrlUnfurled)
 }
 public struct KnowledgeBaseCategoryData {
@@ -1359,6 +1388,15 @@ public struct KUSConversation : Swift.CustomStringConvertible, Swift.Codable {
     set
   }
   public var localUuid: Swift.String?
+  public var custom: [Swift.String : KustomerChat.KUSConversation.CustomAttributeValue]?
+  public enum CustomAttributeValue : Swift.Decodable, Swift.Equatable {
+    case string(Swift.String)
+    case double(Swift.Double)
+    case bool(Swift.Bool)
+    case date(Foundation.Date)
+    public init(from decoder: any Swift.Decoder) throws
+    public static func == (a: KustomerChat.KUSConversation.CustomAttributeValue, b: KustomerChat.KUSConversation.CustomAttributeValue) -> Swift.Bool
+  }
   public var description: Swift.String {
     get
   }
@@ -1423,6 +1461,7 @@ extension KustomerChat.KustomerUI.Color {
   public static var historyBadgeBackground: UIKit.UIColor
   public static var historyBadgeText: UIKit.UIColor
   public static var historyEmptyStateBackground: UIKit.UIColor
+  public static var historyFilterButton: UIKit.UIColor
   public static var historyHeaderBackground: UIKit.UIColor
   public static var historyNewChatButton: UIKit.UIColor
   public static var historyNewChatButtonText: UIKit.UIColor
@@ -1837,6 +1876,10 @@ public typealias KUSCustomDescribe = [Swift.String : Any]
     get
   }
   final public func changeActiveAssistant(_ na: KustomerChat.ActiveAssistantOptions)
+  final public func setHistoryStatusFilter(_ filter: KustomerChat.HistoryStatusFilter)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setCustomHistoryFilter(_ filter: [KustomerChat.KustomerOptions.CustomHistoryFilterKeyValue]?)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   final public func changeBusinessSchedule(scheduleId: Swift.String?, completion: ((Swift.Result<Swift.Void, KustomerChat.KError>) -> Swift.Void)? = nil)
   #endif
@@ -2278,6 +2321,9 @@ extension KustomerChat.KUSKBDeflectResultType : Swift.RawRepresentable {}
 extension KustomerChat.KUSSentByType : Swift.Equatable {}
 extension KustomerChat.KUSSentByType : Swift.Hashable {}
 extension KustomerChat.KUSSentByType : Swift.RawRepresentable {}
+extension KustomerChat.HistoryStatusFilter : Swift.Equatable {}
+extension KustomerChat.HistoryStatusFilter : Swift.Hashable {}
+extension KustomerChat.HistoryStatusFilter : Swift.RawRepresentable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Equatable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.Hashable {}
 extension KustomerChat.KustomerConnectionStatus : Swift.RawRepresentable {}

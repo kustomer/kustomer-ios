@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "akusatholakali";
 "com.kustomer.out of" = "koku";
 "com.kustomer.sending" = "ukuthumela";
+"com.kustomer.All" = "Konke";
+"com.kustomer.All (%d)" = "Konke (%d)";
+"com.kustomer.Open" = "Kuvuliwe";
+"com.kustomer.Open (%d)" = "Kuvuliwe (%d)";
+"com.kustomer.Closed" = "Kuvaliwe";
+"com.kustomer.Closed (%d)" = "Kuvaliwe (%d)";
+"com.kustomer.Unread" = "Akufundiwe";
+"com.kustomer.Unread (%d)" = "Akufundiwe (%d)";
+"com.kustomer.%d of %d" = "%1$d kwe-%2$d";

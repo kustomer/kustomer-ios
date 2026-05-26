@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "енді қолжетімді емес";
 "com.kustomer.out of" = "тыс";
 "com.kustomer.sending" = "жіберу";
+"com.kustomer.All" = "Барлығы";
+"com.kustomer.All (%d)" = "Барлығы (%d)";
+"com.kustomer.Open" = "Ашық";
+"com.kustomer.Open (%d)" = "Ашық (%d)";
+"com.kustomer.Closed" = "Жабық";
+"com.kustomer.Closed (%d)" = "Жабық (%d)";
+"com.kustomer.Unread" = "Оқылмаған";
+"com.kustomer.Unread (%d)" = "Оқылмаған (%d)";
+"com.kustomer.%d of %d" = "%1$d / %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "vairs nav pieejams";
 "com.kustomer.out of" = "ārpus";
 "com.kustomer.sending" = "sūtīšana";
+"com.kustomer.All" = "Visi";
+"com.kustomer.All (%d)" = "Visi (%d)";
+"com.kustomer.Open" = "Atvērts";
+"com.kustomer.Open (%d)" = "Atvērtas (%d)";
+"com.kustomer.Closed" = "Slēgts";
+"com.kustomer.Closed (%d)" = "Slēgtas (%d)";
+"com.kustomer.Unread" = "Nelasīts";
+"com.kustomer.Unread (%d)" = "Nelasītas (%d)";
+"com.kustomer.%d of %d" = "%1$d no %2$d";

@@ -107,3 +107,12 @@
 "com.kustomer.is no longer available" = "אינו זמין עוד";
 "com.kustomer.out of" = "מִתוֹך";
 "com.kustomer.sending" = "שְׁלִיחָה";
+"com.kustomer.All" = "הכל";
+"com.kustomer.All (%d)" = "הכל (%d)";
+"com.kustomer.Open" = "פתוח";
+"com.kustomer.Open (%d)" = "פתוחות (%d)";
+"com.kustomer.Closed" = "סגור";
+"com.kustomer.Closed (%d)" = "סגורות (%d)";
+"com.kustomer.Unread" = "לא נקרא";
+"com.kustomer.Unread (%d)" = "לא נקראו (%d)";
+"com.kustomer.%d of %d" = "%1$d מתוך %2$d";
