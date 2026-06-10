@@ -1281,8 +1281,9 @@ public struct KnowledgeBaseCategoryData {
     public let favicon: Swift.String?
     public let unfurledAt: Foundation.Date?
     public let structuredData: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData?
+    public let preferredOrder: Swift.Int?
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(url: Swift.String, title: Swift.String?, description: Swift.String?, image: Swift.String?, favicon: Swift.String?, unfurledAt: Foundation.Date?, structuredData: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData? = nil)
+    public init(url: Swift.String, title: Swift.String?, description: Swift.String?, image: Swift.String?, favicon: Swift.String?, unfurledAt: Foundation.Date?, structuredData: KustomerChat.KUSUrlUnfurled.UnfurledStructuredData? = nil, preferredOrder: Swift.Int? = nil)
     #endif
     public init(from decoder: any Swift.Decoder) throws
     public func encode(to encoder: any Swift.Encoder) throws
@@ -1438,7 +1439,9 @@ public enum KUSChatMessageDirectionType : Swift.String, Swift.Decodable {
   @objc deinit
 }
 extension KustomerChat.KustomerUI.Color {
+  public static var activeCarouselPagination: UIKit.UIColor
   public static var activeLinkColor: UIKit.UIColor
+  public static var carouselPagination: UIKit.UIColor
   public static var chatAvatarBackground: UIKit.UIColor
   public static var chatAvatarInitials: UIKit.UIColor
   public static var chatHeaderBackground: UIKit.UIColor
