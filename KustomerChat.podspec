@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'KustomerChat'
-  s.version = '8.3.0'
+  s.version = '7.2.10'
   s.swift_version = '6.0'
   s.cocoapods_version = '>= 1.10.0'
   s.authors = 'Kustomer.com'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary = 'The iOS SDK for the Kustomer.com mobile client'
   s.documentation_url = 'https://developer.kustomer.com/chat-sdk/docs'
   s.platform = :ios
-  s.ios.deployment_target = '15.0'
+  s.ios.deployment_target = '14.0'
   s.vendored_frameworks = 'KustomerChat.xcframework'
   s.dependency 'Down', '~> 0.11.0'
   s.dependency 'JWTDecode', '~> 4.0.0'
@@ -21,5 +21,6 @@ Pod::Spec.new do |s|
   s.dependency 'NotificationView', '~> 0.2.5'
   s.dependency 'PubNubSwift', '~> 10.2.0'
   s.dependency 'ReachabilitySwift', '~> 5.2.4'
+  s.dependency 'SnapKit', '~> 5.7.1'
   s.dependency 'SwiftyJSON', '~> 5.0.2'
 end
