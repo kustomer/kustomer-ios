@@ -9,6 +9,7 @@ import Foundation
 @_exported import KustomerChat
 import MobileCoreServices
 import OSLog
+import ObjectiveC
 import PhotosUI
 import QuickLook
 import SafariServices
