@@ -13,7 +13,6 @@ let package = Package(
       targets: ["KustomerChat"])
   ],
   dependencies: [
-    .package(name: "Down", url: "https://github.com/kustomer/Down", .upToNextMinor(from: "0.11.0")),
     .package(name: "JWTDecode", url: "https://github.com/auth0/JWTDecode.swift", .upToNextMinor(from: "4.0.0")),
     .package(name: "Nantes", url: "https://github.com/instacart/Nantes", .upToNextMinor(from: "0.1.2")),
     .package(name: "NotificationView", url: "https://github.com/pikachu987/NotificationView", .upToNextMinor(from: "0.2.5")),

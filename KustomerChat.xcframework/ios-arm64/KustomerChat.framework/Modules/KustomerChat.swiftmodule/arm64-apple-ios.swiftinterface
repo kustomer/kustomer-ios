@@ -1683,7 +1683,7 @@ public typealias KUSCustomDescribe = [Swift::String : Any]
   final public func show(presentingVC: UIKit::UIViewController? = nil)
   final public func show(preferredView: KustomerChat::KustomerDisplayMode, presentingVC: UIKit::UIViewController? = nil)
   final public func openConversation(id: Swift::String, animated: Swift::Bool = true, presentingVC: UIKit::UIViewController? = nil, completion: ((Swift::Result<KustomerChat::KUSConversation, KustomerChat::KError>) -> Swift::Void)? = nil)
-  final public func handoff(active: Swift::Bool, from: Swift::String, messages: [KustomerChat::KUSHandoffMessage], brand: Swift::String? = nil, externalId: Swift::String? = nil, lang: Swift::String? = nil, completion: @escaping (Swift::Result<KustomerChat::KUSConversation, KustomerChat::KError>) -> Swift::Void)
+  final public func handoff(active: Swift::Bool, from: Swift::String, messages: [KustomerChat::KUSHandoffMessage], brand: Swift::String? = nil, externalId: Swift::String? = nil, lang: Swift::String? = nil, subStatus: Swift::String? = nil, trackingId: Swift::String? = nil, completion: @escaping (Swift::Result<KustomerChat::KUSConversation, KustomerChat::KError>) -> Swift::Void)
   final public func showKbArticle(id: Swift::String, presentingVC: UIKit::UIViewController? = nil)
   final public func showKbCategory(id: Swift::String, presentingVC: UIKit::UIViewController? = nil)
   final public func close(animated: Swift::Bool = true, completion passedCompletion: (() -> Swift::Void)?)
