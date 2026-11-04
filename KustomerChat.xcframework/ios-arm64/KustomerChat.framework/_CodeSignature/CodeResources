@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		whJ+nhW3AB1VihucPvDltOgsZuo=
+		dohWmEXjdttKu3C3+DNpg0MsxQk=
 		</data>
 		<key>Headers/KustomerChat-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		48bAZ+qonhO47OBCos3mlyqEoSg=
+		YO5ClRDFZS8ocORRnJmHuPQrqHI=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1Tb5K5iDZ5Gdp6YYa32NVKp9HDk=
+		yEezjVoHounvfjypbSknVQdGjmM=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		YkJAuG+Yo0zuQtmAHTMiu6h2t6c=
+		oEtV+Y8TaIUQ95tYczqraT/5/T4=
 		</data>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1Tb5K5iDZ5Gdp6YYa32NVKp9HDk=
+		yEezjVoHounvfjypbSknVQdGjmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vccJQ1W065qrqc8EGbJOwY/MGRI=
+			Z7GsTBndZB+8QLi9jT+ThBEBYLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1059,7 +1059,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8qGcv9LD3zx6dj7HdW7+QXih+e2b1kIl7rsbSCGuY3A=
+			gOm6P/qDfNmBK04jK9iVajvKJiPeJJMlLWm1k7o3qeo=
 			</data>
 		</dict>
 		<key>Headers/KustomerChat-Swift.h</key>
@@ -1087,21 +1087,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xS+MzKYdI8c3E7Dy81Don5DK+Q9wOe565uiMyHDuf04=
+			EuozQ1AdYl5ld3ypzzCAM8GrxhW3GKAvRJ+6dgMYbLo=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LcvKP4oGgLEXThlLK7v2HYxxEbm1CVJuSpuPaQhZgp0=
+			VqgWl9PQ28UKa5ATIsbaAP5YWHuAR7FbnYTY2T4ZaSA=
 			</data>
 		</dict>
 		<key>Modules/KustomerChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xS+MzKYdI8c3E7Dy81Don5DK+Q9wOe565uiMyHDuf04=
+			EuozQ1AdYl5ld3ypzzCAM8GrxhW3GKAvRJ+6dgMYbLo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1275,7 +1275,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t6NsBaHFbFXw+uXQc3L3O3ajFFPIhCJiisaFxkRLSIg=
+			FrrLKtEUUi0xl4SDsS4BMh38g1es8qmTK3SMTPhgBZg=
 			</data>
 			<key>optional</key>
 			<true/>

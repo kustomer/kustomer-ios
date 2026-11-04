@@ -447,13 +447,30 @@ public struct KUSKBDeflectResult : Swift::Decodable {
   public var lang: Swift::String?
   public init(from decoder: any Swift::Decoder) throws
 }
+public enum KUSExternalAttachmentRenderMode : Swift::String, Swift::Codable, Swift::Equatable, Swift::Sendable {
+  case `default`
+  case metadataOnly
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers final public class KUSChatAttachment : Swift::CustomStringConvertible {
   final public var id: Swift::String
   final public var conversationId: Swift::String?
   final public var contentType: Swift::String?
   final public var url: Swift::String?
   final public var name: Swift::String?
+  final public var renderMode: KustomerChat::KUSExternalAttachmentRenderMode?
   final public var chatMessageId: Swift::String?
+  final public var isHostOwned: Swift::Bool {
+    get
+  }
+  @available(*, deprecated, renamed: "isHostOwned", message: "Any non-nil renderMode is host-owned placeholder UI.")
+  final public var isMetadataOnly: Swift::Bool {
+    get
+  }
   final public var description: Swift::String {
     get
   }
@@ -842,6 +859,8 @@ public class KustomerOptions {
   public var showAnimationFor5StarCSATRatings: Swift::Bool
   public var onShow: (() -> Swift::Void)?
   public var onDismiss: (() -> Swift::Void)?
+  public var onAttachmentButtonTapped: ((KustomerChat::KUSAttachmentButtonTapContext) -> Swift::Void)?
+  public var externalAttachmentImage: UIKit::UIImage?
   @available(*, deprecated, message: "Use onShow instead")
   public var onViewDidAppear: ((Swift::Bool) -> Swift::Void)?
   @available(*, deprecated, message: "Use onShow instead")
@@ -893,6 +912,15 @@ public enum HistoryStatusFilter : Swift::String {
   public var rawValue: Swift::String {
     get
   }
+}
+public struct KUSAttachmentButtonTapContext {
+  public let conversationId: Swift::String?
+  public let presentingViewController: UIKit::UIViewController
+  public let sourceView: UIKit::UIView
+  public let bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)?
+  public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController, sourceView: UIKit::UIView, bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)? = nil)
+  @available(*, deprecated, message: "Pass the paperclip attach control as sourceView for sheet/popover anchoring")
+  public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController)
 }
 public struct PreviewDetails : Swift::Codable {
   public let lastResponder: KustomerChat::LastResponder?
@@ -1279,6 +1307,8 @@ extension KustomerChat::KustomerUI.KustomerChat::Color {
   public static var csatText: UIKit::UIColor
   public static var csatCommentBoxBackground: UIKit::UIColor
   public static var csatCommentBoxOutline: UIKit::UIColor
+  public static var externalAttachmentPlaceholderIconTint: UIKit::UIColor
+  public static var externalAttachmentPlaceholderMediaBackground: UIKit::UIColor
   public static var historyBackground: UIKit::UIColor
   public static var historyBadgeBackground: UIKit::UIColor
   public static var historyBadgeText: UIKit::UIColor
@@ -2016,6 +2046,8 @@ extension KustomerChat::KUSSWAlert : Swift::Sendable {}
 extension KustomerChat::Weekday : Swift::Equatable {}
 extension KustomerChat::Weekday : Swift::Hashable {}
 extension KustomerChat::Weekday : Swift::RawRepresentable {}
+extension KustomerChat::KUSExternalAttachmentRenderMode : Swift::Hashable {}
+extension KustomerChat::KUSExternalAttachmentRenderMode : Swift::RawRepresentable {}
 extension KustomerChat::KUSCSATScaleType : Swift::Equatable {}
 extension KustomerChat::KUSCSATScaleType : Swift::Hashable {}
 extension KustomerChat::KUSCSATQuestionType : Swift::Equatable {}
