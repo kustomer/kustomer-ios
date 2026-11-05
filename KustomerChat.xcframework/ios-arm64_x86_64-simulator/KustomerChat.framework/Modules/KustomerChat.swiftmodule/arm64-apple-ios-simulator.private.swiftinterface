@@ -790,6 +790,8 @@ final public class KUSKBArticle : KustomerChat::KUSKBItemBase, Swift::CustomStri
   public func sendChatMessage(text: Swift::String, conversationId: Swift::String, initialAgentMessages: [KustomerChat::KUSInitialMessage]? = nil, completion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
   public func sendChatMessageWithAttachments(text: Swift::String, conversationId: Swift::String, initialAgentMessages: [KustomerChat::KUSInitialMessage]? = nil, attachmentIds: [Swift::String]? = nil, isFirstMessage: Swift::Bool = false, overrideAssistantId: Swift::String? = nil, completion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
   public func createBlankConversation(title: Swift::String, assistant: Swift::String?, brandId: Swift::String?, descriptors: KustomerChat::KUSCustomDescribe?, completion: @escaping (Swift::Result<KustomerChat::KUSConversation, KustomerChat::NetworkError>) -> Swift::Void)
+  public func createExternalAttachments(_ attachments: [KustomerChat::KUSExternalAttachment], completion: @escaping (Swift::Result<[KustomerChat::KUSChatAttachment], KustomerChat::KError>) -> Swift::Void)
+  public func sendChatMessageWithExternalAttachments(_ attachments: [KustomerChat::KUSExternalAttachment], conversationId: Swift::String?, bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)? = nil, assistantId: Swift::String? = nil, descriptors: KustomerChat::KUSCustomDescribe? = nil, shouldCreateDraft: (() -> Swift::Bool)? = nil, completion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
   public func sendChatMessage(action: any KustomerChat::KUSMessageAction, conversationId: Swift::String, additionalParams: [Swift::String : Any]? = nil, completion _outerCompletion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
   public func sendChatMessage(text: Swift::String, assistant: KustomerChat::KUSAssistant, conversationId: Swift::String, completion _outerCompletion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
   public func sendChatMessage(mllNode: KustomerChat::KUSMLLNode, conversationId: Swift::String, additionalParams: [Swift::String : Any]? = nil, completion _outerCompletion: @escaping (Swift::Result<(message: KustomerChat::KUSChatMessage, conversation: KustomerChat::KUSConversation), KustomerChat::KError>) -> Swift::Void)
@@ -917,10 +919,29 @@ public struct KUSAttachmentButtonTapContext {
   public let conversationId: Swift::String?
   public let presentingViewController: UIKit::UIViewController
   public let sourceView: UIKit::UIView
+  public let completion: any KustomerChat::KUSExternalAttachmentCompletion
   public let bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)?
+  public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController, sourceView: UIKit::UIView, completion: any KustomerChat::KUSExternalAttachmentCompletion, bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)? = nil)
+  @available(*, deprecated, message: "Pass completion for host-owned attach (onSuccess / onCancelled / onFailure)")
   public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController, sourceView: UIKit::UIView, bindConversation: ((KustomerChat::KUSConversation) -> Swift::Void)? = nil)
   @available(*, deprecated, message: "Pass the paperclip attach control as sourceView for sheet/popover anchoring")
+  public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController, completion: any KustomerChat::KUSExternalAttachmentCompletion)
+  @available(*, deprecated, message: "Pass the paperclip attach control as sourceView and a completion for host-owned attach")
   public init(conversationId: Swift::String?, presentingViewController: UIKit::UIViewController)
+}
+public struct KUSExternalAttachment : Swift::Equatable, Swift::Sendable {
+  public let name: Swift::String
+  public let contentType: Swift::String
+  public let contentLength: Swift::Int
+  public let url: Swift::String
+  public let contentHash: Swift::String?
+  public init(name: Swift::String, contentType: Swift::String, contentLength: Swift::Int, url: Swift::String, contentHash: Swift::String? = nil)
+  public static func == (a: KustomerChat::KUSExternalAttachment, b: KustomerChat::KUSExternalAttachment) -> Swift::Bool
+}
+public protocol KUSExternalAttachmentCompletion : AnyObject {
+  func onSuccess(_ attachment: KustomerChat::KUSExternalAttachment)
+  func onCancelled()
+  func onFailure(_ error: any Swift::Error)
 }
 public struct PreviewDetails : Swift::Codable {
   public let lastResponder: KustomerChat::LastResponder?
